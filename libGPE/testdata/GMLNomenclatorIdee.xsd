@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:mne="http://www.idee.es/mne" xmlns:wfs="http://www.opengis.net/wfs" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://www.idee.es/mne" version="1.2.0">
+	<annotation>
+		<appinfo>mne.xsd v1.2.0 2006-11</appinfo>
+		<documentation xml:lang="es">
+			Especificación del modelo de intercambio en GML del Modelo
+			de Nomenclátor de España v 1.2
+		</documentation>
+	</annotation>
+	<import namespace="http://www.opengis.net/gml" schemaLocation="http://10.13.87.19:80/wfs/IDEE-WFS-Nomenclator/schemas/feature.xsd"/>
+	<import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://10.13.87.19:80/wfs/IDEE-WFS-Nomenclator/schemas/xlinks.xsd"/>
+	<!-- ==============================================================
+		declaraciones de elementos globales
+		=================================================================== -->
+	<element name="ResultCollection" substitutionGroup="gml:_FeatureCollection" type="mne:ResultCollectionType"/>
+	<element name="Entidad" substitutionGroup="gml:_Feature" type="mne:EntidadFeatureType">
+		<annotation>
+			<documentation xml:lang="es">
+				Cada entidad de un Nomenclátor debe tener su propio
+				identificador. Para ello se utiliza el atributo fid
+				heredado de gml:_Feature.
+			</documentation>
+		</annotation>
+	</element>
+
+	<!-- ==============================================================
+		declaración de propiedades adicionales
+		[GML 2.1.2 Implementation Specification 5.2.1 Defining new feature types]
+		EntidadFeatureType
+		=================================================================== -->
+
+	<!-- ==============================================================
+		definición de tipos de features
+		EntidadFeatureType
+		=================================================================== -->
+	<complexType name="ResultCollectionType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureCollectionType"/>
+		</complexContent>
+	</complexType>
+	<complexType name="EntidadFeatureType">
+		<annotation>
+			<documentation xml:lang="es">
+				Cada una de las entradas que se realicen en el MNE
+				coresponderá a una entidad geográfica, entendiendo como
+				tal, un fenómeno del mundo real que tiene asociada una
+				localización ligada a la Tierra. Ejemplos de instancias
+				de entidades geográficas serían el rio Ebro, el puerto
+				de Málaga, Los Pirineos, o una dirección postal. Cada
+				entidad en un nomenclátor debe tener su propio
+				identificador (IdEntidad). El responsable del
+				nomenclátor será el encargado de asignar los
+				identificadores, que serán únicos en el ámbito del
+				nomenclátor. En esta implementación, el atributo fid
+				representa este identificador.
+			</documentation>
+		</annotation>
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence maxOccurs="1" minOccurs="1">
+					<element maxOccurs="unbounded" name="nombreEntidad" type="mne:NombreEntidadType">
+						<annotation>
+							<documentation xml:lang="es">
+								Cada uno de los nombre de la entidad.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="unbounded" minOccurs="1" name="tipoEntidad" type="mne:TipoEntidadType">
+						<annotation>
+							<documentation xml:lang="es">
+								Los tipos, clases o categorías de la
+								entidad.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="unbounded" minOccurs="1" name="posicionEspacial" type="mne:PosicionEspacialType">
+						<annotation>
+							<documentation xml:lang="es">
+								Una entidad puede georrefereciarse
+								mediante un punto, una línea, una
+								superficie o mediante un mínimo
+								rectángulo envolvente (bounding box). Al
+								menos se recomienda georreferenciar un
+								topónimo por medio de un punto.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="unbounded" minOccurs="1" name="entidadLocal" type="mne:EntidadLocalType">
+						<annotation>
+							<documentation xml:lang="es">
+								Se especifica la ubicación geográfica de
+								la entidad. Sólo se utilizan entidades
+								registradas en el Registro de Entidades
+								Locales del MAP y en cada uno de estos
+								campos se debería utilizar el código de
+								la entidad Local (INE) para
+								identificarla. Este tipo puede ser
+								extendido si se desea incorporar las
+								Comunidades Autónomas, o cualquier otro
+								tipo de entidad territoria.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="unbounded" minOccurs="0" name="codificacion" type="mne:CodificacionType">
+						<annotation>
+							<documentation xml:lang="es">
+								El código identifica a la entidad, un
+								rio, un municipio, etc. Es una
+								descripción alfanumérica de la entidad,
+								pero este campo no se utiliza para
+								describir las entidades por las que
+								transcurre la entidad, como es en el
+								caso de los campos Mapa o EntidadLocal.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="unbounded" minOccurs="0" name="mapa" type="mne:MapaType">
+						<annotation>
+							<documentation xml:lang="es">
+								Nombre de la Serie cartográfica y Hojas
+								que contienen a la entidad.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="1" minOccurs="0" name="nivel" type="mne:NivelType">
+						<annotation>
+							<documentation xml:lang="es">
+								Valor numérico asignado a un subconjunto
+								de topónimos dentro de un nomenclátor
+								para ordenarlos según una gradación de
+								resoluciones. Si todos los topónimos de
+								un nomenclátor han sido extraidos de un
+								mismo mapa o corresponden a una misma
+								resolución tendrán el mismo nivel.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="unbounded" minOccurs="0" name="direccion" type="mne:DireccionType">
+						<annotation>
+							<documentation xml:lang="es">
+								Dirección física donde se ubica la
+								entidad.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="unbounded" minOccurs="0" name="entidadRelacionada" type="mne:EntidadRelacionadaType">
+						<annotation>
+							<documentation xml:lang="es">
+								Relación explícita con otra entidad que
+								se se encuentra en el modelo
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="unbounded" minOccurs="0" name="atributoEntidad" type="mne:AtributoEntidadType">
+						<annotation>
+							<documentation xml:lang="es">
+								Permite itnroducir otros datos
+								relacionados con la entidad como son el
+								número de habitantes, el tipo de
+								población o la altitud.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="unbounded" minOccurs="0" name="evento" type="mne:EventoType">
+						<annotation>
+							<documentation xml:lang="es">
+								Deja constancia de los eventos o sucesos
+								ocurridos a nivel físico en el conjunto
+								de datos y relacionados con la entrada
+								correspondiente.
+							</documentation>
+						</annotation>
+					</element>
+
+					<element maxOccurs="1" minOccurs="0" name="observaciones" type="string">
+						<annotation>
+							<documentation xml:lang="es">
+								Observaciones sobre la entidad
+							</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<!-- ==============================================================
+		definiciï¿½n de tipos complejos
+		NombreEntidadType
+		TipoEntidadType
+		SistemaCodificacionType
+		EntidadLocalType
+		ProvinciaType
+		MunicipioType
+		=================================================================== -->
+	<complexType name="NombreEntidadType">
+		<annotation>
+			<documentation xml:lang="es">
+				Cada uno de los nombre de la entidad.
+			</documentation>
+		</annotation>
+		<sequence maxOccurs="1" minOccurs="1">
+			<element maxOccurs="1" minOccurs="1" name="nombre" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Nombre de la entidad, el topónimo. Se recomienda
+						no utlizar abreviaturas, pero si se utilizan se
+						aconseja describir el significado de estas.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="0" name="etimologia" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						La etimología del nombre es el origen de las
+						palabras, de su significación y de su forma.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="0" name="pronunciacion" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Representación fonética del nombre
+						(transcripción), según el Alfabeto Fonético
+						Internacional, AFI. Si se uitliza un sistema
+						gráfico indicar cuál se utiliza en la
+						descripción.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="idioma" type="mne:IdiomaType">
+				<annotation>
+					<documentation xml:lang="es">
+						El idioma del nombre de la entidad en función
+						del código dado por la norma ISO639-2
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="claseNombre" type="mne:ClaseNombreType">
+				<annotation>
+					<documentation xml:lang="es">
+						El nombre de la entidad puede tener diferentes
+						apreciaciones, aunque Lleida y Lérida hacen
+						referencia a la misma entidad, el segundo se
+						refiere al nombre anterior, mientras que el
+						primero al preferente, de esta manera en este
+						campo se distingue todas las diferentes
+						apreciaciones de tratamiento que puede tener el
+						nombre de una entidad.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="estatus" type="mne:EstatusType">
+				<annotation>
+					<documentation xml:lang="es">
+						Si el topónimo es ofical, normalizado o ninguna
+						de las dos cosas. Desde la versión 1.2 sustituye
+						a "oficial" y "normalizado".
+					</documentation>
+				</annotation>
+			</element>
+
+			<element maxOccurs="1" minOccurs="1" name="fuente" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Identificador de la fuente de la que se ha
+						obtenido el topónimo. Si se ha utilizado Dublin
+						Core Metadata Element Set para catalogarla este
+						campo debe corresponder con el campo identifier.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="TipoEntidadType">
+		<annotation>
+			<documentation xml:lang="es">
+				Los tipos, clases o categorías de la entidad.
+			</documentation>
+		</annotation>
+		<sequence maxOccurs="1" minOccurs="1">
+			<element maxOccurs="1" minOccurs="1" name="tipo" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						El tipo o clase de la entidad (río, cordillera,
+						municipio, etc.)
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="catalogoEntidades" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						El catálogo de entidades en el que se clasifican
+						jerárquicamente los tipos de las entidades
+						utilizados en el nomenclátor. Se recomienda dar
+						la URL de un catálogo accesible en red.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="EntidadLocalType">
+		<annotation>
+			<documentation xml:lang="es">
+				Se especifica la ubicación geográfica de la entidad.
+				Sólo se utilizan entidades registradas en el Registro de
+				Entidades Locales del MAP y en cada uno de estos campos
+				se debería utilizar el código de la entidad Local (INE)
+				para identificarla. Este tipo puede ser extendido si se
+				desea incorporar las Comunidades Autónomas, o cualquier
+				otro tipo de entidad territoria.
+			</documentation>
+		</annotation>
+		<choice maxOccurs="1" minOccurs="1">
+			<element maxOccurs="unbounded" minOccurs="1" name="provincia" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						La provincia o provincias donde se encuentra la
+						entidad, dando como mínimo la provincia donde se
+						encuentra el punto que sirve de referencia
+						geográfica de la entidad. En el caso de que sean
+						varios puntos (entidades lineales, superficiales
+						o puntuales como Picos situados en el límite
+						entre dos o más unidades administrativas), se
+						puede especificar una de las provicias, varias o
+						todas. Si no se puede asignar ninguna provincia,
+						se deberá utilizar el valor "no aplica", al ser
+						este un campo obligatorio.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="unbounded" minOccurs="0" name="municipio" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						El municipio o municipios de la entidad. En caso
+						de utilizar un nombre geográfico hay que
+						completarlo con el nombre de la entidad local
+						que lo contiene siguiendo el patrón "nombre de
+						municipio(nombre de provincia)"
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="unbounded" minOccurs="0" name="comarca" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						La comarca o comarcas administrativas. En caso
+						de utilizar un nombre geográfico hay que
+						completarlo con el nombre de la entidad local
+						que lo contiene siguiendo el patrón "nombre de
+						comarca(nombre de comunidad autónoma)"
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="unbounded" minOccurs="0" name="isla" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						La isla o islas de la entidad. En caso de
+						utilizar un nombre geográfico hay que
+						completarlo con el nombre de la entidad local
+						que lo contiene siguiendo el patrón "nombre de
+						isla(nombre de provincia)"
+
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="unbounded" minOccurs="0" name="EATIM" type="mne:EATIMType">
+				<annotation>
+					<documentation xml:lang="es">
+						Las Entidades de Ámbito Territorial Inferior al
+						Municipio (EATIM). En caso de utilizar un nombre
+						geográfico hay que completarlo con el nombre de
+						la entidad local que lo contiene siguiendo el
+						patrón "nombre de EATIM(nombre de Municipio,
+						nombre de Provincia)"
+					</documentation>
+				</annotation>
+			</element>
+		</choice>
+	</complexType>
+	<complexType name="CodificacionType">
+		<annotation>
+			<documentation xml:lang="es">
+				El código identifica a la entidad, un rio, un municipio,
+				etc. Es una descripción alfanumérica de la entidad, pero
+				este campo no se utiliza para describir las entidades
+				por las que transcurre la entidad, como es en el caso de
+				los campos Mapa o EntidadLocal.
+			</documentation>
+		</annotation>
+		<sequence maxOccurs="1" minOccurs="1">
+			<element maxOccurs="1" minOccurs="1" name="codigo" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Clasifica la entidad de acuerdo con el Sistema
+						de Codificación empleado (si fuese el código
+						postal, por ejemplo, sería un número con 5
+						dígitos).
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="sistemaCodificacion" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Define el sistema al que está referido el código
+						(por ejemplo, el código postal, el código de una
+						base cartográfica numérica, etc.). Ejemplos de
+						sistema de codificación pueden ser Código INE,
+						Código Postal, Registro de Entidades Locales y
+						Códigos de ríos del CEDEX.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="EATIMType">
+		<sequence>
+			<element maxOccurs="1" minOccurs="1" name="nombre" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Se indica el nombre de la EATIM. En esta
+						implementación corresponde con "nombreEATIM".
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="tipo" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Se indica el tipo de la EATIM, pudiendo ser
+						caseríos, parroquias, aldeas, barrios,
+						anteiglesias, concejo, pedanías, lugares anejos,
+						etc. En esta implementación corresponde con
+						"tipoEATIM".
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="MapaType">
+		<annotation>
+			<documentation xml:lang="es">
+				Nombre de la Serie cartográfica y Hojas que contienen a
+				la entidad.
+			</documentation>
+		</annotation>
+		<sequence maxOccurs="1" minOccurs="1">
+			<element maxOccurs="1" minOccurs="1" name="serie" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Nombre de la Serie cartográfica.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="unbounded" minOccurs="1" name="hoja" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Número/s de la/s Hoja/s del mapa correspondiente
+						a la serie señalada, en el que se encuentra el o
+						los punto/s que sirve como referencia geométrica
+						del topónimo. Desde la versión 1.2 dentro de una
+						Serie cartográfica puede darse más de una Hoja.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="DireccionType">
+		<annotation>
+			<documentation xml:lang="es">
+				Dirección física donde se ubica la entidad.
+			</documentation>
+		</annotation>
+		<sequence maxOccurs="1" minOccurs="1">
+			<element maxOccurs="1" minOccurs="1" name="direccionPostal" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Dirección física donde se ubica la entidad. Por
+						ejemplo, puede ser el nombre de una calle y el
+						número o el nombre de una carretera y un punto
+						kilométrico. En los casos de los callejeros, la
+						dirección postal es en si misma una Entidad, por
+						lo que en ese caso debe utilizar el
+						NombreEntidad para definir la dirección postal
+						como entidad y a su ver para recoger el vial de
+						la dirección postal se utilizará el campo
+						Dirección.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="0" name="localidad" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						La Localidad donde se ubica la dirección de la
+						entidad.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="0" name="codigoPostal" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						El número del Código Postal donde se ubica la
+						entidad. No confundir el el que puede aparecer
+						en el campo Codificación que identifica la
+						entidad.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="EntidadRelacionadaType">
+		<annotation>
+			<documentation xml:lang="es">
+				Relación explícita con otra entidad que se se encuentra
+				en el modelo
+			</documentation>
+		</annotation>
+		<sequence maxOccurs="1" minOccurs="1">
+			<element maxOccurs="1" minOccurs="1" name="idEntidad" type="NCName">
+				<annotation>
+					<documentation xml:lang="es">
+						El identificador de la entidad con la que se va
+						a relacionar la entidad que se está
+						introduciendo en el modelo.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="descripcionRelacion" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Se describe la relación que existe entre ambas
+						entidades.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="tipoRelacion" type="mne:RelacionType">
+				<annotation>
+					<documentation xml:lang="es">
+						Se establece el tipo de relación que existe
+						entre las entidades.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="AtributoEntidadType">
+		<annotation>
+			<documentation xml:lang="es">
+				Permite introducir otros datos relacionados con la
+				entidad como son el número de habitantes, el tipo de
+				población o la altitud.
+			</documentation>
+		</annotation>
+		<sequence maxOccurs="1" minOccurs="1">
+			<element maxOccurs="1" minOccurs="1" name="tipoAtributo" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Hace referencia al tipo de dato que se quiere
+						documentar (p.e. la altitud).
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="valorAtributo" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Se refiere al valor del atributo (p.e. 580 si la
+						altitud es 580 metros)
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="unidadAtributo" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Unidad de medida del dato, pudiendo ser no
+						aplicable o adimensional (p.e metros si hablamos
+						de altitud).
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="0" name="calidadAtributo" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Describe la calidad del valor, por ejemplo ±0,1
+						en el valor de las unidades.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="0" name="notaAtributo" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						Nota aclaratoria sobre el atributo.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="0" name="fechaAtributo" type="mne:FechaAtributoType">
+				<annotation>
+					<documentation xml:lang="es">
+						Fecha u hora o ambas de la toma de la medida.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="EventoType">
+		<annotation>
+			<documentation xml:lang="es">
+				Deja constancia de los eventos o sucesos ocurridos a
+				nivel físico en el conjunto de datos y relacionados con
+				la entrada correspondiente.
+			</documentation>
+		</annotation>
+		<sequence maxOccurs="1" minOccurs="1">
+			<element maxOccurs="1" minOccurs="1" name="tipoEvento" type="mne:TipoEventoType">
+				<annotation>
+					<documentation xml:lang="es">
+						Describe el suceso o evento, puede ser alta,
+						baja, modificación o actualización.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="descripcion" type="string">
+				<annotation>
+					<documentation xml:lang="es">
+						CDampo de texto libre para indicar a que campo
+						afecta el evento.
+					</documentation>
+				</annotation>
+			</element>
+			<element maxOccurs="1" minOccurs="1" name="fecha" type="mne:FechaType">
+				<annotation>
+					<documentation xml:lang="es">
+						Contiene la fecha de ocurrencia del suceso.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="PosicionEspacialType">
+		<annotation>
+			<documentation xml:lang="es">
+				Una entidad puede georrefereciarse mediante un punto,
+				una línea, una superficie o mediante un mínimo
+				rectángulo envolvente (bounding box). Al menos se
+				recomienda georreferenciar un topónimo por medio de un
+				punto.
+			</documentation>
+		</annotation>
+		<complexContent>
+			<restriction base="gml:GeometryAssociationType">
+				<choice maxOccurs="1" minOccurs="1">
+					<element maxOccurs="1" minOccurs="1" ref="gml:Point">
+						<annotation>
+							<documentation xml:lang="es">
+								En esta implementación se utiliza esta
+								codifiicación para las geometrías
+								puntuales. El sistema geodético y de
+								referencia debe ser explícito.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="1" minOccurs="1" ref="gml:LineString">
+						<annotation>
+							<documentation xml:lang="es">
+								En esta implementación se utiliza esta
+								codificación para las geometrías
+								lineales. El sistema geodético y de
+								referencia debe ser explícito.
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="1" minOccurs="1" ref="gml:Polygon">
+						<annotation>
+							<documentation xml:lang="es">
+								En esta implementación se utiliza esta
+								codificación para las geometrías
+								superficiales.El sistema geodético y de
+								referencia debe ser explícito.
+
+							</documentation>
+						</annotation>
+					</element>
+					<element maxOccurs="1" minOccurs="1" ref="gml:Box">
+						<annotation>
+							<documentation xml:lang="es">
+								En esta implementación se utiliza esta
+								codificación para los rectángulos
+								mínimos envolventes. El sistema
+								geodético y de referencia debe ser
+								explícito.
+							</documentation>
+						</annotation>
+					</element>
+				</choice>
+				<attributeGroup ref="xlink:simpleLink"/>
+				<attribute ref="gml:remoteSchema" use="optional"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+
+	<!-- ==============================================================
+		definiciï¿½n de enumeraciones
+		IdiomaType
+		ClaseNombreType
+		OficialType
+		=================================================================== -->
+	<simpleType name="IdiomaType">
+		<annotation>
+			<documentation xml:lang="es">
+				Contiene los códigos que son recogidos en la norma ISO
+				639 2 (Alpha-3 Code). Esta lista puede ser extendida con
+				los códigos de otros idomas. Consultar en
+				http://www.loc.gov/standards/iso639-2/langcodes.html
+			</documentation>
+		</annotation>
+		<restriction base="string">
+			<enumeration value="spa">
+				<annotation>
+					<documentation xml:lang="es">
+						Español o Castellano
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="cat">
+				<annotation>
+					<documentation xml:lang="es">
+						Catalán - Valenciano
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="eus">
+				<annotation>
+					<documentation xml:lang="es">Euskera</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="glg">
+				<annotation>
+					<documentation xml:lang="es">Gallego</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="arg">
+				<annotation>
+					<documentation xml:lang="es">
+						Aragonés
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="ast">
+				<annotation>
+					<documentation xml:lang="es">
+						Asturiano
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="oci">
+				<annotation>
+					<documentation xml:lang="es">
+						Aranés (a través del código del occitano)
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="mul">
+				<annotation>
+					<documentation xml:lang="es">
+						Múltiples Lenguas (multilingüe)
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="und">
+				<annotation>
+					<documentation xml:lang="es">
+						Indeterminado (no se dispone del idioma del
+						topónimo)
+					</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	<simpleType name="ClaseNombreType">
+		<restriction base="string">
+			<enumeration value="Preferente">
+				<annotation>
+					<documentation xml:lang="es">
+						Nombre principal de una entidad geográfica,
+						necesario para hacer posible la gestión interna
+						de nombres únicos. Si existe un nombre oficial
+						ha de tomarse como nombre preferente. Si existen
+						dos o más nombres oficiales, uno de ellos debe
+						tomarse como nombre preferente y el resto como
+						alternativos, aplicando algún criterio
+						convencional, uniforme y objetivo.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Alternativo">
+				<annotation>
+					<documentation xml:lang="es">
+						Nombre de una entidad geográfica que es oficial
+						al mismo nivel que el nombre preferente.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Variante">
+				<annotation>
+					<documentation xml:lang="es">
+						Nombre de uso menor o restringido, referido a
+						una entidad geográfica con un nombre preferente.
+						No puede ser un nombre oficial.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Exónimo">
+				<annotation>
+					<documentation xml:lang="es">
+						Nombre que dan a un lugar los hablantes de
+						lenguas ajenas a él.de uso menor o restringido.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Histórico">
+				<annotation>
+					<documentation xml:lang="es">
+						Nombre en desuso, utilizado hace más de 100
+						años.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Anterior">
+				<annotation>
+					<documentation xml:lang="es">
+						Nombre en desuso, utilizado hace menos de 100
+						años.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Sobrenombre">
+				<annotation>
+					<documentation xml:lang="es">
+						Nombre en uso de una entidad geográfica
+						metafórico, literario o coloquial. Sustituye a
+						"Alias". Introducido en la versión 1.2.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="No disponible">
+				<annotation>
+					<documentation xml:lang="es">
+						Nombre geográfico incluido provisionalmente en
+						esta clase, por considerarse su clase
+						desconocida o indeterminada.
+					</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	<simpleType name="EstatusType">
+		<annotation>
+			<documentation xml:lang="es">
+				Sustituye a los tipos "OficialType" y "NormalizadoType".
+				Introducido en la versión 1.2.
+			</documentation>
+		</annotation>
+		<restriction base="string">
+			<enumeration value="Oficial">
+				<annotation>
+					<documentation xml:lang="es">
+						Cuando el topónimo es declarado y publicado como
+						tal por un órgano competente mediante el acto
+						administrativo correspondiente. El acto
+						administrativo que establece la oficialidad de
+						un conjunto de topónimos es, en general, su
+						publicación en el B.O.E. o en el Boletín Oficial
+						de una Comunidad Autónoma, de un Decreto, Orden
+						o disposición de algún tipo. Se recomienda que
+						en la interfaz de usuario aparezan los nombres
+						oficiales de una misma entidad ordenados al
+						mismo nivel. Corresponde con OficialType="Sí",
+						NormalizadoType="Sí" en versiones anteriores a
+						la 1.2.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Normalizado">
+				<annotation>
+					<documentation xml:lang="es">
+						Cuando el topónimo está uniformizado de acuerdo
+						a un proceso de normalización bien definido y no
+						es Oficial. Corresponde con OficialType="No",
+						NormalizadoType="Sí" en versiones anteriores a
+						la 1.2.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="No normalizado">
+				<annotation>
+					<documentation xml:lang="es">
+						Si se sabe con certeza que no es ni Oficial ni
+						Normalizado. Corresponde con OficialType="No",
+						NormalizadoType="No" en versiones anteriores a
+						la 1.2.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="No disponible">
+				<annotation>
+					<documentation xml:lang="es">
+						Si no se puede establecer en ninguna de las
+						categorías anteriores.
+					</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	<simpleType name="NivelType">
+		<annotation>
+			<documentation xml:lang="es">
+				Valor numérico asignado a un subconjunto de topónimos
+				dentro de un nomenclátor para ordenarlos según una
+				gradación de resoluciones. Si todos los topónimos de un
+				nomenclátor han sido extraidos de un mismo mapa o
+				corresponden a una misma resolución tendrán el mismo
+				nivel.
+			</documentation>
+		</annotation>
+		<restriction base="integer">
+			<enumeration value="1">
+				<annotation>
+					<documentation xml:lang="es">
+						&gt;= 1.000.000
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="2">
+				<annotation>
+					<documentation xml:lang="es">
+						&lt;1.000.000 - 500.000
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="3">
+				<annotation>
+					<documentation xml:lang="es">
+						&lt;500.000 - 100.000
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="4">
+				<annotation>
+					<documentation xml:lang="es">
+						&gt;&lt;100.000 - &gt;25.000
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="5">
+				<annotation>
+					<documentation xml:lang="es">
+						&lt;=25.000 - &gt;10.000
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="6">
+				<annotation>
+					<documentation xml:lang="es">
+						&lt;=10.000 - 5.000
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="7">
+				<annotation>
+					<documentation xml:lang="es">
+						&lt;5.000 - 1.000
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="8">
+				<annotation>
+					<documentation xml:lang="es">
+						&lt;=10.000
+					</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	<simpleType name="RelacionType">
+		<restriction base="string">
+			<enumeration value="Jerárquica.padre">
+				<annotation>
+					<documentation xml:lang="es">
+						Permite la correcta definición de un Sistema de
+						Identificadores Geográficos estructurado con
+						varios niveles jerárquicos.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Jerárquica.hijo">
+				<annotation>
+					<documentation xml:lang="es">
+						Permite la correcta definición de un Sistema de
+						Identificadores Geográficos estructurado con
+						varios niveles jerárquicos.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Lógica">
+				<annotation>
+					<documentation xml:lang="es">
+						Permite la definición de relaciones
+						significativas o útiles desde el punto de vista
+						de gestión de un nomenclátor (por ejemplo,
+						recoger la relación lógica "es capital de")
+					</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	<simpleType name="TipoEventoType">
+		<restriction base="string">
+			<enumeration value="Alta">
+				<annotation>
+					<documentation xml:lang="es">
+						Consiste en introducir una nueva entrada en el
+						nomenclátor.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Baja">
+				<annotation>
+					<documentation xml:lang="es">
+						Consiste en eliminar una entrada en el
+						nomenclátor.
+					</documentation>
+				</annotation>
+			</enumeration>
+
+			<enumeration value="Modificación">
+				<annotation>
+					<documentation xml:lang="es">
+						Cambio en los datos almacenados en una entrada
+						del nomenclátor debido a una mera correccón, que
+						puede deberse a la consideración de la
+						información procedente de una fuente externa,
+						pero que no está originada por un cambio en la
+						realidad.
+					</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Actualización">
+				<annotation>
+					<documentation xml:lang="es">
+						Cambio en los datos almacenados en una entrada
+						del nomenclátor originado por un cambio acaecido
+						en la realidad.
+					</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	<simpleType name="FechaAtributoType">
+		<annotation>
+			<documentation xml:lang="es">
+				La fecha y la hora. La fecha se debe describir como
+				indica la norma ISO8601 o su equivalente norma española
+				UNE-EN 28601, donde se establece como formato
+				facultativo CCYY-MM-DD
+			</documentation>
+		</annotation>
+		<union>
+			<simpleType>
+				<restriction base="dateTime"/>
+			</simpleType>
+			<simpleType>
+				<restriction base="mne:FechaType"/>
+			</simpleType>
+		</union>
+	</simpleType>
+	<simpleType name="FechaType">
+		<annotation>
+			<documentation xml:lang="es">
+				La fecha se debe describir como indica la norma ISO8601
+				o su equivalente norma española UNE-EN 28601, donde se
+				establece como formato facultativo CCYY-MM-DD donde CCYY
+				representa el año civil, MM el número ordinal de un mes
+				de ese año cilivl y DD el número oridinal de una día de
+				ese mes.
+			</documentation>
+		</annotation>
+		<union>
+			<simpleType>
+				<restriction base="date">
+					<annotation>
+						<documentation xml:lang="es">
+							CCYY-MM-DD
+						</documentation>
+					</annotation>
+				</restriction>
+			</simpleType>
+			<simpleType>
+				<restriction base="gYear">
+					<annotation>
+						<documentation xml:lang="es">
+							CCYY
+						</documentation>
+					</annotation>
+				</restriction>
+			</simpleType>
+			<simpleType>
+				<restriction base="gYearMonth">
+					<annotation>
+						<documentation xml:lang="es">
+							CCYY-MM
+						</documentation>
+					</annotation>
+				</restriction>
+			</simpleType>
+		</union>
+	</simpleType>
+</schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema targetNamespace="http://www.gvsig.com/cit"
+ xmlns:cit="http://www.gvsig.com/cit" 
+ xmlns:gml="http://www.opengis.net/gml"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified" 
+ version="2.1.2">
+    <xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/2.1.2/feature.xsd" />
+   <xs:element name="Localidad" type="localidad_Type" substitutionGroup="gml:_Feature"/>
+   <xs:complexType name="localidad_Type">
+         <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+               <xs:sequence>
+                  <xs:element name="identificador" type="xs:integer" />
+                  <xs:element name="nombre" type="xs:string" />
+                  <xs:element name="area" type="gml:GeometryPropertyType" />
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+    </xs:complexType>
+</xs:schema>

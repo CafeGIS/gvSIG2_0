@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:er=" http://www.euroroads.org" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gdf="http://www.ukusa.org"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" targetNamespace="
+http://www.euroroads.org" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:annotation>
+<xs:documentation>GML schema definition for the EuroRoadS AttributeBase package, version
+1.0</xs:documentation>
+</xs:annotation>
+<xs:import namespace="http://www.opengis.net/gml" schemaLocation="./base/gml.xsd"/>
+<xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="./xlink/xlinks.xsd"/>
+<!--=======================================================================-->
+<xs:complexType name="RoadAttributeType" abstract="true">
+<xs:annotation>
+<xs:documentation>GML definition of the EuroRoadS class ER_RoadAttribute</xs:documentation>
+</xs:annotation>
+<xs:sequence>
+<xs:element name="validity" type="gml:TimePeriodType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="RoadAttribute" type="er:RoadAttributeType" abstract="true"/>
+<!--=======================================================================-->
+<xs:complexType name="RoadNodeAttributeType" abstract="true">
+<xs:annotation>
+<xs:documentation>GML definition of the EuroRoadS class
+ER_RoadNodeAttribute</xs:documentation>
+</xs:annotation>
+<xs:complexContent>
+<xs:extension base="er:RoadAttributeType"/>
+</xs:complexContent>
+</xs:complexType>
+<xs:element name="RoadNodeAttribute" type="er:RoadNodeAttributeType" abstract="true"
+substitutionGroup="er:RoadAttribute"/>
+<!--=======================================================================-->
+<xs:complexType name="LinkAttributeType" abstract="true">
+<xs:annotation>
+<xs:documentation>GML definition of the EuroRoadS class ER_LinkAttribute</xs:documentation>
+</xs:annotation>
+<xs:complexContent>
+<xs:extension base="er:RoadAttributeType"/>
+</xs:complexContent>
+</xs:complexType>
+<xs:element name="LinkAttribute" type="er:LinkAttributeType" abstract="true"
+substitutionGroup="er:RoadAttribute"/>
+<!--=======================================================================-->
+<xs:complexType name="RoadLinkAttributeType" abstract="true">
+<xs:annotation>
+<xs:documentation>GML definition of the EuroRoadS class
+ER_RoadLinkAttribute</xs:documentation>
+</xs:annotation>
+<xs:complexContent>
+<xs:extension base="er:RoadAttributeType"/>
+</xs:complexContent>
+</xs:complexType>
+<xs:element name="RoadLinkAttribute" type="er:RoadLinkAttributeType" abstract="true"
+substitutionGroup="er:RoadAttribute"/>
+<!--=======================================================================-->
+<xs:complexType name="FerryLinkAttributeType" abstract="true">
+<xs:annotation>
+<xs:documentation>GML definition of the EuroRoadS class ER_FerryLinkAttribute</xs:documentation>
+</xs:annotation>
+<xs:complexContent>
+<xs:extension base="er:RoadAttributeType"/>
+</xs:complexContent>
+</xs:complexType>
+<xs:element name="FerryLinkAttribute" type="er:FerryLinkAttributeType" abstract="true"
+substitutionGroup="er:RoadAttribute"/>
+<!--=======================================================================-->
+<xs:complexType name="RoadnetElementAttributeType" abstract="true">
+<xs:annotation>
+<xs:documentation>GML definition of the EuroRoadS class
+ER_RoadnetElementAttribute</xs:documentation>
+</xs:annotation>
+<xs:complexContent>
+<xs:extension base="er:RoadAttributeType"/>
+</xs:complexContent>
+</xs:complexType>
+<xs:element name="RoadnetElementAttribute" type="er:RoadnetElementAttributeType" abstract="true"
+substitutionGroup="er:RoadAttribute"/>
+<!--=======================================================================-->
+<xs:complexType name="ComplexRoadnetElementAttributeType" abstract="true">
+<xs:annotation>
+<xs:documentation>GML definition of the EuroRoadS class
+ER_ComplexRoadnetElementAttribute</xs:documentation>
+</xs:annotation>
+<xs:complexContent>
+<xs:extension base="er:RoadAttributeType"/>
+</xs:complexContent>
+</xs:complexType>
+<xs:element name="ComplexRoadnetElementAttribute" type="er:ComplexRoadnetElementAttributeType"
+abstract="true" substitutionGroup="er:RoadAttribute"/>
+<!--=======================================================================-->
+</xs:schema>

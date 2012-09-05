@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema targetNamespace="http://www.gvsig.com/cit" 
+	xmlns:cit="http://www.gvsig.com/cit" 
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	elementFormDefault="qualified" 
+	attributeFormDefault="unqualified"
+	version="2.1.2">
+    <xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/2.1.2/feature.xsd" />
+	<xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lines_Type">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractFeatureType">
+				<xs:sequence>
+					<xs:element name="the_geom" minOccurs="0" nillable="true" type="gml:GeometryPropertyType"/>
+					<xs:element name="ENTITY" minOccurs="0" nillable="true" type="xs:string"/>
+					<xs:element name="LAYER" minOccurs="0" nillable="true" type="xs:string"/>
+					<xs:element name="LEVEL" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="ELEVATION" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="COLOR" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="ID" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="ID_PONT" minOccurs="0" nillable="true" type="xs:string"/>
+					<xs:element name="NOMBRE" minOccurs="0" nillable="true" type="xs:string"/>
+					<xs:element name="ANCHO_C" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="CARRIL_D" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="CARRIL_I" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="ANCHO_M" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="ARCEN" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="TUNEL" minOccurs="0" nillable="true" type="xs:boolean"/>
+					<xs:element name="URBANA" minOccurs="0" nillable="true" type="xs:boolean"/>
+					<xs:element name="TIPO" minOccurs="0" nillable="true" type="xs:string"/>
+					<xs:element name="ANCHO_BUF" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="FROM_NODE" minOccurs="0" nillable="true" type="xs:double"/>
+					<xs:element name="TO_NODE" minOccurs="0" nillable="true" type="xs:double"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="lines" type="cit:lines_Type" substitutionGroup="gml:_Feature"/>
+</xs:schema>
