@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>org.gvsig.fmap.dal.index.spatial
+	</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>libFMap_spatialindex</name>
+	<url>http://gvsig.org</url>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-library-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<!-- gt2 -->
+		<gt2-jarIncludes>org/gvsig/fmap/dal/index/spatial/gt2/**
+		</gt2-jarIncludes>
+		<gt2-jarExcludes>NONE</gt2-jarExcludes>
+
+		<!-- jts -->
+		<jts-jarIncludes>org/gvsig/fmap/dal/index/spatial/jts/**
+		</jts-jarIncludes>
+		<jts-jarExcludes>NONE</jts-jarExcludes>
+
+		<!-- jsi -->
+		<jsi-jarIncludes>org/gvsig/fmap/dal/index/spatial/jsi/**
+		</jsi-jarIncludes>
+		<jsi-jarExcludes>NONE</jsi-jarExcludes>
+
+		<!-- spatialindex -->
+		<sptidx-jarIncludes>org/gvsig/fmap/dal/index/spatial/spatialindex/**
+		</sptidx-jarIncludes>
+		<sptidx-jarExcludes>NONE</sptidx-jarExcludes>
+		
+		<build-dir>${basedir}/../build</build-dir>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>spi</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>jts</artifactId>
+			<version>gvsig</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>gt2sidx</artifactId>
+			<version>gvsig</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>gt2-main</artifactId>
+			<version>gvsig</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>spatialindex</artifactId>
+			<version>gvsig</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+		<testResources>
+			<testResource>
+				<directory>src-test</directory>
+			</testResource>
+		</testResources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>${gt2-jarIncludes}</exclude>
+						<exclude>${jts-jarIncludes}</exclude>
+						<exclude>${jsi-jarIncludes}</exclude>
+						<exclude>${sptidx-jarIncludes}</exclude>
+					</excludes>
+				</configuration>
+				<executions>
+					<!--
+						Generates a jar file only with the GT2 based spatial index classes
+					-->
+					<execution>
+						<id>gt2</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<classifier>gt2</classifier>
+							<includes>
+								<include>${gt2-jarIncludes}</include>
+							</includes>
+							<excludes>
+								<exclude>${gt2-jarExcludes}</exclude>
+							</excludes>
+						</configuration>
+					</execution>
+					<!--
+						Generates a jar file only with the JTS based spatial index classes
+					-->
+					<execution>
+						<id>jts</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<classifier>jts</classifier>
+							<includes>
+								<include>${jts-jarIncludes}</include>
+							</includes>
+							<excludes>
+								<exclude>${jts-jarExcludes}</exclude>
+							</excludes>
+						</configuration>
+					</execution>
+					<!--
+						Generates a jar file only with the JSI based spatial index classes
+					-->
+					<execution>
+						<id>jsi</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<classifier>jsi</classifier>
+							<includes>
+								<include>${jsi-jarIncludes}</include>
+							</includes>
+							<excludes>
+								<exclude>${jsi-jarExcludes}</exclude>
+							</excludes>
+						</configuration>
+					</execution>
+					<!--
+						Generates a jar file only with the spatialindex based spatial index classes
+					-->
+					<execution>
+						<id>spatialindex</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<classifier>spatialindex</classifier>
+							<includes>
+								<include>${sptidx-jarIncludes}</include>
+							</includes>
+							<excludes>
+								<exclude>${sptidx-jarExcludes}</exclude>
+							</excludes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
