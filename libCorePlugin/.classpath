@@ -1,0 +1,49 @@
+<classpath>
+  <classpathentry kind="src" path="src"/>
+  <classpathentry kind="src" path="src-test" output="target/test-classes"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/castor/gvsig/castor-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/com.iver.utiles/2.0-SNAPSHOT/com.iver.utiles-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/gvsig/com.iver.utiles/2.0-SNAPSHOT/com.iver.utiles-2.0-SNAPSHOT-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/cordin/.m2/repository/org/gvsig/com.iver.utiles/2.0-SNAPSHOT/com.iver.utiles-2.0-SNAPSHOT-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/javaws/gvsig/javaws-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jcalendar/gvsig/jcalendar-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jcommon/gvsig/jcommon-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jfreechart/gvsig/jfreechart-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jh/gvsig/jh-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/JUF/gvsig/JUF-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar" sourcepath="M2_REPO/junit/junit/3.8.1/junit-3.8.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/JWizardComponent/gvsig/JWizardComponent-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/kxml2/gvsig/kxml2-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14.jar" sourcepath="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/looks/gvsig/looks-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/org.gvsig.andami/2.0-SNAPSHOT/org.gvsig.andami-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/gvsig/org.gvsig.andami/2.0-SNAPSHOT/org.gvsig.andami-2.0-SNAPSHOT-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/cordin/.m2/repository/org/gvsig/org.gvsig.andami/2.0-SNAPSHOT/org.gvsig.andami-2.0-SNAPSHOT-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/org.gvsig.i18n/2.0-SNAPSHOT/org.gvsig.i18n-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/gvsig/org.gvsig.i18n/2.0-SNAPSHOT/org.gvsig.i18n-2.0-SNAPSHOT-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/cordin/.m2/repository/org/gvsig/org.gvsig.i18n/2.0-SNAPSHOT/org.gvsig.i18n-2.0-SNAPSHOT-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/org.gvsig.tools/2.0-SNAPSHOT/org.gvsig.tools-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/gvsig/org.gvsig.tools/2.0-SNAPSHOT/org.gvsig.tools-2.0-SNAPSHOT-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/cordin/.m2/repository/org/gvsig/org.gvsig.tools/2.0-SNAPSHOT/org.gvsig.tools-2.0-SNAPSHOT-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/org.gvsig.ui/2.0-SNAPSHOT/org.gvsig.ui-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/gvsig/org.gvsig.ui/2.0-SNAPSHOT/org.gvsig.ui-2.0-SNAPSHOT-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/cordin/.m2/repository/org/gvsig/org.gvsig.ui/2.0-SNAPSHOT/org.gvsig.ui-2.0-SNAPSHOT-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.5.5/slf4j-api-1.5.5.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.5.5/slf4j-api-1.5.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.5.5/slf4j-log4j12-1.5.5.jar" sourcepath="M2_REPO/org/slf4j/slf4j-log4j12/1.5.5/slf4j-log4j12-1.5.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/tempFileManager/gvsig/tempFileManager-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/xerces/gvsig/xerces-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/xml-apis/gvsig/xml-apis-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/xmlrpc/gvsig/xmlrpc-gvsig.jar"/>
+</classpath>

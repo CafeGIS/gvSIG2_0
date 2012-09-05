@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>com.iver.core</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>libCorePlugin</name>
+	<url>http://gvsig.org</url>
+	<description> This is the extension that provide the basic skin to
+		gvsig</description>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-extension-base-pom
+		</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.andami</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<properties>
+		<extension-distribution> gvSIG/extensiones/com.iver.core/
+		</extension-distribution>
+		<gvsig-extension-distribution> gvSIG/extensiones/com.iver.cit.gvsig/
+		</gvsig-extension-distribution>
+		<extension-appgvsig-lib-dir> ${extension-dir}/com.iver.cit.gvsig/lib/
+		</extension-appgvsig-lib-dir>
+		<build-dir>${basedir}/../build</build-dir>
+		<library-dir>.</library-dir>
+		<!--		 Path to the output directory for the distribution -->
+		<extension-distribution-output-directory>target/
+		</extension-distribution-output-directory>
+		<distribution-output-directory>distribution/
+		</distribution-output-directory>
+
+
+		<!-- Path to the file descriptor to generate the extension-->
+		<extension-distribution-file>distribution/extension-distribution.xml
+		</extension-distribution-file>
+		<!-- Final name of the output directory for the distribution -->
+		<distribution-final-name>core</distribution-final-name>
+		<application-name>core</application-name>
+		<output-dir_installers>target/intallers/
+		</output-dir_installers>
+	</properties>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+		<plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${gvsig-path}/${extension-distribution}</directory>
+                            <includes>
+                                <include>**</include>
+                            </includes>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+        </plugins>
+	</build>
+</project>
