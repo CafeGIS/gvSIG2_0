@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" output="bin-test" path="src-test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libIverUtiles"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libFMap_dal"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libFMap_dalfile"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libTools"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libFMap_geometries"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libMetadata"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libFMap_mapcontext"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libProjection"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.5.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

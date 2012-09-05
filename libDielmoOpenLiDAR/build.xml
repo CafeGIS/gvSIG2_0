@@ -1,0 +1,114 @@
+<project name="jlidarlib" default="clean-orig" basedir=".">
+    <description>
+        Genera jDielmoOpenLiDARlib.jar en /lib y una distribución
+    </description>
+	<!-- set global properties for this build -->
+	<property name="src" location="src"/>
+	<property name="build" location="bin"/>
+	<property name="lib"  location="lib"/>
+	<property name="doc"  location="doc"/>
+	<property name="jarName" value="jDielmoOpenLiDARlib"/>
+	<property name="sig_lidar_driver" location="../extDielmoOpenLidar/lib"/>
+	<property name="dist"  location="dist"/>
+	<property name="libDir" location="../_fwAndami/gvSIG/extensiones/com.iver.cit.gvsig/lib" />
+	<property name="andamiLibs" location="../_fwAndami/lib" />
+	<property name="compile-classpath" value="${libDir}/fmap.jar:${andamiLibs}/log4j-1.2.8.jar"/>
+	
+	<property name="JavaSourceVersion" value="1.4"/>
+	<property name="JavaTargetVersion" value="1.4"/>
+	<property name="encoding" value="ISO_8859_1"/>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+	<echo>
+		Compiling ${ant.project.name}...</echo>
+  </target>
+
+  <target name="make1" depends="init"
+        description="generate jDielmoOpenLiDARlib.jar in /lib and in the gvSIG Driver" >
+    <jar jarfile="${sig_lidar_driver}/${jarName}.jar">
+      <fileset dir="${build}" />
+    </jar>
+  	
+  	<jar jarfile="${lib}/${jarName}.jar" basedir="${build}" includes="**/**"/>
+  </target>
+	
+	<target name="clean-orig" depends="dist"
+			description="clean dist directory" >
+		<!-- Clean the distribution directory -->
+		<delete dir="${dist}/src"/>
+		<delete dir="${dist}/doc"/>
+		<delete dir="${dist}/lib"/>
+	</target>
+
+  <target name="dist" depends="make1"
+	description="generate the distribution" >
+    <!-- Remove previous distribution directory -->
+    <delete dir="${dist}"/>
+    <!-- Create the distribution directory structure -->
+    <mkdir dir="${dist}"/>
+    <mkdir dir="${dist}/src"/>
+    <mkdir dir="${dist}/doc"/>
+    <mkdir dir="${dist}/lib"/>
+    <!-- Copy necessary distribution files to dist dir -->
+    <copy todir="${dist}/src">
+      <fileset dir="${src}"/>
+    </copy>
+  	
+    <copy todir="${dist}/doc">
+      <fileset dir="${doc}">
+      </fileset>
+    </copy>
+  	
+  	<copy todir="${dist}/lib">
+      <fileset dir="${lib}"/>
+    </copy>
+  	
+    <!-- Zip distribution -->
+    <zip destfile="${dist}/jDielmoOpenLiDARlib.zip"
+         basedir="${dist}"
+         update="true"
+    />
+  </target>
+	
+	<target name="batch-build"
+			description="compile the sources, create the jar file"
+			depends="init,compile,create-jar,move-to-extDielmoOpenLidar">
+	</target>
+
+	<target name="compile" description="compile the source" >
+		<!-- Compile the Java code from ${src} to ${build} -->
+		<mkdir dir="${build}" />
+		<javac  srcdir="${src}"
+			destdir="${build}"
+			classpath="${compile-classpath}"
+			source="${JavaSourceVersion}"
+			target="${JavaTargetVersion}"			
+			debug="${debug}"
+			debuglevel="${debuglevel}"
+			excludes="com/iver/cit/gvsig/fmap/**"
+			encoding="${encoding}"/>
+	</target>
+	
+	<target name="create-jar"
+			description="Creates the plugin jar">
+		<mkdir dir="${dist}"/>
+	    <jar 	jarfile="${dist}/${jarName}.jar"
+	    		basedir="${build}"/>
+	</target>
+	
+	<target name="move-to-extDielmoOpenLidar">
+	  	<!-- jar file must be in gvSIG/lib directory -->
+	  	<!--<copy file="${without_src}/${plugin}.jar" todir="${lib-dir}"/>-->
+	    <move todir="${sig_lidar_driver}" file="${dist}/${jarName}.jar"/>
+	</target>
+	
+	<target name="clean"
+			description="clean up">
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${build}" />
+		<delete dir="${dist}" />
+	</target>
+
+</project>
