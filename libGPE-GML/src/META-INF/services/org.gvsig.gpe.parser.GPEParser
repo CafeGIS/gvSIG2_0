@@ -1,0 +1,4 @@
+org.gvsig.gpe.gml.parser.GPEGml2_1_2_Parser
+org.gvsig.gpe.gml.parser.GPEGml2_1_0_Parser
+org.gvsig.gpe.gml.parser.GPEGml2_0_0_Parser
+org.gvsig.gpe.gml.parser.GPEGmlSFP0Parser

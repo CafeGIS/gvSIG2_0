@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.opengis.net/examples"
+    xmlns:ex="http://www.opengis.net/examples"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified"
+    version="2.1.2">
+    <annotation>
+        <appinfo>schools.xsd v2.1.2 2002-07</appinfo>
+        <documentation xml:lang="en">
+            GML schema for Schools example
+        </documentation>
+    </annotation>
+    <!-- import constructs from the GML Feature and Geometry schemas -->
+    <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/2.1.2/feature.xsd" />
+    <!-- ==============================================================
+        global element declarations
+        =================================================================== -->
+    <element name="State" type="ex:StateType"
+        substitutionGroup="gml:_FeatureCollection"/>
+    <element name="SchoolDistrict" type="ex:SchoolDistrictType"
+        substitutionGroup="gml:_FeatureCollection"/>
+    <element name="schoolMember" type="gml:FeatureAssociationType"
+        substitutionGroup="gml:featureMember"/>
+    <element name="School" type="ex:SchoolType"
+        substitutionGroup="gml:_Feature"/>
+    <element name="College" type="ex:CollegeType"
+        substitutionGroup="gml:_Feature"/>
+    <element name="address" type="string"/>
+    <!-- ==============================================================
+        type definitions for state educational institutions
+        =================================================================== -->
+    <complexType name="StateType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureCollectionType">
+                <sequence>
+                    <element name="studentPopulation" type="integer"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="SchoolDistrictType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureCollectionType">
+                <sequence>
+                    <element ref="gml:extentOf"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="SchoolType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureType">
+                <sequence>
+                    <element ref="ex:address"/>
+                    <element ref="gml:location"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="CollegeType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureType">
+                <sequence>
+                    <element ref="ex:address"/>
+                    <element ref="gml:pointProperty"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+</schema>

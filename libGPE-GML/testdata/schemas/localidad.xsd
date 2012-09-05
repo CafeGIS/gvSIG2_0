@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" elementFormDefault="qualified" version="0.1">
+   <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/2.1.2/feature.xsd" />
+   <xsd:element name="Localidad" type="localidad_Type" substitutionGroup="gml:_Feature"/>
+   <xsd:complexType name="localidad_Type">
+         <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+               <xsd:sequence>
+                  <xsd:element name="identificador" type="xsd:integer" />
+                  <xsd:element name="nombre" type="xsd:string" />
+                  <xsd:element name="area" type="gml:GeometryPropertyType" />
+               </xsd:sequence>
+            </xsd:extension>
+         </xsd:complexContent>
+    </xsd:complexType>
+</xsd:schema>

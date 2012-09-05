@@ -1,0 +1,4562 @@
+<wfs:FeatureCollection numberOfFeatures="241" 
+xmlns:app="http://www.deegree.org/app"
+xmlns:wfs="http://www.opengis.net/wfs"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.deegree.org/app http://localhost:8080/deegree-wfs/services?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=app:Springs&amp;NAMESPACE=xmlns(app=http://www.deegree.org/app) http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+	<gml:boundedBy>
+		<gml:Envelope srsName="EPSG:26912">
+			<gml:pos srsDimension="2">252400.003125 4107118.55</gml:pos>
+			<gml:pos srsDimension="2">664791.803125 4653798.05</gml:pos>
+		</gml:Envelope>
+	</gml:boundedBy>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs13">
+	<gml:boundedBy>
+		<gml:Envelope srsName="EPSG:26912">
+			<gml:pos srsDimension="2">517754.303125 4403029.05</gml:pos>
+			<gml:pos srsDimension="2">517754.303125 4403029.05</gml:pos>
+		</gml:Envelope>
+	</gml:boundedBy>
+	<app:geometry>
+		<gml:Point srsName="EPSG:26912">
+			<gml:coordinates cs="," decimal="." ts=" ">517754.303125,4403029.05</gml:coordinates>
+		</gml:Point>
+	</app:geometry>
+	<app:objectid>13</app:objectid>
+	<app:rel>13567</app:rel>
+	<app:code>5</app:code>
+	<app:source>CFF99</app:source>
+	</app:Springs>
+	</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs16">
+	<gml:boundedBy> 
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">502641.40312499995 4408942.55</gml:pos>
+<gml:pos srsDimension="2">502641.40312499995 4408942.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>	<app:geometry>	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">502641.40312499995,4408942.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>16</app:objectid>
+<app:rel>13570</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>	<gml:featureMember>	<app:Springs gml:id="SGID024_Springs49">	<gml:boundedBy>	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">546103.503125 4426727.55</gml:pos>
+<gml:pos srsDimension="2">546103.503125 4426727.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>	<app:geometry>	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">546103.503125,4426727.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>49</app:objectid>
+<app:rel>13603</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs168">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">535762.103125 4482649.55</gml:pos>
+<gml:pos srsDimension="2">535762.103125 4482649.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">535762.103125,4482649.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>168</app:objectid>
+<app:rel>13722</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs193">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">502103.303125 4477502.05</gml:pos>
+<gml:pos srsDimension="2">502103.303125 4477502.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">502103.303125,4477502.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>193</app:objectid>
+<app:rel>13747</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs194">	<gml:boundedBy>	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">509801.203125 4477741.55</gml:pos>
+<gml:pos srsDimension="2">509801.203125 4477741.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>	<app:geometry>	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">509801.203125,4477741.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>194</app:objectid>
+<app:rel>13748</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>	<gml:featureMember>	<app:Springs gml:id="SGID024_Springs195">	<gml:boundedBy>	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">506889.803125 4480037.05</gml:pos>
+<gml:pos srsDimension="2">506889.803125 4480037.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>	<app:geometry>	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">506889.803125,4480037.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>195</app:objectid>
+<app:rel>13749</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>	<gml:featureMember>	<app:Springs gml:id="SGID024_Springs205">	<gml:boundedBy>	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">619021.103125 4485142.05</gml:pos>
+<gml:pos srsDimension="2">619021.103125 4485142.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>	<app:geometry>	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">619021.103125,4485142.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>205</app:objectid>
+<app:rel>13759</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>	<gml:featureMember>	<app:Springs gml:id="SGID024_Springs206">	<gml:boundedBy>	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">619058.203125 4485450.55</gml:pos>
+<gml:pos srsDimension="2">619058.203125 4485450.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>	<app:geometry>	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">619058.203125,4485450.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>206</app:objectid>
+<app:rel>13760</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs207">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">618088.903125 4487091.55</gml:pos>
+<gml:pos srsDimension="2">618088.903125 4487091.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">618088.903125,4487091.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>207</app:objectid>
+<app:rel>13761</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs208">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">616627.403125 4492754.55</gml:pos>
+<gml:pos srsDimension="2">616627.403125 4492754.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">616627.403125,4492754.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>208</app:objectid>
+<app:rel>13762</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs224">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">610246.403125 4491761.55</gml:pos>
+<gml:pos srsDimension="2">610246.403125 4491761.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">610246.403125,4491761.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>224</app:objectid>
+<app:rel>13778</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs297">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">594414.203125 4495906.55</gml:pos>
+<gml:pos srsDimension="2">594414.203125 4495906.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">594414.203125,4495906.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>297</app:objectid>
+<app:rel>13851</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs298">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">590759.803125 4491032.55</gml:pos>
+<gml:pos srsDimension="2">590759.803125 4491032.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">590759.803125,4491032.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>298</app:objectid>
+<app:rel>13852</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs299">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">590487.303125 4493950.55</gml:pos>
+<gml:pos srsDimension="2">590487.303125 4493950.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">590487.303125,4493950.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>299</app:objectid>
+<app:rel>13853</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs300">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">587901.903125 4491268.55</gml:pos>
+<gml:pos srsDimension="2">587901.903125 4491268.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">587901.903125,4491268.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>300</app:objectid>
+<app:rel>13854</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs324">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">579299.703125 4487613.55</gml:pos>
+<gml:pos srsDimension="2">579299.703125 4487613.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">579299.703125,4487613.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>324</app:objectid>
+<app:rel>13878</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs363">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">555787.603125 4484784.05</gml:pos>
+<gml:pos srsDimension="2">555787.603125 4484784.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">555787.603125,4484784.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>363</app:objectid>
+<app:rel>13917</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs393">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">543603.903125 4489653.55</gml:pos>
+<gml:pos srsDimension="2">543603.903125 4489653.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">543603.903125,4489653.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>393</app:objectid>
+<app:rel>13947</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs404">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">525874.403125 4488665.05</gml:pos>
+<gml:pos srsDimension="2">525874.403125 4488665.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">525874.403125,4488665.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>404</app:objectid>
+<app:rel>13958</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs405">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">529118.603125 4488376.05</gml:pos>
+<gml:pos srsDimension="2">529118.603125 4488376.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">529118.603125,4488376.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>405</app:objectid>
+<app:rel>13959</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs428">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">616314.403125 4511162.05</gml:pos>
+<gml:pos srsDimension="2">616314.403125 4511162.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">616314.403125,4511162.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>428</app:objectid>
+<app:rel>13982</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs450">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">613172.003125 4504070.55</gml:pos>
+<gml:pos srsDimension="2">613172.003125 4504070.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">613172.003125,4504070.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>450</app:objectid>
+<app:rel>14004</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs451">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">609430.903125 4510318.55</gml:pos>
+<gml:pos srsDimension="2">609430.903125 4510318.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">609430.903125,4510318.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>451</app:objectid>
+<app:rel>14005</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs452">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">611571.803125 4510427.55</gml:pos>
+<gml:pos srsDimension="2">611571.803125 4510427.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">611571.803125,4510427.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>452</app:objectid>
+<app:rel>14006</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs457">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">600540.303125 4499798.55</gml:pos>
+<gml:pos srsDimension="2">600540.303125 4499798.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">600540.303125,4499798.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>457</app:objectid>
+<app:rel>14011</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs458">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">605591.703125 4501718.05</gml:pos>
+<gml:pos srsDimension="2">605591.703125 4501718.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">605591.703125,4501718.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>458</app:objectid>
+<app:rel>14012</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs459">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">599793.003125 4497931.55</gml:pos>
+<gml:pos srsDimension="2">599793.003125 4497931.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">599793.003125,4497931.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>459</app:objectid>
+<app:rel>14013</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs460">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">587191.803125 4499614.55</gml:pos>
+<gml:pos srsDimension="2">587191.803125 4499614.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">587191.803125,4499614.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>460</app:objectid>
+<app:rel>14014</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs568">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">632809.703125 4529787.05</gml:pos>
+<gml:pos srsDimension="2">632809.703125 4529787.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">632809.703125,4529787.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>568</app:objectid>
+<app:rel>14122</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs597">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">591842.703125 4526804.55</gml:pos>
+<gml:pos srsDimension="2">591842.703125 4526804.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">591842.703125,4526804.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>597</app:objectid>
+<app:rel>14151</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs605">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">578598.503125 4533185.05</gml:pos>
+<gml:pos srsDimension="2">578598.503125 4533185.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">578598.503125,4533185.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>605</app:objectid>
+<app:rel>14159</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs612">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">611537.103125 4540826.55</gml:pos>
+<gml:pos srsDimension="2">611537.103125 4540826.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">611537.103125,4540826.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>612</app:objectid>
+<app:rel>14166</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs722">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">411908.803125 4631658.05</gml:pos>
+<gml:pos srsDimension="2">411908.803125 4631658.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">411908.803125,4631658.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>722</app:objectid>
+<app:rel>14276</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs723">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">412189.103125 4631524.05</gml:pos>
+<gml:pos srsDimension="2">412189.103125 4631524.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">412189.103125,4631524.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>723</app:objectid>
+<app:rel>14277</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs724">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">412374.303125 4631897.05</gml:pos>
+<gml:pos srsDimension="2">412374.303125 4631897.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">412374.303125,4631897.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>724</app:objectid>
+<app:rel>14278</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs946">
+ 
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">426244.303125 4619164.05</gml:pos>
+<gml:pos srsDimension="2">426244.303125 4619164.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">426244.303125,4619164.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>946</app:objectid>
+<app:rel>14500</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs947">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">426366.103125 4609325.05</gml:pos>
+<gml:pos srsDimension="2">426366.103125 4609325.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">426366.103125,4609325.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>947</app:objectid>
+<app:rel>14501</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs948">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">434191.203125 4621199.05</gml:pos>
+<gml:pos srsDimension="2">434191.203125 4621199.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">434191.203125,4621199.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>948</app:objectid>
+<app:rel>14502</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs949">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">434899.003125 4621576.55</gml:pos>
+<gml:pos srsDimension="2">434899.003125 4621576.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">434899.003125,4621576.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>949</app:objectid>
+<app:rel>14503</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs950">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">434823.903125 4621766.55</gml:pos>
+<gml:pos srsDimension="2">434823.903125 4621766.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">434823.903125,4621766.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>950</app:objectid>
+<app:rel>14504</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1093">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">407892.403125 4602479.05</gml:pos>
+<gml:pos srsDimension="2">407892.403125 4602479.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">407892.403125,4602479.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1093</app:objectid>
+<app:rel>14647</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1094">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">408228.403125 4603277.05</gml:pos>
+<gml:pos srsDimension="2">408228.403125 4603277.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">408228.403125,4603277.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1094</app:objectid>
+<app:rel>14648</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1095">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">416182.203125 4595590.55</gml:pos>
+<gml:pos srsDimension="2">416182.203125 4595590.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">416182.203125,4595590.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1095</app:objectid>
+<app:rel>14649</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1166">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">438327.203125 4608035.55</gml:pos>
+<gml:pos srsDimension="2">438327.203125 4608035.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">438327.203125,4608035.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1166</app:objectid>
+<app:rel>14720</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1167">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">440389.303125 4596526.05</gml:pos>
+<gml:pos srsDimension="2">440389.303125 4596526.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">440389.303125,4596526.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1167</app:objectid>
+<app:rel>14721</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1174">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">452711.703125 4604931.55</gml:pos>
+<gml:pos srsDimension="2">452711.703125 4604931.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">452711.703125,4604931.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1174</app:objectid>
+<app:rel>14728</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1399">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">477719.50312500005 4592271.55</gml:pos>
+<gml:pos srsDimension="2">477719.50312500005 4592271.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">477719.50312500005,4592271.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1399</app:objectid>
+<app:rel>14953</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1416">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">408589.003125 4570218.55</gml:pos>
+<gml:pos srsDimension="2">408589.003125 4570218.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">408589.003125,4570218.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1416</app:objectid>
+<app:rel>14970</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1452">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">429157.403125 4567358.55</gml:pos>
+<gml:pos srsDimension="2">429157.403125 4567358.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">429157.403125,4567358.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1452</app:objectid>
+<app:rel>15006</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1453">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">434893.203125 4571002.05</gml:pos>
+<gml:pos srsDimension="2">434893.203125 4571002.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">434893.203125,4571002.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1453</app:objectid>
+<app:rel>15007</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1454">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">435679.203125 4568489.55</gml:pos>
+<gml:pos srsDimension="2">435679.203125 4568489.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">435679.203125,4568489.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1454</app:objectid>
+<app:rel>15008</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1460">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">438442.903125 4572284.05</gml:pos>
+<gml:pos srsDimension="2">438442.903125 4572284.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">438442.903125,4572284.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1460</app:objectid>
+<app:rel>15014</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1472">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">443555.203125 4568769.55</gml:pos>
+<gml:pos srsDimension="2">443555.203125 4568769.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">443555.203125,4568769.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1472</app:objectid>
+<app:rel>15026</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1473">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">450543.603125 4571795.55</gml:pos>
+<gml:pos srsDimension="2">450543.603125 4571795.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">450543.603125,4571795.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1473</app:objectid>
+<app:rel>15027</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1606">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">416955.903125 4564673.05</gml:pos>
+<gml:pos srsDimension="2">416955.903125 4564673.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">416955.903125,4564673.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1606</app:objectid>
+<app:rel>15160</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1610">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">430167.003125 4554288.05</gml:pos>
+<gml:pos srsDimension="2">430167.003125 4554288.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">430167.003125,4554288.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1610</app:objectid>
+<app:rel>15164</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1634">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">435911.903125 4566392.55</gml:pos>
+<gml:pos srsDimension="2">435911.903125 4566392.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">435911.903125,4566392.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1634</app:objectid>
+<app:rel>15188</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1635">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">436166.203125 4566667.55</gml:pos>
+<gml:pos srsDimension="2">436166.203125 4566667.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">436166.203125,4566667.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1635</app:objectid>
+<app:rel>15189</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1718">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">466172.603125 4558816.05</gml:pos>
+<gml:pos srsDimension="2">466172.603125 4558816.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">466172.603125,4558816.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1718</app:objectid>
+<app:rel>15272</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1867">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">426560.003125 4539294.05</gml:pos>
+<gml:pos srsDimension="2">426560.003125 4539294.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">426560.003125,4539294.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1867</app:objectid>
+<app:rel>15421</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1873">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">535745.203125 4545191.55</gml:pos>
+<gml:pos srsDimension="2">535745.203125 4545191.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">535745.203125,4545191.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1873</app:objectid>
+<app:rel>15427</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1883">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">543778.903125 4541349.05</gml:pos>
+<gml:pos srsDimension="2">543778.903125 4541349.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">543778.903125,4541349.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1883</app:objectid>
+<app:rel>15437</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1885">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">550551.103125 4544924.55</gml:pos>
+<gml:pos srsDimension="2">550551.103125 4544924.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">550551.103125,4544924.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1885</app:objectid>
+<app:rel>15439</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1890">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">561298.403125 4539700.55</gml:pos>
+<gml:pos srsDimension="2">561298.403125 4539700.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">561298.403125,4539700.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1890</app:objectid>
+<app:rel>15444</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1928">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">428805.803125 4527332.55</gml:pos>
+<gml:pos srsDimension="2">428805.803125 4527332.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">428805.803125,4527332.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1928</app:objectid>
+<app:rel>15482</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1932">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">439684.103125 4533855.55</gml:pos>
+<gml:pos srsDimension="2">439684.103125 4533855.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">439684.103125,4533855.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1932</app:objectid>
+<app:rel>15486</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1938">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">490097.803125 4534211.05</gml:pos>
+<gml:pos srsDimension="2">490097.803125 4534211.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">490097.803125,4534211.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1938</app:objectid>
+<app:rel>15492</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1941">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">514806.603125 4529170.05</gml:pos>
+<gml:pos srsDimension="2">514806.603125 4529170.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">514806.603125,4529170.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1941</app:objectid>
+<app:rel>15495</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1942">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">512327.303125 4534930.05</gml:pos>
+<gml:pos srsDimension="2">512327.303125 4534930.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">512327.303125,4534930.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1942</app:objectid>
+<app:rel>15496</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1956">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">535410.103125 4534516.55</gml:pos>
+<gml:pos srsDimension="2">535410.103125 4534516.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">535410.103125,4534516.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1956</app:objectid>
+<app:rel>15510</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs1981">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">570499.303125 4532837.55</gml:pos>
+<gml:pos srsDimension="2">570499.303125 4532837.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">570499.303125,4532837.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>1981</app:objectid>
+<app:rel>15535</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs2057">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">506135.90312499995 4521159.05</gml:pos>
+<gml:pos srsDimension="2">506135.90312499995 4521159.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">506135.90312499995,4521159.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>2057</app:objectid>
+<app:rel>15611</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs2063">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">518130.50312500005 4524872.55</gml:pos>
+<gml:pos srsDimension="2">518130.50312500005 4524872.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">518130.50312500005,4524872.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>2063</app:objectid>
+<app:rel>15617</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs2094">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">438977.403125 4511093.05</gml:pos>
+<gml:pos srsDimension="2">438977.403125 4511093.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">438977.403125,4511093.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>2094</app:objectid>
+<app:rel>15648</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs2111">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">476441.00312500005 4506824.05</gml:pos>
+<gml:pos srsDimension="2">476441.00312500005 4506824.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">476441.00312500005,4506824.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>2111</app:objectid>
+<app:rel>15665</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs2116">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">479074.803125 4509593.05</gml:pos>
+<gml:pos srsDimension="2">479074.803125 4509593.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">479074.803125,4509593.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>2116</app:objectid>
+<app:rel>15670</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs2117">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">481567.203125 4510867.55</gml:pos>
+<gml:pos srsDimension="2">481567.203125 4510867.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">481567.203125,4510867.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>2117</app:objectid>
+<app:rel>15671</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs2209">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">485687.90312499995 4489690.55</gml:pos>
+<gml:pos srsDimension="2">485687.90312499995 4489690.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">485687.90312499995,4489690.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>2209</app:objectid>
+<app:rel>15763</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs2210">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">491978.00312500005 4494119.55</gml:pos>
+<gml:pos srsDimension="2">491978.00312500005 4494119.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">491978.00312500005,4494119.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>2210</app:objectid>
+<app:rel>15764</app:rel>
+<app:code>5</app:code>
+<app:source>CFF99</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs2534">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">398188.703125 4653798.05</gml:pos>
+<gml:pos srsDimension="2">398188.703125 4653798.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">398188.703125,4653798.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>2534</app:objectid>
+<app:rel>8179</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs2838">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">293982.003125 4643959.05</gml:pos>
+<gml:pos srsDimension="2">293982.003125 4643959.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">293982.003125,4643959.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>2838</app:objectid>
+<app:rel>8320</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3090">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">306808.103125 4636792.05</gml:pos>
+<gml:pos srsDimension="2">306808.103125 4636792.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">306808.103125,4636792.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3090</app:objectid>
+<app:rel>6712</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3152">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">499254.103125 4634724.55</gml:pos>
+<gml:pos srsDimension="2">499254.103125 4634724.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">499254.103125,4634724.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3152</app:objectid>
+<app:rel>2850</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3153">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">499223.103125 4634711.55</gml:pos>
+<gml:pos srsDimension="2">499223.103125 4634711.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">499223.103125,4634711.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3153</app:objectid>
+<app:rel>2851</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3156">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">498921.00312500005 4634437.05</gml:pos>
+<gml:pos srsDimension="2">498921.00312500005 4634437.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">498921.00312500005,4634437.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3156</app:objectid>
+<app:rel>2852</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3263">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">286808.703125 4629904.55</gml:pos>
+<gml:pos srsDimension="2">286808.703125 4629904.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">286808.703125,4629904.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3263</app:objectid>
+<app:rel>8666</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3320">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">494068.00312500005 4627517.05</gml:pos>
+<gml:pos srsDimension="2">494068.00312500005 4627517.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">494068.00312500005,4627517.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3320</app:objectid>
+<app:rel>2855</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3454">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">338936.503125 4620719.05</gml:pos>
+<gml:pos srsDimension="2">338936.503125 4620719.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">338936.503125,4620719.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3454</app:objectid>
+<app:rel>6635</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3476">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">338302.403125 4619941.05</gml:pos>
+<gml:pos srsDimension="2">338302.403125 4619941.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">338302.403125,4619941.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3476</app:objectid>
+<app:rel>6633</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3511">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">339696.203125 4618917.55</gml:pos>
+<gml:pos srsDimension="2">339696.203125 4618917.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">339696.203125,4618917.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3511</app:objectid>
+<app:rel>6631</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3519">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">340906.603125 4618593.55</gml:pos>
+<gml:pos srsDimension="2">340906.603125 4618593.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">340906.603125,4618593.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3519</app:objectid>
+<app:rel>6628</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3546">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">342493.003125 4617869.05</gml:pos>
+<gml:pos srsDimension="2">342493.003125 4617869.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">342493.003125,4617869.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3546</app:objectid>
+<app:rel>6630</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3681">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">487341.803125 4607410.55</gml:pos>
+<gml:pos srsDimension="2">487341.803125 4607410.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">487341.803125,4607410.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3681</app:objectid>
+<app:rel>7036</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3727">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">398370.603125 4603111.55</gml:pos>
+<gml:pos srsDimension="2">398370.603125 4603111.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">398370.603125,4603111.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3727</app:objectid>
+<app:rel>4011</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3731">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">488020.703125 4602448.55</gml:pos>
+<gml:pos srsDimension="2">488020.703125 4602448.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">488020.703125,4602448.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3731</app:objectid>
+<app:rel>7033</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3745">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">487874.203125 4599722.05</gml:pos>
+<gml:pos srsDimension="2">487874.203125 4599722.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">487874.203125,4599722.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3745</app:objectid>
+<app:rel>7031</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3763">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">489274.703125 4597174.05</gml:pos>
+<gml:pos srsDimension="2">489274.703125 4597174.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">489274.703125,4597174.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3763</app:objectid>
+<app:rel>7032</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3765">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">491037.603125 4596963.55</gml:pos>
+<gml:pos srsDimension="2">491037.603125 4596963.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">491037.603125,4596963.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3765</app:objectid>
+<app:rel>2892</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3766">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">497365.40312499995 4596882.05</gml:pos>
+<gml:pos srsDimension="2">497365.40312499995 4596882.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">497365.40312499995,4596882.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3766</app:objectid>
+<app:rel>2893</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3769">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">491335.203125 4596661.55</gml:pos>
+<gml:pos srsDimension="2">491335.203125 4596661.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">491335.203125,4596661.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3769</app:objectid>
+<app:rel>2894</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3770">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">497399.00312500005 4596642.05</gml:pos>
+<gml:pos srsDimension="2">497399.00312500005 4596642.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">497399.00312500005,4596642.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3770</app:objectid>
+<app:rel>2895</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3771">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">492371.40312499995 4596554.55</gml:pos>
+<gml:pos srsDimension="2">492371.40312499995 4596554.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">492371.40312499995,4596554.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3771</app:objectid>
+<app:rel>2896</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3773">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">498880.703125 4594879.55</gml:pos>
+<gml:pos srsDimension="2">498880.703125 4594879.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">498880.703125,4594879.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3773</app:objectid>
+<app:rel>2897</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3775">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">498594.703125 4594688.55</gml:pos>
+<gml:pos srsDimension="2">498594.703125 4594688.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">498594.703125,4594688.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3775</app:objectid>
+<app:rel>1245</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3798">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">498518.00312500005 4586989.05</gml:pos>
+<gml:pos srsDimension="2">498518.00312500005 4586989.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">498518.00312500005,4586989.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3798</app:objectid>
+<app:rel>2901</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3821">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">496554.603125 4583886.05</gml:pos>
+<gml:pos srsDimension="2">496554.603125 4583886.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">496554.603125,4583886.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3821</app:objectid>
+<app:rel>2902</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3945">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">374662.903125 4567875.05</gml:pos>
+<gml:pos srsDimension="2">374662.903125 4567875.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">374662.903125,4567875.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3945</app:objectid>
+<app:rel>3844</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3972">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">408662.103125 4565657.55</gml:pos>
+<gml:pos srsDimension="2">408662.103125 4565657.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">408662.103125,4565657.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3972</app:objectid>
+<app:rel>1465</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs3975">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">415429.803125 4565586.55</gml:pos>
+<gml:pos srsDimension="2">415429.803125 4565586.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">415429.803125,4565586.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>3975</app:objectid>
+<app:rel>1467</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4067">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">405812.503125 4554937.55</gml:pos>
+<gml:pos srsDimension="2">405812.503125 4554937.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">405812.503125,4554937.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4067</app:objectid>
+<app:rel>1466</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4119">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">440415.403125 4550584.55</gml:pos>
+<gml:pos srsDimension="2">440415.403125 4550584.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">440415.403125,4550584.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4119</app:objectid>
+<app:rel>9870</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4378">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">463283.803125 4535124.05</gml:pos>
+<gml:pos srsDimension="2">463283.803125 4535124.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">463283.803125,4535124.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4378</app:objectid>
+<app:rel>3044</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4412">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">448876.803125 4530332.05</gml:pos>
+<gml:pos srsDimension="2">448876.803125 4530332.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">448876.803125,4530332.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4412</app:objectid>
+<app:rel>3030</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4417">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">466192.203125 4530005.05</gml:pos>
+<gml:pos srsDimension="2">466192.203125 4530005.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">466192.203125,4530005.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4417</app:objectid>
+<app:rel>3045</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4440">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">451057.903125 4525302.05</gml:pos>
+<gml:pos srsDimension="2">451057.903125 4525302.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">451057.903125,4525302.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4440</app:objectid>
+<app:rel>3038</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4444">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">656792.103125 4525076.05</gml:pos>
+<gml:pos srsDimension="2">656792.103125 4525076.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">656792.103125,4525076.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4444</app:objectid>
+<app:rel>5726</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4540">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">469205.303125 4513835.55</gml:pos>
+<gml:pos srsDimension="2">469205.303125 4513835.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">469205.303125,4513835.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4540</app:objectid>
+<app:rel>3071</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4550">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">401311.803125 4512570.55</gml:pos>
+<gml:pos srsDimension="2">401311.803125 4512570.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">401311.803125,4512570.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4550</app:objectid>
+<app:rel>3054</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4594">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">664651.203125 4504336.05</gml:pos>
+<gml:pos srsDimension="2">664651.203125 4504336.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">664651.203125,4504336.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4594</app:objectid>
+<app:rel>5754</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4667">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">474139.703125 4495535.05</gml:pos>
+<gml:pos srsDimension="2">474139.703125 4495535.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">474139.703125,4495535.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4667</app:objectid>
+<app:rel>10190</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4680">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">464838.303125 4494523.55</gml:pos>
+<gml:pos srsDimension="2">464838.303125 4494523.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">464838.303125,4494523.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4680</app:objectid>
+<app:rel>10164</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4681">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">469516.90312499995 4494506.05</gml:pos>
+<gml:pos srsDimension="2">469516.90312499995 4494506.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">469516.90312499995,4494506.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4681</app:objectid>
+<app:rel>10189</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4685">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">632458.203125 4493522.05</gml:pos>
+<gml:pos srsDimension="2">632458.203125 4493522.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">632458.203125,4493522.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4685</app:objectid>
+<app:rel>5470</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4696">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">664645.203125 4491476.05</gml:pos>
+<gml:pos srsDimension="2">664645.203125 4491476.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">664645.203125,4491476.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4696</app:objectid>
+<app:rel>5769</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4761">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">592248.503125 4482679.55</gml:pos>
+<gml:pos srsDimension="2">592248.503125 4482679.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">592248.503125,4482679.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4761</app:objectid>
+<app:rel>4509</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4783">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">584714.403125 4481686.55</gml:pos>
+<gml:pos srsDimension="2">584714.403125 4481686.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">584714.403125,4481686.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4783</app:objectid>
+<app:rel>4510</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4806">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">587689.003125 4480956.05</gml:pos>
+<gml:pos srsDimension="2">587689.003125 4480956.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">587689.003125,4480956.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4806</app:objectid>
+<app:rel>4118</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4809">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">587729.403125 4480931.05</gml:pos>
+<gml:pos srsDimension="2">587729.403125 4480931.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">587729.403125,4480931.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4809</app:objectid>
+<app:rel>4119</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4848">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">571120.203125 4479320.55</gml:pos>
+<gml:pos srsDimension="2">571120.203125 4479320.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">571120.203125,4479320.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4848</app:objectid>
+<app:rel>4096</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4850">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">588817.603125 4479166.55</gml:pos>
+<gml:pos srsDimension="2">588817.603125 4479166.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">588817.603125,4479166.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4850</app:objectid>
+<app:rel>4513</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4881">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">442143.303125 4477684.05</gml:pos>
+<gml:pos srsDimension="2">442143.303125 4477684.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">442143.303125,4477684.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4881</app:objectid>
+<app:rel>10252</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4887">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">587107.303125 4477469.05</gml:pos>
+<gml:pos srsDimension="2">587107.303125 4477469.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">587107.303125,4477469.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4887</app:objectid>
+<app:rel>4125</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4910">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">590654.303125 4476498.05</gml:pos>
+<gml:pos srsDimension="2">590654.303125 4476498.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">590654.303125,4476498.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4910</app:objectid>
+<app:rel>4515</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4916">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">585241.603125 4476342.55</gml:pos>
+<gml:pos srsDimension="2">585241.603125 4476342.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">585241.603125,4476342.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4916</app:objectid>
+<app:rel>4519</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4938">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">591142.103125 4475766.05</gml:pos>
+<gml:pos srsDimension="2">591142.103125 4475766.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">591142.103125,4475766.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4938</app:objectid>
+<app:rel>4135</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4943">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">593054.003125 4475624.55</gml:pos>
+<gml:pos srsDimension="2">593054.003125 4475624.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">593054.003125,4475624.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4943</app:objectid>
+<app:rel>4522</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4949">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">649723.703125 4474699.05</gml:pos>
+<gml:pos srsDimension="2">649723.703125 4474699.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">649723.703125,4474699.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4949</app:objectid>
+<app:rel>5770</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs4979">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">591857.703125 4472456.55</gml:pos>
+<gml:pos srsDimension="2">591857.703125 4472456.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">591857.703125,4472456.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>4979</app:objectid>
+<app:rel>4136</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5048">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">452200.503125 4467965.05</gml:pos>
+<gml:pos srsDimension="2">452200.503125 4467965.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">452200.503125,4467965.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5048</app:objectid>
+<app:rel>10413</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5064">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">451580.803125 4466997.05</gml:pos>
+<gml:pos srsDimension="2">451580.803125 4466997.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">451580.803125,4466997.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5064</app:objectid>
+<app:rel>10414</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5163">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">496104.703125 4463854.05</gml:pos>
+<gml:pos srsDimension="2">496104.703125 4463854.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">496104.703125,4463854.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5163</app:objectid>
+<app:rel>10447</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5189">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">542998.403125 4462416.55</gml:pos>
+<gml:pos srsDimension="2">542998.403125 4462416.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">542998.403125,4462416.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5189</app:objectid>
+<app:rel>4539</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5193">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">412265.303125 4462139.05</gml:pos>
+<gml:pos srsDimension="2">412265.303125 4462139.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">412265.303125,4462139.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5193</app:objectid>
+<app:rel>7090</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5214">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">532646.003125 4461022.05</gml:pos>
+<gml:pos srsDimension="2">532646.003125 4461022.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">532646.003125,4461022.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5214</app:objectid>
+<app:rel>4174</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5216">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">477470.00312500005 4460903.05</gml:pos>
+<gml:pos srsDimension="2">477470.00312500005 4460903.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">477470.00312500005,4460903.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5216</app:objectid>
+<app:rel>10433</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5264">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">597668.703125 4458516.05</gml:pos>
+<gml:pos srsDimension="2">597668.703125 4458516.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">597668.703125,4458516.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5264</app:objectid>
+<app:rel>4547</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5336">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">603338.603125 4452405.05</gml:pos>
+<gml:pos srsDimension="2">603338.603125 4452405.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">603338.603125,4452405.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5336</app:objectid>
+<app:rel>4273</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5372">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">579673.403125 4450413.05</gml:pos>
+<gml:pos srsDimension="2">579673.403125 4450413.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">579673.403125,4450413.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5372</app:objectid>
+<app:rel>4272</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5382">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">566579.403125 4449388.05</gml:pos>
+<gml:pos srsDimension="2">566579.403125 4449388.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">566579.403125,4449388.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5382</app:objectid>
+<app:rel>4563</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5400">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">571085.103125 4447919.05</gml:pos>
+<gml:pos srsDimension="2">571085.103125 4447919.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">571085.103125,4447919.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5400</app:objectid>
+<app:rel>4564</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5406">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">559660.503125 4447519.55</gml:pos>
+<gml:pos srsDimension="2">559660.503125 4447519.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">559660.503125,4447519.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5406</app:objectid>
+<app:rel>4557</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5408">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">571400.803125 4447500.55</gml:pos>
+<gml:pos srsDimension="2">571400.803125 4447500.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">571400.803125,4447500.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5408</app:objectid>
+<app:rel>4565</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5423">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">561600.603125 4446209.55</gml:pos>
+<gml:pos srsDimension="2">561600.603125 4446209.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">561600.603125,4446209.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5423</app:objectid>
+<app:rel>4558</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5424">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">551649.703125 4446159.05</gml:pos>
+<gml:pos srsDimension="2">551649.703125 4446159.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">551649.703125,4446159.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5424</app:objectid>
+<app:rel>4555</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5428">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">550043.403125 4445992.55</gml:pos>
+<gml:pos srsDimension="2">550043.403125 4445992.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">550043.403125,4445992.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5428</app:objectid>
+<app:rel>4260</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5432">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">478690.703125 4445634.05</gml:pos>
+<gml:pos srsDimension="2">478690.703125 4445634.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">478690.703125,4445634.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5432</app:objectid>
+<app:rel>10537</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5446">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">571532.203125 4444878.05</gml:pos>
+<gml:pos srsDimension="2">571532.203125 4444878.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">571532.203125,4444878.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5446</app:objectid>
+<app:rel>4568</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5447">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">571545.203125 4444802.55</gml:pos>
+<gml:pos srsDimension="2">571545.203125 4444802.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">571545.203125,4444802.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5447</app:objectid>
+<app:rel>4569</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5550">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">465877.00312500005 4436434.05</gml:pos>
+<gml:pos srsDimension="2">465877.00312500005 4436434.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">465877.00312500005,4436434.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5550</app:objectid>
+<app:rel>10603</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5552">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">608358.203125 4436269.55</gml:pos>
+<gml:pos srsDimension="2">608358.203125 4436269.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">608358.203125,4436269.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5552</app:objectid>
+<app:rel>5800</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5553">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">608374.103125 4436253.55</gml:pos>
+<gml:pos srsDimension="2">608374.103125 4436253.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">608374.103125,4436253.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5553</app:objectid>
+<app:rel>5535</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5604">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">453268.103125 4433428.55</gml:pos>
+<gml:pos srsDimension="2">453268.103125 4433428.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">453268.103125,4433428.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5604</app:objectid>
+<app:rel>10596</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5785">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">655502.803125 4427067.05</gml:pos>
+<gml:pos srsDimension="2">655502.803125 4427067.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">655502.803125,4427067.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5785</app:objectid>
+<app:rel>5827</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5827">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">382139.703125 4426384.05</gml:pos>
+<gml:pos srsDimension="2">382139.703125 4426384.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">382139.703125,4426384.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5827</app:objectid>
+<app:rel>7336</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs5918">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">481495.703125 4422210.55</gml:pos>
+<gml:pos srsDimension="2">481495.703125 4422210.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">481495.703125,4422210.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>5918</app:objectid>
+<app:rel>7436</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6176">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">496796.00312500005 4413992.05</gml:pos>
+<gml:pos srsDimension="2">496796.00312500005 4413992.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">496796.00312500005,4413992.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6176</app:objectid>
+<app:rel>10665</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6335">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">537219.103125 4405529.05</gml:pos>
+<gml:pos srsDimension="2">537219.103125 4405529.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">537219.103125,4405529.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6335</app:objectid>
+<app:rel>5197</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6396">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">252400.003125 4403363.05</gml:pos>
+<gml:pos srsDimension="2">252400.003125 4403363.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">252400.003125,4403363.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6396</app:objectid>
+<app:rel>6778</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6405">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">484070.103125 4402839.55</gml:pos>
+<gml:pos srsDimension="2">484070.103125 4402839.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">484070.103125,4402839.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6405</app:objectid>
+<app:rel>10730</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6550">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">431097.703125 4396223.55</gml:pos>
+<gml:pos srsDimension="2">431097.703125 4396223.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">431097.703125,4396223.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6550</app:objectid>
+<app:rel>10753</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6640">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">464940.40312499995 4391664.55</gml:pos>
+<gml:pos srsDimension="2">464940.40312499995 4391664.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">464940.40312499995,4391664.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6640</app:objectid>
+<app:rel>10771</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6641">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">473851.703125 4391643.55</gml:pos>
+<gml:pos srsDimension="2">473851.703125 4391643.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">473851.703125,4391643.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6641</app:objectid>
+<app:rel>7547</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6673">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">471866.00312500005 4390082.55</gml:pos>
+<gml:pos srsDimension="2">471866.00312500005 4390082.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">471866.00312500005,4390082.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6673</app:objectid>
+<app:rel>7548</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6781">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">482028.50312500005 4383322.55</gml:pos>
+<gml:pos srsDimension="2">482028.50312500005 4383322.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">482028.50312500005,4383322.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6781</app:objectid>
+<app:rel>7601</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6823">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">477966.90312499995 4381116.55</gml:pos>
+<gml:pos srsDimension="2">477966.90312499995 4381116.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">477966.90312499995,4381116.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6823</app:objectid>
+<app:rel>10819</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6826">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">621500.803125 4381018.55</gml:pos>
+<gml:pos srsDimension="2">621500.803125 4381018.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">621500.803125,4381018.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6826</app:objectid>
+<app:rel>98</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs6872">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">428830.403125 4378235.05</gml:pos>
+<gml:pos srsDimension="2">428830.403125 4378235.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">428830.403125,4378235.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>6872</app:objectid>
+<app:rel>10784</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7020">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">627167.203125 4373674.05</gml:pos>
+<gml:pos srsDimension="2">627167.203125 4373674.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">627167.203125,4373674.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7020</app:objectid>
+<app:rel>98</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7083">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">465320.00312500005 4371401.55</gml:pos>
+<gml:pos srsDimension="2">465320.00312500005 4371401.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">465320.00312500005,4371401.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7083</app:objectid>
+<app:rel>10957</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7089">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">380143.103125 4371189.05</gml:pos>
+<gml:pos srsDimension="2">380143.103125 4371189.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">380143.103125,4371189.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7089</app:objectid>
+<app:rel>3263</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7199">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">463376.203125 4366570.05</gml:pos>
+<gml:pos srsDimension="2">463376.203125 4366570.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">463376.203125,4366570.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7199</app:objectid>
+<app:rel>10958</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7262">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">468555.00312500005 4364123.05</gml:pos>
+<gml:pos srsDimension="2">468555.00312500005 4364123.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">468555.00312500005,4364123.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7262</app:objectid>
+<app:rel>7642</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7327">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">370558.003125 4362429.55</gml:pos>
+<gml:pos srsDimension="2">370558.003125 4362429.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">370558.003125,4362429.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7327</app:objectid>
+<app:rel>3262</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7447">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">410446.103125 4358931.05</gml:pos>
+<gml:pos srsDimension="2">410446.103125 4358931.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">410446.103125,4358931.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7447</app:objectid>
+<app:rel>3267</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7536">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">461260.00312500005 4355159.55</gml:pos>
+<gml:pos srsDimension="2">461260.00312500005 4355159.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">461260.00312500005,4355159.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7536</app:objectid>
+<app:rel>7746</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7544">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">452899.703125 4354906.05</gml:pos>
+<gml:pos srsDimension="2">452899.703125 4354906.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">452899.703125,4354906.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7544</app:objectid>
+<app:rel>10974</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7574">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">462802.103125 4353459.55</gml:pos>
+<gml:pos srsDimension="2">462802.103125 4353459.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">462802.103125,4353459.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7574</app:objectid>
+<app:rel>7744</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7595">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">461700.40312499995 4352466.55</gml:pos>
+<gml:pos srsDimension="2">461700.40312499995 4352466.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">461700.40312499995,4352466.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7595</app:objectid>
+<app:rel>7745</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7601">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">461190.90312499995 4352377.05</gml:pos>
+<gml:pos srsDimension="2">461190.90312499995 4352377.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">461190.90312499995,4352377.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7601</app:objectid>
+<app:rel>7749</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7606">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">459478.803125 4351970.05</gml:pos>
+<gml:pos srsDimension="2">459478.803125 4351970.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">459478.803125,4351970.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7606</app:objectid>
+<app:rel>7748</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7617">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">460265.303125 4351419.05</gml:pos>
+<gml:pos srsDimension="2">460265.303125 4351419.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">460265.303125,4351419.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7617</app:objectid>
+<app:rel>7750</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7633">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">460948.90312499995 4350543.05</gml:pos>
+<gml:pos srsDimension="2">460948.90312499995 4350543.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">460948.90312499995,4350543.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7633</app:objectid>
+<app:rel>7743</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7636">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">460923.203125 4350403.05</gml:pos>
+<gml:pos srsDimension="2">460923.203125 4350403.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">460923.203125,4350403.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7636</app:objectid>
+<app:rel>7742</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7648">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">461804.203125 4349902.55</gml:pos>
+<gml:pos srsDimension="2">461804.203125 4349902.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">461804.203125,4349902.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7648</app:objectid>
+<app:rel>7747</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7735">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">488869.703125 4346260.55</gml:pos>
+<gml:pos srsDimension="2">488869.703125 4346260.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">488869.703125,4346260.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7735</app:objectid>
+<app:rel>7770</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7737">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">556337.703125 4346214.55</gml:pos>
+<gml:pos srsDimension="2">556337.703125 4346214.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">556337.703125,4346214.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7737</app:objectid>
+<app:rel>989</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7750">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">449959.503125 4345699.05</gml:pos>
+<gml:pos srsDimension="2">449959.503125 4345699.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">449959.503125,4345699.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7750</app:objectid>
+<app:rel>10973</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7768">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">490648.90312499995 4345284.55</gml:pos>
+<gml:pos srsDimension="2">490648.90312499995 4345284.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">490648.90312499995,4345284.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7768</app:objectid>
+<app:rel>7776</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7770">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">490723.90312499995 4345258.05</gml:pos>
+<gml:pos srsDimension="2">490723.90312499995 4345258.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">490723.90312499995,4345258.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7770</app:objectid>
+<app:rel>7777</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7865">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">438589.203125 4339822.55</gml:pos>
+<gml:pos srsDimension="2">438589.203125 4339822.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">438589.203125,4339822.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7865</app:objectid>
+<app:rel>10996</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs7986">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">424175.303125 4334375.55</gml:pos>
+<gml:pos srsDimension="2">424175.303125 4334375.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">424175.303125,4334375.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>7986</app:objectid>
+<app:rel>3272</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs8000">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">507587.203125 4333476.55</gml:pos>
+<gml:pos srsDimension="2">507587.203125 4333476.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">507587.203125,4333476.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>8000</app:objectid>
+<app:rel>236</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs8074">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">481277.00312500005 4328298.05</gml:pos>
+<gml:pos srsDimension="2">481277.00312500005 4328298.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">481277.00312500005,4328298.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>8074</app:objectid>
+<app:rel>7820</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs8253">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">573547.403125 4315546.05</gml:pos>
+<gml:pos srsDimension="2">573547.403125 4315546.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">573547.403125,4315546.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>8253</app:objectid>
+<app:rel>301</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs8276">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">478404.00312500005 4314790.55</gml:pos>
+<gml:pos srsDimension="2">478404.00312500005 4314790.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">478404.00312500005,4314790.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>8276</app:objectid>
+<app:rel>7827</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs8337">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">424885.203125 4312364.55</gml:pos>
+<gml:pos srsDimension="2">424885.203125 4312364.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">424885.203125,4312364.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>8337</app:objectid>
+<app:rel>10998</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs8519">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">554453.303125 4301472.55</gml:pos>
+<gml:pos srsDimension="2">554453.303125 4301472.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">554453.303125,4301472.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>8519</app:objectid>
+<app:rel>609</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs8622">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">656789.403125 4295852.05</gml:pos>
+<gml:pos srsDimension="2">656789.403125 4295852.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">656789.403125,4295852.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>8622</app:objectid>
+<app:rel>1084</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs8838">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">646059.803125 4285483.55</gml:pos>
+<gml:pos srsDimension="2">646059.803125 4285483.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">646059.803125,4285483.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>8838</app:objectid>
+<app:rel>11007</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs8997">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">623674.503125 4274788.05</gml:pos>
+<gml:pos srsDimension="2">623674.503125 4274788.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">623674.503125,4274788.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>8997</app:objectid>
+<app:rel>1554</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs9065">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">651087.503125 4272899.55</gml:pos>
+<gml:pos srsDimension="2">651087.503125 4272899.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">651087.503125,4272899.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>9065</app:objectid>
+<app:rel>11020</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs9147">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">629429.403125 4269235.05</gml:pos>
+<gml:pos srsDimension="2">629429.403125 4269235.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">629429.403125,4269235.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>9147</app:objectid>
+<app:rel>3317</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs9243">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">664791.803125 4265138.55</gml:pos>
+<gml:pos srsDimension="2">664791.803125 4265138.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">664791.803125,4265138.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>9243</app:objectid>
+<app:rel>7872</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs9406">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">324227.403125 4259104.55</gml:pos>
+<gml:pos srsDimension="2">324227.403125 4259104.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">324227.403125,4259104.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>9406</app:objectid>
+<app:rel>1578</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs9416">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">324868.703125 4258646.55</gml:pos>
+<gml:pos srsDimension="2">324868.703125 4258646.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">324868.703125,4258646.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>9416</app:objectid>
+<app:rel>3322</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs10059">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">318867.403125 4238165.55</gml:pos>
+<gml:pos srsDimension="2">318867.403125 4238165.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">318867.403125,4238165.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>10059</app:objectid>
+<app:rel>1698</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs10064">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">362828.003125 4238041.05</gml:pos>
+<gml:pos srsDimension="2">362828.003125 4238041.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">362828.003125,4238041.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>10064</app:objectid>
+<app:rel>11040</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs10124">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">494107.703125 4236688.05</gml:pos>
+<gml:pos srsDimension="2">494107.703125 4236688.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">494107.703125,4236688.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>10124</app:objectid>
+<app:rel>5055</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs10170">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">345443.003125 4235428.55</gml:pos>
+<gml:pos srsDimension="2">345443.003125 4235428.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">345443.003125,4235428.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>10170</app:objectid>
+<app:rel>1736</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs10266">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">331326.003125 4231842.05</gml:pos>
+<gml:pos srsDimension="2">331326.003125 4231842.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">331326.003125,4231842.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>10266</app:objectid>
+<app:rel>1793</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs10274">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">338881.103125 4231595.05</gml:pos>
+<gml:pos srsDimension="2">338881.103125 4231595.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">338881.103125,4231595.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>10274</app:objectid>
+<app:rel>1798</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs10592">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">421953.603125 4217184.05</gml:pos>
+<gml:pos srsDimension="2">421953.603125 4217184.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">421953.603125,4217184.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>10592</app:objectid>
+<app:rel>7936</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs10605">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">552032.503125 4216516.05</gml:pos>
+<gml:pos srsDimension="2">552032.503125 4216516.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">552032.503125,4216516.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>10605</app:objectid>
+<app:rel>5131</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs11483">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">631538.703125 4189255.55</gml:pos>
+<gml:pos srsDimension="2">631538.703125 4189255.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">631538.703125,4189255.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>11483</app:objectid>
+<app:rel>8033</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs11605">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">334752.803125 4185597.25</gml:pos>
+<gml:pos srsDimension="2">334752.803125 4185597.25</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">334752.803125,4185597.25</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>11605</app:objectid>
+<app:rel>3434</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs11629">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">333669.303125 4184822.05</gml:pos>
+<gml:pos srsDimension="2">333669.303125 4184822.05</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">333669.303125,4184822.05</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>11629</app:objectid>
+<app:rel>3436</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs11673">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">331257.003125 4183893.25</gml:pos>
+<gml:pos srsDimension="2">331257.003125 4183893.25</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">331257.003125,4183893.25</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>11673</app:objectid>
+<app:rel>3437</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs11776">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">449387.003125 4181343.55</gml:pos>
+<gml:pos srsDimension="2">449387.003125 4181343.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">449387.003125,4181343.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>11776</app:objectid>
+<app:rel>11054</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs11832">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">634194.103125 4179768.55</gml:pos>
+<gml:pos srsDimension="2">634194.103125 4179768.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">634194.103125,4179768.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>11832</app:objectid>
+<app:rel>8046</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs12044">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">635424.003125 4171633.55</gml:pos>
+<gml:pos srsDimension="2">635424.003125 4171633.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">635424.003125,4171633.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>12044</app:objectid>
+<app:rel>8132</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs12396">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">625694.003125 4157873.55</gml:pos>
+<gml:pos srsDimension="2">625694.003125 4157873.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">625694.003125,4157873.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>12396</app:objectid>
+<app:rel>869</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs12630">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">342649.703125 4148690.55</gml:pos>
+<gml:pos srsDimension="2">342649.703125 4148690.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">342649.703125,4148690.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>12630</app:objectid>
+<app:rel>3559</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs12705">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">382922.703125 4146476.55</gml:pos>
+<gml:pos srsDimension="2">382922.703125 4146476.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">382922.703125,4146476.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>12705</app:objectid>
+<app:rel>2464</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs12792">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">340571.003125 4142980.25</gml:pos>
+<gml:pos srsDimension="2">340571.003125 4142980.25</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">340571.003125,4142980.25</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>12792</app:objectid>
+<app:rel>2446</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs12794">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">302068.403125 4142904.55</gml:pos>
+<gml:pos srsDimension="2">302068.403125 4142904.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">302068.403125,4142904.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>12794</app:objectid>
+<app:rel>2397</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs12942">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">357851.503125 4133755.25</gml:pos>
+<gml:pos srsDimension="2">357851.503125 4133755.25</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">357851.503125,4133755.25</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>12942</app:objectid>
+<app:rel>3625</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs13234">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">254323.703125 4119425.25</gml:pos>
+<gml:pos srsDimension="2">254323.703125 4119425.25</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">254323.703125,4119425.25</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>13234</app:objectid>
+<app:rel>3681</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs13285">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">287323.703125 4115552.25</gml:pos>
+<gml:pos srsDimension="2">287323.703125 4115552.25</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">287323.703125,4115552.25</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>13285</app:objectid>
+<app:rel>11113</app:rel>
+<app:code>5</app:code>
+<app:source>CFF</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs13368">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">600827.003125 4111777.55</gml:pos>
+<gml:pos srsDimension="2">600827.003125 4111777.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">600827.003125,4111777.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>13368</app:objectid>
+<app:rel>2647</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+	<gml:featureMember>
+	<app:Springs gml:id="SGID024_Springs13461">
+	<gml:boundedBy>
+	<gml:Envelope srsName="EPSG:26912">
+<gml:pos srsDimension="2">362460.803125 4107118.55</gml:pos>
+<gml:pos srsDimension="2">362460.803125 4107118.55</gml:pos>
+</gml:Envelope>
+</gml:boundedBy>
+	<app:geometry>
+	<gml:Point srsName="EPSG:26912">
+<gml:coordinates cs="," decimal="." ts=" ">362460.803125,4107118.55</gml:coordinates>
+</gml:Point>
+</app:geometry>
+<app:objectid>13461</app:objectid>
+<app:rel>2720</app:rel>
+<app:code>5</app:code>
+<app:source>DLG</app:source>
+</app:Springs>
+</gml:featureMember>
+</wfs:FeatureCollection>
