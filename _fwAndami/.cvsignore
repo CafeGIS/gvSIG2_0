@@ -1,0 +1,11 @@
+bin
+gvsig.log
+gvSIG
+web
+andami.jar
+keystore
+java.hprof.txt
+build-doc
+*.log
+cachedir
+bin-test
