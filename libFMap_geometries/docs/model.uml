@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_wySgAOOSEdyLpcXsYAESEQ">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wySgAeOSEdyLpcXsYAESEQ" name="boolean"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wySgAuOSEdyLpcXsYAESEQ" name="byte"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wySgA-OSEdyLpcXsYAESEQ" name="char"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wySgBOOSEdyLpcXsYAESEQ" name="double"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wySgBeOSEdyLpcXsYAESEQ" name="float"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wySgBuOSEdyLpcXsYAESEQ" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wySgB-OSEdyLpcXsYAESEQ" name="long"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wySgCOOSEdyLpcXsYAESEQ" name="short"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_wySgCeOSEdyLpcXsYAESEQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_wySgCuOSEdyLpcXsYAESEQ" name="iver">
+      <packagedElement xmi:type="uml:Package" xmi:id="_wySgC-OSEdyLpcXsYAESEQ" name="cit">
+        <packagedElement xmi:type="uml:Package" xmi:id="_wySgDOOSEdyLpcXsYAESEQ" name="gvsig">
+          <packagedElement xmi:type="uml:Package" xmi:id="_wySgDeOSEdyLpcXsYAESEQ" name="fmap">
+            <packagedElement xmi:type="uml:Package" xmi:id="_wySgDuOSEdyLpcXsYAESEQ" name="core">
+              <packagedElement xmi:type="uml:Class" xmi:id="_wySgD-OSEdyLpcXsYAESEQ" name="FArc2D">
+                <generalization xmi:id="_wySgEOOSEdyLpcXsYAESEQ" general="_wycS9uOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wySgEeOSEdyLpcXsYAESEQ" name="init" visibility="private" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wySgEuOSEdyLpcXsYAESEQ" name="center" visibility="private" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wySgE-OSEdyLpcXsYAESEQ" name="end" visibility="private" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wySgFOOSEdyLpcXsYAESEQ" name="getInit" visibility="public">
+                  <ownedParameter xmi:id="_wySgFeOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgFuOSEdyLpcXsYAESEQ" name="getEnd" visibility="public">
+                  <ownedParameter xmi:id="_wySgF-OSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgGOOSEdyLpcXsYAESEQ" name="getCenter" visibility="public">
+                  <ownedParameter xmi:id="_wySgGeOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgGuOSEdyLpcXsYAESEQ" name="getMid" visibility="public">
+                  <ownedParameter xmi:id="_wySgG-OSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgHOOSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wySgHeOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgHuOSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wySgH-OSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgIOOSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wySgIeOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgIuOSEdyLpcXsYAESEQ" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wySgI-OSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgJOOSEdyLpcXsYAESEQ" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wySgJeOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgJuOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wySgJ-OSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgKOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wySgKeOSEdyLpcXsYAESEQ" name="CenterSelHandler" clientDependency="_wySgLeOSEdyLpcXsYAESEQ _wySgLuOSEdyLpcXsYAESEQ _wySgL-OSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wySgKuOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <generalization xmi:id="_wySgK-OSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <generalization xmi:id="_wySgLOOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySgLeOSEdyLpcXsYAESEQ" name="ICenterHandler" supplier="_wycSX-OSEdyLpcXsYAESEQ" client="_wySgKeOSEdyLpcXsYAESEQ" contract="_wycSX-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySgLuOSEdyLpcXsYAESEQ" name="ICenterHandler" supplier="_wycSX-OSEdyLpcXsYAESEQ" client="_wySgKeOSEdyLpcXsYAESEQ" contract="_wycSX-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySgL-OSEdyLpcXsYAESEQ" name="ICenterHandler" supplier="_wycSX-OSEdyLpcXsYAESEQ" client="_wySgKeOSEdyLpcXsYAESEQ" contract="_wycSX-OSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wySgMOOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySgMeOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgMuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgM-OSEdyLpcXsYAESEQ" name="setPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySgNOOSEdyLpcXsYAESEQ" name="p" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgNeOSEdyLpcXsYAESEQ" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySgNuOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgN-OSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySgOOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgOeOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgOuOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySgO-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgPOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgPeOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySgPuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgP-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgQOOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySgQeOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgQuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgQ-OSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySgROOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgReOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wySgRuOSEdyLpcXsYAESEQ" name="InitHandler" clientDependency="_wySgSOOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wySgR-OSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySgSOOSEdyLpcXsYAESEQ" name="IFinalHandler" supplier="_wycR4eOSEdyLpcXsYAESEQ" client="_wySgRuOSEdyLpcXsYAESEQ" contract="_wycR4eOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wySgSeOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySgSuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgS-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgTOOSEdyLpcXsYAESEQ" name="setPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySgTeOSEdyLpcXsYAESEQ" name="p" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgTuOSEdyLpcXsYAESEQ" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySgT-OSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgUOOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySgUeOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgUuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wySgU-OSEdyLpcXsYAESEQ" name="EndHandler" clientDependency="_wySgVeOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wySgVOOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySgVeOSEdyLpcXsYAESEQ" name="IFinalHandler" supplier="_wycR4eOSEdyLpcXsYAESEQ" client="_wySgU-OSEdyLpcXsYAESEQ" contract="_wycR4eOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wySgVuOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySgV-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgWOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgWeOSEdyLpcXsYAESEQ" name="setPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySgWuOSEdyLpcXsYAESEQ" name="p" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgW-OSEdyLpcXsYAESEQ" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySgXOOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgXeOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySgXuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgX-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wySgYOOSEdyLpcXsYAESEQ" name="InitSelHandler" clientDependency="_wySgY-OSEdyLpcXsYAESEQ _wySgZOOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wySgYeOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <generalization xmi:id="_wySgYuOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySgY-OSEdyLpcXsYAESEQ" name="IFinalHandler" supplier="_wycR4eOSEdyLpcXsYAESEQ" client="_wySgYOOSEdyLpcXsYAESEQ" contract="_wycR4eOSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySgZOOSEdyLpcXsYAESEQ" name="ICuadrantHandler" supplier="_wycSOOOSEdyLpcXsYAESEQ" client="_wySgYOOSEdyLpcXsYAESEQ" contract="_wycSOOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wySgZeOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySgZuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgZ-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgaOOSEdyLpcXsYAESEQ" name="setPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySgaeOSEdyLpcXsYAESEQ" name="p" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgauOSEdyLpcXsYAESEQ" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySga-OSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgbOOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySgbeOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgbuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgb-OSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySgcOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgceOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgcuOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySgc-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgdOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wySgdeOSEdyLpcXsYAESEQ" name="EndSelHandler" clientDependency="_wySgeOOSEdyLpcXsYAESEQ _wySgeeOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wySgduOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <generalization xmi:id="_wySgd-OSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySgeOOSEdyLpcXsYAESEQ" name="IFinalHandler" supplier="_wycR4eOSEdyLpcXsYAESEQ" client="_wySgdeOSEdyLpcXsYAESEQ" contract="_wycR4eOSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySgeeOSEdyLpcXsYAESEQ" name="ICuadrantHandler" supplier="_wycSOOOSEdyLpcXsYAESEQ" client="_wySgdeOSEdyLpcXsYAESEQ" contract="_wycSOOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wySgeuOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySge-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgfOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgfeOSEdyLpcXsYAESEQ" name="setPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySgfuOSEdyLpcXsYAESEQ" name="p" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgf-OSEdyLpcXsYAESEQ" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySggOOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySggeOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySgguOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgg-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySghOOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySgheOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySghuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgh-OSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySgiOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgieOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wySgiuOSEdyLpcXsYAESEQ" name="FMultiPoint2D">
+                <generalization xmi:id="_wySgi-OSEdyLpcXsYAESEQ" general="_wycR4-OSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wySgjOOSEdyLpcXsYAESEQ" name="toJTSGeometry" visibility="public">
+                  <ownedParameter xmi:id="_wySgjeOSEdyLpcXsYAESEQ" name="return" type="_wycTpeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgjuOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wySgj-OSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgkOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgkeOSEdyLpcXsYAESEQ" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_wySgkuOSEdyLpcXsYAESEQ" name="return" type="_wycTpOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgk-OSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wySglOOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgleOSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wySgluOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgl-OSEdyLpcXsYAESEQ" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_wySgmOOSEdyLpcXsYAESEQ" name="ct" type="_wycTpuOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgmeOSEdyLpcXsYAESEQ" name="getNumgeometries" visibility="public">
+                  <ownedParameter xmi:id="_wySgmuOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgm-OSEdyLpcXsYAESEQ" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySgnOOSEdyLpcXsYAESEQ" name="i" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgneOSEdyLpcXsYAESEQ" name="return" type="_wyShAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgnuOSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wySgn-OSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgoOOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgoeOSEdyLpcXsYAESEQ" name="fastIntersects" visibility="public">
+                  <ownedParameter xmi:id="_wySgouOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgo-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgpOOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgpeOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgpuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgp-OSEdyLpcXsYAESEQ" name="getHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wySgqOOSEdyLpcXsYAESEQ" name="type" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgqeOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgquOSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wySgq-OSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgrOOSEdyLpcXsYAESEQ" name="toWKB" visibility="public">
+                  <ownedParameter xmi:id="_wySgreOSEdyLpcXsYAESEQ" name="return" type="_wySgAuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgruOSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wySgr-OSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgsOOSEdyLpcXsYAESEQ" name="flatness" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgseOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgsuOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wySgs-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgtOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgteOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgtuOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wySgt-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySguOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgueOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySguuOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgu-OSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgvOOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wySgveOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgvuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgv-OSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgwOOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgweOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgwuOSEdyLpcXsYAESEQ" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_wySgw-OSEdyLpcXsYAESEQ" name="return" type="_wycTqOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgxOOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wySgxeOSEdyLpcXsYAESEQ" name="p" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgxuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgx-OSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wySgyOOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySgyeOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgyuOSEdyLpcXsYAESEQ" name="getGeometryType" visibility="public">
+                  <ownedParameter xmi:id="_wySgy-OSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySgzOOSEdyLpcXsYAESEQ" name="cloneGeometry" visibility="public">
+                  <ownedParameter xmi:id="_wySgzeOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wySgzuOSEdyLpcXsYAESEQ" name="PointHandler" clientDependency="_wySg0-OSEdyLpcXsYAESEQ _wySg1OOSEdyLpcXsYAESEQ _wySg1eOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wySgz-OSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <generalization xmi:id="_wySg0OOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <generalization xmi:id="_wySg0eOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <generalization xmi:id="_wySg0uOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySg0-OSEdyLpcXsYAESEQ" name="IFinalHandler" supplier="_wycR4eOSEdyLpcXsYAESEQ" client="_wySgzuOSEdyLpcXsYAESEQ" contract="_wycR4eOSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySg1OOSEdyLpcXsYAESEQ" name="IFinalHandler" supplier="_wycR4eOSEdyLpcXsYAESEQ" client="_wySgzuOSEdyLpcXsYAESEQ" contract="_wycR4eOSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySg1eOSEdyLpcXsYAESEQ" name="IFinalHandler" supplier="_wycR4eOSEdyLpcXsYAESEQ" client="_wySgzuOSEdyLpcXsYAESEQ" contract="_wycR4eOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wySg1uOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySg1-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySg2OOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySg2eOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySg2uOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySg2-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySg3OOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySg3eOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySg3uOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySg3-OSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySg4OOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySg4eOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySg4uOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySg4-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySg5OOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySg5eOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySg5uOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySg5-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySg6OOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wySg6eOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySg6uOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySg6-OSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wySg7OOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySg7eOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wySg7uOSEdyLpcXsYAESEQ" name="FMultiLine2D">
+                <generalization xmi:id="_wySg7-OSEdyLpcXsYAESEQ" general="_wycR4-OSEdyLpcXsYAESEQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wySg8OOSEdyLpcXsYAESEQ" name="IGeometryVisitor">
+                <ownedOperation xmi:id="_wySg8eOSEdyLpcXsYAESEQ" name="visit" visibility="public">
+                  <ownedParameter xmi:id="_wySg8uOSEdyLpcXsYAESEQ" name="geometry" type="_wycRC-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wySg8-OSEdyLpcXsYAESEQ" name="AbstractHandler" clientDependency="_wySg9-OSEdyLpcXsYAESEQ">
+                <ownedAttribute xmi:id="_wySg9OOSEdyLpcXsYAESEQ" name="index" visibility="protected" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wySg9eOSEdyLpcXsYAESEQ" name="point" visibility="protected" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wySg9uOSEdyLpcXsYAESEQ" name="select" visibility="private" type="_wySgAeOSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wySg9-OSEdyLpcXsYAESEQ" name="Handler" supplier="_wycR1eOSEdyLpcXsYAESEQ" client="_wySg8-OSEdyLpcXsYAESEQ" contract="_wycR1eOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wySg-OOSEdyLpcXsYAESEQ" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySg-eOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySg-uOSEdyLpcXsYAESEQ" name="select" visibility="public">
+                  <ownedParameter xmi:id="_wySg--OSEdyLpcXsYAESEQ" name="b" type="_wySgAeOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySg_OOSEdyLpcXsYAESEQ" name="isSelected" visibility="public">
+                  <ownedParameter xmi:id="_wySg_eOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySg_uOSEdyLpcXsYAESEQ" name="equalsPoint" visibility="public">
+                  <ownedParameter xmi:id="_wySg_-OSEdyLpcXsYAESEQ" name="obj" type="_wycTqeOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShAOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wyShAeOSEdyLpcXsYAESEQ" name="FPoint2D">
+                <generalization xmi:id="_wyShAuOSEdyLpcXsYAESEQ" general="_wycRx-OSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShA-OSEdyLpcXsYAESEQ" name="p" visibility="protected" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wyShBOOSEdyLpcXsYAESEQ" name="setPoint" visibility="private">
+                  <ownedParameter xmi:id="_wyShBeOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShBuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShB-OSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wyShCOOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShCeOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wyShCuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShC-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShDOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShDeOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wyShDuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShD-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShEOOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShEeOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShEuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShE-OSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wyShFOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShFeOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShFuOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShF-OSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShGOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShGeOSEdyLpcXsYAESEQ" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_wyShGuOSEdyLpcXsYAESEQ" name="return" type="_wycTqOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShG-OSEdyLpcXsYAESEQ" name="getX" visibility="public">
+                  <ownedParameter xmi:id="_wyShHOOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShHeOSEdyLpcXsYAESEQ" name="getY" visibility="public">
+                  <ownedParameter xmi:id="_wyShHuOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShH-OSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wyShIOOSEdyLpcXsYAESEQ" name="p" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShIeOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShIuOSEdyLpcXsYAESEQ" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_wyShI-OSEdyLpcXsYAESEQ" name="return" type="_wycTpOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShJOOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wyShJeOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShJuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShJ-OSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wyShKOOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShKeOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShKuOSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wyShK-OSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShLOOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShLeOSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wyShLuOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShL-OSEdyLpcXsYAESEQ" name="flatness" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShMOOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShMeOSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wyShMuOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShM-OSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wyShNOOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShNeOSEdyLpcXsYAESEQ" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_wyShNuOSEdyLpcXsYAESEQ" name="ct" type="_wycTpuOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShN-OSEdyLpcXsYAESEQ" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wyShOOOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShOeOSEdyLpcXsYAESEQ" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wyShOuOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wyShO-OSEdyLpcXsYAESEQ" name="PointHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wyShPOOSEdyLpcXsYAESEQ" name="GeneralPathX">
+                <ownedAttribute xmi:id="_wyShPeOSEdyLpcXsYAESEQ" name="WIND_EVEN_ODD" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShPuOSEdyLpcXsYAESEQ" name="WIND_NON_ZERO" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShP-OSEdyLpcXsYAESEQ" name="SEG_MOVETO" visibility="private" type="_wySgAuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShQOOSEdyLpcXsYAESEQ" name="SEG_LINETO" visibility="private" type="_wySgAuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShQeOSEdyLpcXsYAESEQ" name="SEG_QUADTO" visibility="private" type="_wySgAuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShQuOSEdyLpcXsYAESEQ" name="SEG_CUBICTO" visibility="private" type="_wySgAuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShQ-OSEdyLpcXsYAESEQ" name="SEG_CLOSE" visibility="private" type="_wySgAuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShROOSEdyLpcXsYAESEQ" name="pointTypes" type="_wySgAuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShReOSEdyLpcXsYAESEQ" name="pointCoords" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShRuOSEdyLpcXsYAESEQ" name="numTypes" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShR-OSEdyLpcXsYAESEQ" name="numCoords" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShSOOSEdyLpcXsYAESEQ" name="windingRule" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShSeOSEdyLpcXsYAESEQ" name="INIT_SIZE" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShSuOSEdyLpcXsYAESEQ" name="EXPAND_MAX" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wyShS-OSEdyLpcXsYAESEQ" name="curvesize" visibility="private" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wyShTOOSEdyLpcXsYAESEQ" name="needRoom" visibility="private">
+                  <ownedParameter xmi:id="_wyShTeOSEdyLpcXsYAESEQ" name="newTypes" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShTuOSEdyLpcXsYAESEQ" name="newCoords" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShT-OSEdyLpcXsYAESEQ" name="needMove" type="_wySgAeOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShUOOSEdyLpcXsYAESEQ" name="moveTo" visibility="public">
+                  <ownedParameter xmi:id="_wyShUeOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShUuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShU-OSEdyLpcXsYAESEQ" name="lineTo" visibility="public">
+                  <ownedParameter xmi:id="_wyShVOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShVeOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShVuOSEdyLpcXsYAESEQ" name="quadTo" visibility="public">
+                  <ownedParameter xmi:id="_wyShV-OSEdyLpcXsYAESEQ" name="x1" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShWOOSEdyLpcXsYAESEQ" name="y1" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShWeOSEdyLpcXsYAESEQ" name="x2" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShWuOSEdyLpcXsYAESEQ" name="y2" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShW-OSEdyLpcXsYAESEQ" name="curveTo" visibility="public">
+                  <ownedParameter xmi:id="_wyShXOOSEdyLpcXsYAESEQ" name="x1" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShXeOSEdyLpcXsYAESEQ" name="y1" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShXuOSEdyLpcXsYAESEQ" name="x2" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShX-OSEdyLpcXsYAESEQ" name="y2" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShYOOSEdyLpcXsYAESEQ" name="x3" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShYeOSEdyLpcXsYAESEQ" name="y3" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShYuOSEdyLpcXsYAESEQ" name="closePath" visibility="public"/>
+                <ownedOperation xmi:id="_wyShY-OSEdyLpcXsYAESEQ" name="isClosed" visibility="public">
+                  <ownedParameter xmi:id="_wyShZOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShZeOSEdyLpcXsYAESEQ" name="append" visibility="public">
+                  <ownedParameter xmi:id="_wyShZuOSEdyLpcXsYAESEQ" name="s" type="_wycTquOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShZ-OSEdyLpcXsYAESEQ" name="connect" type="_wySgAeOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShaOOSEdyLpcXsYAESEQ" name="append" visibility="public">
+                  <ownedParameter xmi:id="_wyShaeOSEdyLpcXsYAESEQ" name="pi" type="_wycTp-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShauOSEdyLpcXsYAESEQ" name="connect" type="_wySgAeOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySha-OSEdyLpcXsYAESEQ" name="getWindingRule" visibility="public">
+                  <ownedParameter xmi:id="_wyShbOOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShbeOSEdyLpcXsYAESEQ" name="setWindingRule" visibility="public">
+                  <ownedParameter xmi:id="_wyShbuOSEdyLpcXsYAESEQ" name="rule" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShb-OSEdyLpcXsYAESEQ" name="getCurrentPoint" visibility="public">
+                  <ownedParameter xmi:id="_wyShcOOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShceOSEdyLpcXsYAESEQ" name="reset" visibility="public"/>
+                <ownedOperation xmi:id="_wyShcuOSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wyShc-OSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShdOOSEdyLpcXsYAESEQ" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_wyShdeOSEdyLpcXsYAESEQ" name="ct" type="_wycTpuOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShduOSEdyLpcXsYAESEQ" name="createTransformedShape" visibility="public">
+                  <ownedParameter xmi:id="_wyShd-OSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wySheOOSEdyLpcXsYAESEQ" name="return" type="_wycTquOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wySheeOSEdyLpcXsYAESEQ" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_wySheuOSEdyLpcXsYAESEQ" name="return" type="_wycTq-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShe-OSEdyLpcXsYAESEQ" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_wyShfOOSEdyLpcXsYAESEQ" name="return" type="_wycTpOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShfeOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wyShfuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShf-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShgOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShgeOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wyShguOSEdyLpcXsYAESEQ" name="p" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShg-OSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShhOOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wyShheOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShhuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShh-OSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShiOOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShieOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShiuOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wyShi-OSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShjOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShjeOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wyShjuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShj-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShkOOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShkeOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShkuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShk-OSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wyShlOOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShleOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShluOSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wyShl-OSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wyShmOOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wyShmeOSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wycRAOOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRAeOSEdyLpcXsYAESEQ" name="flatness" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRAuOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRA-OSEdyLpcXsYAESEQ" name="clone" visibility="public">
+                  <ownedParameter xmi:id="_wycRBOOSEdyLpcXsYAESEQ" name="return" type="_wycTqeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRBeOSEdyLpcXsYAESEQ" name="flip" visibility="public"/>
+                <ownedOperation xmi:id="_wycRBuOSEdyLpcXsYAESEQ" name="ensureOrientation" visibility="public">
+                  <ownedParameter xmi:id="_wycRB-OSEdyLpcXsYAESEQ" name="bCCW" type="_wySgAeOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRCOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRCeOSEdyLpcXsYAESEQ" name="isCCW" visibility="public">
+                  <ownedParameter xmi:id="_wycRCuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wycRC-OSEdyLpcXsYAESEQ" name="IGeometry">
+                <generalization xmi:id="_wycRDOOSEdyLpcXsYAESEQ" general="_wycTquOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRDeOSEdyLpcXsYAESEQ" name="BEST" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRDuOSEdyLpcXsYAESEQ" name="N" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRD-OSEdyLpcXsYAESEQ" name="NE" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycREOOSEdyLpcXsYAESEQ" name="E" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycREeOSEdyLpcXsYAESEQ" name="SE" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycREuOSEdyLpcXsYAESEQ" name="S" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRE-OSEdyLpcXsYAESEQ" name="SW" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRFOOSEdyLpcXsYAESEQ" name="W" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRFeOSEdyLpcXsYAESEQ" name="NW" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRFuOSEdyLpcXsYAESEQ" name="SELECTHANDLER" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRF-OSEdyLpcXsYAESEQ" name="STRETCHINGHANDLER" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycRGOOSEdyLpcXsYAESEQ" name="toJTSGeometry">
+                  <ownedParameter xmi:id="_wycRGeOSEdyLpcXsYAESEQ" name="return" type="_wycTpeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRGuOSEdyLpcXsYAESEQ" name="getGeometryType">
+                  <ownedParameter xmi:id="_wycRG-OSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRHOOSEdyLpcXsYAESEQ" name="cloneGeometry">
+                  <ownedParameter xmi:id="_wycRHeOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRHuOSEdyLpcXsYAESEQ" name="intersects">
+                  <ownedParameter xmi:id="_wycRH-OSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRIOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRIeOSEdyLpcXsYAESEQ" name="fastIntersects" visibility="public">
+                  <ownedParameter xmi:id="_wycRIuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRI-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRJOOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRJeOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRJuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRJ-OSEdyLpcXsYAESEQ" name="getBounds2D">
+                  <ownedParameter xmi:id="_wycRKOOSEdyLpcXsYAESEQ" name="return" type="_wycTpOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRKeOSEdyLpcXsYAESEQ" name="reProject">
+                  <ownedParameter xmi:id="_wycRKuOSEdyLpcXsYAESEQ" name="ct" type="_wycTpuOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRK-OSEdyLpcXsYAESEQ" name="getPathIterator">
+                  <ownedParameter xmi:id="_wycRLOOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRLeOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRLuOSEdyLpcXsYAESEQ" name="toWKB" visibility="public">
+                  <ownedParameter xmi:id="_wycRL-OSEdyLpcXsYAESEQ" name="return" type="_wySgAuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRMOOSEdyLpcXsYAESEQ" name="getHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycRMeOSEdyLpcXsYAESEQ" name="type" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRMuOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRM-OSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wycRNOOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRNeOSEdyLpcXsYAESEQ" name="getPathIterator">
+                  <ownedParameter xmi:id="_wycRNuOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRN-OSEdyLpcXsYAESEQ" name="flatness" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycROOOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycROeOSEdyLpcXsYAESEQ" name="getInternalShape">
+                  <ownedParameter xmi:id="_wycROuOSEdyLpcXsYAESEQ" name="return" type="_wycTquOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRO-OSEdyLpcXsYAESEQ" name="isSimple" visibility="public">
+                  <ownedParameter xmi:id="_wycRPOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRPeOSEdyLpcXsYAESEQ" name="accept" visibility="public">
+                  <ownedParameter xmi:id="_wycRPuOSEdyLpcXsYAESEQ" name="visitor" type="_wySg8OOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycRP-OSEdyLpcXsYAESEQ" name="FPolyline3D" clientDependency="_wycRQuOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wycRQOOSEdyLpcXsYAESEQ" general="_wycS9uOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRQeOSEdyLpcXsYAESEQ" name="pZ" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycRQuOSEdyLpcXsYAESEQ" name="FShape3D" supplier="_wycS8uOSEdyLpcXsYAESEQ" client="_wycRP-OSEdyLpcXsYAESEQ" contract="_wycS8uOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycRQ-OSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wycRROOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRReOSEdyLpcXsYAESEQ" name="getZs" visibility="public">
+                  <ownedParameter xmi:id="_wycRRuOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRR-OSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wycRSOOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycRSeOSEdyLpcXsYAESEQ" name="FCircle2D">
+                <generalization xmi:id="_wycRSuOSEdyLpcXsYAESEQ" general="_wycSH-OSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRS-OSEdyLpcXsYAESEQ" name="center" visibility="private" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRTOOSEdyLpcXsYAESEQ" name="radio" visibility="private" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycRTeOSEdyLpcXsYAESEQ" name="getCenter" visibility="public">
+                  <ownedParameter xmi:id="_wycRTuOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRT-OSEdyLpcXsYAESEQ" name="getRadio" visibility="public">
+                  <ownedParameter xmi:id="_wycRUOOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRUeOSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wycRUuOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRU-OSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wycRVOOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRVeOSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wycRVuOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRV-OSEdyLpcXsYAESEQ" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycRWOOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRWeOSEdyLpcXsYAESEQ" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycRWuOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRW-OSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wycRXOOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRXeOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycRXuOSEdyLpcXsYAESEQ" name="CenterHandler" clientDependency="_wycRYeOSEdyLpcXsYAESEQ _wycRYuOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wycRX-OSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <generalization xmi:id="_wycRYOOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycRYeOSEdyLpcXsYAESEQ" name="ICenterHandler" supplier="_wycSX-OSEdyLpcXsYAESEQ" client="_wycRXuOSEdyLpcXsYAESEQ" contract="_wycSX-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycRYuOSEdyLpcXsYAESEQ" name="ICenterHandler" supplier="_wycSX-OSEdyLpcXsYAESEQ" client="_wycRXuOSEdyLpcXsYAESEQ" contract="_wycSX-OSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycRY-OSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wycRZOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRZeOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRZuOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wycRZ-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRaOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRaeOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wycRauOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRa-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRbOOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wycRbeOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRbuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycRb-OSEdyLpcXsYAESEQ" name="CenterSelHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycRcOOSEdyLpcXsYAESEQ" name="RadioSelHandler" clientDependency="_wycRcuOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wycRceOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycRcuOSEdyLpcXsYAESEQ" name="ICuadrantHandler" supplier="_wycSOOOSEdyLpcXsYAESEQ" client="_wycRcOOSEdyLpcXsYAESEQ" contract="_wycSOOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycRc-OSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wycRdOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRdeOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRduOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wycRd-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycReOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycReeOSEdyLpcXsYAESEQ" name="ShapeFactory">
+                <ownedOperation xmi:id="_wycReuOSEdyLpcXsYAESEQ" name="createPoint2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRe-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRfOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRfeOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRfuOSEdyLpcXsYAESEQ" name="createPoint2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRf-OSEdyLpcXsYAESEQ" name="p" type="_wyShAeOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRgOOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRgeOSEdyLpcXsYAESEQ" name="createMultipoint2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRguOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRg-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRhOOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRheOSEdyLpcXsYAESEQ" name="createPoint3D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRhuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRh-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRiOOSEdyLpcXsYAESEQ" name="z" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRieOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRiuOSEdyLpcXsYAESEQ" name="createMultipoint3D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRi-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRjOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRjeOSEdyLpcXsYAESEQ" name="z" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRjuOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRj-OSEdyLpcXsYAESEQ" name="createPolyline2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRkOOSEdyLpcXsYAESEQ" name="shape" type="_wyShPOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRkeOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRkuOSEdyLpcXsYAESEQ" name="createPolyline3D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRk-OSEdyLpcXsYAESEQ" name="shape" type="_wyShPOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRlOOSEdyLpcXsYAESEQ" name="pZ" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRleOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRluOSEdyLpcXsYAESEQ" name="createPolygon3D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRl-OSEdyLpcXsYAESEQ" name="shape" type="_wyShPOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRmOOSEdyLpcXsYAESEQ" name="pZ" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRmeOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRmuOSEdyLpcXsYAESEQ" name="createPolygon2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRm-OSEdyLpcXsYAESEQ" name="shape" type="_wyShPOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRnOOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRneOSEdyLpcXsYAESEQ" name="createPolygon2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRnuOSEdyLpcXsYAESEQ" name="shape" type="_wycS9uOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRn-OSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRoOOSEdyLpcXsYAESEQ" name="createGeometry" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRoeOSEdyLpcXsYAESEQ" name="shp" type="_wycS2eOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRouOSEdyLpcXsYAESEQ" name="return" type="_wycS_OOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRo-OSEdyLpcXsYAESEQ" name="createCircle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRpOOSEdyLpcXsYAESEQ" name="center" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRpeOSEdyLpcXsYAESEQ" name="r" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRpuOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRp-OSEdyLpcXsYAESEQ" name="createCircle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRqOOSEdyLpcXsYAESEQ" name="center" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRqeOSEdyLpcXsYAESEQ" name="radio" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRquOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRq-OSEdyLpcXsYAESEQ" name="createCircle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRrOOSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRreOSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRruOSEdyLpcXsYAESEQ" name="p3" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRr-OSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRsOOSEdyLpcXsYAESEQ" name="createArc" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRseOSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRsuOSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRs-OSEdyLpcXsYAESEQ" name="p3" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRtOOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRteOSEdyLpcXsYAESEQ" name="createEllipse" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRtuOSEdyLpcXsYAESEQ" name="axis1Start" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRt-OSEdyLpcXsYAESEQ" name="axis1End" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRuOOSEdyLpcXsYAESEQ" name="axis2Length" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRueOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRuuOSEdyLpcXsYAESEQ" name="createSpline2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycRu-OSEdyLpcXsYAESEQ" name="points" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycRvOOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycRveOSEdyLpcXsYAESEQ" name="FMultipoint3D" clientDependency="_wycRwOOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wycRvuOSEdyLpcXsYAESEQ" general="_wySgiuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycRv-OSEdyLpcXsYAESEQ" name="z" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycRwOOSEdyLpcXsYAESEQ" name="IGeometry3D" supplier="_wycS8-OSEdyLpcXsYAESEQ" client="_wycRveOSEdyLpcXsYAESEQ" contract="_wycS8-OSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycRweOSEdyLpcXsYAESEQ" name="cloneGeometry" visibility="public">
+                  <ownedParameter xmi:id="_wycRwuOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRw-OSEdyLpcXsYAESEQ" name="getZs" visibility="public">
+                  <ownedParameter xmi:id="_wycRxOOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRxeOSEdyLpcXsYAESEQ" name="getGeometryType" visibility="public">
+                  <ownedParameter xmi:id="_wycRxuOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycRx-OSEdyLpcXsYAESEQ" name="FPrimitiveAbstract">
+                <ownedOperation xmi:id="_wycRyuOSEdyLpcXsYAESEQ" name="cloneGeometry" visibility="public">
+                  <ownedParameter xmi:id="_wycRy-OSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRzOOSEdyLpcXsYAESEQ" name="toJTSGeometry" visibility="public">
+                  <ownedParameter xmi:id="_wycRzeOSEdyLpcXsYAESEQ" name="return" type="_wycTpeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycRzuOSEdyLpcXsYAESEQ" name="getHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycRz-OSEdyLpcXsYAESEQ" name="type" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycR0OOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR0eOSEdyLpcXsYAESEQ" name="getGeometryType" visibility="public">
+                  <ownedParameter xmi:id="_wycR0uOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR0-OSEdyLpcXsYAESEQ" name="isSimple" visibility="public">
+                  <ownedParameter xmi:id="_wycR1OOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wycR1eOSEdyLpcXsYAESEQ" name="Handler">
+                <ownedOperation xmi:id="_wycR1uOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wycR1-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycR2OOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR2eOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wycR2uOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycR2-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR3OOSEdyLpcXsYAESEQ" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_wycR3eOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR3uOSEdyLpcXsYAESEQ" name="equalsPoint" visibility="public">
+                  <ownedParameter xmi:id="_wycR3-OSEdyLpcXsYAESEQ" name="obj" type="_wycTqeOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycR4OOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wycR4eOSEdyLpcXsYAESEQ" name="IFinalHandler">
+                <generalization xmi:id="_wycR4uOSEdyLpcXsYAESEQ" general="_wycR1eOSEdyLpcXsYAESEQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycR4-OSEdyLpcXsYAESEQ" name="FGeometryCollection">
+                <generalization xmi:id="_wycR5OOSEdyLpcXsYAESEQ" general="_wycS_OOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycR5eOSEdyLpcXsYAESEQ" name="geometries" type="_wycRC-OSEdyLpcXsYAESEQ" association="_wycTrOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycR5uOSEdyLpcXsYAESEQ" name="getGeometriesNumber" visibility="public">
+                  <ownedParameter xmi:id="_wycR5-OSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR6OOSEdyLpcXsYAESEQ" name="cloneGeometry" visibility="public">
+                  <ownedParameter xmi:id="_wycR6eOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR6uOSEdyLpcXsYAESEQ" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_wycR6-OSEdyLpcXsYAESEQ" name="return" type="_wycTpOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR7OOSEdyLpcXsYAESEQ" name="getGeometryType" visibility="public">
+                  <ownedParameter xmi:id="_wycR7eOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR7uOSEdyLpcXsYAESEQ" name="getHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycR7-OSEdyLpcXsYAESEQ" name="type" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycR8OOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR8eOSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wycR8uOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycR8-OSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR9OOSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wycR9eOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycR9uOSEdyLpcXsYAESEQ" name="flatness" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycR9-OSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR-OOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wycR-eOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycR-uOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR--OSEdyLpcXsYAESEQ" name="isSimple" visibility="public">
+                  <ownedParameter xmi:id="_wycR_OOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR_eOSEdyLpcXsYAESEQ" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_wycR_uOSEdyLpcXsYAESEQ" name="ct" type="_wycTpuOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycR_-OSEdyLpcXsYAESEQ" name="toJTSGeometry" visibility="public">
+                  <ownedParameter xmi:id="_wycSAOOSEdyLpcXsYAESEQ" name="return" type="_wycTpeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSAeOSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wycSAuOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSA-OSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycSBOOSEdyLpcXsYAESEQ" name="p" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSBeOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSBuOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycSB-OSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSCOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSCeOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycSCuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSC-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSDOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSDeOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycSDuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSD-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSEOOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSEeOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSEuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSE-OSEdyLpcXsYAESEQ" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_wycSFOOSEdyLpcXsYAESEQ" name="return" type="_wycTqOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSFeOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wycSFuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSF-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSGOOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSGeOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSGuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSG-OSEdyLpcXsYAESEQ" name="accept" visibility="public">
+                  <ownedParameter xmi:id="_wycSHOOSEdyLpcXsYAESEQ" name="visitor" type="_wySg8OOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSHeOSEdyLpcXsYAESEQ" name="getGeometries" visibility="public">
+                  <ownedParameter xmi:id="_wycSHuOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSH-OSEdyLpcXsYAESEQ" name="FPolygon2D">
+                <generalization xmi:id="_wycSIOOSEdyLpcXsYAESEQ" general="_wycTIOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycSIeOSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wycSIuOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSI-OSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wycSJOOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSJeOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wycSJuOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSJ-OSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSKOOSEdyLpcXsYAESEQ" name="FPointIterator">
+                <generalization xmi:id="_wycSKeOSEdyLpcXsYAESEQ" general="_wycTD-OSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycSKuOSEdyLpcXsYAESEQ" name="at" visibility="private" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycSK-OSEdyLpcXsYAESEQ" name="p" visibility="private" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycSLOOSEdyLpcXsYAESEQ" name="done" visibility="private" type="_wySgAeOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycSLeOSEdyLpcXsYAESEQ" name="getWindingRule" visibility="public">
+                  <ownedParameter xmi:id="_wycSLuOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSL-OSEdyLpcXsYAESEQ" name="next" visibility="public"/>
+                <ownedOperation xmi:id="_wycSMOOSEdyLpcXsYAESEQ" name="isDone" visibility="public">
+                  <ownedParameter xmi:id="_wycSMeOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSMuOSEdyLpcXsYAESEQ" name="currentSegment" visibility="public">
+                  <ownedParameter xmi:id="_wycSM-OSEdyLpcXsYAESEQ" name="coords" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSNOOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSNeOSEdyLpcXsYAESEQ" name="currentSegment" visibility="public">
+                  <ownedParameter xmi:id="_wycSNuOSEdyLpcXsYAESEQ" name="coords" type="_wySgBeOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSN-OSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wycSOOOSEdyLpcXsYAESEQ" name="ICuadrantHandler">
+                <generalization xmi:id="_wycSOeOSEdyLpcXsYAESEQ" general="_wycR1eOSEdyLpcXsYAESEQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSOuOSEdyLpcXsYAESEQ" name="FEllipse2D">
+                <generalization xmi:id="_wycSO-OSEdyLpcXsYAESEQ" general="_wycSH-OSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycSPOOSEdyLpcXsYAESEQ" name="init" visibility="private" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycSPeOSEdyLpcXsYAESEQ" name="end" visibility="private" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycSPuOSEdyLpcXsYAESEQ" name="ydist" visibility="private" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycSP-OSEdyLpcXsYAESEQ" name="getInit" visibility="public">
+                  <ownedParameter xmi:id="_wycSQOOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSQeOSEdyLpcXsYAESEQ" name="getEnd" visibility="public">
+                  <ownedParameter xmi:id="_wycSQuOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSQ-OSEdyLpcXsYAESEQ" name="getDist" visibility="public">
+                  <ownedParameter xmi:id="_wycSROOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSReOSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wycSRuOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSR-OSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wycSSOOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSSeOSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wycSSuOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSS-OSEdyLpcXsYAESEQ" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycSTOOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSTeOSEdyLpcXsYAESEQ" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycSTuOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycST-OSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wycSUOOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSUeOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSUuOSEdyLpcXsYAESEQ" name="CenterHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSU-OSEdyLpcXsYAESEQ" name="CenterSelHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSVOOSEdyLpcXsYAESEQ" name="InitSelHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSVeOSEdyLpcXsYAESEQ" name="EndSelHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSVuOSEdyLpcXsYAESEQ" name="RadioSelYHandler" clientDependency="_wycSWOOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wycSV-OSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycSWOOSEdyLpcXsYAESEQ" name="ICuadrantHandler" supplier="_wycSOOOSEdyLpcXsYAESEQ" client="_wycSVuOSEdyLpcXsYAESEQ" contract="_wycSOOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycSWeOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wycSWuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSW-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSXOOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wycSXeOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSXuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wycSX-OSEdyLpcXsYAESEQ" name="ICenterHandler">
+                <generalization xmi:id="_wycSYOOSEdyLpcXsYAESEQ" general="_wycR1eOSEdyLpcXsYAESEQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSYeOSEdyLpcXsYAESEQ" name="FPoint3D" clientDependency="_wycSZOOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wycSYuOSEdyLpcXsYAESEQ" general="_wyShAeOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycSY-OSEdyLpcXsYAESEQ" name="z" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycSZOOSEdyLpcXsYAESEQ" name="FShape3D" supplier="_wycS8uOSEdyLpcXsYAESEQ" client="_wycSYeOSEdyLpcXsYAESEQ" contract="_wycS8uOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycSZeOSEdyLpcXsYAESEQ" name="getZs" visibility="public">
+                  <ownedParameter xmi:id="_wycSZuOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSZ-OSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wycSaOOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSaeOSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wycSauOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSa-OSEdyLpcXsYAESEQ" name="FSpline2D">
+                <generalization xmi:id="_wycSbOOSEdyLpcXsYAESEQ" general="_wycS9uOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycSbeOSEdyLpcXsYAESEQ" name="points" visibility="private" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycSbuOSEdyLpcXsYAESEQ" name="getGeneralPathX" visibility="private" isStatic="true">
+                  <ownedParameter xmi:id="_wycSb-OSEdyLpcXsYAESEQ" name="ps" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycScOOSEdyLpcXsYAESEQ" name="return" type="_wyShPOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSceOSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wycScuOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSc-OSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wycSdOOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSdeOSEdyLpcXsYAESEQ" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycSduOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSd-OSEdyLpcXsYAESEQ" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycSeOOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSeeOSEdyLpcXsYAESEQ" name="PointHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSeuOSEdyLpcXsYAESEQ" name="PointSelHandler" clientDependency="_wycSfeOSEdyLpcXsYAESEQ _wycSfuOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wycSe-OSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <generalization xmi:id="_wycSfOOSEdyLpcXsYAESEQ" general="_wySg8-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycSfeOSEdyLpcXsYAESEQ" name="IFinalHandler" supplier="_wycR4eOSEdyLpcXsYAESEQ" client="_wycSeuOSEdyLpcXsYAESEQ" contract="_wycR4eOSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycSfuOSEdyLpcXsYAESEQ" name="IFinalHandler" supplier="_wycR4eOSEdyLpcXsYAESEQ" client="_wycSeuOSEdyLpcXsYAESEQ" contract="_wycR4eOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycSf-OSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wycSgOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSgeOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSguOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wycSg-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycShOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSheOSEdyLpcXsYAESEQ" name="move" visibility="public">
+                  <ownedParameter xmi:id="_wycShuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSh-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSiOOSEdyLpcXsYAESEQ" name="set" visibility="public">
+                  <ownedParameter xmi:id="_wycSieOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSiuOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSi-OSEdyLpcXsYAESEQ" name="Spline">
+                <ownedAttribute xmi:id="_wycSjOOSEdyLpcXsYAESEQ" name="y" visibility="private" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycSjeOSEdyLpcXsYAESEQ" name="y2" visibility="private" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycSjuOSEdyLpcXsYAESEQ" name="fn" visibility="public">
+                  <ownedParameter xmi:id="_wycSj-OSEdyLpcXsYAESEQ" name="n" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSkOOSEdyLpcXsYAESEQ" name="t" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSkeOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSkuOSEdyLpcXsYAESEQ" name="FPolygon3D" clientDependency="_wycSleOSEdyLpcXsYAESEQ">
+                <generalization xmi:id="_wycSk-OSEdyLpcXsYAESEQ" general="_wycSH-OSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycSlOOSEdyLpcXsYAESEQ" name="pZ" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycSleOSEdyLpcXsYAESEQ" name="FShape3D" supplier="_wycS8uOSEdyLpcXsYAESEQ" client="_wycSkuOSEdyLpcXsYAESEQ" contract="_wycS8uOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycSluOSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wycSl-OSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSmOOSEdyLpcXsYAESEQ" name="getZs" visibility="public">
+                  <ownedParameter xmi:id="_wycSmeOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSmuOSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wycSm-OSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycSnOOSEdyLpcXsYAESEQ" name="FNullGeometry">
+                <generalization xmi:id="_wycSneOSEdyLpcXsYAESEQ" general="_wycS_OOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycSnuOSEdyLpcXsYAESEQ" name="toJTSGeometry" visibility="public">
+                  <ownedParameter xmi:id="_wycSn-OSEdyLpcXsYAESEQ" name="return" type="_wycTpeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSoOOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wycSoeOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSouOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSo-OSEdyLpcXsYAESEQ" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_wycSpOOSEdyLpcXsYAESEQ" name="return" type="_wycTpOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSpeOSEdyLpcXsYAESEQ" name="getGeometryType" visibility="public">
+                  <ownedParameter xmi:id="_wycSpuOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSp-OSEdyLpcXsYAESEQ" name="cloneGeometry" visibility="public">
+                  <ownedParameter xmi:id="_wycSqOOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSqeOSEdyLpcXsYAESEQ" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_wycSquOSEdyLpcXsYAESEQ" name="ct" type="_wycTpuOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSq-OSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wycSrOOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSreOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSruOSEdyLpcXsYAESEQ" name="fastIntersects" visibility="public">
+                  <ownedParameter xmi:id="_wycSr-OSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSsOOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSseOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSsuOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSs-OSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycStOOSEdyLpcXsYAESEQ" name="toWKB" visibility="public">
+                  <ownedParameter xmi:id="_wycSteOSEdyLpcXsYAESEQ" name="return" type="_wySgAuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycStuOSEdyLpcXsYAESEQ" name="getHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycSt-OSEdyLpcXsYAESEQ" name="type" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSuOOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSueOSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wycSuuOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSu-OSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wycSvOOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSveOSEdyLpcXsYAESEQ" name="flatness" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSvuOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSv-OSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycSwOOSEdyLpcXsYAESEQ" name="arg0" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSweOSEdyLpcXsYAESEQ" name="arg1" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSwuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSw-OSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycSxOOSEdyLpcXsYAESEQ" name="arg0" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSxeOSEdyLpcXsYAESEQ" name="arg1" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSxuOSEdyLpcXsYAESEQ" name="arg2" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSx-OSEdyLpcXsYAESEQ" name="arg3" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSyOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSyeOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wycSyuOSEdyLpcXsYAESEQ" name="arg0" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSy-OSEdyLpcXsYAESEQ" name="arg1" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSzOOSEdyLpcXsYAESEQ" name="arg2" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSzeOSEdyLpcXsYAESEQ" name="arg3" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycSzuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycSz-OSEdyLpcXsYAESEQ" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_wycS0OOSEdyLpcXsYAESEQ" name="return" type="_wycTqOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycS0eOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycS0uOSEdyLpcXsYAESEQ" name="arg0" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycS0-OSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycS1OOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycS1eOSEdyLpcXsYAESEQ" name="arg0" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycS1uOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycS1-OSEdyLpcXsYAESEQ" name="isSimple" visibility="public">
+                  <ownedParameter xmi:id="_wycS2OOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wycS2eOSEdyLpcXsYAESEQ" name="FShape">
+                <generalization xmi:id="_wycS2uOSEdyLpcXsYAESEQ" general="_wycTquOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS2-OSEdyLpcXsYAESEQ" name="NULL" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS3OOSEdyLpcXsYAESEQ" name="POINT" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS3eOSEdyLpcXsYAESEQ" name="LINE" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS3uOSEdyLpcXsYAESEQ" name="POLYGON" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS3-OSEdyLpcXsYAESEQ" name="TEXT" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS4OOSEdyLpcXsYAESEQ" name="MULTI" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS4eOSEdyLpcXsYAESEQ" name="MULTIPOINT" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS4uOSEdyLpcXsYAESEQ" name="CIRCLE" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS4-OSEdyLpcXsYAESEQ" name="ARC" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS5OOSEdyLpcXsYAESEQ" name="ELLIPSE" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycS5eOSEdyLpcXsYAESEQ" name="Z" visibility="public" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycS5uOSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wycS5-OSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycS6OOSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wycS6eOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycS6uOSEdyLpcXsYAESEQ" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_wycS6-OSEdyLpcXsYAESEQ" name="ct" type="_wycTpuOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycS7OOSEdyLpcXsYAESEQ" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycS7eOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycS7uOSEdyLpcXsYAESEQ" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycS7-OSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycS8OOSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wycS8eOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wycS8uOSEdyLpcXsYAESEQ" name="FShape3D"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wycS8-OSEdyLpcXsYAESEQ" name="IGeometry3D">
+                <ownedOperation xmi:id="_wycS9OOSEdyLpcXsYAESEQ" name="getZs">
+                  <ownedParameter xmi:id="_wycS9eOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycS9uOSEdyLpcXsYAESEQ" name="FPolyline2D">
+                <generalization xmi:id="_wycS9-OSEdyLpcXsYAESEQ" general="_wycTIOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycS-OOSEdyLpcXsYAESEQ" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_wycS-eOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycS-uOSEdyLpcXsYAESEQ" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_wycS--OSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycS_OOSEdyLpcXsYAESEQ" name="FGeometry" clientDependency="_wycS_eOSEdyLpcXsYAESEQ _wycS_uOSEdyLpcXsYAESEQ">
+                <interfaceRealization xmi:id="_wycS_eOSEdyLpcXsYAESEQ" name="IGeometry" supplier="_wycRC-OSEdyLpcXsYAESEQ" client="_wycS_OOSEdyLpcXsYAESEQ" contract="_wycRC-OSEdyLpcXsYAESEQ"/>
+                <interfaceRealization xmi:id="_wycS_uOSEdyLpcXsYAESEQ" name="IGeometry3D" supplier="_wycS8-OSEdyLpcXsYAESEQ" client="_wycS_OOSEdyLpcXsYAESEQ" contract="_wycS8-OSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycS_-OSEdyLpcXsYAESEQ" name="toWKB" visibility="public">
+                  <ownedParameter xmi:id="_wycTAOOSEdyLpcXsYAESEQ" name="return" type="_wySgAuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTAeOSEdyLpcXsYAESEQ" name="getInternalShape" visibility="public">
+                  <ownedParameter xmi:id="_wycTAuOSEdyLpcXsYAESEQ" name="return" type="_wycTquOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTA-OSEdyLpcXsYAESEQ" name="fastIntersects" visibility="public">
+                  <ownedParameter xmi:id="_wycTBOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTBeOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTBuOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTB-OSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTCOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTCeOSEdyLpcXsYAESEQ" name="getZs" visibility="public">
+                  <ownedParameter xmi:id="_wycTCuOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTC-OSEdyLpcXsYAESEQ" name="accept" visibility="public">
+                  <ownedParameter xmi:id="_wycTDOOSEdyLpcXsYAESEQ" name="visitor" type="_wySg8OOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycTDeOSEdyLpcXsYAESEQ" name="FMultiPolygon2D">
+                <generalization xmi:id="_wycTDuOSEdyLpcXsYAESEQ" general="_wycR4-OSEdyLpcXsYAESEQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycTD-OSEdyLpcXsYAESEQ" name="GeneralPathXIterator">
+                <ownedAttribute xmi:id="_wycTEOOSEdyLpcXsYAESEQ" name="typeIdx" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycTEeOSEdyLpcXsYAESEQ" name="pointIdx" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycTEuOSEdyLpcXsYAESEQ" name="path" type="_wyShPOOSEdyLpcXsYAESEQ" association="_wycTruOSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycTE-OSEdyLpcXsYAESEQ" name="affine" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycTFOOSEdyLpcXsYAESEQ" name="curvesize" visibility="private" type="_wySgBuOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycTFeOSEdyLpcXsYAESEQ" name="getWindingRule" visibility="public">
+                  <ownedParameter xmi:id="_wycTFuOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTF-OSEdyLpcXsYAESEQ" name="isDone" visibility="public">
+                  <ownedParameter xmi:id="_wycTGOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTGeOSEdyLpcXsYAESEQ" name="next" visibility="public"/>
+                <ownedOperation xmi:id="_wycTGuOSEdyLpcXsYAESEQ" name="currentSegment" visibility="public">
+                  <ownedParameter xmi:id="_wycTG-OSEdyLpcXsYAESEQ" name="coords" type="_wySgBeOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTHOOSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTHeOSEdyLpcXsYAESEQ" name="currentSegment" visibility="public">
+                  <ownedParameter xmi:id="_wycTHuOSEdyLpcXsYAESEQ" name="coords" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTH-OSEdyLpcXsYAESEQ" name="return" type="_wySgBuOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycTIOOSEdyLpcXsYAESEQ" name="FOrientablePrimitive">
+                <generalization xmi:id="_wycTIeOSEdyLpcXsYAESEQ" general="_wycRx-OSEdyLpcXsYAESEQ"/>
+                <ownedAttribute xmi:id="_wycTIuOSEdyLpcXsYAESEQ" name="gp" visibility="protected" type="_wyShPOOSEdyLpcXsYAESEQ" association="_wycTsOOSEdyLpcXsYAESEQ"/>
+                <ownedOperation xmi:id="_wycTI-OSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycTJOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTJeOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTJuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTJ-OSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycTKOOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTKeOSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTKuOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTK-OSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTLOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTLeOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wycTLuOSEdyLpcXsYAESEQ" name="x" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTL-OSEdyLpcXsYAESEQ" name="y" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTMOOSEdyLpcXsYAESEQ" name="w" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTMeOSEdyLpcXsYAESEQ" name="h" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTMuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTM-OSEdyLpcXsYAESEQ" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_wycTNOOSEdyLpcXsYAESEQ" name="return" type="_wycTqOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTNeOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycTNuOSEdyLpcXsYAESEQ" name="p" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTN-OSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTOOOSEdyLpcXsYAESEQ" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_wycTOeOSEdyLpcXsYAESEQ" name="return" type="_wycTpOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTOuOSEdyLpcXsYAESEQ" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_wycTO-OSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTPOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTPeOSEdyLpcXsYAESEQ" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_wycTPuOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTP-OSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTQOOSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wycTQeOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTQuOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTQ-OSEdyLpcXsYAESEQ" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_wycTROOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTReOSEdyLpcXsYAESEQ" name="flatness" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTRuOSEdyLpcXsYAESEQ" name="return" type="_wycTp-OSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTR-OSEdyLpcXsYAESEQ" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_wycTSOOSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTSeOSEdyLpcXsYAESEQ" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_wycTSuOSEdyLpcXsYAESEQ" name="ct" type="_wycTpuOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTS-OSEdyLpcXsYAESEQ" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycTTOOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTTeOSEdyLpcXsYAESEQ" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_wycTTuOSEdyLpcXsYAESEQ" name="return" type="_wycR1eOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycTT-OSEdyLpcXsYAESEQ" name="PointHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycTUOOSEdyLpcXsYAESEQ" name="PointSelHandler"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_wycTUeOSEdyLpcXsYAESEQ" name="v02">
+                <packagedElement xmi:type="uml:Class" xmi:id="_wycTUuOSEdyLpcXsYAESEQ" name="FConverter">
+                  <ownedAttribute xmi:id="_wycTU-OSEdyLpcXsYAESEQ" name="geomFactory" visibility="public" type="_wycTmeOSEdyLpcXsYAESEQ"/>
+                  <ownedAttribute xmi:id="_wycTVOOSEdyLpcXsYAESEQ" name="cga" visibility="public" type="_wycTmuOSEdyLpcXsYAESEQ"/>
+                  <ownedAttribute xmi:id="_wycTVeOSEdyLpcXsYAESEQ" name="POINT_MARKER_SIZE" visibility="private" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedAttribute xmi:id="_wycTVuOSEdyLpcXsYAESEQ" name="FLATNESS" visibility="public" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedOperation xmi:id="_wycTV-OSEdyLpcXsYAESEQ" name="pointInList" isStatic="true">
+                    <ownedParameter xmi:id="_wycTWOOSEdyLpcXsYAESEQ" name="testPoint" type="_wycTm-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTWeOSEdyLpcXsYAESEQ" name="pointList" type="_wycTm-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTWuOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTW-OSEdyLpcXsYAESEQ" name="jts_to_igeometry" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTXOOSEdyLpcXsYAESEQ" name="jtsGeometry" type="_wycTpeOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTXeOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTXuOSEdyLpcXsYAESEQ" name="java2d_to_jts" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTX-OSEdyLpcXsYAESEQ" name="shp" type="_wycS2eOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTYOOSEdyLpcXsYAESEQ" name="return" type="_wycTpeOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTYeOSEdyLpcXsYAESEQ" name="jts_to_java2d" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTYuOSEdyLpcXsYAESEQ" name="geo" type="_wycTpeOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTY-OSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTZOOSEdyLpcXsYAESEQ" name="toShape" visibility="private" isStatic="true">
+                    <ownedParameter xmi:id="_wycTZeOSEdyLpcXsYAESEQ" name="p" type="_wycTnOOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTZuOSEdyLpcXsYAESEQ" name="return" type="_wyShPOOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTZ-OSEdyLpcXsYAESEQ" name="toShape" visibility="private" isStatic="true">
+                    <ownedParameter xmi:id="_wycTaOOSEdyLpcXsYAESEQ" name="mls" type="_wycTneOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTaeOSEdyLpcXsYAESEQ" name="return" type="_wyShPOOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTauOSEdyLpcXsYAESEQ" name="toShape" visibility="private" isStatic="true">
+                    <ownedParameter xmi:id="_wycTa-OSEdyLpcXsYAESEQ" name="lineString" type="_wycTnuOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTbOOSEdyLpcXsYAESEQ" name="return" type="_wyShPOOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTbeOSEdyLpcXsYAESEQ" name="toShape" visibility="private" isStatic="true">
+                    <ownedParameter xmi:id="_wycTbuOSEdyLpcXsYAESEQ" name="point" type="_wycTn-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTb-OSEdyLpcXsYAESEQ" name="return" type="_wyShAeOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTcOOSEdyLpcXsYAESEQ" name="toShape" visibility="private" isStatic="true">
+                    <ownedParameter xmi:id="_wycTceOSEdyLpcXsYAESEQ" name="mp" type="_wycToOOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTcuOSEdyLpcXsYAESEQ" name="return" type="_wyShPOOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTc-OSEdyLpcXsYAESEQ" name="coordinate2FPoint2D" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTdOOSEdyLpcXsYAESEQ" name="coord" type="_wycTm-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTdeOSEdyLpcXsYAESEQ" name="return" type="_wyShAeOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTduOSEdyLpcXsYAESEQ" name="toShape" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTd-OSEdyLpcXsYAESEQ" name="geometry" type="_wycTpeOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTeOOSEdyLpcXsYAESEQ" name="return" type="_wyShPOOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTeeOSEdyLpcXsYAESEQ" name="transformToInts" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTeuOSEdyLpcXsYAESEQ" name="gp" type="_wyShPOOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTe-OSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTfOOSEdyLpcXsYAESEQ" name="return" type="_wyShPOOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTfeOSEdyLpcXsYAESEQ" name="transformToInts" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTfuOSEdyLpcXsYAESEQ" name="gp" type="_wycRC-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTf-OSEdyLpcXsYAESEQ" name="at" type="_wycTo-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTgOOSEdyLpcXsYAESEQ" name="return" type="_wycS2eOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTgeOSEdyLpcXsYAESEQ" name="convertEnvelopeToRectangle2D" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTguOSEdyLpcXsYAESEQ" name="jtsR" type="_wycToeOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTg-OSEdyLpcXsYAESEQ" name="return" type="_wycTpOOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycThOOSEdyLpcXsYAESEQ" name="convertRectangle2DtoEnvelope" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTheOSEdyLpcXsYAESEQ" name="r" type="_wycTpOOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycThuOSEdyLpcXsYAESEQ" name="return" type="_wycToeOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTh-OSEdyLpcXsYAESEQ" name="getExteriorPolygon" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTiOOSEdyLpcXsYAESEQ" name="coordinates" type="_wycTm-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTieOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTiuOSEdyLpcXsYAESEQ" name="isCCW" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTi-OSEdyLpcXsYAESEQ" name="points" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTjOOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTjeOSEdyLpcXsYAESEQ" name="isCCW" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTjuOSEdyLpcXsYAESEQ" name="pol" type="_wycSH-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTj-OSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTkOOSEdyLpcXsYAESEQ" name="getHole" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTkeOSEdyLpcXsYAESEQ" name="coordinates" type="_wycTm-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTkuOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTk-OSEdyLpcXsYAESEQ" name="getExteriorPolygon" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTlOOSEdyLpcXsYAESEQ" name="gp" type="_wyShPOOSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTleOSEdyLpcXsYAESEQ" name="return" type="_wycTquOSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_wycTluOSEdyLpcXsYAESEQ" name="getNotHolePolygon" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_wycTl-OSEdyLpcXsYAESEQ" name="pol" type="_wycSH-OSEdyLpcXsYAESEQ"/>
+                    <ownedParameter xmi:id="_wycTmOOSEdyLpcXsYAESEQ" name="return" type="_wycRC-OSEdyLpcXsYAESEQ" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_wycTmeOSEdyLpcXsYAESEQ" name="GeometryFactory"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_wycTmuOSEdyLpcXsYAESEQ" name="CGAlgorithms"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_wycTm-OSEdyLpcXsYAESEQ" name="Coordinate"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_wycTnOOSEdyLpcXsYAESEQ" name="Polygon"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_wycTneOSEdyLpcXsYAESEQ" name="MultiLineString"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_wycTnuOSEdyLpcXsYAESEQ" name="LineString"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_wycTn-OSEdyLpcXsYAESEQ" name="Point"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_wycToOOSEdyLpcXsYAESEQ" name="MultiPolygon"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_wycToeOSEdyLpcXsYAESEQ" name="Envelope"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycTouOSEdyLpcXsYAESEQ" name="Point2D"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycTo-OSEdyLpcXsYAESEQ" name="AffineTransform"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycTpOOSEdyLpcXsYAESEQ" name="Rectangle2D"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycTpeOSEdyLpcXsYAESEQ" name="Geometry"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycTpuOSEdyLpcXsYAESEQ" name="ICoordTrans"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycTp-OSEdyLpcXsYAESEQ" name="PathIterator"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycTqOOSEdyLpcXsYAESEQ" name="Rectangle"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycTqeOSEdyLpcXsYAESEQ" name="Object"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycTquOSEdyLpcXsYAESEQ" name="Shape"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycTq-OSEdyLpcXsYAESEQ" name="java.awt.Rectangle"/>
+              <packagedElement xmi:type="uml:Association" xmi:id="_wycTrOOSEdyLpcXsYAESEQ" memberEnd="_wycR5eOSEdyLpcXsYAESEQ _wycTreOSEdyLpcXsYAESEQ">
+                <ownedEnd xmi:id="_wycTreOSEdyLpcXsYAESEQ" name="target" type="_wycR4-OSEdyLpcXsYAESEQ" association="_wycTrOOSEdyLpcXsYAESEQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_wycTruOSEdyLpcXsYAESEQ" memberEnd="_wycTEuOSEdyLpcXsYAESEQ _wycTr-OSEdyLpcXsYAESEQ">
+                <ownedEnd xmi:id="_wycTr-OSEdyLpcXsYAESEQ" name="target" type="_wycTD-OSEdyLpcXsYAESEQ" association="_wycTruOSEdyLpcXsYAESEQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_wycTsOOSEdyLpcXsYAESEQ" memberEnd="_wycTIuOSEdyLpcXsYAESEQ _wycTseOSEdyLpcXsYAESEQ">
+                <ownedEnd xmi:id="_wycTseOSEdyLpcXsYAESEQ" name="target" type="_wycTIOOSEdyLpcXsYAESEQ" association="_wycTsOOSEdyLpcXsYAESEQ"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_wycTsuOSEdyLpcXsYAESEQ" name="edition">
+              <packagedElement xmi:type="uml:Class" xmi:id="_wycTs-OSEdyLpcXsYAESEQ" name="UtilFunctions">
+                <ownedOperation xmi:id="_wycTtOOSEdyLpcXsYAESEQ" name="createCircle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycTteOSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTtuOSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTt-OSEdyLpcXsYAESEQ" name="p3" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTuOOSEdyLpcXsYAESEQ" name="return" type="_wycUDOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTueOSEdyLpcXsYAESEQ" name="getPerpendicular" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycTuuOSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTu-OSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTvOOSEdyLpcXsYAESEQ" name="perp" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTveOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTvuOSEdyLpcXsYAESEQ" name="getParallel" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycTv-OSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTwOOSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTweOSEdyLpcXsYAESEQ" name="distance" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTwuOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTw-OSEdyLpcXsYAESEQ" name="getPerpendicularPoint" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycTxOOSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTxeOSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTxuOSEdyLpcXsYAESEQ" name="perpPoint" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTx-OSEdyLpcXsYAESEQ" name="dist" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTyOOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTyeOSEdyLpcXsYAESEQ" name="getUnitVector" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycTyuOSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTy-OSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTzOOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycTzeOSEdyLpcXsYAESEQ" name="getCenter" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycTzuOSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycTz-OSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT0OOSEdyLpcXsYAESEQ" name="p3" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT0eOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycT0uOSEdyLpcXsYAESEQ" name="getIntersection" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycT0-OSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT1OOSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT1eOSEdyLpcXsYAESEQ" name="p3" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT1uOSEdyLpcXsYAESEQ" name="p4" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT1-OSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycT2OOSEdyLpcXsYAESEQ" name="getAngle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycT2eOSEdyLpcXsYAESEQ" name="start" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT2uOSEdyLpcXsYAESEQ" name="end" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT2-OSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycT3OOSEdyLpcXsYAESEQ" name="angleDistance" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycT3eOSEdyLpcXsYAESEQ" name="angle1" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT3uOSEdyLpcXsYAESEQ" name="angle2" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT3-OSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycT4OOSEdyLpcXsYAESEQ" name="getPoint" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycT4eOSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT4uOSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT4-OSEdyLpcXsYAESEQ" name="radio" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT5OOSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycT5eOSEdyLpcXsYAESEQ" name="absoluteAngleDistance" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycT5uOSEdyLpcXsYAESEQ" name="angle1" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT5-OSEdyLpcXsYAESEQ" name="angle2" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT6OOSEdyLpcXsYAESEQ" name="return" type="_wySgBOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycT6eOSEdyLpcXsYAESEQ" name="createArc" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycT6uOSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT6-OSEdyLpcXsYAESEQ" name="p2" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT7OOSEdyLpcXsYAESEQ" name="p3" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT7eOSEdyLpcXsYAESEQ" name="return" type="_wycUDOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycT7uOSEdyLpcXsYAESEQ" name="createArc2points" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycT7-OSEdyLpcXsYAESEQ" name="center" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT8OOSEdyLpcXsYAESEQ" name="init" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT8eOSEdyLpcXsYAESEQ" name="end" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT8uOSEdyLpcXsYAESEQ" name="return" type="_wycUDOOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycT8-OSEdyLpcXsYAESEQ" name="getPoint" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycT9OOSEdyLpcXsYAESEQ" name="p1" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT9eOSEdyLpcXsYAESEQ" name="an" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT9uOSEdyLpcXsYAESEQ" name="radio" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT9-OSEdyLpcXsYAESEQ" name="return" type="_wycTouOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycT-OOSEdyLpcXsYAESEQ" name="isLowAngle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycT-eOSEdyLpcXsYAESEQ" name="antp" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT-uOSEdyLpcXsYAESEQ" name="lastp" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT--OSEdyLpcXsYAESEQ" name="interp" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT_OOSEdyLpcXsYAESEQ" name="point" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycT_eOSEdyLpcXsYAESEQ" name="return" type="_wySgAeOSEdyLpcXsYAESEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycT_uOSEdyLpcXsYAESEQ" name="rotateGeom" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycT_-OSEdyLpcXsYAESEQ" name="geometry" type="_wycRC-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycUAOOSEdyLpcXsYAESEQ" name="radAngle" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycUAeOSEdyLpcXsYAESEQ" name="basex" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycUAuOSEdyLpcXsYAESEQ" name="basey" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycUA-OSEdyLpcXsYAESEQ" name="moveGeom" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycUBOOSEdyLpcXsYAESEQ" name="geometry" type="_wycRC-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycUBeOSEdyLpcXsYAESEQ" name="dx" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycUBuOSEdyLpcXsYAESEQ" name="dy" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_wycUB-OSEdyLpcXsYAESEQ" name="scaleGeom" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_wycUCOOSEdyLpcXsYAESEQ" name="geometry" type="_wycRC-OSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycUCeOSEdyLpcXsYAESEQ" name="basePoint" type="_wycTouOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycUCuOSEdyLpcXsYAESEQ" name="sx" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                  <ownedParameter xmi:id="_wycUC-OSEdyLpcXsYAESEQ" name="sy" type="_wySgBOOSEdyLpcXsYAESEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_wycUDOOSEdyLpcXsYAESEQ" name="Arc2D"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

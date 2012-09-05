@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>org.gvsig.fmap.geometry</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>libFMap_geometries</name>
+	<url>http://gvsig.org</url>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-library-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.tools</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.projection</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>jts</artifactId>
+			<version>gvsig</version>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<build-dir>${basedir}/../build</build-dir>
+	</properties>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+	</build>
+
+
+	<profiles>
+		<profile>
+			<id>se</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>org.gvsig.legacy</groupId>
+					<artifactId>gt2-postgis</artifactId>
+					<version>gvsig</version>
+				</dependency>
+			</dependencies>
+
+			<build>
+
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<configuration>
+							<source>1.4</source>
+							<target>1.4</target>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<exclude>**/operation/*/*</exclude>
+								<exclude>**/impl/**</exclude>
+							</excludes>
+						</configuration>
+						<executions>
+							<!--
+								Generates a jar file only with the geometries API TODO: make a
+								good configuration of excludes and includes, when the api and
+								implementation of the geometries library would be performed.
+								<execution> <id>api</id> <phase>package</phase> <goals>
+								<goal>jar</goal> </goals> <configuration>
+								<classifier>api</classifier> <excludes>
+								<exclude>**/operation/*/*</exclude> </excludes> </configuration>
+								</execution>
+							-->
+							<!--
+								Generates a jar file only with the geometries implementation
+							-->
+							<execution>
+								<id>impl</id>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<classifier>impl</classifier>
+									<excludes>
+										<exclude>**/operation/impl/**</exclude>
+									</excludes>
+									<includes>
+										<include>**/impl/**</include>
+									</includes>
+								</configuration>
+							</execution>
+							<!--
+								Generates a jar file only with the geometries operations
+							-->
+							<execution>
+								<id>operation</id>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<classifier>operation</classifier>
+									<excludes>
+										<exclude>NONE</exclude>
+									</excludes>
+									<includes>
+										<include>**/operation/*/*</include>
+									</includes>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>cdc</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+
+			<build>
+
+
+
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<exclude>**/operation/*/*</exclude>
+							</excludes>
+							<testExcludes>
+								<exclude>**/operation/*/*</exclude>
+							</testExcludes>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<exclude>**/operation/*/*</exclude>
+								<exclude>**/impl/**</exclude>
+							</excludes>
+						</configuration>
+						<executions>
+							<execution>
+								<id>impl</id>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<classifier>impl</classifier>
+									<excludes>
+										<exclude>**/operation/impl/**</exclude>
+									</excludes>
+									<includes>
+										<include>**/impl/**</include>
+									</includes>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<reportSets>
+					<reportSet>
+						<id>api</id>
+						<configuration>
+							<subpackages>org.gvsig.fmap.geom</subpackages>
+							<excludePackageNames>org.gvsig.fmap.geom.operation:*.impl.*</excludePackageNames>
+							<name>JavaDoc - API</name>
+							<destDir>api</destDir>							
+						</configuration>	
+						<reports>
+							<report>javadoc</report>
+						</reports>					
+					</reportSet>
+					<reportSet>
+						<id>operation</id>
+						<configuration>
+							<subpackages>org.gvsig.fmap.geom.operation</subpackages>
+							<name>JavaDoc - Geometry operations</name>
+							<destDir>operation</destDir>							
+						</configuration>
+						<reports>
+							<report>javadoc</report>
+						</reports>
+					</reportSet>
+					<reportSet>
+						<id>impl</id>
+						<configuration>
+							<subpackages>org.gvsig.fmap.geom.impl:org.gvsig.fmap.geom.aggregate.impl:org.gvsig.fmap.geom.primitive.impl:org.gvsig.fmap.geom.type.impl</subpackages>
+							<name>JavaDoc - Default implementation</name>
+							<destDir>impl</destDir>							
+						</configuration>	
+						<reports>
+							<report>javadoc</report>
+						</reports>					
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+</project>

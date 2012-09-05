@@ -1,0 +1,1682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_NfXrAOnfEdyqwYAyxR2bxw">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NfXrAenfEdyqwYAyxR2bxw" name="boolean"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NfXrAunfEdyqwYAyxR2bxw" name="byte"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NfXrA-nfEdyqwYAyxR2bxw" name="char"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NfXrBOnfEdyqwYAyxR2bxw" name="double"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NfXrBenfEdyqwYAyxR2bxw" name="float"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NfXrBunfEdyqwYAyxR2bxw" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NfXrB-nfEdyqwYAyxR2bxw" name="long"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NfXrCOnfEdyqwYAyxR2bxw" name="short"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NfXrCenfEdyqwYAyxR2bxw" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_NfXrCunfEdyqwYAyxR2bxw" name="iver">
+      <packagedElement xmi:type="uml:Package" xmi:id="_NfXrC-nfEdyqwYAyxR2bxw" name="cit">
+        <packagedElement xmi:type="uml:Package" xmi:id="_NfXrDOnfEdyqwYAyxR2bxw" name="gvsig">
+          <packagedElement xmi:type="uml:Package" xmi:id="_NfXrDenfEdyqwYAyxR2bxw" name="fmap">
+            <packagedElement xmi:type="uml:Package" xmi:id="_NfXrDunfEdyqwYAyxR2bxw" name="core">
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXrD-nfEdyqwYAyxR2bxw" name="FArc2D">
+                <generalization xmi:id="_NfXrEOnfEdyqwYAyxR2bxw" general="_NfXumOnfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXrEenfEdyqwYAyxR2bxw" name="init" visibility="private" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXrEunfEdyqwYAyxR2bxw" name="center" visibility="private" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXrE-nfEdyqwYAyxR2bxw" name="end" visibility="private" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXrFOnfEdyqwYAyxR2bxw" name="getInit" visibility="public">
+                  <ownedParameter xmi:id="_NfXrFenfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrFunfEdyqwYAyxR2bxw" name="getEnd" visibility="public">
+                  <ownedParameter xmi:id="_NfXrF-nfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrGOnfEdyqwYAyxR2bxw" name="getCenter" visibility="public">
+                  <ownedParameter xmi:id="_NfXrGenfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrGunfEdyqwYAyxR2bxw" name="getMid" visibility="public">
+                  <ownedParameter xmi:id="_NfXrG-nfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrHOnfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXrHenfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrHunfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXrH-nfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrIOnfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXrIenfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrIunfEdyqwYAyxR2bxw" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXrI-nfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrJOnfEdyqwYAyxR2bxw" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXrJenfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrJunfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXrJ-nfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrKOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXrKenfEdyqwYAyxR2bxw" name="CenterSelHandler" clientDependency="_NfXrLenfEdyqwYAyxR2bxw _NfXrLunfEdyqwYAyxR2bxw _NfXrL-nfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXrKunfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <generalization xmi:id="_NfXrK-nfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <generalization xmi:id="_NfXrLOnfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXrLenfEdyqwYAyxR2bxw" name="ICenterHandler" supplier="_NfXt_-nfEdyqwYAyxR2bxw" client="_NfXrKenfEdyqwYAyxR2bxw" contract="_NfXt_-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXrLunfEdyqwYAyxR2bxw" name="ICenterHandler" supplier="_NfXt_-nfEdyqwYAyxR2bxw" client="_NfXrKenfEdyqwYAyxR2bxw" contract="_NfXt_-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXrL-nfEdyqwYAyxR2bxw" name="ICenterHandler" supplier="_NfXt_-nfEdyqwYAyxR2bxw" client="_NfXrKenfEdyqwYAyxR2bxw" contract="_NfXt_-nfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXrMOnfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXrMenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrMunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrM-nfEdyqwYAyxR2bxw" name="setPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXrNOnfEdyqwYAyxR2bxw" name="p" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrNenfEdyqwYAyxR2bxw" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXrNunfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrN-nfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXrOOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrOenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrOunfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXrO-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrPOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrPenfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXrPunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrP-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrQOnfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXrQenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrQunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrQ-nfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXrROnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrRenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXrRunfEdyqwYAyxR2bxw" name="InitHandler" clientDependency="_NfXrSOnfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXrR-nfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXrSOnfEdyqwYAyxR2bxw" name="IFinalHandler" supplier="_NfXtb-nfEdyqwYAyxR2bxw" client="_NfXrRunfEdyqwYAyxR2bxw" contract="_NfXtb-nfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXrSenfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXrSunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrS-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrTOnfEdyqwYAyxR2bxw" name="setPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXrTenfEdyqwYAyxR2bxw" name="p" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrTunfEdyqwYAyxR2bxw" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXrT-nfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrUOnfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXrUenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrUunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXrU-nfEdyqwYAyxR2bxw" name="EndHandler" clientDependency="_NfXrVenfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXrVOnfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXrVenfEdyqwYAyxR2bxw" name="IFinalHandler" supplier="_NfXtb-nfEdyqwYAyxR2bxw" client="_NfXrU-nfEdyqwYAyxR2bxw" contract="_NfXtb-nfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXrVunfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXrV-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrWOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrWenfEdyqwYAyxR2bxw" name="setPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXrWunfEdyqwYAyxR2bxw" name="p" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrW-nfEdyqwYAyxR2bxw" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXrXOnfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrXenfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXrXunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrX-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXrYOnfEdyqwYAyxR2bxw" name="InitSelHandler" clientDependency="_NfXrY-nfEdyqwYAyxR2bxw _NfXrZOnfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXrYenfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <generalization xmi:id="_NfXrYunfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXrY-nfEdyqwYAyxR2bxw" name="IFinalHandler" supplier="_NfXtb-nfEdyqwYAyxR2bxw" client="_NfXrYOnfEdyqwYAyxR2bxw" contract="_NfXtb-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXrZOnfEdyqwYAyxR2bxw" name="ICuadrantHandler" supplier="_NfXt0OnfEdyqwYAyxR2bxw" client="_NfXrYOnfEdyqwYAyxR2bxw" contract="_NfXt0OnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXrZenfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXrZunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrZ-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXraOnfEdyqwYAyxR2bxw" name="setPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXraenfEdyqwYAyxR2bxw" name="p" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXraunfEdyqwYAyxR2bxw" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXra-nfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrbOnfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXrbenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrbunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrb-nfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXrcOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrcenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrcunfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXrc-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrdOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXrdenfEdyqwYAyxR2bxw" name="EndSelHandler" clientDependency="_NfXreOnfEdyqwYAyxR2bxw _NfXreenfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXrdunfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <generalization xmi:id="_NfXrd-nfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXreOnfEdyqwYAyxR2bxw" name="IFinalHandler" supplier="_NfXtb-nfEdyqwYAyxR2bxw" client="_NfXrdenfEdyqwYAyxR2bxw" contract="_NfXtb-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXreenfEdyqwYAyxR2bxw" name="ICuadrantHandler" supplier="_NfXt0OnfEdyqwYAyxR2bxw" client="_NfXrdenfEdyqwYAyxR2bxw" contract="_NfXt0OnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXreunfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXre-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrfOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrfenfEdyqwYAyxR2bxw" name="setPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXrfunfEdyqwYAyxR2bxw" name="p" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrf-nfEdyqwYAyxR2bxw" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXrgOnfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrgenfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXrgunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrg-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrhOnfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXrhenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrhunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrh-nfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXriOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrienfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXriunfEdyqwYAyxR2bxw" name="FMultiPoint">
+                <generalization xmi:id="_NfXri-nfEdyqwYAyxR2bxw" general="_NfXtcenfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXrjOnfEdyqwYAyxR2bxw" name="toJTSGeometry" visibility="public">
+                  <ownedParameter xmi:id="_NfXrjenfEdyqwYAyxR2bxw" name="return" type="_NfXvUunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrjunfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXrj-nfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrkOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrkenfEdyqwYAyxR2bxw" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_NfXrkunfEdyqwYAyxR2bxw" name="return" type="_NfXvUenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrk-nfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXrlOnfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrlenfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXrlunfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrl-nfEdyqwYAyxR2bxw" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_NfXrmOnfEdyqwYAyxR2bxw" name="ct" type="_NfXvU-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrmenfEdyqwYAyxR2bxw" name="getNumgeometries" visibility="public">
+                  <ownedParameter xmi:id="_NfXrmunfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrm-nfEdyqwYAyxR2bxw" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXrnOnfEdyqwYAyxR2bxw" name="i" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrnenfEdyqwYAyxR2bxw" name="return" type="_NfXsAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrnunfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXrn-nfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXroOnfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXroenfEdyqwYAyxR2bxw" name="fastIntersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXrounfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXro-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrpOnfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrpenfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrpunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrp-nfEdyqwYAyxR2bxw" name="getHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXrqOnfEdyqwYAyxR2bxw" name="type" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrqenfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrqunfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXrq-nfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrrOnfEdyqwYAyxR2bxw" name="toWKB" visibility="public">
+                  <ownedParameter xmi:id="_NfXrrenfEdyqwYAyxR2bxw" name="return" type="_NfXrAunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrrunfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXrr-nfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrsOnfEdyqwYAyxR2bxw" name="flatness" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrsenfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrsunfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXrs-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrtOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrtenfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrtunfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXrt-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXruOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXruenfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXruunfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXru-nfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrvOnfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXrvenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrvunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrv-nfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrwOnfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrwenfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrwunfEdyqwYAyxR2bxw" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_NfXrw-nfEdyqwYAyxR2bxw" name="return" type="_NfXvVenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrxOnfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXrxenfEdyqwYAyxR2bxw" name="p" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXrxunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrx-nfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXryOnfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXryenfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXryunfEdyqwYAyxR2bxw" name="getGeometryType" visibility="public">
+                  <ownedParameter xmi:id="_NfXry-nfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXrzOnfEdyqwYAyxR2bxw" name="cloneGeometry" visibility="public">
+                  <ownedParameter xmi:id="_NfXrzenfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXrzunfEdyqwYAyxR2bxw" name="PointHandler" clientDependency="_NfXr0-nfEdyqwYAyxR2bxw _NfXr1OnfEdyqwYAyxR2bxw _NfXr1enfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXrz-nfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <generalization xmi:id="_NfXr0OnfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <generalization xmi:id="_NfXr0enfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <generalization xmi:id="_NfXr0unfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXr0-nfEdyqwYAyxR2bxw" name="IFinalHandler" supplier="_NfXtb-nfEdyqwYAyxR2bxw" client="_NfXrzunfEdyqwYAyxR2bxw" contract="_NfXtb-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXr1OnfEdyqwYAyxR2bxw" name="IFinalHandler" supplier="_NfXtb-nfEdyqwYAyxR2bxw" client="_NfXrzunfEdyqwYAyxR2bxw" contract="_NfXtb-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXr1enfEdyqwYAyxR2bxw" name="IFinalHandler" supplier="_NfXtb-nfEdyqwYAyxR2bxw" client="_NfXrzunfEdyqwYAyxR2bxw" contract="_NfXtb-nfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXr1unfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXr1-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXr2OnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXr2enfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXr2unfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXr2-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXr3OnfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXr3enfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXr3unfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXr3-nfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXr4OnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXr4enfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXr4unfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXr4-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXr5OnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXr5enfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXr5unfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXr5-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXr6OnfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXr6enfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXr6unfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXr6-nfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXr7OnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXr7enfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXr7unfEdyqwYAyxR2bxw" name="FMultiPolyline">
+                <generalization xmi:id="_NfXr7-nfEdyqwYAyxR2bxw" general="_NfXtcenfEdyqwYAyxR2bxw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_NfXr8OnfEdyqwYAyxR2bxw" name="IGeometryVisitor">
+                <ownedOperation xmi:id="_NfXr8enfEdyqwYAyxR2bxw" name="visit" visibility="public">
+                  <ownedParameter xmi:id="_NfXr8unfEdyqwYAyxR2bxw" name="geometry" type="_NfXspenfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXr8-nfEdyqwYAyxR2bxw" name="AbstractHandler" clientDependency="_NfXr9-nfEdyqwYAyxR2bxw">
+                <ownedAttribute xmi:id="_NfXr9OnfEdyqwYAyxR2bxw" name="index" visibility="protected" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXr9enfEdyqwYAyxR2bxw" name="point" visibility="protected" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXr9unfEdyqwYAyxR2bxw" name="select" visibility="private" type="_NfXrAenfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXr9-nfEdyqwYAyxR2bxw" name="Handler" supplier="_NfXtY-nfEdyqwYAyxR2bxw" client="_NfXr8-nfEdyqwYAyxR2bxw" contract="_NfXtY-nfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXr-OnfEdyqwYAyxR2bxw" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXr-enfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXr-unfEdyqwYAyxR2bxw" name="select" visibility="public">
+                  <ownedParameter xmi:id="_NfXr--nfEdyqwYAyxR2bxw" name="b" type="_NfXrAenfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXr_OnfEdyqwYAyxR2bxw" name="isSelected" visibility="public">
+                  <ownedParameter xmi:id="_NfXr_enfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXr_unfEdyqwYAyxR2bxw" name="equalsPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXr_-nfEdyqwYAyxR2bxw" name="obj" type="_NfXvVunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsAOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXsAenfEdyqwYAyxR2bxw" name="FPoint2D" clientDependency="_SDdPgOoGEdyWhupJHd1xRA">
+                <generalization xmi:id="_NfXsAunfEdyqwYAyxR2bxw" general="_NfXununfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsA-nfEdyqwYAyxR2bxw" name="p" visibility="protected" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_SDdPgOoGEdyWhupJHd1xRA" name="InterfaceRealization1" supplier="_NfXv3OnfEdyqwYAyxR2bxw" client="_NfXsAenfEdyqwYAyxR2bxw" contract="_NfXv3OnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXsBOnfEdyqwYAyxR2bxw" name="setPoint" visibility="private">
+                  <ownedParameter xmi:id="_NfXsBenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsBunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsB-nfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXsCOnfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsCenfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXsCunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsC-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsDOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsDenfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXsDunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsD-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsEOnfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsEenfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsEunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsE-nfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXsFOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsFenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsFunfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsF-nfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsGOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsGenfEdyqwYAyxR2bxw" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_NfXsGunfEdyqwYAyxR2bxw" name="return" type="_NfXvVenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsG-nfEdyqwYAyxR2bxw" name="getX" visibility="public">
+                  <ownedParameter xmi:id="_NfXsHOnfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsHenfEdyqwYAyxR2bxw" name="getY" visibility="public">
+                  <ownedParameter xmi:id="_NfXsHunfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsH-nfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXsIOnfEdyqwYAyxR2bxw" name="p" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsIenfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsIunfEdyqwYAyxR2bxw" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_NfXsI-nfEdyqwYAyxR2bxw" name="return" type="_NfXvUenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsJOnfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXsJenfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsJunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsJ-nfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXsKOnfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsKenfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsKunfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXsK-nfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsLOnfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsLenfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXsLunfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsL-nfEdyqwYAyxR2bxw" name="flatness" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsMOnfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsMenfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXsMunfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsM-nfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXsNOnfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsNenfEdyqwYAyxR2bxw" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_NfXsNunfEdyqwYAyxR2bxw" name="ct" type="_NfXvU-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsN-nfEdyqwYAyxR2bxw" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXsOOnfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsOenfEdyqwYAyxR2bxw" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXsOunfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXsO-nfEdyqwYAyxR2bxw" name="PointHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXsPOnfEdyqwYAyxR2bxw" name="GeneralPathX">
+                <ownedAttribute xmi:id="_NfXsPenfEdyqwYAyxR2bxw" name="WIND_EVEN_ODD" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsPunfEdyqwYAyxR2bxw" name="WIND_NON_ZERO" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsP-nfEdyqwYAyxR2bxw" name="SEG_MOVETO" visibility="private" type="_NfXrAunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsQOnfEdyqwYAyxR2bxw" name="SEG_LINETO" visibility="private" type="_NfXrAunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsQenfEdyqwYAyxR2bxw" name="SEG_QUADTO" visibility="private" type="_NfXrAunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsQunfEdyqwYAyxR2bxw" name="SEG_CUBICTO" visibility="private" type="_NfXrAunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsQ-nfEdyqwYAyxR2bxw" name="SEG_CLOSE" visibility="private" type="_NfXrAunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsROnfEdyqwYAyxR2bxw" name="pointTypes" type="_NfXrAunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsRenfEdyqwYAyxR2bxw" name="pointCoords" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsRunfEdyqwYAyxR2bxw" name="numTypes" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsR-nfEdyqwYAyxR2bxw" name="numCoords" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsSOnfEdyqwYAyxR2bxw" name="windingRule" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsSenfEdyqwYAyxR2bxw" name="INIT_SIZE" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsSunfEdyqwYAyxR2bxw" name="EXPAND_MAX" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsS-nfEdyqwYAyxR2bxw" name="curvesize" visibility="private" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXsTOnfEdyqwYAyxR2bxw" name="needRoom" visibility="private">
+                  <ownedParameter xmi:id="_NfXsTenfEdyqwYAyxR2bxw" name="newTypes" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsTunfEdyqwYAyxR2bxw" name="newCoords" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsT-nfEdyqwYAyxR2bxw" name="needMove" type="_NfXrAenfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsUOnfEdyqwYAyxR2bxw" name="moveTo" visibility="public">
+                  <ownedParameter xmi:id="_NfXsUenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsUunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsU-nfEdyqwYAyxR2bxw" name="lineTo" visibility="public">
+                  <ownedParameter xmi:id="_NfXsVOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsVenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsVunfEdyqwYAyxR2bxw" name="quadTo" visibility="public">
+                  <ownedParameter xmi:id="_NfXsV-nfEdyqwYAyxR2bxw" name="x1" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsWOnfEdyqwYAyxR2bxw" name="y1" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsWenfEdyqwYAyxR2bxw" name="x2" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsWunfEdyqwYAyxR2bxw" name="y2" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsW-nfEdyqwYAyxR2bxw" name="curveTo" visibility="public">
+                  <ownedParameter xmi:id="_NfXsXOnfEdyqwYAyxR2bxw" name="x1" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsXenfEdyqwYAyxR2bxw" name="y1" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsXunfEdyqwYAyxR2bxw" name="x2" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsX-nfEdyqwYAyxR2bxw" name="y2" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsYOnfEdyqwYAyxR2bxw" name="x3" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsYenfEdyqwYAyxR2bxw" name="y3" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsYunfEdyqwYAyxR2bxw" name="closePath" visibility="public"/>
+                <ownedOperation xmi:id="_NfXsY-nfEdyqwYAyxR2bxw" name="isClosed" visibility="public">
+                  <ownedParameter xmi:id="_NfXsZOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsZenfEdyqwYAyxR2bxw" name="append" visibility="public">
+                  <ownedParameter xmi:id="_NfXsZunfEdyqwYAyxR2bxw" name="s" type="_NfXvV-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsZ-nfEdyqwYAyxR2bxw" name="connect" type="_NfXrAenfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsaOnfEdyqwYAyxR2bxw" name="append" visibility="public">
+                  <ownedParameter xmi:id="_NfXsaenfEdyqwYAyxR2bxw" name="pi" type="_NfXvVOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsaunfEdyqwYAyxR2bxw" name="connect" type="_NfXrAenfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsa-nfEdyqwYAyxR2bxw" name="getWindingRule" visibility="public">
+                  <ownedParameter xmi:id="_NfXsbOnfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsbenfEdyqwYAyxR2bxw" name="setWindingRule" visibility="public">
+                  <ownedParameter xmi:id="_NfXsbunfEdyqwYAyxR2bxw" name="rule" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsb-nfEdyqwYAyxR2bxw" name="getCurrentPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXscOnfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXscenfEdyqwYAyxR2bxw" name="reset" visibility="public"/>
+                <ownedOperation xmi:id="_NfXscunfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXsc-nfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsdOnfEdyqwYAyxR2bxw" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_NfXsdenfEdyqwYAyxR2bxw" name="ct" type="_NfXvU-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsdunfEdyqwYAyxR2bxw" name="createTransformedShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXsd-nfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXseOnfEdyqwYAyxR2bxw" name="return" type="_NfXvV-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXseenfEdyqwYAyxR2bxw" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_NfXseunfEdyqwYAyxR2bxw" name="return" type="_NfXvWOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXse-nfEdyqwYAyxR2bxw" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_NfXsfOnfEdyqwYAyxR2bxw" name="return" type="_NfXvUenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsfenfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXsfunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsf-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsgOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsgenfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXsgunfEdyqwYAyxR2bxw" name="p" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsg-nfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXshOnfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXshenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXshunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsh-nfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsiOnfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsienfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsiunfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXsi-nfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsjOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsjenfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXsjunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsj-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXskOnfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXskenfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXskunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsk-nfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXslOnfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXslenfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXslunfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXsl-nfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsmOnfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsmenfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXsmunfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsm-nfEdyqwYAyxR2bxw" name="flatness" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsnOnfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsnenfEdyqwYAyxR2bxw" name="clone" visibility="public">
+                  <ownedParameter xmi:id="_NfXsnunfEdyqwYAyxR2bxw" name="return" type="_NfXvVunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsn-nfEdyqwYAyxR2bxw" name="flip" visibility="public"/>
+                <ownedOperation xmi:id="_NfXsoOnfEdyqwYAyxR2bxw" name="ensureOrientation" visibility="public">
+                  <ownedParameter xmi:id="_NfXsoenfEdyqwYAyxR2bxw" name="bCCW" type="_NfXrAenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsounfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXso-nfEdyqwYAyxR2bxw" name="isCCW" visibility="public">
+                  <ownedParameter xmi:id="_NfXspOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_NfXspenfEdyqwYAyxR2bxw" name="IGeometry">
+                <generalization xmi:id="_NfXspunfEdyqwYAyxR2bxw" general="_NfXvV-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsp-nfEdyqwYAyxR2bxw" name="BEST" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsqOnfEdyqwYAyxR2bxw" name="N" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsqenfEdyqwYAyxR2bxw" name="NE" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsqunfEdyqwYAyxR2bxw" name="E" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsq-nfEdyqwYAyxR2bxw" name="SE" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsrOnfEdyqwYAyxR2bxw" name="S" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsrenfEdyqwYAyxR2bxw" name="SW" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsrunfEdyqwYAyxR2bxw" name="W" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXsr-nfEdyqwYAyxR2bxw" name="NW" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXssOnfEdyqwYAyxR2bxw" name="SELECTHANDLER" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXssenfEdyqwYAyxR2bxw" name="STRETCHINGHANDLER" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXssunfEdyqwYAyxR2bxw" name="toJTSGeometry">
+                  <ownedParameter xmi:id="_NfXss-nfEdyqwYAyxR2bxw" name="return" type="_NfXvUunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXstOnfEdyqwYAyxR2bxw" name="getGeometryType">
+                  <ownedParameter xmi:id="_NfXstenfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXstunfEdyqwYAyxR2bxw" name="cloneGeometry">
+                  <ownedParameter xmi:id="_NfXst-nfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsuOnfEdyqwYAyxR2bxw" name="intersects">
+                  <ownedParameter xmi:id="_NfXsuenfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsuunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsu-nfEdyqwYAyxR2bxw" name="fastIntersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXsvOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsvenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsvunfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsv-nfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXswOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXswenfEdyqwYAyxR2bxw" name="getBounds2D">
+                  <ownedParameter xmi:id="_NfXswunfEdyqwYAyxR2bxw" name="return" type="_NfXvUenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsw-nfEdyqwYAyxR2bxw" name="reProject">
+                  <ownedParameter xmi:id="_NfXsxOnfEdyqwYAyxR2bxw" name="ct" type="_NfXvU-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsxenfEdyqwYAyxR2bxw" name="getPathIterator">
+                  <ownedParameter xmi:id="_NfXsxunfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXsx-nfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsyOnfEdyqwYAyxR2bxw" name="toWKB" visibility="public">
+                  <ownedParameter xmi:id="_NfXsyenfEdyqwYAyxR2bxw" name="return" type="_NfXrAunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsyunfEdyqwYAyxR2bxw" name="getHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXsy-nfEdyqwYAyxR2bxw" name="type" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXszOnfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXszenfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXszunfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXsz-nfEdyqwYAyxR2bxw" name="getPathIterator">
+                  <ownedParameter xmi:id="_NfXs0OnfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXs0enfEdyqwYAyxR2bxw" name="flatness" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXs0unfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs0-nfEdyqwYAyxR2bxw" name="getInternalShape">
+                  <ownedParameter xmi:id="_NfXs1OnfEdyqwYAyxR2bxw" name="return" type="_NfXvV-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs1enfEdyqwYAyxR2bxw" name="isSimple" visibility="public">
+                  <ownedParameter xmi:id="_NfXs1unfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs1-nfEdyqwYAyxR2bxw" name="accept" visibility="public">
+                  <ownedParameter xmi:id="_NfXs2OnfEdyqwYAyxR2bxw" name="visitor" type="_NfXr8OnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXs2enfEdyqwYAyxR2bxw" name="FOrientablePolygon2D">
+                <generalization xmi:id="_NfXs2unfEdyqwYAyxR2bxw" general="_NfXuzenfEdyqwYAyxR2bxw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXs2-nfEdyqwYAyxR2bxw" name="FPolyline3D" clientDependency="_NfXs3unfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXs3OnfEdyqwYAyxR2bxw" general="_NfXumOnfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXs3enfEdyqwYAyxR2bxw" name="pZ" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXs3unfEdyqwYAyxR2bxw" name="FShape3D" supplier="_NfXulOnfEdyqwYAyxR2bxw" client="_NfXs2-nfEdyqwYAyxR2bxw" contract="_NfXulOnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXs3-nfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXs4OnfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs4enfEdyqwYAyxR2bxw" name="getZs" visibility="public">
+                  <ownedParameter xmi:id="_NfXs4unfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs4-nfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXs5OnfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXs5enfEdyqwYAyxR2bxw" name="FCircle2D">
+                <generalization xmi:id="_NfXs5unfEdyqwYAyxR2bxw" general="_NfXtt-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXs5-nfEdyqwYAyxR2bxw" name="center" visibility="private" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXs6OnfEdyqwYAyxR2bxw" name="radio" visibility="private" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXs6enfEdyqwYAyxR2bxw" name="getCenter" visibility="public">
+                  <ownedParameter xmi:id="_NfXs6unfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs6-nfEdyqwYAyxR2bxw" name="getRadio" visibility="public">
+                  <ownedParameter xmi:id="_NfXs7OnfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs7enfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXs7unfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs7-nfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXs8OnfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs8enfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXs8unfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs8-nfEdyqwYAyxR2bxw" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXs9OnfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs9enfEdyqwYAyxR2bxw" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXs9unfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXs9-nfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXs-OnfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXs-enfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXs-unfEdyqwYAyxR2bxw" name="CenterHandler" clientDependency="_NfXs_enfEdyqwYAyxR2bxw _NfXs_unfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXs--nfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <generalization xmi:id="_NfXs_OnfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXs_enfEdyqwYAyxR2bxw" name="ICenterHandler" supplier="_NfXt_-nfEdyqwYAyxR2bxw" client="_NfXs-unfEdyqwYAyxR2bxw" contract="_NfXt_-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXs_unfEdyqwYAyxR2bxw" name="ICenterHandler" supplier="_NfXt_-nfEdyqwYAyxR2bxw" client="_NfXs-unfEdyqwYAyxR2bxw" contract="_NfXt_-nfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXs_-nfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXtAOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtAenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtAunfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXtA-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtBOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtBenfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXtBunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtB-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtCOnfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXtCenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtCunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXtC-nfEdyqwYAyxR2bxw" name="CenterSelHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXtDOnfEdyqwYAyxR2bxw" name="RadioSelHandler" clientDependency="_NfXtDunfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXtDenfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXtDunfEdyqwYAyxR2bxw" name="ICuadrantHandler" supplier="_NfXt0OnfEdyqwYAyxR2bxw" client="_NfXtDOnfEdyqwYAyxR2bxw" contract="_NfXt0OnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXtD-nfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXtEOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtEenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtEunfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXtE-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtFOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXtFenfEdyqwYAyxR2bxw" name="ShapeFactory">
+                <ownedOperation xmi:id="_NfXtFunfEdyqwYAyxR2bxw" name="createPoint2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtF-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtGOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtGenfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtGunfEdyqwYAyxR2bxw" name="createPoint2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtG-nfEdyqwYAyxR2bxw" name="p" type="_NfXsAenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtHOnfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtHenfEdyqwYAyxR2bxw" name="createMultipoint2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtHunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtH-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtIOnfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtIenfEdyqwYAyxR2bxw" name="createPoint3D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtIunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtI-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtJOnfEdyqwYAyxR2bxw" name="z" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtJenfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtJunfEdyqwYAyxR2bxw" name="createMultipoint3D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtJ-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtKOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtKenfEdyqwYAyxR2bxw" name="z" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtKunfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtK-nfEdyqwYAyxR2bxw" name="createPolyline2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtLOnfEdyqwYAyxR2bxw" name="shape" type="_NfXsPOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtLenfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtLunfEdyqwYAyxR2bxw" name="createPolyline3D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtL-nfEdyqwYAyxR2bxw" name="shape" type="_NfXsPOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtMOnfEdyqwYAyxR2bxw" name="pZ" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtMenfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtMunfEdyqwYAyxR2bxw" name="createPolygon3D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtM-nfEdyqwYAyxR2bxw" name="shape" type="_NfXsPOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtNOnfEdyqwYAyxR2bxw" name="pZ" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtNenfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtNunfEdyqwYAyxR2bxw" name="createPolygon2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtN-nfEdyqwYAyxR2bxw" name="shape" type="_NfXsPOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtOOnfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtOenfEdyqwYAyxR2bxw" name="createPolygon2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtOunfEdyqwYAyxR2bxw" name="shape" type="_NfXumOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtO-nfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtPOnfEdyqwYAyxR2bxw" name="createGeometry" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtPenfEdyqwYAyxR2bxw" name="shp" type="_NfXue-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtPunfEdyqwYAyxR2bxw" name="return" type="_NfXununfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtP-nfEdyqwYAyxR2bxw" name="createCircle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtQOnfEdyqwYAyxR2bxw" name="center" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtQenfEdyqwYAyxR2bxw" name="r" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtQunfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtQ-nfEdyqwYAyxR2bxw" name="createCircle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtROnfEdyqwYAyxR2bxw" name="center" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtRenfEdyqwYAyxR2bxw" name="radio" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtRunfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtR-nfEdyqwYAyxR2bxw" name="createCircle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtSOnfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtSenfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtSunfEdyqwYAyxR2bxw" name="p3" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtS-nfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtTOnfEdyqwYAyxR2bxw" name="createArc" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtTenfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtTunfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtT-nfEdyqwYAyxR2bxw" name="p3" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtUOnfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtUenfEdyqwYAyxR2bxw" name="createEllipse" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtUunfEdyqwYAyxR2bxw" name="axis1Start" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtU-nfEdyqwYAyxR2bxw" name="axis1End" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtVOnfEdyqwYAyxR2bxw" name="axis2Length" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtVenfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtVunfEdyqwYAyxR2bxw" name="createSpline2D" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXtV-nfEdyqwYAyxR2bxw" name="points" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtWOnfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXtWenfEdyqwYAyxR2bxw" name="FMultipoint3D" clientDependency="_NfXtXOnfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXtWunfEdyqwYAyxR2bxw" general="_NfXriunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXtW-nfEdyqwYAyxR2bxw" name="z" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXtXOnfEdyqwYAyxR2bxw" name="IGeometry3D" supplier="_NfXulenfEdyqwYAyxR2bxw" client="_NfXtWenfEdyqwYAyxR2bxw" contract="_NfXulenfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXtXenfEdyqwYAyxR2bxw" name="cloneGeometry" visibility="public">
+                  <ownedParameter xmi:id="_NfXtXunfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtX-nfEdyqwYAyxR2bxw" name="getZs" visibility="public">
+                  <ownedParameter xmi:id="_NfXtYOnfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtYenfEdyqwYAyxR2bxw" name="getGeometryType" visibility="public">
+                  <ownedParameter xmi:id="_NfXtYunfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_NfXtY-nfEdyqwYAyxR2bxw" name="Handler">
+                <ownedOperation xmi:id="_NfXtZOnfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXtZenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtZunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtZ-nfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXtaOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtaenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtaunfEdyqwYAyxR2bxw" name="getPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXta-nfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtbOnfEdyqwYAyxR2bxw" name="equalsPoint" visibility="public">
+                  <ownedParameter xmi:id="_NfXtbenfEdyqwYAyxR2bxw" name="obj" type="_NfXvVunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtbunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_NfXtb-nfEdyqwYAyxR2bxw" name="IFinalHandler">
+                <generalization xmi:id="_NfXtcOnfEdyqwYAyxR2bxw" general="_NfXtY-nfEdyqwYAyxR2bxw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXtcenfEdyqwYAyxR2bxw" name="FGeometryCollection">
+                <generalization xmi:id="_NfXtcunfEdyqwYAyxR2bxw" general="_NfXt1OnfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXtc-nfEdyqwYAyxR2bxw" name="geometries" type="_NfXspenfEdyqwYAyxR2bxw" association="_NfXvWenfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXtdOnfEdyqwYAyxR2bxw" name="getGeometriesNumber" visibility="public">
+                  <ownedParameter xmi:id="_NfXtdenfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtdunfEdyqwYAyxR2bxw" name="cloneGeometry" visibility="public">
+                  <ownedParameter xmi:id="_NfXtd-nfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXteOnfEdyqwYAyxR2bxw" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_NfXteenfEdyqwYAyxR2bxw" name="return" type="_NfXvUenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXteunfEdyqwYAyxR2bxw" name="getGeometryType" visibility="public">
+                  <ownedParameter xmi:id="_NfXte-nfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtfOnfEdyqwYAyxR2bxw" name="getHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXtfenfEdyqwYAyxR2bxw" name="type" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtfunfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtf-nfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXtgOnfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtgenfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtgunfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXtg-nfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXthOnfEdyqwYAyxR2bxw" name="flatness" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXthenfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXthunfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXth-nfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtiOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtienfEdyqwYAyxR2bxw" name="isSimple" visibility="public">
+                  <ownedParameter xmi:id="_NfXtiunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXti-nfEdyqwYAyxR2bxw" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_NfXtjOnfEdyqwYAyxR2bxw" name="ct" type="_NfXvU-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtjenfEdyqwYAyxR2bxw" name="toJTSGeometry" visibility="public">
+                  <ownedParameter xmi:id="_NfXtjunfEdyqwYAyxR2bxw" name="return" type="_NfXvUunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtj-nfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXtkOnfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtkenfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXtkunfEdyqwYAyxR2bxw" name="p" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtk-nfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtlOnfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXtlenfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtlunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtl-nfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXtmOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtmenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtmunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtm-nfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXtnOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtnenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtnunfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtn-nfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtoOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtoenfEdyqwYAyxR2bxw" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_NfXtounfEdyqwYAyxR2bxw" name="return" type="_NfXvVenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXto-nfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXtpOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtpenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtpunfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtp-nfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtqOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtqenfEdyqwYAyxR2bxw" name="accept" visibility="public">
+                  <ownedParameter xmi:id="_NfXtqunfEdyqwYAyxR2bxw" name="visitor" type="_NfXr8OnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtq-nfEdyqwYAyxR2bxw" name="getGeometries" visibility="public">
+                  <ownedParameter xmi:id="_NfXtrOnfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtrenfEdyqwYAyxR2bxw" name="fastIntersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXtrunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtr-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtsOnfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtsenfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtsunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXts-nfEdyqwYAyxR2bxw" name="getInternalShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXttOnfEdyqwYAyxR2bxw" name="return" type="_NfXvV-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXttenfEdyqwYAyxR2bxw" name="toWKB" visibility="public">
+                  <ownedParameter xmi:id="_NfXttunfEdyqwYAyxR2bxw" name="return" type="_NfXrAunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXtt-nfEdyqwYAyxR2bxw" name="FPolygon2D">
+                <generalization xmi:id="_NfXtuOnfEdyqwYAyxR2bxw" general="_NfXs2enfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXtuenfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXtuunfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtu-nfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXtvOnfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtvenfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXtvunfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtv-nfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXtwOnfEdyqwYAyxR2bxw" name="FPointIterator">
+                <generalization xmi:id="_NfXtwenfEdyqwYAyxR2bxw" general="_NfXuvOnfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXtwunfEdyqwYAyxR2bxw" name="at" visibility="private" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXtw-nfEdyqwYAyxR2bxw" name="p" visibility="private" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXtxOnfEdyqwYAyxR2bxw" name="done" visibility="private" type="_NfXrAenfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXtxenfEdyqwYAyxR2bxw" name="getWindingRule" visibility="public">
+                  <ownedParameter xmi:id="_NfXtxunfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtx-nfEdyqwYAyxR2bxw" name="next" visibility="public"/>
+                <ownedOperation xmi:id="_NfXtyOnfEdyqwYAyxR2bxw" name="isDone" visibility="public">
+                  <ownedParameter xmi:id="_NfXtyenfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtyunfEdyqwYAyxR2bxw" name="currentSegment" visibility="public">
+                  <ownedParameter xmi:id="_NfXty-nfEdyqwYAyxR2bxw" name="coords" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtzOnfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXtzenfEdyqwYAyxR2bxw" name="currentSegment" visibility="public">
+                  <ownedParameter xmi:id="_NfXtzunfEdyqwYAyxR2bxw" name="coords" type="_NfXrBenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXtz-nfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_NfXt0OnfEdyqwYAyxR2bxw" name="ICuadrantHandler">
+                <generalization xmi:id="_NfXt0enfEdyqwYAyxR2bxw" general="_NfXtY-nfEdyqwYAyxR2bxw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXt0unfEdyqwYAyxR2bxw" name="FOrientablePolyline2D">
+                <generalization xmi:id="_NfXt0-nfEdyqwYAyxR2bxw" general="_NfXuzenfEdyqwYAyxR2bxw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXt1OnfEdyqwYAyxR2bxw" name="AbstractGeometry" clientDependency="_NfXt1enfEdyqwYAyxR2bxw _j8htNOniEdycSvxH-nDZNg _v0yUpOniEdycSvxH-nDZNg _xWFvVOniEdycSvxH-nDZNg _E9Q1VOoGEdyWhupJHd1xRA">
+                <interfaceRealization xmi:id="_NfXt1enfEdyqwYAyxR2bxw" name="IGeometry" supplier="_NfXspenfEdyqwYAyxR2bxw" client="_NfXt1OnfEdyqwYAyxR2bxw" contract="_NfXspenfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_v0yUpOniEdycSvxH-nDZNg" name="InterfaceRealization1" supplier="_NfXulenfEdyqwYAyxR2bxw" client="_NfXt1OnfEdyqwYAyxR2bxw" contract="_NfXulenfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_xWFvVOniEdycSvxH-nDZNg" name="InterfaceRealization2" supplier="_wjktSOniEdycSvxH-nDZNg" client="_NfXt1OnfEdyqwYAyxR2bxw" contract="_wjktSOniEdycSvxH-nDZNg"/>
+                <interfaceRealization xmi:id="_E9Q1VOoGEdyWhupJHd1xRA" name="InterfaceRealization3" supplier="_NfXvvunfEdyqwYAyxR2bxw" client="_NfXt1OnfEdyqwYAyxR2bxw" contract="_NfXvvunfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXt1unfEdyqwYAyxR2bxw" name="getInternalShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXt1-nfEdyqwYAyxR2bxw" name="return" type="_NfXvV-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXt2OnfEdyqwYAyxR2bxw" name="accept" visibility="public">
+                  <ownedParameter xmi:id="_NfXt2enfEdyqwYAyxR2bxw" name="visitor" type="_NfXr8OnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXt2unfEdyqwYAyxR2bxw" name="FEllipse2D">
+                <generalization xmi:id="_NfXt2-nfEdyqwYAyxR2bxw" general="_NfXtt-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXt3OnfEdyqwYAyxR2bxw" name="init" visibility="private" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXt3enfEdyqwYAyxR2bxw" name="end" visibility="private" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXt3unfEdyqwYAyxR2bxw" name="ydist" visibility="private" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXt3-nfEdyqwYAyxR2bxw" name="getInit" visibility="public">
+                  <ownedParameter xmi:id="_NfXt4OnfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXt4enfEdyqwYAyxR2bxw" name="getEnd" visibility="public">
+                  <ownedParameter xmi:id="_NfXt4unfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXt4-nfEdyqwYAyxR2bxw" name="getDist" visibility="public">
+                  <ownedParameter xmi:id="_NfXt5OnfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXt5enfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXt5unfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXt5-nfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXt6OnfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXt6enfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXt6unfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXt6-nfEdyqwYAyxR2bxw" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXt7OnfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXt7enfEdyqwYAyxR2bxw" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXt7unfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXt7-nfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXt8OnfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXt8enfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXt8unfEdyqwYAyxR2bxw" name="CenterHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXt8-nfEdyqwYAyxR2bxw" name="CenterSelHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXt9OnfEdyqwYAyxR2bxw" name="InitSelHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXt9enfEdyqwYAyxR2bxw" name="EndSelHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXt9unfEdyqwYAyxR2bxw" name="RadioSelYHandler" clientDependency="_NfXt-OnfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXt9-nfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXt-OnfEdyqwYAyxR2bxw" name="ICuadrantHandler" supplier="_NfXt0OnfEdyqwYAyxR2bxw" client="_NfXt9unfEdyqwYAyxR2bxw" contract="_NfXt0OnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXt-enfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXt-unfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXt--nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXt_OnfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXt_enfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXt_unfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_NfXt_-nfEdyqwYAyxR2bxw" name="ICenterHandler">
+                <generalization xmi:id="_NfXuAOnfEdyqwYAyxR2bxw" general="_NfXtY-nfEdyqwYAyxR2bxw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXuAenfEdyqwYAyxR2bxw" name="FPoint3D" clientDependency="_NfXuBOnfEdyqwYAyxR2bxw _SWPBk-oGEdyWhupJHd1xRA">
+                <generalization xmi:id="_NfXuAunfEdyqwYAyxR2bxw" general="_NfXsAenfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuA-nfEdyqwYAyxR2bxw" name="z" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXuBOnfEdyqwYAyxR2bxw" name="FShape3D" supplier="_NfXulOnfEdyqwYAyxR2bxw" client="_NfXuAenfEdyqwYAyxR2bxw" contract="_NfXulOnfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_SWPBk-oGEdyWhupJHd1xRA" name="InterfaceRealization1" supplier="_NfXv3OnfEdyqwYAyxR2bxw" client="_NfXuAenfEdyqwYAyxR2bxw" contract="_NfXv3OnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXuBenfEdyqwYAyxR2bxw" name="getZs" visibility="public">
+                  <ownedParameter xmi:id="_NfXuBunfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuB-nfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXuCOnfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuCenfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXuCunfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXuC-nfEdyqwYAyxR2bxw" name="FSpline2D">
+                <generalization xmi:id="_NfXuDOnfEdyqwYAyxR2bxw" general="_NfXumOnfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuDenfEdyqwYAyxR2bxw" name="points" visibility="private" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXuDunfEdyqwYAyxR2bxw" name="getGeneralPathX" visibility="private" isStatic="true">
+                  <ownedParameter xmi:id="_NfXuD-nfEdyqwYAyxR2bxw" name="ps" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuEOnfEdyqwYAyxR2bxw" name="return" type="_NfXsPOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuEenfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXuEunfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuE-nfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXuFOnfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuFenfEdyqwYAyxR2bxw" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXuFunfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuF-nfEdyqwYAyxR2bxw" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXuGOnfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXuGenfEdyqwYAyxR2bxw" name="PointHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXuGunfEdyqwYAyxR2bxw" name="PointSelHandler" clientDependency="_NfXuHenfEdyqwYAyxR2bxw _NfXuHunfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXuG-nfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <generalization xmi:id="_NfXuHOnfEdyqwYAyxR2bxw" general="_NfXr8-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXuHenfEdyqwYAyxR2bxw" name="IFinalHandler" supplier="_NfXtb-nfEdyqwYAyxR2bxw" client="_NfXuGunfEdyqwYAyxR2bxw" contract="_NfXtb-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXuHunfEdyqwYAyxR2bxw" name="IFinalHandler" supplier="_NfXtb-nfEdyqwYAyxR2bxw" client="_NfXuGunfEdyqwYAyxR2bxw" contract="_NfXtb-nfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXuH-nfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXuIOnfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuIenfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuIunfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXuI-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuJOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuJenfEdyqwYAyxR2bxw" name="move" visibility="public">
+                  <ownedParameter xmi:id="_NfXuJunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuJ-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuKOnfEdyqwYAyxR2bxw" name="set" visibility="public">
+                  <ownedParameter xmi:id="_NfXuKenfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuKunfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXuK-nfEdyqwYAyxR2bxw" name="Spline">
+                <ownedAttribute xmi:id="_NfXuLOnfEdyqwYAyxR2bxw" name="y" visibility="private" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuLenfEdyqwYAyxR2bxw" name="y2" visibility="private" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXuLunfEdyqwYAyxR2bxw" name="fn" visibility="public">
+                  <ownedParameter xmi:id="_NfXuL-nfEdyqwYAyxR2bxw" name="n" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuMOnfEdyqwYAyxR2bxw" name="t" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuMenfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXuMunfEdyqwYAyxR2bxw" name="FPolygon3D" clientDependency="_NfXuNenfEdyqwYAyxR2bxw">
+                <generalization xmi:id="_NfXuM-nfEdyqwYAyxR2bxw" general="_NfXtt-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuNOnfEdyqwYAyxR2bxw" name="pZ" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXuNenfEdyqwYAyxR2bxw" name="FShape3D" supplier="_NfXulOnfEdyqwYAyxR2bxw" client="_NfXuMunfEdyqwYAyxR2bxw" contract="_NfXulOnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXuNunfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXuN-nfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuOOnfEdyqwYAyxR2bxw" name="getZs" visibility="public">
+                  <ownedParameter xmi:id="_NfXuOenfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuOunfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXuO-nfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXuPOnfEdyqwYAyxR2bxw" name="FNullGeometry">
+                <generalization xmi:id="_NfXuPenfEdyqwYAyxR2bxw" general="_NfXt1OnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXuPunfEdyqwYAyxR2bxw" name="toJTSGeometry" visibility="public">
+                  <ownedParameter xmi:id="_NfXuP-nfEdyqwYAyxR2bxw" name="return" type="_NfXvUunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuQOnfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXuQenfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuQunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuQ-nfEdyqwYAyxR2bxw" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_NfXuROnfEdyqwYAyxR2bxw" name="return" type="_NfXvUenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuRenfEdyqwYAyxR2bxw" name="getGeometryType" visibility="public">
+                  <ownedParameter xmi:id="_NfXuRunfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuR-nfEdyqwYAyxR2bxw" name="cloneGeometry" visibility="public">
+                  <ownedParameter xmi:id="_NfXuSOnfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuSenfEdyqwYAyxR2bxw" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_NfXuSunfEdyqwYAyxR2bxw" name="ct" type="_NfXvU-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuS-nfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXuTOnfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuTenfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuTunfEdyqwYAyxR2bxw" name="fastIntersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXuT-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuUOnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuUenfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuUunfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuU-nfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuVOnfEdyqwYAyxR2bxw" name="toWKB" visibility="public">
+                  <ownedParameter xmi:id="_NfXuVenfEdyqwYAyxR2bxw" name="return" type="_NfXrAunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuVunfEdyqwYAyxR2bxw" name="getHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXuV-nfEdyqwYAyxR2bxw" name="type" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuWOnfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuWenfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXuWunfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuW-nfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXuXOnfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuXenfEdyqwYAyxR2bxw" name="flatness" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuXunfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuX-nfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXuYOnfEdyqwYAyxR2bxw" name="arg0" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuYenfEdyqwYAyxR2bxw" name="arg1" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuYunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuY-nfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXuZOnfEdyqwYAyxR2bxw" name="arg0" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuZenfEdyqwYAyxR2bxw" name="arg1" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuZunfEdyqwYAyxR2bxw" name="arg2" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuZ-nfEdyqwYAyxR2bxw" name="arg3" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuaOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuaenfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXuaunfEdyqwYAyxR2bxw" name="arg0" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXua-nfEdyqwYAyxR2bxw" name="arg1" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXubOnfEdyqwYAyxR2bxw" name="arg2" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXubenfEdyqwYAyxR2bxw" name="arg3" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXubunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXub-nfEdyqwYAyxR2bxw" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_NfXucOnfEdyqwYAyxR2bxw" name="return" type="_NfXvVenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXucenfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXucunfEdyqwYAyxR2bxw" name="arg0" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuc-nfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXudOnfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXudenfEdyqwYAyxR2bxw" name="arg0" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXudunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXud-nfEdyqwYAyxR2bxw" name="isSimple" visibility="public">
+                  <ownedParameter xmi:id="_NfXueOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXueenfEdyqwYAyxR2bxw" name="accept" visibility="public">
+                  <ownedParameter xmi:id="_NfXueunfEdyqwYAyxR2bxw" name="visitor" type="_NfXr8OnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_NfXue-nfEdyqwYAyxR2bxw" name="FShape">
+                <generalization xmi:id="_NfXufOnfEdyqwYAyxR2bxw" general="_NfXvV-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXufenfEdyqwYAyxR2bxw" name="NULL" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXufunfEdyqwYAyxR2bxw" name="POINT" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuf-nfEdyqwYAyxR2bxw" name="LINE" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXugOnfEdyqwYAyxR2bxw" name="POLYGON" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXugenfEdyqwYAyxR2bxw" name="TEXT" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXugunfEdyqwYAyxR2bxw" name="MULTI" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXug-nfEdyqwYAyxR2bxw" name="MULTIPOINT" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuhOnfEdyqwYAyxR2bxw" name="CIRCLE" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuhenfEdyqwYAyxR2bxw" name="ARC" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuhunfEdyqwYAyxR2bxw" name="ELLIPSE" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuh-nfEdyqwYAyxR2bxw" name="Z" visibility="public" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXuiOnfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXuienfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuiunfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXui-nfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXujOnfEdyqwYAyxR2bxw" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_NfXujenfEdyqwYAyxR2bxw" name="ct" type="_NfXvU-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXujunfEdyqwYAyxR2bxw" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXuj-nfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXukOnfEdyqwYAyxR2bxw" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXukenfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXukunfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXuk-nfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_NfXulOnfEdyqwYAyxR2bxw" name="FShape3D"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_NfXulenfEdyqwYAyxR2bxw" name="IGeometry3D">
+                <ownedOperation xmi:id="_NfXulunfEdyqwYAyxR2bxw" name="getZs">
+                  <ownedParameter xmi:id="_NfXul-nfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXumOnfEdyqwYAyxR2bxw" name="FPolyline2D">
+                <generalization xmi:id="_NfXumenfEdyqwYAyxR2bxw" general="_NfXt0unfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXumunfEdyqwYAyxR2bxw" name="getShapeType" visibility="public">
+                  <ownedParameter xmi:id="_NfXum-nfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXunOnfEdyqwYAyxR2bxw" name="cloneFShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXunenfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXununfEdyqwYAyxR2bxw" name="FGeometry" clientDependency="_NfXuoOnfEdyqwYAyxR2bxw _KvG4I-oGEdyWhupJHd1xRA">
+                <generalization xmi:id="_NfXun-nfEdyqwYAyxR2bxw" general="_NfXt1OnfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_NfXuoOnfEdyqwYAyxR2bxw" name="FShape" supplier="_NfXue-nfEdyqwYAyxR2bxw" client="_NfXununfEdyqwYAyxR2bxw" contract="_NfXue-nfEdyqwYAyxR2bxw"/>
+                <interfaceRealization xmi:id="_KvG4I-oGEdyWhupJHd1xRA" name="InterfaceRealization1" supplier="_NfXv4OnfEdyqwYAyxR2bxw" client="_NfXununfEdyqwYAyxR2bxw" contract="_NfXv4OnfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXuoenfEdyqwYAyxR2bxw" name="toWKB" visibility="public">
+                  <ownedParameter xmi:id="_NfXuounfEdyqwYAyxR2bxw" name="return" type="_NfXrAunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuo-nfEdyqwYAyxR2bxw" name="getInternalShape" visibility="public">
+                  <ownedParameter xmi:id="_NfXupOnfEdyqwYAyxR2bxw" name="return" type="_NfXvV-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXupenfEdyqwYAyxR2bxw" name="fastIntersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXupunfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXup-nfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuqOnfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuqenfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuqunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuq-nfEdyqwYAyxR2bxw" name="getZs" visibility="public">
+                  <ownedParameter xmi:id="_NfXurOnfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXurenfEdyqwYAyxR2bxw" name="accept" visibility="public">
+                  <ownedParameter xmi:id="_NfXurunfEdyqwYAyxR2bxw" name="visitor" type="_NfXr8OnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXur-nfEdyqwYAyxR2bxw" name="cloneGeometry" visibility="public">
+                  <ownedParameter xmi:id="_NfXusOnfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXusenfEdyqwYAyxR2bxw" name="getGeometryType" visibility="public">
+                  <ownedParameter xmi:id="_NfXusunfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXus-nfEdyqwYAyxR2bxw" name="getHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXutOnfEdyqwYAyxR2bxw" name="type" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXutenfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXutunfEdyqwYAyxR2bxw" name="isSimple" visibility="public">
+                  <ownedParameter xmi:id="_NfXut-nfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuuOnfEdyqwYAyxR2bxw" name="toJTSGeometry" visibility="public">
+                  <ownedParameter xmi:id="_NfXuuenfEdyqwYAyxR2bxw" name="return" type="_NfXvUunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXuuunfEdyqwYAyxR2bxw" name="FMultiPolygon">
+                <generalization xmi:id="_NfXuu-nfEdyqwYAyxR2bxw" general="_NfXtcenfEdyqwYAyxR2bxw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXuvOnfEdyqwYAyxR2bxw" name="GeneralPathXIterator">
+                <ownedAttribute xmi:id="_NfXuvenfEdyqwYAyxR2bxw" name="typeIdx" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuvunfEdyqwYAyxR2bxw" name="pointIdx" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuv-nfEdyqwYAyxR2bxw" name="path" type="_NfXsPOnfEdyqwYAyxR2bxw" association="_NfXvW-nfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuwOnfEdyqwYAyxR2bxw" name="affine" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuwenfEdyqwYAyxR2bxw" name="curvesize" visibility="private" type="_NfXrBunfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXuwunfEdyqwYAyxR2bxw" name="getWindingRule" visibility="public">
+                  <ownedParameter xmi:id="_NfXuw-nfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuxOnfEdyqwYAyxR2bxw" name="isDone" visibility="public">
+                  <ownedParameter xmi:id="_NfXuxenfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuxunfEdyqwYAyxR2bxw" name="next" visibility="public"/>
+                <ownedOperation xmi:id="_NfXux-nfEdyqwYAyxR2bxw" name="currentSegment" visibility="public">
+                  <ownedParameter xmi:id="_NfXuyOnfEdyqwYAyxR2bxw" name="coords" type="_NfXrBenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuyenfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXuyunfEdyqwYAyxR2bxw" name="currentSegment" visibility="public">
+                  <ownedParameter xmi:id="_NfXuy-nfEdyqwYAyxR2bxw" name="coords" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXuzOnfEdyqwYAyxR2bxw" name="return" type="_NfXrBunfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXuzenfEdyqwYAyxR2bxw" name="FOrientablePrimitive2D">
+                <generalization xmi:id="_NfXuzunfEdyqwYAyxR2bxw" general="_NfXununfEdyqwYAyxR2bxw"/>
+                <ownedAttribute xmi:id="_NfXuz-nfEdyqwYAyxR2bxw" name="gp" visibility="protected" type="_NfXsPOnfEdyqwYAyxR2bxw" association="_NfXvXenfEdyqwYAyxR2bxw"/>
+                <ownedOperation xmi:id="_NfXu0OnfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXu0enfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu0unfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu0-nfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu1OnfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXu1enfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu1unfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu1-nfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu2OnfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu2enfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu2unfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXu2-nfEdyqwYAyxR2bxw" name="x" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu3OnfEdyqwYAyxR2bxw" name="y" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu3enfEdyqwYAyxR2bxw" name="w" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu3unfEdyqwYAyxR2bxw" name="h" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu3-nfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu4OnfEdyqwYAyxR2bxw" name="getBounds" visibility="public">
+                  <ownedParameter xmi:id="_NfXu4enfEdyqwYAyxR2bxw" name="return" type="_NfXvVenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu4unfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXu4-nfEdyqwYAyxR2bxw" name="p" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu5OnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu5enfEdyqwYAyxR2bxw" name="getBounds2D" visibility="public">
+                  <ownedParameter xmi:id="_NfXu5unfEdyqwYAyxR2bxw" name="return" type="_NfXvUenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu5-nfEdyqwYAyxR2bxw" name="contains" visibility="public">
+                  <ownedParameter xmi:id="_NfXu6OnfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu6enfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu6unfEdyqwYAyxR2bxw" name="intersects" visibility="public">
+                  <ownedParameter xmi:id="_NfXu6-nfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu7OnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu7enfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXu7unfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu7-nfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu8OnfEdyqwYAyxR2bxw" name="getPathIterator" visibility="public">
+                  <ownedParameter xmi:id="_NfXu8enfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu8unfEdyqwYAyxR2bxw" name="flatness" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXu8-nfEdyqwYAyxR2bxw" name="return" type="_NfXvVOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu9OnfEdyqwYAyxR2bxw" name="transform" visibility="public">
+                  <ownedParameter xmi:id="_NfXu9enfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu9unfEdyqwYAyxR2bxw" name="reProject" visibility="public">
+                  <ownedParameter xmi:id="_NfXu9-nfEdyqwYAyxR2bxw" name="ct" type="_NfXvU-nfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu-OnfEdyqwYAyxR2bxw" name="getStretchingHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXu-enfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXu-unfEdyqwYAyxR2bxw" name="getSelectHandlers" visibility="public">
+                  <ownedParameter xmi:id="_NfXu--nfEdyqwYAyxR2bxw" name="return" type="_NfXtY-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXu_OnfEdyqwYAyxR2bxw" name="PointHandler"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXu_enfEdyqwYAyxR2bxw" name="PointSelHandler"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_NfXu_unfEdyqwYAyxR2bxw" name="v02">
+                <packagedElement xmi:type="uml:Class" xmi:id="_NfXu_-nfEdyqwYAyxR2bxw" name="FConverter">
+                  <ownedAttribute xmi:id="_NfXvAOnfEdyqwYAyxR2bxw" name="geomFactory" visibility="public" type="_NfXvRunfEdyqwYAyxR2bxw"/>
+                  <ownedAttribute xmi:id="_NfXvAenfEdyqwYAyxR2bxw" name="cga" visibility="public" type="_NfXvR-nfEdyqwYAyxR2bxw"/>
+                  <ownedAttribute xmi:id="_NfXvAunfEdyqwYAyxR2bxw" name="POINT_MARKER_SIZE" visibility="private" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedAttribute xmi:id="_NfXvA-nfEdyqwYAyxR2bxw" name="FLATNESS" visibility="public" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedOperation xmi:id="_NfXvBOnfEdyqwYAyxR2bxw" name="pointInList" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvBenfEdyqwYAyxR2bxw" name="testPoint" type="_NfXvSOnfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvBunfEdyqwYAyxR2bxw" name="pointList" type="_NfXvSOnfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvB-nfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvCOnfEdyqwYAyxR2bxw" name="jts_to_igeometry" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvCenfEdyqwYAyxR2bxw" name="jtsGeometry" type="_NfXvUunfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvCunfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvC-nfEdyqwYAyxR2bxw" name="java2d_to_jts" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvDOnfEdyqwYAyxR2bxw" name="shp" type="_NfXue-nfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvDenfEdyqwYAyxR2bxw" name="return" type="_NfXvUunfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvDunfEdyqwYAyxR2bxw" name="jts_to_java2d" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvD-nfEdyqwYAyxR2bxw" name="geo" type="_NfXvUunfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvEOnfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvEenfEdyqwYAyxR2bxw" name="toShape" visibility="private" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvEunfEdyqwYAyxR2bxw" name="p" type="_NfXvSenfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvE-nfEdyqwYAyxR2bxw" name="return" type="_NfXsPOnfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvFOnfEdyqwYAyxR2bxw" name="toShape" visibility="private" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvFenfEdyqwYAyxR2bxw" name="mls" type="_NfXvSunfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvFunfEdyqwYAyxR2bxw" name="return" type="_NfXsPOnfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvF-nfEdyqwYAyxR2bxw" name="toShape" visibility="private" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvGOnfEdyqwYAyxR2bxw" name="lineString" type="_NfXvS-nfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvGenfEdyqwYAyxR2bxw" name="return" type="_NfXsPOnfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvGunfEdyqwYAyxR2bxw" name="toShape" visibility="private" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvG-nfEdyqwYAyxR2bxw" name="point" type="_NfXvTOnfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvHOnfEdyqwYAyxR2bxw" name="return" type="_NfXsAenfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvHenfEdyqwYAyxR2bxw" name="toShape" visibility="private" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvHunfEdyqwYAyxR2bxw" name="mp" type="_NfXvTenfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvH-nfEdyqwYAyxR2bxw" name="return" type="_NfXsPOnfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvIOnfEdyqwYAyxR2bxw" name="coordinate2FPoint2D" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvIenfEdyqwYAyxR2bxw" name="coord" type="_NfXvSOnfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvIunfEdyqwYAyxR2bxw" name="return" type="_NfXsAenfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvI-nfEdyqwYAyxR2bxw" name="toShape" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvJOnfEdyqwYAyxR2bxw" name="geometry" type="_NfXvUunfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvJenfEdyqwYAyxR2bxw" name="return" type="_NfXsPOnfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvJunfEdyqwYAyxR2bxw" name="transformToInts" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvJ-nfEdyqwYAyxR2bxw" name="gp" type="_NfXsPOnfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvKOnfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvKenfEdyqwYAyxR2bxw" name="return" type="_NfXsPOnfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvKunfEdyqwYAyxR2bxw" name="transformToInts" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvK-nfEdyqwYAyxR2bxw" name="gp" type="_NfXspenfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvLOnfEdyqwYAyxR2bxw" name="at" type="_NfXvUOnfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvLenfEdyqwYAyxR2bxw" name="return" type="_NfXue-nfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvLunfEdyqwYAyxR2bxw" name="convertEnvelopeToRectangle2D" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvL-nfEdyqwYAyxR2bxw" name="jtsR" type="_NfXvTunfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvMOnfEdyqwYAyxR2bxw" name="return" type="_NfXvUenfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvMenfEdyqwYAyxR2bxw" name="convertRectangle2DtoEnvelope" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvMunfEdyqwYAyxR2bxw" name="r" type="_NfXvUenfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvM-nfEdyqwYAyxR2bxw" name="return" type="_NfXvTunfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvNOnfEdyqwYAyxR2bxw" name="getExteriorPolygon" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvNenfEdyqwYAyxR2bxw" name="coordinates" type="_NfXvSOnfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvNunfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvN-nfEdyqwYAyxR2bxw" name="isCCW" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvOOnfEdyqwYAyxR2bxw" name="points" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvOenfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvOunfEdyqwYAyxR2bxw" name="isCCW" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvO-nfEdyqwYAyxR2bxw" name="pol" type="_NfXtt-nfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvPOnfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvPenfEdyqwYAyxR2bxw" name="getHole" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvPunfEdyqwYAyxR2bxw" name="coordinates" type="_NfXvSOnfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvP-nfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvQOnfEdyqwYAyxR2bxw" name="getExteriorPolygon" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvQenfEdyqwYAyxR2bxw" name="gp" type="_NfXsPOnfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvQunfEdyqwYAyxR2bxw" name="return" type="_NfXvV-nfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_NfXvQ-nfEdyqwYAyxR2bxw" name="getNotHolePolygon" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_NfXvROnfEdyqwYAyxR2bxw" name="pol" type="_NfXtt-nfEdyqwYAyxR2bxw"/>
+                    <ownedParameter xmi:id="_NfXvRenfEdyqwYAyxR2bxw" name="return" type="_NfXspenfEdyqwYAyxR2bxw" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvRunfEdyqwYAyxR2bxw" name="GeometryFactory"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvR-nfEdyqwYAyxR2bxw" name="CGAlgorithms"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvSOnfEdyqwYAyxR2bxw" name="Coordinate"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvSenfEdyqwYAyxR2bxw" name="Polygon"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvSunfEdyqwYAyxR2bxw" name="MultiLineString"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvS-nfEdyqwYAyxR2bxw" name="LineString"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvTOnfEdyqwYAyxR2bxw" name="Point"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvTenfEdyqwYAyxR2bxw" name="MultiPolygon"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvTunfEdyqwYAyxR2bxw" name="Envelope"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvT-nfEdyqwYAyxR2bxw" name="Point2D"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvUOnfEdyqwYAyxR2bxw" name="AffineTransform"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvUenfEdyqwYAyxR2bxw" name="Rectangle2D"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvUunfEdyqwYAyxR2bxw" name="Geometry"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvU-nfEdyqwYAyxR2bxw" name="ICoordTrans"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvVOnfEdyqwYAyxR2bxw" name="PathIterator"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvVenfEdyqwYAyxR2bxw" name="Rectangle"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvVunfEdyqwYAyxR2bxw" name="Object"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvV-nfEdyqwYAyxR2bxw" name="Shape"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvWOnfEdyqwYAyxR2bxw" name="java.awt.Rectangle"/>
+              <packagedElement xmi:type="uml:Association" xmi:id="_NfXvWenfEdyqwYAyxR2bxw" memberEnd="_NfXtc-nfEdyqwYAyxR2bxw _NfXvWunfEdyqwYAyxR2bxw">
+                <ownedEnd xmi:id="_NfXvWunfEdyqwYAyxR2bxw" name="target" type="_NfXtcenfEdyqwYAyxR2bxw" association="_NfXvWenfEdyqwYAyxR2bxw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_NfXvW-nfEdyqwYAyxR2bxw" memberEnd="_NfXuv-nfEdyqwYAyxR2bxw _NfXvXOnfEdyqwYAyxR2bxw">
+                <ownedEnd xmi:id="_NfXvXOnfEdyqwYAyxR2bxw" name="target" type="_NfXuvOnfEdyqwYAyxR2bxw" association="_NfXvW-nfEdyqwYAyxR2bxw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_NfXvXenfEdyqwYAyxR2bxw" memberEnd="_NfXuz-nfEdyqwYAyxR2bxw _NfXvXunfEdyqwYAyxR2bxw">
+                <ownedEnd xmi:id="_NfXvXunfEdyqwYAyxR2bxw" name="target" type="_NfXuzenfEdyqwYAyxR2bxw" association="_NfXvXenfEdyqwYAyxR2bxw"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_NfXvX-nfEdyqwYAyxR2bxw" name="edition">
+              <packagedElement xmi:type="uml:Class" xmi:id="_NfXvYOnfEdyqwYAyxR2bxw" name="UtilFunctions">
+                <ownedOperation xmi:id="_NfXvYenfEdyqwYAyxR2bxw" name="createCircle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvYunfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvY-nfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvZOnfEdyqwYAyxR2bxw" name="p3" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvZenfEdyqwYAyxR2bxw" name="return" type="_NfXvuenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvZunfEdyqwYAyxR2bxw" name="getPerpendicular" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvZ-nfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvaOnfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvaenfEdyqwYAyxR2bxw" name="perp" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvaunfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXva-nfEdyqwYAyxR2bxw" name="getParallel" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvbOnfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvbenfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvbunfEdyqwYAyxR2bxw" name="distance" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvb-nfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvcOnfEdyqwYAyxR2bxw" name="getPerpendicularPoint" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvcenfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvcunfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvc-nfEdyqwYAyxR2bxw" name="perpPoint" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvdOnfEdyqwYAyxR2bxw" name="dist" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvdenfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvdunfEdyqwYAyxR2bxw" name="getUnitVector" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvd-nfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXveOnfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXveenfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXveunfEdyqwYAyxR2bxw" name="getCenter" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXve-nfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvfOnfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvfenfEdyqwYAyxR2bxw" name="p3" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvfunfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvf-nfEdyqwYAyxR2bxw" name="getIntersection" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvgOnfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvgenfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvgunfEdyqwYAyxR2bxw" name="p3" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvg-nfEdyqwYAyxR2bxw" name="p4" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvhOnfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvhenfEdyqwYAyxR2bxw" name="getAngle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvhunfEdyqwYAyxR2bxw" name="start" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvh-nfEdyqwYAyxR2bxw" name="end" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXviOnfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvienfEdyqwYAyxR2bxw" name="angleDistance" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXviunfEdyqwYAyxR2bxw" name="angle1" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvi-nfEdyqwYAyxR2bxw" name="angle2" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvjOnfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvjenfEdyqwYAyxR2bxw" name="getPoint" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvjunfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvj-nfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvkOnfEdyqwYAyxR2bxw" name="radio" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvkenfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvkunfEdyqwYAyxR2bxw" name="absoluteAngleDistance" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvk-nfEdyqwYAyxR2bxw" name="angle1" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvlOnfEdyqwYAyxR2bxw" name="angle2" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvlenfEdyqwYAyxR2bxw" name="return" type="_NfXrBOnfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvlunfEdyqwYAyxR2bxw" name="createArc" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvl-nfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvmOnfEdyqwYAyxR2bxw" name="p2" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvmenfEdyqwYAyxR2bxw" name="p3" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvmunfEdyqwYAyxR2bxw" name="return" type="_NfXvuenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvm-nfEdyqwYAyxR2bxw" name="createArc2points" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvnOnfEdyqwYAyxR2bxw" name="center" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvnenfEdyqwYAyxR2bxw" name="init" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvnunfEdyqwYAyxR2bxw" name="end" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvn-nfEdyqwYAyxR2bxw" name="return" type="_NfXvuenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvoOnfEdyqwYAyxR2bxw" name="getPoint" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvoenfEdyqwYAyxR2bxw" name="p1" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvounfEdyqwYAyxR2bxw" name="an" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvo-nfEdyqwYAyxR2bxw" name="radio" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvpOnfEdyqwYAyxR2bxw" name="return" type="_NfXvT-nfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvpenfEdyqwYAyxR2bxw" name="isLowAngle" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvpunfEdyqwYAyxR2bxw" name="antp" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvp-nfEdyqwYAyxR2bxw" name="lastp" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvqOnfEdyqwYAyxR2bxw" name="interp" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvqenfEdyqwYAyxR2bxw" name="point" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvqunfEdyqwYAyxR2bxw" name="return" type="_NfXrAenfEdyqwYAyxR2bxw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvq-nfEdyqwYAyxR2bxw" name="rotateGeom" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvrOnfEdyqwYAyxR2bxw" name="geometry" type="_NfXspenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvrenfEdyqwYAyxR2bxw" name="radAngle" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvrunfEdyqwYAyxR2bxw" name="basex" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvr-nfEdyqwYAyxR2bxw" name="basey" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvsOnfEdyqwYAyxR2bxw" name="moveGeom" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvsenfEdyqwYAyxR2bxw" name="geometry" type="_NfXspenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvsunfEdyqwYAyxR2bxw" name="dx" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvs-nfEdyqwYAyxR2bxw" name="dy" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_NfXvtOnfEdyqwYAyxR2bxw" name="scaleGeom" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_NfXvtenfEdyqwYAyxR2bxw" name="geometry" type="_NfXspenfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvtunfEdyqwYAyxR2bxw" name="basePoint" type="_NfXvT-nfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvt-nfEdyqwYAyxR2bxw" name="sx" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                  <ownedParameter xmi:id="_NfXvuOnfEdyqwYAyxR2bxw" name="sy" type="_NfXrBOnfEdyqwYAyxR2bxw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_NfXvuenfEdyqwYAyxR2bxw" name="Arc2D"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NfXvuunfEdyqwYAyxR2bxw" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_NfXvu-nfEdyqwYAyxR2bxw" name="gvsig">
+      <packagedElement xmi:type="uml:Package" xmi:id="_NfXvvOnfEdyqwYAyxR2bxw" name="geometries">
+        <packagedElement xmi:type="uml:Package" xmi:id="_NfXvvenfEdyqwYAyxR2bxw" name="iso">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_NfXvvunfEdyqwYAyxR2bxw" name="GM_Object"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_NfXvv-nfEdyqwYAyxR2bxw" name="aggregate">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXvwOnfEdyqwYAyxR2bxw" name="GM_MultiPoint">
+              <generalization xmi:id="_NfXvwenfEdyqwYAyxR2bxw" general="_NfXvx-nfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXvwunfEdyqwYAyxR2bxw" name="GM_MultiCurve">
+              <generalization xmi:id="_NfXvw-nfEdyqwYAyxR2bxw" general="_NfXvx-nfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXvxOnfEdyqwYAyxR2bxw" name="GM_MultiSolid">
+              <generalization xmi:id="_NfXvxenfEdyqwYAyxR2bxw" general="_NfXvx-nfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXvxunfEdyqwYAyxR2bxw" name="GM_MultiSurface"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXvx-nfEdyqwYAyxR2bxw" name="GM_MultiPrimitive">
+              <generalization xmi:id="_NfXvyOnfEdyqwYAyxR2bxw" general="_NfXvyenfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXvyenfEdyqwYAyxR2bxw" name="GM_Aggregate">
+              <generalization xmi:id="_NfXvyunfEdyqwYAyxR2bxw" general="_NfXvvunfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_NfXvy-nfEdyqwYAyxR2bxw" name="complex">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXvzOnfEdyqwYAyxR2bxw" name="GM_Composite">
+              <generalization xmi:id="_NfXvzenfEdyqwYAyxR2bxw" general="_NfXv0unfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXvzunfEdyqwYAyxR2bxw" name="GM_CompositeSolid">
+              <generalization xmi:id="_NfXvz-nfEdyqwYAyxR2bxw" general="_NfXvzOnfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv0OnfEdyqwYAyxR2bxw" name="GM_CompositeCurve">
+              <generalization xmi:id="_NfXv0enfEdyqwYAyxR2bxw" general="_NfXvzOnfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv0unfEdyqwYAyxR2bxw" name="GM_Complex">
+              <generalization xmi:id="_NfXv0-nfEdyqwYAyxR2bxw" general="_NfXvvunfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv1OnfEdyqwYAyxR2bxw" name="GM_CompositeSurface">
+              <generalization xmi:id="_NfXv1enfEdyqwYAyxR2bxw" general="_NfXvzOnfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_NfXv1unfEdyqwYAyxR2bxw" name="primitive">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv1-nfEdyqwYAyxR2bxw" name="GM_Surface"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv2OnfEdyqwYAyxR2bxw" name="GM_Solid">
+              <generalization xmi:id="_NfXv2enfEdyqwYAyxR2bxw" general="_NfXv2unfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv2unfEdyqwYAyxR2bxw" name="GM_OrientableSurface">
+              <generalization xmi:id="_NfXv2-nfEdyqwYAyxR2bxw" general="_NfXv5OnfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv3OnfEdyqwYAyxR2bxw" name="GM_Point">
+              <generalization xmi:id="_NfXv3enfEdyqwYAyxR2bxw" general="_NfXv4OnfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv3unfEdyqwYAyxR2bxw" name="GM_Curve">
+              <generalization xmi:id="_NfXv3-nfEdyqwYAyxR2bxw" general="_NfXv4unfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv4OnfEdyqwYAyxR2bxw" name="GM_Primitive">
+              <generalization xmi:id="_NfXv4enfEdyqwYAyxR2bxw" general="_NfXvvunfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv4unfEdyqwYAyxR2bxw" name="GM_OrientableCurve">
+              <generalization xmi:id="_NfXv4-nfEdyqwYAyxR2bxw" general="_NfXv5OnfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_NfXv5OnfEdyqwYAyxR2bxw" name="GM_OrientablePrimitive">
+              <generalization xmi:id="_NfXv5enfEdyqwYAyxR2bxw" general="_NfXv4OnfEdyqwYAyxR2bxw"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_j8htNOniEdycSvxH-nDZNg" name="Dependency1" supplier="_NfXulenfEdyqwYAyxR2bxw" client="_NfXt1OnfEdyqwYAyxR2bxw"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_wjktSOniEdycSvxH-nDZNg" name="Shape"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_A7KKSOnkEdycSvxH-nDZNg" name="FSolid">
+    <generalization xmi:id="_C3latOnkEdycSvxH-nDZNg" general="_NfXununfEdyqwYAyxR2bxw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EjneuOnkEdycSvxH-nDZNg" name="FMultiSolid">
+    <generalization xmi:id="_GSL5UunkEdycSvxH-nDZNg" general="_NfXtcenfEdyqwYAyxR2bxw"/>
+  </packagedElement>
+</uml:Model>
