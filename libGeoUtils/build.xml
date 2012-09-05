@@ -1,0 +1,52 @@
+<project name="libGeoUtils" default="create-jar" basedir=".">
+  	<!-- set global properties for this build -->
+	<property name="src"  location="src"/>
+	<property name="src-test" location="src-test"/>
+	<property name="build"  location="bin"/>
+	<property name="build-test" location="bin-test"/>
+	<property name="dist"  location="dist"/>
+	<property name="targetDir" location="../libFMap/lib"/>
+	<property name="jarName" value="geoutils.jar"/>
+	<import file="../binaries/ant/utilities.xml"/>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+<!--    <tstamp/>-->
+	<echo>
+		Compiling ${ant.project.name}...</echo>
+  </target>
+
+	<target name="batch-build"
+				description="compile the sources, create the jar file"
+				depends="init,compile,create-jar">
+	</target>
+
+	<target name="compile" description="compile the source">
+		<!-- Compile the Java code from ${src} to ${build} -->
+		<mkdir dir="${build}" />
+		<loadEclipseClasspath project="${basedir}"/>
+		<gvSIG-javac
+			classpath="${eclipseClasspath}"
+		/>
+		<copy todir="${build}">
+			<fileset dir="${src}" excludes="**/*.java" casesensitive="false"/>
+		</copy>
+	</target>
+
+	<target name="create-jar" description="Crea el jar de la aplicacion">
+		<!--<mkdir dir="${dist}" />-->
+	  	<jar jarfile="${targetDir}/${jarName}.jar" basedir="${build}"/>
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${build}" />
+		<delete dir="${dist}" />
+	</target>
+
+	<target name="run-tests" depends="batch-build,compile-tests">
+		<antcall target="generic-run-tests">
+			<param name="TestSuite.Name" value="com.iver.utiles.AllTests"/>
+		</antcall>
+	</target>
+</project>
