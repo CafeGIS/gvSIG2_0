@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- The Basics -->
+	<groupId>org.gvsig</groupId>
+	<artifactId>org.gvsig.compat</artifactId>
+	<version>2.0-SNAPSHOT</version>
+
+	<name>libCompat</name>
+	<url>http://gvsig.org</url>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-library-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<build-dir>${basedir}/../build</build-dir>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.tools</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+	<!-- Build Settings -->
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>se</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<configuration>
+							<source>1.4</source>
+							<target>1.4</target>
+							<!-- put your configurations here -->
+							<encoding>ISO-8859-1</encoding>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<exclude>**/se/**</exclude>
+							</excludes>
+						</configuration>
+
+						<executions>
+							<!--
+								Generates a jar file only with the libCompat API. <execution>
+								<id>api</id> <phase>package</phase>
+								<goals><goal>jar</goal></goals> <configuration>
+								<classifier>api</classifier> <excludes>
+								<exclude>**/se/**</exclude> </excludes> </configuration>
+								</execution>
+							-->
+							<!-- Generates a jar file only with the libCompat SE implementation. -->
+							<execution>
+								<id>se</id>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<classifier>se</classifier>
+									<excludes>
+										<exclude>NONE</exclude>
+									</excludes>
+									<includes>
+										<include>**/se/**</include>
+									</includes>
+								</configuration>
+							</execution>
+							<!--
+								Generates a jar file with the test, to be reused by other
+								library implementations.
+							-->
+							<execution>
+								<goals>
+									<goal>test-jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>cdc</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<exclude>**/se/**</exclude>
+							</excludes>
+							<testExcludes>
+								<exclude>**/se/**</exclude>
+							</testExcludes>
+						</configuration>
+					</plugin>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<exclude>**/se/**</exclude>
+							</excludes>
+						</configuration>
+						<executions>
+							<!--
+								Generates a jar file only with the libCompat API. <execution>
+								<id>api</id> <phase>package</phase>
+								<goals><goal>jar</goal></goals> <configuration>
+								<classifier>api</classifier> <excludes>
+								<exclude>**/se/**</exclude> </excludes> </configuration>
+								</execution>
+							-->
+							<!--
+								Generates a jar file with the test, to be reused by other
+								library implementations.
+							-->
+							<execution>
+								<goals>
+									<goal>test-jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+
+				</plugins>
+			</build>
+
+		</profile>
+	</profiles>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<reportSets>
+					<reportSet>
+						<id>api</id>
+						<configuration>
+							<excludePackageNames>org.gvsig.compat.se</excludePackageNames>
+							<name>Javadoc: API</name>
+							<destDir>apidoc</destDir>
+							<windowtitle>API Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+							</links>
+						</configuration>
+						<reports>
+							<report>javadoc</report>
+						</reports>
+					</reportSet>
+					<reportSet>
+						<id>se-impl</id>
+						<configuration>
+							<doctitle>${project.name} ${project.version} SE
+								Implementation</doctitle>
+							<subpackages>org.gvsig.compat.se</subpackages>
+							<name>Javadoc: SE impl</name>
+							<destDir>sedoc</destDir>
+							<windowtitle>SE implementation Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>../apidoc/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+							</links>
+						</configuration>
+						<reports>
+							<report>javadoc</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+</project>
