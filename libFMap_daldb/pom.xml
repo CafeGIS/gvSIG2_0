@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                      
+    <modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>org.gvsig.fmap.dal.db</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>libFMap_daldb</name>
+	<url>http://gvsig.org</url>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-library-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	
+	<properties>
+	
+		<!-- jdbc -->
+		<jdbc-jarIncludes>org/gvsig/fmap/dal/store/jdbc/**/**</jdbc-jarIncludes>
+		<jdbc-jarExcludes>NONE</jdbc-jarExcludes>
+	
+	
+		<!-- postgresql -->
+		<postgresql-jarIncludes>org/gvsig/fmap/dal/store/postgresql/**/**</postgresql-jarIncludes>
+		<postgresql-jarExcludes>NONE</postgresql-jarExcludes>
+
+		<!-- mysql -->
+		<mysql-jarIncludes>org/gvsig/fmap/dal/store/mysql/**/**</mysql-jarIncludes>
+		<mysql-jarExcludes>NONE</mysql-jarExcludes>
+
+		<!-- Common -->
+		<common-jarIncludes>**/**</common-jarIncludes>
+		<build-dir>${basedir}/../build</build-dir>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>			
+			<version>2.0-SNAPSHOT</version>
+			<classifier>spi</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>tests</classifier>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>impl</classifier>
+			<scope>test</scope>
+		</dependency>	
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.geometry</artifactId>			
+			<version>2.0-SNAPSHOT</version>
+			<classifier>operation</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal.index.spatial</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>jts</classifier>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.geometry</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>impl</classifier>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.projection</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>cresques-impl</classifier>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>com.iver.utiles</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>h2</artifactId>
+			<version>gvsig</version>
+		</dependency>
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>8.3-603.jdbc3</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.6</version>
+		</dependency>
+		
+		
+	</dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>org/gvsig/fmap/data/**</exclude>
+					</excludes>	
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<excludePackageNames>org/gvsig/fmap/data</excludePackageNames>
+				</configuration>
+			</plugin>			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+				  <excludes>
+					<exclude>${jdbc-jarIncludes}</exclude>
+					<exclude>${postgresql-jarIncludes}</exclude>
+					<exclude>${mysql-jarIncludes}</exclude>
+				  </excludes>
+		        </configuration>		
+				<executions>
+					<!--
+						Generates a jar file only with the DAL JDBC Store classes
+					-->
+					<execution>
+						<id>jdbc</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<classifier>store.jdbc</classifier>
+							<includes>
+								<include>${jdbc-jarIncludes}</include>
+							</includes>
+							<excludes>
+								<exclude>${jdbc-jarExcludes}</exclude>
+							</excludes>
+						</configuration>
+					</execution>
+					<!--
+						Generates a jar file only with the DAL PostgreSQL Store classes
+					-->
+					<execution>
+						<id>postgresql</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<classifier>store.postgresql</classifier>
+							<includes>
+								<include>${postgresql-jarIncludes}</include>
+							</includes>
+							<excludes>
+								<exclude>${postgresql-jarExcludes}</exclude>
+							</excludes>
+						</configuration>
+					</execution>
+					<!--
+						Generates a jar file only with the DAL MySQL Store classes
+					-->
+					<execution>
+						<id>mysql</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<classifier>store.mysql</classifier>
+							<includes>
+								<include>${mysql-jarIncludes}</include>
+							</includes>
+							<excludes>
+								<exclude>${mysql-jarExcludes}</exclude>
+							</excludes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+			<!-- PostgreSQL and MySQL is needed to run the tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>			
+		</plugins>
+	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<doctitle>${project.name} ${project.version}</doctitle>
+					<groups>
+						<group>
+							<title>DAL DB common</title>
+							<packages>org.gvsig.fmap.dal*</packages>
+						</group>
+						<group>
+							<title>DB Store</title>
+							<packages>org.gvsig.fmap.dal.store.db*</packages>
+						</group>
+						<group>
+							<title>JDBC Store</title>
+							<packages>org.gvsig.fmap.dal.store.jdbc*</packages>
+						</group>
+						<group>
+							<title>PostgreSQL Store</title>
+							<packages>org.gvsig.fmap.dal.store.postgresql*</packages>
+						</group>
+						<group>
+							<title>MySQL Store</title>
+							<packages>org.gvsig.fmap.dal.store.mysql*</packages>
+						</group>
+					</groups>
+				</configuration>
+				<reportSets>
+                    <reportSet>
+                        <id>api</id>
+                        <configuration>
+                            <excludePackageNames>*.spi:*.impl:*.store</excludePackageNames>
+                            <name>Javadoc: API</name>
+                            <destDir>apidoc</destDir>
+                            <windowtitle>API Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.i18n/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.metadata/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.compat/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.projection/2.0.0/apidocs/</link>
+								<link>${site-repository}/com.iver.utiles/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.fmap.dal/2.0.0/apidocs/</link>
+							</links>
+                        </configuration>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                    </reportSet>
+                    <reportSet>
+                        <id>spi</id>
+                        <configuration>
+                        	<doctitle>${project.name} ${project.version} SPI</doctitle>
+                            <subpackages>org.gvsig.fmap.dal.serverexplorer.db.spi:org.gvsig.fmap.dal.store.db:org.gvsig.fmap.dal.store.jdbc</subpackages>
+                            <name>Javadoc: SPI</name>
+                            <destDir>spidoc</destDir>
+                            <windowtitle>SPI and base stores documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>../apidoc/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.i18n/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.metadata/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.compat/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.projection/2.0.0/apidocs/</link>
+								<link>${site-repository}/com.iver.utiles/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.fmap.dal/2.0.0/apidocs/</link>
+							</links>
+                        </configuration>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                    </reportSet>
+                    <reportSet>
+                        <id>impl</id>
+                        <configuration>
+                        	<doctitle>${project.name} ${project.version} Default implementation and stores</doctitle>
+                            <subpackages>org.gvsig.fmap.dal.store.mysql:org.gvsig.fmap.dal.store.postgresql</subpackages>
+                            <name>Javadoc: Impl and Stores</name>
+                            <destDir>impldoc</destDir>
+                            <windowtitle>Default implementation and Stores Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>../apidoc/</link>
+								<link>../spidoc/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.i18n/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.metadata/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.compat/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.projection/2.0.0/apidocs/</link>
+								<link>${site-repository}/com.iver.utiles/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.fmap.dal/2.0.0/apidocs/</link>
+							</links>
+                        </configuration>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                    </reportSet>
+            	</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+</project>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="org/gvsig/fmap/data/**" kind="src" path="src"/>
+	<classpathentry kind="src" output="target/test-classes" path="src-test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/castor/gvsig/castor-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/com.iver.utiles/2.0-SNAPSHOT/com.iver.utiles-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/gvsig/com.iver.utiles/2.0-SNAPSHOT/com.iver.utiles-2.0-SNAPSHOT-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/cordin/.m2/repository/org/gvsig/com.iver.utiles/2.0-SNAPSHOT/com.iver.utiles-2.0-SNAPSHOT-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar" sourcepath="M2_REPO/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/cordin/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/commons-dbcp/commons-dbcp/1.2.2/commons-dbcp-1.2.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.3/commons-pool-1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/geoapi/gvsig/geoapi-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/geojava/gvsig/geojava-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/gt2-legacy/gvsig/gt2-legacy-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/gt2-main/gvsig/gt2-main-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/gt2-postgis/gvsig/gt2-postgis-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/gt2sidx/gvsig/gt2sidx-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/h2/gvsig/h2-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/units/gvsig/units-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jts/gvsig/jts-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar" sourcepath="M2_REPO/junit/junit/3.8.1/junit-3.8.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14.jar" sourcepath="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/org.gvsig.fmap.dal.index.spatial/2.0-SNAPSHOT/org.gvsig.fmap.dal.index.spatial-2.0-SNAPSHOT-jts.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/org.gvsig.i18n/2.0-SNAPSHOT/org.gvsig.i18n-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/gvsig/org.gvsig.i18n/2.0-SNAPSHOT/org.gvsig.i18n-2.0-SNAPSHOT-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/cordin/.m2/repository/org/gvsig/org.gvsig.i18n/2.0-SNAPSHOT/org.gvsig.i18n-2.0-SNAPSHOT-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/org.gvsig.metadata/2.0-SNAPSHOT/org.gvsig.metadata-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/gvsig/org.gvsig.metadata/2.0-SNAPSHOT/org.gvsig.metadata-2.0-SNAPSHOT-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/cordin/.m2/repository/org/gvsig/org.gvsig.metadata/2.0-SNAPSHOT/org.gvsig.metadata-2.0-SNAPSHOT-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/org.gvsig.projection/2.0-SNAPSHOT/org.gvsig.projection-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/gvsig/org.gvsig.projection/2.0-SNAPSHOT/org.gvsig.projection-2.0-SNAPSHOT-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/cordin/.m2/repository/org/gvsig/org.gvsig.projection/2.0-SNAPSHOT/org.gvsig.projection-2.0-SNAPSHOT-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/org.gvsig.projection/2.0-SNAPSHOT/org.gvsig.projection-2.0-SNAPSHOT-cresques-impl.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/org.gvsig.tools/2.0-SNAPSHOT/org.gvsig.tools-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/org/gvsig/org.gvsig.tools/2.0-SNAPSHOT/org.gvsig.tools-2.0-SNAPSHOT-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/cordin/.m2/repository/org/gvsig/org.gvsig.tools/2.0-SNAPSHOT/org.gvsig.tools-2.0-SNAPSHOT-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/postgresql/postgresql/8.3-603.jdbc3/postgresql-8.3-603.jdbc3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.5.5/slf4j-api-1.5.5.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.5.5/slf4j-api-1.5.5-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.5.5/slf4j-log4j12-1.5.5.jar" sourcepath="M2_REPO/org/slf4j/slf4j-log4j12/1.5.5/slf4j-log4j12-1.5.5-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/spatialindex/gvsig/spatialindex-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/vecmath/gvsig/vecmath-gvsig.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libFMap_dal"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/libFMap_geometries"/>
+	<classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
