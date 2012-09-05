@@ -1,0 +1,5 @@
+<buildman>
+	<goals>
+		<buildman file="bmtests/data/buildman.xml" />
+	</goals>
+</buildman>

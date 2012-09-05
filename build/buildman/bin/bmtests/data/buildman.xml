@@ -1,0 +1,30 @@
+<buildman>
+	<goals platform="linux,mac">
+		<delete path="/tmp/osgVP" />
+	</goals>
+	<goals platform="win">
+		<delete path="./osgVP" />
+	</goals>
+	<goals>
+		<svn option="co" url="https://josgplanets.ai2.upv.es/svn/josgplanets/trunk/libjni-osgvp" project-path="/tmp/osgVP" />
+		<clean all="False" />
+		<update file="/tmp/osgVP/build-scripts/depman.xml" />
+	</goals>
+	<goals platform="linux,mac">
+		<create-solution project-path="/tmp/osgVP" generator="unix" install="/tmp/osgVP-install" />
+		<compile-solution project-path="/tmp/osgVP" project-name="libjosg" install="True" />
+	</goals>
+	<goals platform="win">
+		<create-solution project-path="./osgVP" project-gen-path="./osgVP/CMake-VS7" generator="vs7" install="./osgVP-install" />
+		<compile-solution project-path="./osgVP" project-name="libjosg" install="True" />
+	</goals>
+	<goals platform="linux">
+		<create from-xml="/tmp/osgVP/build-scripts/depman.xml" path="/tmp/binaries/linux32" />
+	</goals>
+	<goals platform="mac">
+		<create from-xml="/tmp/osgVP/build-scripts/depman.xml" path="/tmp/binaries/mac" />
+	</goals>
+	<goals platform="win">
+		<create from-xml="./osgVP/build-scripts/depman.xml" path="./osgVP/binaries/win32" />
+	</goals>
+</buildman>

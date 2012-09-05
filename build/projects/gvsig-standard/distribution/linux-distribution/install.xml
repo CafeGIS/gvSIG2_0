@@ -1,0 +1,401 @@
+<installation version="1.0">
+	<info>
+		<appname>gvSIG_2.0</appname>
+		<appversion>2.0</appversion>
+		<authors>
+			<author name="Generalitat Valenciana. Conselleria d'Infraestructures i Transport" email="" />
+			<author name="Iver Tecnologías de la Información S.A." email="" />
+		</authors>
+		<url>http://www.gvsig.gva.es/</url>
+		<javaversion>1.5</javaversion>
+	</info>
+
+	<guiprefs height="600" resizable="yes" width="800">
+		<laf name="liquid">
+			<os family="unix" />
+		</laf>
+	</guiprefs>
+
+	<locale>
+		<!-- only keep the languages which are also available in gvSIG -->
+		<langpack iso3="spa"/>
+		<langpack iso3="val"/>
+		<langpack iso3="eng"/>
+	<!--	<langpack iso3="cat"/>
+		<langpack iso3="chn"/> -->
+		<langpack iso3="cze"/>
+	<!--	<langpack iso3="dan"/> -->
+		<langpack iso3="deu"/>
+	<!--	<langpack iso3="fin"/>-->
+		<langpack iso3="fra"/>
+		<langpack iso3="glg"/>
+	<!--	<langpack iso3="hun"/> -->
+		<langpack iso3="ita"/>
+	<!--	<langpack iso3="jpn"/>
+		<langpack iso3="mys"/>
+		<langpack iso3="ned"/>
+		<langpack iso3="nor"/>
+		<langpack iso3="pol"/> -->
+		<langpack iso3="por"/>
+	<!--	<langpack iso3="rom"/>
+		<langpack iso3="rus"/>
+		<langpack iso3="scg"/>
+		<langpack iso3="svk"/>
+		<langpack iso3="swe"/>
+		<langpack iso3="ukr"/> -->
+	</locale>
+
+	<resources>
+		<res src="resources/gpl.txt" id="LicencePanel.licence"/>
+		<res src="resources/LEEME.html" id="HTMLInfoPanel.info"/>
+		<res src="resources/images/Logo_gvsig_gva.jpg" id="Installer.image"/>
+		<res src="resources/unix_shortcut_spec.xml" id="Unix_shortcutSpec.xml"/>
+		<res src="resources/andami-config.xml" id="andami-config.xml"/>
+	</resources>
+
+	<panels>
+		<panel classname="HTMLInfoPanel"/>
+		<panel classname="LicencePanel"/>
+		<panel classname="PacksPanel"/>
+		<panel classname="TargetPanel"/>
+		<panel classname="InstallPanel"/>
+		<panel classname="ShortcutPanel"/>
+		<panel classname="SimpleFinishPanel"/>
+	</panels>
+
+  <packs>
+  	<!-- Some Variables inherits from ant:
+  	 	@{workspace_loc} ==> path of workspace
+  	 	@{build_loc} ==> path to build directory (normaly @{workspace_loc}/build)
+  		@{deploy_loc} ==> path of deploy (normaly @{build_loc}/product)
+  		@{extensions_loc} ==> path of extensions deploy (normaly @{deploy_loc}/gvSIG/extensiones)
+  		@{binary_loc} ==> path of binearies directory (normaly @{workspace_loc}/binaries)
+  	 -->
+    <pack name="gvSIG program" required="yes" os="unix">
+      <description>gvSIG program files.</description>
+
+      <fileset targetdir="$INSTALL_PATH/bin" dir="@{deploy_loc}" override="true" >
+      	<include name="*.txt"/>
+      	<include name="*.properties"/>
+      	<include name="lib/*.jar"/>
+      	<include name="theme/**"/>
+	  </fileset>
+
+	  <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.cit.gvsig" override="true"/>
+	  <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.core" override="true"/>
+	  <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.iconThemeBase" override="true"/>
+	  <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.help" override="true"/>
+
+      <file targetdir="$INSTALL_PATH/bin" src="resources/images/help.png" override="true"/>
+      <file targetdir="$INSTALL_PATH/bin" src="resources/images/ico-gvSIG.png" override="true"/>
+      <file targetdir="$INSTALL_PATH/bin" src="resources/images/ico-gvSIG16x16.png" override="true"/>
+      <file targetdir="$INSTALL_PATH/bin" src="resources/images/uninstall16x16.png" override="true"/>
+      <file targetdir="$INSTALL_PATH/bin" src="resources/images/uninstall.png" override="true"/>
+      <file targetdir="$INSTALL_PATH/bin" src="resources/images/help16x16.png" override="true"/>
+
+
+      <file targetdir="$INSTALL_PATH/bin" src="resources/gvSIG.sh" override="true"/>
+      <parsable  targetfile="$INSTALL_PATH/bin/gvSIG.sh"/>
+      <executable
+            targetfile="$INSTALL_PATH/bin/gvSIG.sh"
+            stage="never"
+            keep="true"/>
+
+
+      <file targetdir="$INSTALL_PATH/bin" src="resources/andami-config.xml" override="true"/>
+      <parsable targetfile="$INSTALL_PATH/bin/andami-config.xml"/>
+
+
+      <file targetdir="$INSTALL_PATH/Uninstaller" src="resources/uninstall.sh" override="true"/>
+      <parsable targetfile="$INSTALL_PATH/Uninstaller/uninstall.sh"/>
+      <executable
+            targetfile="$INSTALL_PATH/Uninstaller/uninstall.sh"
+            stage="never"
+            keep="true"/>
+            
+      <file targetdir="$USER_HOME/gvSIG" src="resources/andami-config.xml" override="false"/>
+      <parsable targetfile="$INSTALL_PATH/bin/andami-config.xml"/>
+     
+    </pack>
+
+    <pack name="Scripting" required="no" os="unix">
+      <description>Scripting.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.scripting" override="true"/>
+    </pack>
+
+    <pack name="Dwg" required="no" os="unix">
+      <description>Dwg files driver.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.dwg" override="true"/>
+    </pack>
+
+	<!--
+    <pack name="Catalog Client" required="no" os="unix">
+      <description>Install Catalog Client.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/es.gva.cit.gvsig.catalogClient" override="true"/>
+    </pack>
+    -->
+
+    <pack name="WCS Client" required="no" os="unix" depends="Raster Tools">
+      <description>Install WCS Client.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.cit.gvsig.wcs" override="true"/>
+    </pack>
+
+    <pack name="WMS Client" required="no" os="unix" depends="Raster Tools">
+      <description>Install WMS Client.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.cit.gvsig.wms" override="true"/>
+    </pack>
+
+	<pack name="GeoDB" required="no" os="unix">
+		<description>Install Data Base Client.</description>
+		<file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.geodb" override="true"/>
+	</pack>
+
+	<!-- 
+    <pack name="JDBC Oracle Spatial Client" required="no" os="unix">
+        <description>Install JDBC Client For Oracle Spatial Data Base.</description>
+        <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.cit.gvsig.oracle_spatial" override="true"/>
+    </pack>
+	-->
+    <pack name="Data Locator" required="no" os="unix">
+      <description>Install Data Locator Plugin.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.gvsig.datalocator" override="true"/>
+    </pack>
+    
+
+    <pack name="GPE Client" required="no" os="unix">
+      <description>Install GPE driver Client.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.gpe" override="true"/>
+    </pack>
+
+    <pack name="WFS Client" required="no" os="unix" depends="GPE Client">
+      <description>Install WFS Client.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.cit.gvsig.wfs2" override="true"/>
+    </pack>
+
+	<!-- 
+    <pack name="ArcIms Client" required="no" os="unix">
+    	<description>ArcIms Client</description>
+    	<file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones" src="@{extensions_loc}/es.prodevelop.cit.gvsig.arcims" override="true"/>
+    </pack>
+
+    <pack name="Geoprocessing" required="no" os="unix">
+      <description>Install Geoprocessing.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.cit.gvsig.geoprocess" override="true"/>
+    </pack>
+
+    <pack name="Additional Geoprocessing" required="no" depends="Geoprocessing" os="unix">
+      <description>Install Additional Geoprocessing.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.cit.gvsig.geoprocessextensions" override="true"/>
+    </pack>
+
+
+	-->
+
+    <pack name="Georeferencing" required="no" os="unix" depends="Raster Tools">
+      <description>Install Georeferening.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.georeferencing" override="true"/>
+    </pack>
+    
+	<pack name="Editing" required="no" os="unix" depends="GeoDB">
+		<description>Install vectorial Editing.</description>
+		<file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.editing" override="true"/>
+	</pack>
+
+
+    <pack name="Raster Tools" required="no" os="unix">
+      <description>Install Raster support and tools.</description>
+      
+      <fileset targetdir="$INSTALL_PATH/libs" dir="@{binaries_loc}/linux/raster/mrsid">
+	  		<include name="libjmrsid.so.0.0.6"/>
+	  </fileset>
+	  <singlefile target="$INSTALL_PATH/libs/install-mrsid.sh" 
+	  		src="@{binaries_loc}/linux/raster/mrsid/install.sh" override="true"/>
+
+	  <fileset targetdir="$INSTALL_PATH/libs" dir="@{binaries_loc}/linux/raster/ecw">
+	  		<include name="*.so*"/>
+	  </fileset>
+	  <singlefile target="$INSTALL_PATH/libs/install-ecw.sh" 
+	  		src="@{binaries_loc}/linux/raster/ecw/install.sh" override="true"/>
+	  
+	  
+
+	  <fileset targetdir="$INSTALL_PATH/libs" dir="@{binaries_loc}/linux/raster/gdal">
+	  		<include name="*.so*"/>
+	  		<exclude name="libjgdal.so.0.6*"/>
+	  </fileset>
+	  <fileset targetdir="$INSTALL_PATH/libs/gdal_data"
+      	dir="@{binaries_loc}/linux/raster/gdal/data"
+      	includes="*.csv,*.wkt"
+      />	  
+	  <singlefile target="$INSTALL_PATH/libs/install-gdal.sh" 
+	  		src="@{binaries_loc}/linux/raster/gdal/install.sh" override="true"/>      
+      
+      
+      
+	  <fileset targetdir="$INSTALL_PATH/libs" dir="@{binaries_loc}/linux/raster/grass">
+	  		<include name="*.so*"/>
+	  </fileset>
+	  <singlefile target="$INSTALL_PATH/libs/install-grass.sh" 
+	  		src="@{binaries_loc}/linux/raster/grass/install.sh" override="true"/>      
+
+	  <fileset targetdir="$INSTALL_PATH/libs" dir="@{binaries_loc}/linux/raster/potrace">
+	  		<include name="*.so*"/>
+	  </fileset>
+	  <singlefile target="$INSTALL_PATH/libs/install-potrace.sh" 
+	  		src="@{binaries_loc}/linux/raster/potrace/install.sh" override="true"/>      
+      
+      
+      <!-- 
+	  <fileset targetdir="$INSTALL_PATH/libs" dir="@{binaries_loc}/linux/system">
+	  		<include name="*.so*"/>
+	  </fileset>
+ 	  -->
+ 	  
+      <parsable  targetfile="$INSTALL_PATH/libs/install-mrsid.sh"/>
+      <parsable  targetfile="$INSTALL_PATH/libs/install-ecw.sh"/>
+      <parsable  targetfile="$INSTALL_PATH/libs/install-gdal.sh"/>
+      <parsable  targetfile="$INSTALL_PATH/libs/install-grass.sh"/>
+      <parsable  targetfile="$INSTALL_PATH/libs/install-potrace.sh"/>
+
+      <executable
+            targetfile="$INSTALL_PATH/libs/install-mrsid.sh"
+            stage="postinstall"
+            keep="false"
+            failure="ask">
+            <args>
+            	<arg value="$INSTALL_PATH/libs"/>
+            </args>
+      </executable>
+      <executable
+            targetfile="$INSTALL_PATH/libs/install-ecw.sh"
+            stage="postinstall"
+            keep="false"
+            failure="ask">
+            <args>
+            	<arg value="$INSTALL_PATH/libs"/>
+            </args>
+      </executable>
+      <executable
+            targetfile="$INSTALL_PATH/libs/install-gdal.sh"
+            stage="postinstall"
+            keep="false"
+            failure="ask">
+            <args>
+            	<arg value="$INSTALL_PATH/libs"/>
+            </args>
+      </executable>
+      
+      <executable
+            targetfile="$INSTALL_PATH/libs/install-grass.sh"
+            stage="postinstall"
+            keep="false"
+            failure="ask">
+            <args>
+            	<arg value="$INSTALL_PATH/libs"/>
+            </args>
+      </executable>
+      <executable
+            targetfile="$INSTALL_PATH/libs/install-potrace.sh"
+            stage="postinstall"
+            keep="false"
+            failure="ask">
+            <args>
+            	<arg value="$INSTALL_PATH/libs"/>
+            </args>
+      </executable>
+      
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.rastertools" override="true"/>
+    </pack>
+
+	
+    <pack name="Center View To Point" required="no" os="unix">
+      <description>Install Center View To Point Tool.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.gvsig.centerviewpoint" override="true"/>
+    </pack>
+
+    <pack name="Expression Field" required="no" depends="Scripting" os="unix">
+      <description>Install Expression Field Tool.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.gvsig.expressionfield" override="true"/>
+    </pack>
+
+	<!-- 
+    <pack name="Annotations" required="no" depends="Edition" os="unix">
+      <description>Install Annotation Layer Tool.</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.cit.gvsig.annotation" override="true"/>
+    </pack>
+
+    <pack name="ArcSDE Client" required="no" depends="Edition" os="unix">
+      <description>Install ArcSDE Client for gvSIG</description>
+      
+      <fileset targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/org.gvsig.sde" dir="@{extensions_loc}/org.gvsig.sde">
+      	<exclude name="**/jpe91_sdk.jar"/>
+      	<exclude name="**/jsde91_sdk.jar"/>
+	  </fileset>
+      
+    </pack>
+	-->
+    <pack name="Remote Sensing" required="no" depends="Raster Tools" os="unix">
+      <description>Install Remote Sensing tools for gvSIG</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.remotesensing" override="true"/>
+    </pack>
+    
+	
+	<pack name="Sextante" required="no" depends="Raster Tools">
+      <description>Install Sextante gvSIG bindings</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/es.unex.sextante" override="true"/>
+    </pack>
+    
+    <pack name="I18nExtension" required="yes">
+		<description>Multilocale translations management extension.</description>
+		<file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.i18n" override="true"/>
+	</pack>
+    
+    <!-- 
+
+    <pack name="Graph" required="no" os="unix">
+      <description>Install Graph tools for gvSIG</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/com.iver.cit.gvsig.graph" override="true"/>
+    </pack>
+
+    <pack name="Extended Symbology" required="no" os="unix">
+      <description>Install Extended symbology</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.extended-symbology" override="true"/>
+    </pack>
+
+    <pack name="Topology" required="no" os="unix">
+      <description>Install Extended symbology</description>
+      <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.topology" override="true"/>
+    </pack>
+
+	-->
+	<pack name="JCRS" required="yes" os="unix">
+		<description>Install advanced projections plugin.</description>
+        <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="@{extensions_loc}/org.gvsig.crs" override="true"/>
+        <!-- Esto ya se lo lleva 
+        <file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/com.iver.cit.gvsig/lib" src="@{extensions_loc}/com.iver.cit.gvsig/lib/jcrs.jar" override="true"/>
+		<file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/com.iver.cit.gvsig/lib" src="@{extensions_loc}/com.iver.cit.gvsig/lib/jGridShiftApi.jar" override="true"/>
+		 -->
+		<file  targetdir="$INSTALL_PATH/libs" src="@{binaries_loc}/linux/crs/libproj.so.0.5.0" override="true"/>
+		<file  targetdir="$INSTALL_PATH/libs" src="@{binaries_loc}/linux/crs/libcrsjniproj.so.0.1.1" override="true"/>
+	    <fileset targetdir="$INSTALL_PATH/libs" dir="@{binaries_loc}/linux/crs">
+	  		<include name="*.so*"/>	  		
+	    </fileset>
+	  	<singlefile target="$INSTALL_PATH/libs/install-crs.sh" 
+	  		src="@{binaries_loc}/linux/crs/install.sh" override="true"/>      
+	    
+
+		<parsable  targetfile="$INSTALL_PATH/libs/install-crs.sh"/>
+        <executable
+            targetfile="$INSTALL_PATH/libs/install-crs.sh"
+            stage="postinstall"
+            keep="false"
+            failure="ask">
+            <args>
+                  <arg value="$INSTALL_PATH/libs"/>
+            </args>
+        </executable>	
+	</pack>
+
+  </packs>
+
+</installation>

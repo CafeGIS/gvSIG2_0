@@ -1,0 +1,132 @@
+<project name="ant_libs">
+	<dirname file="${ant.file.ant_libs}" property="ant.file.ant_libs.dir"/>
+
+	<!--
+		====================================
+		Compilation base properties
+		====================================
+	-->
+	<property name="JUNIT_HOME" location="${ant.file.ant_libs.dir}" />
+	<property name="JavaSourceVersion" value="1.5"/>
+	<property name="JavaTargetVersion" value="1.5"/>
+	<property name="debug" value="on"/>
+	<property name="debuglevel" value="lines, vars, source"/>
+	<property name="encoding" value="ISO_8859_1"/>
+	<property name="workspaceDir" location="${ant.file.ant_libs.dir}/../.."/>
+	<property name="workspace_loc" location="${workspaceDir}"/>
+	<property name="binaries_loc" location="${workspace_loc}/binaries"/>
+	<property name="dependencies_loc" location="${binaries_loc}/dependencies"/>
+	<property name="lib_loc" location="${binaries_loc}/lib"/>
+	<property name="unixOS" value="Linux,SunOS,Solaris,Mac OS X" />
+
+
+	<!-- Macros to call the usual maven 2 goals from ant -->
+	<macrodef name="mvn">
+	   <attribute name="arg" />
+	   <sequential>
+			<exec executable="${workspaceDir}/build/maven/bin/mvn" failonerror="true" os="${unixOS}">
+				<arg line="@{arg}"/>
+			</exec>
+			<exec executable="cmd" os="windows">
+		    	<arg value="/c"/>
+		    	<arg value="${workspaceDir}/build/maven/bin/mvn.bat"/>
+		    	<arg value="@{arg}"/>
+		    </exec>
+	   </sequential>
+	</macrodef>	
+	
+	<macrodef name="mvn-clean">
+	   <sequential>
+	   		<mvn arg="clean"/>
+	   </sequential>
+	</macrodef>
+	
+	<macrodef name="mvn-compile">
+	   <sequential>
+	   		<mvn arg="compile"/>
+	   </sequential>
+	</macrodef>
+
+	<macrodef name="mvn-install">
+	   <attribute name="tofile" />
+	   <attribute name="mvnJarName"/>
+	   <attribute name="disable-tests" default="false" />
+	   <sequential>
+	   		<mvn arg="install"/>
+			<copy tofile="@{tofile}" file="target/@{mvnJarName}"/>
+	   </sequential>
+	</macrodef>
+
+	<macrodef name="mvn-install-no-tests">
+	   <attribute name="tofile" />
+	   <attribute name="mvnJarName"/>
+	   <attribute name="disable-tests" default="false" />
+	   <sequential>
+	   		<mvn arg="-Dmaven.test.skip=true install"/>
+			<copy tofile="@{tofile}" file="target/@{mvnJarName}"/>
+	   </sequential>
+	</macrodef>
+	
+	<macrodef name="mvn-javadoc">
+	   <sequential>
+	   		<mvn arg="javadoc:javadoc"/>
+	   </sequential>
+	</macrodef>
+
+
+	<!-- Macros to call the usual cmake goals from ant -->
+	<property name="target" value="target/target_cmake"/>
+	<property name="cmakeExe" value="cmake"/>
+	<property name="buildman.executable" location="${workspaceDir}/build/buildman/bin/bmn.py" />
+
+	<macrodef name="cmake">
+		<attribute name="install-dependencies" default="OFF"/>
+		<attribute name="cmake-build-type" default="Release"/>
+		<attribute name="args" default=""/>
+	   <sequential>
+			<mkdir dir="${target}" />
+			<delete file="${target}/CMakeCache.txt"/>
+	        <exec dir="${target}" executable="${cmakeExe}" failonerror="true" os="${unixOS}">
+    	        <arg value="-GUnix Makefiles" />
+        	    <arg value="-DCMAKE_BUILD_TYPE=@{cmake-build-type}" />
+            	<arg value="-DINSTALL_DEPENDENCIES=@{install-dependencies}"/>
+            	<arg line="@{args}"/>
+	            <arg value="../../" />
+    	    </exec>
+	        <exec dir="${target}" executable="${cmakeExe}" failonerror="true" osfamily="windows">
+    	        <arg value="-GNMake Makefiles" />
+        	    <arg value="-DCMAKE_BUILD_TYPE=@{cmake-build-type}" />
+            	<arg value="-DINSTALL_DEPENDENCIES=@{install-dependencies}"/>
+            	<arg line="@{args}"/>
+	            <arg value="..\\..\\" />
+    	    </exec>
+		</sequential>
+	</macrodef>	
+
+	<macrodef name="make-install">
+		<attribute name="numProc" default="2"/>
+	   <sequential>
+			<exec dir="${target}" executable="make" failonerror="true" os="${unixOS}">
+				<arg value="-j@{numProc}"/>
+				<arg value="install"/>
+			</exec>
+			<exec dir="${target}" executable="nmake" failonerror="true" osfamily="windows">
+				<arg value="install"/>
+			</exec>
+		</sequential>
+	</macrodef>
+	<macrodef name="buildman">
+		<attribute name="goal"/>
+		<attribute name="args" default=""/>
+	   	<sequential>
+			<exec executable="python" failonerror="true" >
+				<arg value="${buildman.executable}" />
+				<arg value="@{goal}" />
+				<arg line="@{args}" />
+			</exec>
+		</sequential>
+	</macrodef>
+</project>
+
+
+

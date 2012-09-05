@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<depman>
+	<package>
+		<group>es.upv.ai2</group><!-- requerido -->
+		<artifact>buildman</artifact><!-- requerido -->
+		<version>1.0-SNAPSHOT</version><!-- requerido -->
+		<platform>all</platform><!-- no requerido pero se puede sobreescribir -->
+		<compiler>all</compiler><!-- idem -->
+		<arch>all</arch><!-- idem -->
+		<libraryType>none</libraryType><!-- requerido -->
+
+		<!-- upload no requerido si aparece entonces se debe de subir -->
+		<!--<upload/> !--><!-- Esta opción usaría los valores por defecto -->
+		<!--<upload> --><!-- Esta opción usaría los valores asignados abajo, no son requeridos y se puede sobreescribir solo algunos de ellos -->
+		<!--	<sshserver>murray.ai2.upv.es</sshserver> -->
+		<!-- 	<destdir>/projects/AI2/www-aliases/depman/</destdir> -->
+		<!-- 	<username>depman</username> -->
+		<!--</upload> -->
+	</package>
+	<dependencies platform="linux">
+		<!-- others platform same configuration -->
+		<dependency>
+			<group>org.openscenegraph</group>
+			<artifact>openscenegraph</artifact>
+			<version>2.2.0-SNAPSHOT</version>
+			<compiler>gcc3</compiler>
+			<type>dynamic</type>
+		</dependency>
+		<dependency>
+			<group>jogl</group>
+			<artifact>jogl</artifact>
+			<version>1.1.0</version>
+			<type>dynamic</type>
+		</dependency>
+		<dependency>
+			<group>org.gdal</group>
+			<artifact>gdal-gvsig</artifact>
+			<version>1.10</version>
+			<type>dynamic</type>
+		</dependency>
+		<dependency url="http://larry.ai2.upv.es:8080/~depman/" >
+			<group>es.upv.ai2</group>
+			<artifact>libjosg</artifact>
+			<version>2.0-SNAPSHOT</version>
+			<compiler>gcc3</compiler>
+			<type>dynamic</type>
+		</dependency>
+	</dependencies>
+</depman>
+

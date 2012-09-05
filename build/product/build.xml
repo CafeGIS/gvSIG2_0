@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     28/04/2009 14:06:47                                                        
+
+     gvSIG product    
+     Launch gvSIG
+                   
+     jmvivo                                                                
+     ====================================================================== -->
+<project name="gvSIG product" default="default">
+    <description>
+            Launch gvSIG
+    </description>
+	<dirname file="${ant.file}" property="product_loc"/>
+	<dirname file="${product_loc}" property="build_loc"/>
+	<dirname file="${build_loc}" property="workspace_loc"/>
+	<property environment="environment"></property>
+	
+	<!--  OS dectection-->
+	<condition property="isLinux">
+		<os family="unix"/>
+	</condition>
+
+	<condition property="isWindows">
+		<or>
+			<os family="windows"/>
+			<os family="win9x"/>
+			<os name="Windows Vista"/>
+		</or>
+	</condition>
+
+	<condition property="isMac">
+		<os family="mac"/>
+	</condition>
+
+	<condition property="is_OS_dectected">
+		<or>
+			<istrue value="${isLinux}"/>
+			<istrue value="${isWindows}"/>
+			<istrue value="${isMac}"/>
+		</or>
+
+	</condition>
+	<!--  OS dectection end -->
+	
+	
+	
+	
+	<!-- library path definition -->
+	<target name="init-library-properties" depends="init-library-win,init-library-linux,init-library-mac">
+	</target>
+
+	<target name="init-library-win" if="isWindows">
+		<property name="library-env-name" value="PATH"/>
+		<property name="library-env-toadd" value="${environment.USERPROFILE}\.depman\bin;${workspace_loc}/binaries/w32"/>
+		<property name="library-env-value" 	value="${environment.PATH};${library-env-toadd}"/>
+	</target>
+		
+	<target name="init-library-linux" if="isLinux">
+		<property name="library-env-name" value="LD_LIBRARY_PATH"/>
+		<property name="library-env-toadd" value="${environment.HOME}/.depman/lib:${workspace_loc}/binaries/linux"/>
+		<property name="library-env-value" 
+			value="${environment.LD_LIBRARY_PATH}:${library-env-toadd}"/>
+	</target>
+	
+	<target name="init-library-mac" if="isMac">
+		<property name="library-env-name" value="DYLD_LIBRARY_PATH"/>
+		<property name="library-env-toadd" value="${environment.HOME}/.depman/lib:${workspace_loc}/binaries/mac"/>
+		<property name="library-env-value" 	value="${environment.DYLD_LIBRARY_PATH}:${library-env-toadd}"/>
+	</target>
+	
+	<!-- library path definition end -->
+	
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+    <target name="default" description="Launch gvSIG" depends="init-library-properties">
+    	<!--
+    	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"$HOME/.depman/lib:../../binaries/linux/"
+		export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:"/Developer/DepMan/lib:../../binaries/mac/"
+    	export PROJ_LIB="$INSTALL_PATH/bin/gvSIG/extensiones/org.gvsig.crs/data" 
+    	-->
+    	<!--$JAVA_HOME/bin/java 
+    		-Djava.library.path=/usr/lib:"$INSTALL_PATH/libs" 
+    		-cp $LIBRARIES -Xmx500M com.iver.andami.Launcher gvSIG gvSIG/extensiones "$@"
+    		-->
+    	
+    	
+        <java
+            dir="${product_loc}"
+        	classname="com.iver.andami.Launcher"
+            fork="true"
+            failonerror="true"
+            maxmemory="512m"
+            >
+          <env key="${library-env-name}" value="${library-env-value}"/>
+          <env key="DYLD_FRAMEWORK_PATH" value="${environment.HOME}/.depman/Frameworks"/>
+          <env key="PROJ_LIB" value="${product_loc}/gvSIG/extensiones/org.gvsig.crs/data"/>
+          <env key="GDAL_DATA" value="${workspace_loc}/binaries/linux/raster/gdal/data"/> <!--valid for al os -->
+          <jvmarg value="-Djava.library.path=${library-env-toadd}"/>
+
+          <arg value="gvSIG"/>
+          <arg value="gvSIG/extensiones"/>
+        	
+          <classpath>
+	          <fileset dir="${product_loc}/lib">
+	            <include name="*.jar"/>
+	          	<include name="*.zip"/>
+	          </fileset>
+          </classpath>
+        </java>
+
+    </target>
+
+
+</project>

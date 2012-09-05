@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                      
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>gvsig-extension-base-pom</artifactId>
+	<packaging>pom</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>extension-base-pom</name>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-basepoms</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<description> Base POM for all GvSIG extension projects. This pom knows
+		how to build and made an extension for GvSIG. The property
+		"gvsig-path" must be set up correctly.</description>
+	<properties>
+		<config>config</config>
+		<plugin-name> ${project.groupId}.${project.artifactId}</plugin-name>
+		<temporaly-build> ${project.build.directory}/${plugin-name}
+		</temporaly-build>
+		<extension-lib-dir> ${extension-dir}/${plugin-name}/lib
+		</extension-lib-dir>
+		<build-dir>${basedir}/..</build-dir>
+		<extension-ant-base-dir> ${build-dir}/extension-pom
+		</extension-ant-base-dir>
+		<extension-distribution-file>dist.xml</extension-distribution-file>
+		<library-dir>lib</library-dir>
+	</properties>
+	
+	<profiles>
+	
+		<profile>
+			<id>install-extension</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>install-extension</name>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-assembly-plugin
+						</artifactId>
+						<configuration>
+							<descriptors>
+								<descriptor> ${extension-distribution-file}</descriptor>
+							</descriptors>
+							<outputDirectory> ${extension-distribution-output-directory}
+							</outputDirectory>
+							<finalName> ${distribution-final-name}</finalName>
+							<appendAssemblyId>true</appendAssemblyId>
+							<ignoreDirFormatExtensions> true</ignoreDirFormatExtensions>
+						</configuration>
+						<executions>
+							<execution>
+								<id>make-assembly</id>
+								<!--
+									this is used for inheritance merges
+								-->
+								<phase>install</phase>
+								<!--
+									append to the packaging phase.
+								-->
+								<goals>
+									<goal>attached</goal><!-- goals == mojos -->
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>copy-to-andami</id>
+								<phase>install</phase>
+								<configuration>
+									<tasks>
+										<property name="project.build.directory" value="${project.build.directory}" />
+										<property name="project.artifactId" value="${project.artifactId}" />
+										<property name="project.version" value="${project.version}" />
+										<property name="project.packaging" value="${project.packaging}" />
+										<property name="temporaly-build" value="${temporaly-build}" />
+										<property name="plugin-name" value="${plugin-name}" />
+										<property name="config" value="${config}" />
+										<property name="extension-dir" value="${extension-dir}" />
+										<property name="library-dir" value="${library-dir}" />
+										<property name="distribution-final-name" value="${distribution-final-name}" />
+										<ant antfile="${extension-ant-base-dir}/build.xml"
+											inheritRefs="true" />
+									</tasks>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-clean-plugin</artifactId>
+						<configuration>
+							<filesets>
+								<fileset>
+									<directory>${gvsig-path}/${extension-distribution}</directory>
+									<includes>
+										<include>**</include>
+									</includes>
+								</fileset>
+							</filesets>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>generate-installers</id>
+			<activation>
+				<property>
+					<name>generate-install</name>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<configuration>
+							<descriptors>
+								<descriptor>
+									${distribution-win32-descriptor}
+								</descriptor>
+								<descriptor>
+									${distribution-linux32-descriptor}
+								</descriptor>
+								<!-- descriptor>
+									${distribution-mac-descriptor
+									</descriptor-->
+								<!--descriptor>
+									/distribution/source-distribution.xml
+									</descriptor-->
+							</descriptors>
+							<outputDirectory>
+								${distribution-output-directory}
+							</outputDirectory>
+							<finalName>
+								${distribution-final-name}
+							</finalName>
+							<appendAssemblyId>true</appendAssemblyId>
+							<ignoreDirFormatExtensions>
+								true
+							</ignoreDirFormatExtensions>
+						</configuration>
+						<executions>
+							<execution>
+								<id>make-assembly</id><!-- this is used for inheritance merges -->
+								<phase>package</phase><!-- append to the packaging phase. -->
+								<goals>
+									<goal>attached</goal><!-- goals == mojos -->
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

@@ -1,0 +1,123 @@
+PARA KDE: dejar un fichero '.desktop' en el directorio $HOME/.kde/share/mimelnk/application
+como este:
+
+[Desktop Entry]
+Comment=
+Hidden=false
+Icon=/x/apps/gvSIG_0.1_856/bin/ico-gvSIG.png
+MimeType=application/gvSIG
+Patterns=*.gvp;*.GVP
+Type=MimeType
+
+
+y apadir a fichero $HOME/.kde/share/config/profilerc algo asi:
+
+[application/gvSIG - 1]
+AllowAsDefault=true
+Application=kde-gvSIG.sh-3.desktop
+GenericServiceType=Application
+Preference=1
+ServiceType=application/gvSIG
+
+y el el fichero de menu ($HOME/.kde/share/applnk/.../gvSIG*.desktop)
+la entrada 'MimeType' debe estar 'IGUAL' que en el fichero que
+hemos dejado en $HOME/.kde/share/mimelnk/application
+
+
+
+Para GNOME:
+
+POR Estudiar
+
+Para FIREFOX:
+
+POR Estudiar
+
+
+
+Los archivos usados para la asociacion estan en ./resources/mime
+y los scripts que los manejan son ./resources/postinstall.sh y
+./resources/unistall.sh
+
+
+
+
+
+
+
+
+
+**************************************************************
+URL's y recortes:
+
+
+
+
+http://www.ces.clemson.edu/linux/fc4_desktop.shtml
+*********************************************************************
+File Association. At the top of the context menu for a file in Nautilus is found the 'Open with "Preferred Application" menu item. Next, is found the 'Open with' menu item, which lists all other applications which can open the file. These menu items are controlled respectively by the following files:
+
+  /usr/share/applications/defaults.list
+  /usr/share/applications/mimeinfo.cache
+
+Each line in defaults.list contains a desktop file followed by a mimetype. For example, the line
+
+  application/postscript=evince.desktop
+
+shows that Evince is the preferred application for opening postscript files. Each line in mimeinfo.cache contains a desktop file followed by a list of mimetypes. For example, the line
+
+  image/gif=gthumb.desktop;gimp-2.2.desktop;
+      gnome-eog.desktop;
+
+shows the list of applications available for opening gif files. Gnome constructs the mimeinfo.cache file by processing the mimetypes recorded in the desktop files. Gnome comes with a pre-built system-wide defaults.list. At the user level there are parallel files
+
+  ~/.local/applications/defaults.list
+  ~/.local/applications/mimeinfo.cache
+
+Users can add lines to these files as follows.
+
+  In a Nautilus window, right click on a file
+  Select Properties
+  Select the 'Open With' tab
+  To add to the current 'Open With' list
+  Hit Add and select an application
+  Hit Add again
+  Select the preferred application radio button
+   
+************************
+
+http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html
+************************
+
+<MIME> = /usr/local/share/mime
+<MIME> = /usr/share/mime
+
+
+Each application that wishes to contribute to the MIME database will install a single XML file, named after the application, into one of the three <MIME>/packages/ directories (depending on where the user requested the application be installed). After installing, uninstalling or modifying this file, the application MUST run the update-mime-database command, which is provided by the freedesktop.org shared database[SharedMIME].
+
+update-mime-database is passed the mime directory containing the packages subdirectory which was modified as its only argument. It scans all the XML files in the packages subdirectory, combines the information in them, and creates a number of output files. 
+
+
+
+Here is an example source file, named diff.xml:
+
+<?xml version="1.0"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+  <mime-type type="text/x-diff">
+    <comment>Differences between files</comment>
+    <comment xml:lang="af">verskille tussen lêers</comment>
+    ...
+    <magic priority="50">
+      <match type="string" offset="0" value="diff\t"/>
+      <match type="string" offset="0" value="***\t"/>
+      <match type="string" offset="0" value="Common subdirectories: "/>
+    </magic>
+    <glob pattern="*.diff"/>
+    <glob pattern="*.patch"/>
+  </mime-type>
+</mime-info>
+
+********************
+
+
+

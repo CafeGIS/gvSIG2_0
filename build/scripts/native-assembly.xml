@@ -1,0 +1,16 @@
+<assembly>
+	<id>${native-classifier}</id>
+	<formats>
+		<format>tar.gz</format>
+	</formats>
+	<baseDirectory></baseDirectory>
+	<fileSets>
+		<fileSet>
+			<directory>${project.build.directory}/target_cmake_product</directory>
+			<includes>
+				<include>**/**</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>

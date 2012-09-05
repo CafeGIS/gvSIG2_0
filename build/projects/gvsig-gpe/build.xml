@@ -1,0 +1,3 @@
+<project name="gvSIG GPE" default="mvn-install" basedir=".">
+	<import file="../../build.xml" />
+</project>

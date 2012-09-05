@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<depman>
+	<package>
+		<group>es.upv.ai2</group><!-- requerido -->
+		<artifact>buildman</artifact><!-- requerido -->
+		<version>1.0-SNAPSHOT</version><!-- requerido -->
+		<libraryType>dynamic</libraryType><!-- requerido -->
+				<!-- upload no requerido si aparece entonces se configura el servidor donde subir el paquete -->
+		<upload> <!-- Esta opción usaría los valores asignados abajo, no son requeridos y se puede sobreescribir solo algunos de ellos -->
+			<sshserver>larry.ai2.upv.es</sshserver>
+		 	<destdir>public_html/</destdir>
+		 	<username>depman</username>
+		</upload>
+	</package>
+	<package platform="linux,mac">
+		<platform>all</platform><!-- no requerido pero se puede sobreescribir -->
+		<compiler>gcc4</compiler><!-- idem -->
+		<arch>all</arch><!-- idem -->
+	</package>
+	<package platform="win">
+		<compiler>vs7</compiler><!-- idem -->
+		<arch>i386</arch><!-- idem -->
+	</package>
+	<dependencies platform="win">
+		<dependency>
+			<group>org.openscenegraph</group>
+			<artifact>openscenegraph</artifact>
+			<version>2.2.0-SNAPSHOT</version>
+			<type>dynamic</type>
+		</dependency>
+		<dependency>
+			<group>org.gdal</group>
+			<artifact>gdal</artifact>
+			<version>1.2.6</version>
+			<type>dynamic</type>
+			<compiler>vs6</compiler>
+		</dependency>
+		<dependency>
+			<group>jogl</group>
+			<artifact>jogl</artifact>
+			<version>1.1.0</version>
+			<type>dynamic</type>
+			<compiler>all</compiler>
+		</dependency>
+
+	</dependencies>
+	<dependencies platform="linux">
+		<!-- others platform same configuration -->
+		<dependency>
+			<group>org.openscenegraph</group>
+			<artifact>openscenegraph</artifact>
+			<version>2.2.0-SNAPSHOT</version>
+			<type>dynamic</type>
+		</dependency>
+		<dependency>
+			<group>jogl</group>
+			<artifact>jogl</artifact>
+			<version>1.1.0</version>
+			<type>dynamic</type>
+		</dependency>
+		<dependency>
+			<group>org.gdal</group>
+			<artifact>gdal-gvsig</artifact>
+			<version>1.10</version>
+			<type>dynamic</type>
+		</dependency>
+		<dependency url="http://larry.ai2.upv.es:8080/~depman/" >
+			<group>es.upv.ai2</group>
+			<artifact>libjosg</artifact>
+			<version>2.0-SNAPSHOT</version>
+			<type>dynamic</type>
+		</dependency>
+	</dependencies>
+	<dependencies platform="mac">
+		<!-- others platform same configuration -->
+		<dependency>
+			<group>org.openscenegraph</group>
+			<artifact>openscenegraph</artifact>
+			<version>2.2.0-SNAPSHOT</version>
+			<type>dynamic</type>
+			<architecture>universal</architecture>
+		</dependency>
+		<dependency>
+			<group>jogl</group>
+			<artifact>jogl</artifact>
+			<version>1.1.0</version>
+			<type>dynamic</type>
+			<compiler>all</compiler>
+		</dependency>
+		<!--dependency>
+			<group>org.gdal</group>
+			<artifact>gdal</artifact>
+			<version>1.4.0</version>
+			<type>framework</type>
+			</dependency-->
+		<dependency url="http://larry.ai2.upv.es:8080/~depman/" >
+			<group>es.upv.ai2</group>
+			<artifact>libjosg</artifact>
+			<version>2.0-SNAPSHOT</version>
+			<type>dynamic</type>
+			<architecture>universal</architecture>
+		</dependency>
+	</dependencies>
+
+</depman>
+

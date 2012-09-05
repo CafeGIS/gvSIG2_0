@@ -1,0 +1,3 @@
+<project name="gvSIG CDC compatible projects" default="mvn-install" basedir=".">
+	<import file="../../build.xml" />
+</project>

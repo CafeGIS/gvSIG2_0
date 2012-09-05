@@ -1,0 +1,38 @@
+<project name="Complete build system" default="make-extension-new" basedir=".">
+	<description>
+	</description>
+	<condition property="isJar">
+		<equals arg1="${project.packaging}" arg2="jar" />
+	</condition>
+
+	<target name="make-extension" if="isJar">
+		<echo message="======================== Copying to extensions dir..." />
+		<mkdir dir="${temporaly-build}" />
+		<mkdir dir="${temporaly-build}/${library-dir}" />
+		<echo message="librari directory ${temporaly-build}/${library-dir}" />
+
+		<echo message="Copying file ${project.build.directory}/${project.artifactId}-${project.version}.${project.packaging} to ${temporaly-build}/lib/" />
+		<copy file="${project.build.directory}/${project.artifactId}-${project.version}.${project.packaging}" tofile="${temporaly-build}/${library-dir}/${plugin-name}.${project.packaging}">
+		</copy>
+
+		<copy todir="${temporaly-build}/images">
+			<fileset dir="${basedir}/images/" includes="**/**" excludes="**/*.db" />
+		</copy>
+		<echo message="Copying config files to ${extension-dir}" />
+		<copy todir="${temporaly-build}">
+			<fileset dir="${basedir}/${config}" includes="**/**" />
+		</copy>
+		<move todir="${extension-dir}/${plugin-name}/">
+			<fileset dir="${temporaly-build}" includes="**/**" />
+		</move>
+	</target>
+
+	<target name="make-extension-new" if="isJar">
+		<echo message="======================== New target " />
+		<echo message="======================== Making Extension " />
+		<echo message="======================== Copying to extensions dir..." />
+		<copy todir="${extension-dir}/../../">
+			<fileset dir="target/${distribution-final-name}-distribution/${distribution-final-name}" includes="**/**" />
+		</copy>
+	</target>
+</project>

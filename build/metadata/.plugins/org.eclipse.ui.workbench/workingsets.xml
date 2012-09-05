@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Build" name="Build">
+<item elementID="=build" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/binaries" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Catalog" name="Catalog"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Coverage" name="Coverage">
+<item elementID="=libRaster_io" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libFMap_dalRaster" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extRasterTools-SE" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libRaster" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extRemoteSensing" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extGeoreferencing" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Daltransforms" name="Daltransforms">
+<item elementID="=extDalTransformJoin" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extDalTransformEventTheme" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extDalTransform" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Database" name="Database">
+<item elementID="=extGeoDB" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libFMap_daldb" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="DWG" name="DWG">
+<item elementID="=libDwg" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extDwg" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Fmap base" name="Fmap base">
+<item elementID="=libFMap_dal" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libFMap_dalindex" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libEvaluator_SQLJEP" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libFMap_geometries" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libDXF" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libFMap_dalfile" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libFMap_mapcontext" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libFMap_controls" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="GPE" name="GPE">
+<item elementID="=libGPE-GML" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libGPE-XML" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libGPE-KML" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extGPE-gvSIG" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libGPE" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="JCRS" name="JCRS">
+<item elementID="=extJCRS" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libJCRS" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Libs Base" name="Libs Base">
+<item elementID="=libCompat" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libIverUtiles" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libTools" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libProjection" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libMetadata" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libInternationalization" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Remote services" name="Remote services">
+<item elementID="=libRemoteServices" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extWFS2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extWMS" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extWCS" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Single projects" name="Single projects">
+<item elementID="=extEditing" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extI18n" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extDataLocator" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=_fwAndami" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libUIComponent" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extScripting" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extExpressionField" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extSextanteGvsigBindings" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=appgvSIG" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=libCorePlugin" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extHelp" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extCenterViewToPoint" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=extIconThemeBase" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Window Working Set" name="Aggregate for window 1214494712790"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" label="Window Working Set" name="Aggregate for window 1244109293831"/>
+<mruList name="GPE"/>
+</workingSetManager>

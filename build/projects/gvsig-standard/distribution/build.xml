@@ -1,0 +1,318 @@
+<?xml version="1.0" ?>
+<project name="build_distribution" default="main">
+
+
+	<dirname file="${ant.file.build_distribution}" property="build_distribution_loc"/>	
+	<property name="workspace_loc" location="${build_distribution_loc}/../../../.."/>
+	<property name="dist_utils_loc" location="${workspace_loc}/dist-utils"/>
+	<property name="build_loc" location="${workspace_loc}/build"/>
+	<!-- <property name="deploy_loc" location="${build_loc}/product"/>	 -->
+	<property name="deploy_loc" location="${workspace_loc}/build/product"/>
+	<property name="extensions_loc" location="${deploy_loc}/gvSIG/extensiones"/>
+	<property name="binaries_loc" location="${workspace_loc}/binaries"/>
+	<property file="${extensions_loc}/com.iver.cit.gvsig/build.number"/>
+	<!--property file="/distribution/build.properties" /-->
+	<!--COMPROBAR EXTENSIONES -->
+	<property name="version" value="2.0.0" />
+	<property name="bversion" value="2_0_0" />
+	<property name="APPNAME" value="gvSIG" />
+	<property name="OUTPUT_DIR" location="${build_distribution_loc}/target/installers" />
+
+
+	<property name="DIR_LIN" location="${build_distribution_loc}/linux-distribution" />
+	<property name="DIR_WIN" location="${build_distribution_loc}/win-distribution" />
+	<property name="DIR_MAC" location="${build_distribution_loc}/mac-distribution" />
+	<property name="baseFileName" value="${APPNAME}-${bversion}-${build.number}" />
+	<property name="LINUXBIN" value="${baseFileName}-linux-i586.bin" />
+	<property name="LINUXBINWITHJRE" value="${baseFileName}-linux-i586-withjre.bin" />
+	<property name="WINDOWSZIP" value="${baseFileName}-windows-i586.7z" />
+	<property name="WINDOWSEXE" value="${baseFileName}-windows-i586.exe" />
+	<property name="WINDOWSEXEWITHJRE" value="${baseFileName}-windows-i586-withjre.exe" />
+	<property name="MAC_10_ZIP" value="${baseFileName}-mac-10_4.zip" />
+	<property name="JARNAME" value="${APPNAME}-${bversion}.jar" />
+	<property name="INSTALLER_DIR" value="${APPNAME}-${version}_installer" />
+	<property name="nombre_autoinstalador" value="gvSIG ${version} build ${build.number} autoinstalador" />
+	<!--OJO!!!! HAY QUE REVISAR ESTO -->
+	<property environment="env" />
+
+	<presetdef name="ant-izPack">
+		<ant inheritAll="true">
+			<property name="izpack_dir" location="${dist_utils_loc}/izpack_4.2.0/"/>
+			<property name="APPNAME" value="${APPNAME}"/>
+		</ant>
+	</presetdef>
+
+	<condition property="LAUNCHER7Z" value="${dist_utils_loc}/launcher/7z/7za" else="${dist_utils_loc}/launcher/7z/7z.exe">
+		<os family="unix" />
+	</condition>
+
+	<condition property="Lang.Is.Spanish">
+		<contains string="${env.LANG}" substring="es" />
+	</condition>
+	<condition property="directorio.base">
+		<available file="../install" type="dir" />
+	</condition>
+
+	<target name="E_Spanish" if="Lang.Is.Spanish">
+		<property name="ERROR_BASEDIR" value="Este script debe invocarse desde el directorio install del workspace" />
+	</target>
+
+	<target name="E_notSpanish" unless="Lang.Is.Spanish">
+		<property name="ERROR_BASEDIR" value="This script must be run from the workspace\install's directory" />
+	</target>
+
+	<target name="check" depends="E_Spanish,E_notSpanish">
+		<fail message="${ERROR_BASEDIR}" unless="directorio.base" />
+	</target>
+
+	<!-- target name="main" depends="Linux,Windows" -->
+	<target name="main" depends="Linux,Windows">
+		<echo message="DISTRIBUCION" />
+	</target>
+	<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	-->
+	<target name="Linux" depends="CreateJarLin,InstallationLin,cleanDirLIN">
+		<echo> ********************************************* </echo>
+		<echo> ********         LINUX DONE         *********</echo>
+		<echo> ********************************************* </echo>
+	</target>
+
+	<target name="CreateJarLin" description="Generacion del instalador(jar) para Linux">
+		<!-- 		Generamos el instalador (jar) para Linux -->
+		<delete file="${DIR_LIN}/${JARNAME}" />
+		<ant-izPack dir="${DIR_LIN}">
+			<property name="JARNAME" value="${DIR_LIN}/${JARNAME}" />
+		</ant-izPack>
+	</target>
+	<target name="InstallationLin" description="Generacion de la distribucion">
+		<echo> ********************************************* </echo>
+		<echo> Buildnumber----> ${build.number} --- version--> ${version}</echo>
+		<echo> ********************************************* </echo>
+
+		<!-- 		INSTALACION PARA LINUX -->
+		<delete dir="${DIR_LIN}/${INSTALLER_DIR}" />
+		<mkdir dir="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall" />
+		<move todir="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall">
+			<fileset file="${DIR_LIN}/${JARNAME}" />
+		</move>
+
+		<!-- 		carpetas CVS no se copiaran, ANT las excluye por defecto -->
+		<copy todir="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall">
+			<fileset dir="${dist_utils_loc}/launcher/izpack-launcher-1.3_linux/dist">
+				<exclude name="launcher.ini" />
+			</fileset>
+		</copy>
+		<chmod file="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall/launcher-Linux" perm="ugo+rx" />
+
+		<copy file="${DIR_LIN}/resources/launcher.ini.j15" tofile="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall/launcher.ini" />
+		<replace file="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall/launcher.ini" token="%JARNAME%" value="${JARNAME}" />
+
+		<!-- 		comprimimos la carpeta tmp_gvSIGInstall en tmp.tgz -->
+		<tar destfile="${DIR_LIN}/${INSTALLER_DIR}/tmp.tgz" compression="gzip">
+			<tarfileset dir="${DIR_LIN}/${INSTALLER_DIR}" mode="755">
+				<include name="tmp_gvSIGInstall/launcher-Linux" />
+				<include name="tmp_gvSIGInstall/install_jre.sh"/>
+			</tarfileset>
+			<tarfileset dir="${DIR_LIN}/${INSTALLER_DIR}">
+				<include name="tmp_gvSIGInstall/*" />
+				<exclude name="tmp_gvSIGInstall/launcher-Linux" />
+				<exclude name="tmp_gvSIGInstall/install_jre.sh"/>
+			</tarfileset>
+		</tar>
+		
+		<!-- 		copiamos la jre y volvemos a comprimir en tmp_wjre.tgz -->		
+		<copy todir="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall">
+			<fileset file="${dist_utils_loc}/jre/linux/*-1_5_0_*.gz"/>
+		</copy>
+		<tar destfile="${DIR_LIN}/${INSTALLER_DIR}/tmp_wjre.tgz" compression="gzip">
+			<tarfileset dir="${DIR_LIN}/${INSTALLER_DIR}" mode="755" >
+				<include name="tmp_gvSIGInstall/launcher-Linux"/>
+				<include name="tmp_gvSIGInstall/install_jre.sh"/>
+			</tarfileset>
+			<tarfileset dir="${DIR_LIN}/${INSTALLER_DIR}">
+				<include name="tmp_gvSIGInstall/*"/>
+				<exclude name="tmp_gvSIGInstall/launcher-Linux"/>
+				<exclude name="tmp_gvSIGInstall/install_jre.sh"/>
+			</tarfileset>
+		</tar>
+
+
+		<echo message="#!/bin/sh" file="${DIR_LIN}/${INSTALLER_DIR}/xx.tmp" />
+		<echo message="lcount=59" file="${DIR_LIN}/${INSTALLER_DIR}/xxx.tmp" />
+		<fixcrlf srcdir="${DIR_LIN}/${INSTALLER_DIR}/" includes="**/xx.tmp,**/xxx.tmp" eol="lf" eof="remove" />
+		<concat destfile="${DIR_LIN}/${INSTALLER_DIR}/${LINUXBIN}" binary="true">
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/xx.tmp" />
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/xxx.tmp" />
+			<fileset file="${dist_utils_loc}/launcher/izpack-launcher-1.3_linux/h_gvSIG-install.sh" />
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/tmp.tgz" />
+		</concat>
+		<chmod file="${DIR_LIN}/${INSTALLER_DIR}/${LINUXBIN}" perm="ugo+rx" />
+		
+		<concat destfile="${DIR_LIN}/${INSTALLER_DIR}/${LINUXBINWITHJRE}" binary="true">
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/xx.tmp" />
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/xxx.tmp" />
+			<fileset file="${dist_utils_loc}/launcher/izpack-launcher-1.3_linux/h_gvSIG-install.sh" />
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/tmp_wjre.tgz" />
+		</concat>
+		<chmod file="${DIR_LIN}/${INSTALLER_DIR}/${LINUXBIN}" perm="ugo+rx" />
+		
+
+	</target>
+
+
+	<target name="cleanDirLIN" description="Limpiamos los directorios DIR_LIN">
+
+		<delete file="${DIR_LIN}/${INSTALLER_DIR}/xx.tmp" />
+		<mkdir dir="${OUTPUT_DIR}" />
+		<mkdir dir="${OUTPUT_DIR}/linux" />
+		<move todir="${OUTPUT_DIR}/linux">
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/${LINUXBIN}" />
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/${LINUXBINWITHJRE}" />
+		</move>
+		<chmod file="${OUTPUT_DIR}/linux/${LINUXBIN}" perm="ugo+rx" />
+		<chmod file="${OUTPUT_DIR}/linux/${LINUXBINWITHJRE}" perm="ugo+rx" />
+		<delete dir="${DIR_LIN}/${INSTALLER_DIR}" />
+
+	</target>
+
+	<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	-->
+	<target name="Windows" depends="CreateJarWin,InstallationWin,cleanDirWIN">
+		<echo> ********************************************* </echo>
+		<echo> ********        WINDOWS DONE        *********</echo>
+		<echo> ********************************************* </echo>
+	</target>
+
+
+
+	<target name="CreateJarWin" description="Generacion del instalador(jar) para Windows">
+
+		<delete dir="${DIR_WIN}/tmpResources"/>
+		<mkdir dir="${DIR_WIN}/tmpResources" />
+
+		<!-- 	Copiamos el lanzador y sus traduciones al tmpResources,sin copiar el ini, manifest y los CVS (ANT excluye carpetas CVS por defecto -->
+		<copy todir="${DIR_WIN}/tmpResources">
+			<fileset dir="${dist_utils_loc}/launcher/izpack-launcher-1.3/dist/">
+				<include name="**/"/>
+				<exclude name="**/*.ini"/>
+				<exclude name="**/*.manifest"/>
+			</fileset>
+		</copy>
+		<move file="${DIR_WIN}/tmpResources/launcher-Win32.exe" tofile="${DIR_WIN}/tmpResources/gvSIG.exe"/>
+		<!--
+		<copy todir="${DIR_WIN}/tmpResources/jai_imageio-1_0_01-lib-windows/">
+			<fileset dir="${DIR_WIN}/jre_installers_1.5/jai_imageio-1_0_01-lib-windows"/>
+		</copy>
+		-->
+
+		<copy file="${DIR_WIN}/resources/gvSIG.ini" tofile="${DIR_WIN}/tmpResources/gvSIG.ini"/>
+
+		<!-- 	Instalador para Windows -->
+
+		<echo> ********************************************* </echo>
+		<echo> Buildnumber----> ${build.number} --- version--> ${version}</echo>
+		<echo> ********************************************* </echo>
+		<delete file="./${JARNAME}" />
+		<ant-izPack dir="${DIR_WIN}">
+			<property name="JARNAME" value="${DIR_WIN}/${JARNAME}" />
+			<property name="INSTALL_FILE" value="${DIR_WIN}/install.xml" />
+		</ant-izPack>
+
+		<delete dir="${DIR_WIN}/tmpResources"/>
+	</target>
+	<target name="InstallationWin" description="Generacion de la distribucion">
+
+		<!-- Coping install.bat file -->
+		<copy todir="${DIR_WIN}/${INSTALLER_DIR}">
+			<fileset dir="${DIR_WIN}/installer_files">
+				<exclude name="install.bat" />
+			</fileset>
+		</copy>
+
+		<!-- Coping the izpack launcher , excluding launcher-win32.ini  -->
+		<copy todir="${DIR_WIN}/${INSTALLER_DIR}">
+			<fileset dir="${dist_utils_loc}/launcher/izpack-launcher-1.3/dist">
+				<exclude name="launcher-Win32.ini" />
+			</fileset>
+		</copy>
+
+		<!-- Coping the launcher-win32.ini  -->
+		<copy file="${DIR_WIN}/resources/launcher-Win32.ini" tofile="${DIR_WIN}/${INSTALLER_DIR}/launcher-Win32.ini" />
+
+		<!-- Replacing the token JARNAME with the real name of the jar file  -->
+		<replace file="${DIR_WIN}/${INSTALLER_DIR}/launcher-Win32.ini" token="%JARNAME%" value="${JARNAME}" />
+
+		<!-- Moving the jar file  -->
+		<move todir="${DIR_WIN}/${INSTALLER_DIR}/">
+			<fileset file="${DIR_WIN}/${JARNAME}" />
+		</move>
+		<!-- Removing 7zip file, only if it exits  -->
+		<delete file="${DIR_WIN}/${WINDOWSZIP}" />
+		<!-- Creating new 7zip file -->
+		<!--exec executable="${LAUNCHER7Z}"-->
+		<exec executable="${LAUNCHER7Z}">
+			<arg line="a -r ${DIR_WIN}/${WINDOWSZIP} ${DIR_WIN}/${INSTALLER_DIR}/*" />
+		</exec>
+
+		<copy file="${dist_utils_loc}/launcher/7z/dist_config.txt" tofile="${DIR_WIN}/dist_config.txt" />
+		<replace file="${DIR_WIN}/dist_config.txt" token="%TITLE%" value="gvSIG-${bversion}" />
+		<concat destfile="${DIR_WIN}/${WINDOWSEXE}" binary="true">
+			<fileset file="${dist_utils_loc}/launcher/7z/7zS.sfx" />
+			<fileset file="${DIR_WIN}/dist_config.txt" />
+			<fileset file="${DIR_WIN}/${WINDOWSZIP}" />
+		</concat>
+		<exec executable="${LAUNCHER7Z}">
+			<arg line="a -r ${DIR_WIN}/${WINDOWSZIP} ${dist_utils_loc}/jre/windows/*.exe"/>
+		</exec>
+		<concat destfile="${DIR_WIN}/${WINDOWSEXEWITHJRE}" binary="true">
+			<fileset file="${dist_utils_loc}/launcher/7z/7zS.sfx" />
+			<fileset file="${DIR_WIN}/dist_config.txt"/>
+			<fileset file="${DIR_WIN}/${WINDOWSZIP}"/>
+		</concat>
+
+
+	</target>
+
+	<!-- UTILIZAR ESTE TARGET PARA LIMPIAR TODOS LOS DIRECTORIOS Y FICHEROS TEMPORALES CREADOS-->
+	<target name="cleanDirWIN" description="Limpiamos los directorios DIR_WIN">
+		<mkdir dir="${OUTPUT_DIR}" />
+		<mkdir dir="${OUTPUT_DIR}/win" />
+		<move todir="${OUTPUT_DIR}/win">
+			<fileset file="${DIR_WIN}/${WINDOWSEXE}" />
+			<fileset file="${DIR_WIN}/${WINDOWSEXEWITHJRE}" />
+		</move>
+		<delete file="${DIR_WIN}/${WINDOWSZIP}" />
+		<delete file="${DIR_WIN}/dist_config.txt" />
+		<delete dir="${DIR_WIN}/${INSTALLER_DIR}" />
+
+		<!--delete dir="${DIR_WIN}/extensiones" />
+		<delete dir="${DIR_WIN}/bin" /-->
+	</target>
+
+	<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	-->
+	<target name="Mac">
+		<!--
+		<mkdir dir="${OUTPUT_DIR}" />
+		<ant dir="${DIR_MAC}">
+			<property name="build.number" value="${build.number}" />
+		</ant>
+		-->
+		<!-- El zip se crea en dentro y se copia por un problema con los permisos-->
+		<!--zip destfile="${OUTPUT_DIR}/${MAC_10_ZIP}" basedir="${DIR_MAC}" includes="gvSIG*.app/**" filemode="755" /-->
+		<!--
+		<copy todir="${OUTPUT_DIR}">
+			<fileset dir="${DIR_MAC}" includes="gvSIG*.zip" />
+		</copy>
+		<delete dir="${DIR_MAC}/distr" />
+		-->
+
+		<!--OJO!!!! HAY QUE REVISAR ESTO -->
+		<echo> ********************************************* </echo>
+		<echo> ********          MAC DONE        *********</echo>
+		<echo> ********************************************* </echo>
+	</target>
+</project>

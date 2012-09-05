@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>gvsig-libs-base</artifactId>
+	<packaging>pom</packaging>
+	<version>2.0</version>
+	<name>gvsig-libs-base</name>
+	<description> GvSIG base libraries</description>
+	<inceptionYear>2009</inceptionYear>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-basepoms</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<properties>
+		<build-dir>${basedir}/../..</build-dir>
+	</properties>
+	<modules>
+		<module>../../../libTools</module>
+		<module>../../../libCompat</module>
+		<module>../../../libInternationalization</module>
+		<module>../../../libMetadata</module>
+		<module>../../../libProjection</module>
+		<module>../../../libIverUtiles</module>
+	</modules>
+</project>

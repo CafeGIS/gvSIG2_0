@@ -1,0 +1,295 @@
+<project name="gvSIG build" basedir="../.." 
+		 default="mvn-configure-eclipse-workspace" 
+		 xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+
+	<description>
+		Ant tasks and macros to interact with maven
+	</description>
+
+	<!-- set global properties for this build -->
+	<dirname file="${ant.file.Complete_build_system}" property="ant.file.Complete_build_system.dir"/>
+	<dirname file="${ant.file.Complete_build_system.dir}" property="workspace_loc"/>
+
+	<property name="mavendir" location="${ant.file.Complete_build_system.dir}/maven" />
+	<!--property environment="environment"/-->
+	<property name="ant.libs.dir" location="../../ant-tasks"/>
+
+	<!-- ============================= -->
+	<!-- External ant tasks definition -->
+	<!-- ============================= -->
+
+	<!-- Maven ant tasks registration -->
+	<path id="maven-ant-tasks.classpath" path="${ant.libs.dir}/maven-ant-tasks-2.0.10.jar" />
+	<typedef resource="org/apache/maven/artifact/ant/antlib.xml"
+           uri="antlib:org.apache.maven.artifact.ant"
+           classpathref="maven-ant-tasks.classpath" />
+
+	<!-- ant-contrib library load -->
+	<taskdef resource="net/sf/antcontrib/antlib.xml">
+		<classpath>
+			<pathelement location="${ant.libs.dir}/ant-contrib-1.0b3.jar"/>
+			<pathelement location="${ant.libs.dir}/bcel-5.1.jar"/>
+			<pathelement location="${ant.libs.dir}/commons-httpclient-3.0.1.jar"/>
+			<pathelement location="${ant.libs.dir}/commons-logging-1.0.4.jar"/>
+			<pathelement location="${ant.libs.dir}/ivy-1.3.1.jar"/>
+		</classpath>
+	</taskdef>
+
+	<!-- Maven targets -->
+	<macrodef name="maven">
+		<attribute name="arg" />
+		<sequential>
+			<echo>mvn @{arg}</echo>
+			<artifact:mvn mavenHome="../../maven" fork="true" failonerror="true">
+				<arg line="@{arg}"/>
+			</artifact:mvn>
+		</sequential>
+	</macrodef>
+
+	<target name="mvn-clean" 
+			description="Cleans all artifacts">
+		<maven arg="clean" />
+	</target>
+
+	<target name="mvn-install" 
+			description="Compiles and installs">
+		<maven arg="install" />
+	</target>
+
+	<target name="mvn-install-without-tests" 
+		 	description="Compiles and installs without launching tests">
+		<maven arg="-Dmaven.test.skip=true install" />
+	</target>
+
+	<target name="mvn-reinstall" depends="mvn-clean,mvn-install" 
+		    description="Performs a clean install"/>
+
+	<target name="mvn-reinstall-without-tests" 
+			depends="mvn-clean,mvn-install-without-tests" 
+			description="Performs a clean install without launching tests"/>
+
+	<target name="mvn-deploy" 
+			description="Compiles, installs and deploys">
+		<maven arg="deploy" />
+	</target>
+
+	<target name="mvn-configure-eclipse-workspace"
+			description="Configures the eclipse workspace for maven integration">
+
+		<input message="Eclipse workspace folder to configure?:"
+			   addproperty="eclipse.workspace"
+			   defaultvalue="${workspace_loc}"/>
+
+		<maven arg="-Declipse.workspace='${eclipse.workspace}' eclipse:add-maven-repo" />
+		<mkdir dir="${eclipse.workspace}/.metadata/.plugins/org.eclipse.ui.workbench" />
+		<copy file="../../metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml"  
+			  todir="${eclipse.workspace}/.metadata/.plugins/org.eclipse.ui.workbench" />
+	</target>
+
+	<target name="mvn-eclipse-clean"
+			description="Cleans the maven generated eclipse project files">
+		<maven arg="eclipse:clean" />
+	</target>
+
+	<target name="mvn-eclipse-eclipse"
+			description="Generates an eclipse project configuration from the pom.xml">
+		<maven arg="eclipse:eclipse" />
+	</target>
+
+	<target name="mvn-create-library"
+			description="Generates a new library project with the initial structure and configuration">
+
+		<input message="Library maven groupId:"
+			   addproperty="lib.groupId"
+			   defaultvalue="org.gvsig" />
+
+		<input message="Library maven artifactId:"
+			   addproperty="lib.artifactId"/>
+
+		<input message="Library main java package:"
+			   addproperty="lib.package"
+			   defaultvalue="${lib.artifactId}"/>
+
+		<input message="Library version:"
+			   addproperty="lib.version"
+			   defaultvalue="2.0-SNAPSHOT" />
+
+		<maven arg="archetype:generate -B -DarchetypeGroupId=org.gvsig -DarchetypeArtifactId=org.gvsig.library-archetype -DgroupId=${lib.groupId} -DartifactId=${lib.artifactId} -Dversion=${lib.version} -Dpackage=${lib.package}" />
+
+		<move todir="../../../${lib.artifactId}">
+			<fileset dir="${lib.artifactId}" />
+		</move>
+
+		<artifact:mvn mavenHome="../../maven" fork="true" failonerror="true"
+					  dir="../../../${lib.artifactId}">
+			<arg line="eclipse:eclipse"/>
+		</artifact:mvn>
+	</target>
+
+	<!-- Projects checkout targets -->
+	<target name="svn.checkout.all" depends="svn.getparams" description="Checkouts all projects defined in a parent module pom.xml">
+
+		<artifact:pom id="pom" file="pom.xml" />
+		<for list="${pom.modules}" param="svn.module" delimiter=",[]" trim="true">
+			<sequential>
+				<var name="svn.isgroup" unset="true"/>
+				<propertyregex property="svn.module"
+			              input="@{svn.module}"
+			              regexp="[./]*(.*)"
+			              replace="\1"
+			              casesensitive="false" 
+			    		  override="true"/>
+				<available file="../${svn.module}" property="svn.isgroup"/>
+				<antcall target="svn.checkout.group">
+					<param name="svn.module" value="${svn.module}"/>
+				</antcall>
+				<antcall target="svn.checkout.project">
+					<param name="svn.module" value="${svn.module}"/>
+				</antcall>
+			</sequential>
+		</for>
+	</target>
+
+	<target name="svn.update.all"  
+			description="Updates all projects defined in a parent module pom.xml">
+
+		<artifact:pom id="pom" file="pom.xml" />
+		<for list="${pom.modules}" param="svn.module" delimiter=",[]" trim="true">
+			<sequential>
+				<var name="svn.isgroup" unset="true"/>
+				<propertyregex property="svn.module"
+			              input="@{svn.module}"
+			              regexp="[./]*(.*)"
+			              replace="\1"
+			              casesensitive="false" 
+			    		  override="true"/>
+				<available file="../${svn.module}" property="svn.isgroup"/>
+				<antcall target="svn.update.group">
+					<param name="svn.module" value="${svn.module}"/>
+				</antcall>
+				<antcall target="svn.update.project">
+					<param name="svn.module" value="${svn.module}"/>
+				</antcall>
+			</sequential>
+		</for>
+	</target>
+
+	<target name="svn.checkout.group" if="svn.isgroup">
+		<echo>group: ${svn.module}</echo>
+		<ant dir="../${svn.module}" target="svn.checkout.all"/>
+	</target>
+
+	<target name="svn.checkout.project" unless="svn.isgroup" 
+			depends="svn.get.project.path">
+		<echo>project: ${svn.module}</echo>
+		<antcall target="svn.checkout">
+			<param name="svn.project.path" value="../../.."/>
+			<param name="svn.project.url" value="${svn.repository.url}/${svn.module}"/>
+		</antcall>
+	</target>
+
+	<target name="svn.update.group" if="svn.isgroup">
+		<echo>group: ${svn.module}</echo>
+		<ant dir="../${svn.module}" target="svn.update.all"/>
+	</target>
+
+	<target name="svn.update.project" unless="svn.isgroup" 
+			depends="svn.get.project.path">
+		<echo>project: ${svn.module}</echo>
+		<antcall target="svn.update">
+			<param name="svn.project.path" value="../../.."/>
+			<param name="svn.project.url" value="${svn.repository.url}/${svn.module}"/>
+		</antcall>
+	</target>
+
+	<target name="svn.checkout">
+		<echo>url: ${svn.project.url}</echo>
+		<java classname="org.tmatesoft.svn.cli.SVN" 
+          dir="${svn.project.path}" 
+          fork="true" 
+          failonerror="true">
+			<arg value="co" />
+			<arg value="--username"/>
+			<arg value="${svn.username}"/>
+			<arg value="--password"/>
+			<arg value="${svn.password}"/>
+			<arg value="${svn.project.url}" />
+			<classpath>
+				<pathelement location="${ant.libs.dir}/svnkit-1.2.3.jar" />
+				<pathelement location="${ant.libs.dir}/svnkit-cli-1.2.3.jar" />
+			</classpath>
+		</java>
+	</target>
+
+	<target name="svn.update">
+		<java classname="org.tmatesoft.svn.cli.SVN" 
+	          dir="${svn.project.path}" 
+	          fork="true" 
+	          failonerror="true">
+			<arg value="update" />
+			<arg value="${svn.module}" />
+			<classpath>
+				<pathelement location="${ant.libs.dir}/svnkit-1.2.3.jar" />
+				<pathelement location="${ant.libs.dir}/svnkit-cli-1.2.3.jar" />
+			</classpath>
+		</java>
+	</target>
+
+	<target name="svn.getparams">
+		<input
+	    addproperty="svn.repository.url.option"
+	  	defaultvalue="a">
+	  	Select one SVN url to the branch to checkout:
+	  	a) Public (http://subversion.gvsig.org/gvSIG/branches/v2_0_0_prep)
+	  	b) Development (https://gvsig.org/svn/gvSIG/branches/v2_0_0_prep)
+  	  </input>
+
+		<condition property="svn.repository.url" 
+  	  			 value="https://gvsig.org/svn/gvSIG/branches/v2_0_0_prep"
+  	  			 else="http://subversion.gvsig.org/gvSIG/branches/v2_0_0_prep">
+			<equals arg1="${svn.repository.url.option}" arg2="b"/>
+		</condition>
+
+		<input
+	    message="SVN user name:"
+	    addproperty="svn.username"
+  	    defaultvalue="guest" />
+
+		<input
+	    message="SVN user password:"
+	    addproperty="svn.password"
+	  	defaultvalue="guest" />
+	</target>
+
+	<target name="svn.get.project.path">
+		<description>
+			Converts a project name to a project path in subversion. 
+			Ej: libTools -> libraries/libTools
+		</description>
+		<propertyregex property="svn.module"
+	              input="${svn.module}"
+	              regexp="^lib.*"
+	              replace="libraries/\0"
+	              casesensitive="false" 
+	    		  override="true"/>
+		<propertyregex property="svn.module"
+	              input="${svn.module}"
+	              regexp="^ext.*"
+	              replace="extensions/\0"
+	              casesensitive="false" 
+	    		  override="true"/>
+		<propertyregex property="svn.module"
+	              input="${svn.module}"
+	              regexp="^app.*"
+	              replace="applications/\0"
+	              casesensitive="false" 
+	    		  override="true"/>
+		<propertyregex property="svn.module"
+	              input="${svn.module}"
+	              regexp="^_fw.*"
+	              replace="frameworks/\0"
+	              casesensitive="false" 
+	    		  override="true"/>
+	</target>
+
+</project>

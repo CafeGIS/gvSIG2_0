@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>gvsig-standard</artifactId>
+	<packaging>pom</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>gvsig-standard</name>
+	<description> gvSIG standard. This pom mades gvSIG standard version</description>
+	<inceptionYear>2007</inceptionYear>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-basepoms</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<properties>
+		<build-dir>${basedir}/../..</build-dir>
+	</properties>
+	<modules>
+		<module>../gvsig-base</module>
+		
+		<module>../../../extIconThemeBase</module>
+
+		<module>../gvsig-jcrs</module>
+		
+		<module>../gvsig-coverage-extensions</module>
+		
+		<module>../gvsig-db</module>
+		<module>../gvsig-dwg</module>
+		
+		<module>../gvsig-gpe</module>
+		<module>../gvsig-remote</module>
+
+		<!-- Misc extensions -->
+		<module>../../../extEditing</module>
+		<module>../../../extScripting</module>		
+		<module>../../../extCenterViewToPoint</module>
+		<module>../../../extDataLocator</module>
+		<module>../../../extExpressionField</module>
+		<module>../../../extI18n</module>
+		<module>../../../extHelp</module>
+		
+		<module>../../../extSextanteGvsigBindings</module>
+	</modules>
+</project>

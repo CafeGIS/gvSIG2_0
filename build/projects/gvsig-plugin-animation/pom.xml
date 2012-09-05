@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>gvsig-plugin-animation</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>gvsig-plugin-animation</name>
+	<description>
+		GvSIG plugin animation. This pom mades all the animation
+		extension plugin for GvSIG
+	</description>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-basepoms</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<properties>
+		<build-dir>${basedir}/../..</build-dir>
+	</properties>
+	<modules>
+		<module>../gvsig-plugin-3D</module>
+		<module>../../../libAnimation</module>
+		<module>../../../libAnimationCommon</module>
+		<module>../../../libAnimation2D</module>
+		<module>../../../libAnimation3D</module>
+		<module>../../../extAnimation2D</module>
+		<module>../../../extAnimation3D</module>
+		<module>../../../extAnimationCommon</module>
+		<module>../../../extAnimationGUI</module>
+	</modules>
+</project>
+

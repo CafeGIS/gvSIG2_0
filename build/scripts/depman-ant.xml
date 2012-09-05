@@ -1,0 +1,18 @@
+<project name="Native Build System" default="native" basedir=".">
+
+	<import file="utilities.xml" />
+
+	<target name="generate">
+		<cmake args="-DCMAKE_INSTALL_PREFIX=${project.build.directory}/target_cmake_product" />
+	</target>
+
+	<target name="build">
+		<make-install numProc="${numProc}" />
+	</target>
+
+	<target name="native" depends="build" />
+
+	<target name="native-eclipse" depends="generate" />
+
+</project>
+

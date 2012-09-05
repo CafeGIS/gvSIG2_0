@@ -1,0 +1,26 @@
+from bmbase.IPlugIn import IPlugIn
+from bmbase.PlugInManager import PlugInManager
+import pprint
+
+
+class TestPlugIn(IPlugIn):
+	def __init__(self):
+		IPlugIn.__init__(self)
+
+	def init(self):
+		self.addGoal("test", "Tests user buildman plugin path")
+		while self._arguments.read("test"):
+			self.setExecute(True)		
+
+	def execute(self):
+		print "Executing Plugin:" + str(self.__class__)
+		l=[] 
+		for id,plugin in PlugInManager().getPlugInInstances().items():
+			l.append((id,plugin))	
+		pp = pprint.PrettyPrinter(indent=4)
+		pp.pprint(l) 
+		return True
+
+PlugInManager().registerPlugIn("TestPlugIn",TestPlugIn())
+
+

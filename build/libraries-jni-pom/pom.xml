@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>gvsig-library-jni-base-pom</artifactId>
+	<packaging>pom</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>library-jni-base-pom</name>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-library-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<description>
+		Base POM for all GvSIG JNI projects. This pom knows how to
+		build and made an libraries for GvSIG. The property
+		"gvsig-path" must be set up correctly.
+	</description>
+	<properties>
+		<build-dir>${basedir}/..</build-dir>
+	</properties>
+	<profiles>
+		<profile>
+			<id>jni-devel</id>
+			<activation>
+				<property>
+					<name>jni-devel</name>
+				</property>
+			</activation>
+			<properties>
+				<compileTarget>native</compileTarget>
+				<numProc>2</numProc>
+				<depman-ant>${build-dir}/scripts/depman-ant.xml</depman-ant>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>compile-native</id>
+								<phase>compile</phase>
+								<configuration>
+									<tasks>
+										<property name="numProc" value="${numProc}" />
+										<property name="project.build.directory" value="${project.build.directory}" />
+										<ant antfile="${depman-ant}" target="${compileTarget}" />
+									</tasks>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>native-eclipse</id>
+								<phase>generate-sources</phase>
+								<configuration>
+									<tasks>
+										<property name="numProc" value="${numProc}" />
+										<property name="project.build.directory" value="${project.build.directory}" />
+										<ant antfile="${depman-ant}" target="${compileTarget}-eclipse" />
+									</tasks>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-assembly-plugin
+						</artifactId>
+						<configuration>
+							<descriptors>
+								<descriptor>${build-dir}/scripts/native-assembly.xml</descriptor>
+							</descriptors>
+							<ignoreDirFormatExtensions>true</ignoreDirFormatExtensions>
+						</configuration>
+						<executions>
+							<execution>
+								<id>package-native</id>
+								<!--
+									this is used for inheritance merges
+								-->
+								<phase>package</phase>
+								<!--
+									append to the packaging phase.
+								-->
+								<goals>
+									<goal>attached</goal><!-- goals == mojos -->
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

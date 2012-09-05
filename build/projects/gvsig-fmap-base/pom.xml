@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>gvsig-fmap-base</artifactId>
+	<packaging>pom</packaging>
+	<version>2.0</version>
+	<name>gvsig-fmap-base</name>
+	<description> GvSIG Fmap base projects</description>
+	<inceptionYear>2009</inceptionYear>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-basepoms</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<properties>
+		<build-dir>${basedir}/../..</build-dir>
+	</properties>
+	<modules>
+		<module>../../../libEvaluator_SQLJEP</module>
+		<module>../../../libFMap_geometries</module>
+		<module>../../../libFMap_dal</module>
+		<module>../../../libDXF</module>
+		<module>../../../libFMap_dalfile</module>
+		<module>../../../libFMap_dalindex</module>
+		<module>../../../libFMap_mapcontext</module>
+		<module>../../../libFMap_controls</module>
+	</modules>
+</project>

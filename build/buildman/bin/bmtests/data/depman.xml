@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<depman>
+	<package>
+		<group>test</group><!-- requerido -->
+		<artifact>buildman-tests</artifact><!-- requerido -->
+		<version>2.0</version><!-- requerido -->
+		<platform>all</platform><!-- no requerido pero se puede sobreescribir -->
+
+		<!--<upload> --><!-- Esta opción usaría los valores asignados abajo, no son requeridos y se puede sobreescribir solo algunos de ellos -->
+		<!--	<sshserver>murray.ai2.upv.es</sshserver> -->
+		<!-- 	<destdir>/projects/AI2/www-aliases/depman/</destdir> -->
+		<!-- 	<username>depman</username> -->
+		<!--</upload> -->
+	</package>
+	<dependencies>
+		<dependency>
+			<group>test</group>
+			<artifact>test1</artifact>
+			<version>1.0-SNAPSHOT</version>
+			<platform>all</platform>
+		</dependency>
+		<dependency>
+			<group>test</group>
+			<artifact>test2</artifact>
+			<version>1.0</version>
+			<platform>all</platform>
+		</dependency>
+	</dependencies>
+</depman>
+

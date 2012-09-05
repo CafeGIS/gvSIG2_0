@@ -1,0 +1,17 @@
+<AndamiProperties>
+	<ApplicationImages>
+		<SplashImages>
+			<!--Splash path="theme/logoIver.png" timer="1000"/-->
+			<Splash
+				path="theme/splash.png"
+				timer="10000"
+				version="2.0" x="270" y="240"
+				fontsize="18" color="80,170,240"
+				version="2.0"/>
+		</SplashImages>
+		<!--BackgroundImage path="theme/logo_es.png"/-->
+		<!--WallpaperType value="CENTERED"/-->
+		<Icon path="theme/icon.png"/>
+	</ApplicationImages>
+	<ApplicationName value="gvSIG 2.0.0"/>
+</AndamiProperties>

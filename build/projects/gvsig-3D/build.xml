@@ -1,0 +1,3 @@
+<project name="gvSIG 3D" default="mvn-install" basedir=".">
+	<import file="../../build.xml" />
+</project>

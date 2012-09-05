@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>gvsig-3D</artifactId>
+	<packaging>pom</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>gvsig-plugin-3d</name>
+	<description> GvSIG plugin 3D. This pom mades all the 3D extension
+		plugin for GvSIG</description>
+	<inceptionYear>2007</inceptionYear>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-basepoms</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<build-dir>${basedir}/../..</build-dir>
+	</properties>
+
+
+	<developers>
+		<developer>
+			<name>Rafael Gaitán</name>
+			<id>rgaitan</id>
+			<email>rgaitan@ai2.upv.es</email>
+			<roles>
+				<role>Project Lead</role>
+			</roles>
+			<organization>AI2</organization>
+		</developer>
+		<developer>
+			<name>Maria Ten</name>
+			<id>mten</id>
+			<email>mten@ai2.upv.es</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<organization>AI2</organization>
+		</developer>
+		<developer>
+			<name>Jordi Torres</name>
+			<id>jtorres</id>
+			<email>jtorres@ai2.upv.es</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<organization>AI2</organization>
+		</developer>
+		<developer>
+			<name>Jesus Zarzoso</name>
+			<id>jzarzoso</id>
+			<email>jzarzoso@ai2.upv.es</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<organization>AI2</organization>
+		</developer>
+		<developer>
+			<name>Javier Lluch</name>
+			<id>jlluch</id>
+			<email>jlluch@dsic.upv.es</email>
+			<roles>
+				<role>Manager</role>
+			</roles>
+			<organization>AI2</organization>
+		</developer>
+		<developer>
+			<name>Salvador Bayarri</name>
+			<id>sbayarri</id>
+			<email>salvador.bayarri@iver.es</email>
+			<roles>
+				<role>Manager</role>
+			</roles>
+			<organization>IVER</organization>
+		</developer>
+		<developer>
+			<name>Julio Campos</name>
+			<id>jcampos</id>
+			<email>julio.campos@iver.es</email>
+			<roles>
+				<role>Project Lead</role>
+			</roles>
+			<organization>IVER</organization>
+		</developer>
+		<developer>
+			<name>Angel Fraile</name>
+			<id>afraile</id>
+			<email>angel.fraile@iver.es</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<organization>IVER</organization>
+		</developer>
+	</developers>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.13</version>
+		</dependency>
+	</dependencies>
+	
+	
+	<modules>
+		<module>../../../libCacheService</module>
+		<module>../../../lib3DMap-share</module>
+		<module>../../../libGeometries3D</module>
+		<module>../../../libGPE-OSG</module>
+		<module>../../../lib3DMap</module>
+		<module>../../../ext3Dgui</module>
+	</modules>
+
+</project>
