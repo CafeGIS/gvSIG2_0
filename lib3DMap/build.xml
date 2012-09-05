@@ -1,0 +1,116 @@
+<project name="Generar extension en Andami ext3D" default="generate-without-source" basedir=".">
+	<description>
+        Instala el plugin de ejemplo en Andami.
+    </description>
+	<!-- set global properties for this build -->
+	<property name="src" location="src" />
+	<property name="build" location="bin" />
+	<property name="dist" location="dist" />
+	<property name="resources" location="resources" />
+	<property name="plugin" value="com.iver.ai2.gvsig3d" />
+	<property name="extension-dir" location="../_fwAndami/gvSIG/extensiones" />
+	<property name="logos-dir" location="../_fwAndami/theme" />
+	<property name="gvsig-lib" location="../_fwAndami/gvSIG/extensiones/com.iver.cit.gvsig/lib" />
+	<property name="binaries-dir" location="../binaries/" />
+	<property name="ext3D" value="../_fwAndami/gvSIG/extensiones/com.iver.ai2.gvsig3d" />
+	<property name="ext3Dgui-lib" value="../ext3Dgui/lib" />
+	<property name="ext3D-lib" value="../ext3D/lib" />
+	<property name="buildman.executable" value="buildman/bin/bmn.py"/>
+	<import file="../binaries/ant/utilities.xml"/>
+
+	<target name="batch-build" description="Builds all. This is called by appgvSIG script"
+			depends="compile,create-jar,copy-files,clean-dist">
+	</target>
+
+	<target name="init">
+		<mkdir dir="${build}" />
+
+	</target>
+
+
+    <target name="compile" description="compile the source" >
+		<!-- Compile the Java code from ${src} to ${build} -->
+		<mkdir dir="${build}" />
+		<loadEclipseClasspath project="${basedir}"/>
+		<gvSIG-javac
+			classpath="${eclipseClasspath}"	/>
+    </target>
+
+    <target name="create-jar"
+            description="Creates the jar">
+
+		<mkdir dir="${dist}" />
+		<mkdir dir="${dist}/lib" />
+		<!-- Put everything in ${build} into the jar file
+	     Except classes to be instantiated in core gvSIG -->
+		<jar jarfile="${dist}/lib/${plugin}.jar" basedir="${build}" excludes="com/iver/ai2/gvsig3d/map3d/layers/Layer3DProps.*,com/iver/ai2/gvsig3d/gui/VectorLayerMenu.*,com/iver/ai2/gvsig3d/camera/ProjectCamera.*,com/iver/ai2/gvsig3d/resources/ResourcesFactory.*" />
+
+		<!-- Put in this .jar the classes to be instantiated in gvSIG -->
+		<jar jarfile="${dist}/lib/${plugin}_share.jar" basedir="${build}" includes="com/iver/ai2/gvsig3d/map3d/layers/Layer3DProps.*,com/iver/ai2/gvsig3d/gui/VectorLayerMenu.*,com/iver/ai2/gvsig3d/camera/ProjectCamera.*,com/iver/ai2/gvsig3d/resources/ResourcesFactory.*" />
+		<jar jarfile="${gvsig-lib}/${plugin}_share.jar" basedir="${build}" includes="com/iver/ai2/gvsig3d/map3d/layers/Layer3DProps.*,com/iver/ai2/gvsig3d/gui/VectorLayerMenu.*,com/iver/ai2/gvsig3d/camera/ProjectCamera.*,com/iver/ai2/gvsig3d/resources/ResourcesFactory.*" />
+
+	</target>
+
+    <target name="copy-files">
+		<copy todir="${dist}/lib/">
+			<fileset dir="lib/" includes="*.jar" />
+		</copy>
+
+		<copy todir="${ext3Dgui-lib}/">
+			<fileset dir="${dist}/lib/" includes="*.jar" />
+		</copy>
+
+		<mkdir dir="../ext3Dgui/resources" />
+		<copy todir="../ext3Dgui/resources/">
+			<fileset dir="resources" includes="*.**" />
+		</copy>
+
+	</target>
+
+
+	<target name="generate-without-source" description="generate the distribution without the source file"
+			depends="create-jar,copy-files,clean-dist">
+	</target>
+
+	<target name="clean" description="clean up" depends="clean-dist">
+		<echo message="dentro de clean" />
+		<delete dir="${build}" />
+	</target>
+
+	<target name="clean-dist" description="clean up dist">
+		<delete dir="${dist}" />
+	</target>
+
+	<!--target name="copy-binaries">
+		<copy todir="${binaries-dir}">
+			<fileset dir="binaries/" includes="**/**" />
+		</copy>
+	</target-->
+
+	<target name="update-binaries-cache">
+		<exec executable="python">
+			<arg value="${buildman.executable}"/>
+			<arg value="update"/>
+			<arg value="--cache"/>
+		</exec>
+	</target>
+
+	<target name="update-binaries-remote">
+		<exec executable="python">
+			<arg value="${buildman.executable}"/>
+			<arg value="update"/>
+			<arg value="--remote"/>
+		</exec>
+	</target>
+
+	<target name="update-binaries-atifglrx-remote">
+		<exec executable="python">
+			<arg value="${buildman.executable}"/>
+			<arg value="update"/>
+			<arg value="--file"/>
+			<arg value="depman-atifglrx.xml"/>
+			<arg value="--remote"/>
+		</exec>
+	</target>
+</project>
+
