@@ -1,0 +1,63 @@
+<patternnormalization _type="object"
+	_class="org.gvsig.normalization.patterns.Patternnormalization">
+    <patternname _type="str">normFile</patternname>    
+    <nofirstrows _type="int">0</nofirstrows>
+    <elements _type="list">
+        <element _type="object"
+	_class="org.gvsig.normalization.patterns.Element">
+            <fieldname _type="str">campo1</fieldname>
+            <fieldtype _type="object"
+					_class="org.gvsig.normalization.patterns.Fieldtype">
+                <stringvalue _type="object"
+					_class="org.gvsig.normalization.patterns.Stringvalue">
+					<stringvaluewidth _type="int">50</stringvaluewidth>
+				</stringvalue>
+            </fieldtype>
+            <fieldwidth _type="int">0</fieldwidth>
+            <fieldseparator _type="object"
+				_class="org.gvsig.normalization.patterns.Fieldseparator">
+				<tabsep _type="str">false</tabsep>
+				<spacesep _type="str">false</spacesep>
+				<colonsep _type="str">false</colonsep>
+				<semicolonsep _type="str">true</semicolonsep>
+				<othersep _type="null"></othersep>
+				<joinsep _type="str">false</joinsep>
+			</fieldseparator>
+			<infieldseparators _type="object"
+				_class="org.gvsig.normalization.patterns.Infieldseparators">
+				<thousandseparator _type="str">.</thousandseparator>
+				<decimalseparator _type="str">,</decimalseparator>
+				<textseparator _type="str">&quot;</textseparator>
+			</infieldseparators>           
+            <importfield _type="str">true</importfield>
+        </element>
+        <element _type="object"
+	_class="org.gvsig.normalization.patterns.Element">
+            <fieldname _type="str">campo2</fieldname>
+            <fieldtype _type="object"
+					_class="org.gvsig.normalization.patterns.Fieldtype">
+                <stringvalue _type="object"
+					_class="org.gvsig.normalization.patterns.Stringvalue">
+					<stringvaluewidth _type="int">50</stringvaluewidth>
+				</stringvalue>
+            </fieldtype>
+            <fieldwidth _type="int">0</fieldwidth>
+            <fieldseparator _type="object"
+				_class="org.gvsig.normalization.patterns.Fieldseparator">
+				<tabsep _type="str">false</tabsep>
+				<spacesep _type="str">false</spacesep>
+				<colonsep _type="str">false</colonsep>
+				<semicolonsep _type="str">true</semicolonsep>
+				<othersep _type="null"></othersep>
+				<joinsep _type="str">false</joinsep>
+			</fieldseparator>
+			<infieldseparators _type="object"
+				_class="org.gvsig.normalization.patterns.Infieldseparators">
+				<thousandseparator _type="str">.</thousandseparator>
+				<decimalseparator _type="str">,</decimalseparator>
+				<textseparator _type="str">&quot;</textseparator>
+			</infieldseparators>            
+            <importfield _type="str">true</importfield>
+        </element>
+    </elements>
+</patternnormalization>

@@ -1,0 +1,144 @@
+<patternnormalization _type="object" _class="org.gvsig.normalization.patterns.Patternnormalization">
+  <elements _type="list">
+    <element _type="object" _class="org.gvsig.normalization.patterns.Element">
+      <fieldname _type="str">NewField</fieldname>
+      <fieldseparator _type="object" _class="org.gvsig.normalization.patterns.Fieldseparator">
+        <colonsep _type="str">true</colonsep>
+        <joinsep _type="str">true</joinsep>
+        <othersep _type="str">.</othersep>
+        <semicolonsep _type="str">true</semicolonsep>
+        <spacesep _type="str">false</spacesep>
+        <tabsep _type="str">false</tabsep>
+      </fieldseparator>
+      <fieldtype _type="object" _class="org.gvsig.normalization.patterns.Fieldtype">
+        <stringvalue _type="object" _class="org.gvsig.normalization.patterns.Stringvalue">
+          <stringvaluewidth _type="int">50</stringvaluewidth>
+        </stringvalue>
+      </fieldtype>
+      <fieldwidth _type="int">0</fieldwidth>
+      <importfield _type="str">true</importfield>
+      <infieldseparators _type="object" _class="org.gvsig.normalization.patterns.Infieldseparators">
+        <decimalseparator _type="str">,</decimalseparator>
+        <textseparator _type="str">&quot;</textseparator>
+        <thousandseparator _type="str">.</thousandseparator>
+      </infieldseparators>
+    </element>
+    <element _type="object" _class="org.gvsig.normalization.patterns.Element">
+      <fieldname _type="str">NewField2</fieldname>
+      <fieldseparator _type="object" _class="org.gvsig.normalization.patterns.Fieldseparator">
+        <colonsep _type="str">true</colonsep>
+        <joinsep _type="str">true</joinsep>
+        <othersep _type="str">.</othersep>
+        <semicolonsep _type="str">true</semicolonsep>
+        <spacesep _type="str">false</spacesep>
+        <tabsep _type="str">false</tabsep>
+      </fieldseparator>
+      <fieldtype _type="object" _class="org.gvsig.normalization.patterns.Fieldtype">
+        <stringvalue _type="object" _class="org.gvsig.normalization.patterns.Stringvalue">
+          <stringvaluewidth _type="int">50</stringvaluewidth>
+        </stringvalue>
+      </fieldtype>
+      <fieldwidth _type="int">0</fieldwidth>
+      <importfield _type="str">true</importfield>
+      <infieldseparators _type="object" _class="org.gvsig.normalization.patterns.Infieldseparators">
+        <decimalseparator _type="str">,</decimalseparator>
+        <textseparator _type="str">&quot;</textseparator>
+        <thousandseparator _type="str">.</thousandseparator>
+      </infieldseparators>
+    </element>
+    <element _type="object" _class="org.gvsig.normalization.patterns.Element">
+      <fieldname _type="str">NewField3</fieldname>
+      <fieldseparator _type="object" _class="org.gvsig.normalization.patterns.Fieldseparator">
+        <colonsep _type="str">true</colonsep>
+        <joinsep _type="str">true</joinsep>
+        <othersep _type="null"></othersep>
+        <semicolonsep _type="str">true</semicolonsep>
+        <spacesep _type="str">false</spacesep>
+        <tabsep _type="str">false</tabsep>
+      </fieldseparator>
+      <fieldtype _type="object" _class="org.gvsig.normalization.patterns.Fieldtype">
+        <integervalue _type="object" _class="org.gvsig.normalization.patterns.Integervalue">
+          <integervaluewidth _type="int">25</integervaluewidth>
+        </integervalue>
+      </fieldtype>
+      <fieldwidth _type="int">0</fieldwidth>
+      <importfield _type="str">true</importfield>
+      <infieldseparators _type="object" _class="org.gvsig.normalization.patterns.Infieldseparators">
+        <decimalseparator _type="str">,</decimalseparator>
+        <textseparator _type="str">&quot;</textseparator>
+        <thousandseparator _type="str">.</thousandseparator>
+      </infieldseparators>
+    </element>
+    <element _type="object" _class="org.gvsig.normalization.patterns.Element">
+      <fieldname _type="str">NewField4</fieldname>
+      <fieldseparator _type="object" _class="org.gvsig.normalization.patterns.Fieldseparator">
+        <colonsep _type="str">true</colonsep>
+        <joinsep _type="str">true</joinsep>
+        <othersep _type="null"></othersep>
+        <semicolonsep _type="str">true</semicolonsep>
+        <spacesep _type="str">false</spacesep>
+        <tabsep _type="str">false</tabsep>
+      </fieldseparator>
+      <fieldtype _type="object" _class="org.gvsig.normalization.patterns.Fieldtype">
+        <integervalue _type="object" _class="org.gvsig.normalization.patterns.Integervalue">
+          <integervaluewidth _type="int">25</integervaluewidth>
+        </integervalue>
+      </fieldtype>
+      <fieldwidth _type="int">0</fieldwidth>
+      <importfield _type="str">true</importfield>
+      <infieldseparators _type="object" _class="org.gvsig.normalization.patterns.Infieldseparators">
+        <decimalseparator _type="str">,</decimalseparator>
+        <textseparator _type="str">&quot;</textseparator>
+        <thousandseparator _type="str">.</thousandseparator>
+      </infieldseparators>
+    </element>
+    <element _type="object" _class="org.gvsig.normalization.patterns.Element">
+      <fieldname _type="str">NewField5</fieldname>
+      <fieldseparator _type="object" _class="org.gvsig.normalization.patterns.Fieldseparator">
+        <colonsep _type="str">true</colonsep>
+        <joinsep _type="str">true</joinsep>
+        <othersep _type="str">.</othersep>
+        <semicolonsep _type="str">true</semicolonsep>
+        <spacesep _type="str">false</spacesep>
+        <tabsep _type="str">false</tabsep>
+      </fieldseparator>
+      <fieldtype _type="object" _class="org.gvsig.normalization.patterns.Fieldtype">
+        <stringvalue _type="object" _class="org.gvsig.normalization.patterns.Stringvalue">
+          <stringvaluewidth _type="int">50</stringvaluewidth>
+        </stringvalue>
+      </fieldtype>
+      <fieldwidth _type="int">0</fieldwidth>
+      <importfield _type="str">true</importfield>
+      <infieldseparators _type="object" _class="org.gvsig.normalization.patterns.Infieldseparators">
+        <decimalseparator _type="str">,</decimalseparator>
+        <textseparator _type="str">&quot;</textseparator>
+        <thousandseparator _type="str">.</thousandseparator>
+      </infieldseparators>
+    </element>
+    <element _type="object" _class="org.gvsig.normalization.patterns.Element">
+      <fieldname _type="str">NewField6</fieldname>
+      <fieldseparator _type="object" _class="org.gvsig.normalization.patterns.Fieldseparator">
+        <colonsep _type="str">true</colonsep>
+        <joinsep _type="str">true</joinsep>
+        <othersep _type="str">.</othersep>
+        <semicolonsep _type="str">true</semicolonsep>
+        <spacesep _type="str">false</spacesep>
+        <tabsep _type="str">false</tabsep>
+      </fieldseparator>
+      <fieldtype _type="object" _class="org.gvsig.normalization.patterns.Fieldtype">
+        <stringvalue _type="object" _class="org.gvsig.normalization.patterns.Stringvalue">
+          <stringvaluewidth _type="int">50</stringvaluewidth>
+        </stringvalue>
+      </fieldtype>
+      <fieldwidth _type="int">0</fieldwidth>
+      <importfield _type="str">true</importfield>
+      <infieldseparators _type="object" _class="org.gvsig.normalization.patterns.Infieldseparators">
+        <decimalseparator _type="str">,</decimalseparator>
+        <textseparator _type="str">&quot;</textseparator>
+        <thousandseparator _type="str">.</thousandseparator>
+      </infieldseparators>
+    </element>
+  </elements>
+  <nofirstrows _type="int">0</nofirstrows>
+  <patternname _type="str">patSplitChain5.xml</patternname>
+</patternnormalization>

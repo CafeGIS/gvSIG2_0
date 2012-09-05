@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by vic (vic) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--<xsd:schema targetNamespace="http://www.w3schools.com" 
+		xmlns="http://www.w3schools.com" 
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		elementFormDefault="qualified"> -->
+	<xsd:element name="patterngeocoding">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="patternname"/>
+				<xsd:element ref="patternurl"/>
+				<xsd:element ref="source"/>
+				<xsd:element ref="settings"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="patternname" type="xsd:string"/>
+	<xsd:element name="patternurl" type="xsd:string"/>
+	<xsd:element name="source">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="addressstyle"/>
+				<xsd:element ref="layersource"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="layersource">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element ref="shpfile"/>
+				<xsd:element ref="jdbc"/>
+			</xsd:choice>
+			<xsd:attribute name="id" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="property">
+		<xsd:complexType>
+			<xsd:attribute name="key" type="xsd:string" use="required"/>
+			<xsd:attribute name="value" type="xsd:string" use="optional"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="addressstyle">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="field" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="field">
+		<xsd:complexType>
+			<xsd:attribute name="name" type="xsd:string" use="required"/>
+			<xsd:attribute name="addresselement" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="settings">
+		<xsd:complexType>
+			<xsd:attribute name="maxresults" type="xsd:integer" default="10"/>
+			<xsd:attribute name="accuracy" type="xsd:integer" default="80"/>
+			<xsd:attribute name="quality" type="xsd:integer" default="80"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="shpfile">
+		<xsd:complexType>
+			<xsd:attribute name="file" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="jdbc">
+		<xsd:complexType>
+			<xsd:attribute name="server" type="xsd:string" use="required"/>
+			<xsd:attribute name="database" type="xsd:string" use="required"/>
+			<xsd:attribute name="table" type="xsd:string" use="required"/>
+			<xsd:attribute name="user" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
