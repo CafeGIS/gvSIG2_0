@@ -1,0 +1,83 @@
+jdwglib Developer's Guide
+
+Overview
+
+The Java DWG Library (jdwglib) is a Java libray designed for reading, handling and
+writing drawing files in the Autodesk DWG format. This document is the design
+specification for the classes, methods and algorithms implemented in the Java DWG
+Library.
+
+jdwglib has two different parts, first for DWG file accesing, and second for DWG file
+handling. The part for accesing DWG files support the reading of DWG files and in
+future versions we hope that writing of DWG files will be supported too. The part for
+handling DWG files is designed for managing DWG complex objects like polylines or
+blocks with the objective that the spatial position and the attributes of DWG objects
+will be definitive and no one operation is required for obtaining the same results
+that Autocad.
+
+The detailed documentation of the class hierarchy and methods will be presented in the
+form of JavaDoc for the source code.
+
+
+Other resources
+
+- Pythoncad DWG Library by Art Haas (www.pythoncad.org). The part of jdwglib that reads
+  DWG files is a port of this library with an object oriented model added.
+
+- The AutoCAD R13/R14/R2000 DWG File Specification by the OpenDWG Alliance. This is the
+  public specification of the DWG format obtained using reverse engineering methods by
+  the OpenDWG Alliance (www.opendwg.org).
+
+
+Handling DWG files
+
+jdwglib has been developed to allow GPL GIS applications to handle the information
+stored in DWG files.
+
+jdwglib has been designed to allow developers to create DWG drivers for their
+CAD/GIS applications easily and in a GPL environment.
+
+The use of jdwglib for any driver is ever the same:
+
+- DwgFile dwgFile = new DwgFile(dwg.getAbsolutePath()); Creates a new DwgFile
+  object for reading a DWG file.
+
+- dwgFile.read(); Reads the DWG file but don't configure its objects.
+
+- dwgFile.initializeLayerTable(); Creates a table with the DWG file layer
+  information.
+
+- dwgFile.calculateGisModelDwgPolylines() or dwgFile.calculateCadModelDwgPolylines();
+  calculateGisModelDwgPolylines() configures Polyline's geometry. In Polylines with
+  arcs, these arcs are defined by a set of points and a distance between these points.
+  calculateCadModelDwgPolylines() configures Polyline's geometry. In Polylines with
+  arcs, these arcs are defined by a curvature parameter called bulge that is associated
+  with the points.
+
+- dwgFile.applyExtrusions(); The extrusion parameters of the objets in a DWG file
+  changes the location of these objects.
+
+- dwgFile.testDwg3D(): test if the DWG file has elevation information.
+
+- dwgFile.blockManagement(); This method manages the blocks contained in a DWG file.
+
+- Vector dwgObjects = dwgFile.getDwgObjects(); Import the set of DWG objects. Now they
+  are correctly configured.
+
+- for (int i=0;i<dwgObjects.size();i++) {
+			DwgObject iObj = (DwgObject)dwgObjects.get(i);
+			if (iObj instanceof DwgArc) {
+				//Convert iObj to the corresponding object model
+			}
+  } Convert DWG objects to the corresponding object model.
+
+- String layerName = dwgFile.getLayerName(iObj); Returns the layer name of a DWG
+  object.
+
+- int colorByLayer = dwgFile.getColorByLayer(iObj); Returns color of the layer of a
+  DWG object.
+
+The author has implemented a DWG driver for gvSIG based on this library, and a DWG
+driver for other Java GIS application like Jump or uDig must be easy to implement too.
+
+

@@ -1,0 +1,58 @@
+jdwglib Technical Specifications
+
+Overview
+
+The Java DWG Library (jdwglib) is a Java libray designed for reading, handling and
+writing drawing files in the Autodesk DWG format. This document is the design
+specification for the classes, methods and algorithms implemented in the Java DWG
+Library.
+
+jdwglib has two different parts, first for DWG file accesing, and second for DWG file
+handling. The part for accesing DWG files support the reading of DWG files and in
+future versions we hope that writing of DWG files will be supported too. The part for
+handling DWG files is designed for managing DWG complex objects like polylines or
+blocks with the objective that the spatial position and the attributes of DWG objects
+will be definitive and no one operation is required for obtaining the same results
+that Autocad.
+
+The detailed documentation of the class hierarchy and methods will be presented in the
+form of JavaDoc for the source code.
+
+
+Other resources
+
+- Pythoncad DWG Library by Art Haas (www.pythoncad.org). The part of jdwglib that reads
+  DWG files is a port of this library with an object oriented model added.
+
+- The AutoCAD R13/R14/R2000 DWG File Specification by the OpenDWG Alliance. This is the
+  public specification of the DWG format obtained using reverse engineering methods by
+  the OpenDWG Alliance (www.opendwg.org).
+
+
+Design goals
+
+The design of jdwglib is intended to fulfil the following goals:
+
+- jdwglib must return the definitive set of DWG objects. Geometric and
+  non geometric attributes of these objects will be enough for its correct and complete
+  representation.
+
+- The jdwglib interface must be easy to use, even by someone that hasn't advanced
+  CAD knowledge.
+
+- jdwglib will be fast enough to be used in a production environment.
+
+- The algorithms and code used in jdwglib will be clear and well-structured, to
+  facilitate understanding by other developers.
+
+
+Object model
+
+The package javacad.util contains some general classes that are useful for handling
+DWG objects and other objects in a GIS environment. Their use is described in the
+JavaDoc documentation.
+
+The package jdwglib contains the classes for reading and managing DWG files and its
+objects. Their use is described in the JavaDoc documentation.
+
+

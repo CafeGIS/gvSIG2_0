@@ -1,0 +1,31 @@
+jdwglib version history
+
+This document lists the Change History of release versions of jdwglib
+
+
+Version 0.1
+Release Date: 20-05-2005
+
+- Baseline version
+
+
+Version 0.2
+Release Date: 20-06-2005
+
+- Block management (at Driver)
+
+- 3D support
+
+- Ellipse support
+
+- Some bugs fixed
+
+
+Version 0.3
+Release Date: 06-09-2005
+
+- Block management
+
+- Some bugs fixed
+
+

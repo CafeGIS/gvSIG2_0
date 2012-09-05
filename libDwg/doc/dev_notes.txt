@@ -1,0 +1,246 @@
+jdwglib Development Notes
+
+Objetivos
+
+- gvSIG debe leer ficheros en formato DWG
+
+
+Alternativas
+	
+	Librerías OpenDWG
+		
+		Ventajas
+		
+		- Soporte del formato DWG de la más alta calidad garantizado
+		
+		- Permite tanto lectura como escritura
+		
+		- Todas las versiones están soportadas
+		
+		- OpenDWG tiene gran capacidad de desarrollo
+		
+		Inconvenientes
+		
+		- Está en C y es necesario un acceso JNI
+		
+		- Una empresa que de un uso comercial a gvSIG debe pagar a OpenDWG por sus
+		  librerías
+		
+		- Un usuario que no de un uso comercial a gvSIG debe mandar un contrato
+		  firmado a la OpenDWG
+		
+		- OpenDWG puede decidir no facilitar sus librerías
+		
+		- OpenDWG en la práctica no tiene ninguna obligación para con sus
+		  usuarios
+	
+	Acceso vía jython a la librería de DWG en Python de Art Haas
+		
+		Ventajas
+		
+		- Máxima reutilización de la librería original de Art Haas
+		
+		- Facilidad a la hora de incorporar nuevas versiones de la librería original
+		
+		Inconvenientes
+		
+		- Incremento muy muy considerable de la complejidad del código
+		
+		- Ralentización de la librería
+		
+		- Grandes dificultades para realizar cambios en el código
+		
+		- Es posible que Art no vaya a sacar nuevas versiones de esta librería
+		
+		- La librería de Art no está orientada a objetos. La propia opinión de Art es
+		  que la mejor opción es el porting dotando a la nueva librería de orientación
+		  a objetos
+	
+	Port a Java de la librería de DWG en Python de Art Haas
+		
+		Ventajas
+		
+		- Desarrollo completo GPL
+		
+		- Lectura completa de ficheros DWG hasta la versión 2000
+		
+		- Si se publica la librería quizá se logre la colaboración de otros
+		  desarrolladores
+		
+		- Art Haas no descarta la posibilidad de implementar la escritura de DWG
+		
+		Inconvenientes
+		
+		- Hoy por hoy no existe colaboración en este sentido por parte de la
+		  OpenDWG, ni por parte de Art Haas (desarrollador de la librería en python
+		  de lectura de DWG)
+		
+		- La especificación de la OpenDWG tiene errores que no piensan resolver
+
+
+Cronología
+
+050308 - 050520 = 2 meses. Menos el tiempo empleado en el Proyecto del CAD y en
+el de Felipe ... mes y medio.
+
+050308 - 050316 --> Reparando bugs del modulo de CAD e investigando las
+					alternativas para la lectura de DWG
+
+050316 - 050321 --> Investigando las alternativas para la lectura de DWG. Intento
+					de desarrollo según la especificación. Descubrimiento de la
+					librería de Art
+
+050321 - 050331 --> Probando la librería de Art. Probando el acceso vía jython
+
+050331 - 050408 --> Probando el acceso vía jython y portando la librería a Java
+					paralelamente. Corrección de bugs del CAD
+
+050408 - 050425 --> Portando la librería a java y dotarla de orientación a objectos.
+					Corrección de bugs
+
+050425 - 050510 --> Corrección de bugs. Gestión de polilíneas y bloques en el driver.
+					Obtención de nombres de capa y colores por capa
+
+050510 - 050515 --> Corrigiendo bugs. Reestructurando la librería para que soporte
+					la gestión que antes se hacía en el driver
+
+050515 - 050520 --> Corrigiendo bugs. Buscando ayuda para resolver estos bugs.
+					Maqueando jdwglib v0.1 y su driver para gvSIG
+
+
+Perspectivas
+
+Mientras no cambie la política (y no creo que eso suceda) de la OpenDWG, la gestión de
+información contenida en ficheros DWG a través de su librería será propietaria y de
+pago. La ventaja de su utilización es su potencia. Representa el camino rápido y
+sencillo
+
+jdwglib se ajusta a los requisitos exijidos en el pliego para gvSIG y además constituye
+la primera librería libre de lectura de ficheros DWG en Java. Para lograr que la
+lectura de DWG a través de esta librería sea tan efectiva como la de DXF, tan solo
+hay que solucionar los bugs conocidos. Para ello sería de gran ayuda la publicación de
+la librería y la colaboración de la comunidad en el desarrollo. Sobre este tema habría
+que discutir cuando es buen momento para la publicación, puesto que esta librería podría
+ser aprovechada por ProDevelop para mejorar su oferta de CAD
+
+Con ayuda de la comunidad los objetivos pueden cumplirse en un plazo breve, quizá un
+mes. Sin ayuda, el proceso de depuración de la librería puede prolongarse más y hasta
+es posible que no se consigan eliminar todos los bugs
+
+
+Supported features
+
+Fomatos gráficos soportados
+
+- Lectura del formato DWG de Autodesk
+
+Versiones soportadas
+
+- Versión 15 del formato DWG
+
+Objectos gráficos soportados
+
+- Arc
+
+- Block
+
+- Block Control
+
+- Block Header
+
+- Circle
+
+- Endblk
+
+- Insert
+
+- Layer
+
+- Layer Control
+
+- Line
+
+- Linear Dimension
+
+- MText
+
+- Point
+
+- Polyline2D
+
+- LwPolyline
+
+- Seqend
+
+- Solid
+
+- Spline
+
+- Text
+
+- Vertex2D
+
+- Ellipse
+
+- Polyline3D
+
+- Vertex3D
+
+
+Otros elementos implementados
+
+- bulges
+
+- 3D
+
+- Extrusiones
+
+
+TODO List
+
+- Inserción de bloques en 3D
+
+- Completar la implementación de todos los elementos dentro de bloques
+
+- Attdef
+
+- Attrib
+
+- Thickness
+
+- Aceleración de la lectura
+
+- Aceleración de la gestión de elementos complejos
+
+
+Known bugs
+
+- Bugs concretos en el manejo de bloques
+
+- LwPolylines  <-- FIXED 050524
+
+- Layer handle "4 0" --> layer names, color by layer y bloques
+
+- leve inclinación anómala y homogenea de los textos (quizá relacionada con el ángulo
+  de convergencia de las hojas) <-- FIXED 050527
+
+- Bugs relacionados con polilíneas sin vértices
+
+- Elementos fuera de sitio
+
+- Elipses completas dentro de bloques
+
+- Arcos de elipse
+
+- Pequeños errores en arcos o polilíneas con bulges
+
+
+Feature Request
+
+- Lectura del formato DWG versión 13 y 14
+
+- Lectura y escritura del formato DXF de Autodesk
+
+- Escritura del formato DWG
+
+
