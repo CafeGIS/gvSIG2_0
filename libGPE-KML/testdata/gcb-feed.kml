@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<NetworkLink>
+	<name>Gombe Chimpanzee Blog</name>
+	<open>1</open>
+	<flyToView>1</flyToView>
+	<Url>
+		<href>http://www.janegoodall.org/news/gombe-blog/feed/gcb-feed2.kml</href>
+		<refreshMode>onInterval</refreshMode>
+		<refreshInterval>21600</refreshInterval>
+	</Url>
+</NetworkLink>
+</kml>

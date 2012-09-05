@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) 2006 CBS Broadcasting Inc. -->
+<!--     All rights reserved        -->
+<!-- Author: J. Andrew Rogers (jrogers@neopolitan.com) for CBS News -->
+<kml xmlns="http://earth.google.com/kml/2.0">
+	<Document>
+		<name>CBS News Seismic Monitor (Source: USGS)</name>
+		<NetworkLink>
+			<name>CBS News Seismic Monitor (Source: USGS)</name>
+			<description>Earthquake list updates every 5 minutes</description>
+			<refreshVisibility>1</refreshVisibility>
+			<Url>
+				<href>http://seismic.cbsnews.google.neopolitan.com/cbs/recent_earthquakes_public.kml</href>
+				<refreshMode>onInterval</refreshMode>
+				<refreshInterval>300</refreshInterval>
+			</Url>
+		</NetworkLink>
+
+		<Folder>
+			<name>Layers and Legends</name>
+			<open>0</open>
+			<visibility>1</visibility>
+			<ScreenOverlay>
+				<name>Earthquake Legend</name>
+				<visibility>1</visibility>
+				<Icon><href>http://seismic.cbsnews.google.neopolitan.com/cbs/images/EarthquakeLegend_public.png</href></Icon>
+				<overlayXY x="1" xunits="fraction" y="1" yunits="fraction"/>
+				<screenXY x="1" xunits="fraction" y="0.7" yunits="fraction"/>
+				<rotationXY x="0" xunits="fraction" y="0" yunits="fraction"/>
+				<size x="0" xunits="fraction" y="0" yunits="fraction"/>
+			</ScreenOverlay>
+			<Folder>
+				<name>Plate Tectonics</name>
+				<visibility>0</visibility>
+				<open>0</open>
+				<NetworkLink>
+					<visibility>0</visibility>
+					<name>Plate Tectonics Layer</name>
+					<Url>
+						<href>http://seismic.cbsnews.google.neopolitan.com/cbs/plates.kml</href>
+					</Url>
+				</NetworkLink>
+				<ScreenOverlay>
+					<name>Plate Legend</name>
+					<visibility>0</visibility>
+					<Icon><href>http://seismic.cbsnews.google.neopolitan.com/cbs/images/PlateLegend.png</href></Icon>
+					<overlayXY x="1" xunits="fraction" y="1" yunits="fraction"/>
+					<screenXY x="0.20" xunits="fraction" y="0.5" yunits="fraction"/>
+					<rotationXY x="0" xunits="fraction" y="0" yunits="fraction"/>
+					<size x="0" xunits="fraction" y="0" yunits="fraction"/>
+				</ScreenOverlay>
+			</Folder>	
+			<ScreenOverlay>
+				<name>Shakemap Legend</name>
+				<visibility>0</visibility>
+				<Icon><href>http://seismic.cbsnews.google.neopolitan.com/cbs/images/ShakemapLegend_public.png</href></Icon>
+				<overlayXY x="1" xunits="fraction" y="0" yunits="fraction"/>
+				<screenXY x="1" xunits="fraction" y="0.1" yunits="fraction"/>
+				<rotationXY x="0" xunits="fraction" y="0" yunits="fraction"/>
+				<size x="0" xunits="fraction" y="0" yunits="fraction"/>
+			</ScreenOverlay>
+		</Folder>
+		
+	</Document>
+</kml>
+
+
