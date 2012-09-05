@@ -1,0 +1,32 @@
+<project name="MyProject" default="generate-config-classes" basedir=".">
+  	<!-- set global properties for this build -->
+	<property name="bin" location="bin" />
+	<property name="src" location="src" />
+	<property name="lib" location="lib" />
+	<property name="schemas" location="schemas" />
+	
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp />
+	</target>
+
+	<!-- Genera las clases a partir de los esquemas -->
+	<target name="generate-config-classes">
+		<delete>
+			<fileset dir="${src}" includes="com/iver/utiles/xmlEntity/generate/**" />
+		</delete>
+		<java classname="org.exolab.castor.builder.SourceGenerator">
+			<classpath>
+				<pathelement path="../GVSIG/lib/castor-0.9.5.3-xml.jar" />
+				<pathelement path="../GVSIG/lib/xercesImpl.jar" />
+			</classpath>
+			<arg value="-i" />
+			<arg value="${schemas}/xml-entity.xsd" />
+			<arg value="-package" />
+			<arg value="com.iver.utiles.xmlEntity.generate" />
+			<arg value="-dest" />
+			<arg value="${src}" />
+		</java>
+	</target>
+  
+</project>

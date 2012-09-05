@@ -1,0 +1,37 @@
+1. Uso del control ListManagerDemoSkin
+
+	Para incluir el control y definir su funcionalidad en
+un diálogo hay que añadir el control como con cualquier 
+otro a un JPanel. Una vez añadido hay que definir el 
+comportamiento de los botones, que se hace estableciendo
+el listener de eventos del ListManager:
+
+	listManagerSkin.getListManager().setListener();
+	
+lo cual obligará a implementar una interfaz, en la que se
+define el comportamiento de los botones añadir y propiedades.
+
+Esto ya da la funcionalidad de los botones. Una vez esto hecho
+será bastante frecuente querer acceder a los objetos añadidos,
+para ello se puede usar la siguiente instrucción:
+	
+	listManagerSkin.getListManager().getListModel().getObjects();
+
+2. Creación de un skin del control
+
+	Para crear una skin (forma de visualización del control) hay
+que crear un control con los botones Añadir, eliminar, 
+arriba, abajo y propiedades o un subconjunto de estos. Declarar
+un campo como
+
+	private ListManager listManager = new ListManager();
+
+Y en un método de inicialización del componente poner 
+las siguientes instrucciones
+
+		listManager.setBtnDown(getJButton());
+		listManager.setBtnUp(getJButton1());
+		listManager.setBtnAdd(getJButton2());
+		listManager.setBtnDel(getJButton3());
+		listManager.setList(getJList());
+		listManager.initialize();

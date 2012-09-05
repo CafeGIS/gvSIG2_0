@@ -1,0 +1,116 @@
+<html>
+<body>
+<p>
+Este paquete expone un mecanismo para registro de clases.
+</p>
+<p>
+Permite registrar clases o factorias de clases que luego pueden ser
+recuperadas para construir instancias.
+</p>
+<p>
+La finalidad de este registro es el manejo de puntos de extension a una
+aplicacion. Una aplicacion declara o registra con un nombre los puntos de 
+extension que va a tener. Cada punto de extension puede tener registradas una
+o mas extensiones. Cuando se quiere añadir una extension a la aplicacion, se
+registra la clase o factoria que gestiona esa extension para el punto de extension
+que se desee. 
+</p>
+<p>
+Veamos esto con un ejemplo.
+</p>
+<p>
+Supongamos que queremos añadir un punto de extension a la aplicacion gvSIG, que
+permita asignar un mecanismo de presentacion de la informacion asociada a la
+herramienta de "informacion" especializada segun el tipo de tema sobre el que se
+esta trabajando.
+</p>
+<p>
+Lo primero que tendriamos que hacer es darle un nombre al punto de extension.
+Lo llamaremos "InfoByPoint". Para esto, la aplicacion que valla a utilizar
+las extensiones que se registren en este punto deberia hacer lo siguiente:
+</p>
+<pre>
+  ExtensionPoint infoByPoint = new ExtensionPoint("InfoByPoint","Registra las distintas extensiones que se pueden añadir al 'InfoByPoint'");
+  ExtensionPoints extensionPoints = ExtensionPointsSingleton.getInstance();
+  
+  extensionPoints.put(infoByPoint);
+</pre>
+<p>
+Con esto creamos un punto de extension de nombre "InfoByPoint", recogemos la 
+instancia del registro de extensiones e insertamos el nuevo punto de extenstion
+en el.<br>
+Normalmente esta operacion, en el contexto de gvSIG, se realizaria en la
+inicializacion de la extension de andami en la que vallamos a añadir
+la herramienta de informacion.
+</p>
+<p>
+Las extensiones a registrar en el "InfoByPoint" podrian consistir un un 
+JPanel que gestione la presentacion a usar para el tema.
+</p>
+<p>
+Luego, desde la parte de la aplicacion que necesite añadir nueva funcionalidad
+en este punto de extension, se deberia añadir la extension. Por ejemplo
+en la extension de andami de WMS, se podria añadir a "InfoByPoint" la posibilidad
+de usar una forma especial de presentacion. Podria hacerse:
+</p>
+<pre>
+    ExtensionPoints extensionPoints = ExtensionPointsSingleton.getInstance();
+    extensionPoints.add("InfoByPoint","WMS",PanelQueGestionaLaExtension);
+</pre>
+<p>
+Donde "PanelQueGestionaLaExtension" sera el JPanel que gestiona la extension para 
+"InfoByPoint" de WMS.
+</p>
+<p>
+Si quieran acceder a la extension de nombre "WMS"
+se haria:
+</p>
+<pre>
+    ExtensionPoints extensionPoints = ExtensionPointsSingleton.getInstance();
+    ExtensionPoint infoByPoint = (ExtensionPoint)extensionPoints.get("InfoByPoint");
+    Object ext = infoByPoint.create("WMS");
+</pre>
+<p>
+Y esto nos devolberia un objeto JPanel que gestiona la extension "WMS"
+para el "InfoByPoint".
+</p>
+<p>
+Si quisiesemos recorrer las distintas extensiones de ese punto podriamos
+hacerlo asi:
+</p>
+<pre>
+    ExtensionPoints extensionPoints = ExtensionPointsSingleton.getInstance();
+    ExtensionPoint infoByPoint = (ExtensionPoint)extensionPoints.get("InfoByPoint");
+    Iterator infoByPoint =infoByPoint.keySet().iterator();
+    while( i.hasNext() ) {
+      String nombre = (String)i.next();
+      ...
+      // Y para crear los JPanel asociados a la extension...
+      Object panel = infoByPoint.create(nombre);
+      ...
+    }
+</pre>  
+<p>
+Ademas de registrar clases en un punto de extension, se pueden registrar
+instancias que implementen el interface de IExtensionBuilder. En este caso, 
+cuando se invoque al metodo "create" del punto de extension, en lugar
+de crear una instancia, como no tiene la clase, este invocara al metodo
+create del objeto que ha sido registrado.
+</p>
+
+<p>
+Podemos encontrar un ejemplo de esto en la extension de JDBC para el 
+catalogo. Como no existe una capa especifica para las capas JDBC, en lugar
+de registrar en el punto de extension una clase "capa JDBC", se registra
+una clase que implementa el interface IExtensionBuilder, que en su
+metodo create construye una capa vectorial y la inicializa de la forma
+apropiada para funcionar con la fuente de datos de JDBC.
+</p>
+<p>
+Hay que tener en cuenta que para un punto de extension dado, deberia ser
+trasparente que se registren en el clases o instancias que contruyen las clases.
+E incluso que es posible mezclar en un punto de extension los dos
+mecanismos, como es el caso del catalogo.
+</p>
+</body>
+</html>
