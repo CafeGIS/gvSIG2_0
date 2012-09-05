@@ -1,0 +1,43 @@
+<project name="libCacheService" default="create-jar" basedir=".">
+  	<!-- set global properties for this build -->
+	<property name="src"  location="src"/>
+	<property name="build"  location="bin"/>
+	<property name="dist"  location="dist"/>
+	<property name="targetDir" location="../lib3DMap/lib"/>
+	<property name="jarName" value="libCacheService"/>
+	<property name="andamiLibs" location="../_fwAndami/lib" />
+	<property name="fmapLibs" location="../libFMap" />
+	<import file="../binaries/ant/utilities.xml"/>
+
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+  </target>
+
+	<target name="batch-build"
+				description="compile the sources, create the jar file"
+				depends="compile,create-jar">
+	</target>
+
+	<target name="compile" description="compile the source">
+		<!-- Compile the Java code from ${src} to ${build} -->
+		<mkdir dir="${build}" />
+		<loadEclipseClasspath project="${basedir}"/>
+		<gvSIG-javac
+			classpath="${eclipseClasspath}"	/>
+	</target>
+
+	<target name="create-jar" description="Crea el jar de la aplicacion">
+		<!--<mkdir dir="${dist}" />-->
+	  	<jar jarfile="${targetDir}/${jarName}.jar" basedir="${build}"/>
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${build}" />
+		<delete dir="${dist}" />
+	</target>
+
+</project>
+
