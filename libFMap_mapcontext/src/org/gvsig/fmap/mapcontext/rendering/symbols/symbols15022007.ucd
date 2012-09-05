@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="symbols15022007" size="5784,2824" id="com.iver.cit.gvsig.fmap.core.symbols" metadata="uml2-1.0" initialized="true" zoom="0.5" scrolledX="-1" tag="1000" key="3230303730313232206C6962464D61702F6A61756D65">
+  <children xsi:type="editmodel:ClassEditModel" name="TextSymbol" location="471,564" size="163,337" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol" runTimeClassModel="getSymbolForSelection(),getSymbolType(),drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;),print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;),getOnePointRgb(),setPrintingProperties(Ljavax.print.attribute.PrintRequestAttributeSet;),font,text,getXMLEntity(),textColor,isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;),draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),setXMLEntity(Lcom.iver.utiles.XMLEntity;),setText(Ljava.lang.String;),getClassName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="96,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="font" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#font"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="text" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#text"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="textColor" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#textColor"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,234">
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawInsideRectangle" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassName" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#getClassName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOnePointRgb" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#getOnePointRgb()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPixExtentPlus" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolForSelection" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#getSymbolForSelection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolType" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#getSymbolType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#getXMLEntity()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSuitableFor" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="print" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPrintingProperties" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#setPrintingProperties(Ljavax.print.attribute.PrintRequestAttributeSet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setText" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#setText(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/TextSymbol#setXMLEntity(Lcom.iver.utiles.XMLEntity;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.6/@sourceConnections.0 //@children.13/@sourceConnections.0 //@children.7/@sourceConnections.0" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/TextSymbol" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="81,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,121" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="AbstractSymbol" location="580,361" size="152,121" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractSymbol" runTimeClassModel="setIsShapeVisible(Z),setDescription(Ljava.lang.String;),setPrintingProperties(Ljavax.print.attribute.PrintRequestAttributeSet;),getDescription()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,72">
+      <children xsi:type="editmodel:MethodEditModel" name="getDescription" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractSymbol#getDescription()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDescription" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractSymbol#setDescription(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setIsShapeVisible" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractSymbol#setIsShapeVisible(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPrintingProperties" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractSymbol#setPrintingProperties(Ljavax.print.attribute.PrintRequestAttributeSet;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/AbstractSymbol" source="//@children.1" target="//@children.3/@sourceConnections.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MarkerFillSymbol" location="944,1023" size="226,355" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol" runTimeClassModel="getSymbolType(),getSymbolForSelection(),yOffset,markerSymbol,drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;),print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;),grid,ySeparation,rotation,getXMLEntity(),draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),setXMLEntity(Lcom.iver.utiles.XMLEntity;),xSeparation,xOffset,setMarker(Lcom.iver.cit.gvsig.fmap.core.symbols.AbstractMarkerSymbol;),getClassName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="203,126">
+      <children xsi:type="editmodel:AttributeEditModel" name="grid" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#grid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="markerSymbol" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#markerSymbol"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rotation" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#rotation"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="xOffset" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#xOffset"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="xSeparation" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#xSeparation"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="yOffset" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#yOffset"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ySeparation" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#ySeparation"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,180">
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawInsideRectangle" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassName" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#getClassName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPixExtentPlus" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolForSelection" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#getSymbolForSelection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolType" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#getSymbolType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#getXMLEntity()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="print" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMarker" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#setMarker(Lcom.iver.cit.gvsig.fmap.core.symbols.AbstractMarkerSymbol;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol#setXMLEntity(Lcom.iver.utiles.XMLEntity;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/MarkerFillSymbol" source="//@children.2" target="//@children.8/@sourceConnections.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="113,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.13/@sourceConnections.1" name="IMarkerSymbol" location="330,361" size="138,153" id="com.iver.cit.gvsig.fmap.core.symbols/IMarkerSymbol" runTimeClassModel="color,rotation,setOffset(Ljava.awt.geom.Point2D;),size,getOffset()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="93,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="color" id="com.iver.cit.gvsig.fmap.core.symbols/IMarkerSymbol#color"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rotation" id="com.iver.cit.gvsig.fmap.core.symbols/IMarkerSymbol#rotation"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="size" id="com.iver.cit.gvsig.fmap.core.symbols/IMarkerSymbol#size"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="76,36">
+      <children xsi:type="editmodel:MethodEditModel" name="getOffset" id="com.iver.cit.gvsig.fmap.core.symbols/IMarkerSymbol#getOffset()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOffset"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOffset" id="com.iver.cit.gvsig.fmap.core.symbols/IMarkerSymbol#setOffset(Ljava.awt.geom.Point2D;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.1/@sourceConnections.0" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/IMarkerSymbol" source="//@children.3" target="//@children.5" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="69,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="81,279" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SimpleLineSymbol" location="1244,1023" size="228,283" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol" runTimeClassModel="getSymbolForSelection(),getXMLEntity(),drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;),draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),setXMLEntity(Lcom.iver.utiles.XMLEntity;),getOnePointRgb(),getWidth(),getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;),setWidth(D),symbolForSelection,getClassName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="205,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="selSym"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="symbolForSelection" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#symbolForSelection"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,198">
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawInsideRectangle" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassName" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#getClassName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOnePointRgb" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#getOnePointRgb()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPixExtentPlus" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolForSelection" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#getSymbolForSelection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWidth" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#getWidth()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#getXMLEntity()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="print" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setWidth" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#setWidth(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol#setXMLEntity(Lcom.iver.utiles.XMLEntity;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractLineSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/SimpleLineSymbol" source="//@children.4" target="//@children.7" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="91,103"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.14/@sourceConnections.0" name="ISymbol" location="446,50" size="163,279" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol" runTimeClassModel="getSymbolForSelection(),getSymbolType(),isShapeVisible(),getXMLEntity(),drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;),isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;),draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),setXMLEntity(Lcom.iver.utiles.XMLEntity;),description,getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;),getOnePointRgb(),setPrintingProperties(Ljavax.print.attribute.PrintRequestAttributeSet;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="106,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="description" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#description"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,198">
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawInsideRectangle" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOnePointRgb" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#getOnePointRgb()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPixExtentPlus" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolForSelection" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#getSymbolForSelection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolType" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#getSymbolType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#getXMLEntity()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isShapeVisible" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#isShapeVisible()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSuitableFor" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPrintingProperties" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#setPrintingProperties(Ljavax.print.attribute.PrintRequestAttributeSet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol#setXMLEntity(Lcom.iver.utiles.XMLEntity;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.0" name="AbstractFillSymbol" location="664,564" size="161,193" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol" runTimeClassModel="getOutline(),setOutline(Lcom.iver.cit.gvsig.fmap.core.symbols.ILineSymbol;),isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;),setFillColor(Ljava.awt.Color;),getFillColor(),getOnePointRgb(),outline">
+    <children xsi:type="editmodel:CompartmentEditModel" size="113,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="color" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol#color"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="outline" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol#outline"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="107,108">
+      <children xsi:type="editmodel:MethodEditModel" name="getFillColor" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol#getFillColor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOnePointRgb" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol#getOnePointRgb()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSuitableFor" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol#isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFillColor" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol#setFillColor(Ljava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOutline" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol#getOutline()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOutline" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol#setOutline(Lcom.iver.cit.gvsig.fmap.core.symbols.ILineSymbol;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol" source="//@children.6" target="//@children.0/@sourceConnections.0" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="80,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="AbstractLineSymbol" location="1229,570" size="169,103" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractLineSymbol" runTimeClassModel="getSymbolType(),isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;),lineStyle">
+    <children xsi:type="editmodel:CompartmentEditModel" size="111,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="lineStyle" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractLineSymbol#lineStyle"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="104,36">
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolType" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractLineSymbol#getSymbolType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSuitableFor" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractLineSymbol#isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/AbstractLineSymbol" source="//@children.7" target="//@children.0/@sourceConnections.0" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="84,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DotDensityFillSymbol" location="694,1023" size="177,337" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol" runTimeClassModel="getSymbolForSelection(),getSymbolType(),getDotColor(),drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;),dotCount,print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),dotSize,getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;),getXMLEntity(),draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),setXMLEntity(Lcom.iver.utiles.XMLEntity;),setDotColor(Ljava.awt.Color;),DotDensityFillSymbol(),dotColor,dotSpacing,getClassName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="111,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="dotCount" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#dotCount"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dotSize" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#dotSize"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dotSpacing" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#dotSpacing"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dotColor" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#dotColor"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,216">
+      <children xsi:type="editmodel:MethodEditModel" name="DotDensityFillSymbol" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#DotDensityFillSymbol()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawInsideRectangle" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassName" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#getClassName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDotColor" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#getDotColor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPixExtentPlus" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolForSelection" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#getSymbolForSelection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolType" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#getSymbolType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#getXMLEntity()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="print" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDotColor" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#setDotColor(Ljava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol#setXMLEntity(Lcom.iver.utiles.XMLEntity;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.11/@sourceConnections.0 //@children.2/@sourceConnections.0" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/DotDensityFillSymbol" source="//@children.8" target="//@children.6" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="80,193" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SimpleMarkerSymbol" location="259,1023" size="179,301" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol" runTimeClassModel="getSymbolType(),getSymbolForSelection(),outlineSize,outlineColor,drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;),print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;),selectionSymbol,getXMLEntity(),draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),setXMLEntity(Lcom.iver.utiles.XMLEntity;),outline,hasOutline(),getClassName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="outline" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#outline"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="outlineColor" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#outlineColor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="outlineSize" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#outlineSize"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="selectionSymbol" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#selectionSymbol"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,180">
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawInsideRectangle" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassName" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#getClassName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPixExtentPlus" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolForSelection" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#getSymbolForSelection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolType" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#getSymbolType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#getXMLEntity()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="hasOutline" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#hasOutline()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="print" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol#setXMLEntity(Lcom.iver.utiles.XMLEntity;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/SimpleMarkerSymbol" source="//@children.9" target="//@children.12/@sourceConnections.0" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="89,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CharacterMarkerSymbol" location="468,1023" size="196,283" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol" runTimeClassModel="getSymbolForSelection(),getSymbolType(),CharacterMarkerSymbol(Ljava.awt.Font;ILjava.awt.Color;),drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;),print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),CharacterMarkerSymbol(),getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;),font,setCharacter(I),getXMLEntity(),draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),setXMLEntity(Lcom.iver.utiles.XMLEntity;),getClassName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="65,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="font" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#font"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="146,216">
+      <children xsi:type="editmodel:MethodEditModel" name="CharacterMarkerSymbol" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#CharacterMarkerSymbol(Ljava.awt.Font;ILjava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="CharacterMarkerSymbol" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#CharacterMarkerSymbol()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawInsideRectangle" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassName" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#getClassName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPixExtentPlus" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolForSelection" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#getSymbolForSelection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolType" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#getSymbolType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#getXMLEntity()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="print" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setCharacter" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#setCharacter(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol#setXMLEntity(Lcom.iver.utiles.XMLEntity;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/CharacterMarkerSymbol" source="//@children.10" target="//@children.12/@sourceConnections.0" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="98,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SimpleFillSymbol" location="1455,1023" size="220,211" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol" runTimeClassModel="getSymbolType(),getXMLEntity(),drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;),draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),setXMLEntity(Lcom.iver.utiles.XMLEntity;),getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;),symbolForSelection,getClassName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="197,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="symbolForSelection" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol#symbolForSelection"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,144">
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol#draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawInsideRectangle" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol#drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassName" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol#getClassName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPixExtentPlus" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol#getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolType" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol#getSymbolType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol#getXMLEntity()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="print" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol#print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol#setXMLEntity(Lcom.iver.utiles.XMLEntity;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractFillSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/SimpleFillSymbol" source="//@children.11" target="//@children.8/@sourceConnections.0" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="110,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PictureMarkerSymbol" location="50,1023" size="179,247" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol" runTimeClassModel="getSymbolForSelection(),getSymbolType(),getXMLEntity(),drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;),draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),setXMLEntity(Lcom.iver.utiles.XMLEntity;),PictureMarkerSymbol(Ljava.io.File;),PictureMarkerSymbol(Ljava.net.URL;),getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;),getClassName()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,198">
+      <children xsi:type="editmodel:MethodEditModel" name="PictureMarkerSymbol" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#PictureMarkerSymbol(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="PictureMarkerSymbol" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#PictureMarkerSymbol(Ljava.net.URL;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawInsideRectangle" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassName" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#getClassName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPixExtentPlus" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolForSelection" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#getSymbolForSelection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolType" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#getSymbolType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#getXMLEntity()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="print" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setXMLEntity" id="com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol#setXMLEntity(Lcom.iver.utiles.XMLEntity;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.9/@sourceConnections.0 //@children.10/@sourceConnections.0" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/PictureMarkerSymbol" source="//@children.12" target="//@children.13" targetEnd="//@children.12/@sourceConnections.0/@children.1" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="89,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="92,175" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.0" name="AbstractMarkerSymbol" location="50,564" size="185,175" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol" runTimeClassModel="color,rotation,setOffset(Ljava.awt.geom.Point2D;),isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;),getOnePointRgb(),size,offset">
+    <children xsi:type="editmodel:CompartmentEditModel" size="93,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="color" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol#color"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="offset" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol#offset"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rotation" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol#rotation"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="size" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol#size"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="107,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getOnePointRgb" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol#getOnePointRgb()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSuitableFor" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol#isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOffset" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol#setOffset(Ljava.awt.geom.Point2D;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/AbstractSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol" source="//@children.13" target="//@children.0/@sourceConnections.0" targetEnd="//@children.13/@sourceConnections.0/@children.1" sourceEnd="//@children.13/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="92,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/IMarkerSymbol&lt;-com.iver.cit.gvsig.fmap.core.symbols/AbstractMarkerSymbol" source="//@children.13" target="//@children.3" targetEnd="//@children.13/@sourceConnections.1/@children.1" sourceEnd="//@children.13/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="185,10" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,133"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="FSymbol" location="1740,270" size="334,1291" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol" runTimeClassModel="setAlingHoriz(I),getAlingVert(),FSymbol(ILjava.awt.Color;),getFontColor(),drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;),setIconURI(Ljava.net.URI;),setSelectionColor(Ljava.awt.Color;),getIcon(),getSize(),calculateRgb(),getXMLEntity(),setRotation(I),isFontSizeInPixels(),getStroke(),setFontColor(Ljava.awt.Color;),getSymbolForSelection(),FSymbol(),imgObserver,getIconURI(),getSelectionColor(),print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),toSLD(),getFontSize(),getFont(),setStyle(I),getSymbolForSelection(Lcom.iver.cit.gvsig.fmap.core.v02.FSymbol;),setXMLEntity(Lcom.iver.utiles.XMLEntity;),setFontSize(F),setSymbolType(I),getStyle(),getClassName(),getSymbolType(),setFont(Ljava.awt.Font;),setSizeInPixels(Z),setAlingVert(I),getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;),m_LinePattern,isSizeInPixels(),setSize(I),draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;),setFontSizeInPixels(Z),setStroke(Ljava.awt.Stroke;),fastCloneSymbol(),getColor(),setIcon(Ljava.awt.Image;),createFromXML(Lcom.iver.utiles.XMLEntity;),setColor(Ljava.awt.Color;),cloneSymbol(),m_BackFill,isShapeVisible(),FSymbol(I),getFill(),getOnePointRgb(),getAlingHoriz(),setPrintingProperties(Ljavax.print.attribute.PrintRequestAttributeSet;),getDescription(),isOutlined(),setOutlined(Z),setFill(Ljava.awt.Paint;),getOutlineColor(),fromSLD(Ljava.lang.String;),getRotation(),isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;),toArray(Ljava.lang.String;F),m_BackColor,createFromXML03(Lcom.iver.utiles.XMLEntity;),setOutlineColor(Ljava.awt.Color;),setDescription(Ljava.lang.String;),setShapeVisible(Z)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="161,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="imgObserver" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#imgObserver"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="m_BackColor" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#m_BackColor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="m_BackFill" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#m_BackFill"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="m_LinePattern" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#m_LinePattern"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,1170">
+      <children xsi:type="editmodel:MethodEditModel" name="FSymbol" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#FSymbol(ILjava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="FSymbol" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#FSymbol()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="FSymbol" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#FSymbol(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculateRgb" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#calculateRgb()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="cloneSymbol" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#cloneSymbol()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createFromXML" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#createFromXML(Lcom.iver.utiles.XMLEntity;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createFromXML03" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#createFromXML03(Lcom.iver.utiles.XMLEntity;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#draw(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawInsideRectangle" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#drawInsideRectangle(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="fastCloneSymbol" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#fastCloneSymbol()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="fromSLD" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#fromSLD(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAlingHoriz" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getAlingHoriz()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAlingVert" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getAlingVert()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassName" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getClassName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getColor" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getColor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDescription" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getDescription()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFill" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getFill()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFont" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getFont()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFontColor" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getFontColor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFontSize" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getFontSize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getIcon" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getIcon()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getIconURI" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getIconURI()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOnePointRgb" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getOnePointRgb()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOutlineColor" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getOutlineColor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPixExtentPlus" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getPixExtentPlus(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Ljava.awt.Shape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRotation" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getRotation()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSize" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getSize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStroke" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getStroke()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStyle" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getStyle()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolForSelection" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getSymbolForSelection()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolForSelection" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getSymbolForSelection(Lcom.iver.cit.gvsig.fmap.core.v02.FSymbol;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSymbolType" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getSymbolType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getXMLEntity" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#getXMLEntity()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isFontSizeInPixels" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#isFontSizeInPixels()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isOutlined" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#isOutlined()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isShapeVisible" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#isShapeVisible()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSizeInPixels" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#isSizeInPixels()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSuitableFor" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#isSuitableFor(Lcom.iver.cit.gvsig.fmap.core.IGeometry;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="print" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#print(Ljava.awt.Graphics2D;Ljava.awt.geom.AffineTransform;Lcom.iver.cit.gvsig.fmap.core.FShape;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAlingHoriz" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setAlingHoriz(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAlingVert" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setAlingVert(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setColor" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setColor(Ljava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDescription" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setDescription(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFill" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setFill(Ljava.awt.Paint;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFont" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setFont(Ljava.awt.Font;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFontColor" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setFontColor(Ljava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFontSize" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setFontSize(F)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFontSizeInPixels" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setFontSizeInPixels(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setIcon" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setIcon(Ljava.awt.Image;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setIconURI" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setIconURI(Ljava.net.URI;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOutlineColor" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setOutlineColor(Ljava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOutlined" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setOutlined(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPrintingProperties" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setPrintingProperties(Ljavax.print.attribute.PrintRequestAttributeSet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRotation" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setRotation(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setShapeVisible" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setShapeVisible(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSize" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setSize(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSizeInPixels" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setSizeInPixels(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setStroke" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setStroke(Ljava.awt.Stroke;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setStyle" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setStyle(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSymbolType" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setSymbolType(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setXMLEntity" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#setXMLEntity(Lcom.iver.utiles.XMLEntity;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toArray" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#toArray(Ljava.lang.String;F)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toSLD" id="com.iver.cit.gvsig.fmap.core.v02/FSymbol#toSLD()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.iver.cit.gvsig.fmap.core.symbols/ISymbol&lt;-com.iver.cit.gvsig.fmap.core.v02/FSymbol" source="//@children.14" target="//@children.5" targetEnd="//@children.14/@sourceConnections.0/@children.1" sourceEnd="//@children.14/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,29" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,249"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
