@@ -1,0 +1,47 @@
+<project name="MyProject" default="create-jar" basedir=".">
+	<!-- set global properties for this build -->
+	<property name="src" location="src" />
+	<property name="build" location="bin" />
+	<property name="dist" location="dist" />
+	<!-- <property name="targetDir" location="../_fwAndami/lib"/> -->
+	<!-- <property name="targetDir" location="../ExtAnimationGUI/lib"/> -->
+	<!--property name="gvsig-lib" location="../_fwAndami/gvSIG/extensiones/com.iver.cit.gvsig/lib" / -->
+	<property name="gvsig-lib" location="../appgvSIG/lib" />
+	<property name="jarName" value="gvsig-animation" />
+	<property name="andamiLibs" location="../_fwAndami/lib" />
+	<property name="fmapLibs" location="../libFMap" />
+
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp />
+	</target>
+
+	<target name="batch-build" description="compile the sources, create the jar file" depends="compile,create-jar">
+	</target>
+
+	<target name="compile" description="compile the source">
+		<!-- Compile the Java code from ${src} to ${build} -->
+		<mkdir dir="${build}" />
+		<javac srcdir="${src}" destdir="${build}" source="1.4" target="1.4" debug="${debug}" debuglevel="${debuglevel}" classpath="${compile-classpath}" />
+		<!-- copy any images or resources present in the src dir -->
+		<copy todir="${build}">
+			<fileset dir="${src}" excludes="**/*.java" casesensitive="false" />
+		</copy>
+	</target>
+
+	<target name="create-jar" description="Crea el jar de la aplicacion">
+		<!--<mkdir dir="${dist}" />-->
+		<jar jarfile="${gvsig-lib}/${jarName}.jar" basedir="${build}" />
+		<ant dir="../appgvSIG" inheritAll="false">
+			<property name="encoding" value="ISO_8859_1" />
+		</ant>
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${build}" />
+		<delete dir="${dist}" />
+	</target>
+
+</project>
+
