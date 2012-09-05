@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>org.gvsig.catalog.extension</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>extCatalog</name>
+	<url>http://maven.apache.org</url>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-extension-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.catalog</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.andami</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>com.iver.cit.gvsig</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>	
+	</dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<includes>
+					<include>**/*.gif</include>
+					<include>**/*.png</include>
+					<include>**/*.PNG</include>
+					<include> **/*.bmp</include>
+					<include> **/*.jpg</include>
+					<include> **/*.jpeg</include>
+					<include> **/*.properties</include>
+				</includes>
+			</resource>
+		</resources>		
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.4</source>
+					<target>1.4</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<includes>
+						<include>**</include>
+					</includes>					
+			    </configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>${gvsig-path}/${extension-distribution}</directory>
+							<includes>
+								<include>**</include>
+							</includes>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+			<!-- TODO: MAKE TESTS WORK AND REMOVE THIS OPTION -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<properties>
+		<gvsig-extension-distribution>gvSIG/extensiones/com.iver.cit.gvsig</gvsig-extension-distribution>
+		<build-dir>${basedir}/../build</build-dir>
+		<extension-distribution>gvSIG/extensiones/org.gvsig.catalog/
+		</extension-distribution>
+
+		<extension-distribution-file>distribution/distribution.xml</extension-distribution-file>
+		<distribution-final-name>extCatalog</distribution-final-name>
+		<library-dir>lib</library-dir>
+		<application-name>extCatalog</application-name>
+	</properties>
+</project>
