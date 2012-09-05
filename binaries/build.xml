@@ -1,0 +1,84 @@
+<project name="binaries_build" default="main" basedir=".">
+	<dirname file="${ant.file.binaries}" property="ant.file.binaries.dir"/>
+    <description>
+        Reorganiza el directorio binaries, para que pueda usarse directamente por gvSIG.
+    </description>
+
+	<target name="batch-build"
+		depends="main"/>
+
+	<target name="main">
+		<description>Reorders the directory for the current platform, so that it
+			can be used by gvSIG.</description>
+		<echo> Sistema operativo: ${os.name}</echo>
+
+		<condition property="isLinux">
+			<os family="unix"/>
+		</condition>
+
+		<condition property="isWindows">
+			<or>
+				<os family="windows"/>
+				<os family="win9x"/>
+				<os name="Windows Vista"/>
+			</or>
+		</condition>
+
+		<condition property="isMac">
+			<os family="mac"/>
+		</condition>
+
+		<condition property="is_OS_dectected">
+			<or>
+				<istrue value="${isLinux}"/>
+				<istrue value="${isWindows}"/>
+				<istrue value="${isMac}"/>
+			</or>
+
+		</condition>
+
+
+		<antcall target="linux" />
+		<antcall target="windows" />
+		<antcall target="mac" />
+		<antcall target="no_SO_Detected" />
+
+
+	</target>
+
+	<target name="build-all">
+		<description>Reorders the directory for all the platforms, so that it
+			can be used by gvSIG.</description>
+  		<ant dir="linux"  inheritAll="false" />
+  		<ant dir="w32"  inheritAll="false" />
+  		<ant dir="mac"  inheritAll="false" />
+	</target>
+
+	<target name="linux" if="isLinux">
+  		<ant dir="linux"  inheritAll="false" />
+		<echo> Compilando librerias linux </echo>
+	</target>
+
+	<target name="windows" if="isWindows">
+  		<ant dir="w32"  inheritAll="false" />
+		<echo> Compilando librerias w32 </echo>
+	</target>
+
+	<target name="mac" if="isMac">
+  		<ant dir="mac"  inheritAll="false" />
+		<echo> Compilando librerias mac </echo>
+	</target>
+
+	<target name="no_SO_Detected" unless="is_OS_dectected">
+		<fail message="Error al detectar el Sistema Operativo"/>
+	</target>
+
+	<target name="clean">
+		<description>
+			Restores the directory to its original shape.
+		</description>
+  		<ant target="clean" dir="linux"  inheritAll="false" />
+  		<ant target="clean" dir="w32"  inheritAll="false" />
+  		<!--<ant target="clean" dir="mac"  inheritAll="false" />-->
+	</target>
+</project>

@@ -1,0 +1,10 @@
+#!/bin/sh
+export INSTALL_PATH="$PWD"
+
+if [ -n "$1"]
+then
+	cd "$INSTALL_PATH/libs"
+else
+    cd "$1"
+fi
+

@@ -1,0 +1,509 @@
+<project name="binaries linux" default="main" basedir=".">
+    <description>
+        Reorganiza el directorio binaries/linux, para que pueda usarse directamente por gvSIG.
+    </description>
+	<dirname file="${ant.file.binaries linux}" property="curDirectory"/>
+
+	<available property="is3D" file="3D" />
+
+	<target name="init">
+		<condition property="isLinux">
+			<os family="unix"/>
+		</condition>
+	</target>
+	<property name="targetDir" location="." />
+
+	<target name="main" depends="init, ecw, mrsid, potrace, 3D, grass" />
+	<target name="without-3D" depends="init, ecw, mrsid, potrace" />
+
+	<target name="ecw">
+		<!--
+		<copy todir="${targetDir}">
+			<fileset dir="raster/ecw" includes="libjecw.so.0.0.6, libNCScnet.so, libNCSEcwC.so, libNCSEcw.so, libNCSUtil.so" />
+		</copy>
+		-->
+		<!-- necesitamos borrar los links antes de crearlos, porque failonerror=false no
+		      funciona correctamente -->
+		<exec executable="${curDirectory}/raster/ecw/install.sh">
+			<arg value="${targetDir}"/>
+		</exec>
+		<!--
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libjecw.so.0.0.6"/>
+			<param name="ml.link" value="${targetDir}/libjecw.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libjecw.so.0.0.6"/>
+			<param name="ml.link" value="${targetDir}/libjecw.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libNCScnet.so"/>
+			<param name="ml.link" value="${targetDir}/libNCScnet.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libNCScnet.so"/>
+			<param name="ml.link" value="${targetDir}/libNCSCnet.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libNCScnet.so"/>
+			<param name="ml.link" value="${targetDir}/libNCSCnet.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libNCScnet.so"/>
+			<param name="ml.link" value="${targetDir}/libNCSCNet.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libNCScnet.so"/>
+			<param name="ml.link" value="${targetDir}/libNCSCNet.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libNCSEcw.so"/>
+			<param name="ml.link" value="${targetDir}/libNCSEcw.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libNCSEcwC.so"/>
+			<param name="ml.link" value="${targetDir}/libNCSEcwC.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libNCSUtil.so"/>
+			<param name="ml.link" value="${targetDir}/libNCSUtil.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+
+	</target>
+
+	<target name="gdal">
+		<!--
+		<copy todir="${targetDir}">
+			<fileset dir="raster/gdal"
+				 includes="lib*.so*"/>
+		</copy>
+		-->
+		<exec executable="${curDirectory}/raster/gdal/install.sh">
+			<arg value="${targetDir}"/>
+		</exec>
+		<!--
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libcrypto.so.0.9.7"/>
+			<param name="ml.link" value="${targetDir}/libcrypto.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libcrypto.so.0.9.7"/>
+			<param name="ml.link" value="${targetDir}/libcrypto.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgdal.so.1.12.2"/>
+			<param name="ml.link" value="${targetDir}/libgdal.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgdal.so.1.12.2"/>
+			<param name="ml.link" value="${targetDir}/libgdal.so.1"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libjasper-1.701.so.1"/>
+			<param name="ml.link" value="${targetDir}/libjasper-1.701.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+		<!--
+		<antcall target="makeLink">
+			<param name="ml.file" location="libjasper-1.701.so.1.0.0"/>
+			<param name="ml.link" value="${targetDir}/libjasper-1.701.so.1"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+		<!--
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libjgdal.so.0.9.1"/>
+			<param name="ml.link" value="${targetDir}/libjgdal.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libjgdal.so.0.9.1"/>
+			<param name="ml.link" value="${targetDir}/libjgdal.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libodbc.so.1"/>
+			<param name="ml.link" value="${targetDir}/libodbc.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libpng.so.3"/>
+			<param name="ml.link" value="${targetDir}/libpng.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+		<!--<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libpq.so.3"/>
+			<param name="ml.link" value="${targetDir}/libpq.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>-->
+		<!--
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libpq.so.5.1"/>
+			<param name="ml.link" value="${targetDir}/libpq.so.5"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libssl.so.0.9.7"/>
+			<param name="ml.link" value="${targetDir}/libssl.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libssl.so.0.9.7"/>
+			<param name="ml.link" value="${targetDir}/libssl.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libcrypt.so.1"/>
+			<param name="ml.link" value="${targetDir}/libcrypt.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libjpeg.so.62"/>
+			<param name="ml.link" value="${targetDir}/libjpeg.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libm.so.6"/>
+			<param name="ml.link" value="${targetDir}/libm.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libnsl.so.1"/>
+			<param name="ml.link" value="${targetDir}/libnsl.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libodbc.so.1"/>
+			<param name="ml.link" value="${targetDir}/libodbc.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libpng.so.3"/>
+			<param name="ml.link" value="${targetDir}/libpng.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+		<!--<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libpq.so.3"/>
+			<param name="ml.link" value="${targetDir}/libpq.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>-->
+		<!--
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libz.so.1"/>
+			<param name="ml.link" value="${targetDir}/libz.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+		<!--
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libhdf5_hl.so.0.0.0"/>
+			<param name="ml.link" value="${targetDir}/libhdf5_hl.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libhdf5_hl.so.0.0.0"/>
+			<param name="ml.link" value="${targetDir}/libhdf5_hl.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libhdf5.so.0.0.0"/>
+			<param name="ml.link" value="${targetDir}/libhdf5.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libhdf5.so.0.0.0"/>
+			<param name="ml.link" value="${targetDir}/libhdf5.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+	</target>
+
+	<target name="mrsid">
+		<!--
+		<copy todir="${targetDir}">
+			<fileset dir="raster/mrsid" includes="libjmrsid.so.0.0.2" />
+		</copy>
+		-->
+		<exec executable="${curDirectory}/raster/mrsid/install.sh">
+			<arg value="${targetDir}"/>
+		</exec>
+		<!--
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libjmrsid.so.0.0.2"/>
+			<param name="ml.link" value="${targetDir}/libjmrsid.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libjmrsid.so.0.0.2"/>
+			<param name="ml.link" value="${targetDir}/libjmrsid.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+	</target>
+	
+	<target name="grass">
+		<!--
+		<copy todir="${targetDir}">
+			<fileset dir="raster/grass" includes="lib*.so*" />
+		</copy>
+		-->
+		<exec executable="${curDirectory}/raster/grass/install.sh">
+			<arg value="${targetDir}"/>
+		</exec>
+		<!--
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_datetime.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_datetime.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_dbmibase.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_dbmibase.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+			
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_dbmiclient.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_dbmiclient.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_dgl.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_dgl.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_dig2.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_dig2.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_gis.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_gis.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_gmath.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_gmath.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_gproj.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_gproj.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_I.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_I.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_linkm.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_linkm.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_rtree.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_rtree.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_vask.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_vask.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libgrass_vect.6.0.2.so"/>
+			<param name="ml.link" value="${targetDir}/libgrass_vect.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+		<!--<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libproj.so.0.5.0"/>
+			<param name="ml.link" value="${targetDir}/libproj.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>-->
+	</target>
+
+	<target name="potrace">
+		<!--
+		<copy todir="${targetDir}">
+			<fileset dir="raster/potrace" includes="lib*.so*"/>
+		</copy>
+		-->
+		<exec executable="${curDirectory}/raster/potrace/install.sh">
+			<arg value="${targetDir}"/>
+		</exec>
+		<!--
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libpotrace.so.0.0.1"/>
+			<param name="ml.link" value="${targetDir}/libpotrace.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libjpotrace.so.0.0.1"/>
+			<param name="ml.link" value="${targetDir}/libjpotrace.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libpotrace.so.0.0.1"/>
+			<param name="ml.link" value="${targetDir}/libpotrace.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libjpotrace.so.0.0.1"/>
+			<param name="ml.link" value="${targetDir}/libjpotrace.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+	</target>
+
+	<target name="crs">
+		<!--
+		<copy todir="${targetDir}">
+			<fileset dir="crs"
+				includes="*.so.*,*.so"/>
+		</copy>
+		-->
+
+		<exec executable="${curDirectory}/crs/install.sh">
+			<arg value="${targetDir}"/>
+		</exec>
+
+		<!--
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libproj.so.0.5.0"/>
+			<param name="ml.link" value="${targetDir}/libproj.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libproj.so.0.5.0"/>
+			<param name="ml.link" value="${targetDir}/libproj.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libcrsjniproj.so.0.1.1"/>
+			<param name="ml.link" value="${targetDir}/libcrsjniproj.so"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		<antcall target="makeLink">
+			<param name="ml.file" location="${targetDir}/libcrsjniproj.so.0.1.1"/>
+			<param name="ml.link" value="${targetDir}/libcrsjniproj.so.0"/>
+			<param name="ml.failonerror" value="false"/>
+		</antcall>
+		-->
+	</target>
+
+
+
+
+	<target name="makeLink" if="isLinux">
+		<!--<exec executable="ln" os="unix" failonerror="${ml.failonerror}">-->
+		<exec executable="ln" failonerror="true">
+		    <arg value="-sf"/>
+		    <arg value="${ml.file}"/>
+		    <arg value="${ml.link}"/>
+		</exec>
+	</target>
+
+	<target name="clean3D" if="is3D">
+		<delete includeemptydirs="true">
+			<fileset dir="${targetDir}" includes="osgPlugins**/**" />
+		</delete>
+	</target>
+
+	<target name="clean" depends="clean3D">
+		<delete>
+			<fileset
+				dir="${targetDir}"
+				includes="*.so*"/>
+		</delete>
+	</target>
+
+
+	<target name="3D" if="is3D">
+		<!--
+		<copy todir="${targetDir}">
+			<fileset dir="3D" includes="*.so*" />
+		</copy>
+		<copy todir="${targetDir}">
+			<fileset dir="3D" includes="**/*.so*" />
+		</copy>
+		-->
+		<!--<property file="3D/links.properties" prefix="links3D"/>-->
+		<!--
+		<exec executable="${basedir}/3D/install-3D.sh">
+			<arg value="${targetDir}"/>
+		</exec>
+		-->
+		<!-- cd $HOME/.depman/lib ; find . -type l -exec ls -l {} ';' | sed 's/.*[.][/]//g' | sed 's/\(.*\) -> \(.*\)$/ln -sf \2 \1/g' > ${3D}/install-3D.sh ; cat ${3D}/install-3D.sh.head ${3D}/install-3D.sh > ${3D}/install-3D.sh -->
+
+	</target>
+
+</project>

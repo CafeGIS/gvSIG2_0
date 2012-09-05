@@ -1,0 +1,68 @@
+<project name="binaries w32" default="main" basedir=".">
+	<description>
+		Reorganiza el directorio binaries/w32, para que pueda usarse directamente por gvSIG.
+	</description>
+
+	<property name="targetDir" location="." />
+
+
+	<available property="is3D" file="3D" />
+
+	<target name="main" depends="ecw, mrsid, system, potrace" />
+	<target name="without-3D" depends="ecw, mrsid, system, potrace" />
+
+	<target name="ecw">
+		<copy todir="${targetDir}">
+			<fileset dir="raster/ecw" includes="jecw.dll NCScnet.dll NCSEcwC.dll NCSEcw.dll NCSUtil.dll" />
+		</copy>
+	</target>
+
+	<target name="gdal">
+		<copy todir="${targetDir}">
+			<fileset dir="raster/gdal" includes="gdal.dll glut32.dll jgdal091.dll jpeg62.dll libimage.dll libpng13.dll libtiff3.dll zlib1.dll jaddo000.dll hdf5dll.dll hd422m.dll hm422m.dll szlibdll.dll" />
+		</copy>
+	</target>
+
+	<target name="mrsid">
+		<copy todir="${targetDir}">
+			<fileset dir="raster/mrsid" includes="jmrsid.dll lti_dsdk_cdll.dll lti_dsdk_dll.dll" />
+		</copy>
+	</target>
+
+	<target name="system">
+		<copy todir="${targetDir}">
+			<fileset dir="system" includes="msv*.dll *.manifest" />
+		</copy>
+	</target>
+
+	<target name="crs">
+		<copy todir="${targetDir}">
+			<fileset dir="crs" includes="CrsJniProj.dll proj.dll" />
+		</copy>
+	</target>
+	
+	<target name="potrace">
+		<copy todir="${targetDir}">
+			<fileset dir="raster/potrace" includes="libpotrace.dll jpotrace001.dll" />
+		</copy>
+	</target>
+	
+	<target name="3D" if="is3D">
+		<copy todir="${targetDir}">
+			<fileset dir="3D" includes="**/**" />
+		</copy>
+	</target>
+
+	<target name="clean3D" if="is3D">
+		<delete includeemptydirs="true">
+			<fileset dir="${targetDir}" includes="osgPlugins**/**" />
+		</delete>
+	</target>
+
+	<target name="clean" depends="clean3D">
+		<delete>
+			<fileset dir="${targetDir}" includes="*.dll *.lib *.jar" />
+		</delete>
+	</target>
+
+</project>

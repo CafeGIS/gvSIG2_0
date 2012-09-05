@@ -1,0 +1,52 @@
+<project name="binaries mac" default="main" basedir=".">
+    <description>
+        Reorganiza el directorio binaries/mac, para que pueda usarse directamente por gvSIG.
+    </description>
+
+	<available property="is3D" file="3D" />
+
+	<property name="targetDir" location="." />
+
+	<target name="main" depends="mrsid, crs" />
+
+<!--	<target name="ecw">
+		<copy todir="${targetDir}">
+			<fileset dir="raster/ecw" includes="jecw.dll jecwcompress.dll NCScnet.dll NCSEcwC.dll NCSEcw.dll NCSUtil.dll" />
+		</copy>
+	</target> -->
+
+	<target name="gdal">
+		<copy todir="${targetDir}">
+			<fileset dir="raster/gdal"
+				includes="jgdal-0.4.0.jar libgdal.dylib libjgdal.jnilib"/>
+		</copy>
+	</target>
+
+	<target name="mrsid">
+		<copy todir="${targetDir}">
+			<fileset dir="raster/mrSID" includes="jmrsid-0.1.0.jar libjmrsid.jnilib" />
+		</copy>
+	</target>
+
+	<target name="clean">
+		<delete>
+			<fileset
+				dir="${targetDir}"
+				includes="*.dylib *.jnilib *.jar"/>
+		</delete>
+	</target>
+
+	<target name="3D" if="is3D">
+		<copy todir="${targetDir}">
+			<fileset dir="3D" includes="**/**" />
+		</copy>
+	</target>
+
+
+	<target name="crs">
+		<copy todir="${targetDir}">
+			<fileset dir="crs" includes="libcrsjniproj.jnilib libproj.dylib" />
+		</copy>
+	</target>
+
+</project>

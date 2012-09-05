@@ -1,0 +1,335 @@
+<project name="ant_libs">
+	<dirname file="${ant.file.ant_libs}" property="ant.file.ant_libs.dir"/>
+
+	<!--
+		====================================
+		Compilation base properties
+		====================================
+	-->
+	<property name="JUNIT_HOME" location="${ant.file.ant_libs.dir}" />
+	<property name="JavaSourceVersion" value="1.5"/>
+	<property name="JavaTargetVersion" value="1.5"/>
+	<property name="debug" value="on"/>
+	<property name="debuglevel" value="lines, vars, source"/>
+	<property name="encoding" value="ISO_8859_1"/>
+	<property name="workspaceDir" location="${ant.file.ant_libs.dir}/../.."/>
+	<property name="workspace_loc" location="${workspaceDir}"/>
+	<property name="binaries_loc" location="${workspace_loc}/binaries"/>
+	<property name="dependencies_loc" location="${binaries_loc}/dependencies"/>
+	<property name="lib_loc" location="${binaries_loc}/lib"/>
+
+
+
+
+	<!--
+		====================================
+		ant4eclipse library load
+		====================================
+	-->
+	<taskdef resource="net/sf/ant4eclipse/antlib.xml" >
+			<classpath>
+				<pathelement location="${ant.file.ant_libs.dir}/ant4eclipse-0.5.0.rc1.jar"/>
+			</classpath>
+	</taskdef>
+
+
+
+
+	<!--
+		====================================
+		ant-contrib library load
+		====================================
+	-->
+	<taskdef resource="net/sf/antcontrib/antlib.xml">
+			<classpath>
+				<pathelement location="${ant.file.ant_libs.dir}/ant-contrib-1.0b3.jar"/>
+				<pathelement location="${ant.file.ant_libs.dir}/bcel-5.1.jar"/>
+				<pathelement location="${ant.file.ant_libs.dir}/commons-httpclient-3.0.1.jar"/>
+				<pathelement location="${ant.file.ant_libs.dir}/commons-logging-1.0.4.jar"/>
+				<pathelement location="${ant.file.ant_libs.dir}/ivy-1.3.1.jar"/>
+			</classpath>
+	</taskdef>
+
+
+
+	<!--
+		====================================
+		gvSIG ant utilities library load
+		====================================
+	-->
+	<taskdef name="javacLikeEclipse" classname="org.gvsig.utilities.ant.taskdefs.JavacLikeEclipse">
+		<classpath>
+			<pathelement location="${ant.file.ant_libs.dir}/org.gvsig.utilities.ant.jar"/>
+		</classpath>
+	</taskdef>
+
+
+
+	<!--
+		====================================
+		utilities tasks alias
+		====================================
+	-->
+
+	<!--
+	** loadEclipseClasspath Task  **
+
+	Load the classpath from eclipse into the property 'eclipseClasspath'
+	of the project recived in 'project' attribute. 'project' must
+	be a directory of the workspace.
+
+	- Use 'property="otherProperty"' : for change the return property
+
+	Example:
+
+
+	<target name="compile" description="compile the source" >
+		<loadEclipseClasspath project="${basedir}>
+		<mkdir dir="${build}" />
+		<javac  srcdir="${src}"
+			destdir="${build}"
+			source="${JavaSourceVersion}"
+			target="${JavaTargetVersion}"
+			debug="${debug}"
+			debuglevel="${debuglevel}"
+			classpath="${eclipseClasspath}"
+			encoding="${encoding}"/>
+	</target>
+
+	-->
+	<presetdef name="loadEclipseClasspath">
+		<getEclipseClasspath
+			property="eclipseClasspath"
+			runtime="true"/>
+
+	</presetdef>
+
+	<!--
+	** gvSIG-javac Task **
+
+	Javac whit default values to compile gvSIG proyects
+
+	Example (minimal syntax):
+
+	<gvSIG-javac
+		classpath="${eclipseClasspath}"
+		/>
+
+	Example with exclude:
+
+	<gvSIG-javac
+		classpath="${eclipseClasspath}"
+		exclude="org/gvsig/test/**"
+		/>
+
+	-->
+	<presetdef name="gvSIG-javac">
+			<javacLikeEclipse
+				srcdir="${src}"
+				destdir="${build}"
+				source="${JavaSourceVersion}"
+				target="${JavaTargetVersion}"
+				sourcepath="${eclipseClasspath}"
+				debug="${debug}"
+				debuglevel="${debuglevel}"
+				encoding="${encoding}">
+			</javacLikeEclipse>
+	</presetdef>
+
+	<!-- generamos siempre el debug
+	<presetdef name="gvSIG-javac">
+			<javacLikeEclipse
+				srcdir="${src}"
+				destdir="${build}"
+				source="${JavaSourceVersion}"
+				target="${JavaTargetVersion}"
+				debug="${debug}"
+				debuglevel="${debuglevel}"
+				sourcepath="${eclipseClasspath}"
+				encoding="${encoding}">
+			</javacLikeEclipse>
+	</presetdef>
+	-->
+
+	<!--
+	** gvSIG-import-build-number Target **
+
+	Automate import of build.number gvSIG file
+
+	Example (minimal syntax):
+
+	<antcall target="gvSIG-import-build-number"/>
+
+	-->
+
+	<target name="gvSIG-import-build-number">
+		<!-- check buildNumberFile property -->
+		<if>
+			<not>
+				<and>
+					<isset property="buildNumberFile"/>
+					<available file="${buildNumberFile}" type="file"/>
+				</and>
+			</not>
+			<then>
+				<fail message="Error: property buildNumberFile not set or file not available: ${buildNumberFile}"/>
+			</then>
+		</if>
+		<property name="localBuildNumberFile" value="${basedir}/build.number"/>
+		<!-- copy the file if is needed-->
+		<if>
+			<not>
+			<and>
+				<available file="${localBuildNumberFile}" type="file"/>
+				<filesmatch file1="${buildNumberFile}" file2="${localBuildNumberFile}"/>
+			</and>
+			</not>
+			<then>
+				<copy file="${buildNumberFile}" tofile="${localBuildNumberFile}" overwrite="true"/>
+			</then>
+		</if>
+	</target>
+
+	<!-- Declare Junit task -->
+	<taskdef name="gvSIG-junit" classname="org.apache.tools.ant.taskdefs.optional.junit2.JUnitTask" onerror="fail">
+		<classpath>
+			<pathelement location="${ant.file.ant_libs.dir}/junit.jar"/>
+			<pathelement location="${ant.file.ant_libs.dir}/gvsig-ant-junit.jar"/>
+		</classpath>
+	</taskdef>
+
+	<target name="generic-run-tests">
+		<!--
+			=== Input Parameters ===
+			JUnitSummaryFile: File to log the success of the project
+			JUnitProjectResults: File to log the details of the JUnit execution
+			TestSuite.Name: Name of the TestSuite class to run
+
+			=== Throws ====
+			JUnitTestFailed: If any of the tests failed
+		-->
+		<!-- define these properties in case they are not already set -->
+		<property name="JUnitProjectResults" value="JUnitProjectResults"/>
+		<property name="JUnitProjectResultsFile" value="JUnitProjectResults.txt"/>
+		<property name="JUnitGlobalResults" value="JUnitGlobalResults"/>
+		<property name="JUnitGlobalResultsFile" value="JUnitGlobalResults.txt"/>
+		<property name="JUnitSummaryFile" location="JUnitSummary.txt"/>
+		<loadEclipseClasspath project="${basedir}"/>
+		<property name="test-classpath" value="${build-test}:${build}:${eclipseClasspath}"/>
+		<gvSIG-junit
+			fork="yes"
+			dir="${basedir}"
+			printsummary="on"
+			haltonfailure="off"
+			errorproperty="gvsig.tests.error"
+			failureproperty="gvsig.tests.failure">
+				<formatter type="brief" usefile="yes"/>
+				<classpath id="test-classpath"
+					path="${build-test}:${build}:${eclipseClasspath}"/>
+				<test name="${TestSuite.Name}" outFile="${JUnitProjectResults}" />
+		</gvSIG-junit>
+		<!-- define these properties in case they are not already set -->
+		<property name="gvsig.tests.error" value="false"/>
+		<property name="gvsig.tests.failure" value="false"/>
+		<if>
+			<and>
+				<equals arg1="${gvsig.tests.error}" arg2="false" />
+				<equals arg1="${gvsig.tests.failure}" arg2="false" />
+			</and>
+			<then>
+				<echo file="${JUnitSummaryFile}" append="true">JUnitTests for ${target.project.name}: SUCCESS.${line.separator}</echo>
+			</then>
+			<else>
+				<throw id="JUnitTestFailed" message="JUnitTestFailed"/>
+			</else>
+		</if>
+	</target>
+
+	<target name="concat-test-output">
+		<property name="target.project.dir" location="../${target.project.name}"/>
+		<if>
+			<available file="${target.project.dir}" type="dir"/>
+			<then>
+				<echo append="yes" file="${JUnitGlobalResultsFile}">${line.separator}${line.separator} ===== Details for ${target.project.name}: =====${line.separator}</echo>
+				<concat  destfile="${JUnitGlobalResultsFile}.tmp"
+						binary="true">
+					<fileset file="${JUnitGlobalResultsFile}"/>
+					<fileset file="${target.project.dir}/${JUnitProjectResultsFile}"/>
+				</concat>
+				<move file="${JUnitGlobalResultsFile}.tmp" tofile="${JUnitGlobalResultsFile}"/>
+				<delete file="${target.project.dir}/${JUnitProjectResultsFile}"/>
+			</then>
+		</if>
+	</target>
+
+	<target name="compile-tests">
+		<!-- Create the time stamp -->
+		<tstamp/>
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build-test}"/>
+		<!-- Compile the Java code from ${src} to ${build} -->
+		<loadEclipseClasspath project="${basedir}"/>
+		<gvSIG-javac
+			srcdir="${src-test}"
+			destdir="${build-test}"
+			classpath="${eclipseClasspath}"/>
+		<copy todir="${build-test}">
+			<fileset dir="${src-test}"
+						excludes="**/*.java"/>
+		</copy>
+	</target>
+	
+	<!-- Macros to call the usual maven 2 goals from ant -->
+	<macrodef name="mvn">
+	   <attribute name="arg" />
+	   <sequential>
+			<exec executable="${workspaceDir}/build/maven/bin/mvn" failonerror="true" os="Linux,unix">
+				<arg line="@{arg}"/>
+			</exec>
+			<exec executable="cmd" os="windows">
+		    	<arg value="/c"/>
+		    	<arg value="${workspaceDir}/build/maven/bin/mvn.bat"/>
+		    	<arg value="@{arg}"/>
+		    </exec>
+	   </sequential>
+	</macrodef>	
+	
+	<macrodef name="mvn-clean">
+	   <sequential>
+	   		<mvn arg="clean"/>
+	   </sequential>
+	</macrodef>
+	
+	<macrodef name="mvn-compile">
+	   <sequential>
+	   		<mvn arg="compile"/>
+	   </sequential>
+	</macrodef>
+
+	<macrodef name="mvn-install">
+	   <attribute name="tofile" />
+	   <attribute name="mvnJarName"/>
+	   <attribute name="disable-tests" default="false" />
+	   <sequential>
+	   		<mvn arg="install"/>
+			<copy tofile="@{tofile}" file="target/@{mvnJarName}"/>
+	   </sequential>
+	</macrodef>
+
+	<macrodef name="mvn-install-no-tests">
+	   <attribute name="tofile" />
+	   <attribute name="mvnJarName"/>
+	   <attribute name="disable-tests" default="false" />
+	   <sequential>
+	   		<mvn arg="-Dmaven.test.skip=true install"/>
+			<copy tofile="@{tofile}" file="target/@{mvnJarName}"/>
+	   </sequential>
+	</macrodef>
+	
+	<macrodef name="mvn-javadoc">
+	   <sequential>
+	   		<mvn arg="javadoc:javadoc"/>
+	   </sequential>
+	</macrodef>
+
+</project>
