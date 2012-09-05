@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Copyright © 2008 by Silvio Grosso, under the terms of the GNU GPL version 2. -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   viewBox="0 0 450 500"
+   width="450"
+   height="500"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     id="layer1">
+    <g
+       transform="matrix(0.9234006,0,0,0.7812741,-84.804084,-133.6346)"
+       id="g2276">
+      <path
+         d="M 268.57143 508.07648 A 90 90 0 1 1  88.571426,508.07648 A 90 90 0 1 1  268.57143 508.07648 z"
+         transform="translate(150.3595,67.84687)"
+         style="opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:6.49900007;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path1872" />
+      <path
+         d="M 318.89766,490.44158 L 333.12943,490.44158 L 351.70139,517.72756 L 351.70139,490.44158 L 366.06774,490.44158 L 366.06774,539.76493 L 351.70139,539.76493 L 333.23037,512.68083 L 333.23037,539.76493 L 318.89766,539.76493 L 318.89766,490.44158 z "
+         transform="matrix(2.124314,0,0,2.055934,-398.6878,-753.803)"
+         style="font-size:68.90465546px;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.20119524;stroke-miterlimit:4;stroke-opacity:1;font-family:Arial Black"
+         id="flowRoot2762" />
+      <path
+         d="M 309.64911,408.22596 L 309.64911,483.69446 L 347.04673,482.83685 L 347.04673,408.22596 L 378.32963,413.23515 L 326.34297,350.86646 L 276.90976,416.74838 L 309.64911,408.22596 z "
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5.9933877px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path2030" />
+    </g>
+  </g>
+</svg>

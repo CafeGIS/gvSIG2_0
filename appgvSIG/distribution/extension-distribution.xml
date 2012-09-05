@@ -1,0 +1,87 @@
+<assembly>
+	<id>distribution</id>
+	<formats>
+		<format>dir</format>
+	</formats>
+	<fileSets>
+	<!-- Extructure for the extension -->
+		<fileSet>
+			<directory>config</directory>
+			<outputDirectory>${extension-distribution}
+			</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>images</directory>
+			<outputDirectory>/${extension-distribution}/images
+			</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>northimages</directory>
+			<outputDirectory>/${extension-distribution}/northimages
+			</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<files>
+		<file>
+			<source>build.number</source>
+			<outputDirectory>${extension-distribution}
+			</outputDirectory>
+		</file>
+	</files>
+	<!--
+		***********************************************************************
+	-->
+  <!-- *													   *-->
+	<!--
+		***********************************************************************
+	-->
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>${extension-distribution}/${library-dir}
+			</outputDirectory>
+			<includes>
+			
+				<include>org.gvsig:com.iver.cit.gvsig</include>
+				<include>org.gvsig:org.gvsig.fmap*</include>
+				<include>org.gvsig:org.gvsig.fmap.dal.index.spatial:jar:jsi</include>
+				<include>org.gvsig:org.gvsig.i18n</include>
+				<include>org.gvsig:org.cresques.dxf</include>
+				<include>org.gvsig:org.gvsig.raster</include>
+				<include>org.gvsig:org.gvsig.metadata</include>
+				<include>org.gvsig:org.gvsig.tools.evaluator.sqljep</include>
+				<include>org.gvsig:org.gvsig.projection</include>
+				<include>org.gvsig:org.gvsig.compat</include>
+				<include>org.gvsig:org.gvsig.compat:jar:cresques-impl</include>
+
+				<include>org.gvsig.legacy:geoapi</include>
+				<include>org.gvsig.legacy.ba*:batik*</include>
+				<include>org.gvsig.legacy:geojava</include>
+				<include>org.gvsig.legacy:gt2*</include>
+				<include>*:itext</include>
+				<include>org.gvsig.legacy:JimiProClasses</include>
+				<include>org.gvsig.legacy:jpedalSTD</include>
+				<include>org.gvsig.legacy:jts</include>
+				<include>org.gvsig.legacy:kxml2</include>
+
+				<!-- 				
+				<include>org.gvsig.legacy:hsqldb</include>
+				<include>org.gvsig.legacy:postgis</include>
+				<include>org.gvsig.legacy:postgresql</include>
+				 -->
+				<include>org.gvsig.legacy:vecmath</include>
+				<include>org.gvsig.legacy:xml-apis-ext</include>
+				<include>org.gvsig.legacy:zql</include>
+				<include>org.gvsig.legacy:sqljep</include>
+				<include>org.gvsig.legacy:gt2-main</include>
+
+				<include>jecw:jecw</include>
+				<include>org.gvsig:org.gvsig.jgdal:jar</include>
+				<include>jmrsid:jmrsid</include>
+				<include>log4j:log4j</include>
+				<include>org.gvsig.legacy:units</include>
+
+				<include>*:jai_*</include>
+			</includes>
+		</dependencySet>
+	</dependencySets>
+</assembly>

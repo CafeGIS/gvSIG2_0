@@ -1,0 +1,15 @@
+<project name="VoidTarget"  basedir=".">
+	<description>
+        	Void build file, to use it when a project is not present
+   	</description>
+	<property name="projectName" value="projectName" />
+	
+	<target name="batch-build">
+		<echo>Warning: Project ${projectName} was skipped</echo>
+	</target>
+	<target name="clean">
+		<echo>Warning: Project ${projectName} was skipped</echo>
+	</target>
+	<target name="import-build-number">
+	</target>	
+</project>

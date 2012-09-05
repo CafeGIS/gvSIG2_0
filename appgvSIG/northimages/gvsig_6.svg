@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Copyright © 2008 by Silvio Grosso, under the terms of the GNU GPL version 2. -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   viewBox="0 0 450 500"
+   width="450"
+   height="500"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     id="layer1">
+    <g
+       transform="translate(4.04061,34.34519)"
+       id="g2932">
+      <g
+         transform="matrix(0.8861662,0,0,0.915161,-92.98971,-183.78933)"
+         id="g2290">
+        <path
+           d="M 270.2595,427.02925 L 354.46793,353.89472 L 438.67635,427.02925 L 382.5374,427.02925 L 382.5374,609.86558 L 438.67635,639.11939 L 270.2595,639.11939 L 326.39845,609.86558 L 326.39845,427.02925 L 270.2595,427.02925 z "
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:9.06167316px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path1888" />
+        <g
+           id="g2285">
+          <path
+             d="M 355.47045,353.89472 L 354.46793,639.11939"
+             style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.62466908;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="path1890" />
+          <path
+             d="M 390.80358 524.05859 A 5.9821429 5.9821429 0 1 1  378.8393,524.05859 A 5.9821429 5.9821429 0 1 1  390.80358 524.05859 z"
+             transform="matrix(6.012857,0,0,1.194511,-1959.737,-124.6887)"
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="path2778" />
+          <path
+             d="M 325.62109,277.64573 L 337.1875,277.64573 L 352.28125,299.82151 L 352.28125,277.64573 L 363.95703,277.64573 L 363.95703,317.73167 L 352.28125,317.73167 L 337.26953,295.71995 L 337.26953,317.73167 L 325.62109,317.73167 L 325.62109,277.64573 z "
+             transform="matrix(1.7905,0,0,2.461581,-266.6633,-444.6249)"
+             style="font-size:56px;font-family:Arial Black"
+             id="flowRoot2790" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Copyright © 2008 by Silvio Grosso, under the terms of the GNU GPL version 2. -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   viewBox="0 0 450 500"
+   width="450"
+   height="500"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     id="layer1">
+    <g
+       id="g2276">
+      <path
+         d="M 325.51172,277.64573 L 358.70703,277.64573 L 358.70703,286.20433 L 337.92578,286.20433 L 337.92578,292.57542 L 357.20313,292.57542 L 357.20313,300.7512 L 337.92578,300.7512 L 337.92578,308.65355 L 359.30859,308.65355 L 359.30859,317.73167 L 325.51172,317.73167 L 325.51172,277.64573 z "
+         transform="translate(29.87327,68.56076)"
+         style="font-size:56px;font-family:Arial Black"
+         id="flowRoot2798" />
+      <path
+         d="M 325.62109,277.64573 L 337.1875,277.64573 L 352.28125,299.82151 L 352.28125,277.64573 L 363.95703,277.64573 L 363.95703,317.73167 L 352.28125,317.73167 L 337.26953,295.71995 L 337.26953,317.73167 L 325.62109,317.73167 L 325.62109,277.64573 z "
+         transform="translate(-153.11321,-216.64025)"
+         style="font-size:56px;font-family:Arial Black"
+         id="flowRoot2790" />
+      <g
+         transform="matrix(6.566357,0,0,6.602753,-2189.5614,-3285.1837)"
+         id="g1993">
+        <path
+           d="M 360.11698,554.78432 L 360.11698,530.68235 L 357.48858,533.04951 L 362.491,515.61862 L 367.15429,532.40393 L 364.86503,530.68235 L 364.86503,554.78432 L 360.11698,554.78432 z "
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.51286328px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path1989" />
+        <path
+           d="M 360.60824,550.26871 L 375.72776,550.26871 L 374.24282,547.55972 L 385.17747,552.71553 L 374.6478,557.52181 L 375.72776,555.16236 L 360.60824,555.16236 L 360.60824,550.26871 z "
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.21646953px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path1991" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<project basedir="../.." default="default" name="connectionData">
+
+	<property name="basedir" location=".."/>
+	<property name="passw" value="dokdeploy"/>
+	<property name="server" value="192.168.0.1"/>
+	<property name="port" value="10022"/>
+	<property name="user" value="dokdeploy"/>	
+	<property name="remoteDir1" value="/docdev/v1_0/apireference"/>
+	<property name="remoteDir2" value="/plone/docdev/es/v1_0/apireference"/>
+	<property name="ftp-passive" value="yes"/>
+	<property name="verbose" value="no"/>
+
+	<target name="default">
+		<ant antfile="appgvSIG/scripts/buildApi.xml" target="deployAPIReference" inheritAll="true"/>
+	</target>
+		
+</project>

@@ -1,0 +1,14 @@
+<projectDescription>
+  <name>appgvSIG</name>
+  <comment>This is the extension that contains all the GUI part for
+		the 3D extension of GvSIG</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

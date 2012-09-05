@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Copyright © 2008 by Silvio Grosso, under the terms of the GNU GPL version 2. -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   viewBox="0 0 450 500"
+   width="450"
+   height="500"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     id="layer1">
+    <g
+       transform="translate(-123.23861,-288.90363)"
+       id="g2173">
+      <g
+         transform="matrix(5.975106,0,0,7.360972,-1697.3027,-3373.5718)"
+         id="g2000">
+        <path
+           d="M 342.35227,539.59527 L 342.22208,517.36218 L 360.42957,547.53845 L 342.35227,539.59527 z "
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path1996" />
+        <path
+           d="M 342.57013,539.29649 L 341.82241,519.02014 L 324.09482,546.6962 L 342.57013,539.29649 z "
+           style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.97481376px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path1998" />
+      </g>
+      <path
+         d="M 325.62109,277.64573 L 337.1875,277.64573 L 352.28125,299.82151 L 352.28125,277.64573 L 363.95703,277.64573 L 363.95703,317.73167 L 352.28125,317.73167 L 337.26953,295.71995 L 337.26953,317.73167 L 325.62109,317.73167 L 325.62109,277.64573 z "
+         transform="matrix(2.106701,0,0,2.118369,-384.60868,-235.79393)"
+         style="font-size:56px;font-family:Arial Black"
+         id="flowRoot3224" />
+    </g>
+  </g>
+</svg>

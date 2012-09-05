@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="norte_flecha.svg"
+   sodipodi:docbase="D:\Documents and Settings\gruposig2\Escritorio"
+   inkscape:version="0.42.2"
+   sodipodi:version="0.32"
+   id="svg2"
+   viewBox="0 0 450 500"
+   height="500"
+   width="450">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     inkscape:window-y="-4"
+     inkscape:window-x="-4"
+     inkscape:window-height="998"
+     inkscape:window-width="1280"
+     inkscape:current-layer="layer1"
+     inkscape:cy="257.30875"
+     inkscape:cx="225.00000"
+     inkscape:zoom="1.3220000"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       id="g6600">
+      <path
+         d="M 205.44100,187.29449 L 205.44100,187.29449 L 205.44100,187.29449 L 205.44100,187.29449"
+         class="fil0 str1"
+         id="_53765264"
+         style="fill:none;stroke:#1f1a17;stroke-width:0.076200001" />
+      <line
+         y2="194.51949"
+         x2="210.04100"
+         y1="194.51949"
+         x1="210.04100"
+         class="fil0 str1"
+         id="_56376032"
+         style="fill:none;stroke:#1f1a17;stroke-width:0.076200001" />
+      <line
+         style="fill:none;stroke:#000000;stroke-width:1.0000000;stroke-opacity:1.0000000;stroke-miterlimit:4.0000000;stroke-dasharray:none"
+         id="line1413"
+         class="fil0 str1"
+         x1="228.17790"
+         y1="112.68045"
+         x2="288.81149"
+         y2="420.16144" />
+      <path
+         style="fill:none;stroke:#1f1a17;stroke-width:0.49073389"
+         id="path1405"
+         class="fil0 str1"
+         d="M 225.01957,398.56499 L 225.01957,398.56499 L 225.01957,398.56499 L 225.01957,398.56499" />
+      <line
+         style="fill:none;stroke:#1f1a17;stroke-width:1.0000000;stroke-miterlimit:4.0000000;stroke-dasharray:none"
+         id="line1409"
+         class="fil0 str1"
+         x1="225.59557"
+         y1="397.81879"
+         x2="288.82269"
+         y2="420.16144" />
+      <line
+         style="fill:none;stroke:#1f1a17;stroke-width:0.49073389"
+         id="line1411"
+         class="fil0 str1"
+         x1="288.82050"
+         y1="420.16980"
+         x2="288.82050"
+         y2="420.16980" />
+      <polyline
+         transform="matrix(14.04006,0.000000,0.000000,3.092717,-1243.696,4.370190)"
+         style="fill:#000000;fill-opacity:1.0000000;stroke:#000000;stroke-width:0.076200001;stroke-opacity:0.00000000"
+         id="polyline1407"
+         class="fil0 str1"
+         points="104.829,34.9867 100.062,134.442 104.665,127.217 " />
+      <text
+         xml:space="preserve"
+         style="font-size:39.300793px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans"
+         x="214.28415"
+         y="108.23495"
+         id="text5063"><tspan
+           sodipodi:role="line"
+           id="tspan5065"
+           x="214.28415"
+           y="108.23495">N</tspan></text>
+    </g>
+  </g>
+</svg>

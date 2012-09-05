@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+   Copyright 2001  The Apache Software Foundation 
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<!-- ========================================================================= -->
+<!-- GVT under the spot-light!                                                 -->
+<!--                                                                           -->
+<!-- @author vincent.hardy@eng.sun.com                                         -->
+<!-- @version $Id: simple.svg 2984 2005-09-28 11:14:50Z fjp $ -->
+<!-- ========================================================================= -->
+<svg
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="450"
+   height="500"
+   viewBox="0 0 450 500"
+   id="svg2755"
+   sodipodi:version="0.32"
+   inkscape:version="0.40+cvs"
+   sodipodi:docname="simple.svg"
+   sodipodi:docbase="C:\Documents and Settings\fjp\Mis documentos">
+  <metadata
+     id="metadata2887">
+    <rdf:RDF
+       id="RDF2889">
+      <cc:Work
+         rdf:about=""
+         id="Work2891">
+        <dc:format
+           id="format2893">image/svg+xml</dc:format>
+        <dc:type
+           id="type2895"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1152"
+     inkscape:window-height="804"
+     inkscape:zoom="0.72400000"
+     inkscape:cx="224.99999"
+     inkscape:cy="250.00000"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:current-layer="svg2755" />
+  <defs
+     id="defs2757" />
+  <text
+     xml:space="preserve"
+     style="font-size:112.92661;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans"
+     x="200.62242"
+     y="94.693489"
+     id="text3740"
+     transform="scale(0.926461,1.079376)"><tspan
+       sodipodi:role="line"
+       id="tspan3742"
+       x="200.62242"
+       y="94.693489">N</tspan></text>
+  <path
+     style="fill:#000000;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.0000000px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000"
+     d="M 224.68750,128.13156 L 173.50000,319.10031 L 208.09375,319.10031 L 208.09375,455.50656 L 224.68750,455.50656 L 224.68750,128.13156 z M 225.34375,128.13156 L 225.34375,455.50656 L 241.90625,455.50656 L 241.90625,319.10031 L 276.50000,319.10031 L 225.34375,128.13156 z "
+     id="path4585" />
+</svg>

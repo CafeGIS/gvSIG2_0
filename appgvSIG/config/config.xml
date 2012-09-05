@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="lib"/>
+	<resourceBundle name="text"/>
+	<label-set class-name="com.iver.cit.gvsig.project.documents.view.gui.View">
+		<label id="units" size="75"/>
+		<label id="x" size="120"/>
+		<label id="y" size="120"/>
+		<label id="4" size="110"/>
+		<label id="5" size="110"/>
+		<label id="distancearea" size="30"/>
+		<label id="projection" size="80"/>
+	</label-set>
+	<label-set class-name="com.iver.cit.gvsig.project.documents.layout.gui.Layout">
+		<label id="units" size="80"/>
+		<label id="2" size="180"/>
+		<label id="3" size="180"/>
+		<label id="4" size="50"/>
+		<label id="5" size="50"/>
+	</label-set>
+	<extensions>
+		<extension class-name="com.iver.cit.gvsig.InitialWarningExtension"
+			description="Initial warning message"
+			active="true"
+			priority="1">
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.InitializeApplicationExtension"
+			description="Initialize application extension"
+			active="true"
+			priority="99999">
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.ProjectExtension"
+			description="Extensión encargada de gestionar los proyectos."
+			active="true"
+			priority="10">
+			<menu text="Archivo/nuevo_proyecto"
+				key="n" mnemonic="n"
+				tooltip="nuevo_tooltip"
+				action-command="NUEVO" icon="project-new"
+				position="-1"/>
+			<menu text="Archivo/abrir_proyecto"
+				key="a" mnemonic="a"
+				tooltip="abrir_tooltip"
+				action-command="ABRIR" icon="project-open"
+				position="10"/>
+			<menu text="Archivo/guardar_proyecto"
+				key="g" mnemonic="g"
+				tooltip="guardar_tooltip"
+				action-command="GUARDAR" icon="project-save"
+				position="20"/>
+			<menu text="Archivo/guardar_como"
+				tooltip="guardar_tooltip"
+				action-command="GUARDAR_COMO" icon="project-save-as"
+				position="30"
+				last="true"/>
+			<menu text="Archivo"
+				position="35"
+				is_separator="true"/>
+			<menu text="Archivo/abrir_plantilla"
+				action-command="OPENTEMPLATE"
+				tooltip="abrir_plantilla"
+				icon="layout-template-open"
+				position="40"
+				last="true"/>
+			<menu text="Archivo"
+				position="45"
+				is_separator="true"/>
+			<menu text="Archivo/salir"
+				tooltip="salir_tooltip"
+				key="x" mnemonic="x"
+				action-command="SALIR" icon="application-exit"
+				position="99"
+				/>
+			<tool-bar name="gvSIG" position="1">
+				<action-tool icon="project-new" tooltip="nuevo_tooltip"
+					action-command="NUEVO" position="1"/>
+				<action-tool icon="project-open" tooltip="abrir_tooltip"
+					action-command="ABRIR" position="2"/>
+				<action-tool icon="project-save" tooltip="guardar_tooltip"
+					action-command="GUARDAR" position="3"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.AddLayer"
+			description="Extensión encargada de abrir las diferentes capas."
+			active="true"
+			priority="20">
+			<menu text="Vista/Anadir_Capa" key="o" icon="layer-add"/>
+			<tool-bar name="View" position="2">
+				<action-tool icon="layer-add" tooltip="Anadir_Capa" position="1"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.BasicSymbologyExtension"
+			description="Enables the  symbology."
+			active="true"
+			priority="20">
+		</extension>
+
+		<!--extension class-name="com.iver.cit.gvsig.CopyPasteExtension"
+			description="Extensión que habilita el copiado y pegado de capas y documentos."
+			active="true"
+			priority="20">
+		</extension-->
+
+		<extension class-name="com.iver.cit.gvsig.ZoomPrev"
+			description="Extensión encargada de gestionar los zooms previos al actual."
+			active="true">
+			<menu text="Vista/navegacion/Zoom_Previo" icon="view-zoom-back"/>
+			<tool-bar name="View_Tools_Zooms" position ="3">
+				<action-tool icon="view-zoom-back" action-command="ZOOM_PREV" tooltip="Zoom_Previo" position="1"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.InfoToolExtension"
+			description="Extensión encargada de gestionar la herramienta de info."
+			active="true"
+			priority="29">
+			<menu text="Vista/consulta/informacion" action-command="INFO" icon="view-query-information"/>
+			<tool-bar name="View_Tools_Query" position="5">
+				<selectable-tool icon="view-query-information" action-command="INFO"  tooltip="informacion" position="1"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.ViewControls"
+			description="Extensión encargada de gestionar la vista."
+			active="true"
+			priority="30">
+			<combo-scale name="scale"
+				label="1:"
+				elements="1000;2000;5000;10000;25000;50000;100000;200000;500000;1000000;2000000;5000000"
+  				value="10000"
+  				action-command="CHANGE_SCALE" />
+  			<menu text="Vista/navegacion/Zoom_Mas" action-command="ZOOM_IN" icon="view-zoom-in"/>
+			<menu text="Vista/navegacion/Zoom_Menos" action-command="ZOOM_OUT" icon="view-zoom-out"/>
+			<menu text="Vista/navegacion/Zoom_Completo" action-command="FULL" icon="view-zoom-map-contents"/>
+			<menu text="Vista/navegacion/Zoom_Acercar" action-command="ACTION_ZOOM_IN" tooltip="Zoom_Acercar" icon="view-zoom-center-in"/>
+			<menu text="Vista/navegacion/Zoom_Alejar" action-command="ACTION_ZOOM_OUT" tooltip="Zoom_Alejar" icon="view-zoom-center-out"/>
+			<menu text="Vista/navegacion/Desplazamiento" action-command="PAN" icon="view-pan"/>
+			<menu text="Vista/navegacion/Encuadre" action-command="ENCUADRE" icon="view-zoom-manager"/>
+			<menu text="Vista/poner_capas_a/visibles" action-command="CAPAS_VISIBLES"/>
+			<menu text="Vista/poner_capas_a/no_visibles" action-command="CAPAS_NOVISIBLES"/>
+			<menu text="Vista/poner_capas_a/activos" action-command="CAPAS_ACTIVAS"/>
+			<menu text="Vista/poner_capas_a/no_activos" action-command="CAPAS_NOACTIVAS"/>
+			<menu text="Vista/configurar_localizador" action-command="CONFIG_LOCATOR"/>
+			<tool-bar name="View_Tools_Zooms" position="3">
+				<selectable-tool is-default="true" icon="view-zoom-in" action-command="ZOOM_IN" tooltip="Zoom_Mas" position="2"/>
+				<selectable-tool icon="view-zoom-out" action-command="ZOOM_OUT"  tooltip="Zoom_Menos" position="3"/>
+				<action-tool icon="view-zoom-map-contents" action-command="FULL" tooltip="Zoom_Completo" position="4"/>
+				<action-tool icon="view-zoom-center-in" action-command="ACTION_ZOOM_IN" tooltip="Zoom_Acercar" position="5"/>
+				<action-tool icon="view-zoom-center-out" action-command="ACTION_ZOOM_OUT" tooltip="Zoom_Alejar" position="6"/>
+			</tool-bar>
+			<tool-bar name="View_Tools" position ="4">
+				<selectable-tool icon="view-pan" action-command="PAN"  tooltip="Desplazamiento"/>
+				<action-tool icon="view-zoom-manager" action-command="ENCUADRE" tooltip="gestion_encuadre"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.MeasureExtension"
+			description="Extensión encargada de gestionar las operaciones de medir sobre la vista."
+			active="true"
+			priority="30">
+			<menu text="Vista/consulta/medir_distancias" action-command="MEDICION" icon="view-query-distance"/>
+			<menu text="Vista/consulta/medir_area" action-command="AREA" icon="view-query-area"/>
+			<tool-bar name="View_Tools_Query" position="5">
+				<selectable-tool icon="view-query-distance" action-command="MEDICION"  tooltip="medir_distancias" position="2"/>
+				<selectable-tool icon="view-query-area" action-command="AREA"  tooltip="medir_area" position="6"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.ViewSelectionControls"
+			description="Extensión encargada de gestionar la vista."
+			active="true"
+			priority="30">
+			<menu text="Vista/seleccion/seleccionar_por_punto" action-command="SELPOINT" icon="view-select-geometry"/>
+			<menu text="Vista/seleccion/seleccionar_por_rectangulo" action-command="SELRECT" icon="view-select-by-rectangle"/>
+			<menu text="Vista/seleccion/seleccionar_por_poligono" action-command="SELPOL" icon="view-select-by-polygon"/>
+			<menu text="Vista/seleccion/separator" action-command="separator" is_separator="true"/>
+			<tool-bar name="Tools_Select" position="6">
+				<selectable-tool icon="view-select-geometry" action-command="SELPOINT"  tooltip="seleccionar_por_punto" position="1"/>
+				<selectable-tool icon="view-select-by-rectangle" action-command="SELRECT"  tooltip="seleccionar_por_rectangulo" position="2"/>
+				<selectable-tool icon="view-select-by-polygon" action-command="SELPOL"  tooltip="seleccionar_por_poligono" position="3"/>
+			</tool-bar>
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.ViewSelectionByTheme"
+            description="Extensión encargada de la selección por tema."
+            active="true"
+            priority="30">
+            <menu text="Vista/seleccion/Seleccion_por_capa" action-command="SELECTIONBYSHAPE"/>
+        </extension>
+        <extension class-name="com.iver.cit.gvsig.ViewInvertSelection"
+            description="Extensión encargada de hacer la selección inversa."
+            active="true"
+            priority="30">
+            <menu text="Vista/seleccion/separator" action-command="separator" is_separator="true"/>
+            <menu text="Vista/seleccion/invert_selection" action-command="INVERT_SELECTION" icon="view-select-invert"/>
+            <tool-bar name="Tools_Select" position="6">
+                <action-tool icon="view-select-invert" action-command="INVERT_SELECTION"  tooltip="invert_selection" position="4"/>
+            </tool-bar>
+        </extension>
+		<extension class-name="com.iver.cit.gvsig.ViewPropertiesExtension"
+			description="Extensión encargada de gestionar el diálogo de propiedades de la vista."
+			active="true">
+			<menu text="Vista/propiedades" action-command="PROPERTIES"/>
+		</extension>
+		<!--extension class-name="com.iver.cit.gvsig.ThemeControls"
+			description="Extensión encargada de gestionar los eventos realizados sobre una capa."
+			active="true">
+			<menu text="Capa/shape_seleccion" action-command="SHAPE_SELECTED" icon="images/shapeseleccion.png"/>
+			<menu text="Capa/Exportar selección a DXF" action-command="DXF_SELECTED"/>
+			<menu text="Vista/navegacion/Zoom_Select" action-command="ZOOM_SELECT" icon="images/ZoomSeleccion.png"/>
+			<tool-bar name="View_Tools_Zooms" position="3">
+				<action-tool icon="images/ZoomSeleccion.png" action-command="ZOOM_SELECT"  tooltip="Zoom_Select" position="7"/>
+			</tool-bar>
+		</extension-->
+		<extension class-name="com.iver.cit.gvsig.ZoomToSelectExtension"
+			description="Extensión encargada de gestionar los eventos realizados sobre una capa."
+			active="true">
+			<menu text="Vista/navegacion/Zoom_Select" action-command="ZOOM_SELECT" icon="view-zoom-to-seleccion"/>
+			<tool-bar name="View_Tools_Zooms" position="3">
+				<action-tool icon="view-zoom-to-seleccion" action-command="ZOOM_SELECT"  tooltip="Zoom_Select" position="7"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.ClearSelectionExtension"
+			description="Extensión encargada de limpiar la selección."
+			active="true">
+			<menu text="Capa/clear_selection" action-command="DEL_SELECTION" icon="view-clear-selection"/>
+			<tool-bar name="Tools_Select" position="6">
+				<action-tool icon="view-clear-selection" action-command="DEL_SELECTION"  tooltip="clear_selection" position="4"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.LinkControls"
+			description="Extensión encargada de gestionar el hiperlink."
+			active="true">
+			<menu text="Vista/consulta/Hiperenlace" action-command="LINK" icon="view-query-link"/>
+			<tool-bar name="View_Tools_Query" position="5">
+				<selectable-tool icon="view-query-link" action-command="LINK"  tooltip="Hiperenlace" position="7"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.ExportLayoutExtension"
+			description="Extension for exporting the layout to PDF and PostScript."
+			active="true">
+			<menu text="Archivo/exportar_pdf" action-command="PDF"
+				 tooltip="exportar_pdf" icon="layout-export-pdf"
+				 position="38"/>
+			<menu text="Archivo/exportar_ps" action-command="PS"
+				 tooltip="exportar_ps" icon="layout-export-ps"
+				 position="39"/>
+			<tool-bar name="gvSIG" position="1">
+				<action-tool icon="layout-export-pdf" action-command="PDF"  tooltip="exportar_pdf" position="4"/>
+				<action-tool icon="layout-export-ps" action-command="PS"  tooltip="exportar_ps" position="5"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.LayoutExtension"
+			description="Extensión encargada de gestionar los eventos realizados sobre el Layout."
+			active="true">
+
+			<menu text="Mapa/navegacion/Zoom_Mas" action-command="LAOYUT_ZOOM_IN" tooltip="Zoom_Mas" icon="layout-zoom-in"/>
+			<menu text="Mapa/navegacion/Zoom_Menos" action-command="LAYOUT_ZOOM_OUT" tooltip="Zoom_Menos" icon="layout-zoom-out"/>
+			<menu text="Mapa/navegacion/Zoom_Acercar" action-command="LAYOUT_ZOOMIN" tooltip="Zoom_Acercar" icon="view-zoom-center-in"/>
+			<menu text="Mapa/navegacion/Zoom_Alejar" action-command="LAYOUT_ZOOMOUT" tooltip="Zoom_Alejar" icon="view-zoom-center-out"/>
+			<menu text="Mapa/navegacion/Zoom_Completo" action-command="LAYOUT_FULL" tooltip="Zoom_Completo" icon="layout-zoom-fit"/>
+			<menu text="Mapa/navegacion/Zoom_Real" action-command="REALZOOM" tooltip="Zoom_Real" icon="layout-zoom-real"/>
+			<menu text="Mapa/navegacion/Zoom_Select" action-command="ZOOMSELECT" tooltip="Zoom_Select" icon="layout-zoom-selected"/>
+			<menu text="Mapa/navegacion/Desplazamiento" action-command="LAYOUT_PAN"  tooltip="Encuadre" icon="layout-pan"/>
+			<menu text="Archivo/guardar_como_plantilla" action-command="SAVETEMPLATE"
+				 tooltip="guardar"
+				 icon="save-icon"
+				 position="42"/>
+			<tool-bar name="Layout_Tools_Zooms" position="20">
+				<selectable-tool icon="layout-zoom-in" action-command="LAYOUT_ZOOM_IN" tooltip="Zoom_Mas"/>
+				<selectable-tool icon="layout-zoom-out" action-command="LAYOUT_ZOOM_OUT" tooltip="Zoom_Menos"/>
+				<action-tool icon="view-zoom-center-in" action-command="LAYOUT_ZOOMIN" tooltip="Zoom_Acercar"/>
+				<action-tool icon="view-zoom-center-out" action-command="LAYOUT_ZOOMOUT" tooltip="Zoom_Alejar"/>
+				<action-tool icon="layout-zoom-fit" action-command="LAYOUT_FULL" tooltip="Zoom_Completo"/>
+				<action-tool icon="layout-zoom-real" action-command="REALZOOM" tooltip="Zoom_Real"/>
+				<action-tool icon="layout-zoom-selected" action-command="ZOOMSELECT" tooltip="Zoom_Select"/>
+				<selectable-tool icon="layout-pan" action-command="LAYOUT_PAN"  tooltip="Encuadre"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.LayoutEditableControls"
+			description="Extensión encargada de gestionar los eventos de edición realizados sobre el Layout."
+			active="true">
+			<menu text="Mapa/propiedades" action-command="PROPERTIES" tooltip="propiedades_mapa"/>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.LayoutEditVertexExtension"
+			description="Extensión encargada de gestionar los eventos de edición realizados sobre el Layout."
+			active="true">
+			<menu text="Mapa/edicion/editar_vertices" action-command="VERTEX" tooltip="editar_vertices" icon="layout-edit-vertex"/>
+			<tool-bar name="Tools_Select" position="6">
+				<selectable-tool icon="layout-edit-vertex" action-command="VERTEX" tooltip="editar_vertices" position="4"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.LayoutInsertToolsExtension"
+			description="Extensión encargada de gestionar los eventos de edición realizados sobre el Layout."
+			active="true">
+			<menu text="Mapa/seleccion/seleccionar_por_rectangulo" action-command="SELECT"  tooltip="seleccionar_por_rectangulo" icon="view-select-geometry"/>
+			<menu text="Mapa/Insertar/texto" action-command="RECTANGLETEXT" tooltip="insertar_texto" icon="layout-insert-text"/>
+			<menu text="Mapa/Insertar/punto" action-command="POINT" tooltip="insertar_punto" icon="layout-insert-point"/>
+			<menu text="Mapa/Insertar/rectangulo" action-command="RECTANGLESIMPLE" tooltip="insertar_rectangulo" icon="layout-insert-polygon"/>
+			<menu text="Mapa/Insertar/circulo" action-command="CIRCLE" tooltip="insertar_circulo" icon="layout-insert-circle"/>
+			<menu text="Mapa/Insertar/linea" action-command="LINE" tooltip="insertar_linea" icon="layout-insert-line"/>
+			<menu text="Mapa/Insertar/polilinea" action-command="POLYLINE" tooltip="insertar_polilinea" icon="layout-insert-polyline"/>
+			<menu text="Mapa/Insertar/poligono" action-command="POLYGON" tooltip="insertar_poligono" icon="layout-insert-poligon"/>
+			<menu text="Mapa/Insertar/imagen" action-command="RECTANGLEPICTURE" tooltip="insertar_imagen" icon="layout-insert-image"/>
+			<menu text="Mapa/Insertar/Vista" action-command="RECTANGLEVIEW" tooltip="insertar_vista" icon="layout-insert-view"/>
+			<menu text="Mapa/Insertar/Localizador" action-command="RECTANGLEOVERVIEW" tooltip="insertar_localizador" icon="layout-insert-locator"/>
+			<menu text="Mapa/Insertar/leyenda" action-command="RECTANGLELEGEND"  tooltip="insertar_leyenda" icon="layout-insert-legend"/>
+			<menu text="Mapa/Insertar/escala" action-command="RECTANGLESCALEBAR"  tooltip="insertar_escala" icon="layout-insert-scalebar"/>
+			<menu text="Mapa/Insertar/north" action-command="RECTANGLENORTH" tooltip="insertar_norte" icon="layout-insert-north"/>
+			<menu text="Mapa/Insertar/cajetin" action-command="RECTANGLEBOX" tooltip="insertar_cajetin" icon="layout-insert-box"/>
+
+			<tool-bar name="Tools_Select" position="6">
+				<selectable-tool icon="view-select-geometry" action-command="SELECT"  tooltip="seleccionar_por_rectangulo" position="5"/>
+				<action-tool icon="remove-selection" action-command="REMOVE" tooltip="borra_seleccion" position="6"/>
+			</tool-bar>
+
+			<tool-bar name="Layout_Tools_Insert_Simple" position="7">
+				<selectable-tool icon="layout-insert-text" action-command="RECTANGLETEXT"  tooltip="insertar_texto" position="1"/>
+				<selectable-tool icon="layout-insert-image" action-command="RECTANGLEPICTURE"  tooltip="insertar_imagen" position="2"/>
+				<selectable-tool icon="layout-insert-point" action-command="POINT"  tooltip="insertar_punto" position="3"/>
+				<selectable-tool icon="layout-insert-polygon" action-command="RECTANGLESIMPLE"  tooltip="insertar_rectangulo" position="4"/>
+				<selectable-tool icon="layout-insert-circle" action-command="CIRCLE"  tooltip="insertar_circulo" position="5"/>
+				<selectable-tool icon="layout-insert-line" action-command="LINE"  tooltip="insertar_linea" position="6"/>
+				<selectable-tool icon="layout-insert-polyline" action-command="POLYLINE"  tooltip="insertar_polilinea" position="7"/>
+				<selectable-tool icon="layout-insert-poligon" action-command="POLYGON" tooltip="insertar_poligono" position="8"/>
+			</tool-bar>
+
+			<tool-bar name="Layout_Tools_Insert_Cartografy" position="8">
+				<selectable-tool icon="layout-insert-view" action-command="RECTANGLEVIEW" tooltip="insertar_vista" position="1"/>
+				<selectable-tool icon="layout-insert-locator" action-command="RECTANGLEOVERVIEW" tooltip="insertar_localizador" position="2"/>
+				<selectable-tool icon="layout-insert-legend" action-command="RECTANGLELEGEND"  tooltip="insertar_leyenda" position="3"/>
+				<selectable-tool icon="layout-insert-scalebar" action-command="RECTANGLESCALEBAR"  tooltip="insertar_escala" position="4"/>
+				<selectable-tool icon="layout-insert-north" action-command="RECTANGLENORTH"  tooltip="insertar_norte" position="5"/>
+				<selectable-tool icon="layout-insert-box" action-command="RECTANGLEBOX"  tooltip="insertar_cajetin" position="6"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.FFrameViewExtension"
+			description="Extensión encargada de gestionar los eventos realizados sobre las vistas añadidas al Layout."
+			active="true">
+			<menu text="Mapa/navegacion_vista/Zoom_Mas_Vista" action-command="VIEW_ZOOMIN" tooltip="Zoom_Mas_Vista" icon="view-zoom-in"/>
+			<menu text="Mapa/navegacion_vista/Zoom_Menos_Vista" action-command="VIEW_ZOOMOUT" tooltip="Zoom_Menos_Vista" icon="view-zoom-out"/>
+			<menu text="Mapa/navegacion_vista/Zoom_Completo_Vista" action-command="VIEW_FULL" tooltip="Zoom_Completo_Vista" icon="view-zoom-map-contents"/>
+			<menu text="Mapa/navegacion_vista/Encuadre_Vista" action-command="VIEW_PAN" tooltip="Encuadre_Vista" icon="view-pan"/>
+			<tool-bar name="Layout_Tools_View" position="9">
+				<action-tool icon="view-zoom-map-contents" action-command="VIEW_FULL" tooltip="Zoom_Completo_Vista" position="1"/>
+				<selectable-tool icon="view-zoom-in" action-command="VIEW_ZOOMIN" tooltip="Zoom_Mas_Vista" position="2"/>
+				<selectable-tool icon="view-zoom-out" action-command="VIEW_ZOOMOUT" tooltip="Zoom_Menos_Vista" position="3"/>
+				<selectable-tool icon="view-pan" action-command="VIEW_PAN" tooltip="Encuadre_Vista" position="4"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.TagExtension"
+			description="Extensión para añadir un tag a los FFrames."
+			active="false">
+			<menu text="Mapa/anadir_tag" key="t" action-command="SET_TAG" tooltip="anadir_tag" icon="layout-tag"/>
+			<tool-bar name="Mapa" position="10">
+				<action-tool icon="layout-insert-tag" action-command="SET_TAG" tooltip="anadir_tag" position="1"/>
+				<action-tool icon="layout-show-tag" action-command="VIEW_TAGS" tooltip="ver_tags" position="2"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.LayoutGraphicControls"
+			description="Extensión encargada de gestionar los eventos realizados sobre los gráficos que contiene el Layout."
+			active="true">
+			<menu text="Mapa/Graficos/propiedades" action-command="PROPIEDADES" tooltip="propiedades" />
+			<menu text="Mapa/Graficos/alinear" action-command="ALINEAR" tooltip="alinear_graficos"/>
+			<menu text="Mapa/Graficos/agrupar" action-command="AGRUPAR" tooltip="agrupar_graficos" icon="layout-group"/>
+			<menu text="Mapa/Graficos/desagrupar" action-command="DESAGRUPAR" tooltip="desagrupar_graficos" icon="layout-ungroup"/>
+			<menu text="Mapa/Graficos/colocar_delante" action-command="DELANTE" tooltip="colocar_delante" icon="layout-bring-to-front"/>
+			<menu text="Mapa/Graficos/colocar_detras" action-command="DETRAS" tooltip="colocar_detras" icon="layout-send-to-back"/>
+			<menu text="Mapa/Graficos/tamano_posicion" action-command="POSICIONAR" tooltip="tamano_posicion" icon="layout-set-size-position"/>
+			<menu text="Mapa/Graficos/linea_grafica" action-command="BORDEAR" tooltip="linea_grafica" icon="layout-add-border"/>
+			<tool-bar name="Layout_Tools_Graphics" position="11">
+				<action-tool icon="layout-bring-to-front" action-command="DELANTE" tooltip="colocar_delante" position="1"/>
+				<action-tool icon="layout-send-to-back" action-command="DETRAS" tooltip="colocar_detras" position="2"/>
+				<action-tool icon="layout-set-size-position" action-command="POSICIONAR" tooltip="tamano_posicion" position="3"/>
+				<action-tool icon="layout-group" action-command="AGRUPAR" tooltip="agrupar_graficos" position="4"/>
+				<action-tool icon="layout-ungroup" action-command="DESAGRUPAR" tooltip="desagrupar_graficos" position="5"/>
+				<action-tool icon="layout-add-border" action-command="BORDEAR" tooltip="linea_grafica" position="6"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.LayoutRedoExtension"
+			description="Extensión para rehacer cambios sobre el Layout."
+			active="true">
+			<menu text="Mapa/rehacer" action-command="REDO" tooltip="rehacer" icon="layout-redo"/>
+			<tool-bar name="Mapa" position="10">
+				<action-tool icon="layout-redo" action-command="REDO" tooltip="rehacer" position="4"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.LayoutUndoExtension"
+			description="Extensión para deshacer cambios sobre el Layout."
+			active="true">
+			<menu text="Mapa/deshacer" action-command="UNDO" tooltip="dehacer" icon="layout-undo"/>
+			<tool-bar name="Mapa" position="10">
+				<action-tool icon="layout-undo" action-command="UNDO" tooltip="deshacer" position="3"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.LayoutCommandStackExtension"
+			description="Extensión encargada de abrir el diálogo para gestionar los comandos apilados."
+			active="true">
+			<menu text="Mapa/pila_de_comandos" key="k" action-command="COMMANDSTACK" tooltip="pila_de_comandos" icon="edition-command-stack"/>
+			<tool-bar name="Mapa" position="10">
+				<action-tool icon="edition-command-stack" action-command="COMMANDSTACK" tooltip="pila_de_comandos" position="5"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.TableOperations"
+			description="Extensión encargada de gestionar las operaciones sobre las tablas."
+			active="true">
+			<menu text="Tabla/link" icon="table-link" action-command="LINK"/>
+			<tool-bar name="Herramientas" position="12">
+				<action-tool icon="table-link" action-command="LINK" tooltip="link" position="2"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.RedoTableExtension"
+			description="Extensión encargada de rehacer la edición sobre la capa activa."
+			active="true">
+			<menu text="Tabla/rehacer" action-command="REDO" icon="table-redo"/>
+			<tool-bar name="modificar" position="12">
+				<action-tool name="rehacer" icon="table-redo" action-command="REDO" tooltip="rehacer" group="tabla" position="2"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.UndoTableExtension"
+			description="Extensión encargada de dehacer la edición sobre la capa activa."
+			active="true">
+			<menu text="Tabla/deshacer" action-command="UNDO" icon="table-undo"/>
+			<tool-bar name="modificar" position="12">
+				<action-tool name="deshacer" icon="table-undo" action-command="UNDO" tooltip="deshacer" group="tabla" position="1"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.TableEditStopExtension"
+			description="Extensión encargada de gestionar las operaciones de edición sobre las tablas."
+			active="true">
+			<menu text="Tabla/stop_edition" action-command="STOPEDITING"/>
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.TableEditStartExtension"
+			description="Extensión encargada de gestionar las operaciones de edición sobre las tablas."
+			active="true">
+			<menu text="Tabla/start_edition" action-command="STARTEDIT"/>
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.TableEditInsertExtension"
+			description="Extensión encargada de gestionar las operaciones de edición sobre las tablas."
+			active="true">
+			<menu text="Tabla/insert_row" action-command="INSERTROW"/>
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.TableEditRemoveRowExtension"
+			description="Extensión encargada de gestionar las operaciones de edición sobre las tablas."
+			active="true">
+			<menu text="Tabla/remove_row" action-command="REMOVEROW"/>
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.TableEditChangeColumnsExtension"
+			description="Extensión encargada de gestionar las operaciones de edición de columnas sobre las tablas."
+			active="true">
+			<menu text="Tabla/add_column" action-command="ADDCOLUMN"/>
+			<menu text="Tabla/rename_column" action-command="RENAMECOLUMN"/>
+			<menu text="Tabla/remove_column" action-command="REMOVECOLUMN"/>
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.TableEditAttributes"
+			description="Extensión encargada de gestionar los campos de las tablas."
+			active="true">
+			<menu text="Tabla/manage_fields" action-command="MANAGE_FIELDS"/>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.TableEditCopyExtension"
+			description="Extensión encargada de gestionar las operaciones de edición sobre las tablas."
+			active="true">
+			<menu text="Tabla/copy" icon="edit-copy" action-command="COPY"/>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.TableEditCutExtension"
+			description="Extensión encargada de gestionar las operaciones de edición sobre las tablas."
+			active="true">
+			<menu text="Tabla/cut" icon="edit-cut" action-command="CUT"/>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.TableEditPasteExtension"
+			description="Extensión encargada de gestionar las operaciones de edición sobre las tablas."
+			active="true">
+			<menu text="Tabla/paste" icon="edit-paste" action-command="PASTE"/>
+		</extension>
+
+		<extension active="true" class-name="com.iver.cit.gvsig.TableFieldOperations"
+			description="Operaciones sobre los campos de las tablas">
+			<menu text="Tabla/ascending_order" icon="table-order-asc" action-command="ORDERASC"/>
+			<menu text="Tabla/descending_order" icon="table-order-desc" action-command="ORDERDESC"/>
+			<tool-bar name="Herramientas" position="12">
+				<action-tool icon="table-order-asc" tooltip="ascending_order_tooltip" action-command="ORDERASC" position="3"/>
+				<action-tool icon="table-order-desc" tooltip="descending_order_tooltip" action-command="ORDERDESC" position="4"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.TableNumericFieldOperations"
+			description="Extensión encargada de gestionar las operaciones sobre los campos numéricos."
+			active="true">
+			<menu text="Tabla/statistics" icon="table-statistics"/>
+			<tool-bar name="Herramientas" position="12">
+				<action-tool icon="table-statistics" tooltip="statistics" position="5"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.TableRowsOperations"
+			description="Extensión encargada de gestionar la selección en la tabla."
+			active="true">
+			<menu text="Tabla/selection_up" action-command="SELECTIONUP" icon="table-selection-up"/>
+			<menu text="Tabla/invert_selection" action-command="INVERTSELECTION" icon="table-invert"/>
+			<tool-bar name="Herramientas" position="12">
+				<action-tool icon="table-selection-up" action-command="SELECTIONUP" tooltip="selection_up" position="6"/>
+				<action-tool icon="table-invert" action-command="INVERTSELECTION" tooltip="invert_selection" position="7"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.FiltroExtension"
+			description="Extensión encargada de abrir el diálogo para filtrar una tabla."
+			active="true">
+			<menu text="Tabla/filtro" icon="table-filter" action-command="FILTRO"/>
+			<tool-bar name="Herramientas" position="12">
+				<action-tool icon="table-filter" action-command="FILTRO" tooltip="filtro" position="7"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.RemoveTableLink"
+			description="Extensión encargada de quitar los enlaces de las tablas."
+			active="true">
+			<menu text="Tabla/quitar_enlaces"/>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.ViewProjectWindow"
+			description="Extensión encargada de abrir la ventana de gestión del proyecto."
+			active="true">
+			<menu text="Ver/titulo"
+				key="p" mnemonic="p"
+				tooltip="ver_tooltip"
+				action-command="SHOW"/>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.ShowTable"
+			description="Extensión encargada de abrir la tabla asociada a la capa seleccionado."
+			active="true">
+			<menu text="Capa/ver_tabla_atributos" icon="layer-show-attribute-table"/>
+			<tool-bar name="Acciones" position="13">
+				<action-tool icon="layer-show-attribute-table"
+					enableText="Un_Layer"
+					tooltip="Muestra_atributos" position="1"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.Print"
+			description="Extensión encargada de la impresión."
+			active="true">
+			<menu text="Mapa/Imprimir" icon="document-print" tooltip="Imprimir"/>
+			<tool-bar name="Mapa" position="10">
+				<action-tool icon="document-print" tooltip="Imprimir" position="6"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.PrintTable"
+			description="Extensión encargada de la impresión de las tablas."
+			active="true">
+			<menu text="Tabla/Imprimir" icon="document-print" action-command="PRINTTABLE" tooltip="Imprimir"/>
+			<tool-bar name="Tabla" position="10">
+				<action-tool icon="document-print" action-command="PRINTTABLE" tooltip="Imprimir"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.PrintProperties"
+			description="Extensión encargada de las propiedades de impresión."
+			active="true">
+			<menu text="Mapa/preparar_pagina" action-command="CONFIG" tooltip="preparar_pagina"/>
+			<tool-bar name="Mapa" position="10">
+				<action-tool icon="layout-page-setup" tooltip="preparar_pagina" position="7"/>
+			</tool-bar>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.Export"
+			description="Extensión encargada de exportar una vista al formato de imagen que se seleccione."
+			active="true">
+			<menu text="Vista/export/imagen"/>
+		</extension>
+
+		<!-- extension class-name="com.iver.cit.gvsig.ThemeToAnnotationExtension"
+			description="Extensión encargada de la capa de texto."
+			active="true">
+			<menu text="Capa/to_annotation" action-command="LAYERTOANNOTATION"/>
+		</extension-->
+
+		<extension class-name="com.iver.cit.gvsig.PaletteViewInfoExtension"
+			description="Extensión encargada transformar la vista activa en palette."
+			active="true">
+			<menu text="Ventana/to_palette" action-command="PALETTE"
+				position="50"/>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.RestoreViewInfoExtension"
+			description="Extensión encargada transformar la vista palette en su original."
+			active="true">
+			<menu text="Ventana/restore_palette" action-command="RESTORE"
+				position="11"/>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.FFrameLegendExtension"
+			description="Extensión encargada de controlar un FFrameLegend."
+			active="true">
+			<menu text="Mapa/Graficos/simplificar_leyenda" action-command="SIMPLIFICAR" tooltip="simplificar_leyenda"/>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.About"
+			description="Extensión encargada de abrir una ventana con la información relativa al programa."
+			active="true"
+			priority="999999999">
+			<menu text="Ayuda/acerca_de" />
+		</extension>
+
+	</extensions>
+	<icon src="gvsig-logo-icon" text="gvSIG"/>
+</plugin-config>

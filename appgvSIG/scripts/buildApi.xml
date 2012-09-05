@@ -1,0 +1,345 @@
+<project basedir=".." name="build" default="buildAPIReference">
+	<!--
+	Note: the replacement in html links uses lots of memory, this script should
+	be launched using the -Xmx512M parameter for the JVM.
+	-->
+	<property name="tmpSourceDir" value="/tmp/tmp-sources"/>
+	<property name="apiReferenceDir" value="/tmp/docs/dist/html/APIReference"/>
+
+	<property name="passw" value="my_password"/>
+	<property name="server" value="my_server"/>
+	<property name="port" value="6666"/>
+	<property name="user" value="my_user"/>
+	<property name="remoteDir1" value="/remoteDir1"/>
+	<property name="remoteDir2" value="/remoteDir2"/>
+	<property name="encoding" value="ISO-8859-1"/>
+	<property name="ftp-passive" value="yes"/>
+	<property name="verbose" value="yes"/>
+
+<!--=======================================================================-->		
+	
+	<!-- Deploy del API -->
+	<target name="deployAPIReference" depends="buildAPIReference">
+		<!-- zope no acepta directorios llamados 'values' -->
+		<antcall target="renameFiles">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/values"/>
+			<param name="newValue" value="/values_" />
+		</antcall>
+		<antcall target="replaceInLinks">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/values"/>
+			<param name="newValue" value="/values_" />
+		</antcall>
+		<!-- Deploy del API en el directorio no Plone-->
+		<antcall target="deleteRemoteFiles">
+			<param name="remoteDir" value="${remoteDir1}"/>
+			<param name="excludeFiles" value=""/>
+		</antcall>
+		<antcall target="deleteRemoteDirs">
+			<param name="remoteDir" value="${remoteDir1}"/>
+			<param name="excludeDirs" value=""/>
+		</antcall>
+		<echo>apiReferenceDir ${apiReferenceDir}
+			remoteDir1: ${remoteDir1}"
+		</echo>
+		<antcall target="copyFilesToRemote">
+			<param name="sourceDir" value="${apiReferenceDir}"/>
+			<param name="remoteDir" value="${remoteDir1}"/>
+		</antcall>
+		<!--
+		No queremos crear el .zip con la API
+		<antcall target="makeZipFile" 
+			description="Crea un fichero .zip con la documentacion del api">
+			<param name="dstDir" value="${basedir}/docs/dist/zip/apiref.zip"/>
+			<param name="srcDir" value="${apiReferenceDir}"/>
+		</antcall>
+		<antcall target="copyFilesToRemote" 
+			description="Copia el fichero apiref.zip al directorio remoto">
+			<param name="sourceDir" value="${basedir}/docs/dist/zip"/>
+			<param name="remoteDir" value="${remoteDir}/portal2"/>
+		</antcall> -->
+
+		<!-- Deploy del API en el directorio Plone-->
+		<!-- Plone no acepta directorios llamados 'search' -->		
+		<antcall target="renameFiles">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/search"/>
+			<param name="newValue" value="/search_" />
+		</antcall>
+		<antcall target="replaceInLinks">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/search"/>
+			<param name="newValue" value="/search_" />
+		</antcall>
+		<antcall target="renameFiles">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/layout"/>
+			<param name="newValue" value="/layout_" />
+		</antcall>
+		<antcall target="replaceInLinks">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/layout"/>
+			<param name="newValue" value="/layout_" />
+		</antcall>
+		<antcall target="renameFiles">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/actions"/>
+			<param name="newValue" value="/actions_" />
+		</antcall>
+		<antcall target="replaceInLinks">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/actions"/>
+			<param name="newValue" value="/actions_" />
+		</antcall>
+		<antcall target="renameFiles">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/view"/>
+			<param name="newValue" value="/view_" />
+		</antcall>
+		<antcall target="replaceInLinks">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/view"/>
+			<param name="newValue" value="/view_" />
+		</antcall>
+		<antcall target="renameFiles">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/properties"/>
+			<param name="newValue" value="/properties_" />
+		</antcall>
+		<antcall target="replaceInLinks">
+			<param name="targetDir" value="${apiReferenceDir}" />
+			<param name="oldValue" value="/properties"/>
+			<param name="newValue" value="/properties_" />
+		</antcall>
+ 		<antcall target="deleteRemoteFiles">
+			<param name="remoteDir" value="${remoteDir2}"/>
+			<param name="excludeFiles" value="${remoteDir2}/indice.html"/>
+		</antcall>
+		<antcall target="deleteRemoteDirs">
+			<param name="remoteDir" value="${remoteDir2}"/>
+			<param name="excludeDirs" value=""/>
+		</antcall>
+		<echo>apiReferenceDir ${apiReferenceDir}
+			remoteDir1: ${remoteDir1}"
+		</echo>
+		<antcall target="copyFilesToRemote">
+			<param name="sourceDir" value="${apiReferenceDir}"/>
+			<param name="remoteDir" value="${remoteDir2}"/>
+		</antcall>
+	</target>	
+	
+	<target name="buildAPIReference" 
+  		description="Crea el documento Javadoc del componente">
+  		<delete dir="${apiReferenceDir}" />
+  		<mkdir dir="${apiReferenceDir}"/>
+		<echo>Basedir: ${basedir}</echo>
+		<echo>Output dir: ${apiReferenceDir}</echo>
+		<!--
+			Copy the packaes from all the projects to a temporary directory.
+			We need only one directory to properly generate the Javadocs.
+		-->
+		<delete dir="${tmpSourceDir}" failonerror="false"/>
+		<mkdir dir="${tmpSourceDir}"/>		
+		<copy todir="${tmpSourceDir}">
+		    <fileset dir="${basedir}/_fwAndami/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/appgvSIG/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extAddEventTheme/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extCAD/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extCatalogYNomenclator/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extDataLocator/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extDwg/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extGeoProcessing/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extJDBC/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extRasterTools/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extWCS/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extWFS2/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/extWMS/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/libCorePlugin/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+		<!--	<fileset dir="${basedir}/libCq CMS for java/src">
+		        <include name="**/*.java"/>
+		    </fileset>			 -->
+			<fileset dir="${basedir}/libDriverManager/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/libDwg/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/libFMap/src">
+		        <include name="**/*.java"/>
+		    </fileset>			
+			<fileset dir="${basedir}/libInternationalization/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/libIverUtiles/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/libRemoteServices/src">
+		        <include name="**/*.java"/>
+		    </fileset>
+			<fileset dir="${basedir}/libGDBMS/src/main/java/">
+		        <include name="**/*.java"/>
+		    </fileset>
+		</copy>
+  		<javadoc
+			author="true"
+			version="true"
+			destdir="${apiReferenceDir}"
+  			maxmemory="512m"
+		  	source="1.4"
+		  	doctitle="API DOCUMENTATION"
+			bottom="API Documentation" 
+			windowtitle="API Documentation"
+  			verbose="${verbose}"
+  			encoding="${encoding}">
+  			<sourcepath>
+  				<pathelement path="${tmpSourceDir}"/>
+  			</sourcepath>
+  			<packageset dir="/${tmpSourceDir}">
+  				<include name="**/**"/>
+  			</packageset>
+	  	</javadoc>
+  	</target>
+	
+<!-- ============================= Scripts ================================= -->
+	<target name="makeRemoteDirs" 
+		description="Crea un directorio por ftp">
+		<ftp 
+			action="mkdir" 
+			server="${server}" 
+			password="${passw}" 
+			userid="${user}" 
+			remotedir="${remoteDir}"
+			port="${port}"
+			passive="${ftp-passive}"
+		/>
+	</target>	
+	<target name="deleteRemoteFiles" 
+		description="Borra los archivos de los directorios remotos">
+		<ftp
+			action="del"
+			server="${server}" 
+			password="${passw}" 
+			userid="${user}" 
+			remotedir="${remoteDir}"
+			port="${port}"
+			passive="${ftp-passive}"
+			verbose="${verbose}">
+			<fileset dir="${remoteDir}">
+				<include name="**"/>
+				<exclude name="${excludeFiles}"/>
+			</fileset>
+		</ftp>
+	</target>	
+	<target name="deleteRemoteDirs" 
+		description="Borra los directorios remotos">
+		<ftp
+			action="rmdir"
+			server="${server}" 
+			password="${passw}" 
+			userid="${user}" 
+			remotedir="${remoteDir}"
+			port="${port}"
+			passive="${ftp-passive}"
+			verbose="${verbose}">
+			<fileset>
+				<include name="**"/>
+				<exclude name="${excludeDirs}"/>
+			</fileset>
+		</ftp>
+	</target>
+	<target name="copyFilesToRemote"
+		description="Copia archivos por ftp">
+		<echo>Copying files to ftp://${server}/${remoteDir}</echo>
+		<ftp server="${server}" 
+			password="${passw}" 
+			userid="${user}" 
+			remotedir="${remoteDir}"
+			port="${port}"
+			passive="${ftp-passive}"
+			verbose="${verbose}"
+			binary="true">
+		
+			<fileset dir="${sourceDir}">
+			    <include name="**/*"/>
+			</fileset>
+		</ftp>
+	</target>
+	<target name="moveDir"
+		description="Mueve un directorio a otro">		
+		<move todir="${dstDir}">
+			<fileset dir="${srcDir}"/>
+		</move>		
+	</target>
+	<target name="copyDir"
+		description="Copia un árbol de directorios en otro directorio">		
+		<copy todir="${dstDir}">
+			<fileset dir="${srcDir}"/>
+		</copy>		
+	</target>
+	<target name="makeZipFile"
+		description="Crea un archivo zip">
+		<zip destfile="${dstDir}"
+			basedir="${srcDir}"
+			includes="**/*.html">
+		</zip>
+	
+	</target>
+
+	<target name="replaceInLinks"
+		description="For each html file in ${targetDir}, replaces ${oldValue} by ${newValue} in each href link">
+		<replaceregexp flags="g">
+			<regexp pattern='(A HREF="[^"]*)(${oldValue})([^"]*")'/>
+			<substitution expression='\1${newValue}\3'/>
+			<fileset dir="${apiReferenceDir}">
+				<include name="**/*.html"/>
+				<include name="**/*.HTML"/>
+				<include name="**/*.htm"/>
+				<include name="**/*.HTM"/>
+			</fileset>
+		</replaceregexp>
+	</target>
+	
+	<!-- this target does not work perfectly:
+	     - it will fail if two nested directories have to be replaced
+	     - it will fail to replaces directory in the root directory
+	     but anyway, we don't have these situations, so it will make the trick
+	-->
+	<target name="renameFiles"
+		description="Rename directories from ${oldValue} to ${newValue} ">
+		<move todir="${targetDir}" verbose="yes">
+			<fileset 
+				dir="${targetDir}"
+				includes="**/*"/>
+			<regexpmapper from="(.*)(${oldValue})(.*)" to="\1${newValue}\3" handledirsep="true"/>
+		</move>
+	</target>	
+</project>

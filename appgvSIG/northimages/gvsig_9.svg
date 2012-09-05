@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Copyright © 2008 by Silvio Grosso, under the terms of the GNU GPL version 2. -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   viewBox="0 0 450 500"
+   width="450"
+   height="500"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     id="layer1">
+    <g
+       transform="matrix(1.3008265,0,0,1.1091018,-52.596423,-15.857457)"
+       id="g2267">
+      <path
+         d="M 204.76873,366.12499 L 220.31161,366.12499 L 220.31161,196.11037 L 243.07083,238.61402 L 206.98915,68.599398 L 204.76873,366.12499 z "
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.63491201px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path1872" />
+      <path
+         d="M 325.62109,277.64573 L 337.1875,277.64573 L 352.28125,299.82151 L 352.28125,277.64573 L 363.95703,277.64573 L 363.95703,317.73167 L 352.28125,317.73167 L 337.26953,295.71995 L 337.26953,317.73167 L 325.62109,317.73167 L 325.62109,277.64573 z "
+         transform="matrix(2.22973,0,0,2.3197728,-555.84506,-391.94616)"
+         style="font-size:56px;font-family:Arial Black"
+         id="flowRoot2790" />
+    </g>
+  </g>
+</svg>

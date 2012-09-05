@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<libraries>
+  <!-- XML Tools -->
+	<library>
+		<projectName>Castor</projectName>
+    <description> Castor is an Open Source data binding framework for Java[tm]. It's the shortest path between Java objects, XML documents and relational tables. Castor provides Java-to-XML binding, Java-to-SQL persistence, and more.</description>
+		<projectURL>http://www.castor.org/</projectURL>
+    <notes></notes>
+    <license>BSD-like</license>
+		<path>./bin/lib/</path>
+		<files>
+			<file>castor-0.9.5.3-xml.jar</file>
+		</files>
+	</library>
+  <library>
+    <projectName>Xerces Java Parser</projectName>
+    <description>Xerces2 is the next generation of high performance, fully compliant XML parsers in the Apache Xerces family. This new version of Xerces introduces the Xerces Native Interface (XNI), a complete framework for building parser components and configurations that is extremely modular and easy to program.</description>
+    <projectURL>http://xerces.apache.org/xerces-j/</projectURL>
+    <license>Apache Software License</license>
+    <notes></notes>
+    <path>./bin/lib/</path>
+    <files>
+      <file>xerces_2_5_0.jar</file>
+      <file>xml-apis.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>JDOM</projectName>
+    <description>Java-based solution for accessing, manipulating, and outputting XML data from Java code.</description>
+    <projectURL>http://www.jdom.org/</projectURL>
+    <license>Apache-style open source license</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>jdom-1.0b10.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>KXML</projectName>
+    <description>kXML is a small XML pull parser, specially designed for constrained environments</description>
+    <projectURL>http://kxml.sourceforge.net/</projectURL>
+    <license>BSD</license>
+    <notes></notes>
+    <path>./bin/lib/</path>
+    <files>
+      <file>kxml2.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>Crimson</projectName>
+    <description>A Java XML parser derived from the Sun Project X Parser which supports XML 1.0</description>
+    <projectURL>http://xml.apache.org/crimson/</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/lib/</path>
+    <files>
+      <file>crimson.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>Xalan-Java</projectName>
+    <description>Xalan-Java is an XSLT processor for transforming XML documents into HTML, text, or other XML document types.</description>
+    <projectURL>http://xml.apache.org/xalan-j/</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/es.gva.cit.gvsig.catalogClient/lib/</path>
+    <files>
+      <file>xalan.jar</file>
+    </files>
+  </library>
+
+  <!-- Scripting Tools -->
+  <library>
+    <projectName>BSF (Bean Scripting Framework)</projectName>
+    <description>Bean Scripting Framework (BSF) is a set of Java classes which provides scripting language support within Java applications, and access to Java objects and methods from scripting languages</description>
+    <projectURL>http://jakarta.apache.org/bsf/</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>bsf-2.3.0rc1.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>Groovy</projectName>
+    <description>Groovy is a powerful scripting language for the JVM which compiles down to Java bytecode and implements various high level features for Java developers such as dynamic typing, powerful closures for neat object navigation, native syntax for Maps and Lists, operator overloading, new extended JDK methods, AOP hooks and auto-boxing</description>
+    <projectURL>http://groovy.codehaus.org/</projectURL>
+    <license>BSD</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>groovy-all-1.0-beta-7.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>BeanShen (lightweight scripting for Java)</projectName>
+    <description>BeanShell is a small, free, embeddable, Java source interpreter with object scripting language features, written in Java. BeanShell executes standard Java statements and expressions, in addition to obvious scripting commands and syntax. BeanShell supports scripted objects as simple method closures like those in Perl and JavaScript(tm).</description>
+    <projectURL>http://www.beanshell.org/home.html</projectURL>
+    <license>Dual Licensed: Sun Public License / Gnu Lesser Public License</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>bsh-2.0b1.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>Jython</projectName>
+    <description>Jython is an implementation of the high-level, dynamic, object-oriented language Python written in 100% Pure Java, and seamlessly integrated with the Java platform. It thus allows you to run Python on any Java platform.</description>
+    <projectURL>http://www.jython.org</projectURL>
+    <license>Jython Software License</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>jython-2.1.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>Rhino</projectName>
+    <description>Rhino is an open-source implementation of JavaScript written entirely in Java.</description>
+    <projectURL>http://www.mozilla.org/rhino/</projectURL>
+    <license>Mozilla Public License, version 1.1</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>js-1.5r3.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>Thinlet</projectName>
+    <description>XUL engine for java</description>
+    <projectURL>http://thinlet.sourceforge.net/home.html</projectURL>
+    <license>LGPL</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>thinlet.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>ScriptableThinlet</projectName>
+    <description>ScriptableThinlet is a LGPL extension of Thinlet that allow to define actions in script code inside the thinlet XUL file, for various script language (beanshell, javascript, groovy, python, judoscript...)</description>
+    <projectURL>http://sjobic.club.fr/thinlet/scriptablethinlet/index.html</projectURL>
+    <license>LGPL</license>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>scriptablethinlet-0.9.jar</file>
+    </files>
+  </library>
+
+
+  <!-- Sun Tools -->
+  <library>
+    <projectName>Java WebStart</projectName>
+    <description></description>
+    <projectURL>java.sun.com</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/lib/</path>
+    <files>
+      <file>javaws.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>Sun</projectName>
+    <description></description>
+    <projectURL>java.sun.com</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>JimiProClasses.zip</file>
+    </files>
+  </library>
+  <library>
+    <projectName>Junit</projectName>
+    <description>JUnit is a regression testing framework</description>
+    <projectURL>http://www.junit.org/index.htm</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>junit.jar</file>
+    </files>
+  </library>
+
+  <!-- DataBase Tools -->
+  <library>
+    <projectName>PostgreSQL JDBC Driver</projectName>
+    <description>It allows Java programs to connect to a PostgreSQL database using standard, database independent Java code</description>
+    <projectURL>http://jdbc.postgresql.org/</projectURL>
+    <license>BSD</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>postgresql-74.213.jar</file>
+      <!-- Ojo: distribuimos mas ficheros relacionados con postgres -->
+    </files>
+  </library>
+  <library>
+    <projectName>ZQL (SQL Parser)</projectName>
+    <description>Zql is an SQL parser written in Java. Zql parses SQL and fills in java structures representing SQL statements and expressions.</description>
+    <projectURL>http://www.experlog.com/gibello/zql/</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>zql.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>HSQLDB</projectName>
+    <description>Lightweight 100% Java SQL Database Engine. HSQLDB is the leading SQL relational database engine written in Java. It has a JDBC driver and supports a rich subset of ANSI-92 SQL (BNF tree format) plus SQL 99 and 2003 enhancements. It offers a small (less than 100k in one version for applets), fast database engine which offers both in-memory and disk-based tables and supports embedded and server modes</description>
+    <projectURL>http://hsqldb.org/</projectURL>
+    <license>hypersonic_lic/hsqldb_lic</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>hsqldb.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>MySQL Connector/J</projectName>
+    <description>MySQL Connector/J is the official JDBC driver for MySQL.</description>
+    <projectURL>http://www.mysql.org/downloads/connector/j/3.1.html</projectURL>
+    <license>GPL</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>mysql-connector-java-3.1.7-bin.jar</file>
+    </files>
+  </library>
+
+
+  <!-- Java Geo Tools -->
+  <library>
+    <projectName>JTS Topology Suite</projectName>
+    <description>The JTS Topology Suite is an API of 2D spatial predicates and functions</description>
+		<projectURL>http://www.vividsolutions.com/jts/jtshome.htm</projectURL>
+		<license></license>
+    <notes></notes>
+		<path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+		<files>
+			<file>jts-1.7.jar</file>
+			<file>jtsio-1.7.jar</file>
+		</files>
+	</library>
+  <library>
+    <projectName>GeoTools The Open Source Java GIS Toolkit</projectName>
+    <description>Geo  Tools is an open source (LGPL) Java code library which provides standards compliant methods for the manipulation of geospatial data, for example to implement  Geographic Information Systems (GIS)</description>
+    <projectURL>http://geotools.codehaus.org/</projectURL>
+    <license>LGPL</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>gt2-gml.jar</file>
+      <file>gt2-legacy.jar</file>
+      <file>gt2-main.jar</file>
+      <file>gt2-postgis.jar</file>
+      <file>gt2-shapefile.jar</file>
+      <file>gt2sidx.jar</file>
+      <file>gt2-wfs.jar</file>
+      <file>gt2-wms.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>WKB4J</projectName>
+    <description>WKB4J is a Java library designed to read the Well-Known Binary format from a data source (usually a database like  Postgis  ) and transform this data into corresponding Java objects</description>
+    <projectURL>http://wkb4j.sourceforge.net/</projectURL>
+    <license>LGPL</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>wkb4j-1.0-RC1.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>The GeoAPI project</projectName>
+    <description>The GeoAPI project aims to reduce duplication and increase interoperability by providing neutral, interface-only APIs derived from OGC/ISO Standards</description>
+    <projectURL>http://geoapi.sourceforge.net/stable/site/index.html</projectURL>
+    <license>OGC copyright</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>geoapi-2.0.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>GDAL - Geospatial Data Abstraction Library</projectName>
+    <description>GDAL is a translator library for raster geospatial data formats. As a library, it presents a single abstract data model to the calling application for all supported formats.</description>
+    <projectURL>http://www.gdal.org/</projectURL>
+    <license>X/MIT style Open Source license by the Open Source Geospatial Foundation</license>
+    <notes>Los fuentes han sido recompilados para personalizar las opciones de las librerias de GDAL deacuerdo a las necesidades de gvSIG. Principalmente se han retocado opciones de compilacion para añadir plugins a las librerias.</notes>
+    <path>./libs/</path>
+    <files>
+      <file>libcrypto.so</file>
+      <file>libcrypto.so.0</file>
+      <file>libcrypto.so.0.9.7</file>
+      <file>libgdal.so</file>
+      <file>libgdal.so.1</file>
+      <file>libgdal.so.1.10.0</file>
+      <file>libjasper-1.701.so</file>
+      <file>libjasper-1.701.so.1</file>
+      <file>libjasper-1.701.so.1.0.0</file>
+      <file>libodbc.so</file>
+      <file>libodbc.so.1</file>
+      <file>libodbc.so.1.0.0</file>
+      <file>libpng.so</file>
+      <file>libpng.so.3</file>
+      <file>libpng.so.3.1.2.5</file>
+      <file>libproj.so</file>
+      <file>libproj.so.0</file>
+      <file>libproj.so.0.5.0</file>
+      <file>libssl.so</file>
+      <file>libssl.so.0</file>
+      <file>libssl.so.0.9.7</file>
+    </files>
+  </library>
+
+
+
+  <!-- GUI tools -->
+  <library>
+    <projectName>Batik SVG Toolkit</projectName>
+    <description>Batik is a Java-based toolkit for applications or applets that want to use images in the Scalable Vector Graphics (SVG) format for various purposes, such as display, generation or manipulation.</description>
+    <projectURL>http://xmlgraphics.apache.org/batik/</projectURL>
+    <license>Apache License Version 2.0</license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>batik-awt-util.jar</file>
+      <file>batik-bridge.jar</file>
+      <file>batik-css.jar</file>
+      <file>batik-dom.jar</file>
+      <file>batik-extension.jar</file>
+      <file>batik-ext.jar</file>
+      <file>batik-gui-util.jar</file>
+      <file>batik-gvt.jar</file>
+      <file>batik-parser.jar</file>
+      <file>batik-script.jar</file>
+      <file>batik-svg-dom.jar</file>
+      <file>batik-svggen.jar</file>
+      <file>batik-swing.jar</file>
+      <file>batik-transcoder.jar</file>
+      <file>batik-util.jar</file>
+      <file>batik-xml.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>JCalendar</projectName>
+    <description>JCalendar is a Java date chooser bean for graphically picking a date</description>
+    <projectURL>http://www.toedter.com/en/jcalendar/</projectURL>
+    <license>GNU Lesser GPL</license>
+    <notes></notes>
+    <path>./bin/lib/</path>
+    <files>
+      <file>jcalendar.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>Java User Interface Design</projectName>
+    <description>The JGoodies look and feels make your Swing applications and applets look better. They have been optimized for readability, precise micro-design and usability.</description>
+    <projectURL>http://www.jgoodies.com/index.html</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/lib/</path>
+    <files>
+      <file>looks-2.0.2.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>JwizardComponent</projectName>
+    <description>Java Swing Wizard Component designed to be traveled through using Next, Back, Finish, Cancel.</description>
+    <projectURL>http://jwizardcmponent.sourceforge.net/</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/lib/</path>
+    <files>
+      <file>JWizardComponent.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>jGridShift (Ntv2 Transformation for Java)</projectName>
+    <description>Reads both big and little endian NTv2 binary files. Reads official Canadian format files (all current Canadian and Australian binary files).</description>
+    <projectURL>http://jgridshift.sourceforge.net/index.html</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>jGridShiftApi.jar</file>
+    </files>
+  </library>
+
+  <!-- Misc tools -->
+	<library>
+		<projectName>EhCache</projectName>
+		<description>Ehcache is a widely used java distributed cache for general purpose caching, JEE and light-weight containers. It features memory and disk stores, replicate by copy and invalidate, listeners, a gzip caching servlet filter and much more...</description>
+		<projectURL>http://ehcache.sourceforge.net/</projectURL>
+		<license></license>
+		<notes></notes>
+		<path>./bin/gvSIG/extensiones/com.iver.cit.gvsig.geoprocess/lib/</path>
+		<files>
+			<file>ehcache-1.2beta4.jar</file>
+		</files>
+	</library>
+	<library>
+		<projectName>Vecmath</projectName>
+    <description>This project contains the source code for the 3D vector math package, javax.vecmath.</description>
+		<projectURL>https://vecmath.dev.java.net/</projectURL>
+		<license></license>
+    <notes></notes>
+		<path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+		<files>
+			<file>vecmath-1.3.jar</file>
+		</files>
+	</library>
+	<library>
+		<projectName>JSR-275</projectName>
+    <description>JSR-275 specifies one or more Java packages for the programmatic handling of physical quantities and their expression as numbers of units.</description>
+		<projectURL>https://jsr-275.dev.java.net/</projectURL>
+		<license></license>
+    <notes></notes>
+		<path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+		<files>
+			<file>units-0.01.jar</file>
+		</files>
+	</library>
+	<library>
+		<projectName>A2J</projectName>
+		<description>A2J Is an ASN Parser that produces java based codec and associated DTO (Data Transfer Object) classes for a given input ASN definition. A2J Is in use as the ASN.1 compiler for the JZKit and OpenRequest. </description>
+		<projectURL>http://developer.k-int.com/projects.php?page=a2j</projectURL>
+		<license></license>
+		<notes></notes>
+		<path>./bin/gvSIG/extensiones/es.gva.cit.gvsig.catalogClient/lib/</path>
+		<files>
+			<file>a2jruntime.jar</file>
+			<file>a2j_v2-2.0.9.jar</file>
+		</files>
+	</library>
+	<library>
+		<projectName>Amic-Util</projectName>
+		<description>Amic-util library (amic-util.jar) was mainly created to aid passing from Windows environment to Java platform. Today, this library has largely past its original motivation and has become an extensive collection of packages including desktop, docked frames, wizards, XML treatment and so on</description>
+		<projectURL>http://www.turro.org/xp/Portal?xpc=1$@7$@1$@6</projectURL>
+		<license></license>
+		<notes></notes>
+		<path>./bin/gvSIG/extensiones/es.gva.cit.gvsig.catalogClient/lib/</path>
+		<files>
+			<file>amic-util.jar</file>
+		</files>
+	</library>
+
+		<library>
+		<projectName>Spring Framework</projectName>
+		<description></description>
+		<projectURL>http://www.springframework.org/</projectURL>
+		<license></license>
+		<notes></notes>
+		<path>./bin/gvSIG/extensiones/es.gva.cit.gvsig.catalogClient/lib/</path>
+		<files>
+			<file>spring.jar</file>
+		</files>
+	</library>
+	<library>
+		<projectName>JEP</projectName>
+    <description>JEP is a Java library for parsing and evaluating mathematical expressions. With this package you can allow your users to enter an arbitrary formula as a string, and instantly evaluate it. JEP supports user defined variables, constants, and functions. A number of common mathematical functions and constants are included.</description>
+		<projectURL>http://www.singularsys.com/jep/</projectURL>
+		<license></license>
+    <notes></notes>
+		<path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+		<files>
+			<file>jep-2.24.jar</file>
+		</files>
+	</library>
+	<library>
+		<projectName>Commons Collections</projectName>
+    <description>The Java Collections Framework was a major addition in JDK 1.2. It added many powerful data structures that accelerate development of most significant Java applications. Since that time it has become the recognised standard for collection handling in Java. Commons-Collections seek to build upon the JDK classes by providing new interfaces, implementations and utilities.</description>
+		<projectURL>http://jakarta.apache.org/commons/collections/</projectURL>
+		<license></license>
+    <notes></notes>
+		<path>./bin/lib/</path>
+		<files>
+			<file>commons-collections-3.1.zip</file>
+			<file>commons-collections-2.1.1.jar</file>
+		</files>
+	</library>
+	<library>
+		<projectName>XML-RPC</projectName>
+    <description>Apache XML-RPC is a Java implementation of XML-RPC, a popular protocol that uses XML over HTTP to implement remote procedure calls.</description>
+		<projectURL>http://ws.apache.org/xmlrpc/index.html</projectURL>
+		<license></license>
+    <notes></notes>
+		<path>./bin/lib/</path>
+		<files>
+			<file>xmlrpc-2.0.1.jar</file>
+		</files>
+	</library>
+  <library>
+		<projectName>Log4J</projectName>
+    <description></description>
+		<projectURL>http://logging.apache.org/log4j/docs/</projectURL>
+		<license></license>
+    <notes></notes>
+		<path>./bin/lib/</path>
+		<files>
+			<file>log4j-1.2.8.jar</file>
+		</files>
+	</library>
+  <library>
+    <projectName>iText</projectName>
+    <description>iText is a library that allows you to generate PDF files on the fly.</description>
+    <projectURL>http://www.lowagie.com/iText/</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>itext-1.4.2.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>SMC (State Machine Compiler)</projectName>
+    <description></description>
+    <projectURL>http://smc.sourceforge.net/</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>Smc.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>GNU Trove</projectName>
+    <description>High performance collections for Java</description>
+    <projectURL>http://trove4j.sourceforge.net/</projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    <files>
+      <file>trove-0.1.8.jar</file>
+    </files>
+  </library>
+  <library>
+    <projectName>Sistema</projectName>
+    <description></description>
+    <projectURL></projectURL>
+    <license></license>
+    <notes></notes>
+    <path>./libs/</path>
+    <files>
+      <file>libstdc++.so.6</file>
+    </files>
+  </library>
+
+  <!-- gvSIG tools -->
+  <library>
+		<projectName>gvSIG</projectName>
+    <description></description>
+		<projectURL>null</projectURL>
+		<license></license>
+    <notes></notes>
+		<path></path>
+		<files>
+			<file>libjecwcompress.so</file>
+			<file>libjecwcompress.so.0</file>
+			<file>libjecwcompress.so.0.1.0</file>
+			<file>libjecw.so</file>
+			<file>libjecw.so.0</file>
+			<file>libjecw.so.0.0.1</file>
+			<file>libjgdal.so</file>
+			<file>libjgdal.so.0</file>
+			<file>libjgdal.so.0.6.0</file>
+			<file>libjmrsid.so</file>
+			<file>libjmrsid.so.0</file>
+			<file>libjmrsid.so.0.0.2</file>
+			<file>libNCSCNet.so</file>
+			<file>libNCScnet.so</file>
+			<file>libNCSEcwC.so</file>
+			<file>libNCSEcw.so</file>
+			<file>libNCSUtil.so</file>
+			<file>andami.jar</file>
+			<file>beans.jar</file>
+			<file>gvsig-i18n.jar</file>
+			<file>iver-utiles.jar</file>
+			<file>tempFileManager.jar</file>
+			<file>cms.jar</file>
+			<file>com.iver.cit.gvsig.jar</file>
+			<file>com.iver.gvsig.addeventtheme.jar</file>
+			<file>driver-manager-1.1.jar</file>
+			<file>fmap-arcims.jar</file>
+			<file>fmap-georeferencing.jar</file>
+			<file>fmap.jar</file>
+			<file>fmap-wcs.jar</file>
+			<file>fmap-wfs.jar</file>
+			<file>fmap-wms.jar</file>
+			<file>gdbms-0.8-SNAPSHOT.jar</file>
+			<file>gvsig-annotation.jar</file>
+			<file>gvsig-i18n.jar</file>
+			<file>gvsig-ui.jar</file>
+			<file>hsqldb_spatial.jar</file>
+			<file>jcrs.jar</file>
+			<file>jdwglib.jar</file>
+			<file>jecw-0.0.1.jar</file>
+			<file>jecwcompress-1.0.0.jar</file>
+			<file>jgdal-0.6.0.jar</file>
+			<file>jmrsid-0.0.2.jar</file>
+			<file>jogr.jar</file>
+			<file>mysql_spatial.jar</file>
+			<file>oracle_spatial.jar</file>
+			<file>org.gvsig.scripting.jar</file>
+			<file>postgis_spatial.jar</file>
+			<file>spatialindex.jar</file>
+			<file>csvstring.jar</file>
+			<file>dbf.jar</file>
+			<file>dbfWriter.jar</file>
+			<file>dgn.jar</file>
+			<file>dwg.jar</file>
+			<file>dxf.jar</file>
+			<file>dxfWriter.jar</file>
+			<file>gml.jar</file>
+			<file>gmlWriter.jar</file>
+			<file>hsqldb.jar</file>
+			<file>hsqldb_spatial.jar</file>
+			<file>mysql_spatial.jar</file>
+			<file>oracle_spatial.jar</file>
+			<file>postgis_spatial.jar</file>
+			<file>mysql.jar</file>
+			<file>odbc.jar</file>
+			<file>oracle.jar</file>
+			<file>postgresql.jar</file>
+			<file>raster.jar</file>
+			<file>shp.jar</file>
+			<file>shpWriter.jar</file>
+			<file>com.iver.cit.gvsig.annotation.jar</file>
+			<file>com.iver.cit.gvsig.cad.jar</file>
+			<file>com.iver.cit.gvsig.geoprocess.jar</file>
+			<file>com.iver.cit.gvsig.geoprocess.jar</file>
+			<file>spatialindex.jar</file>
+			<file>com.iver.cit.gvsig.geoprocessextensions.jar</file>
+			<file>com.iver.cit.gvsig.jdbc_spatial.jar</file>
+			<file>com.iver.cit.gvsig.oracle_spatial.jar</file>
+			<file>com.iver.cit.gvsig.wcs.jar</file>
+			<file>com.iver.cit.gvsig.wfs2.jar</file>
+			<file>com.iver.cit.gvsig.wms.jar</file>
+			<file>com.iver.core.jar</file>
+			<file>com.iver.gvsig.centerviewpoint.jar</file>
+			<file>com.iver.gvsig.datalocator.jar</file>
+			<file>com.iver.gvsig.expresionfield.jar</file>
+			<file>catCliProto.jar</file>
+			<file>es.gva.cit.gvsig.catalogClient.jar</file>
+			<file>es.gva.cit.gvsig.gazetteer.jar</file>
+			<file>remoteClient.jar</file>
+			<file>es.prodevelop.cit.gvsig.arcims.jar</file>
+			<file>org.gvsig.crs.jar</file>
+			<file>org.gvsig.georeferencing.jar</file>
+			<file>org.gvsig.rasterTools.jar</file>
+			<file>remote-clients-arcims.jar</file>
+			<file>remote-clients.jar</file>
+		</files>
+	</library>
+	<library>
+    	<projectName>JGraph</projectName>
+	    <description>JGraph is the most powerful, easy-to-use, feature-rich and standards-compliant open source graph component available for Java</description>
+    	<projectURL>http://www.jgraph.com/</projectURL>
+	    <license></license>
+    	<notes></notes>
+	    <path>./bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/</path>
+    	<files>
+      		<file>jgraph.jar</file>
+    	</files>
+  </library>
+</libraries>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Copyright © 2008 by Silvio Grosso, under the terms of the GNU GPL version 2. -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   viewBox="0 0 450 500"
+   width="450"
+   height="500"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     id="layer1">
+    <g
+       transform="matrix(1.0247396,0,0,0.871256,-143.236,-191.78117)"
+       id="g2370">
+      <path
+         d="M 325.62109,277.64573 L 337.1875,277.64573 L 352.28125,299.82151 L 352.28125,277.64573 L 363.95703,277.64573 L 363.95703,317.73167 L 352.28125,317.73167 L 337.26953,295.71995 L 337.26953,317.73167 L 325.62109,317.73167 L 325.62109,277.64573 z "
+         transform="matrix(1.371631,0,0,1.160507,-115.40596,-54.290579)"
+         style="font-size:56px;font-family:Arial Black"
+         id="flowRoot2790" />
+      <g
+         transform="translate(363.33754,28.284271)"
+         id="g2609">
+        <path
+           d="M -41.201455,536.19158 L -6.1508242,536.19158 L -6.1508242,565.10357 C -29.628466,563.91471 -40.135073,553.43428 -41.201455,536.19158 z "
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.80164814;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4581" />
+        <path
+           d="M -1.3247646,501.25374 L -1.3247646,531.71371 L 32.624578,531.71371 C 31.228582,511.31098 18.922153,502.18046 -1.3247646,501.25374 z "
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.85046959;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4583" />
+        <path
+           d="M 383.92112 546.93866 A 8.6178637 8.6178637 0 1 1  366.68539,546.93866 A 8.6178637 8.6178637 0 1 1  383.92112 546.93866 z"
+           transform="matrix(-4.422077,0,0,3.914321,1655.451,-1607.255)"
+           style="opacity:0.97000002;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.30874145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4589" />
+      </g>
+      <g
+         transform="matrix(5.626187,0,0,7.650437,-3962.7077,-2984.5997)"
+         id="g3046">
+        <path
+           d="M 770.22709,459.23603 L 767.93272,459.23603 L 767.93272,431.42511 L 771.86653,444.68031 L 769.95447,442.01145 L 770.22709,459.23603 z "
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path2154" />
+        <path
+           d="M 765.66145,459.25661 L 767.95582,459.25661 L 767.95582,431.44569 L 764.02201,444.70089 L 765.93407,442.03203 L 765.66145,459.25661 z "
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3044" />
+      </g>
+      <g
+         transform="matrix(2.707384,0,-4.040588e-3,4.785058,-1765.5387,-1460.0187)"
+         id="g5717">
+        <path
+           d="M 770,467.36218 L 775,467.36218 L 775,482.36218 L 761.90756,490.33856 L 770,472.36218 L 770,467.36218 z "
+           transform="translate(10.87201,-37.55286)"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4828" />
+        <path
+           d="M 790.55252,429.75678 L 785.55252,429.75678 L 785.55252,444.75678 L 798.64496,452.73316 L 790.55252,434.75678 L 790.55252,429.75678 z "
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path5715" />
+      </g>
+    </g>
+  </g>
+</svg>

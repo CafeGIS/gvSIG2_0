@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Copyright © 2008 by Silvio Grosso, under the terms of the GNU GPL version 2. -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   viewBox="0 0 450 500"
+   width="450"
+   height="500"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     id="layer1">
+    <g
+       transform="translate(-78.571429,-218.57143)"
+       id="g2275">
+      <path
+         d="M 252.37093,444.65723 L 294.74501,339.2391 L 333.71714,444.65723 L 450.63351,479.7966 L 333.71714,514.93598 L 294.74501,620.3541 L 255.77289,514.93598 L 138.85651,479.7966 L 252.37093,444.65723 z "
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.40123272px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path1872" />
+      <path
+         d="M 316.67798,458.07569 L 294.69131,397.24219 L 274.46984,458.07569 L 213.80536,478.3535 L 274.46984,498.63131 L 294.69131,559.4648 L 314.91285,498.63131 L 375.57733,478.3535 L 316.67798,458.07569 z "
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.64999962;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path1874" />
+      <path
+         d="M 325.51172,277.64573 L 358.70703,277.64573 L 358.70703,286.20433 L 337.92578,286.20433 L 337.92578,292.57542 L 357.20313,292.57542 L 357.20313,300.7512 L 337.92578,300.7512 L 337.92578,308.65355 L 359.30859,308.65355 L 359.30859,317.73167 L 325.51172,317.73167 L 325.51172,277.64573 z "
+         transform="translate(150.6914,179.6853)"
+         style="font-size:56px;font-family:Arial Black"
+         id="flowRoot2055" />
+      <path
+         d="M 325.62109,277.64573 L 337.1875,277.64573 L 352.28125,299.82151 L 352.28125,277.64573 L 363.95703,277.64573 L 363.95703,317.73167 L 352.28125,317.73167 L 337.26953,295.71995 L 337.26953,317.73167 L 325.62109,317.73167 L 325.62109,277.64573 z "
+         transform="translate(-51.68759,2.585353)"
+         style="font-size:56px;font-family:Arial Black"
+         id="flowRoot2063" />
+    </g>
+  </g>
+</svg>
