@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>org.gvsig.fmap.dal.file</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>libFMap_dalfile</name>
+	<url>http://gvsig.org</url>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-library-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<!-- dbf -->
+		<dbf-jarIncludes>org/gvsig/fmap/dal/store/dbf/**/**</dbf-jarIncludes>
+		<dbf-jarExcludes>NONE</dbf-jarExcludes>
+
+		<!-- dgn -->
+		<dgn-jarIncludes>org/gvsig/fmap/dal/store/dgn/**/**</dgn-jarIncludes>
+		<dgn-legend-jarIncludes>org/gvsig/fmap/dal/store/dgn/legend/**/**</dgn-legend-jarIncludes>
+		<dgn-jarExcludes>${dgn-legend-jarIncludes}</dgn-jarExcludes>
+		<dgn-legend-jarExcludes>NONE</dgn-legend-jarExcludes>
+
+		<!-- dxf -->
+		<dxf-jarIncludes>org/gvsig/fmap/dal/store/dxf/**/**</dxf-jarIncludes>
+		<dxf-legend-jarIncludes>org/gvsig/fmap/dal/store/dxf/legend/**/**</dxf-legend-jarIncludes>
+		<dxf-jarExcludes>${dxf-legend-jarIncludes}</dxf-jarExcludes>
+		<dxf-legend-jarExcludes>NONE</dxf-legend-jarExcludes>
+
+		<!-- shp -->
+		<shp-jarIncludes>org/gvsig/fmap/dal/store/shp/**/**</shp-jarIncludes>
+		<shp-jarExcludes>NONE</shp-jarExcludes>
+
+		<!-- Common -->
+		<common-jarIncludes>**/**</common-jarIncludes>
+		<build-dir>${basedir}/../build</build-dir>
+
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.tools</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.projection</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>spi</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>impl</classifier>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>tests</classifier>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal.index.spatial</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>jts</classifier>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.geometry</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>impl</classifier>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.cresques.dxf</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.projection</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>cresques-impl</classifier>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.mapcontext</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.mapcontext</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>operation</classifier>
+			<scope>test</scope>
+		</dependency>
+		<!--
+			dependency> <groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version> <classifier>tests</classifier>
+			<scope>test</scope> </dependency
+		-->
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.tools.evaluator.sqljep</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>xerces</artifactId>
+			<version>gvsig</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+		<testResources>
+			<testResource>
+				<directory>src-test</directory>
+			</testResource>
+		</testResources>
+	</build>
+	<profiles>
+		<profile>
+			<id>se</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<exclude>${dbf-jarIncludes}</exclude>
+								<exclude>${dgn-jarIncludes}</exclude>
+								<exclude>${dxf-jarIncludes}</exclude>
+								<exclude>${shp-jarIncludes}</exclude>
+							</excludes>
+						</configuration>
+						<executions>
+							<!--
+								Generates a jar file only with the DAL file DBF Store classes
+							-->
+							<execution>
+								<id>dbf</id>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<classifier>store.dbf</classifier>
+									<includes>
+										<include>${dbf-jarIncludes}</include>
+									</includes>
+									<excludes>
+										<exclude>${dbf-jarExcludes}</exclude>
+									</excludes>
+								</configuration>
+							</execution>
+							<!--
+								Generates a jar file only with the DAL file DGN Store classes
+							-->
+							<execution>
+								<id>dgn</id>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<classifier>store.dgn</classifier>
+									<includes>
+										<include>${dgn-jarIncludes}</include>
+									</includes>
+									<excludes>
+										<exclude>${dgn-jarExcludes}</exclude>
+									</excludes>
+								</configuration>
+							</execution>
+							<!--
+								Generates a jar file only with the DAL file DGN Store legend
+								classes
+							-->
+							<execution>
+								<id>dgn.legend</id>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<classifier>store.dgn.legend</classifier>
+									<includes>
+										<include>${dgn-legend-jarIncludes}</include>
+									</includes>
+									<excludes>
+										<exclude>${dgn-legend-jarExcludes}</exclude>
+									</excludes>
+								</configuration>
+							</execution>
+							<!--
+								Generates a jar file only with the DAL file DXF Store classes
+							-->
+							<execution>
+								<id>dxf</id>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<classifier>store.dxf</classifier>
+									<includes>
+										<include>${dxf-jarIncludes}</include>
+									</includes>
+									<excludes>
+										<exclude>${dxf-jarExcludes}</exclude>
+									</excludes>
+								</configuration>
+							</execution>
+							<!--
+								Generates a jar file only with the DAL file DXF Store legend
+								classes
+							-->
+							<execution>
+								<id>dxf.legend</id>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<classifier>store.dxf.legend</classifier>
+									<includes>
+										<include>${dxf-legend-jarIncludes}</include>
+									</includes>
+									<excludes>
+										<exclude>${dxf-legend-jarExcludes}</exclude>
+									</excludes>
+								</configuration>
+							</execution>
+							<!--
+								Generates a jar file only with the DAL file SHP Store classes
+							-->
+							<execution>
+								<id>shp</id>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<classifier>store.shp</classifier>
+									<includes>
+										<include>${shp-jarIncludes}</include>
+									</includes>
+									<excludes>
+										<exclude>${shp-jarExcludes}</exclude>
+									</excludes>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>cdc</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<exclude>org/gvsig/fmap/dal/store/**</exclude>
+							</excludes>
+							<testExcludes>
+								<exclude>org/gvsig/fmap/dal/store/**</exclude>
+								<exclude>org/gvsig/fmap/dal/explorer/filesystem/FileSystemExplorerTest.java</exclude>
+							</testExcludes>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<exclude>org/gvsig/fmap/dal/store/**</exclude>
+							</excludes>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<doctitle>${project.name} ${project.version}</doctitle>
+					<groups>
+						<group>
+							<title>DAL File common</title>
+							<packages>org.gvsig.fmap.dal*</packages>
+						</group>
+						<group>
+							<title>DBF Store</title>
+							<packages>org.gvsig.fmap.dal.store.dbf*</packages>
+						</group>
+						<group>
+							<title>DGN Store</title>
+							<packages>org.gvsig.fmap.dal.store.dgn*</packages>
+						</group>
+						<group>
+							<title>SHP Store</title>
+							<packages>org.gvsig.fmap.dal.store.shp*</packages>
+						</group>
+						<group>
+							<title>DXF Store</title>
+							<packages>org.gvsig.fmap.dal.store.dxf*</packages>
+						</group>
+					</groups>
+				</configuration>
+				<reportSets>
+                    <reportSet>
+                        <id>api</id>
+                        <configuration>
+                            <excludePackageNames>*.spi:*.impl:*.store</excludePackageNames>
+                            <name>Javadoc: API</name>
+                            <destDir>apidoc</destDir>
+                            <windowtitle>API Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.i18n/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.metadata/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.compat/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.projection/2.0.0/apidocs/</link>
+								<link>${site-repository}/com.iver.utiles/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.fmap.dal/2.0.0/apidocs/</link>
+							</links>
+                        </configuration>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                    </reportSet>
+                    <reportSet>
+                        <id>spi</id>
+                        <configuration>
+                        	<doctitle>${project.name} ${project.version} SPI</doctitle>
+                            <subpackages>org.gvsig.fmap.dal.serverexplorer.filesystem.spi</subpackages>
+                            <name>Javadoc: SPI</name>
+                            <destDir>spidoc</destDir>
+                            <windowtitle>SPI Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>../apidoc/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.i18n/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.metadata/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.compat/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.projection/2.0.0/apidocs/</link>
+								<link>${site-repository}/com.iver.utiles/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.fmap.dal/2.0.0/apidocs/</link>
+							</links>
+                        </configuration>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                    </reportSet>
+                    <reportSet>
+                        <id>impl</id>
+                        <configuration>
+                        	<doctitle>${project.name} ${project.version} Default implementation and stores</doctitle>
+                            <subpackages>org.gvsig.fmap.dal.serverexplorer.filesystem.impl:org.gvsig.fmap.dal.store</subpackages>
+                            <name>Javadoc: Impl and Stores</name>
+                            <destDir>impldoc</destDir>
+                            <windowtitle>Default implementation and Stores Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>../apidoc/</link>
+								<link>../spidoc/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.i18n/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.metadata/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.compat/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.projection/2.0.0/apidocs/</link>
+								<link>${site-repository}/com.iver.utiles/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.fmap.dal/2.0.0/apidocs/</link>
+							</links>
+                        </configuration>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                    </reportSet>
+            	</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+</project>
