@@ -1,0 +1,69 @@
+Group {
+  name "box.3ds"
+  nodeMask 0xffffffff
+  cullingActive TRUE
+  num_children 1
+  Geode {
+    name "Cube"
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    num_drawables 1
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Material {
+          ColorMode OFF
+          ambientColor 0.4 0.4 0.4 1
+          diffuseColor 0.8 0.8 0.8 1
+          specularColor 0 0 0 0
+          emissionColor 0 0 0 1
+          shininess 0
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawElementsUShort TRIANGLES 36
+        {
+          0 1 2 0 2 3 4 5 6 4
+          6 7 0 4 7 0 7 1 1 7
+          6 1 6 2 2 6 5 2 5 3
+          4 0 3 4 3 5 
+        }
+      }
+      VertexArray Vec3Array 8
+      {
+        1 1 -1
+        1 -1 -1
+        -1 -1 -1
+        -1 1 -1
+        1 0.999999 1
+        -1 1 1
+        -1 -1 1
+        0.999999 -1 1
+        
+      }
+      NormalBinding PER_VERTEX
+      NormalArray Vec3Array 8
+      {
+        0.666667 0.333333 -0.666667
+        0.408248 -0.816497 -0.408248
+        -0.666667 -0.333333 -0.666667
+        -0.408248 0.816497 -0.408248
+        0.333333 0.666667 0.666667
+        -0.816496 0.408248 0.408248
+        -0.333334 -0.666667 0.666667
+        0.816496 -0.408249 0.408248
+		
+      }
+      ColorBinding OVERALL
+      ColorArray Vec4ubArray 1       {
+        255 255 255 255
+      }
+    }
+  }
+}
