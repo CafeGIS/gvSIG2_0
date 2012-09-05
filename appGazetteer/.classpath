@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/test-classes" path="src-test"/>
+	<classpathentry including="**/*.java" kind="src" path="src"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/a2j/2.0.9/a2j-2.0.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/a2j-runtime/2.0.9/a2j-runtime-2.0.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/amic-util/gvsig/amic-util-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/castor/gvsig/castor-gvsig.jar"/>
+	<classpathentry kind="src" path="/libIverUtiles"/>
+	<classpathentry kind="var" path="M2_REPO/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/jpiera/.m2/repository/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/commons-codec/gvsig/commons-codec-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-collections/commons-collections/2.0/commons-collections-2.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/jpiera/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/commons-httpclient/commons-httpclient/2.0.2/commons-httpclient-2.0.2.jar" sourcepath="M2_REPO/commons-httpclient/commons-httpclient/2.0.2/commons-httpclient-2.0.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/jpiera/.m2/repository/commons-httpclient/commons-httpclient/2.0.2/commons-httpclient-2.0.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/jpiera/.m2/repository/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/dspace/cql-java/1.0/cql-java-1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/geonames/geonames/1.0/geonames-1.0-java5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/geonames/geonames/1.0/geonames-1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/jdom/jdom/1.0/jdom-1.0.jar" sourcepath="M2_REPO/jdom/jdom/1.0/jdom-1.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jts/gvsig/jts-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jtsio/gvsig/jtsio-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar" sourcepath="M2_REPO/junit/junit/3.8.1/junit-3.8.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jzkit2-core/2.0.0/jzkit2-core-2.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jzkit2-origin/2.0.0/jzkit2-origin-2.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jzkit2-z3950/2.0.0/jzkit2-z3950-2.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/kxml2/gvsig/kxml2-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14.jar" sourcepath="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14-sources.jar"/>
+	<classpathentry kind="src" path="/libCompat"/>
+	<classpathentry kind="src" path="/libGPE"/>
+	<classpathentry kind="src" path="/extGPE-gvSIG"/>
+	<classpathentry kind="src" path="/libGPE-GML"/>
+	<classpathentry kind="src" path="/libGPE-XML"/>
+	<classpathentry kind="src" path="/libInternationalization"/>
+	<classpathentry kind="src" path="/libRemoteServices"/>
+	<classpathentry kind="src" path="/libTools"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/ostermillerutils/1.4.3/ostermillerutils-1.4.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.5.5/slf4j-api-1.5.5.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.5.5/slf4j-api-1.5.5-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.5.5/slf4j-log4j12-1.5.5.jar" sourcepath="M2_REPO/org/slf4j/slf4j-log4j12/1.5.5/slf4j-log4j12-1.5.5-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/soap/soap/2.3/soap-2.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/spring/1.2.8/spring-1.2.8.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/stax/gvsig/stax-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/stax-api/gvsig/stax-api-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/xerces/gvsig/xerces-gvsig.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/xml-apis/gvsig/xml-apis-gvsig.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/appCatalog"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
