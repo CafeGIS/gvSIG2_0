@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- Aquí especificamos algunas variables de configuración -->
+	<!-- En este fichero se muestran todas las opciones posibles, en sus valores por defecto -->
+
+	<!-- Nombre base por defecto de los ficheros con las traducciones. En nuestro caso suele ser "text",
+		de forma que los ficheros toman nombres como "text.properties", "text_en.properties". Nótese
+		que sólo es el nombre por defecto. Cada proyecto puede especificar un baseName distinto -->
+	<variable name="basename" value="text" />
+
+	<!-- Directorio base. Las rutas relativas especificadas en otras variables (databaseDir, directorios
+		de proyecto) tomarán este directorio como directorio base.  Por defecto es el directorio
+		desde el que se llama a la aplicación -->
+	<variable name="basedir" value="test-data" />
+
+	<!-- Lista de idiomas que se tendrán en cuenta  -->
+	<variable name="languages" value="ca;cs;de;en;es;eu;fr;gl;it;pt" />
+	
+	<!-- El directorio que contendrá la base de datos de traducciones por idioma. Por defecto es el
+		directorio "database", relativo al directorio especificado en la variable "basedir".  -->
+	<variable name="databaseDir" value="database" />
+	
+		<!-- El directorio por defecto que contendrá los property files que almacenan las claves de cada
+	 proyecto". Esto se usa en los proyectos que no especifican un atributo "propertyDir". Si el
+	 directorio no es absoluto, entonces es relativo al directorio de cada proyecto. -->
+	<variable name="defaultPropertyDir" value="config" />
+	
+	<variable name="sourceKeys" value="sources" />
+</config>
+<projects>
+	<!-- Los proyectos que se van a leer. Es necesario especificar un directorio (relativo o absoluto),
+		y opcionalmente se puede incluir un atributo "basename" para especificar un nombre base
+		distinto del nombre base por defecto -->
+	<!-- The projects which are going to be read. An absolute or relative directory name must be specified,
+		in which the property files are located. An optional "basename" attribute is also accepted,
+		to override the default basename -->
+	<project dir="src/appgvSIG" basename="otro"  sourceKeys="sources" propertyDir="config" />
+	<project dir="src/_fwAndami" />
+</projects>
