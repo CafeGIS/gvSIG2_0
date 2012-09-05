@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>appCatalog</name>
+	<comment>Base POM for all GvSIG extension projects. This pom knows
+		how to build and made an extension for GvSIG. The property
+		&quot;gvsig-path&quot; must be set up correctly.</comment>
+	<projects>
+		<project>libIverUtiles</project>
+		<project>libCompat</project>
+		<project>libGPE</project>
+		<project>libGPE-GML</project>
+		<project>libGPE-XML</project>
+		<project>libInternationalization</project>
+		<project>libRemoteServices</project>
+		<project>libTools</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.jem.beaninfo.BeanInfoNature</nature>
+	</natures>
+</projectDescription>
