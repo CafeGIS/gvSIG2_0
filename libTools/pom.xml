@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>org.gvsig.tools</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>libTools</name>
+	<description>Tools related to application framework architecture 
+	and implementations of design patterns</description>
+	<url>http://www.gvsig.org</url>
+	<scm>
+		<connection>
+			scm:svn:http://subversion.gvsig.org/gvSIG/branches/v2_0_0_prep/libraries/libTools	    
+	    </connection>
+		<developerConnection>
+	    	scm:svn:https://gvsig.org/svn/gvSIG/branches/v2_0_0_prep/libraries/libTools
+	    </developerConnection>
+		<url>http://subversion.gvsig.org/viewvc/?root=gvSIG</url>
+		<tag>HEAD</tag>
+	</scm>
+	<properties>
+		<build-dir>${basedir}/../build</build-dir>
+	</properties>
+	<developers>
+		<developer>
+			<id>jjdelcerro</id>
+			<name>Joaquín José del Cerro</name>
+			<email>jjdelcerro@gvsig.org</email>
+			<roles>
+				<role>Architect</role>
+				<role>Developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>jmvivo</id>
+			<name>José Manuel Vivó</name>
+			<email>josemanuel.vivo@iver.es</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>cordinyana</id>
+			<name>Cèsar Ordiñana</name>
+			<email>cordin@disid.com</email>
+			<roles>
+				<role>Architect</role>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-library-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>easymock</groupId>
+			<artifactId>easymock</artifactId>
+			<version>1.2_Java1.3</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>${basedir}/resources</directory>
+				<targetPath>org/gvsig/tools/locator</targetPath>
+				<includes>
+					<include>*.txt</include>
+				</includes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.4</source>
+					<target>1.4</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

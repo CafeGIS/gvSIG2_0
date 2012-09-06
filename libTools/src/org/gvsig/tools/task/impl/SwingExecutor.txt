@@ -1,0 +1,42 @@
+package org.gvsig.tools.task.swing;
+
+import javax.swing.SwingUtilities;
+
+import org.gvsig.tools.task.Executor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
+public class SwingExecutor implements Executor {
+
+    final static private Logger logger = LoggerFactory.getLogger(SwingExecutor.class);
+    
+	class SafeRunnable implements Runnable {
+		
+		Runnable command;
+		
+		SafeRunnable(Runnable command) {
+			this.command = command;
+		}
+
+		public void run() {
+			try {
+				command.run();
+			} catch( Exception e) {
+				SwingExecutor.logger.warn(
+					"Exception excuting '".concat(command.getClass().getName()).concat("' in swing thread."),
+					e
+				);
+			}
+		}
+		
+	}
+	public void execute(Runnable command) {
+		if( SwingUtilities.isEventDispatchThread() ) {
+			command.run();
+			return;
+		}
+		SwingUtilities.invokeLater(new SafeRunnable(command));
+	}
+
+}

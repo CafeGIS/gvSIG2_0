@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>org.gvsig.tools.locator package documentation</title>
+</head>
+<body>
+
+<p>Proporciona una implementación base del patrón Locator, así como un mecanismo 
+de inicialización que permita registrar las implementaciones que aporte en su 
+Locator cada módulo o librería.</p>
+
+<p>Se ha creado un interfaz {@link org.gvsig.tools.locator.Locator}, que define
+ los métodos de uso general del Locator, así como una implementación abstracta, 
+ {@link org.gvsig.tools.locator.AbstractLocator} basada en el uso de los puntos 
+ de extensión:</p>
+
+<h2>Locator</h2>
+
+<p>El interfaz del <em>Locator</em> se han definido métodos que permiten 
+registrar clases, o factorías, así cómo obtener instancias de los mismos.
+Hay que tener en cuenta que el comportamiento del Locator no es como factoría, 
+es decir, se espera que el método <em>get</em> devuelva cada vez la misma 
+instancia de objeto. Es decir, actúa como un contenedor de referencias a 
+objetos que funcionan como <em>Singleton</em>.</p>
+
+<p>La implementación abstracta la aporta la clase 
+{@link org.gvsig.tools.locator.AbstractLocator}. 
+La idea es que cada librería implemente su <em>Locator</em> extendiendo 
+esta clase, y aportando métodos que registren y obtengan referencias a 
+sus tipos de objetos directamente. Más adelante, se muestra un ejemplo 
+de implementación que aporta este tipo de métodos. Además, cada implementación
+de <em>Locator</em> deberá hacerse empleando el patrón <em>Singleton</em>, 
+para facilitar el acceso al <em>Locator</em>.</p>
+
+<p>Las librerías de gvSIG deberán usar el Locator en los siguientes casos:</p>
+
+<ul class="simple">
+<li>Para soportar implementaciones alternativas: como por ejemplo para Java SE
+y Java ME, o cuando haya una implementación básica, y el usuario pueda instalar 
+una implementación extendida.</li>
+<li>Para soportar múltiples implementaciones: si existen distintas 
+implementaciones para un mismo interfaz o componente, que se usan dependiendo 
+de distintas opciones, como acciones del usuario, tipos de datos, etc.</li>
+</ul>
+
+<h2>Library</h2>
+
+<p>Con el mecanismo de los <em>Locator</em> queda un tema pendiente por 
+resolver: cúando se realiza el registro e inicialización de los objetos. 
+Dado que podemos tener una serie de relaciones de dependencia entre distintas 
+librerías que empleen el mecanismo de los Locator, así como éstas con las 
+Extensiones, es necesario que se registren todas las implementaciones antes 
+de que se usen dentro de la aplicación.</p>
+
+<p>Para ello se ha definido el <em>Library</em>. Los objetos de este tipo se 
+encargarán de registrar las implementaciones disponibles a través de los 
+<em>Locator</em>, así como de validar que, para una librería de tipo API, 
+se haya registrado alguna implementación.</p>
+
+<p>Se define un interfaz {@link org.gvsig.tools.locator.Library} con dos 
+métodos que permitan realizar las acciones planteadas anteriormente</p> 
+
+<p>Se ha empleado la misma nomenclatura que en las Extensiones de gvSIG, 
+ya que cada uno de los métodos de un Library se invocará desde una 
+Extensión, en el método correspondiente. Es decir, primero se invocan 
+todos los métodos <em>initialize()</em> de las extensiones, y desde 
+estos los de las librerías, y luego los métodos <em>postInitialize()</em></p>
+<p>Cada librería que emplee el mecanismo del <em>Locator</em> deberá 
+implementar un <em>Library</em>, y aportar una extensión de gvSIG que
+se encargue de invocarla. Distinguiremos dos tipos de librería 
+(aunque pueden coincidir en algunos casos con sublibrerías): librerías 
+de API y librerías de implementación.</p>
+
+<dl class="docutils">
+<dt>Librerías de API:</dt>
+<dd>Su <em>Library</em> implementará el método <em>postInitialize()</em>, 
+dentro del cuál se hará la comprobación de que alguna implementación 
+haya sido registrada.</dd>
+
+<dt>Librerías de implementación:</dt>
+<dd>El <em>Library</em>, en su método <em>initialize()</em>, se 
+encargará de registrar las implementaciones que aporta la librería a 
+través del locator de su correspondiente librería de API.</dd>
+</dl>
+
+<p>En ambos casos, los métodos del <em>Library</em> también podrán 
+ser usados para realizar otros tipos de inicializaciones, como definir 
+variables de librería, cargar configuraciones, obtener recursos, etc.</p>
+
+<p>Se ha creado una clase <em>org.gvsig.locator.BaseLibrary</em> que 
+facilita la implementación, al tener implementados ya los métodos, 
+aunque sólo para hacer logging. Si la librería es de tipo API o 
+implementación, bastará con implementar uno de los dos métodos.</p>
+
+<h3>Ejemplos</h3>
+<p>A continuación se plantea un ejemplo, basado en la librería 
+<em>libCompat</em>. Esta librería plantea el caso de implementaciones 
+alternativas para Java SE y Java ME, por lo que requerirá una estructura 
+de proyectos que permita organizar la librería en tres componentes de 
+instalación:</p>
+
+<dl class="docutils">
+<dt>libCompat:</dt>
+<dd>Será la librería de API. Contendrá los APIs de la librería, en 
+forma de interfaces de las distintas utilidades que aporta (StringUtils, 
+FileUtils, etc.), así como un <em>CompatLocator</em> que dé acceso a 
+las implementaciones correspondientes de dichas utilidades. También 
+puede contener algunas implementaciones Base o Abstractas, que se 
+empleen de forma común en las implementaciones por entorno.</dd>
+
+<dt>libCompatSE:</dt>
+<dd>Incluirá las implementaciones para Java SE.</dd>
+
+<dt>libCompatME:</dt>
+<dd>Proporciona las implementaciones para Java ME.</dd>
+</dl>
+
+<p>A continuación se muestran ejemplos de código, centrándonos en 
+el uso de una de las utilidades de <em>libCompat</em>: <em>StringUtils</em>.
+</p>
+
+<p>Primero, en <em>libCompat</em> se incluirá la definición del interfaz de 
+<em>StringUtils</em>:</p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">package</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>lang<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">interface</span> StringUtils <span style="color: rgb(102, 102, 102);">{</span>
+
+    String<span style="color: rgb(102, 102, 102);">[]</span> split<span style="color: rgb(102, 102, 102);">(</span>String input<span style="color: rgb(102, 102, 102);">,</span> String regex<span style="color: rgb(102, 102, 102);">);</span>
+
+    <span style="color: rgb(102, 102, 102);">...</span>
+
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<p>En <em>libCompatSE</em>, tendremos una implementación:</p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">package</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>se<span style="color: rgb(102, 102, 102);">.</span>lang<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">import</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>lang<span style="color: rgb(102, 102, 102);">.</span>StringUtils<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">class</span> <span style="color: rgb(0, 0, 255);">StandardStringUtils</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">implements</span> StringUtils <span style="color: rgb(102, 102, 102);">{</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> String<span style="color: rgb(102, 102, 102);">[]</span> split<span style="color: rgb(102, 102, 102);">(</span>String input<span style="color: rgb(102, 102, 102);">,</span> String regex<span style="color: rgb(102, 102, 102);">)</span> <span style="color: rgb(102, 102, 102);">{</span>
+
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">return</span> input <span style="color: rgb(102, 102, 102);">==</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">null</span> <span style="color: rgb(102, 102, 102);">?</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">null</span> <span style="color: rgb(102, 102, 102);">:</span> input<span style="color: rgb(102, 102, 102);">.</span>split<span style="color: rgb(102, 102, 102);">(</span>regex<span style="color: rgb(102, 102, 102);">);</span>
+
+    <span style="color: rgb(102, 102, 102);">}</span>
+
+    <span style="color: rgb(102, 102, 102);">...</span>
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<p>En <em>libCompatME</em>, la implementación alternativa:</p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">package</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>me<span style="color: rgb(102, 102, 102);">.</span>lang<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">import</span> java<span style="color: rgb(102, 102, 102);">.</span>util<span style="color: rgb(102, 102, 102);">.</span>regex<span style="color: rgb(102, 102, 102);">.</span>Pattern<span style="color: rgb(102, 102, 102);">;</span>
+<span style="color: rgb(170, 34, 255); font-weight: bold;">import</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>lang<span style="color: rgb(102, 102, 102);">.</span>StringUtils<span style="color: rgb(102, 102, 102);">;</span>    
+
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">class</span> <span style="color: rgb(0, 0, 255);">MobileStringUtils</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">implements</span> StringUtils <span style="color: rgb(102, 102, 102);">{</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> String<span style="color: rgb(102, 102, 102);">[]</span> split<span style="color: rgb(102, 102, 102);">(</span>String input<span style="color: rgb(102, 102, 102);">,</span> String regex<span style="color: rgb(102, 102, 102);">)</span> <span style="color: rgb(102, 102, 102);">{</span>
+
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">return</span> input <span style="color: rgb(102, 102, 102);">==</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">null</span> <span style="color: rgb(102, 102, 102);">?</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">null</span> <span style="color: rgb(102, 102, 102);">:</span> Pattern<span style="color: rgb(102, 102, 102);">.</span>compile<span style="color: rgb(102, 102, 102);">(</span>regex<span style="color: rgb(102, 102, 102);">).</span>split<span style="color: rgb(102, 102, 102);">(</span>input<span style="color: rgb(102, 102, 102);">,</span> <span style="color: rgb(102, 102, 102);">0);</span>
+
+    <span style="color: rgb(102, 102, 102);">}</span>
+
+    <span style="color: rgb(102, 102, 102);">...</span>
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<p>Con este esquema, las implementaciones no incorporan nada en lo que respecta
+a cómo se crean o se obtienen, lo que mejora su extensibilidad y la creación 
+de tests unitarios. Además, se facilita la programación con interfaces y la 
+definición de APIs.</p>
+
+<p>En <em>libCompat</em> tenemos la implementación del <em>Locator</em> de la 
+librería, que quedaría como sigue:</p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">package</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">import</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>lang<span style="color: rgb(102, 102, 102);">.</span>StringUtils<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">class</span> <span style="color: rgb(0, 0, 255);">CompatLocator</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">extends</span> AbstractLocator <span style="color: rgb(102, 102, 102);">{</span>
+
+    <span style="color: rgb(0, 136, 0); font-style: italic;">/** The name of the StringUtils reference. */</span>
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">static</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">final</span> String STRINGUTILS_NAME <span style="color: rgb(102, 102, 102);">=</span> <span style="color: rgb(187, 68, 68);">"StringUtils"</span><span style="color: rgb(102, 102, 102);">;</span>
+
+    
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">private</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">static</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">final</span> String LOCATOR_NAME <span style="color: rgb(102, 102, 102);">=</span> <span style="color: rgb(187, 68, 68);">"CompatLocator"</span><span style="color: rgb(102, 102, 102);">;</span>
+
+    <span style="color: rgb(0, 136, 0); font-style: italic;">/** Unique instance. */</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">private</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">static</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">final</span> CompatLocator instance <span style="color: rgb(102, 102, 102);">=</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">new</span> CompatLocator<span style="color: rgb(102, 102, 102);">();</span>
+
+    <span style="color: rgb(0, 136, 0); font-style: italic;">/**</span>
+
+<span style="color: rgb(0, 136, 0); font-style: italic;">     * Return the singleton instance.</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     * @return the singleton instance</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     */</span>
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">static</span> CompatLocator getInstance<span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(102, 102, 102);">{</span>
+
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">return</span> instance<span style="color: rgb(102, 102, 102);">;</span>
+    <span style="color: rgb(102, 102, 102);">}</span>
+
+    <span style="color: rgb(0, 136, 0); font-style: italic;">/**</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     * Return a reference to StringUtils.</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     * @return a reference to StringUtils</span>
+
+<span style="color: rgb(0, 136, 0); font-style: italic;">     * @throws LocatorException</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     *             if there is no access to the class or the class cannot be</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     *             instantiated</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     * @see Locator#get(String)</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     */</span>
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">static</span> StringUtils <span style="color: rgb(0, 160, 0);">getStringUtils</span><span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">throws</span> LocatorException <span style="color: rgb(102, 102, 102);">{</span>
+
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">return</span> <span style="color: rgb(102, 102, 102);">(</span>StringUtils<span style="color: rgb(102, 102, 102);">)</span> getInstance<span style="color: rgb(102, 102, 102);">().</span>get<span style="color: rgb(102, 102, 102);">(</span>STRINGUTILS_NAME<span style="color: rgb(102, 102, 102);">);</span>
+    <span style="color: rgb(102, 102, 102);">}</span>
+
+    
+    <span style="color: rgb(0, 136, 0); font-style: italic;">/**</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     * Registers the Class implementing the StringUtils interface.</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     * @param clazz</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     *            implementing the StringUtils interface</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;">     */</span>
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">static</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">void</span> registerStringUtils<span style="color: rgb(102, 102, 102);">(</span>Class clazz<span style="color: rgb(102, 102, 102);">)</span> <span style="color: rgb(102, 102, 102);">{</span>
+
+        getInstance<span style="color: rgb(102, 102, 102);">()</span>
+          <span style="color: rgb(102, 102, 102);">.</span>register<span style="color: rgb(102, 102, 102);">(</span>STRINGUTILS_NAME<span style="color: rgb(102, 102, 102);">,</span> STRINGUTILS_DESCRIPTION<span style="color: rgb(102, 102, 102);">,</span> clazz<span style="color: rgb(102, 102, 102);">);</span>
+
+    <span style="color: rgb(102, 102, 102);">}</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">protected</span> String getLocatorName<span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(102, 102, 102);">{</span>
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">return</span> LOCATOR_NAME<span style="color: rgb(102, 102, 102);">;</span>
+
+    <span style="color: rgb(102, 102, 102);">}</span>
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<p>En esta implementación de Locator, se han añadido métodos estáticos que 
+facilitan el uso del mismo, y manejan referencias de los tipos de la librería 
+en concreto, como el <em>StringUtils</em>. Así, por ejemplo, los clientes no 
+tienen porqué usar el método <em>get(name)</em> genérico del <em>Locator</em>, 
+sino que pueden usar un método <em>getStringUtils()</em> directamente.</p>
+
+<p>Una clase cliente que quiera usar, por ejemplo, el <em>StringUtils</em>, 
+podrá hacerlo de la siguiente forma:</p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">class</span> <span style="color: rgb(0, 0, 255);">SampleClient</span> <span style="color: rgb(102, 102, 102);">{</span>
+  <span style="color: rgb(170, 34, 255); font-weight: bold;">private</span> StringUtils stringUtils <span style="color: rgb(102, 102, 102);">=</span> CompatLocator<span style="color: rgb(102, 102, 102);">.</span>getStringUtils<span style="color: rgb(102, 102, 102);">();</span>
+
+  <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">void</span> doSomething<span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(102, 102, 102);">{</span>
+     String text <span style="color: rgb(102, 102, 102);">=</span> <span style="color: rgb(187, 68, 68);">"one,two,three"</span><span style="color: rgb(102, 102, 102);">;</span>
+
+     String<span style="color: rgb(102, 102, 102);">[]</span> words <span style="color: rgb(102, 102, 102);">=</span> stringUtils<span style="color: rgb(102, 102, 102);">.</span>split<span style="color: rgb(102, 102, 102);">(</span>text<span style="color: rgb(102, 102, 102);">,</span> <span style="color: rgb(187, 68, 68);">","</span><span style="color: rgb(102, 102, 102);">);</span>
+
+  
+     <span style="color: rgb(102, 102, 102);">...</span>
+  <span style="color: rgb(102, 102, 102);">}</span>
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<p>En cuanto a las librerías, <em>libCompatSE</em> y <em>libCompatME</em> 
+tendrán cada una su <em>Library</em> que registre la implementación 
+correspondiente de StringUtils.</p>
+
+<p>SECompatLibrary:</p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">package</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>se<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">import</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>CompatLocator<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(0, 136, 0); font-style: italic;">/**</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;"> * Initialization of the libCompat library, Java Standard Edition</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;"> * implementation.</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;"> * @author &lt;a href="mailto:cordin@disid.com"&gt;Cèsar Ordiñana&lt;/a&gt;</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;"> */</span>
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">class</span> <span style="color: rgb(0, 0, 255);">SECompatLibrary</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">extends</span> BaseLibrary <span style="color: rgb(102, 102, 102);">{</span>
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">void</span> initialize<span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(102, 102, 102);">{</span>
+
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">super</span><span style="color: rgb(102, 102, 102);">.</span>initialize<span style="color: rgb(102, 102, 102);">();</span>
+        CompatLocator<span style="color: rgb(102, 102, 102);">.</span>registerStringUtils<span style="color: rgb(102, 102, 102);">(</span>StandardStringUtils<span style="color: rgb(102, 102, 102);">.</span>class<span style="color: rgb(102, 102, 102);">);</span>
+    <span style="color: rgb(102, 102, 102);">}</span>
+
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<p>MECompatLibrary:</p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">package</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>me<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">import</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>CompatLocator<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(0, 136, 0); font-style: italic;">/**</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;"> * Initialization of the libCompat library, Java Mobile Edition implementation.</span>
+
+<span style="color: rgb(0, 136, 0); font-style: italic;"> * @author &lt;a href="mailto:cordin@disid.com"&gt;Cèsar Ordiñana&lt;/a&gt;</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;"> */</span>
+<span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">class</span> <span style="color: rgb(0, 0, 255);">MECompatLibrary</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">extends</span> BaseLibrary <span style="color: rgb(102, 102, 102);">{</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">void</span> initialize<span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(102, 102, 102);">{</span>
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">super</span><span style="color: rgb(102, 102, 102);">.</span>initialize<span style="color: rgb(102, 102, 102);">();</span>
+        CompatLocator<span style="color: rgb(102, 102, 102);">.</span>registerStringUtils<span style="color: rgb(102, 102, 102);">(</span>MobileStringUtils<span style="color: rgb(102, 102, 102);">.</span>class<span style="color: rgb(102, 102, 102);">);</span>
+
+    <span style="color: rgb(102, 102, 102);">}</span>
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<p>La librería de API <em>libCompat</em>, tiene un Library que comprueba si se 
+ha registrado alguna de las implementaciones:</p>
+
+<p>CompatLibrary:</p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">package</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(170, 34, 255); font-weight: bold;">import</span> org<span style="color: rgb(102, 102, 102);">.</span>gvsig<span style="color: rgb(102, 102, 102);">.</span>compat<span style="color: rgb(102, 102, 102);">.</span>lang<span style="color: rgb(102, 102, 102);">.</span>StringUtils<span style="color: rgb(102, 102, 102);">;</span>
+
+<span style="color: rgb(0, 136, 0); font-style: italic;">/**</span>
+
+<span style="color: rgb(0, 136, 0); font-style: italic;"> * Initialization of the libCompat library.</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;"> * @author &lt;a href="mailto:cordin@disid.com"&gt;Cèsar Ordiñana&lt;/a&gt;</span>
+<span style="color: rgb(0, 136, 0); font-style: italic;"> */</span>
+<span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">class</span> <span style="color: rgb(0, 0, 255);">CompatLibrary</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">extends</span> BaseLibrary <span style="color: rgb(102, 102, 102);">{</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">void</span> postInitialize<span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(102, 102, 102);">{</span>
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">super</span><span style="color: rgb(102, 102, 102);">.</span>postInitialize<span style="color: rgb(102, 102, 102);">();</span>
+        <span style="color: rgb(0, 136, 0); font-style: italic;">// Validate there is any implementation registered.</span>
+
+<span style="color: rgb(0, 136, 0); font-style: italic;"></span>        StringUtils stringUtils <span style="color: rgb(102, 102, 102);">=</span> CompatLocator<span style="color: rgb(102, 102, 102);">.</span>getStringUtils<span style="color: rgb(102, 102, 102);">();</span>
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">if</span> <span style="color: rgb(102, 102, 102);">(</span>stringUtils <span style="color: rgb(102, 102, 102);">==</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">null</span><span style="color: rgb(102, 102, 102);">)</span> <span style="color: rgb(102, 102, 102);">{</span>
+
+            <span style="color: rgb(170, 34, 255); font-weight: bold;">throw</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">new</span> ReferenceNotRegisteredException<span style="color: rgb(102, 102, 102);">(</span>CompatLocator<span style="color: rgb(102, 102, 102);">.</span>STRINGUTILS_NAME<span style="color: rgb(102, 102, 102);">,</span>
+                CompatLocator<span style="color: rgb(102, 102, 102);">.</span>getInstance<span style="color: rgb(102, 102, 102);">());</span>
+
+        <span style="color: rgb(102, 102, 102);">}</span>
+    <span style="color: rgb(102, 102, 102);">}</span>
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<h2>Tests Unitarios</h2>
+
+<p>Dado que con el uso de los Locator estamos reforzando el uso de interfaces, 
+y la separación de implementaciones alternativas u opcionales, podemos 
+aprovechar esto a la hora de realizar los tests unitarios.</p>
+
+<p>La forma de aprovecharlo consiste en crear los tests unitarios que 
+comprueben el funcionamiento correcto a nivel de API, dentro del proyecto que 
+incluya la definición de los interfaces. Dichos tests pueden crearse como 
+clases abstractas, que definan métodos para crear los objetos que implementan 
+los interfaces a probar. Así, cada implementación particular podrá crear sus 
+tests unitarios, símplemente heredando de los tests del API, e implementando 
+el método de creación de sus clases propias.</p>
+
+<p>Con esta estructura de tests unitarios podemos definir los tests unitarios 
+a nivel de API, y lanzarlos de forma sencilla para cada implementación.</p>
+
+<p>Basándonos en el ejemplo anterior, la distribución de tests unitarios 
+quedaría de la siguiente forma en las tres librerías del ejemplo:</p>
+
+<p><em>libCompat:</em></p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">abstract</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">class</span> <span style="color: rgb(0, 0, 255);">StringUtilsTestAbstract</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">extends</span> TestCase <span style="color: rgb(102, 102, 102);">{</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">private</span> StringUtils utils<span style="color: rgb(102, 102, 102);">;</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">protected</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">void</span> <span style="color: rgb(0, 160, 0);">setUp</span><span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">throws</span> Exception <span style="color: rgb(102, 102, 102);">{</span>
+
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">super</span><span style="color: rgb(102, 102, 102);">.</span>setUp<span style="color: rgb(102, 102, 102);">();</span>
+        utils <span style="color: rgb(102, 102, 102);">=</span> createUtils<span style="color: rgb(102, 102, 102);">();</span>
+    <span style="color: rgb(102, 102, 102);">}</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">protected</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">abstract</span> StringUtils createUtils<span style="color: rgb(102, 102, 102);">();</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">void</span> testReplaceAll<span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(102, 102, 102);">{</span>
+
+        String testString <span style="color: rgb(102, 102, 102);">=</span> <span style="color: rgb(187, 68, 68);">"En un lugar de la Mancha"</span><span style="color: rgb(102, 102, 102);">;</span>
+        String resultString <span style="color: rgb(102, 102, 102);">=</span> <span style="color: rgb(187, 68, 68);">"En_un_lugar_de_la_Mancha"</span><span style="color: rgb(102, 102, 102);">;</span>
+        String regex <span style="color: rgb(102, 102, 102);">=</span> <span style="color: rgb(187, 68, 68);">" "</span><span style="color: rgb(102, 102, 102);">;</span>
+
+        String replacement <span style="color: rgb(102, 102, 102);">=</span> <span style="color: rgb(187, 68, 68);">"_"</span><span style="color: rgb(102, 102, 102);">;</span>
+
+        assertEquals<span style="color: rgb(102, 102, 102);">(</span>resultString<span style="color: rgb(102, 102, 102);">,</span> 
+            utils<span style="color: rgb(102, 102, 102);">.</span>replaceAll<span style="color: rgb(102, 102, 102);">(</span>testString<span style="color: rgb(102, 102, 102);">,</span> regex<span style="color: rgb(102, 102, 102);">,</span> replacement<span style="color: rgb(102, 102, 102);">));</span>
+
+    <span style="color: rgb(102, 102, 102);">}</span>
+
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<p><em>libCompatSE:</em></p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">class</span> <span style="color: rgb(0, 0, 255);">StandardStringUtilsTest</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">extends</span> StringUtilsTestAbstract <span style="color: rgb(102, 102, 102);">{</span>
+
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">protected</span> StringUtils createUtils<span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(102, 102, 102);">{</span>
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">return</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">new</span> StandardStringUtils<span style="color: rgb(102, 102, 102);">();</span>
+    <span style="color: rgb(102, 102, 102);">}</span>
+
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<p><em>libCompatME:</em></p>
+
+<div class="highlight"><pre><span style="color: rgb(170, 34, 255); font-weight: bold;">public</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">class</span> <span style="color: rgb(0, 0, 255);">MobileStringUtilsTest</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">extends</span> StringUtilsTestAbstract <span style="color: rgb(102, 102, 102);">{</span>
+    <span style="color: rgb(170, 34, 255); font-weight: bold;">protected</span> StringUtils createUtils<span style="color: rgb(102, 102, 102);">()</span> <span style="color: rgb(102, 102, 102);">{</span>
+
+        <span style="color: rgb(170, 34, 255); font-weight: bold;">return</span> <span style="color: rgb(170, 34, 255); font-weight: bold;">new</span> MobileStringUtils<span style="color: rgb(102, 102, 102);">();</span>
+    <span style="color: rgb(102, 102, 102);">}</span>
+<span style="color: rgb(102, 102, 102);">}</span>
+</pre></div>
+
+<h2>Notas adicionales</h2>
+
+<ul>
+<li><p class="first">Las excepciones del Locator y del Library son de tipo 
+<em>RuntimeException</em> por lo que, aunque declaradas en su API, no obligan 
+a ser capturadas mediante un <em>try ... catch</em>. A nivel de aplicación, si
+que habrá que hacer un tratamiento de estas excepciones, para mostrar al 
+usuario algún tipo de información sobre el error producido.</p>
+<p>No se han definido excepciones normales, ya que son errores graves y no se 
+puedan tratar desde código. Así no obligamos a capturarlas en cada lugar dónde 
+se use un <em>Locator</em> o <em>Library</em>, y se pueden tratar en un nivel 
+superior.</p>
+</li>
+</ul>
+
+</body>
+</html>
