@@ -1,0 +1,17 @@
+<depman>
+	<package>
+		<group>org.gvsig</group>
+		<artifact>org.gvsig.jgdal</artifact>
+		<version>2.0-SNAPSHOT</version>
+		<libraryType>dynamic</libraryType>
+	</package>
+ 	<dependencies platform="win,mac">
+    	<dependency>
+	    	<group>gdal</group>
+		   	<artifact>gdal</artifact>
+	    	<version>1.5.0</version>
+    		<type>dynamic</type>
+   		</dependency>
+	</dependencies>
+</depman>
+
