@@ -1,0 +1,21 @@
+set(LIB_NAME crsjniproj)
+
+FILE(GLOB SOURCES "*.c*")
+
+include_directories(
+	${CMAKE_SOURCE_DIR}/include
+	${JAVA_INCLUDE_PATH}
+	${JAVA_INCLUDE_PATH2}
+	#${PROJ_INCLUDE_DIR}
+)
+
+SET(LIBRARIES_OPTIMIZED 
+    #${PROJ_LIBRARY}
+)
+
+SET(LIBRARIES_DEBUG
+    #${PROJ_LIBRARY}
+)
+
+SETUP_JNILIB(${LIB_NAME})
+

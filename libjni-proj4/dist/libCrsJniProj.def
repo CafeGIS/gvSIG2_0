@@ -1,0 +1,18 @@
+; dlltool --base-file C:\DOCUME~1\Diego\CONFIG~1\Temp/cca03300.base --output-exp CrsJniProj.exp --dllname CrsJniProj.dll --output-def dist/libCrsJniProj.def --no-export-all-symbols --add-stdcall-alias --exclude-symbol=DllMainCRTStartup@12 --def C:\DOCUME~1\Diego\CONFIG~1\Temp/cca03300.def --output-lib dist/libCrsJniProj.a
+EXPORTS
+	Java_org_gvsig_crs_proj_JNIBaseCrs_freeCrs = Java_org_gvsig_crs_proj_JNIBaseCrs_freeCrs@16 @ 1
+	Java_org_gvsig_crs_proj_JNIBaseCrs_freeCrs@16 @ 2
+	Java_org_gvsig_crs_proj_JNIBaseCrs_getErrno = Java_org_gvsig_crs_proj_JNIBaseCrs_getErrno@8 @ 3
+	Java_org_gvsig_crs_proj_JNIBaseCrs_getErrno@8 @ 4
+	Java_org_gvsig_crs_proj_JNIBaseCrs_isLatlong = Java_org_gvsig_crs_proj_JNIBaseCrs_isLatlong@16 @ 5
+	Java_org_gvsig_crs_proj_JNIBaseCrs_isLatlong@16 @ 6
+	Java_org_gvsig_crs_proj_JNIBaseCrs_loadCrs = Java_org_gvsig_crs_proj_JNIBaseCrs_loadCrs@12 @ 7
+	Java_org_gvsig_crs_proj_JNIBaseCrs_loadCrs@12 @ 8
+	Java_org_gvsig_crs_proj_JNIBaseCrs_operation = Java_org_gvsig_crs_proj_JNIBaseCrs_operation@36 @ 9
+	Java_org_gvsig_crs_proj_JNIBaseCrs_operation@36 @ 10
+	Java_org_gvsig_crs_proj_JNIBaseCrs_operationArraySimple = Java_org_gvsig_crs_proj_JNIBaseCrs_operationArraySimple@28 @ 11
+	Java_org_gvsig_crs_proj_JNIBaseCrs_operationArraySimple@28 @ 12
+	Java_org_gvsig_crs_proj_JNIBaseCrs_operationSimple = Java_org_gvsig_crs_proj_JNIBaseCrs_operationSimple@48 @ 13
+	Java_org_gvsig_crs_proj_JNIBaseCrs_operationSimple@48 @ 14
+	Java_org_gvsig_crs_proj_JNIBaseCrs_strErrno = Java_org_gvsig_crs_proj_JNIBaseCrs_strErrno@12 @ 15
+	Java_org_gvsig_crs_proj_JNIBaseCrs_strErrno@12 @ 16
