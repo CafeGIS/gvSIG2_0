@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                      
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>org.gvsig.metadata</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>libMetadata</name>
+	<url>http://gvsig.org</url>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-library-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<properties>
+		<build-dir>${basedir}/../build</build-dir>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.tools</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.4</source>
+					<target>1.4</target>
+					<!-- put your configurations here -->
+					<encoding>ISO-8859-1</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>**/simple/**</exclude>
+					</excludes>
+		        </configuration>
+					
+				<executions>
+					<!--
+						Generates a jar file only with the libMetadata simple
+						implementation.
+					-->
+					<execution>
+						<id>simple</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<classifier>simple</classifier>
+							<excludes>
+								<exclude>NONE</exclude>
+							</excludes>
+							<includes>
+								<include>**/simple/**</include>
+							</includes>
+							<!--finalName>${project.build.finalName}</finalName-->
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<reportSets>
+					<reportSet>
+						<id>api</id>
+						<configuration>
+							<excludePackageNames>org.gvsig.metadata.simple</excludePackageNames>
+							<name>Javadoc: API</name>
+							<destDir>apidoc</destDir>
+							<windowtitle>API Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.i18n/2.0.0/apidocs/</link>
+							</links>
+						</configuration>
+						<reports>
+							<report>javadoc</report>
+						</reports>
+					</reportSet>
+					<reportSet>
+						<id>basic-impl</id>
+						<configuration>
+							<doctitle>${project.name} ${project.version} Basic Implementation
+								</doctitle>
+							<subpackages>org.gvsig.metadata.simple</subpackages>
+							<name>Javadoc: basic impl</name>
+							<destDir>basicimpldoc</destDir>
+							<windowtitle>Basic implementation Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>../apidoc/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.i18n/2.0.0/apidocs/</link>
+							</links>
+						</configuration>
+						<reports>
+							<report>javadoc</report>
+						</reports>
+					</reportSet>
+				</reportSets>				
+			</plugin>
+		</plugins>
+	</reporting>
+</project>
