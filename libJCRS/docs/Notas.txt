@@ -1,0 +1,41 @@
+- COpetation.getInverted() no está teniendo en cuenta si hay parámetros de transformación -HECHO-
+- Resolver el tema del cacheado de CRSs en los repositorios.
+- Por qué no están implementados  getPOrig() y getPDest() de COperation? -HECHO-
+- Plantearse la necesidad de ICOperation:
+	- COperation ya no la implementa. La conservo preventivamente. -HECHO-
+- Crs y CrsGT: No construir los objetos CrsProj en el constructor, hacerlo la primera vez que se pidan.
+- Habría que reducir el tiempo de arranque de la extensión.
+- Depuraciones para detectar ineficiencias.
+	- COperation.operate se llama para cada punto: optimizar su contenido (creación de objetos). -HECHO-
+	- Hacer que CrsGT.getCT no construya nuevos CrsProj cada vez que se llama.
+- libJCrs y windows?????????????'
+- ICrs: mirar qué métodos no tienen por qué estar en la interfaz.
+- Dependencias de gvSIG en libJCrs:
+	- COperation.convert(...) utiliza: NotificationManager.addError(e) de andami;
+	- Persistencia: depende de PluginServices de andami. -> subir la persistencia a la extension. -HECHO-
+	- dependencia de CMS: IProjection, ICoordTrans, IDatum, ICRSFactory, org.cresques.geo.ViewPortData.
+	
+- Crs.getScale(): double invF = getDatum().getEIFlattening(); if (invF == Double.POSITIVE_INFINITY){}
+	¿Qué valor da getDatum().getEIFlattening() en el caso de una esfera? geoltools da Double.POSITIVE_INFINITY.
+
+- Busqueda IAU por zona: en mayusculas no encuentra. -HECHO-
+- Persistencia de transformaciones en F2. -HECHO-
+- Persistencia en el proyecto: Implementar IProyectio.getFullCode() y lo que esto implica. -HECHO-
+
+- OGR y WINDOWS....!!!!???? 
+- Revisar classpath de extJCRS (¿log4j-1.2.8.jar?,etc...)
+- Cuando CRS fuente y destino son iguales -> no operar, devolver el mismo punto.
+
+
+BUGS:
+
+- Cargas un shp 23030 diciendole que es 4258 con transf. EPSG (7) y salta una excepcción de proj4: controlar o subir estos
+	errores (es un error como el que silenciamos de nadgrids).
+	En este caso el error es debido a que las coordenadas se salen del rango del CRS elegido. Esta situación ArcMap la maneja desavilitando
+	la capa y dejando de visualizarla (algo parecedo a cuando gvSIG le pone la x de erroneo a una capa).
+
+- Cuando hay un fallo al elegir el CRS de la vista y después guardas el proyecto, parece ser que se guarda como null (o algo así)
+	y falla al abrirlo. Posibles soluciones: en esos casos guardar el CRS por defecto.
+
+- Nomenclator: Cuando pulsas localizar, debe dibuajar el punto en la vista y hacer zoom a el. Lo dibuja pero aparece una
+	excepción y no hace el zoom.
