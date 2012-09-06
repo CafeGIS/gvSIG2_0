@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-15">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.1.3  (Linux)">
+	<META NAME="CREATED" CONTENT="20060322;9174300">
+	<META NAME="CHANGED" CONTENT="20060322;10202100">
+	<STYLE>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+		A:link { color: #000080; text-decoration: underline }
+		A:visited { color: #800000; text-decoration: underline }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" LINK="#000080" VLINK="#800000" DIR="LTR">
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Monospace"><FONT SIZE=3 STYLE="font-size: 13pt"><B>PRESENT
+BEANS.</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Times, serif"><FONT SIZE=2><B>DefaultBean.java
+(extends JPanel (standard in Swing)):</B><SPAN STYLE="font-weight: medium">
+Just a JPanel with addListener(BeanListener l),
+removeListener(BeanListener l), and callValueChange(Object value)
+methods for adding listeners, removing listeners, and firing
+BeanValueChange events.</SPAN></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Times, serif"><FONT SIZE=2><B>Pager.java
+(extends DefaultBean.java)</B>: this is an
+AcrobatReader-page-browser-like bean that allows you to easy browse a
+list of values. Each time you drag the slider, click a button or type
+a number an Integer value is produced and a BeanValueChanged event is
+fired returning an Object value. Catch this event and cast the value
+produced to a Integer (or even an int) and use it to move your list
+pointer to this position. An example of use can be found in
+<B>SamplePanel.java</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Monospace"><FONT SIZE=3 STYLE="font-size: 13pt"><B>PRESENT
+CONTROLS.</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Monospace"><FONT SIZE=2><B>package
+org.gvsig.gui.beans.controls</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Times, serif"><FONT SIZE=2><B>MultilineTooltip.java
+(extends JToolTip (standard in Swing)): </B><SPAN STYLE="font-weight: medium">Allows
+using more than one line length tooltips. It also automatically
+calculates the size of the screen rectangle used and the preferred
+sized up on the contained text. It does NOT format the text to fit
+within a given size. The user must provide the text as she/he wishes
+to show it. It means that new line characters must be placed in the
+string as well as it was a System.out.println statement.</SPAN></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Monospace"><FONT SIZE=2><B>package
+org.gvsig.gui.beans.controls.dnd</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Times, serif"><FONT SIZE=2><B>JDnDList
+(extends JList (standard in Swing)): </B><SPAN STYLE="font-weight: medium">A
+JList that allows drag'n'drop elements. It accepts changing position
+of one or more elements within the list, adding other from other
+JDnDList's,  removing sets of selected items, and other features. In
+order to use this features you have to use a JDnDListModel as the
+list's model.</SPAN></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Times, serif"><FONT SIZE=2><B>JDnDListModel
+(extends AbstractListModel (standard in Swing)): </B><SPAN STYLE="font-weight: medium">List
+model to use in junction the JDnDList. Contains some useful tools.</SPAN></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Monospace"><FONT SIZE=2><B>package
+org.gvsig.gui.geans.listeners</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Times, serif"><FONT SIZE=2><B>BeanListener.java:
+</B><SPAN STYLE="font-weight: medium">Defines an object which listens
+for changes in the value produced by a bean. It is used, for example,
+in</SPAN><B> DefaultBean.java.</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Courier, monospace"><FONT SIZE=2>by
+Jaume Dom&iacute;nguez Faus (:S)</FONT></FONT></P>
+</BODY>
+</HTML>
