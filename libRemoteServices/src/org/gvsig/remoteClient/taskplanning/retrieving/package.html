@@ -1,0 +1,31 @@
+<body>
+<h4>Gestor de downloads multihilo</h4>
+<p>Permite mantener en threads separados las peticiones a servidores remotos
+(http, ftp, etc), de manera que el flujo normal de ejecución del programa
+no se quede detenido cuando se realiza una petición.</p>
+
+<p>RetrieveManager es el gestor de peticiones. Tiene una tabla de colas
+ de petición que son las que atienden esas peticiones. Se crea una cola
+ para cada server que se invoque, y esta es la que gestionará las
+ peticiones que se realicen a ese server, hasta el fin de la ejecución
+ del programa.</p>
+ 
+<p>RetrieveQueue es la clase que realiza las peticiones. Mantiene las
+prioridades, resuelve los timeouts, etc. Solo mantiene una petición
+'activa' simultaneamente. Las demás esperan a que esta termine.</p>
+
+<p>Retriever es la clase 'petición' propiamente dicha. Habla con el server,
+se baja los datos, y le comunica al listener lo que está pasando</p>
+
+<p>RetrieveRequest es la clase que contiene los datos de la conexión. En
+principio permite GET y POST sobre HTTP, pero se puede extender si hace
+falta algo distinto</p>
+
+<p>RetrieveListener es el interface que implementa el objeto que vaya a
+monitorizar el progreso del Retriever, y el que deberá actuar en consecuencia.</p>
+
+<p>RetrieveEvent es la clase mediante la que se notifica al Listener
+la evolución de la petición.</p>
+
+<p>RetrieveException excepción genérica de este package.</p>
+</body>

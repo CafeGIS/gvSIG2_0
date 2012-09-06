@@ -1,0 +1,1700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+	<name>Discovery Networks</name>
+	<open>1</open>
+	<description>Zoom into real life.</description>
+	<StyleMap id="discoveryPOIMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#discoveryPOIMapMouseout</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#discoveryPOIMapMouseover</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="discoveryPOIMapMouseout">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://www.discovery.com/common/sgallery/googleearth/globe_white.png</href>
+				<w>32</w>
+				<h>32</h>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<color>ffa56a</color>
+			<text>&lt;img src=&quot;http://www.discovery.com/utilities/googleearth/logos/discoverynetworks.gif&quot; width=&quot;100&quot; height=&quot;47&quot; border=&quot;0&quot; alt=&quot;discovery communications inc&quot; /&gt;&lt;br /&gt;&lt;font face=&quot;Verdana&quot; size=&quot;3&quot; color=&quot;#FFFFFF&quot;&gt;$[description]&lt;/font&gt;&lt;font face=&quot;Verdana&quot; size=&quot;3&quot; color=&quot;#000000&quot;&gt;Copyright &amp;copy; 2006 Discovery Communications Inc.&lt;/font&gt;</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="discoveryPOIMapMouseover">
+		<IconStyle>
+			<Icon>
+				<href>http://www.discovery.com/common/sgallery/googleearth/globe_white.png</href>
+				<w>32</w>
+				<h>32</h>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<color>ffa56a</color>
+			<text>&lt;img src=&quot;http://www.discovery.com/utilities/googleearth/logos/discoverynetworks.gif&quot; width=&quot;100&quot; height=&quot;47&quot; border=&quot;0&quot; alt=&quot;discovery communications inc&quot; /&gt;&lt;br /&gt;&lt;font face=&quot;Verdana&quot; size=&quot;3&quot; color=&quot;#FFFFFF&quot;&gt;$[description]&lt;/font&gt;&lt;font face=&quot;Verdana&quot; size=&quot;3&quot; color=&quot;#000000&quot;&gt;Copyright &amp;copy; 2006 Discovery Communications Inc.&lt;/font&gt;</text>
+		</BalloonStyle>
+		
+			<scale>1.4</scale>
+	</Style>
+	<Folder>
+		<name>Discovery National Parks Tour</name>
+		<open>1</open>
+		<description>Watch exclusive video of America&apos;s scenic wonders.</description>
+		<Placemark>
+			<name>Glacier National Park</name>
+			<Snippet maxLines="2">
+Glacier			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920284&bctid=86232580"><img src="http://dsc.discovery.com/utilities/googleearth/nationalparks/gallery/glacierpark.jpg" width="320" height="240" border="0" alt="Glacier National Park" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Inside Glacier National Park</strong></font><br />
+Explore through video the gem of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920284&bctid=86232580">Big Sky Country</a>.<br />
+&nbsp;<br />
+<strong>More Glacier videos:</strong><br />
+Watch how <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920284&bctid=86232578">glaciers shaped</a> the park.<br />
+Learn Glacier's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920284&bctid=16938885">history and legends</a>.<br />
+Check out the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920284&bctid=86232576">"Going to the Sun" Road</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-113.654822</longitude>
+				<latitude>48.756675</latitude>
+				<altitude>0</altitude>
+				<range>9444</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-113.654822,48.756675,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Yellowstone National Park</name>
+			<Snippet maxLines="2">
+Yellowstone			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16934806&bctid=17197352"><img src="http://dsc.discovery.com/utilities/googleearth/nationalparks/gallery/yellowstonepark.jpg" width="320" height="240" border="0" alt="Yellowstone National Park" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>The Wonder of Yellowstone</strong></font><br />
+Take a video tour of America's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16934806&bctid=17197352">first national park</a>.<br />
+&nbsp;<br />
+<strong>More Yellowstone videos:</strong><br />
+Check out the park's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16934806&bctid=17197351">hydrothermal wonders</a>.<br />
+<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16934806&bctid=86232579">Watch wildlife roaming</a> the park's forests and roads.<br />
+Find out why <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16934806&bctid=16927314">fires are so critical</a> for Yellowstone.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-110.8334056</longitude>
+				<latitude>44.4596722</latitude>
+				<altitude>0</altitude>
+				<range>5191</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-110.8334056,44.4596722,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Arches National Park</name>
+			<Snippet maxLines="2">
+Arches			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920785&bctid=37046645"><img src="http://dsc.discovery.com/utilities/googleearth/nationalparks/gallery/archespark.jpg" width="320" height="240" border="0" alt="Arches National Park" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Explore Amazing Arches</strong></font><br />
+See what created the park's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920785&bctid=37046645">stunning rock formations</a>.<br />
+&nbsp;<br />
+<strong>More Arches videos:</strong><br />
+Visit the park's most <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920785&bctid=16938865">famous arches</a>.<br />
+Check out the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920785&bctid=16938853">unearthly terrain</a> of nearby Canyonlands.<br />
+Explore a geological mystery of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920785&bctid=16938866">Canyonlands</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-109.5625</longitude>
+				<latitude>38.7083278</latitude>
+				<altitude>0</altitude>
+				<range>9109</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-109.5625,38.7083278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mt. Rushmore National Park</name>
+			<Snippet maxLines="2">
+Mt. Rushmore			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16924793&bctid=86232577"><img src="http://dsc.discovery.com/utilities/googleearth/nationalparks/gallery/mountrushmore.jpg" width="320" height="240" border="0" alt="Mount Rushmore National Park" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Up on Mt. Rushmore</strong></font><br />
+Get up close to the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16924793&bctid=86232577">colossal stone carvings</a>.<br />
+&nbsp;<br />
+<strong>More Mt. Rushmore videos:</strong><br />
+See how <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16924793&bctid=17197362">flaws in the rock face</a> changed the design.<br />
+Watch how dynamite was used to <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16924793&bctid=17197359">carve the mountain</a>.<br />
+Get the story on what it was like to <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16924793&bctid=17197360">work on Rushmore</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-103.45983056</longitude>
+				<latitude>43.87894722</latitude>
+				<altitude>0</altitude>
+				<range>2722</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-103.45983056,43.87894722000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Everglades National Park</name>
+			<Snippet maxLines="2">
+Everglades			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920784&bctid=17041216"><img src="http://dsc.discovery.com/utilities/googleearth/nationalparks/gallery/evergladespark.jpg" width="320" height="240" border="0" alt="Everglades National Park" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Inside the Everglades</strong></font><br />
+See what makes Florida's large national park <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920784&bctid=17041216">so unique</a>.<br />
+&nbsp;<br />
+<strong>More Everglades videos:</strong><br />
+Watch how <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920784&bctid=16938871">cypress trees</a> fuel the park's ecosystem.<br />
+Enter the world of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920784&bctid=16927376">manatees</a>.<br />
+Go inside the park's huge <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920784&bctid=16927364">mangrove forests</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-81.0324944</longitude>
+				<latitude>25.473822</latitude>
+				<altitude>0</altitude>
+				<range>31266</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-81.0324944,25.473822,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pt. Reyes National Seashore</name>
+			<Snippet maxLines="2">
+Point Reyes			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=17013949&bctid=16927304"><img src="http://dsc.discovery.com/utilities/googleearth/nationalparks/gallery/pointreyes.jpg" width="320" height="240" border="0" alt="Point Reyes National Seashore" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Cruising Point Reyes Seashore</strong></font><br />
+Visit a park along the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=17013949&bctid=16927304">San Andreas Fault</a>.<br />
+&nbsp;<br />
+<strong>More Point Reyes videos:</strong><br />
+Go underneath the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=17013949&bctid=16927321">coastal waters</a>.<br />
+Watch <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=17013949&bctid=16927357">sharks and whales</a> near the coast.<br />
+See the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=17013949&bctid=86232574">range of wildlife</a> along the seashore.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-122.9917944</longitude>
+				<latitude>37.99874167</latitude>
+				<altitude>0</altitude>
+				<range>7950</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-122.9917944,37.99874167,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Santa Monica Mountains</name>
+			<Snippet maxLines="2">
+Santa Monica			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16919791&bctid=16938861"><img src="http://dsc.discovery.com/utilities/googleearth/nationalparks/gallery/santamonica.jpg" width="320" height="240" border="0" alt="Santa Monica Mountains" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Santa Monica Mountains</strong></font><br />
+Get a good look at the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16919791&bctid=16938861">largest urban park</a> in America.<br />
+&nbsp;<br />
+<strong>More Santa Monica videos:</strong><br />
+<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16919791&bctid=16938890">Watch the wildlife</a> that roams close to Los Angeles.<br />
+Find out about the area's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16919791&bctid=16927368">Native-American history</a>.<br />
+Learn about the women who <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16919791&bctid=17041267">fought for the park</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-118.5764389</longitude>
+				<latitude>34.06768056</latitude>
+				<altitude>0</altitude>
+				<range>3428</range>
+				<tilt>63</tilt>
+				<heading>150</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-118.5764389,34.06768056000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Alaska National Parks</name>
+			<Snippet maxLines="2">
+Denali			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16938910&bctid=16927307"><img src="http://dsc.discovery.com/utilities/googleearth/nationalparks/gallery/denali.jpg" width="320" height="240" border="0" alt="Denali" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Into Alaska</strong></font><br />
+See the range of Alaska's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16938910&bctid=16927307">spectacular scenery</a>.<br />
+&nbsp;<br />
+<strong>More Alaska National Parks videos:</strong><br />
+<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16938910&bctid=16927318">Explore Denali</a> and the highest peak in America.<br />
+Watch the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16938910&bctid=16927313">bears of Katmai</a> National Park.<br />
+Go above the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16938910&bctid=86232575">Arctic Circle</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-151.04334166</longitude>
+				<latitude>63.130722</latitude>
+				<altitude>0</altitude>
+				<range>28567</range>
+				<tilt>63</tilt>
+				<heading>165</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-151.04334166,63.13072200000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dinosaur National Monument</name>
+			<Snippet maxLines="2">
+Dinosaur Park			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=17197350&bctid=17041262"><img src="http://dsc.discovery.com/utilities/googleearth/nationalparks/gallery/dinosaurpark.jpg" width="320" height="240" border="0" alt="Dinosaur National Monument" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Dinosaur National Monument</strong></font><br />
+Go where <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=17197350&bctid=17041262">giant monsters</a> used to roam.<br />
+&nbsp;<br />
+<strong>More Dinosaur videos:</strong><br />
+See what <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=17197350&bctid=16927330">geological layers</a> say about the past.<br />
+Watch the strange creatures of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=17197350&bctid=17041234">Triassic Period</a>.<br />
+Return to the age of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=17197350&bctid=16927296">dinosaur giants</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-108.67355833</longitude>
+				<latitude>40.6918167</latitude>
+				<altitude>0</altitude>
+				<range>22976</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-108.67355833,40.6918167,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Carlsbad Caverns</name>
+			<Snippet maxLines="2">
+Carlsbad			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16924795&bctid=16938844"><img src="http://dsc.discovery.com/utilities/googleearth/nationalparks/gallery/carlsbadcaves.jpg" width="320" height="240" border="0" alt="Carlsbad Caverns" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Into Carlsbad Caverns</strong></font><br />
+Enter a stunning <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16924795&bctid=16938844">underground world</a>.<br />
+&nbsp;<br />
+<strong>More Carlsbad videos:</strong><br />
+Watch the nightly swarm of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16924795&bctid=16938886">Carlsbad's bats</a>.<br />
+See how <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16924795&bctid=17041293">sulfuric acid</a> helped form the caverns.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-104.441056</longitude>
+				<latitude>32.176991666</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-104.441056,32.176991666,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Great Smoky Mountains</name>
+			<Snippet maxLines="2">
+Great Smoky Mountains			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147268&bctid=67269066"><img src="http://dsc.discovery.com/utilities/googleearth/us_landmarks/gallery/greatsmokymtns.jpg" width="320" height="240" border="0" alt="Great Smoky Mountains" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Great Smoky Mountains</strong></font><br />
+Take a look at America's most <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147268&bctid=67269066">popular national park</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-83.60833890000001</longitude>
+				<latitude>35.99110833</latitude>
+				<altitude>0</altitude>
+				<range>225211</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-83.60833890000002,35.99110833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hoover Dam</name>
+			<Snippet maxLines="2">
+Hoover Dam			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147268&bctid=37046646"><img src="http://dsc.discovery.com/utilities/googleearth/us_landmarks/gallery/hooverdam.jpg" width="320" height="240" border="0" alt="Hoover Dam" /></a><br />
+<font size="3" color="#000000">Picture:  iStockphoto |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Inside Hoover Dam</strong></font><br />
+Explore this model of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147268&bctid=37046646">American ingenuity</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-114.73770278</longitude>
+				<latitude>36.01605833</latitude>
+				<altitude>0</altitude>
+				<range>1086</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-114.73770278,36.01605833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Niagara Falls</name>
+			<Snippet maxLines="2">
+Niagara Falls			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147268&bctid=37046644"><img src="http://dsc.discovery.com/utilities/googleearth/us_landmarks/gallery/niagrafalls.jpg" width="320" height="240" border="0" alt="Niagra Falls" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Over Niagara Falls</strong></font><br />
+Get a close-up view of this <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147268&bctid=37046644">natural wonder</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Niagara Falls video:</strong><br />
+Take a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147268&bctid=37046643">wild ride</a> on the river.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-79.07533056</longitude>
+				<latitude>43.07725834</latitude>
+				<altitude>0</altitude>
+				<range>2371</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-79.07533056,43.07725834000001,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>American Cities Tour</name>
+		<description>See exclusive video of major American cities.</description>
+		<Placemark>
+			<name>New York</name>
+			<Snippet maxLines="2">
+New York			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818959&bctid=16861717"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/newyork.jpg" width="320" height="240" border="0" alt="New York" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Inside New York</strong></font><br />
+Follow the rise of the city's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818959&bctid=16861717">skyscrapers</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><!--</td><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" />--></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More New York videos:</strong><br />
+Explore the secrets of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818959&bctid=16861748">Central Park</a>.<br />
+Find out about the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818959&bctid=16861750">bright lights</a> of the big city.<br />
+See how the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818959&bctid=67269177">Brooklyn Bridge</a> became an icon.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-73.9881833</longitude>
+				<latitude>40.7522944</latitude>
+				<altitude>0</altitude>
+				<range>14264</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-73.9881833,40.7522944,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Washington DC</name>
+			<Snippet maxLines="2">
+Washington DC			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164241&bctid=24465932"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/washingtondc.jpg" width="320" height="240" border="0" alt="Washington DC" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Take a Washington, D.C., Tour</strong></font><br />
+See what it means to go to <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164241&bctid=24465932">The Mall</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Washington, D.C., videos:</strong><br />
+Enter the world of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164241&bctid=24465939">Smithsonian museums</a>.<br />
+Take a video tour of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164241&bctid=24465938">Lincoln Memorial</a>.<br />
+Get the inside story of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164241&bctid=24465934">Washington Monument</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-77.0366944</longitude>
+				<latitude>38.89500833</latitude>
+				<altitude>0</altitude>
+				<range>6220</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-77.0366944,38.89500833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Las Vegas</name>
+			<Snippet maxLines="2">
+Las Vegas			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818958&bctid=17041132"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/vegas.jpg" width="320" height="240" border="0" alt="Las Vegas" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>The Marvels of Las Vegas</strong></font><br />
+Get the scoop on <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818958&bctid=17041132">Bellagio's</a> amazing fountain.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Las Vegas videos:</strong><br />
+Find out what makes the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818958&bctid=17041122">Luxor</a> so special.<br />
+See how Vegas' <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818958&bctid=17041131">"Eiffel Tower"</a> came to be.<br />
+Check out the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818958&bctid=17041244">Shark Reef</a> at Mandalay Bay.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-115.1729389</longitude>
+				<latitude>36.100911</latitude>
+				<altitude>0</altitude>
+				<range>2595</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-115.1729389,36.100911,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Seattle</name>
+			<Snippet maxLines="2">
+Seattle			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818960&bctid=32951094"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/seattle.jpg" width="320" height="240" border="0" alt="Seattle" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>A Taste of Seattle</strong></font><br />
+Make a video visit to the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818960&bctid=32951094">Space Needle</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Seattle videos:</strong><br />
+Get a taste of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818960&bctid=32951091">Pike Place Market</a>.<br />
+Take a trip to nearby <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818960&bctid=32951092">Mount St. Helens</a>.<br />
+Stop by <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818960&bctid=32951090">Ye Olde Curiosity Shoppe</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-122.330844</longitude>
+				<latitude>47.6063944</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-122.330844,47.60639440000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Miami</name>
+			<Snippet maxLines="2">
+Miami			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=70349676&bctid=70349669"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/miami.jpg" width="320" height="240" border="0" alt="Miami" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Explore Old and New Miami</strong></font><br />
+Go back to the era of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=70349676&bctid=170349669">Art Deco</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Miami videos:</strong><br />
+Visit one of the city's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=70349676&bctid=70349672">famous hotels</a>.<br />
+Find out what turned around <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=70349676&bctid=170349672">South Beach</a>.<br />
+Spend some time in <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=70349676&bctid=16938886">Little Havana</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-80.19390833</longitude>
+				<latitude>25.77390833</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-80.19390833000001,25.77390833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>San Francisco</name>
+			<Snippet maxLines="2">
+San Francisco			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818957&bctid=44410202"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/sanfran.jpg" width="320" height="240" border="0" alt="San Francisco" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Savor San Francisco</strong></font><br />
+Explore the roots of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818957&bctid=44410202">City by the Bay</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More San Francisco videos:</strong><br />
+Go inside <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818957&bctid=44410281">Alcatraz</a>.<br />
+Meet the people who take care of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818957&bctid=44410208">famous bridge</a>.<br />
+Take a tour of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60818957&bctid=44410206">Chinatown</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-122.4008944</longitude>
+				<latitude>37.79390278</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-122.4008944,37.79390278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chicago</name>
+			<Snippet maxLines="2">
+Chicago			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124703&bctid=44410292"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/chicago.jpg" width="320" height="240" border="0" alt="Chicago" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Check Out Chicago</strong></font><br />
+Take in the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124703&bctid=44410292">skyscrapers of Chicago</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Chicago videos:</strong><br />
+See how African-Americans <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124703&bctid=44410305">shaped its culture</a>.<br />
+Spend some time in historic <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124703&bctid=44410293">Wrigley Field</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-87.633225</longitude>
+				<latitude>41.880589</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-87.633225,41.880589,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Philadelphia</name>
+			<Snippet maxLines="2">
+Philadelphia			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124657&bctid=44410205"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/philadelphia.jpg" width="320" height="240" border="0" alt="Philadelphia" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Fun in Philadelphia</strong></font><br />
+Get a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124657&bctid=44410205">taste</a> of Philly.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Philadelphia videos:</strong><br />
+Take a cruise down <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124657&bctid=44410207">Boathouse Row</a>.<br />
+Celebrate with the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124657&bctid=44410204">Mummers</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-75.16417800000001</longitude>
+				<latitude>39.9522278</latitude>
+				<altitude>0</altitude>
+				<range>13641</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-75.16417800000001,39.9522278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Los Angeles</name>
+			<Snippet maxLines="2">
+Los Angeles			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132263&bctid=67269029"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/losangeles.jpg" width="320" height="240" border="0" alt="Los Angeles" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>The LA Scene</strong></font><br />
+Learn about <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132263&bctid=67269029">the city that shouldn't be</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Los Angeles videos:</strong><br />
+Discover the two sides of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132263&bctid=67269028">Venice Beach</a>.<br />
+Take to the road in <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132263&bctid=67269061">a set of cool wheels</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-118.2490083</longitude>
+				<latitude>34.04505278</latitude>
+				<altitude>0</altitude>
+				<range>17236</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-118.2490083,34.04505278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Boston</name>
+			<Snippet maxLines="2">
+Boston			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164235&bctid=44410302"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/boston.jpg" width="320" height="240" border="0" alt="Boston" /></a><br />
+<font size="3" color="#000000">Picture: iStockphoto |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Discover Boston</strong></font><br />
+Find the many ways to <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164235&bctid=44410302">explore the city</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Boston videos:</strong><br />
+Sample the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164235&bctid=44410301">foods of Boston</a>.<br />
+Visit the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164235&bctid=44410303">oldest ballpark</a> in America.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-71.05678611</longitude>
+				<latitude>42.35593056</latitude>
+				<altitude>0</altitude>
+				<range>9156</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-71.05678611,42.35593056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Denver</name>
+			<Snippet maxLines="2">
+Denver			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160729&bctid=44410291"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/denver.jpg" width="320" height="240" border="0" alt="Denver" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Dive into Denver</strong></font><br />
+Get to the heart of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160729&bctid=44410291">Mile High City</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Denver videos:</strong><br />
+Climb aboard the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160729&bctid=44410296">ski train</a>.<br />
+Fly into the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160729&bctid=44410294">iconic airport</a>.<br />
+Visit the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160729&bctid=44410295">Hammond's Candies Factory</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-104.9890361</longitude>
+				<latitude>39.74380278</latitude>
+				<altitude>0</altitude>
+				<range>7563</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-104.9890361,39.74380278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>San Diego</name>
+			<Snippet maxLines="2">
+San Diego			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132261&bctid=67269030"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/sandiego.jpg" width="320" height="240" border="0" alt="San Diego" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Go Wild in San Diego</strong></font><br />
+Get up close to <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132261&bctid=67269030">San Diego's animals</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More San Diego videos:</strong><br />
+Get the lowdown on the city's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132261&bctid=67269022">surf scene</a>.<br />
+Hop aboard the city's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132261&bctid=67269024">historic ships</a>.<br />
+Check out a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132261&bctid=67269026">tequila restaurant/museum</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-117.1650139</longitude>
+				<latitude>32.71605278</latitude>
+				<altitude>0</altitude>
+				<range>8736</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-117.1650139,32.71605278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Atlanta</name>
+			<Snippet maxLines="2">
+Atlanta			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160833&bctid=67269182"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/atlanta.jpg" width="320" height="240" border="0" alt="Atlanta" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Discover the Real Atlanta</strong></font><br />
+Uncover Atlanta's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160833&bctid=67269182">historical past</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Atlanta videos:</strong><br />
+Visit the ever-popular <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160833&bctid=67269174">Stone Mountain Park</a>.<br />
+Follow the footsteps of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160833&bctid=67269176">Martin Luther King Jr</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-84.38874167</longitude>
+				<latitude>33.75485</latitude>
+				<altitude>0</altitude>
+				<range>7438</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-84.38874167,33.75485,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>European Cities Tour</name>
+		<description>Watch exclusive video of the great cities of Europe.</description>
+		<Placemark>
+			<name>Paris</name>
+			<Snippet maxLines="2">
+Paris			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124689&bctid=16938845"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/paris.jpg" width="320" height="240" border="0" alt="Paris" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Explore Paris</strong></font><br />
+Go inside the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124689&bctid=16938845">markets</a> of Paris.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Paris videos:</strong><br />
+Make a video visit to <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124689&bctid=16938869">Notre Dame</a>.<br />
+Get a taste of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124689&bctid=16938854">city's bistros</a>.<br />
+Take in the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124689&bctid=16938874">fashion</a> of Paris.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>2.3508389</longitude>
+				<latitude>48.8567</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>2.3508389,48.8567,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>London</name>
+			<Snippet maxLines="2">
+London			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147234&bctid=169273404"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/london.jpg" width="320" height="240" border="0" alt="London" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>A Taste of London</strong></font><br />
+Take a look around London's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147234&bctid=169273404">Theater District</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More London videos:</strong><br />
+Cruise among the celebrities at <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147234&bctid=16927329">Madame Tussaud's</a>.<br />
+Take a side trip to the neighborhood of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147234&bctid=16927323">Notting Hill</a>.<br />
+Find out the best way to <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147234&bctid=16927334">get around</a> the city.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-0.12618611</longitude>
+				<latitude>51.50026944</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-0.12618611,51.50026944,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Edinburgh</name>
+			<Snippet maxLines="2">
+Edinburgh			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147233&bctid=16938844"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/edinburgh.jpg" width="320" height="240" border="0" alt="Edinburgh" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>The Flavor of Edinburgh</strong></font><br />
+Take a video tour of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147233&bctid=16938857">famous castles</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Edinburgh videos:</strong><br />
+Go inside the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147233&bctid=16938894">city's pubs</a>.<br />
+Get in tune with a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147233&bctid=16938876">Scottish piper</a>.<br />
+Experience the spectacle of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147233&bctid=16938849">Military Tattoo</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-3.187567</longitude>
+				<latitude>55.95014167</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-3.187567000000001,55.95014167000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dublin</name>
+			<Snippet maxLines="2">
+Dublin			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60819286&bctid=44410312"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/dublin.jpg" width="320" height="240" border="0" alt="Dublin" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Enjoy the Traditions of Dublin</strong></font><br />
+Visit the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60819286&bctid=44410312">churches and cathedrals</a> of Dublin.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Dublin Videos:</strong><br />
+Find a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60819286&bctid=44410319">budget hotel and a good pint</a>.<br />
+Walk through <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60819286&bctid=44410319">Dublin's neighborhoods</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-6.24425833</longitude>
+				<latitude>53.34385278</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-6.24425833,53.34385278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Brussels</name>
+			<Snippet maxLines="2">
+Brussels			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160751&bctid=16927294"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/brussels.jpg" width="320" height="240" border="0" alt="Brussels" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Take a Trip to Brussels</strong></font><br />
+Explore the city, including its <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160751&bctid=16927294">boyish icon</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Brussels videos:</strong><br />
+Check out a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160751&bctid=16927338">chocolate factory</a>.<br />
+Sample the nightlife of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160751&bctid=16927326">Brussels</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>4.34671389</longitude>
+				<latitude>50.84643611</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>4.34671389,50.84643611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Amsterdam</name>
+			<Snippet maxLines="2">
+Amsterdam			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160752&bctid=16927305"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/amsterdam.jpg" width="320" height="240" border="0" alt="Amsterdam" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Cruise Amsterdam</strong></font><br />
+Explore the city <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160752&bctid=16927305">by bike</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Amsterdam videos:</strong><br />
+Stop by one of Amsterdam's famous <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160752&bctid=16927335">"coffeehouses"</a>.<br />
+Tiptoe through <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160752&bctid=16927309">fields of tulips</a>.<br />
+Take a stroll through the city's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44160752&bctid=16927343">Red Light District</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>4.8914722</longitude>
+				<latitude>52.37309167</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>4.8914722,52.37309167,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Berlin</name>
+			<Snippet maxLines="2">
+Berlin			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147231&bctid=44147231"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/berlin.jpg" width="320" height="240" border="0" alt="Berlin" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Tour Berlin</strong></font><br />
+Take a swing around the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147231&bctid=44147231">fast-changing city</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Berlin videos:</strong><br />
+Pay a visit to the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147231&bctid=16927356">Brandenburg Gate</a>.<br />
+Check out a communal <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147231&bctid=16927303">art gallery</a>.<br />
+Get a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147231&bctid=16927324">river view</a> of the city.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>13.38556944</longitude>
+				<latitude>52.512225</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>13.38556944,52.512225,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bavaria</name>
+			<Snippet maxLines="2">
+Bavaria			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147230&bctid=16938875"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/bavaria.jpg" width="320" height="240" border="0" alt="Bavaria" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Inside Bavaria</strong></font><br />
+Watch video of a land made <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147230&bctid=16938875">for postcards</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Bavaria videos:</strong><br />
+Go inside one of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147230&bctid=16938884">grandest castles</a> in Europe.<br />
+Visit the spot of a world-famous <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147230&bctid=16938882">Passion Play</a>.<br />
+Get a taste of a full <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147230&bctid=16938873">Bavarian meal</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>11.5536</longitude>
+				<latitude>48.1323611</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>11.5536,48.1323611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lisbon</name>
+			<Snippet maxLines="2">
+Lisbon			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164259&bctid=16927367"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/lisbon.jpg" width="320" height="240" border="0" alt="Lisbon" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Inside Lisbon</strong></font><br />
+Get into the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164259&bctid=16927367">heart</a> of the city.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Lisbon videos:</strong><br />
+Explore the famous <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164259&bctid=16927292">Pestana Palace</a>.<br />
+Stroll through <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164259&bctid=16927349">the streets</a> of Portugal's capital.<br />
+Check out a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164259&bctid=16927327">monastery</a> tied to Lisbon's past.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-9.140027699999999</longitude>
+				<latitude>38.72000833</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-9.140027699999999,38.72000833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Naples</name>
+			<Snippet maxLines="2">
+Naples			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164258&bctid=16927337"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/naples.jpg" width="320" height="240" border="0" alt="Naples" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Plunge Into Naples</strong></font><br />
+Sample the city's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164258&bctid=16927337">energy and chaos</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Naples videos:</strong><br />
+Savor a video taste of Naples' <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164258&bctid=16927325">famous pizza</a>.<br />
+Slow it down in <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164258&bctid=16927344">Santa Lucia</a>.<br />
+Go inside an <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164258&bctid=16927379">opera house</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>14.26583056</longitude>
+				<latitude>40.84834167</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>14.26583056,40.84834167,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Florence</name>
+			<Snippet maxLines="2">
+Florence			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147235&bctid=16938856"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/florence.jpg" width="320" height="240" border="0" alt="Florence" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Explore Florence</strong></font><br />
+Take in the city's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147235&bctid=16938856">spectacular architecture</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Florence videos:</strong><br />
+Escape to <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147235&bctid=16938858">the countryside</a>.<br />
+Find the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147235&bctid=16938889">perfect hotel</a> in Florence.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>11.2568611</longitude>
+				<latitude>43.768725</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>11.2568611,43.76872500000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rome</name>
+			<Snippet maxLines="2">
+Rome			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132196&bctid=52338027"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/rome.jpg" width="320" height="240" border="0" alt="Rome" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Discover Rome</strong></font><br />
+Wander through the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132196&bctid=52338027">historic district</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Rome videos:</strong><br />
+Experience a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132196&bctid=52338024">unique restaurant</a>.<br />
+Walk in the footsteps of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132196&bctid=52338026">gladiators</a>.<br />
+One way to really <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132196&bctid=52338036">see the city</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>12.47899167</longitude>
+				<latitude>41.8990611</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>12.47899167,41.8990611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Amalfi Coast</name>
+			<Snippet maxLines="2">
+Amalfi Coast			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124687&bctid=16938844"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/amalficoast.jpg" width="320" height="240" border="0" alt="Analfi Coast" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Travel the Amalfi Coast</strong></font><br />
+Start your journey at <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124687&bctid=16938844">Sorrento</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Amalfi Coast videos:</strong><br />
+Soak in the atmosphere at a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124687&bctid=44410315">luxury hotel</a>.<br />
+Go hiking in <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124687&bctid=44410304">Positano</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>14.35284</longitude>
+				<latitude>40.352184</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>14.375767,40.6263083,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Madrid</name>
+			<Snippet maxLines="2">
+Madrid			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60819285&bctid=44410316"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/madrid.jpg" width="320" height="240" border="0" alt="Madrid" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Explore Madrid</strong></font><br />
+Get to know the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60819285&bctid=44410316">"the center of Spain"</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Madrid videos:</strong><br />
+Discover Spanish art at the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60819285&bctid=16938886">Prado</a>.<br />
+Stroll the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60819285&bctid=44410311">old city</a>.<br />
+Experience the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=60819285&bctid=44410320">nightlife</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-3.7033</longitude>
+				<latitude>40.416725</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-3.703300000000001,40.416725,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barcelona</name>
+			<Snippet maxLines="2">
+Barcelona			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132198&bctid=16938862"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/barcelona.jpg" width="320" height="240" border="0" alt="Barcelona" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Tour Barcelona</strong></font><br />
+See why the Spanish city is <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132198&bctid=16938862">one of a kind</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Barcelona videos:</strong><br />
+Explore Barcelona's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132198&bctid=16938883">signature architecture</a>.<br />
+Sample the food of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44132198&bctid=17041229">Barcelona</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>2.190422</longitude>
+				<latitude>41.39014722</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>2.190422,41.39014722,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Zurich</name>
+			<Snippet maxLines="2">
+Zurich			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124693&bctid=52337975"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/zurich.jpg" width="320" height="240" border="0" alt="Zurich" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Take a Walk in Zurich</strong></font><br />
+Experience <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124693&bctid=152337975">traditional Zurich</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Zurich videos:</strong><br />
+Shop and stay in the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124693&bctid=44410313">Old Town</a>.<br />
+Find out about Zurich <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124693&bctid=44410317">from the locals</a>.<br />
+Explore the city's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44124693&bctid=44410314">neighborhoods</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>8.539967000000001</longitude>
+				<latitude>47.38005278</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>8.539967000000001,47.38005278000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Interloken</name>
+			<Snippet maxLines="2">
+Interlaken			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164305&bctid=67269031"><img src="http://dsc.discovery.com/utilities/googleearth/cities/gallery/interlocken.jpg" width="320" height="240" border="0" alt="Interlocken" /></a><br />
+<font size="3" color="#000000">Picture: DCI |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>The Heights of Interlaken</strong></font><br />
+<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164305&bctid=67269031">Climb a mountain</a> - by train.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Interlaken videos:</strong><br />
+Uncover the many aspects of <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164305&bctid=65595398">Wegen</a>.<br />
+Take in the view at a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164305&bctid=60819289">grand hotel</a>.<br />
+Before the fondue, take a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44164305&bctid=52338025">ride in a bubble</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>7.84256944</longitude>
+				<latitude>46.689722</latitude>
+				<altitude>0</altitude>
+				<range>12643</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>7.84256944,46.689722,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>African Tour</name>
+		<description>See exclusive video of African landmarks.</description>
+		<Placemark>
+			<name>Ghana</name>
+			<Snippet maxLines="2">
+Ghana			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=67269067"><img src="http://dsc.discovery.com/utilities/googleearth/africa/gallery/ghana.jpg" width="320" height="240" border="0" alt="Ghana" /></a><br />
+<font size="3" color="#000000">Picture: DCI |</font><br />
+&nbsp;<br />
+<table cellpadding="0" cellspacing="0" border="0" width="320">
+<tr>
+	<td width="210" align="left" valign="top">
+<font size="4"><strong>Find Adventure in Ghana</strong></font><br />
+Join Forrest Sawyer as he <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=67269067">explores Ghana</a>.<br />
+	</td>
+	<td width="110" align="right" valign="top"><img src="http://www.discovery.com/utilities/googleearth/logos/travelchannel.gif" width="100" height="47" border="0" alt="discovery communications inc" /></td>
+</tr>
+</table>
+&nbsp;<br />
+<strong>More Ghana videos:</strong><br />
+<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=67269025">Get up close</a> to an elephant herd.<br />
+Walk through a <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=67269027">rainforest canopy</a>.<br />
+Go swimming with <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=67269023">crocodiles</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-1.97739722</longitude>
+				<latitude>8.02238056</latitude>
+				<altitude>0</altitude>
+				<range>949335</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-1.97739722,8.02238056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Great Pyramid</name>
+			<Snippet maxLines="2">
+Great Pyramid			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=17013928"><img src="http://dsc.discovery.com/utilities/googleearth/africa/gallery/pyramids.jpg" width="320" height="240" border="0" alt="Great Pyramid" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>The Wonder of the Pyramids</strong></font><br />
+See for yourself the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=17013928">marvels of ancient Egypt</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>31.131289</longitude>
+				<latitude>29.97614167</latitude>
+				<altitude>0</altitude>
+				<range>1610</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>31.131289,29.97614167,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Valley of the Kings</name>
+			<Snippet maxLines="2">
+Valley of the Kings			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=17013933"><img src="http://dsc.discovery.com/utilities/googleearth/africa/gallery/valleykings.jpg" width="320" height="240" border="0" alt="Valley of the KIngs" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |
+</font><br />
+&nbsp;<br />
+<font size="4"><strong>In the Valley of the Kings</strong></font><br />
+Make a video visit to <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=17013933">King Tut's tomb</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>32.60220278</longitude>
+				<latitude>25.7346</latitude>
+				<altitude>0</altitude>
+				<range>19344</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>32.60220278,25.7346,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Great Zimbabwe</name>
+			<Snippet maxLines="2">
+Great Zimbabwe			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=17013934"><img src="http://dsc.discovery.com/utilities/googleearth/africa/gallery/zimbabwe.jpg" width="320" height="240" border="0" alt="Zimbabwe" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Great Zimbabwe</strong></font><br />
+Find out about this <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=16920290&bctid=17013934">mystery</a> from ancient Africa.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>31.055267</longitude>
+				<latitude>-17.84068611</latitude>
+				<altitude>0</altitude>
+				<range>4694</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>31.055267,-17.84068611,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>World Landmarks</name>
+		<description>Watch exclusive video of some of the world&apos;s most amazing sites.</description>
+		<Placemark>
+			<name>Taj Mahal</name>
+			<Snippet maxLines="2">
+Taj Mahal			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147238&bctid=78564395"><img src="http://dsc.discovery.com/utilities/googleearth/world_landmarks/gallery/tajmahal.jpg" width="320" height="240" border="0" alt="Taj Mahal" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>The Majesty of the Taj Mahal</strong></font><br />
+Take a video tour of the great <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147238&bctid=78564395">monument to love</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>78.04286389000001</longitude>
+				<latitude>27.1748611</latitude>
+				<altitude>0</altitude>
+				<range>7698</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>78.04286389000001,27.17486110000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Great Wall</name>
+			<Snippet maxLines="2">
+Great Wall			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147238&bctid=17013932"><img src="http://dsc.discovery.com/utilities/googleearth/world_landmarks/gallery/grwallofchina.jpg" width="320" height="240" border="0" alt="Great Wall of China" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Explore the Great Wall</strong></font><br />
+Follow the story of China's <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147238&bctid=17013932">amazing landmark</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>116.4792083</longitude>
+				<latitude>40.333775</latitude>
+				<altitude>0</altitude>
+				<range>15795</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>116.4792083,40.333775,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Terra Cotta Army</name>
+			<Snippet maxLines="2">
+Terra Cotta Army			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147238&bctid=17041268"><img src="http://dsc.discovery.com/utilities/googleearth/world_landmarks/gallery/china_tombsoldiers.jpg" width="320" height="240" border="0" alt="Terra Cotta Amy" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>The Terra Cotta Army</strong></font><br />
+Learn about the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147238&bctid=17041268">mysterious sculptures</a> from China's past.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>108.878478</longitude>
+				<latitude>34.27733056</latitude>
+				<altitude>0</altitude>
+				<range>17702</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>108.878478,34.27733056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Isukushima</name>
+			<Snippet maxLines="2">
+Isukushima			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147238&bctid=17013937"><img src="http://dsc.discovery.com/utilities/googleearth/world_landmarks/gallery/itsukushima.jpg" width="320" height="240" border="0" alt="Isukushima" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Inside Itsukushima</strong></font><br />
+Take in the beauty of the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147238&bctid=17013937">famous Japanese shrine</a>.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>132.3194833</longitude>
+				<latitude>34.29613611</latitude>
+				<altitude>0</altitude>
+				<range>14890</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>132.3194833,34.29613611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>El Tajin</name>
+			<Snippet maxLines="2">
+El Tajin			</Snippet>
+			<description><![CDATA[<a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147238&bctid=17013936"><img src="http://dsc.discovery.com/utilities/googleearth/world_landmarks/gallery/el_tajin.jpg" width="320" height="240" border="0" alt="El Tajin" /></a><br />
+<font size="3" color="#000000">Picture: PhotoDisc |</font><br />
+&nbsp;<br />
+<font size="4"><strong>Explore El Tajin</strong></font><br />
+Learn more about the <a href="http://www.discovery.com/googleearth/?dcitc=w02-530-aj-0000&autoplay=true&bclid=44147238&bctid=17013936">ruins</a> from ancient Mexico.<br />
+&nbsp;<br />]]></description>
+			<LookAt>
+				<longitude>-97.366722</longitude>
+				<latitude>20.4667056</latitude>
+				<altitude>0</altitude>
+				<range>66803</range>
+				<tilt>0</tilt>
+				<heading>0</heading>
+			</LookAt>
+			<styleUrl>#discoveryPOIMap</styleUrl>
+			<Point>
+				<coordinates>-97.366722,20.4667056,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

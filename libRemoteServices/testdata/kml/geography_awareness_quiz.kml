@@ -1,0 +1,1882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+	<name>Test Your Africa IQ</name>
+	<open>1</open>
+	<StyleMap id="default_copy:0_copy20">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy133</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default_copy154">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy24">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy47">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy16">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy84">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy37">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy:0_copy32">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy115</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy:0_copy8">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy47">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy234</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy98</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy98">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy:0_copy6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy89</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy40">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy242</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy44</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy225">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy74</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy17</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy:0_copy50">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy51</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy27</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy:0_copy3">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy13">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy28">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy:0_copy48">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy49</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy28</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy:0_copy15">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy5">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy7">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy75">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy62">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy27</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy44">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy49">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy:0_copy4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy88</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy:0_copy33">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy143</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy26</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy:0_copy11">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy86">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy35">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy:0_copy40">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy154</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy:0_copy41">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy42</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy21</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default_copy102">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy14">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy183">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy81</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default_copy81">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy205">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy84</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy19</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default_copy:0_copy18">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy20">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy163">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy172">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy18">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy12">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy99">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy143">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy234">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy21">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy51">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy288">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy18</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy97</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy279">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy280</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy67</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy81">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy27">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy213">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy73</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy99</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy:0_copy22">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy97">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy295">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy47</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy24</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy02">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy97</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy81</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy83">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy193</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default_copy133">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy67">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy74">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy:0_copy43">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy44</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy22</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy82">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy172</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy75</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy305">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy21</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy25</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default_copy280">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy73">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy42">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy91">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy163</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy:0_copy1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy102</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy86</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy:0_copy25">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy39">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy193">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy287">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy37</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy16</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy:0_copy34">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy35</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy13</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy:0_copy27">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy19">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy88">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy97">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy17">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy21">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy242">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy44">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy:0_copy36">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="default_copy115">
+		<IconStyle>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="hl_copy:0_copy26">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default_copy286">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy36</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default_copy:0_copy38">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_copy:0_copy39</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl_copy:0_copy14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hl_copy89">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://services.google.com/earth/layers/gaw/mww_quiz.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Geography Awareness Quiz</name>
+		<visibility>0</visibility>
+		<open>1</open>
+		<Snippet maxLines="2">
+To begin, please click text above for full instructions and then select a question below.		</Snippet>
+		<description><![CDATA[<table width="375" border="0" cellspacing="0" cellpadding="0">
+<tr><td><br>
+<font style="font-size: 12pt;">
+<br><b>Test Your Africa IQ</b><br>  How much do you know about Africa? Test yourself with this Geography Awareness quiz from My Wonderful World, a new National Geographic-led campaign for geographic literacy. <br><br>
+
+Why Africa? It's rich in wildlife and natural resources, diverse in peoples and cultures, and complicated in its history. And it's the first stop on My Wonderful World's multiyear exploration of our planet's people and places. <br><br>
+
+<b>How to Play</b><br>
+There are ten questions. You can double click each question to expand it and see the answers. Click on your answer to see if you are correct. Double clicking on an answer will take you to the specific location where you can take control and zoom in further and explore the geography in more detail. 
+
+<br><br>
+This quiz is best seen using Google Earth v.4 (beta).  This version provides the best viewing experience.  It is available for all major computing platforms including Windows, Linux and Macintosh.  Click <a href="http://earth.google.com"> here </a> if you need to download the latest version. </font>
+
+<br> <br>
+</b></td>
+</tr>
+</table>
+
+
+
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></div>]]></description>
+		<Style>
+			<ListStyle>
+				<listItemType>radioFolder</listItemType>
+				<bgColor>ffffff</bgColor>
+			</ListStyle>
+		</Style>
+		<Folder>
+			<name>1) Which African city. . .</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Snippet maxLines="2">
+Double-click the text to see the full question and answers.			</Snippet>
+			<description><![CDATA[<table width="350" border="0" cellspacing="2" cellpadding="1">
+<tr>
+<td>
+<b><font style="font-size: 12pt;">Which city's metropolitan area has the highest population in Africa?</b> <br><br>
+Please select your answer at left.  Double-click on your answer to fly to the location.
+</b>
+</td>
+</tr></table>
+<br><br><div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /><br><br></div></a><br />
+<hr>
+<center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/lindblad_sweeps.html">win a great family adventure</a>
+ from My Wonderful World! <br>
+
+© 2006 National Geographic Society. All rights reserved. </center>]]></description>
+			<LookAt>
+				<longitude>21.73180395266385</longitude>
+				<latitude>3.697984095493815</latitude>
+				<altitude>0</altitude>
+				<range>9439873.881185547</range>
+				<tilt>3.768213458211803e-014</tilt>
+				<heading>-0.8503261966065551</heading>
+			</LookAt>
+			<Style>
+				<ListStyle>
+					<listItemType>radioFolder</listItemType>
+					<bgColor>ffffff</bgColor>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>1a. Johannesburg</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#ffffff"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/1a_joburg_southafrica.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Tomasz Tomaszewski/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><b><br>Wrong.</b><br><font style="font-size: 10pt;">Johannesburg, South Africa, and its suburbs are home to about 8 million people, who alone generate about 9 percent of the continent's economic activity. The modern city is a center for high-tech equipment production.</font><br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif"  border="0" /></a></div> <br><center><font style="font-size: 10pt;">
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><br> <center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>28.05018888888889</longitude>
+					<latitude>-26.14411388888889</latitude>
+					<altitude>0</altitude>
+					<range>999.9999999999999</range>
+					<tilt>0</tilt>
+					<heading>0</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy34</styleUrl>
+				<Point>
+					<coordinates>28.05018888888889,-26.14411388888889,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1b. Cairo</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center> 
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#ffffff"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/1b_cairo.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Martin Gray/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Right!</b><br><font style="font-size: 10pt;">About 11,146,000 people live in the Cairo metropolitan area, making it the most populous in Africa. The Egyptian capital sits in the shadow of the millennia-old Pyramids of Giza. Most Egyptians are Arab Muslims, and Cairo has the largest population of any city in the Arab world.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<styleUrl>#default_copy62</styleUrl>
+				<Point>
+					<coordinates>31.24950833333334,30.064742,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1c. Lagos</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#ffffff"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/1c_lagos_nigeria.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Stuart Franklin/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">The Lagos metropolitan area is the second most populous in Africa. About 11,135,000 people live in and around Lagos, a sprawling city crowded around a lagoon along Nigeria's Atlantic coast. Lagos was the country's capital until 1991, when the government seat was moved inland to Abuja. <br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif"  border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>3.422446507503461</longitude>
+					<latitude>6.458419085691453</latitude>
+					<altitude>0</altitude>
+					<range>46359.10429990524</range>
+					<tilt>39.34423981047778</tilt>
+					<heading>-13.57707817538443</heading>
+				</LookAt>
+				<styleUrl>#default_copy286</styleUrl>
+				<Point>
+					<coordinates>3.417977777777778,6.441158333333333,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>2) Which animal lives . . .</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Snippet maxLines="2">
+Double-click the text to see the full question and answers.			</Snippet>
+			<description><![CDATA[<table width="350" border="0" cellspacing="2" cellpadding="1">
+<tr>
+<td>
+
+<b><font style="font-size: 12pt;">Which animal lives in the wild only in Africa's tropical rain forests? </font></b> <br><br>
+Please select your answer at left.  Double-click on your answer to fly to the location.
+
+</b></td>
+</tr>
+</table><br><br><div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></div></a><br />
+<hr>
+<center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/lindblad_sweeps.html">win a great family adventure</a>
+ from My Wonderful World! <br>
+
+© 2006 National Geographic Society. All rights reserved. </center>]]></description>
+			<LookAt>
+				<longitude>21.73180395266385</longitude>
+				<latitude>3.697984095493815</latitude>
+				<altitude>0</altitude>
+				<range>9439873.881185547</range>
+				<tilt>3.768213458211803e-014</tilt>
+				<heading>-0.8503261966065551</heading>
+			</LookAt>
+			<Style>
+				<ListStyle>
+					<listItemType>radioFolder</listItemType>
+					<bgColor>ffffff</bgColor>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>2a. Lion</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/2a_kenya_savanna.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Jodi Cobb/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><font style="font-size: 10pt;"><br>African lions live in a range of habitats, including savanna grasslands and wooded forests. They are one of the only cat species to live in groups, usually centered on a pride of related females. In the open grasslands, lionesses do most of the hunting. Above: Lions rest on a Kenyan savanna.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>40.13362700507292</longitude>
+					<latitude>0.2350180723933065</latitude>
+					<altitude>0</altitude>
+					<range>45191.95155255838</range>
+					<tilt>0</tilt>
+					<heading>5.535850264770003</heading>
+				</LookAt>
+				<styleUrl>#default_copy40</styleUrl>
+				<Point>
+					<coordinates>40.1237844040148,0.2368,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2b. Mountain Gorilla</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/2b_parc_des_volcans_rwanda.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Michael Nichols/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><b><br>Right!</b><br><font style="font-size: 10pt;">Mountain gorillas live in a small area of dense, moist mountain forests on the borders of Uganda, Rwanda, and the Democratic Republic of the Congo. They are the most endangered of all gorilla subspecies--only a few hundred survive in the wild today. Deforestation, competition with humans for natural resources, and poaching have contributed to their decline. Above, a male silverback gorilla keeps watch in Rwanda's Volcanoes National Park.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div><br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>29.44290765645494</longitude>
+					<latitude>-1.602569203064072</latitude>
+					<altitude>0</altitude>
+					<range>19842.62814931445</range>
+					<tilt>44.45112680976986</tilt>
+					<heading>5.166926154576439</heading>
+				</LookAt>
+				<styleUrl>#default_copy287</styleUrl>
+				<Point>
+					<coordinates>29.43263917992738,-1.548661896974892,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2c. Hippopotamus</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center> 
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/2c_gabon_coast.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Michael Nichols/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><b><br>Wrong.</b><br><font style="font-size: 10pt;">Hippos are found in and around the rivers, lakes, and streams of sub-Saharan Africa. And as this photo shows, they sometimes take a swim in the ocean, as this one did in the Atlantic off the coast of Gabon. One of the largest land animals, hippos can weigh in at 8,000 pounds (3,600 kilograms). <br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>9.277398140274512</longitude>
+					<latitude>0.1449498612301484</latitude>
+					<altitude>0</altitude>
+					<range>95017.84906346114</range>
+					<tilt>51.14756320062427</tilt>
+					<heading>49.59047372189583</heading>
+				</LookAt>
+				<styleUrl>#default_copy279</styleUrl>
+				<Point>
+					<coordinates>9.294385745192528,0.2765590260623104,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>3) Which North Africa city was . . .</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Snippet maxLines="2">
+Double-click the text to see the full question and answers.			</Snippet>
+			<description><![CDATA[<table width="350" border="0" cellspacing="2" cellpadding="1">
+<tr>
+<td>
+
+<b><font style="font-size: 12pt;">Which West African city was once a major trans-Saharan trade center?</font></b> <br><br>
+Please select your answer at left.  Double-click on your answer to fly to the location.
+
+</b></td>
+</tr>
+</table><br><br><div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></div></a><br />
+<hr>
+<center><font style="font-size: 10pt;">
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/lindblad_sweeps.html">win a great family adventure</a>
+ from My Wonderful World! <br>
+
+© 2006 National Geographic Society. All rights reserved. </center>]]></description>
+			<LookAt>
+				<longitude>21.73180395266385</longitude>
+				<latitude>3.697984095493815</latitude>
+				<altitude>0</altitude>
+				<range>9439873.881185547</range>
+				<tilt>3.768213458211803e-014</tilt>
+				<heading>-0.8503261966065551</heading>
+			</LookAt>
+			<Style>
+				<ListStyle>
+					<listItemType>radioFolder</listItemType>
+					<bgColor>ffffff</bgColor>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>3a. Tripoli</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/3a_tripoli_libya.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Maynard Owen Williams/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><b><br>Wrong.</b><br><font style="font-size: 10pt;">Though important to trans-Saharan trade, Tripoli is a seaport located in North Africa's Libya. Known in ancient days as Oea, Tripoli was founded by the Phoenicians in the 7th century B.C. Many groups have since had control of the city, including the Romans (Roman carvings are pictured above), Turks, British, and Italians. Libya gained its independence in 1951 from the British with Tripoli serving as the present day capital.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>13.21541666615903</longitude>
+					<latitude>32.86058967667702</latitude>
+					<altitude>0</altitude>
+					<range>20339.99555879106</range>
+					<tilt>0</tilt>
+					<heading>-1.874836776633003</heading>
+				</LookAt>
+				<styleUrl>#default_copy47</styleUrl>
+				<Point>
+					<coordinates>13.187507,32.876175,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>3b. Kairouan</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/3b_quairouan_tunisia.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Martin Gray/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><b><br>Wrong.</b><br><font style="font-size: 10pt;">Founded in 670, Kairouan--in today's north-central Tunisia--was at one time the capital of northwest Africa. After losing the title to Tunis, Kairouan declined to an isolated market town. Today it remains a holy city and a major destination for many Muslims. Its great mosques (such as Sidi Oqba, above) have helped establish Kairouan as a UNESCO World Heritage site. <br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>10.80870196142269</longitude>
+					<latitude>35.62670278933847</latitude>
+					<altitude>0</altitude>
+					<range>191303.6432307965</range>
+					<tilt>47.80339288669114</tilt>
+					<heading>-55.00590108379907</heading>
+				</LookAt>
+				<styleUrl>#default_copy225</styleUrl>
+				<Point>
+					<coordinates>10.09723888888889,35.67713899999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>3c. Timbuktu</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/3c_timbuktu.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by James L. Stanfield/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Right!</b><br><font style="font-size: 10pt;">Timbuktu--located by the Niger River in the West African nation of
+Mali--was once a major trans-Saharan trade center, as well as a hub of
+Muslim learning. Timbuktu rose to prosperity as the capital of the
+Empire of Mali in the 14th century.  Today, the city is no longer a
+major commerce center, although local markets do lively business (as pictured above).
+<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>-2.987747311518331</longitude>
+					<latitude>16.77820437211259</latitude>
+					<altitude>0</altitude>
+					<range>55976.01041228427</range>
+					<tilt>0</tilt>
+					<heading>-0.4118112901784637</heading>
+				</LookAt>
+				<styleUrl>#default_copy213</styleUrl>
+				<Point>
+					<coordinates>-3.008263888888889,16.77532,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>4) Which African river . . .</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Snippet maxLines="2">
+Double-click the text to see the full question and answers.			</Snippet>
+			<description><![CDATA[<table width="350" border="0" cellspacing="2" cellpadding="1">
+<tr>
+<td>
+
+<b><font style="font-size: 12pt;">Which African river empties into the Mediterranean Sea?</font></b> <br><br>
+Please select your answer at left.  Double-click on your answer to fly to the location.
+
+</b></td>
+</tr>
+</table><br><br><div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></div></a><br />
+<hr>
+<center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/lindblad_sweeps.html">win a great family adventure</a>
+ from My Wonderful World! <br>
+
+© 2006 National Geographic Society. All rights reserved. </center>]]></description>
+			<LookAt>
+				<longitude>21.73180395266385</longitude>
+				<latitude>3.697984095493815</latitude>
+				<altitude>0</altitude>
+				<range>9439873.881185547</range>
+				<tilt>3.768213458211803e-014</tilt>
+				<heading>-0.8503261966065551</heading>
+			</LookAt>
+			<Style>
+				<ListStyle>
+					<listItemType>radioFolder</listItemType>
+					<bgColor>ffffff</bgColor>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>4a. Nile River</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center> 
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/4a_aswan_egypt.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Kenneth Garrett/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Right!</b><br><font style="font-size: 10pt;">The mighty Nile River--at 4,241 miles (6,825 kilometers) the longest river in the world--empties into the Mediterranean Sea in northern Egypt. Some 300 million people in ten countries&#151;Burundi, Democratic Republic of the Congo, Egypt, Eritrea, Ethiopia, Kenya, Rwanda, Sudan, Tanzania, and Uganda&#151;depend on the Nile for fresh water, irrigation, and other uses. Above, traditional boats called feluccas sail past ancient Egyptian tombs near Aswan.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>31.12945111553966</longitude>
+					<latitude>30.34250567523952</latitude>
+					<altitude>0</altitude>
+					<range>435968.4555239792</range>
+					<tilt>36.00051121596822</tilt>
+					<heading>172.2554257290521</heading>
+				</LookAt>
+				<styleUrl>#default_copy205</styleUrl>
+				<Point>
+					<coordinates>31.14034936106998,30.27329771849455,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>4b. Niger River</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/4b_niger.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Steve Raymer/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">The Niger River flows 2,591 miles (4,170 kilometers) through four countries--Guinea, Mali, Niger, and Nigeria--before emptying into the Atlantic Ocean. It's the continent's third-largest river basin, behind the Nile and the Congo. Above: A man bathes in the Niger near Niamey, Nigeria.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>2.082873039321956</longitude>
+					<latitude>13.49724028097576</latitude>
+					<altitude>0</altitude>
+					<range>36865.26533778878</range>
+					<tilt>3.322116455333664e-012</tilt>
+					<heading>3.368410835005136e-015</heading>
+				</LookAt>
+				<styleUrl>#default_copy83</styleUrl>
+				<Point>
+					<coordinates>2.06695,13.51942638776926,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>4c. Zambezi River</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/4c_zambezi_victoriafalls.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Michael Lewis/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">The approximately 2,200-mile-long (3,500-kilometer-long) Zambezi River collects water from eight countries, (Angola, Zambia, Namibia, Botswana, Zimbabwe, Tanzania, Malawi, and Mozambique) before emptying into the Indian Ocean. Its most spectacular feature is Victoria Falls (pictured above), some of the largest in the world. Its basin is the fourth largest in Africa.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>25.8587528393824</longitude>
+					<latitude>-17.92600493027436</latitude>
+					<altitude>0</altitude>
+					<range>935.2791040815609</range>
+					<tilt>39.54073429769228</tilt>
+					<heading>-32.59552950932385</heading>
+				</LookAt>
+				<styleUrl>#default_copy183</styleUrl>
+				<Point>
+					<coordinates>25.8567254073994,-17.924975766454,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>5) Which of the following peoples . . .</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Snippet maxLines="2">
+Double-click the text to see the full question and answers.			</Snippet>
+			<description><![CDATA[<table width="350" border="0" cellspacing="2" cellpadding="1">
+<tr>
+<td>
+<b><font style="font-size: 12pt;">Which of the following peoples are Pygmies?</font></b> <br><br>
+Please select your answer at left.  Double-click on your answer to fly to the location.
+
+</b></td>
+</tr>
+</table><br><br><div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></div></a><br />
+<hr>
+<center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/lindblad_sweeps.html">win a great family adventure</a>
+ from My Wonderful World! <br>
+
+© 2006 National Geographic Society. All rights reserved. </center>]]></description>
+			<LookAt>
+				<longitude>21.73180395266385</longitude>
+				<latitude>3.697984095493815</latitude>
+				<altitude>0</altitude>
+				<range>9439873.881185547</range>
+				<tilt>3.768213458211803e-014</tilt>
+				<heading>-0.8503261966065551</heading>
+			</LookAt>
+			<Style>
+				<ListStyle>
+					<listItemType>radioFolder</listItemType>
+					<bgColor>ffffff</bgColor>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>5a. Mbuti</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/5a_mbuti.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Randy Olson/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Right!</b><br><font style="font-size: 10pt;">The Mbuti are one of several Pygmy groups who still follow traditional, semi-nomadic ways in the Democratic Republic of the Congo's Ituri forest. Mbuti hunt antelope and other game and trade with Bantu farmers for vegetables and other goods. Above, a Mbuti boy takes part in a manhood initiation rite.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>28.62684451671583</longitude>
+					<latitude>1.905749860922417</latitude>
+					<altitude>0</altitude>
+					<range>239840.4344635223</range>
+					<tilt>4.124103886389701e-014</tilt>
+					<heading>-1.660736884512395</heading>
+				</LookAt>
+				<styleUrl>#default_copy82</styleUrl>
+				<Point>
+					<coordinates>28.5,2,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>5b. Tuareg</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center> 
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/5b_tuareg.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Thomas J. Abercrombie/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">The Tuareg live in northern Africa and are known for their distinctive indigo-blue veils. For centuries Tuareg ran camel caravans carrying salt, gold, and other goods across the Sahara. Today about 1.5 million Tuareg live in the desert regions of Mali, Algeria, and Nigeria. Most live in villages, but some still follow a semi-nomadic way of life. Pictured above: a Tuareg man near Hirafok, Algeria.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>5.74131878874518</longitude>
+					<latitude>23.60952214758823</latitude>
+					<altitude>0</altitude>
+					<range>49315.35969569878</range>
+					<tilt>55.67306173384687</tilt>
+					<heading>-3.103884572861034</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy40</styleUrl>
+				<Point>
+					<coordinates>5.756638888888888,23.66465000000002,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>5c. Maasai</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/5c_maasai.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Bruce Dale/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">The Maasai are the tall, traditional herdsmen of the African plains, distinctive for their red clothing. Also known as fierce warriors, the Maasai believe they are a chosen people because their god, Enkai, blessed them with cattle. Recently, the loss of grazing lands has threatened the Maasai's way of life. Above, a Maasai boy walks through Kenya's Amboseli National Park.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>36.78967706598959</longitude>
+					<latitude>-2.423666960962571</latitude>
+					<altitude>0</altitude>
+					<range>54867.80336366323</range>
+					<tilt>0</tilt>
+					<heading>-5.936028113719563</heading>
+				</LookAt>
+				<styleUrl>#default_copy91</styleUrl>
+				<Point>
+					<coordinates>36.8565782088114,-2.475678174297126,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>6) Lemurs are found . . .</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Snippet maxLines="2">
+Double-click the text to see the full question and answers.			</Snippet>
+			<description><![CDATA[<table width="350" border="0" cellspacing="2" cellpadding="1">
+<tr>
+<td>
+
+<b><font style="font-size: 12pt;">Lemurs are found in the wild in what African nation?</font></b> <br><br>
+Please select your answer at left.  Double-click on your answer to fly to the location.
+
+</b></td>
+</tr>
+</table><br><br><div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></div></a><br />
+<hr>
+<center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/lindblad_sweeps.html">win a great family adventure</a>
+ from My Wonderful World! <br>
+
+© 2006 National Geographic Society. All rights reserved. </center>]]></description>
+			<LookAt>
+				<longitude>21.73180395266385</longitude>
+				<latitude>3.697984095493815</latitude>
+				<altitude>0</altitude>
+				<range>9439873.881185547</range>
+				<tilt>3.768213458211803e-014</tilt>
+				<heading>-0.8503261966065551</heading>
+			</LookAt>
+			<Style>
+				<ListStyle>
+					<listItemType>radioFolder</listItemType>
+					<bgColor>ffffff</bgColor>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>6a. Ethiopia</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/6a_simen_np_ethiopia.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Michael Nichols/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">Ethiopia is home to many species, but not lemurs. Gelada monkeys (pictured above in Simen Mountains National Park) are found only in Ethiopia's high mountain meadows. They are the world's most terrestrial primates, except for humans, and spend most of their time sitting down, munching grass.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>37.99983897236904</longitude>
+					<latitude>13.07493340318747</latitude>
+					<altitude>0</altitude>
+					<range>158833.1247047728</range>
+					<tilt>51.59401306341926</tilt>
+					<heading>41.79018973534632</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy41</styleUrl>
+				<Point>
+					<coordinates>38.0666708301093,13.18328888888889,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>6b. Madagascar</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/6b_madagascar_lemur.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Tim Layman/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Right!</b><br><font style="font-size: 10pt;">Lemurs are found only on the large African island of Madagascar and on the tiny neighboring Comoros islands. Because of their isolation from the African mainland, these primates--like the ring-tailed lemur above--have few natural enemies and little competition for food.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>47.01026779511219</longitude>
+					<latitude>-20.29584049446486</latitude>
+					<altitude>0</altitude>
+					<range>473137.9701624967</range>
+					<tilt>42.69036973613356</tilt>
+					<heading>-12.89962144843126</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy43</styleUrl>
+				<Point>
+					<coordinates>47,-20,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>6c. Tanzania</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/6c_ngorongoro_tanzania.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Michael Melford/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">No lemurs live in the wild in Tanzania, but this east African nation is rich is other wildlife. The vast Serengeti Plain is home to cheetahs, wildebeests, giraffes, lions, leopards, and, of course, zebras (pictured above in Ngorongoro Crater National Park). Tanzania's wildlife also includes chimpanzees and elephants.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>35.41228145726366</longitude>
+					<latitude>-3.0197570675008</latitude>
+					<altitude>0</altitude>
+					<range>37056.80243859122</range>
+					<tilt>57.03791275551627</tilt>
+					<heading>-169.0465026119817</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy48</styleUrl>
+				<Point>
+					<coordinates>35.39800554327493,-2.987027357741647,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>7) Which desert is . . .</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Snippet maxLines="2">
+Double-click the text to see the full question and answers.			</Snippet>
+			<description><![CDATA[<table width="350" border="0" cellspacing="2" cellpadding="1">
+<tr>
+<td>
+
+<b><font style="font-size: 12pt;">Which desert is the largest in Africa?</font></b> <br><br>
+Please select your answer at left.  Double-click on your answer to fly to the location.
+
+</b></td>
+</tr>
+</table><br><br><div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></div></a><br />
+<hr>
+<center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/lindblad_sweeps.html">win a great family adventure</a>
+ from My Wonderful World! <br>
+
+© 2006 National Geographic Society. All rights reserved. </center>]]></description>
+			<LookAt>
+				<longitude>21.73180395266385</longitude>
+				<latitude>3.697984095493815</latitude>
+				<altitude>0</altitude>
+				<range>9439873.881185547</range>
+				<tilt>3.768213458211803e-014</tilt>
+				<heading>-0.8503261966065551</heading>
+			</LookAt>
+			<Style>
+				<ListStyle>
+					<listItemType>radioFolder</listItemType>
+					<bgColor>ffffff</bgColor>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>7a. Kalahari</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/7a_kalahari.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 10pt;">Photograph by Chris Johns/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">The Kalahari covers about 360,000 square miles (930,000 square kilometers) in Botswana, Namibia, and South Africa. Many San tribe people (pictured above) live a traditional life in the desert, tracking game for days across the dunes.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>21.50707212289631</longitude>
+					<latitude>-24.01869672631802</latitude>
+					<altitude>0</altitude>
+					<range>35903.32845437207</range>
+					<tilt>0</tilt>
+					<heading>0.06715631439127373</heading>
+				</LookAt>
+				<styleUrl>#default_copy02</styleUrl>
+				<Point>
+					<coordinates>21.5,-24,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>7b. Namib</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/7b_namib.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Bobby Haas/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;"><font style="font-size: 10pt;">Africa's unusual Namib Desert is a thin strip stretching 1,300 miles (2,100 kilometers) along the Atlantic coast. Though rain hardly ever falls in the Namib, a coastal fog frequently blankets the desert, and the misty condensation nourishes insect and plant life. Above, a gemsbok darts across the sand.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>11.99327363371217</longitude>
+					<latitude>-18.1097177807115</latitude>
+					<altitude>0</altitude>
+					<range>88089.35480627691</range>
+					<tilt>59.80525040142904</tilt>
+					<heading>30.58291347937831</heading>
+				</LookAt>
+				<styleUrl>#default_copy288</styleUrl>
+				<Point>
+					<coordinates>12,-18,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>7c. Sahara</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/7c_sahara.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Bruce Dale/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Right!</b><br><font style="font-size: 10pt;">It's not only the largest desert in Africa--it's the largest sandy desert in the world. The Sahara (which means "desert" in Arabic) sprawls across 3.5 million square miles  (9 million square kilometers) of northern Africa. Temperatures here can reach 130 degrees Fahrenheit (54 degrees Celsius) in the summer.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>10.39995678206803</longitude>
+					<latitude>20.72163722642274</latitude>
+					<altitude>0</altitude>
+					<range>222798.1056065551</range>
+					<tilt>60.08866378395121</tilt>
+					<heading>132.8433688148318</heading>
+				</LookAt>
+				<styleUrl>#default_copy295</styleUrl>
+				<Point>
+					<coordinates>10.452375,20.83769027222241,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>8) Darfur, the site of an ongoing . . .</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Snippet maxLines="2">
+Double-click the text to see the full question and answers.			</Snippet>
+			<description><![CDATA[<table width="350" border="0" cellspacing="2" cellpadding="1">
+<tr>
+<td>
+
+<b><font style="font-size: 12pt;">Darfur, the site of an ongoing armed conflict, is in what African country?</font></b> <br><br>
+Please select your answer at left.  Double-click on your answer to fly to the location.
+
+</b></td>
+</tr>
+</table><br><br><div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></div></a><br />
+<hr>
+<center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/lindblad_sweeps.html">win a great family adventure</a>
+ from My Wonderful World! <br>
+
+© 2006 National Geographic Society. All rights reserved. </center>]]></description>
+			<LookAt>
+				<longitude>21.73180395266385</longitude>
+				<latitude>3.697984095493815</latitude>
+				<altitude>0</altitude>
+				<range>9439873.881185547</range>
+				<tilt>3.768213458211803e-014</tilt>
+				<heading>-0.8503261966065551</heading>
+			</LookAt>
+			<Style>
+				<ListStyle>
+					<listItemType>radioFolder</listItemType>
+					<bgColor>ffffff</bgColor>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>8a. Liberia</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/8a_monrovia_liberia.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Chris Hamilton/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">Darfur is not in Liberia, although the West African nation is no stranger to violence. A 1989 revolt by guerrilla leader (and later President) Charles Taylor sent the country into seven years of civil war. Recently, rebels attempting to oust Taylor waged attacks on government forces and the capital, Monrovia, leaving thousands dead and the economy in ruins.  Above, bullet holes scar a pole on a Monrovia street.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>-10.7709649676627</longitude>
+					<latitude>6.323300598190295</latitude>
+					<altitude>0</altitude>
+					<range>11135.56299821363</range>
+					<tilt>56.85244112115768</tilt>
+					<heading>36.1406600489798</heading>
+				</LookAt>
+				<styleUrl>#default_copy305</styleUrl>
+				<Point>
+					<coordinates>-10.79716111111111,6.300773999999998,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>8b. Sudan</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/8b_darfur_sudan.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Randy Olson/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Right!</b><br><font style="font-size: 10pt;">Darfur, a France-size province in western Sudan, is the site of an ongoing conflict between government-backed Arab militiamen (the Janjaweed) and non-Arab villagers. Thousands have been killed and millions displaced since the conflict began in July 2003, and famine caused by the civil war threatens countless more lives. Above, refugees from Darfur wait in line for food in Khartoum, the Sudanese capital.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>25.91507190292168</longitude>
+					<latitude>13.41436458026717</latitude>
+					<altitude>0</altitude>
+					<range>1927746.929124755</range>
+					<tilt>7.669574746621892e-013</tilt>
+					<heading>0.1064578705162231</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy20</styleUrl>
+				<Point>
+					<coordinates>25.22645669376122,14.15929921797515,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>8c. Angola</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/8c_chela_escarpment_angola.jpg" width="320" height="225
+" border="0"><br><i><font style="font-size: 9pt;">Photograph by Volkmar K. Wentzel/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">Darfur is not in Angola, but a 27-year-old civil war devastated the southwest African country before its end in 2002. The fighting between different factions began after the nation achieved its independence from Portugal in 1975. As many as one million people may have been killed in the conflict, and millions more were driven from their homes. Above: An Angolan man on the Chela escarpment.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>13.50869627912583</longitude>
+					<latitude>-15.50536548061268</latitude>
+					<altitude>0</altitude>
+					<range>322785.6618196241</range>
+					<tilt>0</tilt>
+					<heading>-1.590877448495523</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy1</styleUrl>
+				<Point>
+					<coordinates>13.5,-15.5,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>9) Botswana is . . .</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Snippet maxLines="2">
+Double-click the text to see the full question and answers.			</Snippet>
+			<description><![CDATA[<table width="350" border="0" cellspacing="2" cellpadding="1">
+<tr>
+<td>
+
+
+<b><font style="font-size: 12pt;">Botswana is the world's largest producer of which natural resource?</font></b> <br><br>
+Please select your answer at left.  Double-click on your answer to fly to the location.
+
+</b></td>
+</tr>
+</table><br><br><div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></div></a><br />
+<hr>
+<center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/lindblad_sweeps.html">win a great family adventure</a>
+ from My Wonderful World! <br>
+
+© 2006 National Geographic Society. All rights reserved. </center>]]></description>
+			<LookAt>
+				<longitude>21.73180395266385</longitude>
+				<latitude>3.697984095493815</latitude>
+				<altitude>0</altitude>
+				<range>9439873.881185547</range>
+				<tilt>3.768213458211803e-014</tilt>
+				<heading>-0.8503261966065551</heading>
+			</LookAt>
+			<Style>
+				<ListStyle>
+					<listItemType>radioFolder</listItemType>
+					<bgColor>ffffff</bgColor>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>9a. Gold</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/9a_joburg_gold.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 10pt;">Photograph by Tomasz Tomaszewski/National Geographic Image Collection</font></i><br><font style="font-size: 14pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">South Africa, not Botswana, leads the world in gold production. In 2004, the country's mines produced 342 tons of gold (shown formed into bars, above). The TauTona gold mine near Johannesburg is the deepest operating mine in the world--it takes workers two hours to descend in three different elevators to the deepest level, 2.2 miles (3.5 kilometers) beneath the Earth. <br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>28.05018888888889</longitude>
+					<latitude>-26.14411388888889</latitude>
+					<altitude>0</altitude>
+					<range>19460.11903319473</range>
+					<tilt>0</tilt>
+					<heading>-2.105967123948718</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy38</styleUrl>
+				<Point>
+					<coordinates>28.05018888888889,-26.14411388888889,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>9b. Diamonds</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/9b_botswana_diamonds.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Cary Wolinsky/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Right!</b><br><font style="font-size: 10pt;">Botswana leads the world in the production of gemstone-quality diamonds by value. Above, colossus company De Beers' massive mine in Orapa lights up the sky. In some countries, "blood diamonds" or "conflict diamonds" have been linked to atrocities committed by rebel groups or corrupt governments.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>25.39553772543582</longitude>
+					<latitude>-21.3098488725086</latitude>
+					<altitude>0</altitude>
+					<range>11937.81034555814</range>
+					<tilt>3.622602342458578e-012</tilt>
+					<heading>-0.5290069183789953</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy4</styleUrl>
+				<Point>
+					<coordinates>25.3697851749283,-21.30724444444445,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>9c. Oil</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+ 
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/9c_hassi_messaoud_algeria.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Robert Sisson/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><font style="font-size: 10pt;"><br>Nigeria is the largest producer of crude oil in Africa and the 10th-largest in the world. Oil in Africa is often associated with problems: pollution, environmental impact, and corruption. Above, natural gas that can't be used is burned off in Hassi Messaoud, Algeria.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>6.118180190041279</longitude>
+					<latitude>31.67916983273997</latitude>
+					<altitude>0</altitude>
+					<range>16317.44742823764</range>
+					<tilt>0</tilt>
+					<heading>-0.8748470438642249</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy6</styleUrl>
+				<Point>
+					<coordinates>6.072809999999999,31.67927777777778,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>10) What African nation was . . .</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Snippet maxLines="2">
+Double-click the text to see the full question and answers.			</Snippet>
+			<description><![CDATA[<table width="350" border="0" cellspacing="2" cellpadding="1">
+<tr>
+<td>
+
+<b><font style="font-size: 12pt;">Which African nation was a German colony at the onset of World War I?  </font></b> <br><br>
+Please select your answer at left.  Double-click on your answer to fly to the location.
+
+</b></td>
+</tr>
+</table><br><br><div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></div></a><br />
+<hr>
+<center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/lindblad_sweeps.html">win a great family adventure</a>
+ from My Wonderful World! <br>
+
+© 2006 National Geographic Society. All rights reserved. </center>]]></description>
+			<LookAt>
+				<longitude>21.73180395266385</longitude>
+				<latitude>3.697984095493815</latitude>
+				<altitude>0</altitude>
+				<range>9439873.881185547</range>
+				<tilt>3.768213458211803e-014</tilt>
+				<heading>-0.8503261966065551</heading>
+			</LookAt>
+			<Style>
+				<ListStyle>
+					<listItemType>radioFolder</listItemType>
+					<bgColor>ffffff</bgColor>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>10a. Cameroon</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/10a_cameroon.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Michael Lewis/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Right!</b><br><font style="font-size: 10pt;">Germany took control of the West African nation it called Kamerun in 1884. After Germany's defeat in World War I, Cameroon became a League of Nations mandate territory and was split between Britain and France. French Cameroun became independent in 1960, and southern British Cameroons joined it a year later. (Northern British Cameroons joined Nigeria.) Above, a Baka woman works in a cassava field in Bosquet.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>11.99976297302654</longitude>
+					<latitude>6.001077388930634</latitude>
+					<altitude>0</altitude>
+					<range>357501.3937127187</range>
+					<tilt>0</tilt>
+					<heading>2.102259821597294e-005</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy50</styleUrl>
+				<Point>
+					<coordinates>12,6,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>10b. Senegal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/10b_senegal.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Bobby Haas/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">As part of French West Africa, Senegal was in France's possession for three centuries until its independence in 1960. French is still the main language spoken in the coastal nation. Above, pits filled with dyes for coloring fabrics dot the Sine-Saloum Delta.  <br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>-16.59994637604361</longitude>
+					<latitude>13.78771599238869</latitude>
+					<altitude>0</altitude>
+					<range>102743.2661134889</range>
+					<tilt>42.09771229863505</tilt>
+					<heading>101.7336774856064</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy32</styleUrl>
+				<Point>
+					<coordinates>-16.66485940148185,13.75088079491031,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>10c. Mozambique</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="2">
+Double-click the answer to fly there and see if you&apos;re right.				</Snippet>
+				<description><![CDATA[<center><b>Geography Awareness Quiz<br>
+Test Your Africa IQ</b></center>
+<table width="340" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"> <tr border="0"> <td border="0"><img src="http://services.google.com/earth/layers/gaw/10c_mozambique.jpg" width="320" height="225" border="0"><br><i><font style="font-size: 9pt;">Photograph by Chris Johns/National Geographic Image Collection</font></i><br><font style="font-size: 12pt;"><br><b>Wrong.</b><br><font style="font-size: 10pt;">Portugal set up trading posts in Mozambique as early as the 1500s, gradually expanding until it was in control of the southeast African country. Its possession lasted until Mozambique achieved independence in 1975. Above, a fisherman heads to sea off the coast of Vilanculos.<br><br><br><hr>
+<div align="center"><a href="http://www.mywonderfulworld.org"><img src="http://services.google.com/earth/layers/gaw/mww_logo.gif" border="0" /></a></div> <br><center>
+<a href="http://www.mywonderfulworld.org/gaw.html">Learn more about Africa</a> and enter to <a href="http://www.mywonderfulworld.org/gaw.html">win a great family adventure</a>
+ from My Wonderful World! </font><br><center><font style="font-size: 7pt;">&copy; 2006 National Geographic Society.  All rights reserved.</font></center> </td> </tr> </table>]]></description>
+				<LookAt>
+					<longitude>35.35753907164581</longitude>
+					<latitude>-22.01315240306674</latitude>
+					<altitude>0</altitude>
+					<range>65382.25062820967</range>
+					<tilt>52.32471077300583</tilt>
+					<heading>-46.30054175825062</heading>
+				</LookAt>
+				<styleUrl>#default_copy:0_copy33</styleUrl>
+				<Point>
+					<coordinates>35.3167,-22.0167,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,2364 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CoverageDescription version="1.0.0" updateSequence="0" xmlns="http://www.opengis.net/wcs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wcs http://schemas.opengeospatial.net/wcs/1.0.0/describeCoverage.xsd">
+  <CoverageOffering>
+  <description>Quickbird costas 2004</description>
+  <name>Costas</name>
+  <label>Costas</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.769215668705582 37.8184338945691</gml:pos>
+      <gml:pos>0.506868538627119 40.525456338613</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.769215668705582 37.8184338945691</gml:pos>
+          <gml:pos>0.506868538627119 40.525456338613</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>696287.65 4191112.35</gml:pos>
+          <gml:pos>797213.426521 4488737.845669</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>144179 425177</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>696287.65 4488737.845669</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats>
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop01_311104</name>
+  <label>orthop01_311104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.411953859600099 40.3952692250145</gml:pos>
+      <gml:pos>0.506868538627582 40.498144970273</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.411953859600099 40.3952692250145</gml:pos>
+          <gml:pos>0.506868538627582 40.498144970273</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>789586.421644 4477596.64567</gml:pos>
+          <gml:pos>797213.426521 4488737.84567</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>10887 15914</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>789586.421644 4488737.84567</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.700496406856 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop02_041004</name>
+  <label>orthop02_041004</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.161142185520058 40.1342857176869</gml:pos>
+      <gml:pos>0.292548896326785 40.2560681974345</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.161142185520058 40.1342857176869</gml:pos>
+          <gml:pos>0.292548896326785 40.2560681974345</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>769326.530394 4447918.95274</gml:pos>
+          <gml:pos>780051.230394 4461067.75274</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>15320 18782</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>769326.530394 4461067.75274</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop03n_311004</name>
+  <label>orthop03n_311004</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.147236128086632 40.111252474887</gml:pos>
+      <gml:pos>0.209262927539442 40.1866363257871</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.147236128086632 40.111252474887</gml:pos>
+          <gml:pos>0.209262927539442 40.1866363257871</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>768239.61427 4445109.29255</gml:pos>
+          <gml:pos>773240.41427 4453310.49255</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>7143 11714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>768239.61427 4453310.49255</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop03s_311004_01</name>
+  <label>orthop03s_311004_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.0872101105503621 40.0818258206747</gml:pos>
+      <gml:pos>0.22114471507211 40.1932962005782</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.0872101105503621 40.0818258206747</gml:pos>
+          <gml:pos>0.22114471507211 40.1932962005782</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>763228.894619 4441873.68658</gml:pos>
+          <gml:pos>774230.094619 4453874.48658</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>15715 17142</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>763228.894619 4453874.48658</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop03s_311004_02</name>
+  <label>orthop03s_311004_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.030134915894617 40.0087916305901</gml:pos>
+      <gml:pos>0.16383554256875 40.1202004185233</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.030134915894617 40.0087916305901</gml:pos>
+          <gml:pos>0.16383554256875 40.1202004185233</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>758638.064359 4433590.23199</gml:pos>
+          <gml:pos>769639.264359 4445591.03199</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>15715 17142</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>758638.064359 4445591.03199</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop04_311004_01</name>
+  <label>orthop04_311004_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.064429002189167 39.8686021111024</gml:pos>
+      <gml:pos>0.0391632263460172 39.9701456674512</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.064429002189167 39.8686021111024</gml:pos>
+          <gml:pos>0.0391632263460172 39.9701456674512</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>751080.89797 4417658.15575</gml:pos>
+          <gml:pos>759581.69797 4428659.35575</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>12143 15714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>751080.89797 4428659.35575</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop04_311004_02</name>
+  <label>orthop04_311004_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.0059801589732133 39.9589210820855</gml:pos>
+      <gml:pos>0.0861765725681437 40.0602012338313</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.0059801589732133 39.9589210820855</gml:pos>
+          <gml:pos>0.0861765725681437 40.0602012338313</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>755745.300367 4427822.77831</gml:pos>
+          <gml:pos>763246.500367 4438823.97831</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>10715 15714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>755745.300367 4438823.97831</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop05_311004_01</name>
+  <label>orthop05_311004_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.184109898221608 39.7358685309031</gml:pos>
+      <gml:pos>-0.0750466714741807 39.8374622821562</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.184109898221608 39.7358685309031</gml:pos>
+          <gml:pos>-0.0750466714741807 39.8374622821562</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>741306.868269 4402597.33799</gml:pos>
+          <gml:pos>750308.168269 4413598.53799</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>12858 15714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>741306.868269 4413598.53799</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop05_311004_02</name>
+  <label>orthop05_311004_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.117821241552359 39.8165947273632</gml:pos>
+      <gml:pos>-0.00269513638604592 39.9183962094939</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.117821241552359 39.8165947273632</gml:pos>
+          <gml:pos>-0.00269513638604592 39.9183962094939</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>746698.87415 4411763.74799</gml:pos>
+          <gml:pos>756199.97415 4422764.94799</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>13572 15714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>746698.87415 4422764.94799</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop06_311004_01</name>
+  <label>orthop06_311004_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.275219416965276 39.5950920024498</gml:pos>
+      <gml:pos>-0.184155536472809 39.6871833112806</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.275219416965276 39.5950920024498</gml:pos>
+          <gml:pos>-0.184155536472809 39.6871833112806</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>733974.65 4386671.49606</gml:pos>
+          <gml:pos>741489.15 4396672.39606</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>10734 14285</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>733974.65 4396672.39606</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop06_311004_02</name>
+  <label>orthop06_311004_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.215882735212665 39.6816925812939</gml:pos>
+      <gml:pos>-0.153792859579015 39.7776035452773</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.215882735212665 39.6816925812939</gml:pos>
+          <gml:pos>-0.153792859579015 39.7776035452773</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>738774.65 4396366.75502</gml:pos>
+          <gml:pos>743775.45 4406867.45502</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>7143 14999</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>738774.65 4406867.45502</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop07_311004_01</name>
+  <label>orthop07_311004_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.314134220213874 39.5389645252734</gml:pos>
+      <gml:pos>-0.208807505395484 39.6457600608977</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.314134220213874 39.5389645252734</gml:pos>
+          <gml:pos>-0.208807505395484 39.6457600608977</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>730817.802996 4380373.34965</gml:pos>
+          <gml:pos>739518.802996 4391974.44965</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>12429 16571</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>730817.802996 4391974.44965</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop07_311004_02</name>
+  <label>orthop07_311004_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.342128552498647 39.4528266976444</gml:pos>
+      <gml:pos>-0.274745188591142 39.5443190026711</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.342128552498647 39.4528266976444</gml:pos>
+          <gml:pos>-0.274745188591142 39.5443190026711</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>728696.99189 4370639.57047</gml:pos>
+          <gml:pos>734198.29189 4380640.47047</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>7858 14285</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>728696.99189 4380640.47047</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop08_081104</name>
+  <label>orthop08_081104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.12173136235497 38.7060005480509</gml:pos>
+      <gml:pos>0.244722293013489 38.8396720246421</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.12173136235497 38.7060005480509</gml:pos>
+          <gml:pos>0.244722293013489 38.8396720246421</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>771460.955047 4289205.04396</gml:pos>
+          <gml:pos>781662.055047 4303706.24396</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>14572 20714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>771460.955047 4303706.24396</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop09_081104_01</name>
+  <label>orthop09_081104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.088804767492067 38.6613849297483</gml:pos>
+      <gml:pos>0.207196405070599 38.7454726610249</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.088804767492067 38.6613849297483</gml:pos>
+          <gml:pos>0.207196405070599 38.7454726610249</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>768764.515211 4284144.38515</gml:pos>
+          <gml:pos>778765.415211 4293145.68515</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>14286 12857</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>768764.515211 4293145.68515</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop09_081104_02</name>
+  <label>orthop09_081104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.00632349885466636 38.6164934605806</gml:pos>
+      <gml:pos>0.106715050330735 38.6865464583593</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.00632349885466636 38.6164934605806</gml:pos>
+          <gml:pos>0.106715050330735 38.6865464583593</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>761751.532381 4278862.44211</gml:pos>
+          <gml:pos>770252.332381 4286363.64211</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>12143 10714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>761751.532381 4286363.64211</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop10_081104_01</name>
+  <label>orthop10_081104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.136980485807463 38.5170546860605</gml:pos>
+      <gml:pos>-0.0371101117727906 38.5806924900864</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.136980485807463 38.5170546860605</gml:pos>
+          <gml:pos>-0.0371101117727906 38.5806924900864</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>749616.691491 4267411.89295</gml:pos>
+          <gml:pos>758117.491491 4274213.09295</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>12143 9714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>749616.691491 4274213.09295</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop10_081104_02</name>
+  <label>orthop10_081104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.076735106882625 38.5664797341347</gml:pos>
+      <gml:pos>0.0816807635068847 38.6559597659495</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.076735106882625 38.5664797341347</gml:pos>
+          <gml:pos>0.0816807635068847 38.6559597659495</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>754690.263295 4273235.06968</gml:pos>
+          <gml:pos>768191.163295 4282736.16968</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>19286 13571</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>754690.263295 4282736.16968</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop11_081104</name>
+  <label>orthop11_081104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.311501790904784 38.4707367989647</gml:pos>
+      <gml:pos>-0.0783292130480387 38.5509769105466</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.311501790904784 38.4707367989647</gml:pos>
+          <gml:pos>-0.0783292130480387 38.5509769105466</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>734538.428657 4262154.30552</gml:pos>
+          <gml:pos>754639.628657 4270455.60552</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>28715 11857</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>734538.428657 4270455.60552</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop12_081104_01</name>
+  <label>orthop12_081104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.434119927724276 38.3464080099809</gml:pos>
+      <gml:pos>-0.361629767927456 38.4559730050029</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.434119927724276 38.3464080099809</gml:pos>
+          <gml:pos>-0.361629767927456 38.4559730050029</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>724236.374588 4247606.91505</gml:pos>
+          <gml:pos>730237.474588 4259607.71505</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>8572 17142</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>724236.374588 4259607.71505</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop12_081104_02</name>
+  <label>orthop12_081104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.378614997044234 38.4352112413258</gml:pos>
+      <gml:pos>-0.255874384616388 38.5054927088623</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.378614997044234 38.4352112413258</gml:pos>
+          <gml:pos>-0.255874384616388 38.5054927088623</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>728803.681867 4257735.98862</gml:pos>
+          <gml:pos>739304.381867 4265237.18862</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>15000 10714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>728803.681867 4265237.18862</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop13_131104</name>
+  <label>orthop13_131104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.348041797937859 39.3383153088596</gml:pos>
+      <gml:pos>-0.281041463417471 39.5461928127946</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.348041797937859 39.3383153088596</gml:pos>
+          <gml:pos>-0.281041463417471 39.5461928127946</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>728562.190304 4357900.07124</gml:pos>
+          <gml:pos>733650.466178 4380844.67124</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>7266 32776</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>728562.190304 4380844.67124</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.700189331784 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop14_131104</name>
+  <label>orthop14_131104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.339955238250429 39.2232477387865</gml:pos>
+      <gml:pos>-0.232429279860554 39.4011207166876</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.339955238250429 39.2232477387865</gml:pos>
+          <gml:pos>-0.232429279860554 39.4011207166876</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>729631.752439 4345256.97718</gml:pos>
+          <gml:pos>738332.752439 4364758.27718</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>12429 27857</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>729631.752439 4364758.27718</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop15_131104</name>
+  <label>orthop15_131104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.289235759595255 39.0872233017579</gml:pos>
+      <gml:pos>-0.198718862025195 39.2746110942999</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.289235759595255 39.0872233017579</gml:pos>
+          <gml:pos>-0.198718862025195 39.2746110942999</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>734463.516741 4330245.63376</gml:pos>
+          <gml:pos>741664.416741 4350846.63376</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>10286 29428</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>734463.516741 4350846.63376</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop16_131104_01</name>
+  <label>orthop16_131104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.247058054572741 39.0510556962122</gml:pos>
+      <gml:pos>-0.174196293066241 39.1427258689371</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.247058054572741 39.0510556962122</gml:pos>
+          <gml:pos>-0.174196293066241 39.1427258689371</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>738234.899481 4326306.57698</gml:pos>
+          <gml:pos>744235.999481 4336307.47698</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>8572 14285</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>738234.899481 4336307.47698</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop16_131104_02</name>
+  <label>orthop16_131104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.210822301766025 38.9726237490186</gml:pos>
+      <gml:pos>-0.126828888562913 39.0555974632164</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.210822301766025 38.9726237490186</gml:pos>
+          <gml:pos>-0.126828888562913 39.0555974632164</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>741637.171116 4317729.61723</gml:pos>
+          <gml:pos>748637.871116 4326730.91723</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>10000 12857</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>741637.171116 4326730.91723</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop17_131104_01</name>
+  <label>orthop17_131104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.181657602795786 38.9357185021325</gml:pos>
+      <gml:pos>-0.0746335106867938 39.0192845975789</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.181657602795786 38.9357185021325</gml:pos>
+          <gml:pos>-0.0746335106867938 39.0192845975789</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>744289.003556 4313776.8392</gml:pos>
+          <gml:pos>753290.303556 4322778.1392</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>12858 12857</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>744289.003556 4322778.1392</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop17_131104_02</name>
+  <label>orthop17_131104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.117943002348703 38.868294412074</gml:pos>
+      <gml:pos>-0.00576191400621702 38.9385565931551</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.117943002348703 38.868294412074</gml:pos>
+          <gml:pos>-0.00576191400621702 38.9385565931551</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>750048.579806 4306487.66742</gml:pos>
+          <gml:pos>759549.679806 4313988.86742</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>13572 10714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>750048.579806 4313988.86742</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop18_131104</name>
+  <label>orthop18_131104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.0746928352616706 38.849326950655</gml:pos>
+      <gml:pos>0.0832043718423081 38.9118300407968</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.0746928352616706 38.849326950655</gml:pos>
+          <gml:pos>0.0832043718423081 38.9118300407968</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>753864.751737 4304639.94641</gml:pos>
+          <gml:pos>767365.651737 4311140.84641</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>19286 9285</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>753864.751737 4311140.84641</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop19_081104_01</name>
+  <label>orthop19_081104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.528755271098844 38.2508371352818</gml:pos>
+      <gml:pos>-0.430862375100228 38.3735051096161</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.528755271098844 38.2508371352818</gml:pos>
+          <gml:pos>-0.430862375100228 38.3735051096161</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>716247.100187 4236828.43859</gml:pos>
+          <gml:pos>724448.300187 4250229.23859</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>11715 19142</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>716247.100187 4250229.23859</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop19_081104_02</name>
+  <label>orthop19_081104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.434119991295443 38.3464062094665</gml:pos>
+      <gml:pos>-0.362213489804466 38.4388675293538</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.434119991295443 38.3464062094665</gml:pos>
+          <gml:pos>-0.362213489804466 38.4388675293538</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>724236.374588 4247606.71505</gml:pos>
+          <gml:pos>730237.474588 4257707.71505</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>8572 14428</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>724236.374588 4257707.71505</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop20_181104_01</name>
+  <label>orthop20_181104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.649715059513851 38.1131199164285</gml:pos>
+      <gml:pos>-0.505465344489574 38.2015894747853</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.649715059513851 38.1131199164285</gml:pos>
+          <gml:pos>-0.505465344489574 38.2015894747853</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>706046.2921 4221368.81784</gml:pos>
+          <gml:pos>718447.4921 4230869.91784</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>17715 13571</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>706046.2921 4230869.91784</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop20_181104_02</name>
+  <label>orthop20_181104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.542876572296919 38.1796186626201</gml:pos>
+      <gml:pos>-0.490783803978381 38.3021933075773</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.542876572296919 38.1796186626201</gml:pos>
+          <gml:pos>-0.490783803978381 38.3021933075773</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>715223.996887 4228780.75028</gml:pos>
+          <gml:pos>719424.696887 4242281.65028</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>6000 19285</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>715223.996887 4242281.65028</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop21_181104</name>
+  <label>orthop21_181104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.70999963728032 37.9537566817542</gml:pos>
+      <gml:pos>-0.618069622814675 38.1598790871345</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.70999963728032 37.9537566817542</gml:pos>
+          <gml:pos>-0.618069622814675 38.1598790871345</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>701199.65 4203415.35</gml:pos>
+          <gml:pos>708700.85 4226116.35</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>10715 32428</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>701199.65 4226116.35</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop22_1811004</name>
+  <label>orthop22_1811004</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.769215668705582 37.8434482545183</gml:pos>
+      <gml:pos>-0.647530102352871 37.9934296541121</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>-0.769215668705582 37.8434482545183</gml:pos>
+          <gml:pos>-0.647530102352871 37.9934296541121</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>696287.65 4191112.35</gml:pos>
+          <gml:pos>706588.85 4207513.35</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>14715 23428</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>696287.65 4207513.35</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop23_261104</name>
+  <label>orthop23_261104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.37345887604184 40.3368089707198</gml:pos>
+      <gml:pos>0.448414395595265 40.4485879556897</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.37345887604184 40.3368089707198</gml:pos>
+          <gml:pos>0.448414395595265 40.4485879556897</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>786569.11427 4470909.19255</gml:pos>
+          <gml:pos>792470.81427 4483110.89255</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>8430 17429</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>786569.11427 4483110.89255</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop24_261104_01</name>
+  <label>orthop24_261104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.234463105473658 40.1856768191399</gml:pos>
+      <gml:pos>0.356188772135398 40.278972533725</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.234463105473658 40.1856768191399</gml:pos>
+          <gml:pos>0.356188772135398 40.278972533725</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>775367.216691 4453831.6651</gml:pos>
+          <gml:pos>785368.116691 4463832.5651</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>14286 14285</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>775367.216691 4463832.5651</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop24_261104_02</name>
+  <label>orthop24_261104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.296938622582628 40.2681463248799</gml:pos>
+      <gml:pos>0.419350322091118 40.3705009241081</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.296938622582628 40.2681463248799</gml:pos>
+          <gml:pos>0.419350322091118 40.3705009241081</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>780346.11427 4463191.69255</gml:pos>
+          <gml:pos>790347.01427 4474192.89255</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>14286 15714</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>780346.11427 4474192.89255</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+  <CoverageOffering>
+  <name>orthop25_191204</name>
+  <label>orthop25_191204</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.0631186665735442 38.8067199905354</gml:pos>
+      <gml:pos>0.197563116913112 38.863410634572</gml:pos>
+    </lonLatEnvelope>
+    <domainSet>
+      <spatialDomain>
+        <gml:Envelope srsName="WGS84(DD)">
+          <gml:pos>0.0631186665735442 38.8067199905354</gml:pos>
+          <gml:pos>0.197563116913112 38.863410634572</gml:pos>
+        </gml:Envelope>
+        <gml:Envelope srsName="EPSG:23030">
+          <gml:pos>765987.140492 4300252.05875</gml:pos>
+          <gml:pos>777471.340492 4306158.65875</gml:pos>
+        </gml:Envelope>
+        <gml:RectifiedGrid dimension="2">
+          <gml:limits>
+            <gml:GridEnvelope>
+              <gml:low>0 0</gml:low>
+              <gml:high>16405 8436</gml:high>
+            </gml:GridEnvelope>
+          </gml:limits>
+          <gml:axisName>x</gml:axisName>
+          <gml:axisName>y</gml:axisName>
+          <gml:origin>
+            <gml:pos>765987.140492 4306158.65875</gml:pos>
+          </gml:origin>
+          <gml:offsetVector>0.7 0</gml:offsetVector>
+          <gml:offsetVector>0 -0.7</gml:offsetVector>
+        </gml:RectifiedGrid>
+      </spatialDomain>
+    </domainSet>
+    <rangeSet>
+      <RangeSet>
+        <name>bands</name>
+<!-- WARNING: Mandatory metadata '..._rangeset_label' was missing in this context. -->
+        <axisDescription>
+          <AxisDescription>
+            <name>bands</name>
+            <label>Bands/Channels/Samples</label>
+            <values>
+              <singleValue>1</singleValue>
+              <singleValue>2</singleValue>
+              <singleValue>3</singleValue>
+            </values>
+          </AxisDescription>
+        </axisDescription>
+      </RangeSet>
+    </rangeSet>
+    <supportedCRSs>
+      <requestResponseCRSs>EPSG:23030</requestResponseCRSs>
+      <nativeCRSs>EPSG:23030</nativeCRSs>
+    </supportedCRSs>
+    <supportedFormats nativeFormat="ecw">
+      <formats>GEOTIFF_INT16</formats>
+    </supportedFormats>
+  </CoverageOffering>
+</CoverageDescription>

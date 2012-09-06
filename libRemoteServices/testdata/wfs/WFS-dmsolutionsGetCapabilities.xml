@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding="ISO-8859-1" ?>
+<WFS_Capabilities 
+   version="1.0.0" 
+   updateSequence="0" 
+   xmlns="http://www.opengis.net/wfs" 
+   xmlns:ogc="http://www.opengis.net/ogc" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengeospatial.net/wfs/1.0.0/WFS-capabilities.xsd">
+
+<!-- MapServer version 4.6.0 OUTPUT=GIF OUTPUT=PNG OUTPUT=JPEG OUTPUT=WBMP OUTPUT=PDF OUTPUT=SVG SUPPORTS=PROJ SUPPORTS=FREETYPE SUPPORTS=WMS_SERVER SUPPORTS=WMS_CLIENT SUPPORTS=WFS_SERVER SUPPORTS=WFS_CLIENT INPUT=EPPL7 INPUT=POSTGIS INPUT=OGR INPUT=GDAL INPUT=SHAPEFILE DEBUG=MSDEBUG -->
+
+<Service>
+  <Name>MapServer WFS</Name>
+  <Title>DM Solutions&#39; WFS Demo Server</Title>
+  <Abstract>This demonstration server was setup by DM Solutions Group (http://www.dmsolutions.ca/) and is powered by MapServer (http://mapserver.gis.umn.edu/).  This server uses Canadian source data (c)2000, Government of Canada with permission from Natural Resources Canada from NRCan&#39;s GeoGratis web site (http://geogratis.cgdi.gc.ca/).</Abstract>
+  <OnlineResource>http://dev1.dmsolutions.ca/cgi-bin/mswfs_gmap?</OnlineResource>
+</Service>
+
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <DCPType>
+        <HTTP>
+          <Get onlineResource="http://dev1.dmsolutions.ca/cgi-bin/mswfs_gmap?" />
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post onlineResource="http://dev1.dmsolutions.ca/cgi-bin/mswfs_gmap?" />
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <DescribeFeatureType>
+      <SchemaDescriptionLanguage>
+        <XMLSCHEMA/>
+        <SFE_XMLSCHEMA/>
+      </SchemaDescriptionLanguage>
+      <DCPType>
+        <HTTP>
+          <Get onlineResource="http://dev1.dmsolutions.ca/cgi-bin/mswfs_gmap?" />
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post onlineResource="http://dev1.dmsolutions.ca/cgi-bin/mswfs_gmap?" />
+        </HTTP>
+      </DCPType>
+    </DescribeFeatureType>
+    <GetFeature>
+      <ResultFormat>
+        <GML2/>
+        <GML3/>
+      </ResultFormat>
+      <DCPType>
+        <HTTP>
+          <Get onlineResource="http://dev1.dmsolutions.ca/cgi-bin/mswfs_gmap?" />
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post onlineResource="http://dev1.dmsolutions.ca/cgi-bin/mswfs_gmap?" />
+        </HTTP>
+      </DCPType>
+    </GetFeature>
+  </Request>
+</Capability>
+
+<FeatureTypeList>
+  <Operations>
+    <Query/>
+  </Operations>
+    <FeatureType>
+        <Name>prov_land</Name>
+        <Title>Canadian Land</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-173.537" miny="35.8775" maxx="-11.9603" maxy="83.8009" />
+    </FeatureType>
+    <FeatureType>
+        <Name>land_fn</Name>
+        <Title>US Land</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-178.838" miny="31.8844" maxx="179.94" maxy="89.8254" />
+    </FeatureType>
+    <FeatureType>
+        <Name>park</Name>
+        <Title>Parks</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-173.433" miny="41.4271" maxx="-13.3643" maxy="83.7466" />
+    </FeatureType>
+    <FeatureType>
+        <Name>drain_fn</Name>
+        <Title>US Lakes</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-179.973" miny="35.2464" maxx="179.92" maxy="88.06" />
+    </FeatureType>
+    <FeatureType>
+        <Name>drainage</Name>
+        <Title>Lakes</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-169.629" miny="39.2232" maxx="-15.1085" maxy="83.0129" />
+    </FeatureType>
+    <FeatureType>
+        <Name>prov_bound</Name>
+        <Title>Provincial Borders</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-173.537" miny="35.8775" maxx="-11.9603" maxy="83.8009" />
+    </FeatureType>
+    <FeatureType>
+        <Name>fedlimit</Name>
+        <Title>Federal Limit</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-179.96" miny="34.2409" maxx="178.833" maxy="89.9051" />
+    </FeatureType>
+    <FeatureType>
+        <Name>rail</Name>
+        <Title>Railroads</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-137.447" miny="37.7146" maxx="-46.6233" maxy="66.7201" />
+    </FeatureType>
+    <FeatureType>
+        <Name>road</Name>
+        <Title>Roads</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-148.059" miny="35.882" maxx="-33.7745" maxy="72.5503" />
+    </FeatureType>
+    <FeatureType>
+        <Name>popplace</Name>
+        <Title>Cities</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-172.301" miny="36.3541" maxx="-12.9698" maxy="83.4832" />
+    </FeatureType>
+    <FeatureType>
+        <Name>grid</Name>
+        <Title>Grid</Title>
+        <SRS>EPSG:42304</SRS>
+        <LatLongBoundingBox minx="-178.838" miny="31.8844" maxx="179.94" maxy="89.8254" />
+    </FeatureType>
+</FeatureTypeList>
+
+<ogc:Filter_Capabilities>
+  <ogc:Spatial_Capabilities>
+    <ogc:Spatial_Operators>
+      <ogc:Intersect/>
+      <ogc:DWithin/>
+      <ogc:BBOX/>
+    </ogc:Spatial_Operators>
+  </ogc:Spatial_Capabilities>
+  <ogc:Scalar_Capabilities>
+    <ogc:Logical_Operators />
+    <ogc:Comparison_Operators>
+      <ogc:Simple_Comparisons />
+      <ogc:Like />
+      <ogc:Between />
+    </ogc:Comparison_Operators>
+  </ogc:Scalar_Capabilities>
+</ogc:Filter_Capabilities>
+
+</WFS_Capabilities>

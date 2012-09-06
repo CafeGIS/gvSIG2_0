@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.idee.es/wfs" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" elementFormDefault="qualified" targetNamespace="http://www.idee.es/wfs" version="2.1.2">
+	<xsd:annotation>
+		<xsd:appinfo>BDLL Province Feature Types</xsd:appinfo>
+		<xsd:documentation xml:lang="en"/>
+	</xsd:annotation>
+	<!-- import constructs from the GML Feature and Geometry schemas -->
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="schemas/feature.xsd"/>
+	<!-- ==============================================================
+		global element declarations
+		=================================================================== -->
+	<xsd:element name="BDLL1000_Provincia" substitutionGroup="gml:_Feature" type="BDLL_ProvinciaType"/>
+	<xsd:element name="BDLL200_Provincia" substitutionGroup="gml:_Feature" type="BDLL_ProvinciaType"/>
+	<xsd:element name="BDLL25_Provincia" substitutionGroup="gml:_Feature" type="BDLL_ProvinciaType"/>
+	<!-- ==============================================================
+		feature types definitions
+		=================================================================== -->
+	<xsd:complexType name="BDLL_ProvinciaType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element minOccurs="0" name="nombre" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="cod_INE_prov" type="xsd:integer"/>
+					<xsd:element minOccurs="0" name="cod_ccaa" type="xsd:integer"/>
+					<xsd:element minOccurs="0" name="fecha_carga" type="xsd:date"/>
+					<xsd:element ref="gml:multiPolygonProperty"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+</xsd:schema>

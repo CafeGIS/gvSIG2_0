@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:WFS_Capabilities version="1.1.0" updateSequence="1453" xmlns="http://www.opengis.net/wfs" xmlns:tnt="http://www.microimages.com/ogc/extensions" xmlns:ows="http://www.opengis.net/ows" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:MII_GVwhs="http://216.229.5.245/tntserver/MII_GVwhs" xmlns:MII_PVLN="http://216.229.5.245/tntserver/MII_PVLN" xmlns:MII_TNTCB="http://216.229.5.245/tntserver/MII_TNTCB" xmlns:MII_WPpid="http://216.229.5.245/tntserver/MII_WPpid" xmlns:wfs="http://www.opengis.net/wfs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd   http://www.opengis.net/ows http://schemas.opengis.net/ows/1.0.0/owsGetCapabilities.xsd">
+<ows:ServiceIdentification>
+  <ows:Title>TNTserver 2007:73 test platform</ows:Title>
+  <ows:Abstract>
+
+  </ows:Abstract>
+  <ows:Keywords>
+    <ows:Keyword>TNTserver 2007:73 Oct  5 2007</ows:Keyword>
+    <ows:Keyword>MicroImages</ows:Keyword>
+    <ows:Type>String</ows:Type>
+  </ows:Keywords>
+  <ows:ServiceType>OGC:WFS</ows:ServiceType>
+  <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
+  <ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
+  <ows:Fees>NONE</ows:Fees>
+  <ows:AccessConstraints>NONE</ows:AccessConstraints>
+</ows:ServiceIdentification>
+<ows:ServiceProvider>
+  <ows:ProviderName>MicroImages, Inc</ows:ProviderName>
+  <ows:ProviderSite xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.microimages.com/"/>
+  <ows:ServiceContact>
+    <ows:IndividualName>Steve Cowan</ows:IndividualName>
+    <ows:PositionName>Software Engineer</ows:PositionName>
+    <ows:ContactInfo>
+      <ows:Phone>
+        <ows:Voice/>
+        <ows:Facsimile>(402) 477-9559</ows:Facsimile>
+      </ows:Phone>
+      <ows:Address>
+        <ows:DeliveryPoint>XXX</ows:DeliveryPoint>
+        <ows:City>Lincoln</ows:City>
+        <ows:AdministrativeArea>NE</ows:AdministrativeArea>
+        <ows:PostalCode>68508</ows:PostalCode>
+        <ows:Country>USA</ows:Country>
+        <ows:ElectronicMailAddress>tech@microimages.com</ows:ElectronicMailAddress>
+      </ows:Address>
+      <ows:HoursOfService>
+8:00 am to 6:00 pm, US Central Time
+      </ows:HoursOfService>
+      <ows:ContactInstructions>
+
+      </ows:ContactInstructions>
+    </ows:ContactInfo>
+    <ows:Role>PointOfContact</ows:Role>
+  </ows:ServiceContact>
+</ows:ServiceProvider>
+<ows:OperationsMetadata>
+  <ows:Operation name="GetCapabilities">
+    <ows:DCP>
+      <ows:HTTP>
+        <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://testatlas73.microimages.com/tntgateway/tntgateway.cgi?"/>
+        <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://testatlas73.microimages.com/tntgateway/tntgateway.cgi"/>
+      </ows:HTTP>
+    </ows:DCP>
+    <ows:Parameter name="Format">
+      <ows:Value>text/xml</ows:Value>
+    </ows:Parameter>
+    <ows:Parameter name="AcceptVersions">
+      <ows:Value>1.1.0</ows:Value>
+      <ows:Value>1.0.0</ows:Value>
+    </ows:Parameter>
+    <ows:Parameter name="AcceptFormats">
+      <ows:Value>text/xml</ows:Value>
+    </ows:Parameter>
+    <ows:Parameter name="Sections">
+      <ows:Value>ServiceIdentification</ows:Value>
+      <ows:Value>ServiceProvider</ows:Value>
+      <ows:Value>OperationsMetadata</ows:Value>
+      <ows:Value>FeatureTypeList</ows:Value>
+      <ows:Value>ServesGMLObjectTypeList</ows:Value>
+      <ows:Value>SupportsGMLObjectTypeList</ows:Value>
+      <ows:Value>Filter_Capabilities</ows:Value>
+    </ows:Parameter>
+  </ows:Operation>
+  <ows:Operation name="DescribeFeatureType">
+    <ows:DCP>
+      <ows:HTTP>
+        <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://testatlas73.microimages.com/tntgateway/tntgateway.cgi?"/>
+        <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://testatlas73.microimages.com/tntgateway/tntgateway.cgi"/>
+      </ows:HTTP>
+    </ows:DCP>
+    <ows:Parameter name="outputFormat">
+      <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+    </ows:Parameter>
+  </ows:Operation>
+  <ows:Operation name="GetFeature">
+    <ows:DCP>
+      <ows:HTTP>
+        <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://testatlas73.microimages.com/tntgateway/tntgateway.cgi?"/>
+        <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://testatlas73.microimages.com/tntgateway/tntgateway.cgi"/>
+      </ows:HTTP>
+    </ows:DCP>
+    <ows:Parameter name="resultType">
+      <ows:Value>results</ows:Value>
+      <ows:Value>hits</ows:Value>
+    </ows:Parameter>
+    <ows:Parameter name="outputFormat">
+      <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+    </ows:Parameter>
+  </ows:Operation>
+  <ows:Operation name="GetGMLObject">
+    <ows:DCP>
+      <ows:HTTP>
+        <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://testatlas73.microimages.com/tntgateway/tntgateway.cgi?"/>
+        <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://testatlas73.microimages.com/tntgateway/tntgateway.cgi"/>
+      </ows:HTTP>
+    </ows:DCP>
+    <ows:Parameter name="outputFormat">
+      <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+    </ows:Parameter>
+  </ows:Operation>
+  <ows:Parameter name="srsName">
+    <ows:Value>CRS:84</ows:Value>
+  </ows:Parameter>
+  <ows:Constraint name="DefaultMaxFeatures">
+    <ows:Value>4294967295</ows:Value>
+  </ows:Constraint>
+</ows:OperationsMetadata>
+<wfs:FeatureTypeList>
+  <wfs:Operations>
+    <wfs:Operation>Query</wfs:Operation>
+  </wfs:Operations>
+  <wfs:FeatureType>
+    <wfs:Name>MII_GVwhs:World_polbndl</wfs:Name>
+    <wfs:Title>planar, merged and filtered political boundary lines</wfs:Title>
+    <wfs:DefaultSRS>CRS:84</wfs:DefaultSRS>
+        <wfs:OtherSRS>EPSG:32662</wfs:OtherSRS>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+    <ows:WGS84BoundingBox>
+      <ows:LowerCorner>-141.000000 -55.194279</ows:LowerCorner>
+      <ows:UpperCorner>162.097168 72.001640</ows:UpperCorner>
+    </ows:WGS84BoundingBox>
+  </wfs:FeatureType>
+  <wfs:FeatureType>
+    <wfs:Name>MII_TNTCB:CBSOILS</wfs:Name>
+    <wfs:Title>Crow Butte soil type polygon overlay</wfs:Title>
+    <wfs:DefaultSRS>EPSG:4008</wfs:DefaultSRS>
+        <wfs:OtherSRS>EPSG:4326</wfs:OtherSRS>
+        <wfs:OtherSRS>EPSG:4267</wfs:OtherSRS>
+        <wfs:OtherSRS>EPSG:4269</wfs:OtherSRS>
+        <wfs:OtherSRS>EPSG:4152</wfs:OtherSRS>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+    <ows:WGS84BoundingBox>
+      <ows:LowerCorner>-103.375454 42.624752</ows:LowerCorner>
+      <ows:UpperCorner>-103.249227 42.750265</ows:UpperCorner>
+    </ows:WGS84BoundingBox>
+  </wfs:FeatureType>
+</wfs:FeatureTypeList>
+<wfs:SupportsGMLObjectTypeList>
+  <wfs:GMLObjectType>
+    <wfs:Name>gml:AbstractGMLFeatureType</wfs:Name>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+  </wfs:GMLObjectType>
+  <wfs:GMLObjectType>
+    <wfs:Name>gml:PointType</wfs:Name>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+  </wfs:GMLObjectType>
+  <wfs:GMLObjectType>
+    <wfs:Name>gml:LineStringType</wfs:Name>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+  </wfs:GMLObjectType>
+  <wfs:GMLObjectType>
+    <wfs:Name>gml:PolygonType</wfs:Name>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+  </wfs:GMLObjectType>
+  <wfs:GMLObjectType>
+    <wfs:Name>gml:MultiPointType</wfs:Name>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+  </wfs:GMLObjectType>
+  <wfs:GMLObjectType>
+    <wfs:Name>gml:MultiCurveType</wfs:Name>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+  </wfs:GMLObjectType>
+  <wfs:GMLObjectType>
+    <wfs:Name>gml:MultiSurfaceType</wfs:Name>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+  </wfs:GMLObjectType>
+  <wfs:GMLObjectType>
+    <wfs:Name>gml:AbstractMetaDataType</wfs:Name>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+  </wfs:GMLObjectType>
+  <wfs:GMLObjectType>
+    <wfs:Name>gml:AbstractTopologyType</wfs:Name>
+    <wfs:OutputFormats>
+      <wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+    </wfs:OutputFormats>
+  </wfs:GMLObjectType>
+</wfs:SupportsGMLObjectTypeList>
+<ogc:Filter_Capabilities>
+  <ogc:Spatial_Capabilities>
+    <ogc:GeometryOperands>
+      <ogc:GeometryOperand>gml:Point</ogc:GeometryOperand>
+      <ogc:GeometryOperand>gml:LineString</ogc:GeometryOperand>
+      <ogc:GeometryOperand>gml:Polygon</ogc:GeometryOperand>
+      <ogc:GeometryOperand>gml:Envelope</ogc:GeometryOperand>
+      <ogc:GeometryOperand>gml:ArcByCenterPoint</ogc:GeometryOperand>
+      <ogc:GeometryOperand>gml:CircleByCenterPoint</ogc:GeometryOperand>
+      <ogc:GeometryOperand>gml:Arc</ogc:GeometryOperand>
+      <ogc:GeometryOperand>gml:Circle</ogc:GeometryOperand>
+      <ogc:GeometryOperand>gml:ArcByBulge</ogc:GeometryOperand>
+    </ogc:GeometryOperands>
+    <ogc:SpatialOperators>
+      <ogc:SpatialOperator name="BBOX"/>
+      <ogc:SpatialOperator name="Disjoint"/>
+      <ogc:SpatialOperator name="Intersects"/>
+      <ogc:SpatialOperator name="Contains"/>
+      <ogc:SpatialOperator name="Overlaps"/>
+    </ogc:SpatialOperators>
+  </ogc:Spatial_Capabilities>
+  <ogc:Scalar_Capabilities>
+    <ogc:LogicalOperators/>
+    <ogc:ComparisonOperators>
+      <ogc:ComparisonOperator>LessThan</ogc:ComparisonOperator>
+      <ogc:ComparisonOperator>GreaterThan</ogc:ComparisonOperator>
+      <ogc:ComparisonOperator>LessThanEqualTo</ogc:ComparisonOperator>
+      <ogc:ComparisonOperator>GreaterThanEqualTo</ogc:ComparisonOperator>
+      <ogc:ComparisonOperator>EqualTo</ogc:ComparisonOperator>
+      <ogc:ComparisonOperator>NotEqualTo</ogc:ComparisonOperator>
+      <ogc:ComparisonOperator>Like</ogc:ComparisonOperator>
+      <ogc:ComparisonOperator>Between</ogc:ComparisonOperator>
+      <ogc:ComparisonOperator>NullCheck</ogc:ComparisonOperator>
+    </ogc:ComparisonOperators>
+    <ogc:ArithmeticOperators>
+      <ogc:SimpleArithmetic/>
+      <ogc:Functions>
+        <ogc:FunctionNames>
+          <ogc:FunctionName nArgs="1">MIN</ogc:FunctionName>
+          <ogc:FunctionName nArgs="1">MAX</ogc:FunctionName>
+          <ogc:FunctionName nArgs="1">SIN</ogc:FunctionName>
+          <ogc:FunctionName nArgs="1">COS</ogc:FunctionName>
+          <ogc:FunctionName nArgs="1">TAN</ogc:FunctionName>
+        </ogc:FunctionNames>
+      </ogc:Functions>
+    </ogc:ArithmeticOperators>
+  </ogc:Scalar_Capabilities>
+  <ogc:Id_Capabilities>
+    <ogc:EID/>
+    <ogc:FID/>
+  </ogc:Id_Capabilities>
+</ogc:Filter_Capabilities>
+</wfs:WFS_Capabilities>

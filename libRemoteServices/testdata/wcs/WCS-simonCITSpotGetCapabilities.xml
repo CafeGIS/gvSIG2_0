@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<WCS_Capabilities version="1.0.0" updateSequence="0" xmlns="http://www.opengis.net/wcs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wcs http://schemas.opengeospatial.net/wcs/1.0.0/wcsCapabilities.xsd">
+<Service>
+  <name>MapServer WCS</name>
+  <label>Servidor wcs simon</label>
+  <keywords>
+    <keyword>WCS</keyword>
+  </keywords>
+  <fees>NONE</fees>
+  <accessConstraints>
+    NONE
+  </accessConstraints>
+</Service>
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/inestable/spot.map&amp;"/></Get>
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/inestable/spot.map&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <DescribeCoverage>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/inestable/spot.map&amp;"/></Get>
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/inestable/spot.map&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </DescribeCoverage>
+    <GetCoverage>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/inestable/spot.map&amp;"/></Get>
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/inestable/spot.map&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCoverage>
+  </Request>
+  <Exception>
+    <Format>application/vnd.ogc.se_xml</Format>
+  </Exception>
+  <VendorSpecificCapabilities/>
+</Capability>
+<ContentMetadata>
+  <CoverageOfferingBrief>
+  <description>Spot 5</description>
+  <name>Spot</name>
+  <label>Spot</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-1.86475368381057 37.7142167257884</gml:pos>
+      <gml:pos>0.677809422798979 40.9142896237773</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./039_269/043_269_mer_orto.img</name>
+  <label>039_269</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.00322152239155749 40.0508119236423</gml:pos>
+      <gml:pos>0.546336923922881 40.6327661615988</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./039_270/039_270_mer_orto.img</name>
+  <label>039_270</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-1.54676197706921 39.4606972490718</gml:pos>
+      <gml:pos>-0.868435651917331 40.1294628581342</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./039_271/orto_merge_039_271.img</name>
+  <label>039_271</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-1.55664772339341 38.9844120265197</gml:pos>
+      <gml:pos>-1.00604599751678 39.6311355126439</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./040_268/orto_040_268_merge.img</name>
+  <label>040_268</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.882933131536222 40.4206286697068</gml:pos>
+      <gml:pos>0.042917112220084 40.8557286661707</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./040_269/040_269_mer_orto.img</name>
+  <label>040_269</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-1.06017669544974 39.9335886073308</gml:pos>
+      <gml:pos>-0.134746821581555 40.6209906108597</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./040_270/ortho40_270_merged.img</name>
+  <label>040_270</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-1.23314927175127 39.4500113294251</gml:pos>
+      <gml:pos>-0.316543057947295 40.1334195871412</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./040_271/040_271_mer_orto.img</name>
+  <label>040_271</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-1.40711287394984 38.9630942019202</gml:pos>
+      <gml:pos>-0.498591247901213 39.6452000314982</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./040_272/ortho040_272_pc.img</name>
+  <label>040_272</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-1.50661519738613 38.4858384680425</gml:pos>
+      <gml:pos>-0.660854303698855 39.1453819916464</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./040_273/ortho040_273.img</name>
+  <label>040_273</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-1.78560250629897 37.9946383011098</gml:pos>
+      <gml:pos>-0.890457811165821 38.6569004835813</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./041_268/ortho041_268.img</name>
+  <label>041_268</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.356449851947824 40.3956240488913</gml:pos>
+      <gml:pos>0.615718364079852 41.1332339337031</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./041_269/ortho041_269_pc.img</name>
+  <label>041_269</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.479653469782083 39.9492494682236</gml:pos>
+      <gml:pos>0.445247142510061 40.6096049622214</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./041_270/ortho041_270.img</name>
+  <label>041_270</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.662681099922943 39.4610007000431</gml:pos>
+      <gml:pos>0.202247054039875 40.1227571570735</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./041_272/orto_041_272_merge.img</name>
+  <label>041_272</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.93884828048088 38.4867392539068</gml:pos>
+      <gml:pos>-0.0710677786125404 39.1455128669135</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./041_273/ortho041_273_merged.img</name>
+  <label>041_273</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-1.13731938812606 37.9970045311446</gml:pos>
+      <gml:pos>-0.183220235614133 38.6589793948757</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./041_274/041_274_mer_orto.img</name>
+  <label>041_274</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-1.25887586160928 37.6979338310255</gml:pos>
+      <gml:pos>-0.622777299800351 38.1698074145459</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./042_271/orto_merge_042_271.img</name>
+  <label>042_271</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.804013057066019 38.9718975937575</gml:pos>
+      <gml:pos>0.218694462599702 39.6378615837972</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./043_268/043_268_ortho_merged.img</name>
+  <label>043_268</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.242968471591328 40.4967322631042</gml:pos>
+      <gml:pos>1.00471450204767 41.1066346476233</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./043_269/043_269_mer_orto.img</name>
+  <label>043_269</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.00322152239155749 40.0508119236423</gml:pos>
+      <gml:pos>0.546336923922881 40.6327661615988</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./043_272/merge_3_043_272.img</name>
+  <label>043_272</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.448386272181648 38.4482532754791</gml:pos>
+      <gml:pos>0.472227389196073 39.1897082589744</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>./043_273/ortho_043_273_merged.img</name>
+  <label>043_273</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.414198033729193 38.3348922719083</gml:pos>
+      <gml:pos>-0.0239423986897304 38.6577076893867</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+</ContentMetadata>
+</WCS_Capabilities>

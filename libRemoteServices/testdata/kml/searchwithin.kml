@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Folder><name>Latest entries on Placeopedia</name><description>The 50 latest additions to placeopedia.com</description>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/The_Sphinx_of_Egypt">Wikipedia article</a>.]]></description>
+	<name>The Sphinx of Egypt</name>
+	<LookAt>
+		<longitude>12.9630088806152</longitude>
+		<latitude>55.6287712569481</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>12.9630088806152,55.6287712569481,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/The_Sphinx_of_Egypt">Wikipedia article</a>.]]></description>
+	<name>The Sphinx of Egypt</name>
+	<LookAt>
+		<longitude>13.0074691772461</longitude>
+		<latitude>55.6224714786872</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>13.0074691772461,55.6224714786872,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Barabati_Stadium">Wikipedia article</a>.]]></description>
+	<name>Barabati Stadium</name>
+	<LookAt>
+		<longitude>85.8684593439102</longitude>
+		<latitude>20.4810093586788</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>85.8684593439102,20.4810093586788,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Hoher_Meissner_transmitter">Wikipedia article</a>.]]></description>
+	<name>Hoher Meissner transmitter</name>
+	<LookAt>
+		<longitude>9.8476767539978</longitude>
+		<latitude>51.2072497274211</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>9.8476767539978,51.2072497274211,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Mediumwave_transmitter_Mainflingen">Wikipedia article</a>.]]></description>
+	<name>Mediumwave transmitter Mainflingen</name>
+	<LookAt>
+		<longitude>8.97538483142853</longitude>
+		<latitude>50.0005432798678</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.97538483142853,50.0005432798678,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Weiskirchen_transmitter">Wikipedia article</a>.]]></description>
+	<name>Weiskirchen transmitter</name>
+	<LookAt>
+		<longitude>8.86245846748352</longitude>
+		<latitude>50.0554718115323</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.86245846748352,50.0554718115323,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Golden_gate_bridge">Wikipedia article</a>.]]></description>
+	<name>Golden gate bridge</name>
+	<LookAt>
+		<longitude>-122.478332519531</longitude>
+		<latitude>37.8162934802451</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-122.478332519531,37.8162934802451,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Asea_Brown_Boveri">Wikipedia article</a>.]]></description>
+	<name>Asea Brown Boveri</name>
+	<LookAt>
+		<longitude>8.95613193511963</longitude>
+		<latitude>50.0982297247924</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.95613193511963,50.0982297247924,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Samson_AG">Wikipedia article</a>.]]></description>
+	<name>Samson AG</name>
+	<LookAt>
+		<longitude>8.73416036367416</longitude>
+		<latitude>50.1170885719846</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.73416036367416,50.1170885719846,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Johann_Wolfgang_Goethe_University_of_Frankfurt_am_Main">Wikipedia article</a>.]]></description>
+	<name>Johann Wolfgang Goethe University of Frankfurt am Main</name>
+	<LookAt>
+		<longitude>8.65225374698639</longitude>
+		<latitude>50.1193398527015</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.65225374698639,50.1193398527015,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Senckenberg_Natural_History_Museum">Wikipedia article</a>.]]></description>
+	<name>Senckenberg Natural History Museum</name>
+	<LookAt>
+		<longitude>8.65215986967087</longitude>
+		<latitude>50.1174996234989</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.65215986967087,50.1174996234989,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Internationale_Automobil-Ausstellung">Wikipedia article</a>.]]></description>
+	<name>Internationale Automobil-Ausstellung</name>
+	<LookAt>
+		<longitude>8.64718437194824</longitude>
+		<latitude>50.1114143246192</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.64718437194824,50.1114143246192,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Commerzbank_Tower">Wikipedia article</a>.]]></description>
+	<name>Commerzbank Tower</name>
+	<LookAt>
+		<longitude>8.67458581924438</longitude>
+		<latitude>50.1108501311128</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.67458581924438,50.1108501311128,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/R%C3%BCsselsheim">Wikipedia article</a>.]]></description>
+	<name>Rüsselsheim</name>
+	<LookAt>
+		<longitude>8.41319918632507</longitude>
+		<latitude>49.9930291902804</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.41319918632507,49.9930291902804,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Opel">Wikipedia article</a>.]]></description>
+	<name>Opel</name>
+	<LookAt>
+		<longitude>8.3924388885498</longitude>
+		<latitude>49.9895872830961</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.3924388885498,49.9895872830961,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Vennesla">Wikipedia article</a>.]]></description>
+	<name>Vennesla</name>
+	<LookAt>
+		<longitude>7.96978712081909</longitude>
+		<latitude>58.2698103923775</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>7.96978712081909,58.2698103923775,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Bengtsfors">Wikipedia article</a>.]]></description>
+	<name>Bengtsfors</name>
+	<LookAt>
+		<longitude>12.227783203125</longitude>
+		<latitude>59.0279242565678</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>12.227783203125,59.0279242565678,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Angelholm">Wikipedia article</a>.]]></description>
+	<name>Angelholm</name>
+	<LookAt>
+		<longitude>12.8624153137207</longitude>
+		<latitude>56.2437791610249</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>12.8624153137207,56.2437791610249,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Volvo">Wikipedia article</a>.]]></description>
+	<name>Volvo</name>
+	<LookAt>
+		<longitude>11.8357086181641</longitude>
+		<latitude>57.7250527094531</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>11.8357086181641,57.7250527094531,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Gifhorn">Wikipedia article</a>.]]></description>
+	<name>Gifhorn</name>
+	<LookAt>
+		<longitude>10.5484628677368</longitude>
+		<latitude>52.4847142019527</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>10.5484628677368,52.4847142019527,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Gifhorn_(district)">Wikipedia article</a>.]]></description>
+	<name>Gifhorn (district)</name>
+	<LookAt>
+		<longitude>10.5461883544922</longitude>
+		<latitude>52.487170756492</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>10.5461883544922,52.487170756492,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Phaeno_Science_Center">Wikipedia article</a>.]]></description>
+	<name>Phaeno Science Center</name>
+	<LookAt>
+		<longitude>10.7899045944214</longitude>
+		<latitude>52.4288821024602</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>10.7899045944214,52.4288821024602,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Autostadt">Wikipedia article</a>.]]></description>
+	<name>Autostadt</name>
+	<LookAt>
+		<longitude>10.7938098907471</longitude>
+		<latitude>52.4328593749091</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>10.7938098907471,52.4328593749091,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Volkswagen_Arena">Wikipedia article</a>.]]></description>
+	<name>Volkswagen Arena</name>
+	<LookAt>
+		<longitude>10.8016955852509</longitude>
+		<latitude>52.4322771979116</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>10.8016955852509,52.4322771979116,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Volkswagen">Wikipedia article</a>.]]></description>
+	<name>Volkswagen</name>
+	<LookAt>
+		<longitude>10.7776737213135</longitude>
+		<latitude>52.4344554162235</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>10.7776737213135,52.4344554162235,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Dunlop_Tyres">Wikipedia article</a>.]]></description>
+	<name>Dunlop Tyres</name>
+	<LookAt>
+		<longitude>8.94227027893066</longitude>
+		<latitude>50.121321029742</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>8.94227027893066,50.121321029742,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Bragan%C3%A7a%2C_Portugal">Wikipedia article</a>.]]></description>
+	<name>Bragança, Portugal</name>
+	<LookAt>
+		<longitude>-6.76774978637695</longitude>
+		<latitude>41.7970398866702</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-6.76774978637695,41.7970398866702,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Qasr_al-Hosn">Wikipedia article</a>.]]></description>
+	<name>Qasr al-Hosn</name>
+	<LookAt>
+		<longitude>54.3548154830933</longitude>
+		<latitude>24.4823934915118</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>54.3548154830933,24.4823934915118,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Arzamas">Wikipedia article</a>.]]></description>
+	<name>Arzamas</name>
+	<LookAt>
+		<longitude>43.8224029541016</longitude>
+		<latitude>55.3974415286888</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>43.8224029541016,55.3974415286888,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Anticosti_Island">Wikipedia article</a>.]]></description>
+	<name>Anticosti Island</name>
+	<LookAt>
+		<longitude>-62.9296875</longitude>
+		<latitude>49.3823727870096</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-62.9296875,49.3823727870096,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Rathenow">Wikipedia article</a>.]]></description>
+	<name>Rathenow</name>
+	<LookAt>
+		<longitude>12.337474822998</longitude>
+		<latitude>52.6058623477012</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>12.337474822998,52.6058623477012,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Azure_Solutions">Wikipedia article</a>.]]></description>
+	<name>Azure Solutions</name>
+	<LookAt>
+		<longitude>-0.0901758670806885</longitude>
+		<latitude>51.5226764290955</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-0.0901758670806885,51.5226764290955,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Schweriner_See">Wikipedia article</a>.]]></description>
+	<name>Schweriner See</name>
+	<LookAt>
+		<longitude>11.4800262451172</longitude>
+		<latitude>53.7454624107403</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>11.4800262451172,53.7454624107403,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/St._George's_Hall%2C_Liverpool">Wikipedia article</a>.]]></description>
+	<name>St. George's Hall, Liverpool</name>
+	<LookAt>
+		<longitude>-2.98038482666016</longitude>
+		<latitude>53.4085469553325</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-2.98038482666016,53.4085469553325,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Toxteth">Wikipedia article</a>.]]></description>
+	<name>Toxteth</name>
+	<LookAt>
+		<longitude>-2.97480583190918</longitude>
+		<latitude>53.3875261046533</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-2.97480583190918,53.3875261046533,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/The_National_Art_Center%2C_Tokyo">Wikipedia article</a>.]]></description>
+	<name>The National Art Center, Tokyo</name>
+	<LookAt>
+		<longitude>139.726341962814</longitude>
+		<latitude>35.6652809642413</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>139.726341962814,35.6652809642413,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Harpenden%2C_England">Wikipedia article</a>.]]></description>
+	<name>Harpenden, England</name>
+	<LookAt>
+		<longitude>-0.354480743408203</longitude>
+		<latitude>51.8144518843551</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-0.354480743408203,51.8144518843551,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Herlev">Wikipedia article</a>.]]></description>
+	<name>Herlev</name>
+	<LookAt>
+		<longitude>12.4325752258301</longitude>
+		<latitude>55.7254183488036</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>12.4325752258301,55.7254183488036,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Scunthorpe">Wikipedia article</a>.]]></description>
+	<name>Scunthorpe</name>
+	<LookAt>
+		<longitude>-0.6591796875</longitude>
+		<latitude>53.5566260048246</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-0.6591796875,53.5566260048246,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Southwark_Street">Wikipedia article</a>.]]></description>
+	<name>Southwark Street</name>
+	<LookAt>
+		<longitude>-0.097503662109375</longitude>
+		<latitude>51.5051097125178</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-0.097503662109375,51.5051097125178,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Play.com">Wikipedia article</a>.]]></description>
+	<name>Play.com</name>
+	<LookAt>
+		<longitude>-2.10207939147949</longitude>
+		<latitude>49.1898378405126</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-2.10207939147949,49.1898378405126,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Channel_Television">Wikipedia article</a>.]]></description>
+	<name>Channel Television</name>
+	<LookAt>
+		<longitude>-2.10233688354492</longitude>
+		<latitude>49.1964005276006</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-2.10233688354492,49.1964005276006,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Cenacle">Wikipedia article</a>.]]></description>
+	<name>Cenacle</name>
+	<LookAt>
+		<longitude>35.229012966156</longitude>
+		<latitude>31.7717764817998</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>35.229012966156,31.7717764817998,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/States_of_Jersey">Wikipedia article</a>.]]></description>
+	<name>States of Jersey</name>
+	<LookAt>
+		<longitude>-2.10765838623047</longitude>
+		<latitude>49.181535074563</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-2.10765838623047,49.181535074563,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/BBC_Radio_Jersey">Wikipedia article</a>.]]></description>
+	<name>BBC Radio Jersey</name>
+	<LookAt>
+		<longitude>-2.10817337036133</longitude>
+		<latitude>49.1870891060557</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-2.10817337036133,49.1870891060557,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Tring_Park">Wikipedia article</a>.]]></description>
+	<name>Tring Park</name>
+	<LookAt>
+		<longitude>-0.65669059753418</longitude>
+		<latitude>51.7864267537299</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-0.65669059753418,51.7864267537299,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/The_Arts_Educational_School%2C_Tring_Park">Wikipedia article</a>.]]></description>
+	<name>The Arts Educational School, Tring Park</name>
+	<LookAt>
+		<longitude>-0.656347274780273</longitude>
+		<latitude>51.7928507181446</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-0.656347274780273,51.7928507181446,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Tring_Brewery">Wikipedia article</a>.]]></description>
+	<name>Tring Brewery</name>
+	<LookAt>
+		<longitude>-0.662269592285156</longitude>
+		<latitude>51.7920544085999</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-0.662269592285156,51.7920544085999,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Walter_Rothschild_Zoological_Museum">Wikipedia article</a>.]]></description>
+	<name>Walter Rothschild Zoological Museum</name>
+	<LookAt>
+		<longitude>-0.660295486450195</longitude>
+		<latitude>51.7930099783663</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-0.660295486450195,51.7930099783663,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<description><![CDATA[<a href="http://en.wikipedia.org/wiki/English_Channel">Wikipedia article</a>.]]></description>
+	<name>English Channel</name>
+	<LookAt>
+		<longitude>-0.17578125</longitude>
+		<latitude>50.2542298823062</latitude>
+		<range>0</range>
+		<tilt>0</tilt>
+		<heading>3</heading>
+	</LookAt>
+	<Point>
+		<coordinates>-0.17578125,50.2542298823062,0</coordinates>
+	</Point>
+</Placemark>
+</Folder>
+</kml>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://schemas.opengis.net/wms/1.1.1/WMS_MS_Capabilities.dtd"
+ [
+ <!ELEMENT VendorSpecificCapabilities EMPTY>
+ ]>  <!-- end of DOCTYPE declaration -->
+
+<WMT_MS_Capabilities version="1.1.1">
+
+<!-- MapServer version 4.10.1 OUTPUT=GIF OUTPUT=PNG OUTPUT=JPEG OUTPUT=WBMP OUTPUT=PDF OUTPUT=SWF OUTPUT=SVG SUPPORTS=PROJ SUPPORTS=FREETYPE SUPPORTS=WMS_SERVER SUPPORTS=WMS_CLIENT SUPPORTS=WFS_SERVER SUPPORTS=WFS_CLIENT SUPPORTS=WCS_SERVER SUPPORTS=SOS_SERVER SUPPORTS=FASTCGI SUPPORTS=THREADS SUPPORTS=GEOS INPUT=JPEG INPUT=SDE INPUT=POSTGIS INPUT=OGR INPUT=GDAL INPUT=SHAPEFILE DEBUG=MSDEBUG -->
+
+<Service>
+  <Name>OGC:WMS</Name>
+  <Title>WMS Server</Title>
+  <Abstract>CHG WMS Server</Abstract>
+        <KeywordList>
+          <Keyword>WMS</Keyword>
+          <Keyword> Servidor de mapas en red</Keyword>
+        </KeywordList>
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/>
+  <ContactInformation>
+    <ContactAddress>
+<!-- WARNING: Mandatory metadata '..._addresstype' was missing in this context. -->
+        <Address>Avda. de Portugal s/n</Address>
+        <City>Sevilla</City>
+        <StateOrProvince>Sevilla</StateOrProvince>
+        <PostCode>41004</PostCode>
+        <Country>Spain</Country>
+    </ContactAddress>
+  </ContactInformation>
+</Service>
+
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <Format>application/vnd.ogc.wms_xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <GetMap>
+      <Format>image/jpeg</Format>
+      <Format>image/gif</Format>
+      <Format>image/png</Format>
+      <Format>image/png; mode=24bit</Format>
+      <Format>image/wbmp</Format>
+      <Format>image/tiff</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetMap>
+    <GetFeatureInfo>
+      <Format>text/plain</Format>
+      <Format>application/vnd.ogc.gml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetFeatureInfo>
+    <DescribeLayer>
+      <Format>text/xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </DescribeLayer>
+    <GetLegendGraphic>
+      <Format>image/jpeg</Format>
+      <Format>image/gif</Format>
+      <Format>image/png</Format>
+      <Format>image/png; mode=24bit</Format>
+      <Format>image/wbmp</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetLegendGraphic>
+    <GetStyles>
+      <Format>text/xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sanlucar:81/cgi-bin/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetStyles>
+  </Request>
+  <Exception>
+    <Format>application/vnd.ogc.se_xml</Format>
+    <Format>application/vnd.ogc.se_inimage</Format>
+    <Format>application/vnd.ogc.se_blank</Format>
+  </Exception>
+  <VendorSpecificCapabilities />
+  <UserDefinedSymbolization SupportSLD="1" UserLayer="0" UserStyle="1" RemoteWFS="0"/>
+  <Layer>
+    <Name>CHG</Name>
+    <Title>WMS Server</Title>
+    <SRS>epsg:23030</SRS>
+    <LatLonBoundingBox minx="-6.84474" miny="36.6506" maxx="-2.09263" maxy="38.5449" />
+    <BoundingBox SRS="EPSG:23030"
+                minx="164590" miny="4.06274e+006" maxx="579080" maxy="4.26635e+006" />
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>time_idx</Name>
+        <Title>TIME INDEX</Title>
+        <SRS>EPSG:23030</SRS>
+        <LatLonBoundingBox minx="-6.8471" miny="36.682" maxx="-2.16907" maxy="38.75" />
+        <BoundingBox SRS="EPSG:23030"
+                    minx="165338" miny="4.0662e+006" maxx="572211" maxy="4.2891e+006" />
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">2004-01-01/2004-12-1/15D</Extent>
+    </Layer>
+    <Layer>
+      <Name>NDVI</Name>
+      <Title>NDVI</Title>
+      <Abstract>NDVI</Abstract>
+      <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>NDVI</Name>
+        <Title>NDVI</Title>
+        <SRS>EPSG:23030</SRS>
+        <LatLonBoundingBox minx="-6.8471" miny="36.682" maxx="-2.16907" maxy="38.75" />
+        <BoundingBox SRS="EPSG:23030"
+                    minx="165338" miny="4.0662e+006" maxx="572211" maxy="4.2891e+006" />
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" default="2004-01-01" nearestValue="0">2004-01-01/2004-12-1/15D</Extent>
+      </Layer>
+    </Layer>
+  </Layer>
+</Capability>
+</WMT_MS_Capabilities>

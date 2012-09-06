@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WCS_Capabilities version="1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wcs http://schemas.opengis.net/wcs/1.0.0/wcsCapabilities.xsd" xmlns="http://www.opengis.net/wcs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml">
+    <Service>
+      <description>
+      AST_L1B Data
+      </description>
+      <name>AST_L1B</name>
+      <label>AST_L1B Coverage Server</label>
+      <keywords>
+        <keyword>Nasa</keyword>
+        <keyword>Terra</keyword>
+        <keyword>ASTER</keyword>
+        <keyword>AST_L1B</keyword>
+        <keyword>Coverage</keyword>
+      </keywords>
+      <responsibleParty>
+        <individualName>Luc Donea</individualName>
+        <organisationName>Ionic Software s.a.</organisationName>
+        <contactInfo>
+          <phone>
+            <voice>+32 4 364 0 364</voice>
+          </phone>
+          <address>
+            <deliveryPoint>Rue de Wallonie, 18</deliveryPoint>
+            <city>Grace-Hollogne</city>
+            <administrativeArea>Liege</administrativeArea>
+            <postalCode>4460</postalCode>
+            <country>Belgium</country>
+            <electronicMailAddress>ld@ionicsoft.com</electronicMailAddress>
+          </address>
+          <onlineResource xlink:href="http://www.ionicsoft.com" xlink:type="simple"/>
+        </contactInfo>
+      </responsibleParty>
+      <fees>none</fees>
+      <accessConstraints>none</accessConstraints>
+    </Service>
+    <Capability>
+      <Request>
+        <GetCapabilities>
+          <DCPType>
+            <HTTP>
+              <Get>
+                <OnlineResource xlink:href="http://www.ionicsoft.com:8080/wcs/coverage/ASTER?" xlink:type="simple"/>
+              </Get>
+              <Post>
+                <OnlineResource xlink:href="http://www.ionicsoft.com:8080/wcs/coverage/ASTER?" xlink:type="simple"/>
+              </Post>
+            </HTTP>
+          </DCPType>
+        </GetCapabilities>
+        <DescribeCoverage>
+          <DCPType>
+            <HTTP>
+              <Get>
+                <OnlineResource xlink:href="http://www.ionicsoft.com:8080/wcs/coverage/ASTER?" xlink:type="simple"/>
+              </Get>
+              <Post>
+                <OnlineResource xlink:href="http://www.ionicsoft.com:8080/wcs/coverage/ASTER?" xlink:type="simple"/>
+              </Post>
+            </HTTP>
+          </DCPType>
+        </DescribeCoverage>
+        <GetCoverage>
+          <DCPType>
+            <HTTP>
+              <Get>
+                <OnlineResource xlink:href="http://www.ionicsoft.com:8080/wcs/coverage/ASTER?" xlink:type="simple"/>
+              </Get>
+              <Post>
+                <OnlineResource xlink:href="http://www.ionicsoft.com:8080/wcs/coverage/ASTER?" xlink:type="simple"/>
+              </Post>
+            </HTTP>
+          </DCPType>
+        </GetCoverage>
+      </Request>
+      <Exception>
+        <Format>application/vnd.ogc.se_xml</Format>
+      </Exception>
+      <VendorSpecificCapabilities>
+        <supportDataSrs/>
+      </VendorSpecificCapabilities>
+    </Capability>
+    <ContentMetadata>
+      <CoverageOfferingBrief>
+        <description>
+        Coverage Data
+        </description>
+        <name>VNIR_Swath</name>
+        <label>0 / VNIR_Swath</label>
+        <lonLatEnvelope srsName="WGS84(DD)">
+          <gml:pos>-87.052103 34.541414</gml:pos>
+          <gml:pos>-86.310148 35.082561</gml:pos>
+        </lonLatEnvelope>
+      </CoverageOfferingBrief>
+      <CoverageOfferingBrief>
+        <description>
+        Coverage Data
+        </description>
+        <name>SWIR_Swath</name>
+        <label>1 / SWIR_Swath</label>
+        <lonLatEnvelope srsName="WGS84(DD)">
+          <gml:pos>-87.052048 34.541351</gml:pos>
+          <gml:pos>-86.310093 35.082498</gml:pos>
+        </lonLatEnvelope>
+      </CoverageOfferingBrief>
+      <CoverageOfferingBrief>
+        <description>
+        Coverage Data
+        </description>
+        <name>TIR_Swath</name>
+        <label>2 / TIR_Swath</label>
+        <lonLatEnvelope srsName="WGS84(DD)">
+          <gml:pos>-87.051827 34.541099</gml:pos>
+          <gml:pos>-86.309874 35.082247</gml:pos>
+        </lonLatEnvelope>
+      </CoverageOfferingBrief>
+    </ContentMetadata>
+  </WCS_Capabilities>

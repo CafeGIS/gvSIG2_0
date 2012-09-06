@@ -1,0 +1,255 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:deegreewfs="http://www.deegree.org/wfs" xmlns:gml="http://www.opengis.net/gml" xmlns:ideewfs="http://www.idee.es/wfs" xmlns:ogc="http://www.opengis.net/ogc" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.idee.es/wfs">
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/feature.xsd"/>
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/geometryAggregates.xsd"/>
+	<!-- configuration for the persistence backend to be used -->
+	
+	<!-- ============================================================== -->
+	<xsd:element name="VerticeRedOrdenInferior" substitutionGroup="gml:_Feature" type="ideewfs:VerticeED50Type">
+		
+	</xsd:element>
+	<xsd:element name="VerticeRedIberia95" substitutionGroup="gml:_Feature" type="ideewfs:VerticeETRS89Type">
+		
+	</xsd:element>
+	<xsd:element name="VerticeRedRegente" substitutionGroup="gml:_Feature" type="ideewfs:VerticeETRS89Type">
+		
+	</xsd:element>
+	<xsd:element name="VerticeRedBalear98" substitutionGroup="gml:_Feature" type="ideewfs:VerticeETRS89Type">
+		
+	</xsd:element>
+	<xsd:element name="VerticeRedRegenteCanarias95" substitutionGroup="gml:_Feature" type="ideewfs:VerticeITRS93Type">
+		
+	</xsd:element>
+		
+	<xsd:complexType name="VerticeED50Type">
+		<xsd:complexContent>
+			<xsd:extension base="ideewfs:VerticeGeodesicoType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="alturaOrtometrica" type="xsd:string">
+						
+					</xsd:element>
+				</xsd:sequence>				
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>				
+	<xsd:complexType name="VerticeETRS89Type">
+		<xsd:complexContent>
+			<xsd:extension base="ideewfs:VerticeGeodesicoType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="alturaElipsoidal" type="xsd:string">
+						
+					</xsd:element>
+				</xsd:sequence>				
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>				
+	<xsd:complexType name="VerticeITRS93Type">
+		<xsd:complexContent>
+			<xsd:extension base="ideewfs:VerticeGeodesicoType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="alturaElipsoidal" type="xsd:string">
+						
+					</xsd:element>
+				</xsd:sequence>				
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>			
+	<xsd:complexType name="VerticeGeodesicoType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="nombre" type="xsd:string">
+						
+					</xsd:element>
+
+					<xsd:element maxOccurs="1" minOccurs="0" name="numeroROI" type="xsd:string">
+						
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="husoUTM" type="xsd:string">
+						
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="xUTM" type="xsd:string">
+						
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="yUTM" type="xsd:string">
+						
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="longitud" type="xsd:string">
+						
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="latitud" type="xsd:string">
+						
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="factorEscala" type="xsd:string">
+						
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="convergencia" type="xsd:string">
+						
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="fechaCompensacion" type="xsd:date">
+						
+					</xsd:element>
+					<!--xsd:element name="hojaMTN" type="xsd:integer" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="HOJA_MTN" type="INTEGER" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="situacion" type="xsd:string" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="SITUACION" type="VARCHAR" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="observaciones" type="xsd:string" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="OBSERVACIONES" type="VARCHAR" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="fechaConstruccion" type="xsd:string" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="FECHA_DE_CONSTRUCCIóN" type="VARCHAR" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="centradoForzado" type="xsd:string" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="CENTRADO_FORZADO" type="VARCHAR" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="numeroDeCuerpos" type="xsd:integer" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="NUMERO_DE_CUERPOS" type="INTEGER" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="alturaPilar" type="xsd:float" minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="ALTURA_PILAR" type="FLOAT" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="diametroPilar" type="xsd:float" minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="DIAMETRO_PILAR" type="FLOAT" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="altoUltimoCuerpo" type="xsd:float" minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="ALTO_ULTIMO_CUERPO" type="FLOAT" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="anchoUltimoCuerpo" type="xsd:float" minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="ANCHO_ULTIMO_CUERPO" type="FLOAT" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="alturaTotalCuerpos" type="xsd:float" minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="ALTURA_TOTAL_DE_LOS_CUERPOS" type="FLOAT" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="horizonteGPS" type="xsd:string" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="HORIZONTE_GPS" type="VARCHAR" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="codINEMunicipio" type="xsd:integer" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="ID_INE" type="INTEGER" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="nombreMunicipio" type="xsd:string" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="NOMBRE_MUNICIPIO" type="VARCHAR" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="nombreProvincia" type="xsd:string" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="NOMBRE_DE_LA_PROVINCIA" type="VARCHAR" />
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element-->
+
+					<xsd:element name="geometria" type="gml:GeometryPropertyType">
+						
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+
+	</xsd:complexType>
+</xsd:schema>

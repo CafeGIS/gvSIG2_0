@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://216.229.5.245/tntserver/MII_GVwhs" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wfs="http://www.opengis.net/wfs" xmlns:MII_GVwhs="http://216.229.5.245/tntserver/MII_GVwhs" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" elementFormDefault="qualified" version="0.1">
+
+  <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+
+  <xsd:simpleType name="colorValueType">
+    <xsd:restriction base="unsignedByte"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="colorValueListType">
+    <xsd:list itemType="MII_GVwhs:colorValueType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="colorRGBAType">
+    <xsd:restriction base="MII_GVwhs:colorValueListType">
+      <xsd:minLength value="3"/>
+      <xsd:maxLength value="4"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="colorUnionType">
+    <xsd:union memberTypes="xsd:string MII_GVwhs:colorRGBAType"/>
+  </xsd:simpleType>
+
+  <xsd:element name="World_polbndl" type="MII_GVwhs:World_polbndl_Type" substitutionGroup="gml:_Feature"/>
+
+  <xsd:complexType name="World_polbndl_Type">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element ref="gml:curveProperty" minOccurs="0"/>
+          <xsd:element name="BST" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="USE" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="USEDESC" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="ACCDESC" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="F_CODE" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="F_CODEDESC" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="BSTDESC" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="ACC" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LINESTATS.Length" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LINESTATS.DistSE" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LINESTATS.CentX" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LINESTATS.CentY" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LINESTATS.CentZ" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LINESTATS.LengthXY" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LINESTATS.MidDistPtX" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LINESTATS.MidDistPtY" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LINESTATS.MidDistPtZ" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+</xs:schema>

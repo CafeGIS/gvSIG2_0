@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding="ISO-8859-1" ?>
+<schema
+   targetNamespace="http://www.ttt.org/myns" 
+   xmlns:myns="http://www.ttt.org/myns" 
+   xmlns:ogc="http://www.opengis.net/ogc"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns="http://www.w3.org/2001/XMLSchema"
+   xmlns:gml="http://www.opengis.net/gml"
+   elementFormDefault="qualified" version="0.1" >
+
+  <import namespace="http://www.opengis.net/gml"
+          schemaLocation="http://schemas.opengeospatial.net/gml/2.1.2/feature.xsd" />
+
+  <element name="popplace" 
+           type="myns:popplaceType" 
+           substitutionGroup="gml:_Feature" />
+
+  <complexType name="popplaceType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="msGeometry" type="gml:GeometryPropertyType" minOccurs="0" maxOccurs="1"/>
+          <element name="AREA" type="string"/>
+          <element name="PERIMETER" type="string"/>
+          <element name="POPPLACE_" type="string"/>
+          <element name="POPPLACE_I" type="string"/>
+          <element name="UNIQUE_KEY" type="string"/>
+          <element name="NAME" type="string"/>
+          <element name="NAME_E" type="string"/>
+          <element name="NAME_F" type="string"/>
+          <element name="REG_CODE" type="string"/>
+          <element name="NTS50" type="string"/>
+          <element name="LAT" type="string"/>
+          <element name="LONG" type="string"/>
+          <element name="SGC_CODE" type="string"/>
+          <element name="CAPITAL" type="string"/>
+          <element name="POP_RANGE" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+</schema>

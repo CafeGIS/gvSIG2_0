@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CoverageDescription version="1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wcs http://schemas.opengis.net/wcs/1.0.0/describeCoverage.xsd" xmlns="http://www.opengis.net/wcs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml">
+    <CoverageOffering>
+      <description>
+      Coverage Data
+      </description>
+      <name>VNIR_Swath</name>
+      <label>0 / VNIR_Swath</label>
+      <lonLatEnvelope srsName="WGS84(DD)">
+        <gml:pos>-87.052103 34.541414</gml:pos>
+        <gml:pos>-86.310148 35.082561</gml:pos>
+      </lonLatEnvelope>
+      <domainSet>
+        <spatialDomain>
+          <gml:Envelope srsName="EPSG:4326">
+            <gml:pos>-87.052103 34.541414</gml:pos>
+            <gml:pos>-86.310148 35.082561</gml:pos>
+          </gml:Envelope>
+          <gml:RectifiedGrid dimension="2" srsName="EPSG:4326">
+            <gml:limits>
+              <gml:GridEnvelope>
+                <gml:low>0 0</gml:low>
+                <gml:high>4980 4200</gml:high>
+              </gml:GridEnvelope>
+            </gml:limits>
+            <gml:axisName>X</gml:axisName>
+            <gml:axisName>Y</gml:axisName>
+            <gml:origin srsName="EPSG:4326">
+              <gml:pos>-87.052103 35.082561</gml:pos>
+            </gml:origin>
+            <gml:offsetVector>1.5E-4 0</gml:offsetVector>
+            <gml:offsetVector>0 -1.3E-4</gml:offsetVector>
+          </gml:RectifiedGrid>
+        </spatialDomain>
+        <temporalDomain>
+          <gml:timePosition>2003-06-08T16:36:15Z</gml:timePosition>
+        </temporalDomain>
+      </domainSet>
+      <rangeSet>
+        <RangeSet>
+          <name>Range Set</name>
+          <label>Range Set Description</label>
+          <axisDescription>
+            <AxisDescription>
+              <name>Fields</name>
+              <label>Field Sequence</label>
+              <values>
+                <singleValue>ImageData1</singleValue>
+                <singleValue>ImageData2</singleValue>
+                <singleValue>ImageData3N</singleValue>
+                <singleValue>ImageData3B</singleValue>
+              </values>
+            </AxisDescription>
+          </axisDescription>
+          <axisDescription>
+            <AxisDescription>
+              <description>
+              percent of area that is covered with clouds
+              </description>
+              <name>Cloud</name>
+              <label>Percent of Cloud Cover</label>
+              <values>
+                <singleValue>3.0</singleValue>
+              </values>
+            </AxisDescription>
+          </axisDescription>
+          <nullValues>
+            <singleValue>0</singleValue>
+          </nullValues>
+        </RangeSet>
+      </rangeSet>
+      <supportedCRSs>
+        <requestResponseCRSs>EPSG:4326
+        </requestResponseCRSs>
+        <requestResponseCRSs>Image</requestResponseCRSs>
+        <nativeCRSs>EPSG:4326</nativeCRSs>
+      </supportedCRSs>
+      <supportedFormats>
+        <formats>GeoTIFF</formats>
+        <formats>HDF-EOS</formats>
+      </supportedFormats>
+      <supportedInterpolations>
+        <interpolationMethod>nearest neighbor</interpolationMethod>
+        <interpolationMethod>bilinear</interpolationMethod>
+        <interpolationMethod>bicubic</interpolationMethod>
+      </supportedInterpolations>
+    </CoverageOffering>
+    <CoverageOffering>
+      <description>
+      Coverage Data
+      </description>
+      <name>SWIR_Swath</name>
+      <label>1 / SWIR_Swath</label>
+      <lonLatEnvelope srsName="WGS84(DD)">
+        <gml:pos>-87.052048 34.541351</gml:pos>
+        <gml:pos>-86.310093 35.082498</gml:pos>
+      </lonLatEnvelope>
+      <domainSet>
+        <spatialDomain>
+          <gml:Envelope srsName="EPSG:4326">
+            <gml:pos>-87.052048 34.541351</gml:pos>
+            <gml:pos>-86.310093 35.082498</gml:pos>
+          </gml:Envelope>
+          <gml:RectifiedGrid dimension="2" srsName="EPSG:4326">
+            <gml:limits>
+              <gml:GridEnvelope>
+                <gml:low>0 0</gml:low>
+                <gml:high>2490 2100</gml:high>
+              </gml:GridEnvelope>
+            </gml:limits>
+            <gml:axisName>X</gml:axisName>
+            <gml:axisName>Y</gml:axisName>
+            <gml:origin srsName="EPSG:4326">
+              <gml:pos>-87.052048 35.082498</gml:pos>
+            </gml:origin>
+            <gml:offsetVector>3.0E-4 0</gml:offsetVector>
+            <gml:offsetVector>0 -2.6E-4</gml:offsetVector>
+          </gml:RectifiedGrid>
+        </spatialDomain>
+        <temporalDomain>
+          <gml:timePosition>2003-06-08T16:36:15Z</gml:timePosition>
+        </temporalDomain>
+      </domainSet>
+      <rangeSet>
+        <RangeSet>
+          <name>Range Set</name>
+          <label>Range Set Description</label>
+          <axisDescription>
+            <AxisDescription>
+              <name>Fields</name>
+              <label>Field Sequence</label>
+              <values>
+                <singleValue>ImageData4</singleValue>
+                <singleValue>ImageData5</singleValue>
+                <singleValue>ImageData6</singleValue>
+                <singleValue>ImageData7</singleValue>
+                <singleValue>ImageData8</singleValue>
+                <singleValue>ImageData9</singleValue>
+              </values>
+            </AxisDescription>
+          </axisDescription>
+          <axisDescription>
+            <AxisDescription>
+              <description>
+              percent of area that is covered with clouds
+              </description>
+              <name>Cloud</name>
+              <label>Percent of Cloud Cover</label>
+              <values>
+                <singleValue>3.0</singleValue>
+              </values>
+            </AxisDescription>
+          </axisDescription>
+          <nullValues>
+            <singleValue>0</singleValue>
+          </nullValues>
+        </RangeSet>
+      </rangeSet>
+      <supportedCRSs>
+        <requestResponseCRSs>EPSG:4326
+        </requestResponseCRSs>
+        <requestResponseCRSs>Image</requestResponseCRSs>
+        <nativeCRSs>EPSG:4326</nativeCRSs>
+      </supportedCRSs>
+      <supportedFormats>
+        <formats>GeoTIFF</formats>
+        <formats>HDF-EOS</formats>
+      </supportedFormats>
+      <supportedInterpolations>
+        <interpolationMethod>nearest neighbor</interpolationMethod>
+        <interpolationMethod>bilinear</interpolationMethod>
+        <interpolationMethod>bicubic</interpolationMethod>
+      </supportedInterpolations>
+    </CoverageOffering>
+    <CoverageOffering>
+      <description>
+      Coverage Data
+      </description>
+      <name>TIR_Swath</name>
+      <label>2 / TIR_Swath</label>
+      <lonLatEnvelope srsName="WGS84(DD)">
+        <gml:pos>-87.051827 34.541099</gml:pos>
+        <gml:pos>-86.309874 35.082247</gml:pos>
+      </lonLatEnvelope>
+      <domainSet>
+        <spatialDomain>
+          <gml:Envelope srsName="EPSG:4326">
+            <gml:pos>-87.051827 34.541099</gml:pos>
+            <gml:pos>-86.309874 35.082247</gml:pos>
+          </gml:Envelope>
+          <gml:RectifiedGrid dimension="2" srsName="EPSG:4326">
+            <gml:limits>
+              <gml:GridEnvelope>
+                <gml:low>0 0</gml:low>
+                <gml:high>830 700</gml:high>
+              </gml:GridEnvelope>
+            </gml:limits>
+            <gml:axisName>X</gml:axisName>
+            <gml:axisName>Y</gml:axisName>
+            <gml:origin srsName="EPSG:4326">
+              <gml:pos>-87.051827 35.082247</gml:pos>
+            </gml:origin>
+            <gml:offsetVector>8.9E-4 0</gml:offsetVector>
+            <gml:offsetVector>0 -7.7E-4</gml:offsetVector>
+          </gml:RectifiedGrid>
+        </spatialDomain>
+        <temporalDomain>
+          <gml:timePosition>2003-06-08T16:36:15Z</gml:timePosition>
+        </temporalDomain>
+      </domainSet>
+      <rangeSet>
+        <RangeSet>
+          <name>Range Set</name>
+          <label>Range Set Description</label>
+          <axisDescription>
+            <AxisDescription>
+              <name>Fields</name>
+              <label>Field Sequence</label>
+              <values>
+                <singleValue>ImageData10</singleValue>
+                <singleValue>ImageData11</singleValue>
+                <singleValue>ImageData12</singleValue>
+                <singleValue>ImageData13</singleValue>
+                <singleValue>ImageData14</singleValue>
+              </values>
+            </AxisDescription>
+          </axisDescription>
+          <axisDescription>
+            <AxisDescription>
+              <description>
+              percent of area that is covered with clouds
+              </description>
+              <name>Cloud</name>
+              <label>Percent of Cloud Cover</label>
+              <values>
+                <singleValue>3.0</singleValue>
+              </values>
+            </AxisDescription>
+          </axisDescription>
+          <nullValues>
+            <singleValue>0</singleValue>
+          </nullValues>
+        </RangeSet>
+      </rangeSet>
+      <supportedCRSs>
+        <requestResponseCRSs>EPSG:4326
+        </requestResponseCRSs>
+        <requestResponseCRSs>Image</requestResponseCRSs>
+        <nativeCRSs>EPSG:4326</nativeCRSs>
+      </supportedCRSs>
+      <supportedFormats>
+        <formats>GeoTIFF</formats>
+        <formats>HDF-EOS</formats>
+      </supportedFormats>
+      <supportedInterpolations>
+        <interpolationMethod>nearest neighbor</interpolationMethod>
+        <interpolationMethod>bilinear</interpolationMethod>
+        <interpolationMethod>bicubic</interpolationMethod>
+      </supportedInterpolations>
+    </CoverageOffering>
+  </CoverageDescription>

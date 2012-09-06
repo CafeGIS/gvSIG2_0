@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<WCS_Capabilities version="1.0.0" updateSequence="0" xmlns="http://www.opengis.net/wcs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wcs http://schemas.opengeospatial.net/wcs/1.0.0/wcsCapabilities.xsd">
+<Service>
+  <name>MapServer WCS</name>
+  <label>Servidor wcs simon</label>
+  <keywords>
+    <keyword>WCS</keyword>
+  </keywords>
+  <fees>NONE</fees>
+  <accessConstraints>
+    NONE
+  </accessConstraints>
+</Service>
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/interno/costas.map&amp;"/></Get>
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/interno/costas.map&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <DescribeCoverage>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/interno/costas.map&amp;"/></Get>
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/interno/costas.map&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </DescribeCoverage>
+    <GetCoverage>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/interno/costas.map&amp;"/></Get>
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post><OnlineResource xlink:type="simple" xlink:href="http://simon:2000/cgi-bin/mapserv?map=/etc/mapserver/interno/costas.map&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCoverage>
+  </Request>
+  <Exception>
+    <Format>application/vnd.ogc.se_xml</Format>
+  </Exception>
+  <VendorSpecificCapabilities/>
+</Capability>
+<ContentMetadata>
+  <CoverageOfferingBrief>
+  <description>Quickbird costas 2004</description>
+  <name>Costas</name>
+  <label>Costas</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.769215668705582 37.8184338945691</gml:pos>
+      <gml:pos>0.506868538627119 40.525456338613</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop01_311104</name>
+  <label>orthop01_311104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.411953859600099 40.3952692250145</gml:pos>
+      <gml:pos>0.506868538627582 40.498144970273</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop02_041004</name>
+  <label>orthop02_041004</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.161142185520058 40.1342857176869</gml:pos>
+      <gml:pos>0.292548896326785 40.2560681974345</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop03n_311004</name>
+  <label>orthop03n_311004</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.147236128086632 40.111252474887</gml:pos>
+      <gml:pos>0.209262927539442 40.1866363257871</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop03s_311004_01</name>
+  <label>orthop03s_311004_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.0872101105503621 40.0818258206747</gml:pos>
+      <gml:pos>0.22114471507211 40.1932962005782</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop03s_311004_02</name>
+  <label>orthop03s_311004_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.030134915894617 40.0087916305901</gml:pos>
+      <gml:pos>0.16383554256875 40.1202004185233</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop04_311004_01</name>
+  <label>orthop04_311004_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.064429002189167 39.8686021111024</gml:pos>
+      <gml:pos>0.0391632263460172 39.9701456674512</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop04_311004_02</name>
+  <label>orthop04_311004_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.0059801589732133 39.9589210820855</gml:pos>
+      <gml:pos>0.0861765725681437 40.0602012338313</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop05_311004_01</name>
+  <label>orthop05_311004_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.184109898221608 39.7358685309031</gml:pos>
+      <gml:pos>-0.0750466714741807 39.8374622821562</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop05_311004_02</name>
+  <label>orthop05_311004_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.117821241552359 39.8165947273632</gml:pos>
+      <gml:pos>-0.00269513638604592 39.9183962094939</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop06_311004_01</name>
+  <label>orthop06_311004_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.275219416965276 39.5950920024498</gml:pos>
+      <gml:pos>-0.184155536472809 39.6871833112806</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop06_311004_02</name>
+  <label>orthop06_311004_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.215882735212665 39.6816925812939</gml:pos>
+      <gml:pos>-0.153792859579015 39.7776035452773</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop07_311004_01</name>
+  <label>orthop07_311004_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.314134220213874 39.5389645252734</gml:pos>
+      <gml:pos>-0.208807505395484 39.6457600608977</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop07_311004_02</name>
+  <label>orthop07_311004_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.342128552498647 39.4528266976444</gml:pos>
+      <gml:pos>-0.274745188591142 39.5443190026711</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop08_081104</name>
+  <label>orthop08_081104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.12173136235497 38.7060005480509</gml:pos>
+      <gml:pos>0.244722293013489 38.8396720246421</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop09_081104_01</name>
+  <label>orthop09_081104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.088804767492067 38.6613849297483</gml:pos>
+      <gml:pos>0.207196405070599 38.7454726610249</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop09_081104_02</name>
+  <label>orthop09_081104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.00632349885466636 38.6164934605806</gml:pos>
+      <gml:pos>0.106715050330735 38.6865464583593</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop10_081104_01</name>
+  <label>orthop10_081104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.136980485807463 38.5170546860605</gml:pos>
+      <gml:pos>-0.0371101117727906 38.5806924900864</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop10_081104_02</name>
+  <label>orthop10_081104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.076735106882625 38.5664797341347</gml:pos>
+      <gml:pos>0.0816807635068847 38.6559597659495</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop11_081104</name>
+  <label>orthop11_081104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.311501790904784 38.4707367989647</gml:pos>
+      <gml:pos>-0.0783292130480387 38.5509769105466</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop12_081104_01</name>
+  <label>orthop12_081104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.434119927724276 38.3464080099809</gml:pos>
+      <gml:pos>-0.361629767927456 38.4559730050029</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop12_081104_02</name>
+  <label>orthop12_081104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.378614997044234 38.4352112413258</gml:pos>
+      <gml:pos>-0.255874384616388 38.5054927088623</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop13_131104</name>
+  <label>orthop13_131104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.348041797937859 39.3383153088596</gml:pos>
+      <gml:pos>-0.281041463417471 39.5461928127946</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop14_131104</name>
+  <label>orthop14_131104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.339955238250429 39.2232477387865</gml:pos>
+      <gml:pos>-0.232429279860554 39.4011207166876</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop15_131104</name>
+  <label>orthop15_131104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.289235759595255 39.0872233017579</gml:pos>
+      <gml:pos>-0.198718862025195 39.2746110942999</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop16_131104_01</name>
+  <label>orthop16_131104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.247058054572741 39.0510556962122</gml:pos>
+      <gml:pos>-0.174196293066241 39.1427258689371</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop16_131104_02</name>
+  <label>orthop16_131104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.210822301766025 38.9726237490186</gml:pos>
+      <gml:pos>-0.126828888562913 39.0555974632164</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop17_131104_01</name>
+  <label>orthop17_131104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.181657602795786 38.9357185021325</gml:pos>
+      <gml:pos>-0.0746335106867938 39.0192845975789</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop17_131104_02</name>
+  <label>orthop17_131104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.117943002348703 38.868294412074</gml:pos>
+      <gml:pos>-0.00576191400621702 38.9385565931551</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop18_131104</name>
+  <label>orthop18_131104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.0746928352616706 38.849326950655</gml:pos>
+      <gml:pos>0.0832043718423081 38.9118300407968</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop19_081104_01</name>
+  <label>orthop19_081104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.528755271098844 38.2508371352818</gml:pos>
+      <gml:pos>-0.430862375100228 38.3735051096161</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop19_081104_02</name>
+  <label>orthop19_081104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.434119991295443 38.3464062094665</gml:pos>
+      <gml:pos>-0.362213489804466 38.4388675293538</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop20_181104_01</name>
+  <label>orthop20_181104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.649715059513851 38.1131199164285</gml:pos>
+      <gml:pos>-0.505465344489574 38.2015894747853</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop20_181104_02</name>
+  <label>orthop20_181104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.542876572296919 38.1796186626201</gml:pos>
+      <gml:pos>-0.490783803978381 38.3021933075773</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop21_181104</name>
+  <label>orthop21_181104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.70999963728032 37.9537566817542</gml:pos>
+      <gml:pos>-0.618069622814675 38.1598790871345</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop22_1811004</name>
+  <label>orthop22_1811004</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>-0.769215668705582 37.8434482545183</gml:pos>
+      <gml:pos>-0.647530102352871 37.9934296541121</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop23_261104</name>
+  <label>orthop23_261104</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.37345887604184 40.3368089707198</gml:pos>
+      <gml:pos>0.448414395595265 40.4485879556897</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop24_261104_01</name>
+  <label>orthop24_261104_01</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.234463105473658 40.1856768191399</gml:pos>
+      <gml:pos>0.356188772135398 40.278972533725</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop24_261104_02</name>
+  <label>orthop24_261104_02</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.296938622582628 40.2681463248799</gml:pos>
+      <gml:pos>0.419350322091118 40.3705009241081</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+  <name>orthop25_191204</name>
+  <label>orthop25_191204</label>
+    <lonLatEnvelope srsName="WGS84(DD)">
+      <gml:pos>0.0631186665735442 38.8067199905354</gml:pos>
+      <gml:pos>0.197563116913112 38.863410634572</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+</ContentMetadata>
+</WCS_Capabilities>

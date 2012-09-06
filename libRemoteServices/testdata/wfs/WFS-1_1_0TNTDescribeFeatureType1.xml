@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://216.229.5.245/tntserver/MII_TNTCB" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wfs="http://www.opengis.net/wfs" xmlns:MII_TNTCB="http://216.229.5.245/tntserver/MII_TNTCB" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" elementFormDefault="qualified" version="0.1">
+
+  <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+
+  <xsd:simpleType name="colorValueType">
+    <xsd:restriction base="unsignedByte"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="colorValueListType">
+    <xsd:list itemType="MII_TNTCB:colorValueType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="colorRGBAType">
+    <xsd:restriction base="MII_TNTCB:colorValueListType">
+      <xsd:minLength value="3"/>
+      <xsd:maxLength value="4"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="colorUnionType">
+    <xsd:union memberTypes="xsd:string MII_TNTCB:colorRGBAType"/>
+  </xsd:simpleType>
+
+  <xsd:element name="CBSOILS" type="MII_TNTCB:CBSOILS_Type" substitutionGroup="gml:_Feature"/>
+
+  <xsd:complexType name="CBSOILS_Type">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element ref="gml:surfaceProperty" minOccurs="0"/>
+          <xsd:element name="Class" nillable="true" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="79"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CAPRANGE.SYMBOL" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="4"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CAPRANGE.DRYCAP" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CAPRANGE.WETCAP" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CAPRANGE.RANGE" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CAPRANGE.WSG" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="DESCRIPTN.SYMBOL" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="4"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="DESCRIPTN.NAME" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="80"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="DESCRIPTN.ACRES" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.SYMBOL" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="4"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.GRAIN" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.LEGUMES" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.HERBACEOUS" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.TREES" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.PINES" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.WETLAND" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.WATER" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.OPENWILD" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.WOODWILD" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.WETWILD" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POTENTIAL.RANGEWILD" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="YIELD.SYMBOL" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="4"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="YIELD.WHEAT" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="YIELD.OATS" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="YIELD.HAYDRY" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="1"/>
+                <xsd:totalDigits value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="YIELD.HAYWET" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="1"/>
+                <xsd:totalDigits value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="YLDUNITS.cropname" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="23"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="YLDUNITS.yldunits" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CODES_GRPCODE.code" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="6"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CODES_GRPCODE.codename" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="40"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CODES_RATING.code" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="6"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CODES_RATING.codename" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="40"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CODES_RESTCT.code" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="6"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="CODES_RESTCT.codename" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="40"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MUCOACRE.stssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MUCOACRE.muid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MUCOACRE.cntycode" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="3"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MUCOACRE.mucoacre" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WINDBRK.stssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WINDBRK.muid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WINDBRK.seqnum" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WINDBRK.plantsym" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WINDBRK.PlantName" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="61"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WINDBRK.wndbrkht" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="RSPROD.stssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="RSPROD.muid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="RSPROD.seqnum" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="RSPROD.rsid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="RSPROD.rsname" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="RSPROD.prodfav" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="RSPROD.prodnorm" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="RSPROD.produnfv" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.Area" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.BoundLen" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.CentX" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.CentY" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.AreaIncI" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.BoundNotIncI" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.CentXNotIncI" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.CentYNotIncI" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.PointInPolyX" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.PointInPolyY" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.MaxDim" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.Roughness" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.CompactRatio" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="POLYSTATS.CompactRatioI" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="8"/>
+                <xsd:totalDigits value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="PLANTCOM.stssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="PLANTCOM.muid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="PLANTCOM.seqnum" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="PLANTCOM.plantsym" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="PLANTCOM.PlantType" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="61"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="PLANTCOM.plantpct" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="PLANTNM.plantsym" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="PLANTNM.sciname" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="41"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="PLANTNM.comname" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="30"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.stssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.muid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.seqnum" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlgrain" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlgrass" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlherb" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlhard" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlconif" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlshrub" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlwetplt" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlshlwat" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlopen" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlwood" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlwet" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="WLHABIT.wlrange" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="9"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.clascode" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.class" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="94"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.order" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="1"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.suborder" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="3"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.grtgroup" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.subgroup" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="4"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.partsize" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="3"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.minalogy" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="2"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.reaction" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="2"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.soiltemp" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="2"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXCLASS.otherfam" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="2"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MAPUNIT.stssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MAPUNIT.ssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="3"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MAPUNIT.musym" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MAPUNIT.muid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MAPUNIT.muname" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="110"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MAPUNIT.mukind" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="1"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MAPUNIT.mlra" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="4"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MAPUNIT.primfml" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="1"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MAPUNIT.muacres" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="SSACOAC.stssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="SSACOAC.cntycode" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="3"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="SSACOAC.cntyname" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="SSACOAC.sacoacre" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MUYLD.stssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MUYLD.muid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MUYLD.cropname" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="23"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MUYLD.nirryld" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MUYLD.irryld" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="MUYLD.YieldUnits" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="21"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="INTERP.stssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="INTERP.muid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="INTERP.seqnum" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="INTERP.Group" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="81"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="INTERP.Rating" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="41"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="INTERP.Restriction1" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="41"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="INTERP.Restriction2" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="41"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="INTERP.Restriction3" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="41"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.stssaid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="5"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.muid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="8"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.seqnum" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.s5id" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="6"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.layernum" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.layerid" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.laydepl" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.laydeph" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.texture" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="23"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.kfact" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.tfact" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.weg" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="2"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.inch10l" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.inch10h" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.inch3l" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.inch3h" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.no4l" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.no4h" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.no10l" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.no10h" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.no40l" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.no40h" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.no200l" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.no200h" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.clayl" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.clayh" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.lll" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.llh" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.pil" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.pih" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.unified" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="20"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.aashto" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="19"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.aashind" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.awcl" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.awch" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.bdl" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.bdh" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.oml" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.omh" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.phl" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.phh" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.salinl" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.salinh" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.sarl" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.sarh" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.cecl" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.cech" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.caco3l" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.caco3h" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.gypsuml" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.gypsumh" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="int">
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.perml" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.permh" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="decimal">
+                <xsd:fractionDigits value="6"/>
+                <xsd:totalDigits value="15"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="LAYER.shrinksw" minOccurs="0">
+            <xsd:simpleType>
+              <xsd:restriction base="string">
+                <xsd:maxLength value="10"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+</xs:schema>

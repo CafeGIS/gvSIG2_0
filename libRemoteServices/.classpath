@@ -1,0 +1,25 @@
+<classpath>
+  <classpathentry kind="src" path="test" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/geoapi/gvsig/geoapi-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/geojava/gvsig/geojava-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/gt2-legacy/gvsig/gt2-legacy-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/gt2-main/gvsig/gt2-main-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/gt2-postgis/gvsig/gt2-postgis-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/jts/gvsig/jts-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar" sourcepath="M2_REPO/junit/junit/3.8.1/junit-3.8.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/kxml2/gvsig/kxml2-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14.jar" sourcepath="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14-sources.jar"/>
+  <classpathentry kind="src" path="/libFMap_geometries"/>
+  <classpathentry kind="src" path="/libInternationalization"/>
+  <classpathentry kind="src" path="/libProjection"/>
+  <classpathentry kind="src" path="/libTools"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.5.5/slf4j-api-1.5.5.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.5.5/slf4j-api-1.5.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.5.5/slf4j-log4j12-1.5.5.jar" sourcepath="M2_REPO/org/slf4j/slf4j-log4j12/1.5.5/slf4j-log4j12-1.5.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/units/gvsig/units-gvsig.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/gvsig/legacy/vecmath/gvsig/vecmath-gvsig.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+</classpath>
