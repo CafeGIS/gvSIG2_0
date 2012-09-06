@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<RasterMetaFile>
+<Histogram>
+	<ClassInterval>1.0</ClassInterval>
+	<Min>0.0</Min>
+	<Max>255.0</Max>
+	<BandCount>3</BandCount>
+	<Band>
+		<Values>16 4 0 0 4 0 0 0 0 4 0 4 0 0 2 0 2 2 0 2 0 2 2 6 2 0 0 0 0 0 4 2 0 4 1 0 0 4 4 0 0 0 4 0 0 0 0 0 4 4 0 4 0 6 13 2 7 2 16 4 4 7 6 4 4 16 12 0 7 8 14 14 0 2 6 6 4 6 4 6 12 10 13 4 2 2 6 4 7 0 8 8 2 6 8 4 4 17 0 0 0 0 4 2 0 0 4 4 0 6 8 4 2 2 4 5 5 4 2 6 4 0 2 1 4 4 0 0 2 5 2 0 0 0 2 4 0 0 4 0 1 2 4 0 0 1 4 0 0 4 2 0 4 2 2 0 0 4 2 0 4 0 2 0 6 0 4 0 0 2 0 1 4 2 0 2 0 0 8 2 4 0 0 3 0 0 0 0 0 0 0 0 0 0 4 0 0 0 4 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 6 0 0 8 0 0 0 0 0 0 0 0 2 6 0 4 0 0 0 0 1 0 0 0 2 0 2 0 2 0 0 0 0 </Values>
+	</Band>
+	<Band>
+		<Values>2 0 0 1 1 0 2 8 0 0 0 2 0 0 2 0 0 4 8 0 4 0 0 0 0 0 2 0 0 2 0 0 0 0 0 2 0 6 2 2 0 0 0 5 0 0 0 8 0 0 0 4 4 0 0 0 4 0 0 8 0 8 0 4 0 14 4 0 3 2 10 6 7 4 4 18 2 4 10 12 0 6 12 4 8 12 4 4 12 4 2 6 0 4 15 4 6 10 10 0 2 8 6 2 10 2 1 5 6 8 4 2 8 0 1 8 0 4 0 0 2 6 3 7 12 1 8 8 2 8 8 2 2 8 1 4 4 4 0 0 3 0 0 4 0 2 4 4 2 0 0 2 0 4 0 0 0 0 4 4 2 4 0 1 0 0 0 0 0 0 0 0 6 3 0 0 2 0 4 0 4 4 2 0 0 0 0 4 0 0 2 0 0 0 0 0 0 0 0 0 4 0 0 0 2 4 0 0 0 0 0 0 0 0 0 5 0 0 0 0 0 0 2 0 0 0 0 0 4 0 4 0 0 0 0 0 2 4 2 0 0 0 4 0 0 0 0 2 0 1 0 0 0 0 4 </Values>
+	</Band>
+	<Band>
+		<Values>25 4 1 0 0 0 0 2 0 0 2 4 2 4 0 0 0 0 0 0 0 2 2 6 4 0 1 0 4 4 4 8 0 0 0 5 12 6 14 4 0 0 22 0 4 0 1 4 6 4 10 10 8 2 2 9 10 10 8 2 7 2 10 2 4 4 2 8 14 8 8 2 0 4 4 9 8 8 0 4 5 4 2 6 2 4 2 1 10 2 4 6 8 0 0 0 4 6 1 0 0 6 6 2 0 2 5 10 2 3 0 16 0 0 0 0 0 0 3 4 8 1 2 0 2 0 0 4 4 0 8 0 0 4 1 2 2 0 0 0 0 4 0 0 4 0 0 0 6 0 0 0 1 0 0 2 0 0 4 4 1 2 0 0 4 4 2 4 0 0 0 0 0 0 0 0 0 4 0 0 0 0 2 0 4 0 0 0 0 0 2 0 0 0 0 0 0 0 0 4 0 4 0 4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 2 0 2 0 0 0 4 2 4 0 0 0 0 0 0 4 4 0 0 0 0 1 0 0 0 0 0 0 0 2 2 0 0 0 2 </Values>
+	</Band>
+</Histogram>
+<Statistics>
+	<BandCount>3</BandCount>
+	<Band>
+		<Max>250.0</Max>
+		<Min>0.0</Min>
+		<SecondMax>248.0</SecondMax>
+		<SecondMin>1.0</SecondMin>
+		<Mean>95.86833333333334</Mean>
+		<Variance>3050.1676638888875</Variance>
+	</Band>
+	<Band>
+		<Max>255.0</Max>
+		<Min>0.0</Min>
+		<SecondMax>254.0</SecondMax>
+		<SecondMin>3.0</SecondMin>
+		<Mean>105.20166666666667</Mean>
+		<Variance>2689.3743305555545</Variance>
+	</Band>
+	<Band>
+		<Max>254.0</Max>
+		<Min>0.0</Min>
+		<SecondMax>250.0</SecondMax>
+		<SecondMin>1.0</SecondMin>
+		<Mean>85.10333333333334</Mean>
+		<Variance>3218.745988888888</Variance>
+	</Band>
+	<TailTrim>
+		<Key>3.0</Key>
+		<Value>10.0</Value>
+	</TailTrim>
+	<TailTrim>
+		<Key>4.0</Key>
+		<Value>16.0</Value>
+	</TailTrim>
+</Statistics>
+<FLyrGeoRaster>
+	<Projection></Projection>
+	<Extent>
+			<X>5000.0</X>
+			<Y>5000.0</Y>
+			<RotationX>0.0</RotationX>
+			<RotationY>0.0</RotationY>
+			<PixelSizeX>2.4</PixelSizeX>
+			<PixelSizeY>-2.4</PixelSizeY>
+			<Width>2088.0</Width>
+			<Height>2088.0</Height>
+	</Extent>
+	<Dimension>
+			<ImagePxWidth>870.0</ImagePxWidth>
+			<ImagePxHeight>870.0</ImagePxHeight>
+	</Dimension>
+</FLyrGeoRaster>
+<GeoPoints>
+	<Layer>
+			<Proj></Proj>
+			<Bbox>
+				<Px>30032.3</Px>
+				<Py>2103.3</Py>
+				<WCWidth>19991.000000000004</WCWidth>
+				<WCHeight>869.0000000000002</WCHeight>
+			</Bbox>
+			<Pdim>
+				<Width>32.0</Width>
+				<Height>34.0</Height>
+			</Pdim>
+	</Layer>
+	<GeoPoint n="0">
+		<PixelX>10.0</PixelX>
+		<PixelY>10.0</PixelY>
+		<MapX>34223.3</MapX>
+		<MapY>2344.2</MapY>
+		<Active>true</Active>
+		<LeftCenterPoint>
+			<X>24223.3</X>
+			<Y>3244.2</Y>
+		</LeftCenterPoint>
+		<RightCenterPoint>
+			<X>2433.3</X>
+			<Y>6244.2</Y>
+		</RightCenterPoint>
+		<LeftViewPort>
+			<Proj></Proj>
+			<Bbox>
+				<Px>30032.3</Px>
+				<Py>2103.3</Py>
+				<WCWidth>19991.000000000004</WCWidth>
+				<WCHeight>869.0000000000002</WCHeight>
+			</Bbox>
+			<Pdim>
+				<Width>140</Width>
+				<Height>140</Height>
+			</Pdim>
+			<Zoom>1.0</Zoom>
+		</LeftViewPort>
+		<RightViewPort>
+			<Proj></Proj>
+			<Bbox>
+				<Px>30032.3</Px>
+				<Py>2103.3</Py>
+				<WCWidth>19991.000000000004</WCWidth>
+				<WCHeight>869.0000000000002</WCHeight>
+			</Bbox>
+			<Pdim>
+				<Width>140</Width>
+				<Height>140</Height>
+			</Pdim>
+			<Zoom>1.0</Zoom>
+		</RightViewPort>
+	</GeoPoint>
+	<GeoPoint n="1">
+		<PixelX>10.0</PixelX>
+		<PixelY>10.0</PixelY>
+		<MapX>34223.3</MapX>
+		<MapY>2344.2</MapY>
+		<Active>true</Active>
+		<LeftCenterPoint>
+			<X>24223.3</X>
+			<Y>3244.2</Y>
+		</LeftCenterPoint>
+		<RightCenterPoint>
+			<X>2433.3</X>
+			<Y>6244.2</Y>
+		</RightCenterPoint>
+		<LeftViewPort>
+			<Proj></Proj>
+			<Bbox>
+				<Px>30032.3</Px>
+				<Py>2103.3</Py>
+				<WCWidth>19991.000000000004</WCWidth>
+				<WCHeight>869.0000000000002</WCHeight>
+			</Bbox>
+			<Pdim>
+				<Width>140</Width>
+				<Height>140</Height>
+			</Pdim>
+			<Zoom>1.0</Zoom>
+		</LeftViewPort>
+		<RightViewPort>
+			<Proj></Proj>
+			<Bbox>
+				<Px>30032.3</Px>
+				<Py>2103.3</Py>
+				<WCWidth>19991.000000000004</WCWidth>
+				<WCHeight>869.0000000000002</WCHeight>
+			</Bbox>
+			<Pdim>
+				<Width>140</Width>
+				<Height>140</Height>
+			</Pdim>
+			<Zoom>1.0</Zoom>
+		</RightViewPort>
+	</GeoPoint>
+</GeoPoints>
+<ColorTable name="" version="1.1">
+	<Color value="0.0" name="" rgb="255,255,255" interpolated="50"/>
+	<Color value="1.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="2.0" name="" rgb="0,102,255" interpolated="50"/>
+	<Color value="3.0" name="" rgb="0,153,255" interpolated="50"/>
+	<Color value="4.0" name="" rgb="0,0,255" interpolated="50"/>
+	<Color value="5.0" name="" rgb="0,51,255" interpolated="50"/>
+	<Color value="6.0" name="" rgb="55,55,255" interpolated="50"/>
+	<Color value="7.0" name="" rgb="0,204,255" interpolated="50"/>
+	<Color value="8.0" name="" rgb="191,191,255" interpolated="50"/>
+	<Color value="9.0" name="" rgb="191,242,255" interpolated="50"/>
+	<Color value="10.0" name="" rgb="223,223,223" interpolated="50"/>
+	<Color value="11.0" name="" rgb="127,127,127" interpolated="50"/>
+	<Color value="12.0" name="" rgb="63,63,63" interpolated="50"/>
+	<Color value="13.0" name="" rgb="159,159,159" interpolated="50"/>
+	<Color value="14.0" name="" rgb="31,31,31" interpolated="50"/>
+	<Color value="15.0" name="" rgb="95,95,95" interpolated="50"/>
+	<Color value="16.0" name="" rgb="191,191,191" interpolated="50"/>
+	<Color value="17.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="18.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="19.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="20.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="21.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="22.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="23.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="24.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="25.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="26.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="27.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="28.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="29.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="30.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Color value="31.0" name="" rgb="0,0,0" interpolated="50"/>
+	<Alpha value="0.0" alpha="0" interpolated="50"/>
+	<Alpha value="1.0" alpha="255" interpolated="50"/>
+	<Alpha value="2.0" alpha="255" interpolated="50"/>
+	<Alpha value="3.0" alpha="255" interpolated="50"/>
+	<Alpha value="4.0" alpha="255" interpolated="50"/>
+	<Alpha value="5.0" alpha="255" interpolated="50"/>
+	<Alpha value="6.0" alpha="255" interpolated="50"/>
+	<Alpha value="7.0" alpha="255" interpolated="50"/>
+	<Alpha value="8.0" alpha="255" interpolated="50"/>
+	<Alpha value="9.0" alpha="255" interpolated="50"/>
+	<Alpha value="10.0" alpha="255" interpolated="50"/>
+	<Alpha value="11.0" alpha="255" interpolated="50"/>
+	<Alpha value="12.0" alpha="255" interpolated="50"/>
+	<Alpha value="13.0" alpha="255" interpolated="50"/>
+	<Alpha value="14.0" alpha="255" interpolated="50"/>
+	<Alpha value="15.0" alpha="255" interpolated="50"/>
+	<Alpha value="16.0" alpha="255" interpolated="50"/>
+	<Alpha value="17.0" alpha="255" interpolated="50"/>
+	<Alpha value="18.0" alpha="255" interpolated="50"/>
+	<Alpha value="19.0" alpha="255" interpolated="50"/>
+	<Alpha value="20.0" alpha="255" interpolated="50"/>
+	<Alpha value="21.0" alpha="255" interpolated="50"/>
+	<Alpha value="22.0" alpha="255" interpolated="50"/>
+	<Alpha value="23.0" alpha="255" interpolated="50"/>
+	<Alpha value="24.0" alpha="255" interpolated="50"/>
+	<Alpha value="25.0" alpha="255" interpolated="50"/>
+	<Alpha value="26.0" alpha="255" interpolated="50"/>
+	<Alpha value="27.0" alpha="255" interpolated="50"/>
+	<Alpha value="28.0" alpha="255" interpolated="50"/>
+	<Alpha value="29.0" alpha="255" interpolated="50"/>
+	<Alpha value="30.0" alpha="255" interpolated="50"/>
+	<Alpha value="31.0" alpha="255" interpolated="50"/>
+</ColorTable>
+</RasterMetaFile>

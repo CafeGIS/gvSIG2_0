@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<RasterMetaFile>
+<Histogram>
+	<BandCount>3</BandCount>
+	<DataType>0</DataType>
+	<Band>
+		<Min>-128.0</Min>
+		<Max>127.0</Max>
+		<Values>2 5 2 0 0 0 2 4 0 0 4 0 1 2 4 0 0 1 4 0 0 4 2 0 4 2 2 0 0 4 2 0 4 0 2 0 6 0 4 0 0 2 0 1 4 2 0 2 0 0 8 2 4 0 0 3 0 0 0 0 0 0 0 0 0 0 4 0 0 0 4 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 6 0 0 8 0 0 0 0 0 0 0 0 2 6 0 4 0 0 0 0 1 0 0 0 2 0 2 0 2 0 0 0 0 0 16 4 0 0 4 0 0 0 0 4 0 4 0 0 2 0 2 2 0 2 0 2 2 6 2 0 0 0 0 0 4 2 0 4 1 0 0 4 4 0 0 0 4 0 0 0 0 0 4 4 0 4 0 6 13 2 7 2 16 4 4 7 6 4 4 16 12 0 7 8 14 14 0 2 6 6 4 6 4 6 12 10 13 4 2 2 6 4 7 0 8 8 2 6 8 4 4 17 0 0 0 0 4 2 0 0 4 4 0 6 8 4 2 2 4 5 5 4 2 6 4 0 2 1 4 4 0 0</Values>
+	</Band>
+	<Band>
+		<Min>-128.0</Min>
+		<Max>127.0</Max>
+		<Values>2 8 8 2 2 8 1 4 4 4 0 0 3 0 0 4 0 2 4 4 2 0 0 2 0 4 0 0 0 0 4 4 2 4 0 1 0 0 0 0 0 0 0 0 6 3 0 0 2 0 4 0 4 4 2 0 0 0 0 4 0 0 2 0 0 0 0 0 0 0 0 0 4 0 0 0 2 4 0 0 0 0 0 0 0 0 0 5 0 0 0 0 0 0 2 0 0 0 0 0 4 0 4 0 0 0 0 0 2 4 2 0 0 0 4 0 0 0 0 2 0 1 0 0 0 0 2 2 2 0 0 1 1 0 2 8 0 0 0 2 0 0 2 0 0 4 8 0 4 0 0 0 0 0 2 0 0 2 0 0 0 0 0 2 0 6 2 2 0 0 0 5 0 0 0 8 0 0 0 4 4 0 0 0 4 0 0 8 0 8 0 4 0 14 4 0 3 2 10 6 7 4 4 18 2 4 10 12 0 6 12 4 8 12 4 4 12 4 2 6 0 4 15 4 6 10 10 0 2 8 6 2 10 2 1 5 6 8 4 2 8 0 1 8 0 4 0 0 2 6 3 7 12 1 8 8</Values>
+	</Band>
+	<Band>
+		<Min>-128.0</Min>
+		<Max>127.0</Max>
+		<Values>4 0 8 0 0 4 1 2 2 0 0 0 0 4 0 0 4 0 0 0 6 0 0 0 1 0 0 2 0 0 4 4 1 2 0 0 4 4 2 4 0 0 0 0 0 0 0 0 0 4 0 0 0 0 2 0 4 0 0 0 0 0 2 0 0 0 0 0 0 0 0 4 0 4 0 4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 2 0 2 0 0 0 4 2 4 0 0 0 0 0 0 4 4 0 0 0 0 1 0 0 0 0 0 0 0 2 2 0 0 0 2 0 25 4 1 0 0 0 0 2 0 0 2 4 2 4 0 0 0 0 0 0 0 2 2 6 4 0 1 0 4 4 4 8 0 0 0 5 12 6 14 4 0 0 22 0 4 0 1 4 6 4 10 10 8 2 2 9 10 10 8 2 7 2 10 2 4 4 2 8 14 8 8 2 0 4 4 9 8 8 0 4 5 4 2 6 2 4 2 1 10 2 4 6 8 0 0 0 4 6 1 0 0 6 6 2 0 2 5 10 2 3 0 16 0 0 0 0 0 0 3 4 8 1 2 0 2 0 0 4</Values>
+	</Band>
+</Histogram>
+<ColorTable name="" interpolated="0" version="1.1">
+	<Color value="0.0" name="" rgb="255,255,255" interpolated="50.0"/>
+	<Color value="1.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="2.0" name="" rgb="0,102,255" interpolated="50.0"/>
+	<Color value="3.0" name="" rgb="0,153,255" interpolated="50.0"/>
+	<Color value="4.0" name="" rgb="0,0,255" interpolated="50.0"/>
+	<Color value="5.0" name="" rgb="0,51,255" interpolated="50.0"/>
+	<Color value="6.0" name="" rgb="55,55,255" interpolated="50.0"/>
+	<Color value="7.0" name="" rgb="0,204,255" interpolated="50.0"/>
+	<Color value="8.0" name="" rgb="191,191,255" interpolated="50.0"/>
+	<Color value="9.0" name="" rgb="191,242,255" interpolated="50.0"/>
+	<Color value="10.0" name="" rgb="223,223,223" interpolated="50.0"/>
+	<Color value="11.0" name="" rgb="127,127,127" interpolated="50.0"/>
+	<Color value="12.0" name="" rgb="63,63,63" interpolated="50.0"/>
+	<Color value="13.0" name="" rgb="159,159,159" interpolated="50.0"/>
+	<Color value="14.0" name="" rgb="31,31,31" interpolated="50.0"/>
+	<Color value="15.0" name="" rgb="95,95,95" interpolated="50.0"/>
+	<Color value="16.0" name="" rgb="191,191,191" interpolated="50.0"/>
+	<Color value="17.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="18.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="19.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="20.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="21.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="22.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="23.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="24.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="25.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="26.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="27.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="28.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="29.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="30.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Color value="31.0" name="" rgb="0,0,0" interpolated="50.0"/>
+	<Alpha value="0.0" alpha="0" interpolated="50.0"/>
+	<Alpha value="1.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="2.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="3.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="4.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="5.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="6.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="7.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="8.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="9.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="10.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="11.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="12.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="13.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="14.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="15.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="16.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="17.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="18.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="19.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="20.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="21.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="22.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="23.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="24.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="25.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="26.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="27.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="28.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="29.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="30.0" alpha="255" interpolated="50.0"/>
+	<Alpha value="31.0" alpha="255" interpolated="50.0"/>
+</ColorTable>
+<Statistics>
+	<BandCount>3</BandCount>
+	<Band>
+		<Max>125.0</Max>
+		<Min>-128.0</Min>
+		<SecondMax>124.0</SecondMax>
+		<SecondMin>-127.0</SecondMin>
+		<MaxRGB>250.0</MaxRGB>
+		<MinRGB>0.0</MinRGB>
+		<SecondMaxRGB>248.0</SecondMaxRGB>
+		<SecondMinRGB>1.0</SecondMinRGB>
+		<Mean>36.56166666666667</Mean>
+		<Variance>4984.576197222223</Variance>
+	</Band>
+	<Band>
+		<Max>127.0</Max>
+		<Min>-128.0</Min>
+		<SecondMax>126.0</SecondMax>
+		<SecondMin>-127.0</SecondMin>
+		<MaxRGB>255.0</MaxRGB>
+		<MinRGB>0.0</MinRGB>
+		<SecondMaxRGB>254.0</SecondMaxRGB>
+		<SecondMinRGB>3.0</SecondMinRGB>
+		<Mean>37.788333333333334</Mean>
+		<Variance>6292.3268638888885</Variance>
+	</Band>
+	<Band>
+		<Max>127.0</Max>
+		<Min>-128.0</Min>
+		<SecondMax>124.0</SecondMax>
+		<SecondMin>-126.0</SecondMin>
+		<MaxRGB>254.0</MaxRGB>
+		<MinRGB>0.0</MinRGB>
+		<SecondMaxRGB>250.0</SecondMaxRGB>
+		<SecondMinRGB>1.0</SecondMinRGB>
+		<Mean>35.18333333333333</Mean>
+		<Variance>4154.6563888888895</Variance>
+	</Band>
+	<TailTrim>
+		<Key>3.0</Key>
+		<Value>10.0</Value>
+	</TailTrim>
+	<TailTrim>
+		<Key>4.0</Key>
+		<Value>16.0</Value>
+	</TailTrim>
+</Statistics>
+<FLyrGeoRaster>
+	<Projection></Projection>
+	<Extent>
+			<X>644848.8</X>
+			<Y>4925251.2</Y>
+			<RotationX>0.0</RotationX>
+			<RotationY>0.0</RotationY>
+			<PixelSizeX>2.4000000000000004</PixelSizeX>
+			<PixelSizeY>-2.4000000000000004</PixelSizeY>
+			<Width>2088.0</Width>
+			<Height>2088.0</Height>
+	</Extent>
+	<Dimension>
+			<ImagePxWidth>870.0</ImagePxWidth>
+			<ImagePxHeight>870.0</ImagePxHeight>
+	</Dimension>
+</FLyrGeoRaster>
+<GeoPoints>
+	<GeoPoint n="0">
+		<PixelX>10.0</PixelX>
+		<PixelY>10.0</PixelY>
+		<MapX>34223.3</MapX>
+		<MapY>2344.2</MapY>
+		<Active>true</Active>
+	</GeoPoint>
+	<GeoPoint n="1">
+		<PixelX>10.0</PixelX>
+		<PixelY>10.0</PixelY>
+		<MapX>34223.3</MapX>
+		<MapY>2344.2</MapY>
+		<Active>true</Active>
+	</GeoPoint>
+</GeoPoints>
+<NoData>
+	<Data value="5450.0" type="2"/>
+</NoData>
+<ColorInterpretation>
+	<BandCount>3</BandCount>
+	<Band>Blue</Band>
+	<Band>Green</Band>
+	<Band>Red</Band>
+</ColorInterpretation>
+</RasterMetaFile>

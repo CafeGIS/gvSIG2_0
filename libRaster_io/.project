@@ -1,0 +1,15 @@
+<projectDescription>
+  <name>org.gvsig.raster.io</name>
+  <comment>Base POM for all GvSIG libraries projects. This pom knows how to
+		build and made an libraries for GvSIG. The property
+		&quot;gvsig-path&quot; must be set up correctly.</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>
