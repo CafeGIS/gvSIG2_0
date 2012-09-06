@@ -1,0 +1,52 @@
+package id3efajdxljqzpfdxljrqze;
+
+/**
+@version 2.0
+@physicalPackage
+@__modelType diagram 
+*/
+class diagram {
+/**
+@__ref <oiref:java#Class#org.cresques.cts.IProjection:oiref><oihard>
+@__modelType reference 
+*/
+class reference {
+}/**
+@__ref <oiref:design#Class#id453jodxljqzpfdxljry0t.diagram:oiref><oihard>
+@__modelType reference
+@__fqn <oiref:#Package#cms.org.cresques.cts.gt2:oiref> 
+*/
+class reference8 {
+}/**
+@__ref <oiref:java#Class#org.cresques.cts.ProjectionPool:oiref><oihard>
+@__modelType reference 
+*/
+class reference1 {
+}/**
+@__ref <oiref:java#Class#org.cresques.cts.ICoordTrans:oiref><oihard>
+@__modelType reference 
+*/
+class reference2 {
+}/**
+@__ref <oiref:java#Class#org.cresques.cts.IDatum:oiref><oihard>
+@__modelType reference 
+*/
+class reference3 {
+}}/**
+@__tags
+@shapeType ClassDiagram 
+*/
+class __tags {
+}/**
+@__options 
+*/
+class __options {
+}/**
+@__positions <oigroup:<oiref:java#Class#org.cresques.cts.ICoordTrans:oiref>=10,270,148,165,1:oigroup>
+<oigroup:<oiref:java#Class#org.cresques.cts.ProjectionPool:oiref>=176,10,138,126,1:oigroup>
+<oigroup:<oiref:java#Class#org.cresques.cts.IProjection:oiref>=10,10,146,229,1:oigroup>
+<oigroup:<oiref:java#Class#org.cresques.cts.IDatum:oiref>=178,170,83,98,1:oigroup>
+<oigroup:<oiref:design#Class#id453jodxljqzpfdxljry0t.diagram:oiref>=334,10,102,184,1:oigroup> 
+*/
+class __positions {
+}

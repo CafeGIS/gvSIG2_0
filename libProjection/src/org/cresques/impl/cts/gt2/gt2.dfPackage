@@ -1,0 +1,68 @@
+package id453jodxljqzpfdxljry0t;
+
+/**
+@version 2.0
+@physicalPackage
+@__modelType diagram 
+*/
+class diagram {
+/**
+@__ref <oiref:java#Class#org.cresques.cts.gt2.CoordTrans:oiref><oihard>
+@__modelType reference 
+*/
+class reference {
+}/**
+@__ref <oiref:java#Class#org.cresques.cts.gt2.CoordSys:oiref><oihard>
+@__modelType reference 
+*/
+class reference4 {
+}/**
+@__ref <oiref:java#Class#org.cresques.cts.gt2.CSUTM:oiref><oihard>
+@__modelType reference 
+*/
+class reference5 {
+}/**
+@__ref <oiref:java#Class#org.cresques.cts.gt2.CSDatum:oiref><oihard>
+@__modelType reference 
+*/
+class reference6 {
+}/**
+@__ref <oiref:java#Class#org.cresques.cts.gt2.CSLambertCC:oiref><oihard>
+@__modelType reference 
+*/
+class reference7 {
+}/**
+@__ref <oiref:java#Class#org.cresques.cts.gt2.CSGaussPt:oiref><oihard>
+@__modelType reference 
+*/
+class reference8 {
+}}/**
+@__tags
+@shapeType ClassDiagram 
+*/
+class __tags {
+}/**
+@__options 
+*/
+class __options {
+}/**
+@__positions <oigroup:MemberLink#<oiref:java#Member#org.cresques.cts.gt2.CSDatum#wgs84:oiref>=560,360,560,530,876,530,876,200,713,200:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#org.cresques.cts.gt2.CSDatum#d73:oiref>=649,360,649,434,787,434,787,296,713,296:oigroup>
+<oigroup:<oiref:java#Extends#org.cresques.cts.gt2.CSLambertCC#org.cresques.cts.gt2.CoordSys:oiref>=440,630,440,392:oigroup>
+<oigroup:<oiref:java#Class#org.cresques.cts.gt2.CoordSys:oiref>=270,10,200,382,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#org.cresques.cts.gt2.CoordSys#datum:oiref>=470,185,550,185:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#org.cresques.cts.gt2.CSDatum#nad27:oiref>=681,360,681,402,755,402,755,328,713,328:oigroup>
+<oigroup:<oiref:java#Class#org.cresques.cts.gt2.CSUTM:oiref>=548,630,110,117,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#org.cresques.cts.gt2.CSDatum#ntf:oiref>=617,360,617,466,819,466,819,264,713,264:oigroup>
+<oigroup:<oiref:java#Class#org.cresques.cts.gt2.CSDatum:oiref>=550,10,163,350,1:oigroup>
+<oigroup:<oiref:java#Extends#org.cresques.cts.gt2.CSUTM#org.cresques.cts.gt2.CoordSys:oiref>=603,630,455,392:oigroup>
+<oigroup:<oiref:java#Class#org.cresques.cts.gt2.CSLambertCC:oiref>=426,630,102,101,1:oigroup>
+<oigroup:<oiref:java#Class#org.cresques.cts.gt2.CSGaussPt:oiref>=230,630,124,110,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#org.cresques.cts.gt2.CSDatum#ed50:oiref>=585,360,585,498,851,498,851,232,713,232:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#org.cresques.cts.gt2.CSGaussPt#hgd73:oiref>=332,740,332,772,386,772,386,718,354,718:oigroup>
+<oigroup:<oiref:java#Extends#org.cresques.cts.gt2.CSGaussPt#org.cresques.cts.gt2.CoordSys:oiref>=321,630,321,392:oigroup>
+<oigroup:<oiref:java#Class#org.cresques.cts.gt2.CoordTrans:oiref>=10,630,200,318,1:oigroup>
+<oigroup:MemberLink#<oiref:java#Member#org.cresques.cts.gt2.CoordTrans#from:oiref>=110,630,295,392:oigroup> 
+*/
+class __positions {
+}
