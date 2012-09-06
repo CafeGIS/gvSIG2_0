@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><archetype>
+  <id>org.gvsig.library</id>
+  <sources>
+    <source>src/main/java/DefaultExampleManager.java</source>
+    <source>src/main/java/package.html</source>
+    <source>src/main/java/ExampleImplLibrary.java</source>
+    <source>src/main/java/org/gvsig/example/ExampleLibrary.java</source>
+    <source>src/main/java/org/gvsig/example/ExampleLocator.java</source>
+    <source>src/main/java/org/gvsig/example/ExampleException.java</source>
+    <source>src/main/java/org/gvsig/example/ExampleManager.java</source>
+    <source>src/main/java/org/gvsig/example/package.html</source>
+  </sources>
+  <testSources>
+    <source>src/test/java/DefaultExampleManagerTest.java</source>
+    <source>src/test/java/ExampleImplLibraryTest.java</source>
+    <source>src/test/java/org/gvsig/example/ExampleLibraryTest.java</source>
+    <source>src/test/java/README.txt</source>
+  </testSources>
+  <resources>
+    <resource>src/main/javadoc/overview.html</resource>
+    <resource>src/main/resources/org/gvsig/example/i18n/text.properties</resource>
+    <resource>src/main/resources/org/gvsig/example/i18n/text_en.properties</resource>
+    <resource>src/main/resources/README.txt</resource>
+    <resource>README.txt</resource>
+  </resources>
+  <testResources>
+    <resource>src/test/resources/log4j.xml</resource>
+    <resource>src/test/resources/README.txt</resource>
+  </testResources>
+</archetype>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>${groupId}</groupId>
+	<artifactId>${artifactId}</artifactId>
+	<packaging>jar</packaging>
+	<version>${version}</version>
+	<name>${artifactId}</name>
+	<description>[PUT LIBRARY DESCRIPTION HERE]</description>
+	<url>http://www.gvsig.org</url>
+	<scm>
+		<connection>scm:svn:http://subversion.gvsig.org/gvSIG/branches/v2_0_0_prep/libraries/${artifactId}</connection>
+		<developerConnection>scm:svn:https://gvsig.org/svn/gvSIG/branches/v2_0_0_prep/libraries/${artifactId}</developerConnection>
+		<url>http://subversion.gvsig.org/viewvc/?root=gvSIG</url>
+		<tag>HEAD</tag>
+	</scm>
+#literal()
+	<properties>
+		<build-dir>${basedir}/../build</build-dir>
+	</properties>
+	<developers>
+		<developer>
+			<id>developer1</id>
+			<name>Name Surname</name>
+			<email>name@domain</email>
+			<roles>
+				<role>Architect</role>
+				<role>Developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>developer2</id>
+			<name>Name2 Surname</name>
+			<email>name2@domain</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-library-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.tools</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.i18n</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>**/impl/**</exclude>
+					</excludes>
+				</configuration>
+				<executions>
+					<!--
+						Generates a jar file only with the default implementation.
+					-->
+					<execution>
+						<id>impl</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<classifier>impl</classifier>
+							<excludes>
+								<exclude>NONE</exclude>
+							</excludes>
+							<includes>
+								<include>**/impl/**</include>
+							</includes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<doctitle>${project.name} ${project.version}</doctitle>
+				</configuration>
+				<reportSets>
+					<reportSet>
+						<id>api</id>
+						<configuration>
+							<excludePackageNames>*.impl</excludePackageNames>
+							<name>Javadoc: API</name>
+							<destDir>apidoc</destDir>
+							<windowtitle>API Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.i18n/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.metadata/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.compat/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.projection/2.0.0/apidocs/</link>
+								<link>${site-repository}/com.iver.utiles/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.fmap.dal/2.0.0/apidocs/</link>
+							</links>
+						</configuration>
+						<reports>
+							<report>javadoc</report>
+						</reports>
+					</reportSet>
+					<reportSet>
+						<id>impl</id>
+						<configuration>
+							<doctitle>${project.name} ${project.version}
+								Default implementation</doctitle>
+#end
+							<subpackages>${package}.impl</subpackages>
+#literal()
+							<name>Javadoc: Impl</name>
+							<destDir>impldoc</destDir>
+							<windowtitle>Default implementation Documentation</windowtitle>
+							<links>
+								<link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+								<link>http://www.slf4j.org/api/</link>
+								<link>../apidoc/</link>
+								<link>${site-repository}/org.gvsig.tools/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.i18n/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.metadata/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.compat/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.projection/2.0.0/apidocs/</link>
+								<link>${site-repository}/com.iver.utiles/2.0.0/apidocs/</link>
+								<link>${site-repository}/org.gvsig.fmap.dal/2.0.0/apidocs/</link>
+							</links>
+						</configuration>
+						<reports>
+							<report>javadoc</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+	#end
+</project>

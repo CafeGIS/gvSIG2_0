@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="org.gvsig.library">
+	<fileSets>
+		<fileSet filtered="true" packaged="true" encoding="ISO-8859-1">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*.html</include>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="true" encoding="ISO-8859-1">
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>**/*.properties</include>
+				<exclude>**/*.txt</exclude>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="ISO-8859-1">
+			<directory>src/main/javadoc</directory>
+			<includes>
+				<include>**/*.html</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="true" encoding="ISO-8859-1">
+			<directory>src/test/java</directory>
+			<includes>
+				<include>**/*.java</include>
+				<exclude>**/*.txt</exclude>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="ISO-8859-1">
+			<directory>src/test/resources</directory>
+			<includes>
+				<include>**/*.xml</include>
+				<exclude>**/*.txt</exclude>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false" encoding="ISO-8859-1">
+			<directory></directory>
+			<includes>
+				<include>**/README.txt</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+	<requiredProperties>
+		<!-- 
+		<requiredProperty key="groupId">
+			<defaultValue>org.gvsig</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="artifactId">
+			<defaultValue>org.gvsig.example</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="package">
+			<defaultValue>${artifactId}</defaultValue>
+		</requiredProperty>
+		 -->
+	</requiredProperties>
+</archetype-descriptor>
