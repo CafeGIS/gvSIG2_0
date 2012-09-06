@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-tag xmlns="http://www.gvsig.gva.es">
+		<property key="className" value="com.iver.cit.gvsig.project.Project"/>
+		<property key="VERSION" value="1.2"/>
+		<property key="comments" value=""/>
+		<property key="creationDate" value="06-nov-2007"/>
+		<property key="numExtents" value="0"/>
+		<property key="numCameras" value="0"/>
+		<property key="data-source-count" value="0"/>
+		<property key="numDocuments" value="1"/>
+		<property key="modificationDate" value="06-nov-2007"/>
+		<property key="name" value="FiltroSobel.gvp"/>
+		<property key="owner" value=""/>
+		<property key="selectionColor" value="255,255,0,255"/>
+		<property key="projection" value="EPSG:23030"/>
+		<property key="followHeaderEncoding" value="true"/>
+		<xml-tag>
+				<property key="className" value="ProjectView"/>
+				<property key="comment"/>
+				<property key="creationDate" value="6/11/07 12:31"/>
+				<property key="name" value="Sin título - 0"/>
+				<property key="owner"/>
+				<property key="numViews" value="1"/>
+				<property key="m_selectedField"/>
+				<property key="m_typeLink" value="0"/>
+				<property key="m_extLink"/>
+				<property key="mapOverView" value="true"/>
+				<xml-tag>
+						<property key="className" value="com.iver.cit.gvsig.fmap.MapContext"/>
+						<xml-tag>
+								<property key="className" value="com.iver.cit.gvsig.fmap.ViewPort"/>
+								<property key="adjustedExtentX" value="4903.524752475248"/>
+								<property key="adjustedExtentY" value="2912.0"/>
+								<property key="adjustedExtentW" value="2280.9504950495048"/>
+								<property key="adjustedExtentH" value="2088.0"/>
+								<property key="backColor" value="255,255,255,255"/>
+								<property key="dist1pixel" value="6.891088962554932"/>
+								<property key="dist3pixel" value="20.673267364501953"/>
+								<property key="distanceUnits" value="1"/>
+								<property key="extentX" value="5000.0"/>
+								<property key="extentY" value="2912.0"/>
+								<property key="extentW" value="2088.0"/>
+								<property key="extentH" value="2088.0"/>
+								<property key="mapUnits" value="1"/>
+								<property key="offsetX" value="0.0"/>
+								<property key="offsetY" value="0.0"/>
+								<property key="proj" value="EPSG:23030"/>
+								<property key="scale" value="0.14511494252873564"/>
+								<xml-tag>
+										<property key="className" value="com.iver.cit.gvsig.fmap.ExtentHistory"/>
+										<property key="num" value="0"/>
+										<property key="numrec" value="10"/>
+								</xml-tag>
+						</xml-tag>
+						<xml-tag>
+								<property key="className" value="com.iver.cit.gvsig.fmap.layers.FLayers"/>
+								<property key="active" value="false"/>
+								<property key="name"/>
+								<property key="minScale" value="-1.0"/>
+								<property key="maxScale" value="-1.0"/>
+								<property key="visible" value="true"/>
+								<property key="transparency" value="255"/>
+								<property key="isInTOC" value="true"/>
+								<property key="numLayers" value="1"/>
+								<property key="LayerNames" value="03AUG23153350-M2AS-000000122423_01_P001-BROWSE.jpg"/>
+								<xml-tag>
+										<property key="className" value="org.gvsig.fmap.raster.layers.FLyrRasterSE"/>
+										<property key="active" value="true"/>
+										<property key="name" value="03AUG23153350-M2AS-000000122423_01_P001-BROWSE.jpg"/>
+										<property key="minScale" value="-1.0"/>
+										<property key="maxScale" value="-1.0"/>
+										<property key="visible" value="true"/>
+										<property key="proj" value="EPSG:23030"/>
+										<property key="transparency" value="255"/>
+										<property key="isInTOC" value="true"/>
+										<property key="file" value="../libRaster/test-images/03AUG23153350-M2AS-000000122423_01_P001-BROWSE.jpg"/>
+										<property key="driverName" value="gvSIG Raster Driver"/>
+										<property key="raster.class" value="org.gvsig.fmap.raster.layers.StatusLayerRaster"/>
+										<property key="raster.bandR" value="0"/>
+										<property key="raster.bandG" value="1"/>
+										<property key="raster.bandB" value="2"/>
+										<property key="raster.file0" value="../libRaster/test-images/03AUG23153350-M2AS-000000122423_01_P001-BROWSE.jpg"/>
+										<property key="filter.firstDerivative.active" value="true"/>
+										<property key="filter.firstDerivative.umbral" value="0"/>
+										<property key="filter.firstDerivative.compare" value="false"/>
+										<property key="filter.firstDerivative.filterName" value="sobel"/>
+								</xml-tag>
+						</xml-tag>
+				</xml-tag>
+				<xml-tag>
+						<property key="className" value="com.iver.cit.gvsig.fmap.MapContext"/>
+						<xml-tag>
+								<property key="className" value="com.iver.cit.gvsig.fmap.ViewPort"/>
+								<property key="dist1pixel" value="0.0"/>
+								<property key="dist3pixel" value="0.0"/>
+								<property key="distanceUnits" value="1"/>
+								<property key="mapUnits" value="1"/>
+								<property key="offsetX" value="0.0"/>
+								<property key="offsetY" value="0.0"/>
+								<property key="proj" value="EPSG:23030"/>
+								<property key="scale" value="0.0"/>
+								<xml-tag>
+										<property key="className" value="com.iver.cit.gvsig.fmap.ExtentHistory"/>
+										<property key="num" value="0"/>
+										<property key="numrec" value="10"/>
+								</xml-tag>
+						</xml-tag>
+						<xml-tag>
+								<property key="className" value="com.iver.cit.gvsig.fmap.layers.FLayers"/>
+								<property key="active" value="false"/>
+								<property key="name"/>
+								<property key="minScale" value="-1.0"/>
+								<property key="maxScale" value="-1.0"/>
+								<property key="visible" value="true"/>
+								<property key="transparency" value="255"/>
+								<property key="isInTOC" value="true"/>
+								<property key="numLayers" value="0"/>
+								<property key="LayerNames" value=""/>
+						</xml-tag>
+				</xml-tag>
+		</xml-tag>
+		<xml-tag>
+				<property key="name" value="AndamiPersistence"/>
+				<property key="className" value="com.iver.cit.gvsig.project.Project"/>
+				<xml-tag>
+						<property key="name" value="ViewInfoProperties"/>
+						<property key="X" value="-1"/>
+						<property key="Y" value="-1"/>
+						<property key="Width" value="430"/>
+						<property key="Height" value="594"/>
+						<property key="isVisible" value="true"/>
+						<property key="isResizable" value="false"/>
+						<property key="isMaximizable" value="true"/>
+						<property key="isModal" value="false"/>
+						<property key="isModeless" value="false"/>
+						<property key="isClosed" value="false"/>
+						<property key="ParentName"/>
+						<property key="className" value="com.iver.cit.gvsig.project.document.gui.ProjectWindow"/>
+						<property key="zPosition" value="1"/>
+				</xml-tag>
+				<xml-tag>
+						<property key="name" value="ViewInfoProperties"/>
+						<property key="X" value="-1"/>
+						<property key="Y" value="-1"/>
+						<property key="Width" value="500"/>
+						<property key="Height" value="340"/>
+						<property key="isVisible" value="true"/>
+						<property key="isResizable" value="true"/>
+						<property key="isMaximizable" value="true"/>
+						<property key="isModal" value="false"/>
+						<property key="isModeless" value="false"/>
+						<property key="isClosed" value="false"/>
+						<property key="ParentName"/>
+						<property key="documentType" value="ProjectView"/>
+						<property key="documentName" value="Sin título - 0"/>
+						<property key="zPosition" value="0"/>
+						<xml-tag>
+								<property key="name" value="windowData"/>
+								<property key="TOC.Height" value="91"/>
+								<property key="MainDivider.Location" value="153"/>
+								<property key="GraphicLocator.isPalette" value="false"/>
+								<property key="MainWindow.Y" value="0"/>
+								<property key="MainWindow.Width" value="490"/>
+								<property key="MainDivider.Y" value="0"/>
+								<property key="TOC.Width" value="150"/>
+								<property key="TOCDivider.X" value="1"/>
+								<property key="MapControl.Width" value="331"/>
+								<property key="MainWindow.X" value="0"/>
+								<property key="MainDivider.X" value="0"/>
+								<property key="TOCDivider.Location" value="92"/>
+								<property key="GraphicLocator.Height" value="205"/>
+								<property key="TOCDivider.Height" value="303"/>
+								<property key="MainDivider.Height" value="305"/>
+								<property key="TOCDivider.Width" value="152"/>
+								<property key="MainDivider.Width" value="490"/>
+								<property key="MapControl.Height" value="303"/>
+								<property key="TOCDivider.Y" value="1"/>
+								<property key="GraphicLocator.Width" value="150"/>
+								<property key="MainWindow.Height" value="305"/>
+						</xml-tag>
+				</xml-tag>
+		</xml-tag>
+</xml-tag>

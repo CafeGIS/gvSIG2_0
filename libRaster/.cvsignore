@@ -1,0 +1,7 @@
+fmap-raster.jar
+org.gvsig.raster.jar
+dist
+bin
+*.tgz
+hs_err_pid*
+bin-test

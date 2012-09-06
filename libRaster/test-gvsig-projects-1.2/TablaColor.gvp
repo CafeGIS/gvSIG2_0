@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-tag xmlns="http://www.gvsig.gva.es">
+		<property key="className" value="com.iver.cit.gvsig.project.Project"/>
+		<property key="VERSION" value="1.2"/>
+		<property key="comments" value=""/>
+		<property key="creationDate" value="06-nov-2007"/>
+		<property key="numExtents" value="0"/>
+		<property key="numCameras" value="0"/>
+		<property key="data-source-count" value="0"/>
+		<property key="numDocuments" value="1"/>
+		<property key="modificationDate" value="06-nov-2007"/>
+		<property key="name" value="TablaColor.gvp"/>
+		<property key="owner" value=""/>
+		<property key="selectionColor" value="255,255,0,255"/>
+		<property key="projection" value="EPSG:23030"/>
+		<property key="followHeaderEncoding" value="true"/>
+		<xml-tag>
+				<property key="className" value="ProjectView"/>
+				<property key="comment"/>
+				<property key="creationDate" value="6/11/07 14:07"/>
+				<property key="name" value="Sin título - 0"/>
+				<property key="owner"/>
+				<property key="numViews" value="1"/>
+				<property key="m_selectedField"/>
+				<property key="m_typeLink" value="0"/>
+				<property key="m_extLink"/>
+				<property key="mapOverView" value="true"/>
+				<xml-tag>
+						<property key="className" value="com.iver.cit.gvsig.fmap.MapContext"/>
+						<xml-tag>
+								<property key="className" value="com.iver.cit.gvsig.fmap.ViewPort"/>
+								<property key="adjustedExtentX" value="-58.00124923341579"/>
+								<property key="adjustedExtentY" value="-41.72601541744211"/>
+								<property key="adjustedExtentW" value="411.0"/>
+								<property key="adjustedExtentH" value="376.0"/>
+								<property key="backColor" value="255,255,255,255"/>
+								<property key="dist1pixel" value="1.0"/>
+								<property key="dist3pixel" value="3.0"/>
+								<property key="distanceUnits" value="1"/>
+								<property key="extentX" value="-58.00124923341579"/>
+								<property key="extentY" value="-41.72601541744211"/>
+								<property key="extentW" value="411.0"/>
+								<property key="extentH" value="376.0"/>
+								<property key="mapUnits" value="1"/>
+								<property key="offsetX" value="0.0"/>
+								<property key="offsetY" value="0.0"/>
+								<property key="proj" value="EPSG:23030"/>
+								<property key="scale" value="1.0"/>
+								<xml-tag>
+										<property key="className" value="com.iver.cit.gvsig.fmap.ExtentHistory"/>
+										<property key="num" value="10"/>
+										<property key="numrec" value="10"/>
+										<property key="extent0X" value="0.0"/>
+										<property key="extent0Y" value="0.0"/>
+										<property key="extent0W" value="326.0"/>
+										<property key="extent0H" value="306.0"/>
+										<property key="extent1X" value="-364.9526248399488"/>
+										<property key="extent1Y" value="-218.88924455825864"/>
+										<property key="extent1W" value="994.0"/>
+										<property key="extent1H" value="781.0"/>
+										<property key="extent2X" value="-76.41798280761628"/>
+										<property key="extent2Y" value="-13.558990516688198"/>
+										<property key="extent2W" value="433.0"/>
+										<property key="extent2H" value="391.0"/>
+										<property key="extent3X" value="-71.91798280761628"/>
+										<property key="extent3Y" value="-147.0589905166882"/>
+										<property key="extent3W" value="433.0"/>
+										<property key="extent3H" value="658.0"/>
+										<property key="extent4X" value="18.623683859050402"/>
+										<property key="extent4Y" value="-127.51385162779928"/>
+										<property key="extent4W" value="288.0"/>
+										<property key="extent4H" value="658.0"/>
+										<property key="extent5X" value="2.7620486389246253"/>
+										<property key="extent5Y" value="79.73143139106855"/>
+										<property key="extent5W" value="328.0"/>
+										<property key="extent5H" value="318.0"/>
+										<property key="extent6X" value="-4.237951361075375"/>
+										<property key="extent6Y" value="-34.268568608931446"/>
+										<property key="extent6W" value="328.0"/>
+										<property key="extent6H" value="318.0"/>
+										<property key="extent7X" value="-10.237951361075375"/>
+										<property key="extent7Y" value="-47.268568608931446"/>
+										<property key="extent7W" value="328.0"/>
+										<property key="extent7H" value="318.0"/>
+										<property key="extent8X" value="-15.237951361075375"/>
+										<property key="extent8Y" value="-22.268568608931446"/>
+										<property key="extent8W" value="328.0"/>
+										<property key="extent8H" value="318.0"/>
+										<property key="extent9X" value="-4.237951361075375"/>
+										<property key="extent9Y" value="-4.268568608931446"/>
+										<property key="extent9W" value="328.0"/>
+										<property key="extent9H" value="318.0"/>
+								</xml-tag>
+						</xml-tag>
+						<xml-tag>
+								<property key="className" value="com.iver.cit.gvsig.fmap.layers.FLayers"/>
+								<property key="active" value="false"/>
+								<property key="name"/>
+								<property key="minScale" value="-1.0"/>
+								<property key="maxScale" value="-1.0"/>
+								<property key="visible" value="true"/>
+								<property key="transparency" value="255"/>
+								<property key="isInTOC" value="true"/>
+								<property key="numLayers" value="1"/>
+								<property key="LayerNames" value="gifTransparente.gif"/>
+								<xml-tag>
+										<property key="className" value="org.gvsig.fmap.raster.layers.FLyrRasterSE"/>
+										<property key="active" value="true"/>
+										<property key="name" value="gifTransparente.gif"/>
+										<property key="minScale" value="-1.0"/>
+										<property key="maxScale" value="-1.0"/>
+										<property key="visible" value="true"/>
+										<property key="proj" value="EPSG:23030"/>
+										<property key="transparency" value="255"/>
+										<property key="isInTOC" value="true"/>
+										<property key="file" value="../libRaster/test-images/gifTransparente.gif"/>
+										<property key="driverName" value="gvSIG Raster Driver"/>
+										<property key="raster.class" value="org.gvsig.fmap.raster.layers.StatusLayerRaster"/>
+										<property key="raster.bandR" value="0"/>
+										<property key="raster.bandG" value="1"/>
+										<property key="raster.bandB" value="2"/>
+										<property key="raster.file0" value="../libRaster/test-images/gifTransparente.gif"/>
+										<property key="filter.colortable.active" value="true"/>
+										<property key="filter.colortable.name" value="Tabla actual"/>
+										<property key="filter.colortable.interpolated" value="false"/>
+										<property key="filter.colortable.color0.value" value="0.0"/>
+										<property key="filter.colortable.color0.name" value=""/>
+										<property key="filter.colortable.color0.rgb" value="255,255,255"/>
+										<property
+												key="filter.colortable.color0.interpolated" value="50.0"/>
+										<property key="filter.colortable.color1.value" value="1.0"/>
+										<property key="filter.colortable.color1.name" value=""/>
+										<property key="filter.colortable.color1.rgb" value="0,51,204"/>
+										<property
+												key="filter.colortable.color1.interpolated" value="50.0"/>
+										<property key="filter.colortable.color2.value" value="2.0"/>
+										<property key="filter.colortable.color2.name" value=""/>
+										<property key="filter.colortable.color2.rgb" value="255,102,102"/>
+										<property
+												key="filter.colortable.color2.interpolated" value="50.0"/>
+										<property key="filter.colortable.color3.value" value="3.0"/>
+										<property key="filter.colortable.color3.name" value=""/>
+										<property key="filter.colortable.color3.rgb" value="255,0,0"/>
+										<property
+												key="filter.colortable.color3.interpolated" value="50.0"/>
+										<property key="filter.colortable.color4.value" value="4.0"/>
+										<property key="filter.colortable.color4.name" value=""/>
+										<property key="filter.colortable.color4.rgb" value="204,0,0"/>
+										<property
+												key="filter.colortable.color4.interpolated" value="50.0"/>
+										<property key="filter.colortable.color5.value" value="5.0"/>
+										<property key="filter.colortable.color5.name" value=""/>
+										<property key="filter.colortable.color5.rgb" value="153,0,0"/>
+										<property
+												key="filter.colortable.color5.interpolated" value="50.0"/>
+										<property key="filter.colortable.color6.value" value="6.0"/>
+										<property key="filter.colortable.color6.name" value=""/>
+										<property key="filter.colortable.color6.rgb" value="102,0,0"/>
+										<property
+												key="filter.colortable.color6.interpolated" value="50.0"/>
+										<property key="filter.colortable.color7.value" value="7.0"/>
+										<property key="filter.colortable.color7.name" value=""/>
+										<property key="filter.colortable.color7.rgb" value="255,153,51"/>
+										<property
+												key="filter.colortable.color7.interpolated" value="50.0"/>
+										<property key="filter.colortable.color8.value" value="8.0"/>
+										<property key="filter.colortable.color8.name" value=""/>
+										<property key="filter.colortable.color8.rgb" value="0,102,0"/>
+										<property
+												key="filter.colortable.color8.interpolated" value="50.0"/>
+										<property key="filter.colortable.color9.value" value="9.0"/>
+										<property key="filter.colortable.color9.name" value=""/>
+										<property key="filter.colortable.color9.rgb" value="153,255,153"/>
+										<property
+												key="filter.colortable.color9.interpolated" value="50.0"/>
+										<property key="filter.colortable.color10.value" value="10.0"/>
+										<property key="filter.colortable.color10.name" value=""/>
+										<property key="filter.colortable.color10.rgb" value="204,204,255"/>
+										<property
+												key="filter.colortable.color10.interpolated" value="50.0"/>
+										<property key="filter.colortable.color11.value" value="11.0"/>
+										<property key="filter.colortable.color11.name" value=""/>
+										<property key="filter.colortable.color11.rgb" value="153,153,255"/>
+										<property
+												key="filter.colortable.color11.interpolated" value="50.0"/>
+										<property key="filter.colortable.color12.value" value="12.0"/>
+										<property key="filter.colortable.color12.name" value=""/>
+										<property key="filter.colortable.color12.rgb" value="0,0,255"/>
+										<property
+												key="filter.colortable.color12.interpolated" value="50.0"/>
+										<property key="filter.colortable.color13.value" value="13.0"/>
+										<property key="filter.colortable.color13.name" value=""/>
+										<property key="filter.colortable.color13.rgb" value="153,153,255"/>
+										<property
+												key="filter.colortable.color13.interpolated" value="50.0"/>
+										<property key="filter.colortable.color14.value" value="14.0"/>
+										<property key="filter.colortable.color14.name" value=""/>
+										<property key="filter.colortable.color14.rgb" value="0,0,153"/>
+										<property
+												key="filter.colortable.color14.interpolated" value="50.0"/>
+										<property key="filter.colortable.color15.value" value="15.0"/>
+										<property key="filter.colortable.color15.name" value=""/>
+										<property key="filter.colortable.color15.rgb" value="0,51,255"/>
+										<property
+												key="filter.colortable.color15.interpolated" value="50.0"/>
+										<property key="filter.colortable.color16.value" value="16.0"/>
+										<property key="filter.colortable.color16.name" value=""/>
+										<property key="filter.colortable.color16.rgb" value="191,191,191"/>
+										<property
+												key="filter.colortable.color16.interpolated" value="50.0"/>
+										<property key="filter.colortable.color17.value" value="17.0"/>
+										<property key="filter.colortable.color17.name" value=""/>
+										<property key="filter.colortable.color17.rgb" value="153,0,153"/>
+										<property
+												key="filter.colortable.color17.interpolated" value="50.0"/>
+										<property key="filter.colortable.color18.value" value="31.0"/>
+										<property key="filter.colortable.color18.name" value=""/>
+										<property key="filter.colortable.color18.rgb" value="102,0,102"/>
+										<property
+												key="filter.colortable.color18.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha0.value" value="0.0"/>
+										<property key="filter.colortable.alpha0.a" value="0"/>
+										<property
+												key="filter.colortable.alpha0.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha1.value" value="1.0"/>
+										<property key="filter.colortable.alpha1.a" value="255"/>
+										<property
+												key="filter.colortable.alpha1.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha2.value" value="2.0"/>
+										<property key="filter.colortable.alpha2.a" value="255"/>
+										<property
+												key="filter.colortable.alpha2.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha3.value" value="3.0"/>
+										<property key="filter.colortable.alpha3.a" value="255"/>
+										<property
+												key="filter.colortable.alpha3.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha4.value" value="4.0"/>
+										<property key="filter.colortable.alpha4.a" value="255"/>
+										<property
+												key="filter.colortable.alpha4.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha5.value" value="5.0"/>
+										<property key="filter.colortable.alpha5.a" value="255"/>
+										<property
+												key="filter.colortable.alpha5.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha6.value" value="6.0"/>
+										<property key="filter.colortable.alpha6.a" value="255"/>
+										<property
+												key="filter.colortable.alpha6.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha7.value" value="7.0"/>
+										<property key="filter.colortable.alpha7.a" value="255"/>
+										<property
+												key="filter.colortable.alpha7.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha8.value" value="8.0"/>
+										<property key="filter.colortable.alpha8.a" value="255"/>
+										<property
+												key="filter.colortable.alpha8.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha9.value" value="9.0"/>
+										<property key="filter.colortable.alpha9.a" value="255"/>
+										<property
+												key="filter.colortable.alpha9.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha10.value" value="10.0"/>
+										<property key="filter.colortable.alpha10.a" value="255"/>
+										<property
+												key="filter.colortable.alpha10.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha11.value" value="11.0"/>
+										<property key="filter.colortable.alpha11.a" value="255"/>
+										<property
+												key="filter.colortable.alpha11.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha12.value" value="12.0"/>
+										<property key="filter.colortable.alpha12.a" value="255"/>
+										<property
+												key="filter.colortable.alpha12.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha13.value" value="13.0"/>
+										<property key="filter.colortable.alpha13.a" value="255"/>
+										<property
+												key="filter.colortable.alpha13.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha14.value" value="14.0"/>
+										<property key="filter.colortable.alpha14.a" value="255"/>
+										<property
+												key="filter.colortable.alpha14.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha15.value" value="15.0"/>
+										<property key="filter.colortable.alpha15.a" value="255"/>
+										<property
+												key="filter.colortable.alpha15.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha16.value" value="16.0"/>
+										<property key="filter.colortable.alpha16.a" value="255"/>
+										<property
+												key="filter.colortable.alpha16.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha17.value" value="17.0"/>
+										<property key="filter.colortable.alpha17.a" value="255"/>
+										<property
+												key="filter.colortable.alpha17.interpolated" value="50.0"/>
+										<property key="filter.colortable.alpha18.value" value="31.0"/>
+										<property key="filter.colortable.alpha18.a" value="255"/>
+										<property
+												key="filter.colortable.alpha18.interpolated" value="50.0"/>
+								</xml-tag>
+						</xml-tag>
+				</xml-tag>
+				<xml-tag>
+						<property key="className" value="com.iver.cit.gvsig.fmap.MapContext"/>
+						<xml-tag>
+								<property key="className" value="com.iver.cit.gvsig.fmap.ViewPort"/>
+								<property key="dist1pixel" value="0.0"/>
+								<property key="dist3pixel" value="0.0"/>
+								<property key="distanceUnits" value="1"/>
+								<property key="mapUnits" value="1"/>
+								<property key="offsetX" value="0.0"/>
+								<property key="offsetY" value="0.0"/>
+								<property key="proj" value="EPSG:23030"/>
+								<property key="scale" value="0.0"/>
+								<xml-tag>
+										<property key="className" value="com.iver.cit.gvsig.fmap.ExtentHistory"/>
+										<property key="num" value="0"/>
+										<property key="numrec" value="10"/>
+								</xml-tag>
+						</xml-tag>
+						<xml-tag>
+								<property key="className" value="com.iver.cit.gvsig.fmap.layers.FLayers"/>
+								<property key="active" value="false"/>
+								<property key="name"/>
+								<property key="minScale" value="-1.0"/>
+								<property key="maxScale" value="-1.0"/>
+								<property key="visible" value="true"/>
+								<property key="transparency" value="255"/>
+								<property key="isInTOC" value="true"/>
+								<property key="numLayers" value="0"/>
+								<property key="LayerNames" value=""/>
+						</xml-tag>
+				</xml-tag>
+		</xml-tag>
+		<xml-tag>
+				<property key="name" value="AndamiPersistence"/>
+				<property key="className" value="com.iver.cit.gvsig.project.Project"/>
+				<xml-tag>
+						<property key="name" value="ViewInfoProperties"/>
+						<property key="X" value="-1"/>
+						<property key="Y" value="-1"/>
+						<property key="Width" value="430"/>
+						<property key="Height" value="594"/>
+						<property key="isVisible" value="true"/>
+						<property key="isResizable" value="false"/>
+						<property key="isMaximizable" value="true"/>
+						<property key="isModal" value="false"/>
+						<property key="isModeless" value="false"/>
+						<property key="isClosed" value="false"/>
+						<property key="ParentName"/>
+						<property key="className" value="com.iver.cit.gvsig.project.document.gui.ProjectWindow"/>
+						<property key="zPosition" value="1"/>
+				</xml-tag>
+				<xml-tag>
+						<property key="name" value="ViewInfoProperties"/>
+						<property key="X" value="-1"/>
+						<property key="Y" value="-1"/>
+						<property key="Width" value="580"/>
+						<property key="Height" value="413"/>
+						<property key="isVisible" value="true"/>
+						<property key="isResizable" value="true"/>
+						<property key="isMaximizable" value="true"/>
+						<property key="isModal" value="false"/>
+						<property key="isModeless" value="false"/>
+						<property key="isClosed" value="false"/>
+						<property key="ParentName"/>
+						<property key="documentType" value="ProjectView"/>
+						<property key="documentName" value="Sin título - 0"/>
+						<property key="zPosition" value="0"/>
+						<xml-tag>
+								<property key="name" value="windowData"/>
+								<property key="TOC.Height" value="252"/>
+								<property key="MainDivider.Location" value="153"/>
+								<property key="GraphicLocator.isPalette" value="false"/>
+								<property key="MainWindow.Y" value="0"/>
+								<property key="MainWindow.Width" value="570"/>
+								<property key="MainDivider.Y" value="0"/>
+								<property key="TOC.Width" value="150"/>
+								<property key="TOCDivider.X" value="1"/>
+								<property key="MapControl.Width" value="411"/>
+								<property key="MainWindow.X" value="0"/>
+								<property key="MainDivider.X" value="0"/>
+								<property key="TOCDivider.Location" value="253"/>
+								<property key="GraphicLocator.Height" value="117"/>
+								<property key="TOCDivider.Height" value="376"/>
+								<property key="MainDivider.Height" value="378"/>
+								<property key="TOCDivider.Width" value="152"/>
+								<property key="MainDivider.Width" value="570"/>
+								<property key="MapControl.Height" value="376"/>
+								<property key="TOCDivider.Y" value="1"/>
+								<property key="GraphicLocator.Width" value="150"/>
+								<property key="MainWindow.Height" value="378"/>
+						</xml-tag>
+				</xml-tag>
+		</xml-tag>
+</xml-tag>

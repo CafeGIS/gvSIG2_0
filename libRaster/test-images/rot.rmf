@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<RasterMetaFile>
+<FLyrGeoRaster>
+	<Projection>EPSG:23030</Projection>
+	<Extent>
+			<X>645519.8062266004</X>
+			<Y>4925635.747389836</Y>
+			<RotationX>-1.2132800188916328</RotationX>
+			<RotationY>-1.2132800188916328</RotationY>
+			<PixelSizeX>2.0707369692354263</PixelSizeX>
+			<PixelSizeY>-2.0707369692354263</PixelSizeY>
+			<Width>2857.0947796705877</Width>
+			<Height>2857.0947796702385</Height>
+	</Extent>
+	<Dimension>
+			<ImagePxWidth>870.0</ImagePxWidth>
+			<ImagePxHeight>870.0</ImagePxHeight>
+	</Dimension>
+</FLyrGeoRaster>
+</RasterMetaFile>
