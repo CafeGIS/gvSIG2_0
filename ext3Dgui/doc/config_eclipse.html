@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Configuraci&oacute;n del arranque de gvSIG dentro de eclipse con 3D</TITLE>
+</HEAD>
+<BODY LANG="es-ES" DIR="LTR">
+<H2>Plugin de 3D para gvSIG:</H2>
+<H3>Cambios en la configuraci&oacute;n del arranque
+de gvSIG para que funcione el plugin:</H3>
+<P ALIGN=JUSTIFY>El plugin de 3D requiere unas librer&iacute;as en el
+<I>classpath</I> de arranque de <I>andami</I> y para no tener que
+modificar las propiedades del proyecto, vamos a explicar los cambios en la
+configuraci&oacute;n del <I>Run</I> para que arranque la aplicaci&oacute;n correctamente:</P>
+<ol>
+  <li>Abrir la configuraci&oacute;n del <I>Run</I>.</li>
+  <li>Pestaña <b><i>Classpath</i></b> </li>
+  <li>Pinchar sobre el elemento de la lista <i>User entries</i></li>
+  <li>Bot&oacute;n <i>Add Jars...</i></li>
+  <li>De <i>_fwAndami/lib</i> seleccionar los siguientes proyectos<BR>
+  	<ul>
+  		<li>jogl*.jar</li>
+  		<li>libosg-*.jar</li>
+  		<li>libNative-*.jar</li>
+  		<li>gluegen-rt-*.jar</li>
+  	</ul>
+  </li>
+</ol>
+</BODY>
+</HTML>

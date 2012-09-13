@@ -1,0 +1,47 @@
+<assembly>
+	<id>distribution</id>
+	<formats>
+		<format>dir</format>
+	</formats>
+	<includeBaseDirectory>true</includeBaseDirectory>
+
+	<!-- baseDirectory>d:/java/distri</baseDirectory-->
+	<fileSets>
+		<!-- Extructure for the extension -->
+		<fileSet>
+			<directory>/config</directory>
+			<outputDirectory>
+				/linux/bin/${extension-distribution}
+			</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>/images</directory>
+			<outputDirectory>
+				/linux/bin/${extension-distribution}/images
+			</outputDirectory>
+		</fileSet>
+
+	</fileSets>
+	<!-- files>
+		<file>
+			<source>build.number</source>
+			<outputDirectory>
+				/linux/bin/${extension-distribution}
+			</outputDirectory>
+		</file>
+	</files-->
+	<!-- *********************************************************************** -->
+	<!-- *													   *-->
+	<!-- ***********************************************************************-->
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>
+				/linux/bin/${extension-distribution}/lib/
+			</outputDirectory>
+			<includes>
+				<include>org.gvsig:extAnimation3D</include>
+				<include>org.gvsig:libAnimation3D</include>
+			</includes>
+		</dependencySet>
+	</dependencySets>
+</assembly>

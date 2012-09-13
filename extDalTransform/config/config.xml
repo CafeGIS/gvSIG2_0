@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="lib"/>
+	<depends plugin-name="com.iver.cit.gvsig" />
+	<resourceBundle name="text"/>	
+	<extensions>		
+		<extension class-name="org.gvsig.app.daltransform.DataTransformExtension"
+			description=""
+			active="true">
+			<menu text="tools/feature_transform" />
+		</extension>
+	</extensions>	
+</plugin-config>

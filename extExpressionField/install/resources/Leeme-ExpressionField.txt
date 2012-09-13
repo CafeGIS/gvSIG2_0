@@ -1,0 +1,30 @@
+Plugin Calculadora de Campos versión 1.0 (Build Number #build.number#):
+
+Antes de comenzar compruebe los siguientes puntos:
+
+1.- Descargue los fuentes de la v1.0.2 de gvSIG. Siga los pasos allí indicados en el archivo 'Leeme.txt' para obtener un entorno de desarrollo funcional.
+
+*** Compilación
+
+1.- Descomprima este paquete dentro del directorio de fuentes que acaba de preparar ( gvSIG-1_0_2-src).
+
+2.- (Sólo si usa eclipse) Importe los proyectos que acaba de descomprimir:
+  *1: Menú File/Import.
+  *2: Seleccione 'Existing Projects into workspace' y 'Next'
+  *3: Con la opción 'Select root directory' pulse 'Browse...'
+  *4: Sitúese en el directorio del workspace (normalmente el dialogo ya se encuentra en él) y pulse 'Aceptar'.
+  *5: Pulse 'Deselect All'
+  *6: Marque los siguientes proyectos de la lista: extExpressionField.
+  *7: Pulse 'Finish'.
+
+3.- Ejecute el 'build.xml' del proyecto 'extExpressionField' (usando ant o eclipse).
+
+Ante cualquier problema:
+
+Apuntese a la lista de desarrolladores de gvSIG y pregunte allí (http://www.gvsig.gva.es).
+
+Gracias por desarrollar sobre gvSIG.
+
+Un saludo.
+
+Equipo gvSIG.

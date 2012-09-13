@@ -1,0 +1,7 @@
+ CÓMO GENERAR EL INSTALADOR:
+ ===========================
+- gvSIG debe estar correctamente construido en ../_fwAndami/bin 
+- En el fichero variables.sh hay algunas variables que nos pueden interesar, que permiten personalizar el nombre del plugin, la versión, el directorio destino, etc. La variable  APPNAME normalmente valdrá "gvSIG", pero puede tiener nombre si estamos empaquetando una extensión (por ejemplo,  "nomenclatorIGN").
+- Definir los packs adecuados en el fichero XML de configuración (install.xml), y revisar el fichero en general.
+- Definir las extensiones a incluir en el directorio variables.sh.
+- Lanzar el script distribucion.sh.

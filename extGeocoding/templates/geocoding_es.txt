@@ -1,0 +1,7 @@
+Ciudad
+País
+Calle
+Comunidad
+Municipio
+Código Postal
+Provincia

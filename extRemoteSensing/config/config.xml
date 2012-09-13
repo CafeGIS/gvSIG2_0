@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="./lib"/>
+	<depends plugin-name="com.iver.cit.gvsig" />
+	<depends plugin-name="org.gvsig.rastertools" />
+	<resourceBundle name="text"/>
+	<extensions>
+	
+		<extension class-name="org.gvsig.remotesensing.RemoteSensingModule"
+			description="Extensión base de teledetección" 
+			active="true" 
+			priority="1">
+		</extension>
+		
+		<extension class-name="org.gvsig.remotesensing.GridCalculatorExtension"
+			description="Band Calculator"
+			active="true"
+			priority="1">
+		</extension>
+<!--
+		<extension class-name="org.gvsig.remotesensing.PrincipalComponentsExtension"
+			description="principal_components"
+			active="true"
+			priority="1">
+		</extension>
+
+		<extension class-name="org.gvsig.remotesensing.TasseledCapExtension"
+			description="tasseled_cap"
+			active="true"
+			priority="1">
+		</extension>
+-->
+		<extension class-name="org.gvsig.remotesensing.ClassificationExtension"
+			description="classification"
+			active="true"
+			priority="1">
+		</extension>
+
+	</extensions>
+</plugin-config>

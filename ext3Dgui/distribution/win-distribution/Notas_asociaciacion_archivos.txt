@@ -1,0 +1,496 @@
+
+Pareceser que hay que añadir unas claves al registro... 
+puede hacerse generando un fichero .reg 
+con las claves preparadas y usando el regedit en modo silencioso
+
+el comando es:
+  regedit /s fichero.reg
+
+
+la claves son:
+HKCR\{ext}  = {typeAbr}
+HKCR\{typeAbr}\ = {typeName}
+HKCR\{typeAbr}\DefaultIcon = {FileIcon}
+HKCR\{typeAbr}\shell\open\command = {exeCommand}
+
+
+estas no parecen necesarias:
+HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\{ext}\Application = {exeName}
+HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\{ext}\OpenWithList\a = {exeName}
+
+donde:
+{ext} = ".gvp"
+{typeAbr} ="gvSIGProject"
+{typeName} ="gvSIG Project file"
+{FileIcon} = "gvSIG.ico" || "gvSIG.exe"
+{exeCommand} = "gvSIG.exe %L"
+{exeName} = "gvSIG.exe"
+
+
+Ejeplo de fichero .reg:
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.gvp]
+@="gvSIGProject"
+
+[HKEY_CLASSES_ROOT\gvSIGProject]
+@="gvSIG Project file"
+
+[HKEY_CLASSES_ROOT\gvSIGProject\DefaultIcon]
+@="C:\\Archivos de programas\\gvSIG_1.0\\bin\\ico-gvSIG.ico,0"
+
+
+[HKEY_CLASSES_ROOT\gvSIGProject\shell\open]
+@="Abrir"
+
+[HKEY_CLASSES_ROOT\gvSIGProject\shell\open\command]
+@="C:\\Archivos de programas\\gvSIG_1.0\\bin\\gvSIG.exe \"%1\""
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************
+URL's y recortes:
+
+
+http://en.wikipedia.org/wiki/Windows_registry
+
+http://www.akadia.com/services/windows_registry_tutorial.html
+
+http://webtools.live2support.com/windows/
+
+
+
+
+
+
+
+http://www.freevbcode.com/ShowCode.asp?ID=2799
+******************
+usando VB
+
+
+Public Sub associate(EXT As String, FileType As String, _
+   FileName As String)
+On Error Resume Next
+Dim b As Object
+Set b = CreateObject("wscript.shell")
+b.regwrite "HKCR\" & EXT & "\", FileType
+b.regwrite "HKCR\" & FileType & "\", "MY file"
+b.regwrite "HKCR\" & FileType & "\DefaultIcon\", FileName
+b.regwrite "HKCR\" & FileType & "\shell\open\command\", _
+   FileName & " %L"
+b.regdelete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\" & EXT & "\Application"
+b.regwrite "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\" & EXT & "\Application", FileName
+b.regdelete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\" & EXT & "\OpenWithList\"
+b.regwrite "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\" & EXT & "\OpenWithList\a", FileName
+
+End Sub
+
+'Sample Usage
+Private Sub Form_Load()
+associate ".jpg", "JPGFile", _
+   "C:\Program Files\Accessories\MSPAINT.EXE"
+Unload Me
+End Sub
+
+
+****************
+
+
+http://www.ss64.com/nt/:
+http://www.ss64.com/nt/ftype.html
+**************************************************************************
+FTYPE
+
+Display or change the link between a FileType and an executable program
+
+Syntax
+   FTYPE fileType=executable_path
+
+   FTYPE
+
+   FTYPE fileType
+
+   FTYPE fileType=
+
+Key
+   fileType        : The type of file
+
+   executable_path : The executable program including any command line parameters             
+
+More than one file extension may be associated with the same File Type.
+e.g. both the extension .JPG and the extension .JPEG may be associated with the File Type "jpegfile"
+
+File Types can be displayed in the Windows Explorer GUI: [View, Options, File Types] however the spelling is usually different to that expected by the FTYPE command e.g. the File Type "txtfile" is displayed in the GUI as "Text Document"and "jpegfile" is displayed as "image/jpeg"
+
+Several FileTypes can be linked to the same executable application, but
+one FileType cannot be linked to more than one executable application.
+
+FTYPE file type will display the current executable program for that file type.
+
+FTYPE without any parameters will display all FileTypes and the executable program for each.
+
+Defining command line parameters
+
+It is almost always necessary to supply command line parameters so that when a document is opened not only is the relevant application loaded into memory but the document itself also loaded into the application. To make this happen the filename of the document must be passed back to the application.
+
+Command line parameters are exactly like batch file parameters, %0 is the executable program and %1 will reference the document filename
+
+so a simple command line might be:
+
+MyApplication.exe "%1"
+
+If any further parameters are required by the application they can be passed as %2, %3. To pass ALL parameters to an application use %*. To pass all the remaining parameters starting with the nth parameter, use %~n where n is between 2 and 9.
+
+The FileType should always be created before making a File Association
+
+For example:
+
+FTYPE htmlfile="C:\PROGRA~1\Plus!\MICROS~1\iexplore.exe" -nohome
+ASSOC .html=htmlfile
+
+FTYPE pagemill.html=C:\PROGRA~1\Adobe\PAGEMI~1.0\PageMill.exe "%1"
+ASSOC .html=pagemill.html
+
+FTYPE rtffile="C:\Program Files\Windows NT\Accessories\WORDPAD.EXE" "%1"
+ASSOC .rtf=rtffile
+
+FTYPE word.rtf.8="C:\Program Files\Microsoft Office\Office\winword.exe" /n
+ASSOC .rtf=word.rtf.8
+
+Switching a File Association between multiple applications
+
+If you have multiple applications that use the same file extension, the ASSOC command can be used to switch the file extension between the different FileTypes.
+
+Deleting a FileType
+
+Specify executable_path=nothing and the FTYPE command will delete the executable_path for that FileType.
+For example:
+FTYPE htmlfile=
+
+Backing up your FileTypes
+
+FTYPE >backup_types.txt
+ASSOC >backup_ext.txt
+
+Restoring your FileTypes from a Backup
+
+FOR /F "tokens=* delims=" %G IN (backup_types.txt) DO FTYPE %G
+FOR /F "tokens=* delims=" %G IN (backup_ext.txt) DO ASSOC %G
+
+This will recreate the CLASS id's in the registry at HKey_Classes_Root\.<file extension>
+If you put the commands above in a batch file change the %G to be %%G
+
+Using File associations at the command line
+
+If you have a file association between .DOC and Word for Windows then at a command prompt you can open a document with any of the following commands:
+
+Start "My Document.doc"
+"Monthly Report.doc"
+JULY.DOC
+
+note that the file extension must be supplied for this to work
+
+"True to type - Of a plant, or group of plants, which matches the accepted description of the cultivar to which it is assumed to belong"
+
+Related Commands:
+
+ASSOC - Change file extension associations
+Batch file to list the application associated with a file extension
+ASSOCIAT - One step file association (Resource Kit)
+
+**************************************************************************
+
+http://www.ss64.com/nt/assoc.html
+*************************************************************************
+
+ASSOC
+
+Display or change the association between a file extension and a fileType
+
+Syntax
+   ASSOC .ext = [fileType]
+   ASSOC
+   ASSOC .ext
+   ASSOC .ext =
+
+Key
+    .ext      : The file extension
+    fileType  : The type of file 
+
+A file extension is the last few characters in a FileName after the period.
+So a file called JANUARY.HTML has the file extension .HTML
+
+The File extension is used by Windows NT to determine the type of information stored in the file and therefore which application(s) will be able to display the information in the file. File extensions are not case sensitive and are not limited to 3 characters.
+
+More than one file extension may be associated with the same File Type.
+e.g. both the extension .JPG and the extension .JPEG may be associated with the File Type "jpegfile"
+
+At any one time a given file extension may only be associated with one File Type.
+e.g. If you change the extension .JPG so it is associated with the File Type "txtfile" then it's normal association with "jpegfile" will disappear. Removing the association to "txtfile" does not restore the association to "jpegfile"
+
+File Types can be displayed in the Windows Explorer GUI: [View, Options, File Types] however the spelling is usually different to that expected by the ASSOC command e.g. the File Type "txtfile" is displayed in the GUI as "Text Document"and "jpegfile" is displayed as "image/jpeg"
+
+The command ASSOC followed by just a file extension will display the current File Type for that extension.
+
+ASSOC without any parameters will display all the current file associations.
+
+ASSOC with ".ext=" will delete the association for that file extension.
+
+Did you leave the Always Use This Program To Open This File option turned on?
+To change it back so it prompts you to specify a program each time, just delete the association for that file type
+ASSOC .ext=
+[where .ext is the file extension].
+Now when you double-click on a file of that type, the system will ask you what program you want to use.
+
+Using the ASSOC command will edit values stored in the registry at HKey_Classes_Root\.<file extension>
+Therefore it's possible to use registry permissions to protect a file extension and prevent any file association changes.
+
+Examples:
+
+Viewing file associations:
+
+ASSOC .txt
+ASSOC .doc
+ASSOC >backup.txt
+
+Editing file associations:
+
+ASSOC .txt=txtfile
+ASSOC .DIC=txtfile
+ASSOC .html=Htmlfile
+
+Deleting a file association:
+
+ASSOC .html=
+
+Repair .REG and .EXE file associations:
+
+ASSOC .EXE=exefile
+ASSOC .REG=regfile
+
+Digging through CLASSES_ROOT entries often reveals more than one shell for the same application, for example the Apple Quick Time player has two entries, one to "open" (which gives an annoying nag screen) and one to just "play" the QT file:
+[HKEY_CLASSES_ROOT\MOVFile\shell\open] and [play]
+
+In cases like this you can change the default action e.g.
+[HKEY_CLASSES_ROOT\MOVFile\shell]
+@="play"
+
+"Of all forms of caution, caution in love is perhaps the most fatal to true happiness" - Bertrand Russell
+
+Related:
+
+FTYPE - Edit file types (used in file extension associations)
+Batch file to list the application associated with a file extension
+ASSOCIAT - One step file association (Resource Kit)
+Q162059 - Associate Internet Explorer with MS Office files
+JSIFAQ - Tip 9715 - List File Types with executable path
+
+****************************************************************
+
+
+http://www.ss64.com/nt/associate.html
+**********************************************************************
+ASSOCIATE.exe (Resource Kit)
+
+One step file association.
+
+This utility does the job of both ASSOC and FTYPE, in one step. ASSOCIATE assigns an extension directly with an executable application. This is done by automatically adding a new FileType to the system registry.
+
+Syntax
+      ASSOCIATE .ext filename [/q /d /f]
+
+Key
+   .ext     : Extension to be associated.
+   filename : Executable program to associate .ext with.
+   /q       : Quiet - Suppress interactive prompts.
+   /f       : Force - Force overwrite or delete without questions.
+   /d       : Delete - Delete the association.
+
+A file extension is the last few characters in a FileName after the period.
+So a file called JANUARY.HTML has the file extension .HTML
+
+The File extension is used by Windows NT to determine the type of information stored in the file and therefore which application(s) will be able to display the information in the file. File extensions are not case sensitive and are not limited to 3 characters.
+
+Example: adding a File Association
+
+To add the File Type "SQLfile"=Notepad.exe and also set the File Association of .SQL="SQLfile" run this command:
+
+ASSOCIATE .SQL Notepad.exe
+
+Example: Removing a File Association
+
+ASSOCIATE .SQL /d
+
+Note that /d will delete the File Association but will NOT delete the File Type.
+
+File types created by Associate.exe are always given a name in the form xxxfile, where xxx is the file extension.
+
+"There are three roads to ruin; women, gambling and technicians. The most pleasant is with women, the quickest is with gambling, but the surest is with technicians" - Georges Pompidou
+
+Related Commands:
+
+ASSOC Change file extension associations
+FTYPE Display or modify file types used in file extension associations
+**********************************************************************
+
+
+
+
+WINDOWS 98
+
+
+http://groups.google.com/group/alt.msdos.batch/browse_thread/thread/556321da29c9ca2e/e60e3330cd284b99?lnk=gst&q=file+association&rnum=2#e60e3330cd284b99
+***************************************************************************
+
+	
+De:		William Allen - ver perfil
+Fecha:		Mié 26 mar 2003 14:28
+Correo electrónico: 		"William Allen" <_inval...@mayfly13.fsnet.co.uk>
+Grupos: 		alt.msdos.batch
+Sin calificar
+Valoración:	 
+mostrar opciones
+Responder | Responder al autor | Reenviar | Imprimir | Mensaje individual | Mostrar mensaje original | Notificar abuso | Buscar mensajes de este autor
+
+"Robert Mark Bram" wrote in message
+> I recently asked this question in alt.msdos.batch.nt -- but I need an answer
+> for Win 98..
+
+> Can use a batch file to create a windows file association?
+
+Yes. Windows 95/98/ME users can use the Windows 98 Resource Kit
+utility ASSOCIAT.EXE (cloned from the NT4 Resource Kit), which will
+operate with the Windows 95/98/ME registries to create file associations
+very easily. ASSOCIAT.EXE provides an informative ERRORLEVEL and
+is designed for use in Batch files. Downloadable free from the Microsoft FTP site:
+ftp://ftp.microsoft.com/Services/TechNet/samples/ps/win98/Reskit/FILE/
+
+and click on file: ASSOCIAT.EXE
+
+For syntax help with using ASSOCIAT.EXE, use the /? switch
+associat /?
+
+Full documentation, usage instructions, and syntax examples for Batch
+usage of all the Windows 98 Resource Kit Batch tools (which you can
+use in Windows 95 and ME, too):
+ftp://ftp.microsoft.com/Services/TechNet/samples/ps/win98/reskit/help...
+This is a fully indexed and searchable compiled help file. Although
+each utility responds to the usual /? for brief help, this main file has
+huge detail. When you have the file, look in the Contents section
+under "Scripting Tools". 
+
+
+*************************************************************************
+
+PARA TODOS LOS WINDOWS
+
+http://www.robvanderwoude.com/index.html
+http://www.robvanderwoude.com/files/defopen.txt
+
+defopen.bat
+
+Create a default file association to Notepad and add "Open with Notepad", "Print with Notepad" and "Command Prompt Here" options to popup menus
+
+************************************************************************
+@ECHO OFF
+:: No parameters required
+IF NOT [%1]==[] GOTO Syntax
+
+:: Choose the correct command processor for the current operating system
+SET _cmd=
+:: Variable to add shortcut to menu entry (NT only,
+:: since COMMAND.COM cannot echo an ampersand)
+SET _=
+ECHO.%COMSPEC% | FIND /I "command.com" >NUL
+IF NOT ERRORLEVEL 1 SET _cmd=command.com /e:4096
+ECHO.%COMSPEC% | FIND /I "cmd.exe" >NUL
+IF NOT ERRORLEVEL 1 SET _cmd=cmd.exe
+IF [%_cmd%]==[cmd.exe] SET _=^&
+
+:: Create a temporary .REG file
+> "%Temp%.\DefOpen.reg" ECHO REGEDIT4
+>>"%Temp%.\DefOpen.reg" ECHO.
+ECHO Adding "Open with Notepad" entry
+>>"%Temp%.\DefOpen.reg" ECHO [HKEY_CLASSES_ROOT\*\shell\open]
+>>"%Temp%.\DefOpen.reg" ECHO @="%_%Open with Notepad"
+>>"%Temp%.\DefOpen.reg" ECHO.
+>>"%Temp%.\DefOpen.reg" ECHO [HKEY_CLASSES_ROOT\*\shell\open\command]
+>>"%Temp%.\DefOpen.reg" ECHO @="notepad.exe \"%%1\""
+>>"%Temp%.\DefOpen.reg" ECHO.
+ECHO Adding "Print with Notepad" entry
+>>"%Temp%.\DefOpen.reg" ECHO [HKEY_CLASSES_ROOT\*\shell\print]
+>>"%Temp%.\DefOpen.reg" ECHO @="%_%Print with Notepad"
+>>"%Temp%.\DefOpen.reg" ECHO.
+>>"%Temp%.\DefOpen.reg" ECHO [HKEY_CLASSES_ROOT\*\shell\print\command]
+>>"%Temp%.\DefOpen.reg" ECHO @="notepad.exe /p \"%%1\""
+>>"%Temp%.\DefOpen.reg" ECHO.
+
+:: If neither COMMAND.COM nor CMD.EXE then skip this step
+IF [%_cmd%]==[] ECHO Skipping "Command Prompt Here" entry
+IF [%_cmd%]==[] GOTO Merge
+
+ECHO Adding "Command Prompt Here" entry
+:: Add Command Prompt Here for files
+>>"%Temp%.\DefOpen.reg" ECHO [HKEY_CLASSES_ROOT\*\shell\prompt]
+>>"%Temp%.\DefOpen.reg" ECHO @="Command Prompt Here"
+>>"%Temp%.\DefOpen.reg" ECHO.
+>>"%Temp%.\DefOpen.reg" ECHO [HKEY_CLASSES_ROOT\*\shell\prompt\command]
+>>"%Temp%.\DefOpen.reg" ECHO @="%_cmd% /k cd \"%%1\\..\""
+>>"%Temp%.\DefOpen.reg" ECHO.
+:: Add Command Prompt Here for directories
+>>"%Temp%.\DefOpen.reg" ECHO [HKEY_CLASSES_ROOT\Directory\shell\prompt]
+>>"%Temp%.\DefOpen.reg" ECHO @="Command Prompt Here"
+>>"%Temp%.\DefOpen.reg" ECHO.
+>>"%Temp%.\DefOpen.reg" ECHO [HKEY_CLASSES_ROOT\Directory\shell\prompt\command]
+>>"%Temp%.\DefOpen.reg" ECHO @="%_cmd% /k cd \"%%1\""
+>>"%Temp%.\DefOpen.reg" ECHO.
+:: Add Command Prompt Here for drives
+>>"%Temp%.\DefOpen.reg" ECHO [HKEY_CLASSES_ROOT\Drive\shell\prompt]
+>>"%Temp%.\DefOpen.reg" ECHO @="Command Prompt Here"
+>>"%Temp%.\DefOpen.reg" ECHO.
+>>"%Temp%.\DefOpen.reg" ECHO [HKEY_CLASSES_ROOT\Drive\shell\prompt\command]
+>>"%Temp%.\DefOpen.reg" ECHO @="%_cmd% /k cd \"%%1\""
+>>"%Temp%.\DefOpen.reg" ECHO.
+
+:: Merge the temporary .REG file
+:Merge
+START /WAIT REGEDIT /S "%Temp%.\DefOpen.reg"
+
+:: Delete the temporary .REG file
+DEL "%Temp%.\DefOpen.reg"
+
+:: Ready
+GOTO End
+
+:Syntax
+ECHO.
+ECHO DefOpen.bat,  Version 3.00 for Windows 95/98/NT 4/2000/XP
+ECHO Adds a default association: when a file without a file association
+ECHO is double-clicked, it will be opened with Notepad.
+ECHO Adds three new entries to the right mouse button menu as well:
+ECHO "Open with Notepad", "Print with Notepad" and "Command Prompt Here".
+ECHO.
+ECHO Usage:  DEFOPEN
+ECHO.
+ECHO Written by Rob van der Woude
+ECHO http://www.robvanderwoude.com
+ECHO Notepad registry tip courtesy of Regedit.com
+ECHO http://www.regedit.com
+
+:: Clean up variables and quit
+:End
+SET _cmd=
+SET _=
+*****************************
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<shortcuts>
+
+	<skipIfNotSupported/>
+	<programGroup 	defaultName="Gva/gvSIG"
+									location="applications"/>
+	<shortcut	name="gvSIG"
+						target="$INSTALL_PATH/bin/gvSIG.exe"
+						workingDirectory="$INSTALL_PATH/bin"
+						description="gvSIG application"
+						iconFile="$INSTALL_PATH/bin/ico-gvSIG.ico"
+						iconIndex="0"
+						initialState="normal"
+						programGroup="yes"
+						desktop="yes"
+						applications="no"
+						startMenu="yes"
+						startup="no">
+		<createForPack name="gvSIG program"/>
+	</shortcut>
+		
+   	<shortcut	name="User Manual"
+				target="$INSTALL_PATH\user-doc\user-doc-0.3.pdf"
+		     	programGroup="yes"
+				desktop="no"
+				applications="no"
+				startMenu="no"
+				startup="no"
+				iconFile="$INSTALL_PATH\bin\help.ico"
+				commandLine=""
+				description="Documentation">  
+     <createForPack name="Documentation" />
+   </shortcut>
+   
+	<shortcut
+         name="Uninstall gvSIG"
+         programGroup="yes"
+         desktop="no"
+         applications="no"
+         startMenu="no"
+         startup="no"
+         type="Application"
+         encoding="UTF-8"
+         target="$INSTALL_PATH\bin\uninstall.bat"
+         commandLine=""
+         workingDirectory=""
+         description="Uninstall gvSIG"
+         iconIndex="0"
+         iconFile="$INSTALL_PATH\bin\uninstall.ico"
+         initialState="noShow">
+	</shortcut>
+   
+</shortcuts>

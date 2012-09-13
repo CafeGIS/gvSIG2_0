@@ -1,0 +1,51 @@
+<assembly>
+	<id>distribution</id>
+	<formats>
+		<format>dir</format>
+	</formats>
+	<fileSets>
+	<!-- Extructure for the extension -->
+		<fileSet>
+			<directory>config</directory>
+			<outputDirectory>${extension-distribution}
+			</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>images</directory>
+			<outputDirectory>/${extension-distribution}/images
+			</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<files>
+		<file>
+			<source>build.number</source>
+			<outputDirectory>${extension-distribution}
+			</outputDirectory>
+		</file>
+	</files>
+	<!--
+		***********************************************************************
+	-->
+  <!-- *													   *-->
+	<!--
+		***********************************************************************
+	-->
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>${extension-distribution}/${library-dir}
+			</outputDirectory>
+			<includes>
+				<include>org.gvsig:com.iver.gvsig.centerviewpoint</include>
+			</includes>
+		</dependencySet>
+		<!-- 
+		<dependencySet>
+			<outputDirectory>${extension-distribution}/${library-dir}</outputDirectory>
+			<includes>
+				<include>org.gvsig.legacy:bsf</include>
+				<include>org.gvsig.legacy:smc</include>
+			</includes>
+		</dependencySet>
+		 -->
+	</dependencySets>
+</assembly>

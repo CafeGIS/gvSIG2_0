@@ -1,0 +1,5 @@
+<andami-config locale-language="$ISO3_LANG" pluginsDirectory="gvSIG/extensiones">
+	<andami update="yes"/>
+        <plugin name="com.iver.cit.gvsig" update="yes"/>
+        <plugin name="com.iver.core" update="no"/>
+</andami-config>

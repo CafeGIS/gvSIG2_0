@@ -1,0 +1,11 @@
+Ciutat
+Pais
+Carrer
+Nombre
+Barri
+Porta
+Municipi
+Codi Postal
+Rambla
+Continent
+Illa

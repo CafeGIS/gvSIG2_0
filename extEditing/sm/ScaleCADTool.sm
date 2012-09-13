@@ -1,0 +1,138 @@
+// -*- tab-width: 4; -*-
+
+%{
+//
+// Vicente Caballero Navarro
+%}
+
+%start Scale::PointMain
+%class ScaleCADTool
+%package com.iver.cit.gvsig.gui.cad.tools.smc
+%import com.iver.cit.gvsig.gui.cad.tools.ScaleCADTool
+%import java.awt.event.InputEvent
+%import com.iver.andami.PluginServices
+
+%map Scale
+%%
+// A task begins life in suspended animation.
+
+PointMain
+	Entry {
+		selection();
+		setQuestion(
+		PluginServices.getText(this,"insert_basis_point"));
+		setDescription(new String[]{"cancel"});
+
+		}
+	Exit{
+		}
+
+	{
+		addPoint( pointX:double,pointY:double,event:InputEvent)
+			ScaleFactorOrReference {
+				setQuestion(
+					PluginServices.getText(this,"insert_factor")+ " "+
+					PluginServices.getText(this,"cad.or")+" "+
+					PluginServices.getText(this,"reference")+
+					PluginServices.getText(this,"ScaleCADTool.reference"));
+				setDescription(new String[]{"reference","cancel"});
+				addPoint( pointX,pointY,event);
+				}
+	}
+ScaleFactorOrReference{
+	addValue(d:double)
+		PointMain{
+			addValue(d);
+			end();
+			refresh();
+			}
+	addOption(s:String)
+		[s.equals(null) || s.equals("")]
+		PointMain{
+			addOption(s);
+			end();
+			refresh();
+			}
+	addOption(s:String)
+		[s.equalsIgnoreCase(PluginServices.getText(this,"ScaleCADTool.reference")) || s.equals(PluginServices.getText(this,"reference"))]
+		PointOriginOrScaleFactor{
+			setQuestion(
+				PluginServices.getText(this,"insert_reference_point")+ " "+
+				PluginServices.getText(this,"cad.or")+" "+
+				PluginServices.getText(this,"factor")+
+				"["+PluginServices.getText(this,"ScaleCADTool.factor")+"]");
+			setDescription(new String[]{"factor","cancel"});
+			//addOption(s);
+			}
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		PointMain {
+			addPoint( pointX,pointY,event);
+			end();
+			refresh();
+			}
+}
+PointOriginOrScaleFactor{
+	addOption(s:String)
+		[s.equalsIgnoreCase(PluginServices.getText(this,"ScaleCADTool.factor")) || s.equals(PluginServices.getText(this,"factor"))]
+		PointMain{
+			setQuestion(
+				PluginServices.getText(this,"insert_factor")+ " "+
+				PluginServices.getText(this,"cad.or")+" "+
+				PluginServices.getText(this,"reference")+
+				"["+PluginServices.getText(this,"ScaleCADTool.reference")+"]");
+			setDescription(new String[]{"reference","cancel"});
+			addOption(s);
+			}
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		EndPointReference {
+			setQuestion(PluginServices.getText(this,"insert_last_point_reference"));
+			setDescription(new String[]{"cancel"});
+			addPoint( pointX,pointY,event);
+			}
+}
+EndPointReference{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		OriginPointScale {
+			setQuestion(PluginServices.getText(this,"insert_first_point_scale"));
+			setDescription(new String[]{"cancel"});
+			addPoint( pointX,pointY,event);
+			}
+}
+OriginPointScale{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		EndPointScale {
+			setQuestion(PluginServices.getText(this,"insert_last_point_scale"));
+			setDescription(new String[]{"cancel"});
+			addPoint( pointX,pointY,event);
+			}
+}
+EndPointScale{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		PointMain {
+			addPoint( pointX,pointY,event);
+			end();
+			refresh();
+			}
+}
+
+Default
+{
+	addOption(s:String)
+		[s.equals(PluginServices.getText(this,"cancel"))]
+		PointMain{
+			end();
+			}
+	addOption(s:String)
+		PointMain{
+			throwOptionException(PluginServices.getText(this,"incorrect_option"),s);
+			}
+	addValue(d:double)
+		PointMain{
+			throwValueException(PluginServices.getText(this,"incorrect_value"),d);
+			}
+	addPoint(pointX:double,pointY:double,event:InputEvent)
+		PointMain{
+			throwPointException(PluginServices.getText(this,"incorrect_point"),pointX,pointY);
+			}
+}
+%%

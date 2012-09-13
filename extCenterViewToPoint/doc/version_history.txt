@@ -1,0 +1,11 @@
+Center View to point Plugin for gvSIG. Version history
+
+This document lists the Change History of release versions of the Center View to point
+Plugin for gvSIG
+
+
+Version 0.1
+Release Date: 16-11-2005
+
+- Baseline version
+

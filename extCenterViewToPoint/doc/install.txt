@@ -1,0 +1,5 @@
+Plugin de Centrado de la Vista sobre un punto para gvSIG. Instrucciones de instalación
+
+- Copiar el contenido de la carpeta bin/ en:
+  gvSIG/extensiones/
+

@@ -1,0 +1,5 @@
+Plugin de Localización por atributo para gvSIG. Instrucciones de instalación
+
+- Copiar el contenido de la carpeta bin/ en:
+  gvSIG/extensiones/
+

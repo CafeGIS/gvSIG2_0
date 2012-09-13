@@ -1,0 +1,47 @@
+<assembly>
+	<id>distribution</id>
+	<formats>
+		<format>dir</format>
+	</formats>
+	<fileSets>
+		<!-- Extructure for the extension -->
+		<fileSet>
+			<directory>resources/config</directory>
+			<outputDirectory>${extension-distribution}
+			</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>resources/locale</directory>
+			<outputDirectory>${extension-distribution}
+			</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>resources/images</directory>
+			<outputDirectory>${extension-distribution}/images
+			</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>resources/about</directory>
+			<outputDirectory>${extension-distribution}
+			</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<files>
+		<file>
+			<source>build.number</source>
+			<outputDirectory>${extension-distribution}
+			</outputDirectory>
+		</file>
+	</files>
+
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>${extension-distribution}/${library-dir}
+			</outputDirectory>
+			<includes>
+				<include>org.gvsig:org.gvsig.i18n.extension
+				</include>
+			</includes>
+		</dependencySet>
+	</dependencySets>
+</assembly>

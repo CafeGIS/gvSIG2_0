@@ -1,0 +1,42 @@
+gvSIG v1.0 RC1
+
+
+Requisits de l'aplicació:
+
+    - Sistema
+
+        · Mínims: Pentium III / 256 MB RAM.
+
+        · Recomanables: Pentium 4 / 512 MB RAM.
+
+        · Sistemes operatius: plataformes Windows i Linux.
+        Provat en Win98/XP, Linux Suse 8.2/9.0/9.2 i Linux Debian(Lliurex).
+
+
+    - Programari instal·lat (disponible en http://www.gvsig.gva.es o en http://java.sun.com)
+
+        · Màquina Virtual Java 1.4.2 (06 o superior).
+
+        · JAI (Java Advanced Imaging).
+
+        · JAI Image I/O.
+
+
+Nota: les libreries JAI i JAI Image I/O han d'estar instal·lades sobre la Màquina Virtual Java que gvSIG utilitze en l'execució.
+
+
+Més informació í suport:
+
+    Web oficial del projecte:
+
+        http://www.gvsig.gva.es
+
+    Llistes de distribució:
+
+        http://runas.cap.gva.es/mailman/listinfo/gvsig_usuarios (suport per a usuaris).
+
+        http://runas.cap.gva.es/mailman/listinfo/gvsig_desarrolladores (suport per a desenvolupadors).
+
+        http://runas.cap.gva.es/mailman/listinfo/gvsig_internacional (suport per a usuaris o desenvolupadors de parla no-hispana).
+
+

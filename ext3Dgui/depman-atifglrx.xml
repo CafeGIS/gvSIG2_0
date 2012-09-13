@@ -1,0 +1,26 @@
+<depman>
+ <dependencies platform="linux">
+   <!-- others platform same configuration -->
+   <dependency>
+     <group>org.openscenegraph</group>
+     <artifact>openscenegraph</artifact>
+     <version>2.2.0</version>
+     <type>dynamic</type>
+   </dependency>
+   <dependency>
+     <group>es.upv.ai2</group>
+     <artifact>osgvp/artifact>
+     <version>2.1.6.5</version>
+     <type>dynamic</type>
+   </dependency>
+   <!-- dependency>
+     <group>jogl</group>
+     <artifact>jogl</artifact>
+     <version>1.1.0</version>
+     <type>dynamic</type>
+   </dependency-->
+ </dependencies>
+</depman>
+
+
+

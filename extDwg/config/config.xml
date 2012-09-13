@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir=".">
+	</libraries>
+	<depends plugin-name="com.iver.cit.gvsig"/>
+		<resourceBundle name="text"/>
+	<extensions>
+		<extension class-name="org.gvsig.dwg.DWGRegisterExtension"
+			description="DWG Driver"
+			active="true">
+		</extension>
+
+	</extensions>
+</plugin-config>

@@ -1,0 +1,246 @@
+<project name="Generar extension en Andami ext3DGUI" default="generate-without-source" basedir=".">
+	<description>
+        Instala el plugin de ejemplo en Andami.
+    </description>
+	<!-- set global properties for this build -->
+	<property name="src" location="src" />
+	<property name="build" location="bin" />
+	<property name="dist" location="dist" />
+	<property name="plugin" value="com.iver.ai2.gvsig3dgui" />
+	<property name="extension-dir" location="../_fwAndami/gvSIG/extensiones" />
+	<property name="andami-lib" value="../_fwAndami/lib" />
+	<property name="logos-dir" location="../_fwAndami/theme" />
+	<property name="gvsig-lib" location="../_fwAndami/gvSIG/extensiones/com.iver.cit.gvsig/lib" />
+	<property name="ext3Dgui-lib" value="../_fwAndami/gvSIG/extensiones/com.iver.ai2.gvsig3dgui/lib" />
+	<property name="binaries" location="../binaries/" />
+	<property environment="env" />
+	<property name="buildman" value="${env.HOMEPATH}/DepMan/" />
+	<property name="buildman-lin" value="${env.HOME}/.depman/" />
+	<import file="../binaries/ant/utilities.xml" />
+	<!--property name="depman.executable" value="depman/bin/dmn.py" /-->
+
+
+	<property name="buildman.executable" value="buildman/bin/bmn.py" />
+
+	<!--property name="binaries-dir" location="../binaries" /-->
+
+	<target name="compile" description="compile the source">
+		<!-- Compile the Java code from ${src} to ${build} -->
+		<antcall target="gvSIG-import-build-number" />
+		<mkdir dir="${build}" />
+		<loadEclipseClasspath project="${basedir}" />
+		<gvSIG-javac classpath="${eclipseClasspath}" />
+	</target>
+
+	<target name="batch-build" description="Builds all. This is called by appgvSIG script" depends="compile,create-jar,copy-files,move-to-andami">
+	</target>
+
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp />
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}" />
+		<!-- Creamos un fichero con el timeStamp para que lo lea el FPanelAbout -->
+	</target>
+
+	<target name="create-jar">
+		<mkdir dir="${dist}" />
+		<mkdir dir="${dist}/lib" />
+
+		<jar jarfile="${dist}/lib/${plugin}.jar" basedir="${build}" />
+	</target>
+
+	<target name="copy-files">
+		<copy file="config/config.xml" todir="${dist}" />
+		<copy file="config/about.htm" todir="${dist}" />
+		<replace casesensitive="true" file="${dist}/about.htm" token="#build.number#" value="${build.number}" />
+
+		<copy todir="${dist}">
+			<fileset dir="config" includes="text*.properties" />
+		</copy>
+		<copy todir="${dist}/images">
+			<fileset dir="images/" includes="**/**" excludes="**/*.db" />
+		</copy>
+		<copy todir="${extension-dir}/${plugin}">
+			<fileset dir="resources" includes="**/**" />
+		</copy>
+
+		<!--copy todir="lib/">
+			<fileset dir="${dist}/lib/" includes="*.jar" />
+		</copy-->
+
+		<copy todir="${dist}/lib">
+			<fileset dir="lib/" includes="**/**" excludes="com.iver.ai2.gvsig3d_share.jar" />
+		</copy>
+		<copy todir="${gvsig-lib}">
+			<fileset dir="lib/" includes="com.iver.ai2.gvsig3d_share.jar" />
+		</copy>
+		<!--copy todir="${andami-lib}">
+			<fileset dir="lib/" includes="gluegen*.jar,jogl*.jar,libjosg-*.jar,libNative*.jar" />
+		</copy-->
+
+	</target>
+
+	<target name="move-to-andami">
+		<move todir="${extension-dir}/${plugin}">
+			<fileset dir="${dist}" includes="**/**" />
+		</move>
+
+	</target>
+
+	<target name="generate-without-source" description="generate the distribution without the source file" depends="create-jar,copy-files,move-to-andami">
+	</target>
+
+	<target name="clean" description="clean up">
+		<delete dir="${dist}" />
+		<delete dir="${build}" />
+	</target>
+
+	<target name="refresh-binaries">
+		<ant dir="../binaries" />
+	</target>
+
+
+
+
+	<condition property="isLinux">
+		<os family="unix" />
+	</condition>
+
+	<condition property="isWindows">
+		<or>
+			<os family="windows" />
+			<os family="win9x" />
+			<os name="Windows Vista" />
+		</or>
+	</condition>
+
+	<condition property="isMac">
+		<os family="mac" />
+	</condition>
+
+	<target name="copy-binaries" depends="copy-linux-binaries,copy-win-binaries">
+	</target>
+
+	<target name="copy-win-binaries" if="isWindows" depends="update-binaries-remote">
+		<property name="win-binaries" value="${binaries}/w32/3D" />
+		<mkdir dir="${win-binaries}" />
+		<copy todir="${win-binaries}">
+			<fileset dir="${buildman}/bin/" includes="**/**" excludes="*.exe" />
+		</copy>
+	</target>
+
+	<target name="copy-linux-binaries" if="isLinux" depends="update-binaries-remote">
+		<property name="linux-binaries" value="${binaries}/linux/3D" />
+		<mkdir dir="${linux-binaries}" />
+		<copy todir="${linux-binaries}">
+			<fileset dir="${buildman-lin}/lib/" includes="*.so*,**/*.so*" followsymlinks="false" />
+		</copy>
+		<echo>
+			OJO Falta los links
+		</echo>
+
+		<exec executable="${basedir}/gen_simb_link.sh">
+		</exec>
+		<!--
+	    <exec executable="bash">
+			<arg value="-c"/>
+			<arg value="find ${buildman-lin}/lib/ -type l -exec ls -l {} ';' | sed 's/.*[.][/]//g' | sed 's/\(.*\) -> \(.*\)$/ln -s \2 \1/g' > ${linux-binaries}/install.sh.tmp"/>
+		</exec>
+		<concat destfile="${linux-binaries}/install-3D.sh">#!bin/sh
+
+		</concat>
+		<concat destfile="${linux-binaries}/install-3D.sh" append="true">
+			<filelist dir="${linux-binaries}" files="install.sh.tmp"/>
+		</concat>
+		<delete file="${linux-binaries}/install.sh.tmp"/>
+	    <exec executable="bash">
+			<arg value="-c"/>
+			<arg value="cd ${buildman-lin}/lib/ ; (find . -type l -exec ls -l {} ';' | sed 's/.*[.][/]//g' | sed 's/\(.*\) -> \(.*\)$/\1=\2/g' > ${linux-binaries}/links.properties)"/>
+		</exec>
+		-->
+
+
+	</target>
+
+	<target name="copy-linux-binaries-complete" if="isLinux" depends="update-binaries-remote">
+		<property name="linux-binaries" value="${binaries}/linux/3D" />
+		<delete includeemptydirs="true">
+			<fileset dir="${linux-binaries}/.." includes="**/*" excludes="*.head" />
+		</delete>
+		<mkdir dir="${linux-binaries}" />
+		<copy todir="${linux-binaries}">
+			<fileset dir="${buildman-lin}/lib/" includes="*.so*,**/*.so*" followsymlinks="false" />
+		</copy>
+		<echo>
+			Generando fichero de links simbolicos
+		</echo>
+
+		<exec executable="${basedir}/gen_simb_link.sh">
+		</exec>
+		<!--
+	    <exec executable="bash">
+			<arg value="-c"/>
+			<arg value="find ${buildman-lin}/lib/ -type l -exec ls -l {} ';' | sed 's/.*[.][/]//g' | sed 's/\(.*\) -> \(.*\)$/ln -s \2 \1/g' > ${linux-binaries}/install.sh.tmp"/>
+		</exec>
+		<concat destfile="${linux-binaries}/install-3D.sh">#!bin/sh
+
+		</concat>
+		<concat destfile="${linux-binaries}/install-3D.sh" append="true">
+			<filelist dir="${linux-binaries}" files="install.sh.tmp"/>
+		</concat>
+		<delete file="${linux-binaries}/install.sh.tmp"/>
+	    <exec executable="bash">
+			<arg value="-c"/>
+			<arg value="cd ${buildman-lin}/lib/ ; (find . -type l -exec ls -l {} ';' | sed 's/.*[.][/]//g' | sed 's/\(.*\) -> \(.*\)$/\1=\2/g' > ${linux-binaries}/links.properties)"/>
+		</exec>
+		-->
+
+
+	</target>
+
+	<target name="update-binaries-cache">
+		<exec executable="python">
+			<arg value="${buildman.executable}" />
+			<arg value="update" />
+			<arg value="--cache" />
+		</exec>
+	</target>
+
+	<target name="update-binaries-remote">
+		<exec executable="python">
+			<arg value="${buildman.executable}" />
+			<arg value="update" />
+			<arg value="--remote" />
+		</exec>
+	</target>
+
+	<target name="update-binaries-atifglrx-remote">
+		<exec executable="python">
+			<arg value="${buildman.executable}" />
+			<arg value="update" />
+			<arg value="--file" />
+			<arg value="depman-atifglrx.xml" />
+			<arg value="--remote" />
+		</exec>
+	</target>
+
+	<target name="get-win-binaries">
+		<exec executable="python">
+			<arg value="${depman.executable}" />
+			<arg value="--platform" />
+			<arg value="win" />
+			<arg value="update" />
+		</exec>
+	</target>
+	<target name="get-linux-binaries">
+		<exec executable="python">
+			<arg value="${depman.executable}" />
+			<arg value="--platform" />
+			<arg value="linux" />
+			<arg value="update" />
+		</exec>
+	</target>
+
+
+</project>

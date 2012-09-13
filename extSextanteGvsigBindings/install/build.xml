@@ -1,0 +1,22 @@
+<project name="instalador-gvSIG" default="distribution" basedir=".">
+
+	<property name="base_dir" location="./"/>
+	<property name="dir_libs" location="/home/volaya/soft/izpack/lib"/>
+	<property name="vers" location="0.6"/>
+	<property name="izpack_dir" location="/home/volaya/soft/izpack"/>
+
+	<taskdef name="izpack" classpath="${dir_libs}/compiler.jar" classname="com.izforge.izpack.ant.IzPackTask"/>
+
+	<target name="distribution"
+		depends="generate-without-source">
+	</target>
+
+	<target name="generate-without-source">
+		<izpack input="install.xml"
+				output="sextante_gvsig_installer-0.1"
+				installerType="standard"
+				basedir="${base_dir}"
+				izPackDir="${izpack_dir}/"/>
+	</target>
+
+</project>

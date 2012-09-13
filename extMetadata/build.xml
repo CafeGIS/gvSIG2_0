@@ -1,0 +1,44 @@
+<project name="extMetadata" default="generate-without-source" basedir=".">
+    <description>
+        Instala la extension de Metadatos.
+    </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="build" location="bin"/>
+  <property name="dist"  location="dist"/>
+  <property name="plugin" value="org.gvsig.metadata.extension"/>
+  <property name="extension-dir" location="${GVSIG_INSTALL_DIR}/bin/gvSIG/extensiones"/>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+  	<echo>
+  			Compiling ${ant.project.name}...</echo>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+    <mkdir dir="${dist}"/>
+  </target>
+
+  <target name="generate-without-source" description="generate the distribution without the source file" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}"/>
+  	
+    <!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
+    <jar jarfile="${dist}/${plugin}.jar" basedir="${build}"/>
+  	<copy file="config/config.xml" todir="${dist}"/>  	
+  	<copy todir="${dist}">
+    	<fileset dir="config" includes="text*.properties"/>
+    </copy>
+  	<copy todir="${dist}">
+  	    	<fileset dir="lib" includes="*.jar"/>
+  	</copy>
+  	<copy todir="${dist}/images">
+  	  	  	<fileset dir="images/" includes="*"/>
+  	</copy>
+    <move todir="${extension-dir}/${plugin}/">
+    	<fileset dir="${dist}" includes="**/**"/>
+    </move>
+  
+  </target>
+
+</project>

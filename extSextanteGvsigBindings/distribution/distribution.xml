@@ -1,0 +1,49 @@
+<assembly>
+  <id>distribution</id>
+  
+  <formats>
+    <format>dir</format>
+  </formats>
+  <fileSets>
+	<!-- Extructure for the extension -->
+    <fileSet>
+      <directory>config</directory>
+	  <outputDirectory>${extension-distribution}</outputDirectory>
+    </fileSet>
+	<fileSet>
+      <directory>images</directory>
+	  <outputDirectory>${extension-distribution}/images</outputDirectory>
+    </fileSet>
+    <!-- TODO: convert to maven dependencies -->
+	<fileSet>
+      <directory>sextante</directory>
+	  <outputDirectory>${extension-distribution}/lib</outputDirectory>
+    </fileSet>
+  </fileSets>
+  <files>
+    <file>
+      <source>build.number</source>
+      <outputDirectory>${extension-distribution}</outputDirectory>
+    </file>
+  </files>
+  <!-- *********************************************************************** -->
+  <!-- *													   *-->
+  <!-- ***********************************************************************-->
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>${extension-distribution}/${library-dir}
+			</outputDirectory>
+			<includes>
+				<include>org.gvsig:es.unex.sextante</include>
+			</includes>
+		</dependencySet>
+		<dependencySet>
+		    <useProjectAttachments>true</useProjectAttachments>
+			<outputDirectory>${gvsig-extension-distribution}/lib
+			</outputDirectory>
+			<includes>
+				<include>org.gvsig.legacy:jts</include>
+			</includes>
+		</dependencySet>
+ </dependencySets>
+</assembly>

@@ -1,0 +1,25 @@
+- crateLayer ("",new MemoryRasterDriverParam(...),...) No funciona.
+- Ver que hacer con los tipos de dato (ej. en TasseledCap ha crecido mucho el código por este motivo):
+	- En realidad es lo mismo que pasa con los filtros: cada filtro está implementado para cada tipo de dato.
+	- ¿Es muy descabellado poner en Grid una funcion: double getCellValue(x,y) que compruebe el tipo de dato y haga el
+	casting (double) a la correspondiente funcion getCelValueAs___ ? 
+- Desacoplar más la intefaz del proceso...
+- El Grid interpolado parece que no funciona como el de standardExtension.
+- Uso de  NODATA.
+- Parece que los filtros no dan los mismos resultados que en el piloto: los colores aparecen un poco raros.
+- Calculadora: Opciones de salida en otra solapa.
+- Calculadora: Extent definido por el usuario-> está admitiendo letras.
+
+BUGS:
+- Calculadora: Expresion. ej.: b1b1 de error si las has metido con doble click en el arbol:
+				para el parser es una variable pero enla tabla está dos veces.
+- Calculadora: Eliminar varias variables a la vez en la expresión no elmina todas en la tabla.
+- Calculadora: ¿Está haciendo la comprobación de sintaxis antes de calcular?escribo una expresión que es erronea
+               desde el principio, por lo que no se añaden variables a la tabla. añando una capa con doble click en
+               el arbol -> realiza el cálculo y se produce una excepción. Parec que solo se comprueba la sintaxsis cuando 
+               escribes la expresió....
+
+- GridExtent.recalculateNXAndNY(): ¿no debería ser m_iNY = (int) Math.floor((maxY() - minY()) / cellSize)+1;?
+- Creo que el diálogo Abrir de la solapa Raster de Añadir capa, no tiene el filtro bien: no se ven los ficheros con la
+	extensión en mayuscula (probar y decir a Nacho (o arreglar)).
+- org.gvsig.raster.util.WktUtils: Ver qué se lo podría aportar de JCRS (ej.:parseo de wkt).

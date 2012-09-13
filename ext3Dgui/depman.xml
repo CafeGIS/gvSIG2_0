@@ -1,0 +1,87 @@
+<depman>
+ <dependencies platform="win">
+   <!-- override platform win with compiler vs7 -->
+   <dependency>
+     <group>org.openscenegraph</group>
+     <artifact>openscenegraph</artifact>
+     <version>2.2.0</version>
+     <type>dynamic</type>
+     <compiler>vs7</compiler>
+   </dependency>
+   <dependency>
+     <group>es.upv.ai2</group>
+     <artifact>osgvp</artifact>
+     <version>2.1.6.5</version>
+     <type>dynamic</type>
+     <compiler>vs7</compiler>
+   </dependency>
+   <dependency>
+     <group>org.gdal</group>
+     <artifact>gdal</artifact>
+     <version>1.2.6</version>
+     <type>dynamic</type>
+     <compiler>vs6</compiler>
+   </dependency>
+   <dependency>
+     <group>jogl</group>
+     <artifact>jogl</artifact>
+     <version>1.1.0</version>
+     <type>dynamic</type>
+     <compiler>all</compiler>
+   </dependency>
+
+ </dependencies>
+ <dependencies platform="linux">
+   <!-- others platform same configuration -->
+   <dependency>
+     <group>org.openscenegraph</group>
+     <artifact>openscenegraph</artifact>
+     <version>2.2.0</version>
+     <type>dynamic</type>
+   </dependency>
+   <dependency>
+     <group>es.upv.ai2</group>
+     <artifact>osgvp</artifact>
+     <version>2.1.6.5</version>
+     <type>dynamic</type>
+   </dependency>
+   <dependency>
+     <group>jogl</group>
+     <artifact>jogl</artifact>
+     <version>1.1.0</version>
+     <type>dynamic</type>
+   </dependency>
+   <!-- dependency>
+     <group>org.gdal</group>
+     <artifact>gdal</artifact>
+     <version>1.4.0</version>
+     <type>dynamic</type>
+   </dependency-->
+ </dependencies>
+<dependencies platform="mac">
+   <!-- others platform same configuration -->
+   <dependency>
+     <group>org.openscenegraph</group>
+     <artifact>openscenegraph</artifact>
+     <version>2.2.0</version>
+     <type>dynamic</type>
+     <architecture>universal</architecture>
+   </dependency>
+   <dependency>
+     <group>es.upv.ai2</group>
+     <artifact>osgvp</artifact>
+     <version>2.1.6.5</version>
+     <type>dynamic</type>
+     <architecture>universal</architecture>
+   </dependency>
+   <dependency>
+     <group>jogl</group>
+     <artifact>jogl</artifact>
+     <version>1.1.0</version>
+     <type>dynamic</type>
+     <compiler>all</compiler>
+   </dependency>
+ </dependencies>
+
+</depman>
+

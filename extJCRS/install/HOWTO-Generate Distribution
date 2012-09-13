@@ -1,0 +1,25 @@
+========================
+	DISTRIBUCION SVN
+========================
+
+* Para la generación de distribucines se ha usado el RapidSVN.
+* Abrir el RapidSVN, una vez conectado con el repositorio, ir a Tags y crear
+la carpeta tmp_build(si ya esta habrá que eliminarla antes de crearla). En comentario
+poner pre_v1_x_Build_x (sustituir x según corresponda).
+* Copiamos todos las carpetas que estan en branches/vX dentro de la carpeta tmp_build
+que acabamos de crear. (la ruta a introducir sería https://gvsig.org/svn/gvSIG/tags/tmp_build)
+* Hacer un switch del workspace: Team->Switch, y hay que cambiar en la ruta la parte "branches/vX"
+por tags/tmp_build. Esto no se realiza sobre todos los proyectos a la vez, segun que plugin SVN 
+se tenga en el Eclipse, se tendrá que hacer proyecto por proyecto, o se podrá hacer por conjuntos 
+de proyectos que comparten la misma carpeta.
+* Generar la distribución. Primero se lanzará el clean_all y build_all (appgvSIG/build.xml)
+y se comprobara que el programa funciona adecuadamente. Después se lanzara el make_binaries_distribution.
+* Lanzamos el distribution_1.5.sh para generar los binarios, los probamos y si todo funciona correctamente
+hacemos commit de los build.number con formato v1_X_Build_X.
+* De nuevo, como se hizo anteriormente, se hara un switch hacia "branches/vX".
+* Se debe renombrar el "tags/tmp_build" por "tags/v1_X_Build_X"
+* Se tiene que hacer une Merge (Team->Merge) seleccionando Advanced:
+	Source 1: Trunk
+	Source 2: "tags/v1_X_Build_X"
+Esto tambien dependiendo del Plugin SVN de Eclipse se hara por proyectos o por conjuntos.
+*Por último hacer commit sobre los cambios oportunos en el Trunk. 

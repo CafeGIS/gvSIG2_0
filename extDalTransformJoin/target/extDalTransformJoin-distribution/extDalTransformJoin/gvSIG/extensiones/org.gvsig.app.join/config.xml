@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="lib"/>
+	<depends plugin-name="com.iver.cit.gvsig"/>
+	<depends plugin-name="org.gvsig.app.daltransform"/>
+	<resourceBundle name="text"/>
+	<extensions>
+		<extension class-name="org.gvsig.app.join.RemoveTableUnion"
+			description="Extensión encargada de quitar uniones de las tablas."
+			active="true">
+			<menu text="Tabla/quitar_uniones"/>
+		</extension>
+		<extension class-name="org.gvsig.app.join.JoinToolExtension"
+			description="Extensión encargada de gestionar las operaciones sobre las tablas."
+			active="true">
+			<menu text="Tabla/join" icon="table-join" action-command="JOIN"/>
+			<tool-bar name="Herramientas" position="12">
+				<action-tool icon="table-join" action-command="JOIN" tooltip="join" position="1"/>
+			</tool-bar>
+		</extension>	
+		<extension class-name="org.gvsig.app.join.JoinTransformExtension"
+			description="This extension loads the transformation."
+			active="true">			
+		</extension>		
+	</extensions>
+	<icon src="gvsig-logo-icon" text="gvSIG"/>
+</plugin-config>

@@ -1,0 +1,4 @@
+<langpack>
+  <str id="text.label" txt="Path to gvSIG:"/>
+  <str id="HTMLInfoPanel.info" src="resources/readme.htm"/>
+</langpack>

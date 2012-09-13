@@ -1,0 +1,19 @@
+ENVI
+description = {
+  Tasseled Cap Transform Result [Tue Jun 26 13:52:44 2007]}
+samples = 150
+lines   = 160
+bands   = 4
+header offset = 0
+file type = ENVI Standard
+data type = 4
+interleave = bsq
+sensor type = Unknown
+byte order = 0
+map info = {Arbitrary, 1.0000, 1.0000, 285525.0965, 4902102.4313, 2.8618289667e+001, 2.8597491437e+001, 1, units=Meters}
+wavelength units = Unknown
+band names = {
+ Soil Brightness Index (LandSatMS_Origen.tif), 
+ Green Veg Index (LandSatMS_Origen.tif), 
+ Yellow Stuff Index (LandSatMS_Origen.tif), 
+ Non-such Index (LandSatMS_Origen.tif)}

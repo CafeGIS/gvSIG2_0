@@ -1,0 +1,65 @@
+<project name="Generar extension en Andami" default="generate-without-source" basedir=".">
+	<description>
+        Instala el plugin de ejemplo en Andami.
+    </description>
+	<!-- set global properties for this build -->
+	<property name="src" location="src" />
+	<property name="build" location="bin" />
+	<property name="dist" location="dist" />
+	<property name="plugin" value="com.iver.ai2.animation2D" />
+	<property name="extension-dir" location="../_fwAndami/gvSIG/extensiones" />
+	<property name="logos-dir" location="../_fwAndami/theme" />
+	<property name="gvsig-lib" location="../_fwAndami/gvSIG/extensiones/com.iver.cit.gvsig/lib" />
+	<!--property name="binaries-dir" location="../binaries" /-->
+
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp />
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}" />
+		<!-- Creamos un fichero con el timeStamp para que lo lea el FPanelAbout -->
+		<buildnumber />
+
+	</target>
+
+	<target name="generate-without-source" description="generate the distribution without the source file" depends="">
+		<!-- Create the distribution directory -->
+		<mkdir dir="${dist}" />
+		<mkdir dir="${dist}/lib" />
+		<mkdir dir="${dist}/binaries" />
+		<!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file
+         Except classes to be instantiated in core gvSIG -->
+		<jar jarfile="${dist}/lib/${plugin}.jar" basedir="${build}" />
+
+		<copy todir="${dist}/lib/">
+			<fileset dir="lib/" includes="**/**" />
+		</copy>
+		<!-- Put in this .jar the classes to be instantiated in gvSIG -->
+		<copy file="config/config.xml" todir="${dist}" />
+		<copy file="config/about.htm" todir="${dist}" />
+
+		<copy todir="${dist}">
+			<fileset dir="config" includes="text*.properties" />
+		</copy>
+		<copy todir="${dist}/images">
+			<fileset dir="images/" includes="**/**" excludes="**/*.db" />
+		</copy>
+
+		<move todir="${extension-dir}/${plugin}/">
+			<fileset dir="${dist}" includes="**/**" />
+		</move>
+	</target>
+
+	<target name="copy-binaries">
+		<copy todir="${binaries-dir}">
+			<fileset dir="binaries/" includes="**" />
+		</copy>
+	</target>
+
+	<target name="debug-yes">
+		<property name="debug" value="on" />
+		<property name="debuglevel" value="lines, vars" />
+	</target>
+
+</project>
+

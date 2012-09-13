@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                      
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>es.unex.sextante</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>extSextanteGvsigBindings</name>
+	<url>http://gvsig.org</url>
+	<description>
+	</description>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-extension-base-pom
+		</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<!--  TODO: se necesita JTS 1.9 pero no está disponible en ningún 
+		repositorio público, intentar localizarlo y unificar su uso en
+		todo gvSIG. -->
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>jts</artifactId>
+			<version>gvsig</version>
+		</dependency>
+		<!-- TODO: ¿Qué versión de Sextante? -->
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>sextante</artifactId>
+			<version>gvsig</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>sextante</artifactId>
+			<version>gvsig</version>
+			<classifier>gui</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.dal</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.fmap.geometry</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.andami</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>com.iver.cit.gvsig</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.rastertools</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>fmap</classifier>
+		</dependency>
+	</dependencies>
+	<properties>
+		<extension-appgvsig-lib-dir>${extension-dir}/com.iver.cit.gvsig/lib/
+		</extension-appgvsig-lib-dir>
+		<build-dir>${basedir}/../build</build-dir>
+		<extension-distribution>
+			gvSIG/extensiones/es.unex.sextante/
+		</extension-distribution>
+		<gvsig-extension-distribution>gvSIG/extensiones/com.iver.cit.gvsig/
+		</gvsig-extension-distribution>
+
+		<!-- Final name of the output directory for the distribution -->
+		<!-- Path to the file descriptor to generate the extension-->
+		<extension-distribution-file>distribution/distribution.xml
+		</extension-distribution-file>
+		<distribution-final-name>sextante</distribution-final-name>
+		<library-dir>lib</library-dir>
+		<application-name>sextante</application-name>
+	</properties>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<includes>
+					<include>**/*.gif</include>
+					<include>**/*.png</include>
+					<include>**/*.PNG</include>
+					<include> **/*.bmp</include>
+					<include> **/*.jpg</include>
+					<include> **/*.jpeg</include>
+					<include> **/*.xml</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+</project>

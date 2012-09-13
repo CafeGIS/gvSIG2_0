@@ -1,0 +1,11 @@
+ CÓMO GENERAR EL INSTALADOR:
+ ===========================
+- Solo ejecutable desde Linux
+- gvSIG debe estar correctamente construido en ../_fwAndami/bin
+- El plugin principal debe dejar un fichero 'build.number' dentro de su directorio de andami, que indicara el numero del build para la distribución.
+- Lanzar el target 'distribucion' del build.xml del plugin principal (solo para plugins).
+- El proyecto 'install' debe estar presente en la raíz del workspace (contiene el Izpack, entre otras cosas)
+- En el fichero variables.sh hay algunas variables que nos pueden interesar, que permiten personalizar el nombre del plugin, la versión, el directorio destino, las extensiones incluidas, etc. La variable  APPNAME normalmente valdrá "gvSIG", pero puede tiener nombre si estamos empaquetando una extensión (por ejemplo,  "nomenclatorIGN").
+- Definir los packs adecuados en el fichero XML de configuración (install.xml), y revisar el fichero en general.
+- En el fichero resources/userInputSpec.xml modificar los directorios candidatos, si se ha producido un cambio de la versión de gvSIG sobre la que queremos instalar
+- Lanzar el script distribucion.sh desde el directorio donde se encuentra (ejemplo: "cd workspace/extXXX/install ; ./distribucion.sh ").

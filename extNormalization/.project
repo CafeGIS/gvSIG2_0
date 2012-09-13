@@ -1,0 +1,13 @@
+<projectDescription>
+  <name>org.gvsig.normalization.extension</name>
+  <comment>extNormalization is a gvSIG extension to make strings normalization process</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

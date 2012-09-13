@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>extDalTransform</name>
+	<comment>Base POM for all GvSIG extension projects. This pom knows
+		how to build and made an extension for GvSIG. The property
+		&quot;gvsig-path&quot; must be set up correctly.</comment>
+	<projects>
+		<project>appgvSIG</project>
+		<project>libCorePlugin</project>
+		<project>libIverUtiles</project>
+		<project>libDXF</project>
+		<project>_fwAndami</project>
+		<project>libCompat</project>
+		<project>libFMap_controls</project>
+		<project>libFMap_dal</project>
+		<project>libFMap_dalfile</project>
+		<project>libFMap_dalindex</project>
+		<project>libFMap_geometries</project>
+		<project>libFMap_mapcontext</project>
+		<project>libInternationalization</project>
+		<project>libjni-gdal</project>
+		<project>libMetadata</project>
+		<project>libProjection</project>
+		<project>libRaster</project>
+		<project>libTools</project>
+		<project>libEvaluator_SQLJEP</project>
+		<project>libUIComponent</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

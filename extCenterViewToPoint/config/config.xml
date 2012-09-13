@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="."/>
+	<depends plugin-name="com.iver.cit.gvsig"/>
+		<resourceBundle name="text"/>
+	<extensions>
+		<extension class-name="com.iver.gvsig.centerviewpoint.CenterViewToPointExtension"
+			description="CenterViewToPoint 0.1RC1  Extensión que permite hacer zooms en función de un par de coordenadas introducidas por el usuario."
+			active="true">
+			<menu text="Vista/Centrar_la_Vista_sobre_un_punto" tooltip="Centrar_la_Vista_sobre_un_punto" 
+				action-command="CENTERVIEWTOPOINT" 
+				icon="view-center-to-point" />
+			<tool-bar name="com.iver.cit.gvsig.Herramientas">
+				<action-tool icon="view-center-to-point"
+					action-command="CENTERVIEWTOPOINT" tooltip="Centrar_la_Vista_sobre_un_punto"
+					enable-text="debería de estar activada" last="true"/>
+			</tool-bar>
+		</extension>
+	</extensions>
+</plugin-config>

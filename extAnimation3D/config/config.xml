@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<depends plugin-name="com.iver.cit.gvsig" />
+	<depends plugin-name="org.gvsig.ext3Dgui" />
+	
+	<libraries library-dir="./lib"/>
+	<resourceBundle name="text"/>
+	<extensions>
+		<extension class-name="com.iver.cit.gvsig.animation.ExtensionAnimacion3D"
+			description="Extensión encargada de registrar los tipos de animacion 3D."
+			active="true"
+			priority="50">					
+		</extension>
+	</extensions>
+</plugin-config>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="lib/"/>
+	<depends plugin-name="com.iver.cit.gvsig"/>
+	<depends plugin-name="org.gvsig.app.daltransform"/>
+	<resourceBundle name="text"/>
+	<extensions>
+		<extension class-name="org.gvsig.app.eventtheme.EventThemeTransformExtension"
+			description="Transform to load an events layer."
+			active="true">			
+		</extension>
+	</extensions>
+</plugin-config>

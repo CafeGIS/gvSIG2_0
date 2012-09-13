@@ -1,0 +1,160 @@
+<project name="copy-native" default="install-binaries" basedir=".">
+	<description>
+		Downloads and copy all native dependencies.
+	</description>
+	<property name="binaries" location="${basedir}/../binaries/" />
+	<property name="buildman.executable" location="${basedir}/buildman/bin/bmn.py" />
+	<property environment="env" />
+	<condition property="depman" value="${env.HOMEPATH}/DepMan/">
+		<or>
+			<os family="windows" />
+			<os family="win9x" />
+			<os name="Windows Vista" />
+		</or>
+	</condition>
+	<condition property="depman" value="${env.HOME}/.depman/">
+		<and>
+			<os family="unix" />
+			<not>
+				<os family="mac" />
+			</not>
+		</and>
+	</condition>
+	<condition property="depman" value="/Developer/DepMan/">
+		<os family="mac" />
+	</condition>
+
+	<condition property="isLinux">
+		<os family="unix" />
+	</condition>
+	<condition property="isWindows">
+		<or>
+			<os family="windows" />
+			<os family="win9x" />
+			<os name="Windows Vista" />
+		</or>
+	</condition>
+	<condition property="isMac">
+		<os family="mac" />
+	</condition>
+	
+	<condition property="binaries-dir" value="${binaries}/w32/3D">
+		<or>
+			<os family="windows" />
+			<os family="win9x" />
+			<os name="Windows Vista" />
+		</or>
+	</condition>
+	<condition property="binaries-dir" value="${binaries}/linux/3D">
+		<os family="unix" />
+	</condition>
+	<condition property="binaries-dir" value="${binaries}/mac/3D">
+		<os family="mac" />
+	</condition>
+	
+	
+	<target name="install-binaries" depends="copy-binaries">
+		<copy todir="${install-binaries-dir}">
+			<fileset dir="${binaries-dir}" includes="**/**"
+				excludes="*.exe,*.head,links.properties" />
+		</copy>
+	</target>
+
+	<target name="copy-binaries"
+		depends="copy-linux-binaries,copy-win-binaries,copy-mac-binaries">
+	</target>
+
+	<target name="copy-win-binaries" if="isWindows"
+		depends="update-binaries-remote">
+		<mkdir dir="${binaries-dir}" />
+		<copy todir="${binaries-dir}">
+			<fileset dir="${depman}/bin/" includes="**/**"
+				excludes="*.exe" />
+		</copy>
+	</target>
+
+	<target name="copy-linux-binaries" if="isLinux"
+		depends="update-binaries-remote">
+		<mkdir dir="${binaries-dir}" />
+		<copy todir="${binaries-dir}">
+			<fileset dir="${depman}/lib/" includes="*.so*,**/*.so*"
+				followsymlinks="false" />
+		</copy>
+
+		<exec executable="${basedir}/gen_simb_link.sh" />
+
+		<exec executable="${binaries-dir}/install-3D.sh" dir="${install-binaries-dir}/../" />
+		<!--
+			<exec executable="bash">
+			<arg value="-c"/>
+			<arg value="find ${depman}/lib/ -type l -exec ls -l {} ';' | sed 's/.*[.][/]//g' | sed 's/\(.*\) -> \(.*\)$/ln -s \2 \1/g' > ${binaries-dir}/install.sh.tmp"/>
+			</exec>
+			<concat destfile="${binaries-dir}/install-3D.sh">#!bin/sh
+			
+			</concat>
+			<concat destfile="${binaries-dir}/install-3D.sh" append="true">
+			<filelist dir="${binaries-dir}" files="install.sh.tmp"/>
+			</concat>
+			<delete file="${binaries-dir}/install.sh.tmp"/>
+			<exec executable="bash">
+			<arg value="-c"/>
+			<arg value="cd ${depman}/lib/ ; (find . -type l -exec ls -l {} ';' | sed 's/.*[.][/]//g' | sed 's/\(.*\) -> \(.*\)$/\1=\2/g' > ${binaries-dir}/links.properties)"/>
+			</exec>
+		-->
+	</target>
+	<target name="copy-mac-binaries" if="isMac"
+		depends="update-binaries-remote">
+		<mkdir dir="${binaries-dir}" />
+		<copy todir="${binaries-dir}">
+			<fileset dir="${depman}/lib/"
+				includes="*.so*,**/*.so*,*.dylib*,**/*.dylib*,*.jnilib*,**/*.jnilib*" />
+		</copy>
+
+		<!--exec executable="${basedir}/gen_simb_link_mac.sh" / -->
+
+		<!--
+			<exec executable="bash">
+			<arg value="-c"/>
+			<arg value="find ${depman}/lib/ -type l -exec ls -l {} ';' | sed 's/.*[.][/]//g' | sed 's/\(.*\) -> \(.*\)$/ln -s \2 \1/g' > ${binaries-dir}/install.sh.tmp"/>
+			</exec>
+			<concat destfile="${binaries-dir}/install-3D.sh">#!bin/sh
+			
+			</concat>
+			<concat destfile="${binaries-dir}/install-3D.sh" append="true">
+			<filelist dir="${binaries-dir}" files="install.sh.tmp"/>
+			</concat>
+			<delete file="${binaries-dir}/install.sh.tmp"/>
+			<exec executable="bash">
+			<arg value="-c"/>
+			<arg value="cd ${depman}/lib/ ; (find . -type l -exec ls -l {} ';' | sed 's/.*[.][/]//g' | sed 's/\(.*\) -> \(.*\)$/\1=\2/g' > ${binaries-dir}/links.properties)"/>
+			</exec>
+		-->
+	</target>
+
+
+	<target name="update-binaries-cache">
+		<exec executable="python">
+			<arg value="${buildman.executable}" />
+			<arg value="update" />
+			<arg value="--cache" />
+		</exec>
+	</target>
+
+	<target name="update-binaries-remote">
+		<exec executable="python">
+			<arg value="${buildman.executable}" />
+			<arg value="update" />
+			<arg value="--remote" />
+		</exec>
+	</target>
+
+	<target name="update-binaries-atifglrx-remote">
+		<exec executable="python">
+			<arg value="${buildman.executable}" />
+			<arg value="update" />
+			<arg value="--file" />
+			<arg value="depman-atifglrx.xml" />
+			<arg value="--remote" />
+		</exec>
+	</target>
+</project>

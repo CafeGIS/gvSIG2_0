@@ -1,0 +1,38 @@
+<project name="instalador-gvSIG" default="init" basedir=".">
+	<!--
+	<property name="dir_inst" location="C:\Archivos de programa"/>
+	<property name="base_dir" location="./"/>		
+	<property name="dir_libs" location="C:\Archivos de programa\IzPack\lib"/>
+	<property name="vers" location="0.6"/>
+	<property name="izpack_dir" location="C:\Archivos de programa\IzPack"/>
+	-->
+	
+	<property name="dir_inst" location="/usr/local"/>
+	<property name="base_dir" location="./"/>	
+	<!--property name="base_dir" location="D:\java\workspaces\osg_2_2_1-snapshot\ext3Dgui\target\ext3Dgui-1.0-SNAPSHOT-distribution\ext3Dgui-1.0-SNAPSHOT\win\	"/-->
+	<property name="izpack_dir" location="../../../build/distribution/IzPack/"/>
+	<property name="dir_libs" location="${izpack_dir}/lib"/>
+	<property name="INSTALL_FILE" location="install_15.xml"/>
+	<property name="JARNAME" location="default_name_installer-WIN"/>
+	
+	<taskdef name="izpack" classpath="${dir_libs}/compiler.jar" classname="com.izforge.izpack.ant.IzPackTask"/>
+	
+	<target name="init">
+		<izpack input="${INSTALL_FILE}" 
+				output="${JARNAME}" 
+				installerType="standard" 
+				basedir="${base_dir}" 
+				izPackDir="${izpack_dir}/"/>
+	</target>
+	
+	<target name="clean">
+		<delete>
+			<fileset dir=".">
+			    <include name="**.zip"/>
+			</fileset>
+		</delete>
+		<delete dir="bin" />
+		<delete dir="extensions" />
+	</target>
+	
+</project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="lib"/>
+	<depends plugin-name="com.iver.cit.gvsig"/>
+		<resourceBundle name="text"/>
+	<extensions>	
+		
+		<extension class-name="org.gvsig.geocoding.extension.GeocodingExtension"
+			description="Extension that geocoding a address."
+			active="true">			
+			<menu text="Capa/geocoder" 
+				tooltip="geocodertip"
+				action-command="GEOCODING"
+				icon="images/icons16/geocodingicon.png"
+				position="9997" />
+			<tool-bar name="geocoder">				
+				<action-tool icon="images/icons16/geocodingicon.png"
+					action-command="GEOCODING"
+					tooltip="geocodertip"
+					position="9997"/>
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.geocoding.extension.ResultsGeocodingExtension"
+			description="Extension that allows modify geocoding result"
+			active="true">			
+			<menu text="Tabla/managerresults" 
+				tooltip="managerresultstip"
+				action-command="RESULTSGEOCODING"
+				icon="images/icons16/resultsicon.png"
+				position="9998" />
+			<tool-bar name="geocoder">				
+				<action-tool icon="images/icons16/resultsicon.png"
+					action-command="RESULTSGEOCODING"
+					tooltip="managerresultstip"
+					position="9998"/>
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.geocoding.extension.RelateGeocodingResultsExtension"
+			description="Extension that relates a geocoding layer and results table"
+			active="true">			
+			<menu text="Capa/relateresults" 
+				tooltip="relateresultstip"
+				action-command="RELATEGEOCODING"
+				icon="images/icons16/relateicon.png"
+				position="9999" />
+			<tool-bar name="geocoder">				
+				<action-tool icon="images/icons16/relateicon.png"
+					action-command="RELATEGEOCODING"
+					tooltip="relateresultstip"
+					position="9999"/>
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.geocoding.extension.AboutGeocodingExtension"
+			description="Extension to add about panel."
+			active="false"
+			priority="1">
+		</extension>
+	</extensions>
+</plugin-config>

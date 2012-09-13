@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="./lib"/>
+	<depends plugin-name="com.iver.cit.gvsig"/>
+	<resourceBundle name="text"/>
+	<extensions>
+		<extension class-name="com.iver.cit.gvsig.SingleVectorialDBConnectionExtension"
+			description="Opens DB connections manager"
+			active="true">
+			<menu text="Ver/gestor_db" action-command="GESTOR_VECTORIALDB" key="j"
+				tooltip="abrir_gestor_de_orig_db"
+				position="3"/>
+		</extension>
+
+		<extension class-name="com.iver.cit.gvsig.ExtDB_Spatial"
+			description="Support to access Spatial databases"
+			active="true">
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.ExportToDB"
+			description="Exportar a diversos formatos"
+			active="true">
+			<menu text="Capa/export_to/postgis" action-command="POSTGIS"/>
+			<menu text="Capa/export_to/mysql" action-command="MYSQL"/>
+		</extension>
+	</extensions>
+</plugin-config>

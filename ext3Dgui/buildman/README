@@ -1,0 +1,38 @@
+BuildMan 1.0
+------------
+
+Copyright (C) 2007 AI2 | UPV
+
+Introduction
+------------
+
+BuildMan is a set of scripts for automatic and continuous build construction.
+It's based on 
+
+  * Python
+  * XML
+
+Features
+--------
+
+BuildMan is able to do the following tasks:
+
+   - Prepare solutions (Makefiles/VisualStudio) for CMake based projects.
+   - Launch building on Win/Linux/Mac using a XML config file. 
+   - Create new dependency packages for Win/Linux/Mac using DepMan-1.0
+   - Upload packages to DepMan servers
+   - Download packages from DepMan servers
+
+BuildMan is created using a plug-in system, so you can extend and add
+new target commands. By default is featured Build plug-in and depman 
+plug-in.
+
+Install
+-------
+
+To use buildman unpack the distribution in a folder (tipically
+/usr/local/buildman) and put the "bin" folder in your PATH or
+create symbolic links to /usr/local/buildman/bin/bmn.py in some folder
+of your PATH (/usr/local/bin)
+
+

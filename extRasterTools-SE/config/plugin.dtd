@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO_8859-1"?>
+<!ELEMENT class EMPTY >
+<!ATTLIST class name NMTOKEN #REQUIRED >
+
+<!ELEMENT extension ( class | menu | toolBar | toolBoxItem | popupMenu)* >
+<!ATTLIST extension enabled NMTOKEN #IMPLIED >
+<!ATTLIST extension position NMTOKEN #IMPLIED >
+
+<!ELEMENT fileExtension ( class ) >
+<!ATTLIST fileExtension description CDATA #REQUIRED >
+<!ATTLIST fileExtension enabled NMTOKEN #IMPLIED >
+<!ATTLIST fileExtension endsWith CDATA #REQUIRED >
+<!ATTLIST fileExtension dialog CDATA #REQUIRED >
+
+<!ELEMENT import EMPTY >
+<!ATTLIST import plugin NMTOKEN #REQUIRED >
+
+<!ELEMENT libraries ( library+ ) >
+
+<!ELEMENT library EMPTY >
+<!ATTLIST library file NMTOKEN #REQUIRED >
+
+<!ELEMENT menu EMPTY >
+<!ATTLIST menu actionCommand NMTOKEN #IMPLIED >
+<!ATTLIST menu enableText CDATA #IMPLIED >
+<!ATTLIST menu key NMTOKEN #IMPLIED >
+<!ATTLIST menu mnemonic NMTOKEN #IMPLIED >
+<!ATTLIST menu icon CDATA #IMPLIED >
+<!ATTLIST menu text CDATA #REQUIRED >
+<!ATTLIST menu tooltip CDATA #IMPLIED >
+
+<!ELEMENT plugin ( import*, libraries, resourceBundle, labelSet*, extension*, fileExtension*, icon*) >
+
+<!ELEMENT icon EMPTY >
+<!ATTLIST icon src CDATA #REQUIRED >
+<!ATTLIST icon text CDATA #REQUIRED >
+
+<!ELEMENT resourceBundle EMPTY >
+<!ATTLIST resourceBundle name NMTOKEN #REQUIRED >
+
+<!ELEMENT tool EMPTY >
+<!ATTLIST tool actionCommand NMTOKEN #IMPLIED >
+<!ATTLIST tool enableText CDATA #IMPLIED >
+<!ATTLIST tool icon CDATA #IMPLIED >
+<!ATTLIST tool text NMTOKEN #IMPLIED >
+<!ATTLIST tool tooltip CDATA #IMPLIED >
+
+<!ELEMENT toolBar ( tool+ ) >
+<!ATTLIST toolBar name NMTOKEN #IMPLIED >
+
+<!ELEMENT entry EMPTY >
+<!ATTLIST entry text CDATA #IMPLIED >
+<!ATTLIST entry enableText CDATA #IMPLIED >
+<!ATTLIST entry tooltip CDATA #IMPLIED >
+<!ATTLIST entry actionCommand NMTOKEN #IMPLIED >
+
+<!ELEMENT popupMenu ( entry+ ) >
+<!ATTLIST popupMenu name NMTOKEN #IMPLIED >
+
+<!ELEMENT labelSet ( label+ ) >
+<!ATTLIST labelSet class NMTOKEN #REQUIRED >
+
+<!ELEMENT label EMPTY >
+<!ATTLIST label text NMTOKEN #REQUIRED >
+<!ATTLIST label size NMTOKEN #IMPLIED>
+
+<!ELEMENT toolBoxItem EMPTY >
+<!ATTLIST toolBoxItem default NMTOKEN #IMPLIED >
+<!ATTLIST toolBoxItem actionCommand NMTOKEN #IMPLIED >
+<!ATTLIST toolBoxItem icon CDATA #IMPLIED >
+<!ATTLIST toolBoxItem text CDATA #IMPLIED >
+<!ATTLIST toolBoxItem tooltip CDATA #IMPLIED >

@@ -1,0 +1,13 @@
+com.iver.cit.gvsig.fmap.drivers
+com.iver.cit.gvsig.fmap.drivers.wcs
+com.iver.cit.gvsig.fmap.layers
+com.iver.cit.gvsig.fmap.services
+com.iver.cit.gvsig.gui
+com.iver.cit.gvsig.gui.Panels
+com.iver.cit.gvsig.gui.dialog
+com.iver.cit.gvsig.gui.toc
+com.iver.cit.gvsig.gui.toolListeners
+com.iver.cit.gvsig.gui.wcs
+com.iver.cit.gvsig.wcsclient
+es.uji.lsi.wcs.XmlWcsParsing
+es.uji.lsi.wcs.client

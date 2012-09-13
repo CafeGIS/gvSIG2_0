@@ -1,0 +1,19 @@
+ENVI
+description = {
+  Bighorn Basin, Landsat TM, Calibrated to Reflectance}
+samples = 512
+lines   = 512
+bands   = 6
+header offset = 0
+file type = ENVI Standard
+data type = 1
+interleave = bsq
+sensor type = Landsat TM
+map info = {UTM, 1, 1, 277904.645, 4906894.331, 28.500000, 28.500000, 13, North}
+wavelength units = Micrometers
+z plot range = {0.00, 100.00}
+z plot titles = {Wavelength, Reflectance}
+band names = {
+ TM Band 1, TM Band 2, TM Band 3, TM Band 4, TM Band 5, TM Band 7}
+wavelength = {
+ 0.48500, 0.56000, 0.66000, 0.83000, 1.65000, 2.21500}

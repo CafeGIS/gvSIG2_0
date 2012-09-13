@@ -1,0 +1,15 @@
+Esta extensión es necesaria para hacer de puente entre gvSIG y SEXTANTE. 
+
+Los jar de los algoritmos están incluidos en el directorio sextante y se instalarán en gvSIG 
+al ejecutar el build. Para acceder a nuevas versiones de SEXTANTE hay que acceder a los fuentes
+a través de
+
+svn checkout https://svn.forge.osor.eu/svn/sextante
+
+y compilarlos. Una vez obtenidos los nuevos jar hay que dejarlos en la carpeta dist y ejecutar
+el build de este proyecto.
+
+Notas
+Es necesario JTS 1.9 por lo que hay que eliminar versiones anteriores
+La librería Jama está incluida en el jar de libMath por lo que hay que eliminarla si está incluida
+en gvSIG.

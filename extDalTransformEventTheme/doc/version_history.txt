@@ -1,0 +1,11 @@
+Add Event Theme Plugin for gvSIG. Version history
+
+This document lists the Change History of release versions of the Add Event Theme
+Plugin for gvSIG
+
+
+Version 0.1
+Release Date: 17-11-2005
+
+- Baseline version
+

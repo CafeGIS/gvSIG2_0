@@ -1,0 +1,53 @@
+<assembly>
+  <id>distribution</id>
+  <formats>
+    <format>dir</format>
+	<format>jar</format>
+	<format>zip</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <baseDirectory>d:/java/distri</baseDirectory>
+  <fileSets>
+	<!-- Extructure for the extension -->
+    <fileSet>
+      <directory>/config</directory>
+	  <outputDirectory>/bin/${extension-distribution}</outputDirectory>
+    </fileSet>
+	<fileSet>
+      <directory>/images</directory>
+	  <outputDirectory>/bin/${extension-distribution}/images</outputDirectory>
+    </fileSet>
+	<!-- Extructure for the native libraries -->
+	<fileSet>
+      <directory>${basedir}/../binaries/w32/3D/</directory>
+	  <outputDirectory>/lib</outputDirectory>
+    </fileSet>
+  </fileSets>
+  <files>
+    <file>
+      <source>build.number</source>
+      <outputDirectory>/bin/${extension-distribution}</outputDirectory>
+    </file>
+  </files>
+  <!-- *********************************************************************** -->
+  <!-- *													   *-->
+  <!-- ***********************************************************************-->
+  <dependencySets>
+    <dependencySet>
+	  <outputDirectory>/bin/${extension-distribution}/lib/</outputDirectory>
+	  <includes>
+        <include>org.gvsig.osgvp.libosgvp:*</include>
+		<include>jogl:*</include>
+		<include>org.gvsig:lib3DMap</include>
+		<include>org.gvsig:libCacheService</include>
+		<include>org.gvsig:ext3Dgui</include>
+      </includes>
+    </dependencySet>
+	 <dependencySet>
+	  <outputDirectory>/bin/${gvsig-extension-distribution}/lib</outputDirectory>
+	  <includes>
+        <include>org.gvsig:lib3DMap-share</include>
+	  </includes>
+    </dependencySet>
+  </dependencySets>
+</assembly>

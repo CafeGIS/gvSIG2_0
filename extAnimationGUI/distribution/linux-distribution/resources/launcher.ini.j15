@@ -1,0 +1,36 @@
+
+## Ruta al achivo Jar a lanzar
+jar = %JARNAME%
+
+
+
+## Parametros a incluir al lanzar el Jar
+jarParams =
+
+
+
+## Lanzar el Jar en ansincrono o no:
+##     * si(se lanza el java y finaliza el lanzador):S SI YES Y 1
+##     * no(el lanzado se espera a que termine la ejecucion del java):{distinto de los anterirores}
+launchJarAsync = NO
+
+## Version de JRE requerida
+jre_version = 1.5.0_12
+## Si existen varias JRE de la requerida, cual es la preferida (si esta)
+jre_version_prefered = 1.5.0_12
+
+
+## Descarga remota
+## 	* los valores valido de downloadEnabled son:
+##		- habilitado: S SI YES Y 1
+##		- deshabilitado: {distinto de los anteriores}
+downloadEnabled = 1
+
+
+## Path del instalable del jre (si no existe y estan
+##	habilitadas las descargas, lo dejara aqui)
+jre = j2re-1_5_0_12-linux.tar.gz
+downloadJre = http://www.gvsig.org/runtime/j2re-1_5_0_12-linux.tar.gz
+installJreCmd =./install_jre.sh
+installedJreJavaFile = $HOME/gvSIG/jre/1.5.0_12/bin/java
+installedJreRootDirectory =$HOME/gvSIG/jre

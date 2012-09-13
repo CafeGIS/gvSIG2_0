@@ -1,0 +1,10 @@
+Plugin de Añadir Tema de Eventos para gvSIG. Instrucciones de instalación
+
+- Copiar el contenido de la carpeta bin/ en:
+  gvSIG/extensiones/
+
+- Copiar el fichero com.iver.gvsig.addeventtheme.jar contenido en la
+  carpeta bin/com/iver/gvsig/addeventtheme/ en:
+  gvSIG/extensiones/com/iver/cit/gvsig/lib
+
+

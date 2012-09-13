@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<RasterMetaFile>
+<FLyrGeoRaster>
+	<Projection>EPSG:23030</Projection>
+	<Extent>
+			<X>71.041</X>
+			<Y>731.983</Y>
+			<RotationX>0.0</RotationX>
+			<RotationY>0.0</RotationY>
+			<PixelSizeX>1.0032500000000013</PixelSizeX>
+			<PixelSizeY>-0.9879999999999995</PixelSizeY>
+			<Width>4.013000000000005</Width>
+			<Height>3.951999999999998</Height>
+	</Extent>
+	<Dimension>
+			<ImagePxWidth>4.0</ImagePxWidth>
+			<ImagePxHeight>4.0</ImagePxHeight>
+	</Dimension>
+</FLyrGeoRaster>
+<ColorInterpretation>
+	<BandCount>3</BandCount>
+	<Band>Red</Band>
+	<Band>Green</Band>
+	<Band>Blue</Band>
+</ColorInterpretation>
+<Statistics>
+	<BandCount>3</BandCount>
+	<Band>
+		<Max>461.0</Max>
+		<Min>320.0</Min>
+		<SecondMax>459.0</SecondMax>
+		<SecondMin>352.0</SecondMin>
+		<MaxRGB>0.0</MaxRGB>
+		<MinRGB>0.0</MinRGB>
+		<SecondMaxRGB>0.0</SecondMaxRGB>
+		<SecondMinRGB>255.0</SecondMinRGB>
+		<Mean>395.875</Mean>
+		<Variance>1624.109375</Variance>
+	</Band>
+	<Band>
+		<Max>1191.0</Max>
+		<Min>817.0</Min>
+		<SecondMax>1190.0</SecondMax>
+		<SecondMin>818.0</SecondMin>
+		<MaxRGB>0.0</MaxRGB>
+		<MinRGB>0.0</MinRGB>
+		<SecondMaxRGB>0.0</SecondMaxRGB>
+		<SecondMinRGB>255.0</SecondMinRGB>
+		<Mean>1016.0</Mean>
+		<Variance>10723.125</Variance>
+	</Band>
+	<Band>
+		<Max>1986.0</Max>
+		<Min>1706.0</Min>
+		<SecondMax>1985.0</SecondMax>
+		<SecondMin>1708.0</SecondMin>
+		<MaxRGB>0.0</MaxRGB>
+		<MinRGB>0.0</MinRGB>
+		<SecondMaxRGB>0.0</SecondMaxRGB>
+		<SecondMinRGB>255.0</SecondMinRGB>
+		<Mean>1828.6875</Mean>
+		<Variance>8545.46484375</Variance>
+	</Band>
+</Statistics>
+</RasterMetaFile>

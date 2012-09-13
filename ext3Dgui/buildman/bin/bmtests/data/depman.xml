@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<depman>
+	<package>
+		<group>es.upv.ai2</group><!-- requerido -->
+		<artifact>buildman-tests</artifact><!-- requerido -->
+		<version>1.0-SNAPSHOT</version><!-- requerido -->
+		<platform>all</platform><!-- no requerido pero se puede sobreescribir -->
+		<compiler>all</compiler><!-- idem -->
+		<arch>all</arch><!-- idem -->
+		<libraryType>none</libraryType><!-- requerido -->
+
+		<!--<upload> --><!-- Esta opción usaría los valores asignados abajo, no son requeridos y se puede sobreescribir solo algunos de ellos -->
+		<!--	<sshserver>murray.ai2.upv.es</sshserver> -->
+		<!-- 	<destdir>/projects/AI2/www-aliases/depman/</destdir> -->
+		<!-- 	<username>depman</username> -->
+		<!--</upload> -->
+	</package>
+	<dependencies>
+		<dependency>
+			<group>es.upv.ai2</group>
+			<artifact>libjosg</artifact>
+			<version>2.0-SNAPSHOT</version>
+			<type>dynamic</type>
+		</dependency>
+	</dependencies>
+</depman>
+

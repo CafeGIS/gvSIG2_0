@@ -1,0 +1,42 @@
+<assembly>
+  <id>distribution</id>
+  <formats>
+    <format>dir</format>
+  </formats>
+  <fileSets>
+    <fileSet>
+      <directory>config</directory>
+	  <outputDirectory>${extension-distribution}</outputDirectory>
+    </fileSet>
+	<fileSet>
+      <directory>images</directory>
+	  <outputDirectory>/${extension-distribution}/images</outputDirectory>
+    </fileSet>
+  </fileSets>
+  <files>
+    <file>
+      <source>build.number</source>
+      <outputDirectory>${extension-distribution}</outputDirectory>
+    </file>
+  </files>
+  	<dependencySets>
+  		<dependencySet>
+  			<outputDirectory>${extension-distribution}/${library-dir}
+        	</outputDirectory>
+        	<includes>
+        		<include>org.gvsig:com.iver.cit.gvsig.wfs2</include>
+        	</includes>
+  		</dependencySet>
+  		<dependencySet>
+			<useProjectArtifact>false</useProjectArtifact>
+			<useProjectAttachments>true</useProjectAttachments>
+  			<outputDirectory>${gvsig-extension-distribution}/lib
+        	</outputDirectory>
+        	<includes>
+        		<include>org.gvsig:com.iver.cit.gvsig.wfs2:jar:fmap</include>
+        		<include>org.gvsig:org.gvsig.remoteClient</include>
+        	</includes>
+  		</dependencySet>
+	</dependencySets>
+</assembly>
+

@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>extAnimation3D</artifactId>
+	<packaging>jar</packaging>
+	<version>1.1-SNAPSHOT</version>
+	<name>extAnimation3D</name>
+	<url>http://maven.apache.org</url>
+
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-extension-base-pom</artifactId>
+		<version>1.9-SNAPSHOT</version>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>libAnimation3D</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<properties>
+		<extension-appgvsig-lib-dir>
+			${extension-dir}/com.iver.cit.gvsig/lib/
+		</extension-appgvsig-lib-dir>
+		<build-dir>${basedir}/../build</build-dir>
+		<extension-distribution>
+			gvSIG/extensiones/org.gvsig.extAnimation3D/
+		</extension-distribution>
+		<gvsig-extension-distribution>
+			gvSIG/extensiones/com.iver.cit.gvsig/
+		</gvsig-extension-distribution>
+
+		<!-- Path to the descriptor for win32 -->
+		<distribution-win32-descriptor>
+			/distribution/win-distribution/distribution-win32.xml
+		</distribution-win32-descriptor>
+		<!-- Path to the descriptor for win32 sources -->
+		<distribution-win32-descriptor-source></distribution-win32-descriptor-source>
+
+		<!-- Path to the descriptor for linux32  -->
+		<distribution-linux32-descriptor>
+			/distribution/linux-distribution/distribution-linux.xml
+		</distribution-linux32-descriptor>
+		<!-- Path to the descriptor for linux32 sources -->
+		<distribution-linux32-descriptor-source></distribution-linux32-descriptor-source>
+
+		<!-- Path to the descriptor for mac -->
+		<distribution-mac-descriptor>
+			/distribution/distribution-mac.xml
+		</distribution-mac-descriptor>
+		<!-- Path to the descriptor for mac sources-->
+		<distribution-mac-descriptor-source></distribution-mac-descriptor-source>
+
+		<!-- Path to the output directory for the distribution -->
+		<distribution-output-directory>
+			../extAnimationGUI/distribution/
+		</distribution-output-directory>
+		<!-- Final name of the output directory for the distribution -->
+		<distribution-final-name>extAnimation</distribution-final-name>
+		
+		
+		<!-- Path to the file descriptor to generate the extension-->
+		<extension-distribution-file>distribution/extension-distribution.xml
+		</extension-distribution-file>
+		<!-- Final name of the output directory for the distribution -->
+		<application-name>Animation-Extension-3D</application-name>
+
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>
+								${extension-dir}/${plugin-name}
+							</directory>
+							<includes>
+								<include>**</include>
+							</includes>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,7 @@
+ CÓMO GENERAR EL INSTALADOR:
+ ===========================
+- Las librerias nativas deben de tener los install names correctos. Para ello debemos poner la siguiente ruta: 
+@executable_path/../Resources/NativeLibs/ en el flag "Installation Directory" de las propiedades del proyecto de
+XCode.
+- Asegurarse de que las rutas para las extensiones y las librerias nativas sean las correctas en la tarea de ant.
+- Indicar el directorio donde tiene que copiar la cache

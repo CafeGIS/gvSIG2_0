@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>org.gvsig.georeferencing</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>extGeoreferencing</name>
+	<url>http://maven.apache.org</url>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-extension-base-pom</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>com.iver.cit.gvsig</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.rastertools</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.rastertools</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>gvsig</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>org.gvsig.rastertools</artifactId>
+			<version>2.0-SNAPSHOT</version>
+			<classifier>fmap</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>flanagan</artifactId>
+			<version>gvsig</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>jama</artifactId>
+			<version>gvsig</version>
+		</dependency>
+	</dependencies>
+	<properties>
+		<extension-appgvsig-lib-dir> ${extension-dir}/com.iver.cit.gvsig/lib/
+		</extension-appgvsig-lib-dir>
+		<build-dir>${basedir}/../build</build-dir>
+		<extension-distribution>gvSIG/extensiones/org.gvsig.georeferencing/
+		</extension-distribution>
+		<gvsig-extension-distribution>gvSIG/extensiones/com.iver.cit.gvsig/</gvsig-extension-distribution>
+
+		<!-- Path to the file descriptor to generate the extension-->
+		<extension-distribution-file>distribution/distribution.xml
+		</extension-distribution-file>
+		<!-- Final name of the output directory for the distribution -->
+		<distribution-final-name>extGeoreferencing</distribution-final-name>
+		<application-name>Extension-remote-sensing</application-name>
+		<library-dir>.</library-dir>
+	</properties>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>src-test</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<includes>
+					<include>**/*.gif</include>
+					<include>**/*.png</include>
+					<include>**/*.PNG</include>
+					<include> **/*.bmp</include>
+					<include> **/*.jpg</include>
+					<include> **/*.jpeg</include>
+				</includes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory> ${gvsig-path}/${extension-distribution}</directory>
+							<includes>
+								<include>**</include>
+							</includes>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+			<!-- TODO: MAKE TESTS WORK AND REMOVE THIS OPTION -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+      		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<testExcludes>
+						<exclude>**</exclude>
+					</testExcludes>
+				</configuration>
+			</plugin>		
+		</plugins>
+	</build>
+</project>

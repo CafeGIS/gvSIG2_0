@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<shortcuts>
+	<programGroup 	defaultName="Gva/gvSIG"
+					location="applications"/>
+					
+   <shortcut	name="gvSIG User Manual" 
+   				programGroup="no" 
+   				desktop="no" 
+   				applications="no" 
+   				startMenu="yes" 
+   				startup="no" 
+   				target="acroread" 
+   				workingDirectory="" 
+   				commandLine="$INSTALL_PATH/doc/user/user-doc-0.3.pdf" 
+   				initialState="noShow" 
+   				iconFile="$INSTALL_PATH/bin/help.png" 
+   				iconIndex="0" 
+   				url="$INSTALL_PATH/doc/user/user-doc-0.3.pdf" 
+   				type="Application" 
+   				encoding="UTF-8" 
+   				description="gvSIG user documentation (PDF format)"> 
+   				<createForPack name="Documentation"/> 
+   	</shortcut>
+   	<shortcut	name="gvSIG"
+				programGroup="yes"
+				desktop="yes"
+				startMenu="yes"
+				applications="no"
+				startup="no"
+				target="$INSTALL_PATH/bin/gvSIG.sh"
+				workingDirectory="$INSTALL_PATH/bin"
+				initialState="normal"
+				iconFile="$INSTALL_PATH/bin/ico-gvSIG.png"
+				iconIndex="0"
+				type="Application"
+				encoding="UTF-8"
+				description="gvSIG application">
+		<createForPack name="gvSIG program"/>
+	</shortcut>
+   <shortcut	name="gvSIG Uninstaller"
+				programGroup="yes"
+				desktop="yes"
+				applications="no"
+				startMenu="yes"
+				startup="no"
+				target="$INSTALL_PATH/Uninstaller/uninstall.sh"
+				initialState="normal"
+				iconFile="$INSTALL_PATH/bin/uninstall.png"
+				iconIndex="0"
+				workingDirectory="$INSTALL_PATH/Uninstaller"
+				type="Application"
+				encoding="UTF-8"
+				description="gvSIG uninstaller">
+		<createForPack name="gvSIG program" />
+	</shortcut> 
+</shortcuts>

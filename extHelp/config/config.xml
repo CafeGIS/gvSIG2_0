@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<depends plugin-name="com.iver.cit.gvsig" />
+	<resourceBundle name="text"/>
+	<libraries library-dir="lib"/>
+	<extensions>
+		<extension class-name="org.gvsig.help.HelpExtension"
+			description=""
+			active="true"
+			priority="1">
+			<menu text="Ayuda/Ayuda"
+				position="11"
+				action-command="Help"/>
+		</extension>		
+	</extensions>
+</plugin-config>

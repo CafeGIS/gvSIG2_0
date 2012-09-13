@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<depends plugin-name="com.iver.cit.gvsig"/>
+	<libraries library-dir="."/>
+	<resourceBundle name="text"/>
+	<extensions>
+		<extension class-name="com.iver.cit.gvsig.wcs.WCSClientExtension"
+			description="Módulo de WCSClient." 
+			active="true" 
+			priority="1">
+			<menu text="Layer/WCS_properties" action-command="properties" 
+				position="8"/>
+		
+		</extension>
+	</extensions>
+	
+					
+</plugin-config>

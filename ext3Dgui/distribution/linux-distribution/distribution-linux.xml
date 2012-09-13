@@ -1,0 +1,64 @@
+<assembly>
+	<id>distribution</id>
+	<formats>
+		<format>dir</format>
+	</formats>
+	<fileSets>
+	<!-- Extructure for the extension -->
+		<fileSet>
+			<directory>config</directory>
+			<outputDirectory>/linux/bin/${extension-distribution}
+			</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>images</directory>
+			<outputDirectory>/linux/bin/${extension-distribution}/images
+			</outputDirectory>
+		</fileSet>
+	<!-- Extructure for the native libraries -->
+		<fileSet>
+			<directory>${basedir}/../binaries/linux/3D/
+			</directory>
+			<outputDirectory>/linux/lib</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<files>
+		<file>
+			<source>build.number</source>
+			<outputDirectory>/linux/bin/${extension-distribution}
+			</outputDirectory>
+		</file>
+	</files>
+	<!--
+		***********************************************************************
+	-->
+  <!-- *													   *-->
+	<!--
+		***********************************************************************
+	-->
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>/linux/bin/${extension-distribution}/lib/
+			</outputDirectory>
+			<includes>
+				<include>org.gvsig:lib3DMap</include>
+				<include>org.gvsig:libCacheService
+				</include>
+				<include>org.gvsig:ext3Dgui</include>
+				<include>org.gvsig:libG*</include>
+				<include>org.gvsig:libFMap_geometries
+				</include>
+			</includes>
+		</dependencySet>
+		<dependencySet>
+			<outputDirectory>/linux/bin/${gvsig-extension-distribution}/lib
+			</outputDirectory>
+			<includes>
+				<include>org.gvsig.osgvp.libosgvp:*
+				</include>
+				<include>jogl:*</include>
+				<include>org.gvsig:lib3DMap-share</include>
+			</includes>
+		</dependencySet>
+	</dependencySets>
+</assembly>

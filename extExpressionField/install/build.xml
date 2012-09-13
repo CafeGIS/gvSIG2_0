@@ -1,0 +1,35 @@
+<project name="instalador-gvSIG" default="init" basedir=".">
+	<!--
+	<property name="dir_inst" location="C:\Archivos de programa"/>
+	<property name="base_dir" location="./"/>		
+	<property name="dir_libs" location="C:\Archivos de programa\IzPack\lib"/>
+	<property name="vers" location="0.6"/>
+	<property name="izpack_dir" location="C:\Archivos de programa\IzPack"/>
+	-->
+	
+	<property name="dir_inst" location="/usr/local"/>
+	<property name="base_dir" location="./"/>		
+	<property name="izpack_dir" location="../../install/IzPack"/>
+	<property name="dir_libs" location="${izpack_dir}/lib"/>
+	
+	<taskdef name="izpack" classpath="${dir_libs}/compiler.jar" classname="com.izforge.izpack.ant.IzPackTask"/>
+	
+	<target name="init">
+		<izpack input="install.xml" 
+				output="${JARNAME}" 
+				installerType="standard" 
+				basedir="${base_dir}" 
+				izPackDir="${izpack_dir}/"/>
+	</target>
+	
+	<target name="clean">
+		<delete>
+			<fileset dir=".">
+			    <include name="**.zip"/>
+			</fileset>
+		</delete>
+		<delete dir="bin" />
+		<delete dir="extensions" />
+	</target>
+	
+</project>

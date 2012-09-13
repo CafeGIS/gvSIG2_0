@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<depends plugin-name="com.iver.cit.gvsig"/>
+	<depends plugin-name="org.gvsig.catalog"/>
+	<libraries library-dir="lib"/>
+	<resourceBundle name="text"/>
+	<extensions>		
+		<extension class-name="org.gvsig.gazetteer.GazetteerExtension"
+			description="Gazetteer extension" 
+			active="true" 
+			priority="3">
+			<tool-bar name="Catalogo">
+				<action-tool icon="gazetteer-search" 
+					tooltip="gazetteer_search"
+					action-command="GAZETTEER"
+					position="2"
+				/>
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gazetteer.DeleteSearchesExtension"
+			description="Tool to remove the previous gazetteer searches" 
+			active="true" 
+			priority="2">
+			<tool-bar name="Catalogo">
+				<action-tool icon="catalog-clear-point" 
+					tooltip="mantainold"
+					action-command="DELETE"
+					position="3"
+					name="delete"/>
+			</tool-bar>
+		</extension>
+	</extensions>
+</plugin-config>

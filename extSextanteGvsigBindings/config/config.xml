@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+    <depends plugin-name="com.iver.cit.gvsig"/>
+    <libraries library-dir="lib"/>
+	<extensions>
+		<extension class-name="es.unex.sextante.gvsig.extensions.SextanteToolboxExtension"
+			description="Herramientas_SEXTANTE"
+			active="true">
+			<tool-bar name="SEXTANTE" position="2">
+				<action-tool icon="images/sextante.gif" tooltip="Herramientas_SEXTANTE" position="1"/>
+			</tool-bar>
+		</extension>
+		 <extension class-name="es.unex.sextante.gvsig.extensions.SextanteModelerExtension"
+            description="Modelizador"
+            active="true">
+            <tool-bar name="SEXTANTE" position="2">
+                <action-tool icon="images/model.png" tooltip="Modelizador" position="2"/>
+            </tool-bar>
+        </extension>
+
+		 <extension class-name="es.unex.sextante.gvsig.extensions.SextanteHistoryExtension"
+            description="Historial"
+            active="true">
+            <tool-bar name="SEXTANTE" position="2">
+                <action-tool icon="images/history.gif" tooltip="Historial" position="4"/>
+            </tool-bar>
+        </extension>
+         <extension class-name="es.unex.sextante.gvsig.extensions.SextanteCommandLineExtension"
+            description="Linea_comandos"
+            active="true">
+            <tool-bar name="SEXTANTE" position="2">
+                <action-tool icon="images/terminal.png" tooltip="Linea_comandos" position="3"/>
+            </tool-bar>
+        </extension>
+        <extension class-name="es.unex.sextante.gvsig.extensions.SextanteAdditionalResultsExtension"
+            description="Resultados"
+            active="true">
+            <tool-bar name="SEXTANTE" position="2">
+                <action-tool icon="images/chart.gif" tooltip="Resultados" position="5"/>
+            </tool-bar>
+        </extension>
+        <extension class-name="es.unex.sextante.gvsig.extensions.SextanteAboutExtension"
+		   description=""
+		   active="true">
+        </extension>
+	</extensions>
+</plugin-config>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<RasterMetaFile>
+<FLyrGeoRaster>
+	<Projection></Projection>
+	<Extent>
+			<X>582264.31</X>
+			<Y>4309377.86</Y>
+			<RotationX>0.0</RotationX>
+			<RotationY>0.0</RotationY>
+			<PixelSizeX>25.527363981606904</PixelSizeX>
+			<PixelSizeY>-25.557201082544076</PixelSizeY>
+			<Width>1199.786107135471</Width>
+			<Height>1124.516847631894</Height>
+	</Extent>
+	<Dimension>
+			<ImagePxWidth>47.0</ImagePxWidth>
+			<ImagePxHeight>44.0</ImagePxHeight>
+	</Dimension>
+</FLyrGeoRaster>
+<ColorInterpretation>
+	<BandCount>3</BandCount>
+	<Band>Red</Band>
+	<Band>Green</Band>
+	<Band>Blue</Band>
+</ColorInterpretation>
+<Statistics>
+	<BandCount>3</BandCount>
+	<Band>
+		<Max>125.0</Max>
+		<Min>-126.0</Min>
+		<SecondMax>119.0</SecondMax>
+		<SecondMin>-120.0</SecondMin>
+		<MaxRGB>255.0</MaxRGB>
+		<MinRGB>85.0</MinRGB>
+		<SecondMaxRGB>249.0</SecondMaxRGB>
+		<SecondMinRGB>91.0</SecondMinRGB>
+		<Mean>-36.970986460348165</Mean>
+		<Variance>4471.639390322834</Variance>
+	</Band>
+	<Band>
+		<Max>124.0</Max>
+		<Min>-125.0</Min>
+		<SecondMax>118.0</SecondMax>
+		<SecondMin>-119.0</SecondMin>
+		<MaxRGB>255.0</MaxRGB>
+		<MinRGB>111.0</MinRGB>
+		<SecondMaxRGB>248.0</SecondMaxRGB>
+		<SecondMinRGB>118.0</SecondMinRGB>
+		<Mean>-33.94003868471954</Mean>
+		<Variance>1313.2478553176525</Variance>
+	</Band>
+	<Band>
+		<Max>123.0</Max>
+		<Min>-124.0</Min>
+		<SecondMax>114.0</SecondMax>
+		<SecondMin>-115.0</SecondMin>
+		<MaxRGB>255.0</MaxRGB>
+		<MinRGB>62.0</MinRGB>
+		<SecondMaxRGB>246.0</SecondMaxRGB>
+		<SecondMinRGB>70.0</SecondMinRGB>
+		<Mean>6.6764990328820115</Mean>
+		<Variance>5895.4615947064785</Variance>
+	</Band>
+</Statistics>
+<Histogram>
+	<BandCount>3</BandCount>
+	<DataType>0</DataType>
+	<Band>
+		<Min>-128.0</Min>
+		<Max>127.0</Max>
+		<Values>0 0 81 0 0 0 0 0 95 0 0 0 0 0 79 0 0 0 0 106 0 0 0 0 0 99 0 0 0 0 0 79 0 0 0 0 60 0 0 0 0 0 32 0 0 0 0 0 40 0 0 0 0 23 0 0 0 0 0 41 0 0 0 0 0 58 0 0 0 0 49 0 0 0 0 0 72 0 0 0 0 0 87 0 0 0 0 68 0 0 0 0 0 35 0 0 0 0 0 43 0 0 0 0 83 0 0 0 0 0 90 0 0 0 0 0 150 0 0 0 0 121 0 0 0 0 0 253 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 0 0 0 5 0 0 0 0 0 10 0 0 0 0 0 51 0 0 0 0 58 0 0 0 0 0 45 0 0 0 0 0 50 0 0</Values>
+	</Band>
+	<Band>
+		<Min>-128.0</Min>
+		<Max>127.0</Max>
+		<Values>0 0 0 17 0 0 0 0 0 13 0 0 0 0 0 0 29 0 0 0 0 0 11 0 0 0 0 0 0 32 0 0 0 0 0 46 0 0 0 0 0 0 38 0 0 0 0 0 0 47 0 0 0 0 0 48 0 0 0 0 0 0 23 0 0 0 0 0 45 0 0 0 0 0 0 112 0 0 0 0 0 114 0 0 0 0 0 0 166 0 0 0 0 0 358 0 0 0 0 0 0 285 0 0 0 0 0 203 0 0 0 0 0 0 219 0 0 0 0 0 146 0 0 0 0 0 0 62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 0 0 0 0 0 0 20 0 0 0 0 0 21 0 0 0</Values>
+	</Band>
+	<Band>
+		<Min>-128.0</Min>
+		<Max>127.0</Max>
+		<Values>0 0 0 0 38 0 0 0 0 0 0 0 0 42 0 0 0 0 0 0 0 65 0 0 0 0 0 0 0 0 71 0 0 0 0 0 0 0 0 52 0 0 0 0 0 0 0 0 80 0 0 0 0 0 0 0 0 84 0 0 0 0 0 0 0 45 0 0 0 0 0 0 0 0 46 0 0 0 0 0 0 0 0 107 0 0 0 0 0 0 0 0 137 0 0 0 0 0 0 0 0 201 0 0 0 0 0 0 0 104 0 0 0 0 0 0 0 0 112 0 0 0 0 0 0 0 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 93 0 0 0 0 0 0 0 0 123 0 0 0 0 0 0 0 0 161 0 0 0 0 0 0 0 0 136 0 0 0 0 0 0 0 0 167 0 0 0 0 0 0 0 84 0 0 0 0 0 0 0 0 42 0 0 0 0</Values>
+	</Band>
+</Histogram>
+</RasterMetaFile>

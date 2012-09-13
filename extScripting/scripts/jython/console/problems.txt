@@ -1,0 +1,23 @@
+==========================
+Known problems
+==========================
+
+You must use the keyboard not the mouse to select methods.  (Due to focus problems.)
+
+python.security.respectJavaAccessibility must be set to true in Jython's registry
+
+You can't insert '(' and ')' in the middle of a line
+
+Method popup displays names multiple times for overloaded methods
+
+Method popup gets abandoned with too many backspaces.  (Use <ESC> to make it go away)
+
+Builtin types don't work, like they do in PyCrust.  This is because they have a null __doc__ string in Jython.
+
+Static methods and properties don't seem to work correctly.
+
+<CTRL>+D (or <CRTL>+Z) to exit is not implemented
+
+History doesn't quite work correctly
+
+$Id: problems.txt 5782 2006-06-12 07:56:49Z jmvivo $

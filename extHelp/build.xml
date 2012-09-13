@@ -1,0 +1,54 @@
+<project name="Generar extension en Andami" default="help-documentation-zip" basedir=".">
+	<description>
+        Prepara el manual de usuario para el plugin de de Ayuda de gvSIG en Andami.
+    </description>
+	<!-- set global properties for this build -->
+	<property name="dist" location="dist-temp" />
+	<property name="plugin" value="org.gvsig.help" />
+	<property name="extension-dir" location="../build/product/gvSIG/extensiones" />
+	<property name="mydist" location="dist" />
+	<import file="../binaries/ant/utilities.xml" />
+
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp />
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${dist}" />
+	</target>
+
+	<target name="help-documentation-zip">
+
+		<!--get src="http://"
+		 	dest="${mydist}/gvSIG/manual-de-usuario.zip"
+	 	 /-->
+
+		<unzip src="${mydist}/gvSIG/manual-de-usuario.zip" dest="${mydist}/gvSIG">
+			<patternset>
+				<include name="manual-de-usuario/es/map.jhm" />
+			</patternset>
+		</unzip>
+
+		<loadfile property="add_text" srcFile="${mydist}/gvSIG/map.jhm.add" />
+		<loadfile property="end_text" srcFile="${mydist}/gvSIG/end.add" />
+
+		<property name="total" value="${add_text}${end_text}" />
+
+		<replace file="${mydist}/gvSIG/manual-de-usuario/es/map.jhm" value="${total}">
+			<replacetoken>
+				<![CDATA[</map>]]></replacetoken>
+		</replace>
+
+		<zip destfile="${dist}/gvSIG/manual-de-usuario.zip" basedir="${mydist}/gvSIG" includes="manual-de-usuario/**/**" excludes="**/*.db" update="true" />
+	</target>
+
+	<target name="move-to-andami">
+		<move todir="${extension-dir}/${plugin}/">
+			<fileset dir="${dist}" includes="**/**" />
+		</move>
+	</target>
+
+	<target name="clean">
+		<delete dir="${dist}" failonerror="no" />
+	</target>
+
+</project>

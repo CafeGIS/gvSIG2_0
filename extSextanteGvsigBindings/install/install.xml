@@ -1,0 +1,59 @@
+<installation version="1.0">
+	<info>
+		<appname>SEXTANTE</appname>
+		<appversion>0.52</appversion>
+		<authors>
+			<author name="Junta de Extremadura. Consejería de Industria, Energía y Medio Ambiente" email="" />
+		</authors>
+		<url>http://www.sextantegis.com/</url>
+		<javaversion>1.5</javaversion>
+	</info>
+
+	<guiprefs height="430" resizable="no" width="800">
+		<laf name="liquid">
+			<os family="unix" />
+		</laf>
+		<laf name="liquid">
+			<os family="windows" />
+		</laf>
+	</guiprefs>
+
+	<locale>
+		<langpack iso3="spa"/>
+		<langpack iso3="eng"/>
+	</locale>
+
+	<resources>
+		<res src="resources/gpl.txt" id="LicencePanel.licence"/>
+		<res src="resources/readme.htm" id="HTMLInfoPanel.info_eng"/>
+		<res src="resources/leeme.htm" id="HTMLInfoPanel.info_spa"/>
+		<res src="resources/images/Logo_sextante.jpg" id="Installer.image"/>
+		<res src="resources/userInputSpec.xml" id="userInputSpec.xml"/>
+        <parsable os="linux" targetfile="resources/userInputSpec.xml"/>
+        <res src="resources/userInputLang.xml_spa" id="userInputLang.xml_spa" />
+        <res src="resources/userInputLang.xml_eng" id="userInputLang.xml_eng" />
+	</resources>
+
+	<panels>
+		<panel classname="HTMLInfoPanel"/>
+		<panel classname="LicencePanel"/>
+		<panel classname="UserInputPanel"/>
+		<panel classname="InstallPanel"/>
+		<panel classname="SimpleFinishPanel"/>
+	</panels>
+
+	<packs>
+
+		<pack name="Sextante" required="yes">
+			<description>Sextante</description>
+			<file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/" src="../../_fwAndami/gvSIG/extensiones/es.unex.sextante" override="true"/>
+			<fileset targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/com.iver.cit.gvsig/lib" dir="../../dist" override="true">
+                <include name="**"/>
+                <exclude name="bsh*.*" />
+            </fileset>
+		</pack>
+
+	</packs>
+
+</installation>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<depends plugin-name="com.iver.cit.gvsig" />
+	<libraries library-dir="."/>
+	<resourceBundle name="text"/>
+	<extensions>
+		<extension class-name="com.iver.cit.gvsig.wms.WMSClientExtension"
+			description="Support to access WMS"
+			active="true"
+			priority="1">
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.wmc.ExportWebMapContextExtension"
+			description="Support for exporting OGC's Web Map Context documents"
+			active="true"
+			priority="10">
+			<menu text="Vista/export/web_map_context"
+				tooltip="export_to_map_context"
+				action-command="EXPORT" />
+		</extension>
+		<extension class-name="com.iver.cit.gvsig.wmc.ImportWebMapContextExtension"
+			description="Support for exporting OGC's Web Map Context documents"
+			active="true"
+			priority="10">
+			<menu text="Vista/import/web_map_context"
+				tooltip="import_map_context"
+				position="90"
+				action-command="IMPORT" />
+		</extension>
+	</extensions>
+</plugin-config>

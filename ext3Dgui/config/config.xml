@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<depends plugin-name="com.iver.cit.gvsig" />
+	<depends plugin-name="com.iver.core" />
+	<libraries library-dir="./lib" />
+	<resourceBundle name="text" />
+	<extensions>
+		<extension class-name="org.gvsig.gvsig3dgui.Extension3D"
+			description="Shows a 3D View" active="true" priority="50">
+			<tool-bar name="Tools3D">
+				<selectable-tool icon="images/ejemplo.png"
+					action-command="SHOW3D" tooltip="show_3Dview" />
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.InitialWarningExtension3D"
+			description="Initial warning message" active="true" priority="1">
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.navigation.NavigationMenu3D"
+			description="Extensión encargada de manejar los ditintos tipos de manipuladores de la vista."
+			active="true" priority="31">
+			<menu text="Vista/navegacion/Default_Navigation" action-command="DEFAULT_SELECT"
+				icon="default-manipulator-icon" />
+			<menu text="Vista/navegacion/Pan_Navigation" action-command="PAN_SELECT"
+				icon="roll-manipulator-icon" />
+			<menu text="Vista/navegacion/Zoom_Navigation" action-command="ZOOM_SELECT"
+				icon="zoom-manipulator-icon" />
+			<menu text="Vista/navegacion/Azimut_Navigation" action-command="AZIMUT_SELECT"
+				icon="azimut-manipulator-icon" />
+			<menu text="Vista/navegacion/Active_north" action-command="ACTIVE"
+				icon="north-disable-icon" />
+			<!--
+				<menu text="Vista/modos/Wire_Frame" action-command="WIRE_FRAME"
+				icon="images/WireFrame.png"/>
+			-->
+			<tool-bar name="NavigationMenu3D" position="3">
+				<selectable-tool group="navigation" is-default="true"
+					icon="default-manipulator-icon" action-command="DEFAULT_SELECT"
+					tooltip="Default_Navigation" position="1" />
+				<selectable-tool group="navigation" icon="roll-manipulator-icon"
+					action-command="PAN_SELECT" tooltip="Pan_Navigation" position="2" />
+				<selectable-tool group="navigation" icon="zoom-manipulator-icon"
+					action-command="ZOOM_SELECT" tooltip="Zoom_Navigation" position="3" />
+				<selectable-tool group="navigation" icon="azimut-manipulator-icon"
+					action-command="AZIMUT_SELECT" tooltip="Azimut_Navigation"
+					position="4" />
+				<action-tool icon="north-disable-icon" name="NORTH"
+					action-command="ACTIVE" tooltip="Active_north" position="5" />
+				<!--
+					<action-tool icon="images/WireFrame.png"
+					action-command="WIRE_FRAME" tooltip="Wire_Frame" position="6"/>
+				-->
+				<action-tool icon="global-zoom-icon" action-command="RESET_VIEW"
+					tooltip="Reset_View" position="7" />
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.layer.MenuZoom3D"
+			description="Extensión encargada de abrir el menu de opciones de zoom 3D."
+			active="true" priority="51">
+			<menu text="Vista/navegacion/Zoom_Select" action-command="ZOOM_SELECT"
+				icon="zoom-selection-icon" />
+			<menu text="Capa/Transparency" name="TRANSPARENCY"
+				action-command="TRANSPARENCY" icon="transparency-icon" />
+			<tool-bar name="MenuZoom3D" position="4">
+				<action-tool icon="zoom-selection-icon" action-command="ZOOM_SELECT"
+					tooltip="Zoom_Select" position="2" />
+				<action-tool icon="transparency-icon" name="TRANSPARENCY"
+					action-command="TRANSPARENCY" tooltip="Transparency" position="1" />
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.camera.Menu3D"
+			description="Extensión encargada de abrir el menu de opciones 3D."
+			active="true" priority="40">
+			<menu text="Vista/navegacion/Encuadre" action-command="ENCUADRE"
+				icon="encuadrator-icon" />
+			<!--
+				<menu text="Vista/navegacion/Insertar Punto"
+				action-command="POINT3D" icon="images/InsertPoint.png"/>
+			-->
+			<tool-bar name="Menu3D" position="5">
+				<action-tool icon="encuadrator-icon" action-command="ENCUADRE"
+					tooltip="gestion_encuadre" position="1" />
+				<!--
+					<action-tool icon="images/InsertPoint.png" action-command="POINT3D"
+					tooltip="insercion_de_puntos_3D" position="2"/>
+				-->
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.display.DisplayMenu"
+			description="Extensión encargada de abrir el menu de opciones de visualización."
+			active="true" priority="51">
+			<menu text="Vista/Visualización/Opciones de Visualización"
+				action-command="DISPLAY" icon="display-icon" />
+			<tool-bar name="MenuVisualizacion" position="4">
+				<action-tool icon="display-icon" action-command="DISPLAY"
+					tooltip="Visualizacion" position="2" />
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.display.FullScreenMenu"
+			description="Extensión encargada de activar el modo de pantalla completa"
+			active="true" priority="51">
+			<menu text="Vista/Visualización/Pantalla Completa"
+				action-command="FULLSCREEN" icon="fullscreen-icon" />
+			<tool-bar name="MenuFullScreen" position="4">
+				<action-tool icon="fullscreen-icon" action-command="FULLSCREEN"
+					tooltip="Pantalla Completa" position="2" />
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.display.ProjectionMode"
+			description="Extensión encargada de cambiar el tipo de proyeccion entre Perspectiva y Ortográfica"
+			active="true" priority="51">
+			<menu text="Vista/Visualización/Tipo de Proyeccion"
+				action-command="PROJECTION" icon="projection-icon" />
+			<tool-bar name="MenuProjection" position="4">
+				<action-tool icon="projection-icon" action-command="PROJECTION"
+					tooltip="Modo de Proyeccion" position="2" />
+			</tool-bar>
+		</extension>
+
+		<extension class-name="org.gvsig.gvsig3dgui.display.EnableCompass"
+			description="Extensión encargada de mostrar/ocultar la brujula"
+			active="false"
+			priority="51">
+
+			<menu text="Vista/Visualización/Brujula" action-command="COMPASS" icon="compass-icon"/>
+			<tool-bar name="EnableCompass" position="4">
+				<action-tool icon="compass-icon" action-command="COMPASS"  tooltip="Modo de Brujula" position="2"/>
+			</tool-bar>
+		</extension>
+		
+			
+		<extension class-name="org.gvsig.gvsig3dgui.view.ViewPropertiesExtension3D"
+			description="Extensión encargada de manejar de activar siempre al norte."
+			active="true">
+			<menu text="Vista/propiedades" action-command="PROPERTIES" />
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.view.Export"
+			description="Extensión encargada de exportar una vista al formato de imagen que se seleccione."
+			active="true">
+			<menu text="Vista/Exportar/Imagen" />
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.import3D.CreateNewLayerOSG"
+			description="Crear una nueva capa." active="true">
+			<menu text="Vista/new_layer/new_osg" action-command="CREARCAPA" />
+			<tool-bar name="DriverOSG" position="6">
+				<action-tool icon="create_new_layer_OSG" action-command="CREARCAPA"
+					tooltip="Crear_capa_osg" position="1" />
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.import3D.MenuImport3D"
+			description="Extensión encargada de importar objetos 3D no GIS."
+			active="true" priority="30">
+			<menu text="Vista/import/Objeto_3D" action-command="OBJECT" />
+			<!--
+				menu text="Vista/import/Objeto_3D_Vectorial"
+				action-command="OBJECT_VECTORIAL"/
+			-->
+			<!--menu text="Vista/Crear_capa"
+				action-command="CREARCAPA" /-->
+			<!--
+				menu text="Vista/Capturar_capa" action-command="SALVARCAPA" /
+			-->
+			<tool-bar name="DriverOSG" position="6">
+				<action-tool icon="insert_new_geometry_OSG"
+					action-command="OBJECT" tooltip="Importar" position="2" />
+				<!--
+					action-tool icon="images/plugin_edit.png"
+					action-command="SALVARCAPA" tooltip="Salvar_capa" position="3" /
+				-->
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.import3D.SaveLayerOSG"
+			description="Salvar una capa." active="true">
+			<menu text="Vista/save_layer_osg" action-command="SALVARCAPA" />
+			<tool-bar name="DriverOSG" position="6">
+				<action-tool icon="save_layer_OSG" action-command="SALVARCAPA"
+					tooltip="save_layer_osg" position="3" />
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.layer.ViewSelectionControls3D"
+			description="Extensión encargada de gestionar la vista." active="true"
+			priority="30">
+			<menu text="Vista/seleccion/seleccionar_por_punto"
+				action-command="SELPOINT" icon="view-select-geometry" />
+			<menu text="Vista/seleccion/seleccionar_por_rectangulo"
+				action-command="SELRECT" icon="view-select-by-rectangle" />
+			<menu text="Vista/seleccion/seleccionar_por_poligono"
+				action-command="SELPOL" icon="view-select-by-polygon" />
+			<menu text="Vista/seleccion/Seleccion_por_capa" action-command="SELECTIONBYSHAPE" />
+			<menu text="Vista/seleccion/separator" action-command="separator"
+				is_separator="true" />
+			<menu text="Vista/seleccion/invert_selection" action-command="INVERT_SELECTION"
+				icon="view-select-invert" />
+			<tool-bar name="Tools_Select" position="7">
+				<selectable-tool icon="view-select-geometry"
+					action-command="SELPOINT" tooltip="seleccionar_por_punto" position="1" />
+				<selectable-tool icon="view-select-by-rectangle"
+					action-command="SELRECT" tooltip="seleccionar_por_rectangulo"
+					position="2" />
+				<selectable-tool icon="view-select-by-polygon"
+					action-command="SELPOL" tooltip="seleccionar_por_poligono"
+					position="3" />
+				<action-tool icon="view-select-invert" action-command="INVERT_SELECTION"
+					tooltip="invert_selection" position="4" />
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.legend.Legend3DExtension"
+			description="Extensión para nuevas leyendas 3D." active="true"
+			priority="30">
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.layout.layout3DExtension"
+			description="Extensión encargada del layout para 3D." active="true"
+			priority="30">
+			<menu text="Mapa/insert_3D_view" action-command="INSERT_3D_VIEW"
+				icon="insert_3d_view_map" />
+			<tool-bar name="Layout_Tools_Insert_Cartografy" position="7">
+				<!--
+					selectable-tool icon="layout-insert-view"
+					action-command="RECTANGLEVIEW" tooltip="insertar_vista"
+					position="1"/
+				-->
+				<selectable-tool icon="insert_3d_view_map"
+					action-command="INSERT_3D_VIEW" tooltip="insert_3d_view_map"
+					position="4" />
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.manipulator.Manipulator3DExtension"
+			description="Extensión encargada de la manipulación de geometrias 3D."
+			active="true" priority="40">
+			<tool-bar name="Editing_tools" position="7">
+				<selectable-tool icon="rotation_manipulator"
+					action-command="ROTATION_MANIPULATOR" tooltip="rotation_manipulator"
+					position="1" />
+				<selectable-tool icon="tabbox_manipulator"
+					action-command="TABBOX_MANIPULATOR" tooltip="tabbox_manipulator"
+					position="2" />
+				<!--
+					<selectable-tool icon="scale_manipulator"
+					action-command="SCALE_MANIPULATOR" tooltip="scale_manipulator"
+					position="3"/>
+				-->
+			</tool-bar>
+		</extension>
+		<extension class-name="org.gvsig.gvsig3dgui.AboutExtension3D"
+			description="Extension to add about panel." active="true" priority="1">
+		</extension>
+		
+		<extension class-name="org.gvsig.gvsig3dgui.layer.properties.Module3D"
+			description="Módulo adaptador para la librería de raster." active="true"
+			priority="30">
+		</extension>
+		<skin-extension class-name="org.gvsig.gvsig3dgui.skin.JDialogSkin">
+		</skin-extension>
+	</extensions>
+</plugin-config>

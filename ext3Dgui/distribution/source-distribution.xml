@@ -1,0 +1,16 @@
+<assembly>
+  <id>src</id>
+  <formats>
+    <format>dir</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <fileSets>
+	<!-- Extructure for the extension -->
+    <fileSet>
+      <directory>src</directory>
+	</fileSet>
+	<fileSet>
+      <directory>test</directory>
+	</fileSet>
+  </fileSets>
+</assembly>

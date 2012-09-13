@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<State xmlns="http://www.opengis.net/examples"
+    xmlns:gml="http://www.opengis.net/gml"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/examples schools.xsd">
+    <gml:description>
+        Educational institutions with student populations exceeding 500.
+    </gml:description>
+    <gml:name>School districts in the North Region.</gml:name>
+    <gml:boundedBy>
+        <gml:Box srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+            <gml:coord><gml:X>0</gml:X><gml:Y>0</gml:Y></gml:coord>
+            <gml:coord><gml:X>50</gml:X><gml:Y>50</gml:Y></gml:coord>
+        </gml:Box>
+    </gml:boundedBy>
+    <gml:featureMember>
+        <SchoolDistrict>
+            <gml:name>District 28</gml:name>
+            <gml:boundedBy>
+                <gml:Box srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+                    <gml:coord><gml:X>0</gml:X><gml:Y>0</gml:Y></gml:coord>
+                    <gml:coord><gml:X>50</gml:X><gml:Y>40</gml:Y></gml:coord>
+                </gml:Box>
+            </gml:boundedBy>
+            <schoolMember>
+                <School>
+                    <gml:name>Alpha</gml:name>
+                    <address>100 Cypress Ave.</address>
+                    <gml:location>
+                        <gml:Point srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+                            <gml:coord><gml:X>20.0</gml:X><gml:Y>5.0</gml:Y></gml:coord>
+                        </gml:Point>
+                    </gml:location>
+                </School>
+            </schoolMember>
+            <schoolMember>
+                <School>
+                    <gml:name>Beta</gml:name>
+                    <address>1673 Balsam St.</address>
+                    <gml:location>
+                        <gml:Point srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+                            <gml:coord><gml:X>40.0</gml:X><gml:Y>5.0</gml:Y></gml:coord>
+                        </gml:Point>
+                    </gml:location>
+                </School>
+            </schoolMember>
+            <gml:extentOf>
+                <gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+                    <gml:outerBoundaryIs>
+                        <gml:LinearRing>
+                            <gml:coord><gml:X>0</gml:X><gml:Y>0</gml:Y></gml:coord>
+                            <gml:coord><gml:X>50</gml:X><gml:Y>0</gml:Y></gml:coord>
+                            <gml:coord><gml:X>50</gml:X><gml:Y>40</gml:Y></gml:coord>
+                            <gml:coord><gml:X>0</gml:X><gml:Y>0</gml:Y></gml:coord>
+                        </gml:LinearRing>
+                    </gml:outerBoundaryIs>
+                </gml:Polygon>
+            </gml:extentOf>
+        </SchoolDistrict>
+    </gml:featureMember>
+    <gml:featureMember>
+        <SchoolDistrict>
+            <gml:name>District 32</gml:name>
+            <gml:boundedBy>
+                <gml:Box srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+                    <gml:coord><gml:X>0</gml:X><gml:Y>0</gml:Y></gml:coord>
+                    <gml:coord><gml:X>30</gml:X><gml:Y>50</gml:Y></gml:coord>
+                </gml:Box>
+            </gml:boundedBy>
+            <schoolMember>
+                <School>
+                    <gml:name>Gamma</gml:name>
+                    <address>651 Sequoia Ave.</address>
+                    <gml:location>
+                        <gml:Point srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+                            <gml:coord><gml:X>5.0</gml:X><gml:Y>20.0</gml:Y></gml:coord>
+                        </gml:Point>
+                    </gml:location>
+                </School>
+            </schoolMember>
+            <schoolMember>
+                <College>
+                    <gml:name>Delta</gml:name>
+                    <address>260 University Blvd.</address>
+                    <gml:pointProperty>
+                        <gml:Point srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+                            <gml:coord><gml:X>5.0</gml:X><gml:Y>40.0</gml:Y></gml:coord>
+                        </gml:Point>
+                    </gml:pointProperty>
+                </College>
+            </schoolMember>
+            <schoolMember xlink:type="simple"
+                xlink:title="Epsilon High School"
+                xlink:href="http:www.state.gov/schools/cgi-bin/wfs?schoolID=hs736"
+                gml:remoteSchema="schools.xsd#xpointer(//complexType[@name='SchoolType'])"/>
+            <gml:extentOf>
+                <gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+                    <gml:outerBoundaryIs>
+                        <gml:LinearRing>
+                            <gml:coord><gml:X>0</gml:X><gml:Y>0</gml:Y></gml:coord>
+                            <gml:coord><gml:X>40</gml:X><gml:Y>50</gml:Y></gml:coord>
+                            <gml:coord><gml:X>50</gml:X><gml:Y>50</gml:Y></gml:coord>
+                            <gml:coord><gml:X>0</gml:X><gml:Y>0</gml:Y></gml:coord>
+                        </gml:LinearRing>
+                    </gml:outerBoundaryIs>
+                </gml:Polygon>
+            </gml:extentOf>
+        </SchoolDistrict>
+    </gml:featureMember>
+    <studentPopulation>392620</studentPopulation>
+</State>

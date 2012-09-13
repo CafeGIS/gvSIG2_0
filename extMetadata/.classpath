@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src-test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="GVSIG_INSTALL_DIR/bin/andami.jar"/>
+	<classpathentry kind="lib" path="lib/org.gvsig.metadata.jar"/>
+	<classpathentry kind="var" path="GVSIG_INSTALL_DIR/bin/lib/org.gvsig.tools.jar" sourcepath="/libToolsDIR"/>
+	<classpathentry kind="lib" path="/libMetadata/lib/junit-4.4.jar"/>
+	<classpathentry kind="var" path="GVSIG_INSTALL_DIR/bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/com.iver.cit.gvsig.jar" sourcepath="/appgvSIGDIR"/>
+	<classpathentry kind="var" path="GVSIG_INSTALL_DIR/bin/gvSIG/extensiones/com.iver.cit.gvsig/lib/fmap.jar"/>
+	<classpathentry kind="var" path="GVSIG_INSTALL_DIR/bin/lib/org.gvsig.ui.jar"/>
+	<classpathentry kind="lib" path="lib/miglayout-3.6.jar"/>
+	<classpathentry kind="lib" path="lib/org.gvsig.personaldb.jar"/>
+	<classpathentry kind="var" path="GVSIG_INSTALL_DIR/bin/lib/iver-utiles.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

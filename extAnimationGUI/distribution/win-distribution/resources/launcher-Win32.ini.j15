@@ -1,0 +1,144 @@
+[default]
+; Nombre de la aplicacion
+appname = gvSIG
+
+; Ruta al achivo Jar a lanzar
+jar = %JARNAME%
+
+
+; Comando a ejecutar:
+;    Admite remplazo de variable:
+;	* #JAVA# ejecutable de java
+;	* #JAVA_HOME# path del Java_home
+;	* #JAR# el valor de la variable 'jar' de este fichero
+;	* #ARGS# cadena con todos los argumentos con los que se ha llamado al lanzador
+;	* #ARG1#, #ARG2#, ... #ARG9#: parametro recivido en 'n' lugar
+;	* #ARG0#: Nombre del ejecutable del lanzador
+;    Tambien admite los valores de la seccion 'Variables' encerrados entre
+;    el caracter almuadilla '#'
+; 	 * Nota: los nombres de las variables son case sensitive
+command = #JAVA# -jar #JAR#
+
+
+
+
+; Lanzar el Jar en ansincrono o no:
+;     * si(se lanza el javaw.exe y finaliza el lanzador):S SI YES Y 1
+;     * si(el lanzado se espera a que termine la ejecucion del javaw.exe):{distinto de los anterirores}
+launchJarAsync = 0
+
+; Modo: dice si se va a usar en modo lanzador de la instalacion o de la aplicacion
+; (De momento solo afecta al titulo)
+;     * Instalacion: INSTALL
+;     * Applicacion: APPLICATION
+launchMode = INSTALL
+
+; Realizar la comprobaciones o no:
+;     * si(por defecto):S SI YES Y 1
+;     * no(debera estar especificado el parametro'jre_home'):{distinto de los anterirores}
+doChecks = YES
+
+; Realizar la comprobacion de codigo que
+; retorna la JRE
+;     * si(por defecto):S SI YES Y 1
+;     * no:{distinto de los anterirores}
+checksJREExecutionTerminationCode = YES
+
+
+
+; Ruta el Java_home a usar en caso de 'doChecks-->No'
+jre_home =
+;ejemplo: jre_home = C:/Archivos de programa/Java/j2re1.4.2_11
+
+
+; Habilita la pregunta al usuario de si hay que hacer las comprobaciones de JRE etc...
+;     - por defecto se hace la pregunta
+;     - Si la respuesta del usario es 'no' se solicita la usuario que indique el ejectuable de la JRE
+;     * si(se pregunta al usario):S SI YES Y 1
+;     * no(no se pregunta y se realizan las comprobaciones):{distinto de los anterirores}
+askForCheckingProcess = SI
+
+
+
+; Version de JRE requerida
+jre_version = 1.5.0
+jre_version_prefered = 1.5.0_12
+
+
+
+; Descarga remota
+; 	* los valores valido de downloadEnabled son:
+;		- habilitado: S SI YES Y 1
+;		- deshabilitado: {distinto de los anteriores}
+downloadEnabled = 1
+
+
+
+; Path del instalable del jre (si no existe y estan
+;	habilitadas las descargas, lo dejara aqui)
+jre = jre-1_5_0_12-windows-i586-p.exe
+downloadJre = http://www.gvsig.org/runtime/jre-1_5_0_12-windows-i586-p.exe
+
+
+; Comprobar si esta instaladas las Jai
+;	- habilitado: S SI YES Y 1 (por defecto)
+;	- deshabilitado: {distinto de los anteriores}
+checkJai=S
+; Path del instalable del jai (si no existe y estan
+;	habilitadas las descargas, lo dejara aqui)
+jai = jai-1_1_3-lib-windows-i586-jre.exe
+;downloadJai = http://www.gvsig.org/jai-1_1_2_01-lib-windows-i586-jre.exe
+downloadJai = http://www.gvsig.gva.es/fileadmin/conselleria/images/Documentacion/descargas/software/windows/jai-1_1_3-lib-windows-i586-jre.exe
+
+
+; Comprobar si esta instaladas las Jai Image I/O
+;	- habilitado: S SI YES Y 1 (por defecto)
+;	- deshabilitado: {distinto de los anteriores}
+checkJai_io=N
+; Path del instalable del jai io (si no existe y estan
+;	habilitadas las descargas, lo dejara aqui)
+jai_io =
+downloadJai_io =
+
+
+
+; Esta seccion indica una lista de fichero a
+; copiar antes de lanzar el comando.
+; Los ficheros se copiaran si no existen en el
+; destino.
+; Destino puede ser un directorio, pero debe finalizar
+; con '/'
+; Pueden usarse variables declaradas en la
+; seccion 'variables' colocadas entre '#'
+;  * Nota: los nombres de las variables son case sensitive
+; Requiere los valores:
+;	* source1: primer fichero origen
+;	* target1: primer destino
+;	* source2: segundo fichero origen
+;	* target2: segundo destino
+;	...
+;	* source{n}: 'n' fichero origen
+;	* target{n}: 'n' destino
+[CopyRequiredFiles]
+source1=
+target1=
+
+source2=
+target2=
+
+source3=
+target3=
+
+
+; En esta seccion se pueden definir valores
+; que se pueden utilizar en el parametro 'command'
+; o en la copia de los ficheros
+;  * Nota: los nombres son case sensitive
+[Variables]
+
+
+
+; En esta seccion se pueden definir valores
+; que se estableceran como variables de entorno
+; al arrancar el lanzador (y heredara la aplicacion)
+[EnvironVariables]

@@ -1,0 +1,216 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gvsig</groupId>
+	<artifactId>ext3Dgui</artifactId>
+	<packaging>jar</packaging>
+	<version>2.0-SNAPSHOT</version>
+	<name>ext3Dgui</name>
+	<url>http://gvsig.org</url>
+	<description> This is the extension that contains all the GUI part for
+		the 3D extension of GvSIG</description>
+	<parent>
+		<groupId>org.gvsig</groupId>
+		<artifactId>gvsig-extension-base-pom
+		</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>lib3DMap</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig</groupId>
+			<artifactId>com.iver.core</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gvsig.legacy</groupId>
+			<artifactId>JimiProClasses</artifactId>
+			<version>gvsig</version>
+		</dependency>
+	</dependencies>
+	
+	<properties>
+		
+		<extension-appgvsig-lib-dir> ${extension-dir}/com.iver.cit.gvsig/lib/
+		</extension-appgvsig-lib-dir>
+		<build-dir>${basedir}/../build</build-dir>
+		<extension-distribution> gvSIG/extensiones/org.gvsig.ext3Dgui/
+		</extension-distribution>
+		<gvsig-extension-distribution> gvSIG/extensiones/com.iver.cit.gvsig/
+		</gvsig-extension-distribution>
+		<version>1.0</version>
+		<bversion>1</bversion>
+
+		<!-- Path to the descriptor for win32 -->
+		<distribution-win32-descriptor>
+			/distribution/win-distribution/distribution-win32.xml
+		</distribution-win32-descriptor>
+		<!-- Path to the descriptor for win32 sources -->
+		<distribution-win32-descriptor-source></distribution-win32-descriptor-source>
+
+		<!-- Path to the descriptor for linux32  -->
+		<distribution-linux32-descriptor>
+			/distribution/linux-distribution/distribution-linux.xml
+		</distribution-linux32-descriptor>
+		<!-- Path to the descriptor for linux32 sources -->
+		<distribution-linux32-descriptor-source></distribution-linux32-descriptor-source>
+
+		<!-- Path to the descriptor for mac -->
+		<distribution-mac-descriptor> /distribution/distribution-mac.xml
+		</distribution-mac-descriptor>
+		<!-- Path to the descriptor for mac sources-->
+		<distribution-mac-descriptor-source></distribution-mac-descriptor-source>
+
+<!--		 Path to the output directory for the distribution -->
+		<extension-distribution-output-directory>target/
+		</extension-distribution-output-directory>
+		<distribution-output-directory>distribution/
+		</distribution-output-directory>
+		
+		
+		<!-- Path to the file descriptor to generate the extension-->
+		<extension-distribution-file>distribution/extension-distribution.xml
+		</extension-distribution-file>
+		<!-- Final name of the output directory for the distribution -->
+		<distribution-final-name>ext3D</distribution-final-name>
+		<application-name>plugin-3D-gvsig</application-name>
+		<output-dir_installers>target/intallers/
+		</output-dir_installers>
+	</properties>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>test</testSourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<configuration>
+					<attach>true</attach>
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory> ${distribution-output-directory}</directory>
+							<includes>
+								<include> **/*${distribution-final-name}*</include>
+							</includes>
+							<followSymlinks>false</followSymlinks>
+						</fileset>
+						<fileset>
+							<directory> ${extension-appgvsig-lib-dir}</directory>
+							<includes>
+								<include>lib3DMap-share*</include>
+							</includes>
+						</fileset>
+						<fileset>
+							<directory> ${extension-dir}/${plugin-name}</directory>
+							<includes>
+								<include>**</include>
+							</includes>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>install-binaries</id>
+			<activation>
+				<property>
+					<name>install-binaries-dir</name>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>copy-native-3D</id>
+								<phase>install</phase>
+								<configuration>
+									<tasks name="install binaries">
+										<property name="install-binaries-dir" value="${install-binaries-dir}" />
+										<ant antfile="${basedir}/maven-build.xml" inheritRefs="true" />
+									</tasks>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-clean-plugin</artifactId>
+						<configuration>
+							<filesets>
+								<fileset>
+									<directory> ${install-binaries-dir}</directory>
+									<includes>
+										<include>libjniosgvp**</include>
+										<include>libosg**</include>
+										<include> libOpenThreads**</include>
+										<include> osgPlugins**/**</include>
+									</includes>
+									<followSymlinks>false</followSymlinks>
+								</fileset>
+							</filesets>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>generate-installers</id>
+			<activation>
+				<property>
+					<name>generate-install</name>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>generate-install</id>
+								<phase>install</phase>
+								<configuration>
+									<tasks>
+										<property name="base-dir" value="${basedir}" />
+										<property name="OUTPUT_DIR" value="${output-dir_installers}" />
+										<property name="version" value="${version}" />
+										<property name="bversion" value="${bversion}" />
+										<property name="APPNAME" value="${application-name}" />
+										<ant antfile="${basedir}/distribution/build.xml"
+											inheritRefs="true" />
+									</tasks>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

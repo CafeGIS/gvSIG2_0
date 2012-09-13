@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="lib" />
+	<depends plugin-name="com.iver.cit.gvsig" />
+	<depends plugin-name="com.iver.cit.gvsig.cad" />
+	<depends plugin-name="org.gvsig.scripting" />
+	<resourceBundle name="text" />
+	<extensions>
+
+		<extension
+			class-name="org.gvsig.normalization.extensions.AboutExtension"
+			description="Add a new about to the about panel." active="true">
+		</extension>
+		<extension
+			class-name="org.gvsig.normalization.extensions.NormalizationExtension"
+			description="Extension for the preferences of Normalization."
+			active="true">
+		</extension>
+		<extension
+			class-name="org.gvsig.normalization.extensions.NormalizationFileExtension"
+			description="Extension that normalize a file with strings."
+			active="true">
+			<menu text="Tabla/normalizefile" tooltip="normalizefile"
+				action-command="NORMALIZE_FILE"
+				icon="images/icons16/normalizefileicon.png" position="9997" />
+			<tool-bar name="field_toolbar">
+				<action-tool
+					icon="images/icons16/normalizefileicon.png"
+					action-command="NORMALIZE_FILE" tooltip="normalizefile"
+					position="9997" />
+			</tool-bar>
+		</extension>
+		<extension
+			class-name="org.gvsig.normalization.extensions.NormalizationTableExtension"
+			description="Extension that normalize a table field with strings."
+			active="true">
+			<menu text="Tabla/normalizetable" tooltip="normalizetable"
+				action-command="NORMALIZE_TABLE"
+				icon="images/icons16/normalizetableicon.png" position="9998" />
+			<tool-bar name="field_toolbar">
+				<action-tool
+					icon="images/icons16/normalizetableicon.png"
+					action-command="NORMALIZE_TABLE" tooltip="normalizetable"
+					position="9998" />
+			</tool-bar>
+		</extension>
+	</extensions>
+</plugin-config>

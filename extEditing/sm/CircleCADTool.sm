@@ -1,0 +1,99 @@
+// -*- tab-width: 4; -*-
+
+%{
+//
+// Vicente Caballero Navarro
+%}
+
+%start Circle::CenterPointOr3p
+%class CircleCADTool
+%package com.iver.cit.gvsig.gui.cad.tools.smc
+%import com.iver.cit.gvsig.gui.cad.tools.CircleCADTool
+%import java.awt.event.InputEvent
+%import com.iver.andami.PluginServices
+
+%map Circle
+%%
+// A task begins life in suspended animation.
+
+CenterPointOr3p
+
+	Entry {
+		setQuestion(
+		PluginServices.getText(this,"insert_central_point_or_3p")+
+		"["+PluginServices.getText(this,"CircleCADTool.3p")+"]");
+		setDescription(new String[]{"cancel","3P"});
+		}
+	Exit{
+		}
+
+	{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+			PointOrRadius {
+				setQuestion(PluginServices.getText(this,"insert_radius_or_second_point"));
+				setDescription(new String[]{"cancel"});
+				addPoint( pointX,pointY,event);
+				}
+	addOption( s:String)
+		[s.equalsIgnoreCase(PluginServices.getText(this,"CircleCADTool.3p"))]
+			FirstPoint{
+				setQuestion(PluginServices.getText(this,"insert_first_point"));
+				setDescription(new String[]{"cancel"});
+				addOption( s);
+			}
+}
+PointOrRadius{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		CenterPointOr3p {
+			addPoint( pointX,pointY,event);
+			}
+	addValue( d:double)
+		CenterPointOr3p {
+			addValue( d);
+			}
+}
+SecondPoint{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		ThirdPoint {
+			setQuestion(PluginServices.getText(this,"insert_third_point"));
+			setDescription(new String[]{"cancel"});
+			addPoint( pointX,pointY,event);
+			}
+}
+ThirdPoint{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		CenterPointOr3p {
+			addPoint( pointX,pointY,event);
+			}
+}
+
+FirstPoint{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		SecondPoint {
+			setQuestion(PluginServices.getText(this,"insert_second_point"));
+			setDescription(new String[]{"cancel"});
+			addPoint( pointX,pointY,event);
+			}
+}
+
+Default
+{
+	addOption(s:String)
+		[s.equals(PluginServices.getText(this,"cancel"))]
+		CenterPointOr3p{
+			end();
+			}
+	addOption(s:String)
+		CenterPointOr3p{
+			throwOptionException(PluginServices.getText(this,"incorrect_option"),s);
+			}
+	addValue(d:double)
+		CenterPointOr3p{
+			throwValueException(PluginServices.getText(this,"incorrect_value"),d);
+			}
+	addPoint(pointX:double,pointY:double,event:InputEvent)
+		CenterPointOr3p{
+			throwPointException(PluginServices.getText(this,"incorrect_point"),pointX,pointY);
+			}
+}
+%%

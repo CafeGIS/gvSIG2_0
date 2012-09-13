@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="."/>
+	<depends plugin-name="com.iver.cit.gvsig"/>
+		<resourceBundle name="text"/>
+	<extensions>
+		<extension class-name="org.gvsig.scripting.ScriptingExtension"
+			description="Extension de soporte para Scripts de usuario."
+			active="true">
+			
+			<!--
+			<menu text="Archivo/Scripting"
+				position="50"
+				is_separator="true"
+				/>
+			-->	
+			<menu text="Archivo/script_sep"
+				position="98"
+				is_separator="true"
+				/>
+			
+			<menu text="Archivo/Scripting/Consola_de_jython" tooltip="Consola_de_jython_tooltip" 
+				action-command="run(fileName='gvSIG/extensiones/org.gvsig.scripting/scripts/jython/console/runConsole.py',language='jython')" 
+				icon="scripting-console" 
+				position="52"
+				/>
+		</extension>
+
+	</extensions>
+</plugin-config>

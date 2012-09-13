@@ -1,0 +1,84 @@
+<project name="bundle-gvSIG" default="init" basedir=".">
+	<property name="ANDAMI" value="../../_fwAndami"/>
+	<!--loadproperties srcFile="${EXT3D}/build.number"/-->
+	<property name="LIBRERIAS" value="../../binaries/mac"/>
+	<!--property name="CACHE" value="/Users/materod/Desktop/cache"/-->
+	<property name="CACHE" value="/home/rgaitan/Desktop/cache"/>
+	<property name="NOMBRE_BUNDLE" value="gvSIG_pilot_3D-01_${build.number}_Instaler-mac"/>
+	<target name="init">
+		<!--Generamos el bundle de instalación-->
+		<mkdir dir="${DIR_MAC}/distr"/>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app"/>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents">
+			<fileset dir="resources/bundle" includes="Info.plist PkgInfo" />
+		</copy>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/MacOS"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/MacOS">
+			<fileset dir="resources/bundle" includes="applet"/>
+		</copy>
+		<chmod file="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/MacOS/applet" perm="+rwxrxrx"/>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources">
+			<fileset dir="resources/bundle" includes="applet.icns applet.rsrc" />
+		</copy>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/description.rtfd"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/description.rtfd">
+			<fileset dir="resources/bundle" includes="TXT.rtf" />
+		</copy>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Scripts"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Scripts">
+			<fileset dir="resources/bundle" includes="main.scpt" />
+		</copy>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates">
+			<fileset dir="resources/updates" includes="Info.plist" />
+		</copy>
+		<unzip src="resources/updates/Frameworks.zip" dest="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates"/>
+		<!--Borrammos el directorio temporal que crea al descomprimir-->
+		<delete dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/__MACOSX"/>
+		<!--Copiamos las dll necesarias para la extension 3D-->
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/NativeLibs"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/NativeLibs">
+			<fileset dir="${LIBRERIAS}"/>
+		</copy>
+		<!--Copiando JDialogSkin-->
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/com.iver.core"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/com.iver.core"
+			file="${ANDAMI}/gvSIG/extensiones/com.iver.core/com.iver.core.jar"/>
+		<!--Copiamos la cache-->
+		<!--mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Cache"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Cache">
+			<fileset dir="${CACHE}"/>
+		</copy-->
+		<!--Copiamos las extensiones-->
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/com.iver.ai2.gvsig3d"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/com.iver.ai2.gvsig3d">
+			<fileset dir="${ANDAMI}/gvSIG/extensiones/com.iver.ai2.gvsig3d"/>
+		</copy>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/es.gva.cit.gvsig.catalogClient"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/es.gva.cit.gvsig.catalogClient">
+			<fileset dir="${ANDAMI}/gvSIG/extensiones/es.gva.cit.gvsig.catalogClient"/>
+		</copy>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/com.iver.cit.gvsig.wfs2"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/com.iver.cit.gvsig.wfs2">
+			<fileset dir="${ANDAMI}/gvSIG/extensiones/com.iver.cit.gvsig.wfs2"/>
+		</copy>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/com.iver.cit.gvsig.wcs"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/com.iver.cit.gvsig.wcs">
+			<fileset dir="${ANDAMI}/gvSIG/extensiones/com.iver.cit.gvsig.wcs"/>
+		</copy>
+		<mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/com.iver.cit.gvsig/lib"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/gvSIG/extensiones/com.iver.cit.gvsig/lib"
+			file="${ANDAMI}/gvSIG/extensiones/com.iver.cit.gvsig/lib/com.iver.ai2.gvsig3d_share.jar"/>
+		<!--Copiamos el splash-->
+		<!--mkdir dir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/theme"/>
+		<copy todir="${DIR_MAC}/distr/${NOMBRE_BUNDLE}.app/Contents/Resources/Updates/Resources/Java/theme">
+			<fileset dir="${ANDAMI}/theme"/>
+		</copy-->
+		<!--Creamos el zip-->
+		<zip destfile="${NOMBRE_BUNDLE}.zip" update="yes">
+			<zipfileset filemode="755" dir="${DIR_MAC}/distr" />
+		</zip>
+	</target>
+</project>

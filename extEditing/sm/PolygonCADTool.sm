@@ -1,0 +1,116 @@
+// -*- tab-width: 4; -*-
+
+%{
+//
+// Vicente Caballero Navarro
+%}
+
+%start Polygon::NumberOrCenterPoint
+%class PolygonCADTool
+%package com.iver.cit.gvsig.gui.cad.tools.smc
+%import com.iver.cit.gvsig.gui.cad.tools.PolygonCADTool
+%import java.awt.event.InputEvent
+%import com.iver.andami.PluginServices
+
+%map Polygon
+%%
+// A task begins life in suspended animation.
+
+NumberOrCenterPoint
+
+	Entry {
+		setQuestion(
+		PluginServices.getText(this,"insert_number_sides"));
+		setDescription(new String[]{"cancel"});
+		}
+	Exit{
+		}
+
+	{
+		addValue(d:double)
+			[d<3]
+			NumberOrCenterPoint{
+				throwValueException(PluginServices.getText(this,"num_lados_insuficiente"),d);
+			}
+		addValue(d:double)
+			[d>2]
+			CenterPoint {
+				setQuestion(PluginServices.getText(this,"insert_central_point_polygon"));
+				setDescription(new String[]{"cancel"});
+				addValue(d);
+				}
+		addPoint( pointX:double,pointY:double,event:InputEvent)
+			OptionOrRadiusOrPoint {
+				setQuestion(
+					PluginServices.getText(this,"into_circle")+" "+
+					"["+PluginServices.getText(this,"PolygonCADTool.into_circle")+"]"+
+	    			PluginServices.getText(this,"cad.or")+" "+
+	    			PluginServices.getText(this,"circumscribed")+
+	   				"["+PluginServices.getText(this,"PolygonCADTool.circumscribed")+"]");
+				setDescription(new String[]{"into_circle","circumscribed","cancel"});
+				addPoint( pointX,pointY,event);
+				}
+
+	}
+CenterPoint{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		OptionOrRadiusOrPoint {
+			setQuestion(
+				PluginServices.getText(this,"into_circle")+" "+
+				"["+PluginServices.getText(this,"PolygonCADTool.into_circle")+"]"+
+	    		PluginServices.getText(this,"cad.or")+" "+
+	    		PluginServices.getText(this,"circumscribed")+
+	   			"["+PluginServices.getText(this,"PolygonCADTool.circumscribed")+"]");
+			setDescription(new String[]{"into_circle","circumscribed","cancel"});
+			addPoint( pointX,pointY,event);
+			}
+}
+OptionOrRadiusOrPoint{
+	addOption(s:String)
+		[!s.equals(PluginServices.getText(this,"cancel"))]
+		RadiusOrPoint {
+			setQuestion(PluginServices.getText(this,"insert_radius"));
+			setDescription(new String[]{"cancel"});
+			addOption(s);
+			}
+	addValue(d:double)
+		NumberOrCenterPoint{
+			addValue(d);
+			}
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		NumberOrCenterPoint {
+			addPoint( pointX,pointY,event);
+			}
+}
+RadiusOrPoint{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		NumberOrCenterPoint {
+			addPoint( pointX,pointY,event);
+			}
+	addValue(d:double)
+		NumberOrCenterPoint{
+			addValue(d);
+			}
+}
+
+Default
+{
+	addOption(s:String)
+		[s.equals(PluginServices.getText(this,"cancel"))]
+		NumberOrCenterPoint{
+			end();
+			}
+	addOption(s:String)
+		NumberOrCenterPoint{
+			throwOptionException(PluginServices.getText(this,"incorrect_option"),s);
+			}
+	addValue(d:double)
+		NumberOrCenterPoint{
+			throwValueException(PluginServices.getText(this,"incorrect_value"),d);
+			}
+	addPoint(pointX:double,pointY:double,event:InputEvent)
+		NumberOrCenterPoint{
+			throwPointException(PluginServices.getText(this,"incorrect_point"),pointX,pointY);
+			}
+}
+%%

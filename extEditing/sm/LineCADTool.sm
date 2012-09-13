@@ -1,0 +1,94 @@
+// -*- tab-width: 4; -*-
+
+%{
+//
+// Vicente Caballero Navarro
+%}
+
+%start Line::FirstPoint
+%class LineCADTool
+%package com.iver.cit.gvsig.gui.cad.tools.smc
+%import com.iver.cit.gvsig.gui.cad.tools.LineCADTool
+%import java.awt.event.InputEvent
+%import com.iver.andami.PluginServices
+
+%map Line
+%%
+// A task begins life in suspended animation.
+
+FirstPoint
+
+	Entry {
+		setQuestion(
+		PluginServices.getText(this,"insert_first_point"));
+		setDescription(new String[]{"cancel"});
+		}
+	Exit{
+		}
+
+	{
+
+		addPoint( pointX:double,pointY:double,event:InputEvent)
+			SecondPointOrAngle {
+				setQuestion(PluginServices.getText(this,"insert_second_point_angle"));
+				setDescription(new String[]{"cancel"});
+				addPoint( pointX,pointY,event);
+				}
+
+	}
+SecondPointOrAngle{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		SecondPointOrAngle {
+			setQuestion(PluginServices.getText(this,"insert_second_point_angle"));
+			setDescription(new String[]{"cancel"});
+			addPoint( pointX,pointY,event);
+			}
+	addValue( d:double)
+		LenghtOrPoint {
+			setQuestion(PluginServices.getText(this,"insert_length_or_point"));
+			setDescription(new String[]{"cancel"});
+			addValue( d);
+			}
+
+}
+LenghtOrPoint{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+		SecondPointOrAngle {
+			setQuestion(PluginServices.getText(this,"insert_second_point_angle"));
+			setDescription(new String[]{"cancel"});
+			addPoint( pointX,pointY,event);
+			}
+	addValue( d:double)
+		SecondPointOrAngle {
+			setQuestion(PluginServices.getText(this,"insert_second_point_angle"));
+			setDescription(new String[]{"cancel"});
+			addValue( d);
+			}
+	}
+Default
+{
+	addOption(s:String)
+		[s.equals(PluginServices.getText(this,"cancel"))]
+		FirstPoint{
+			end();
+			}
+	addOption(s:String)
+		[s.equals("")]
+		FirstPoint{
+			end();
+			}
+	addOption(s:String)
+		FirstPoint{
+			throwOptionException(PluginServices.getText(this,"incorrect_option"),s);
+			}
+	addValue(d:double)
+		FirstPoint{
+			throwValueException(PluginServices.getText(this,"incorrect_value"),d);
+			}
+	addPoint(pointX:double,pointY:double,event:InputEvent)
+		FirstPoint{
+			throwPointException(PluginServices.getText(this,"incorrect_point"),pointX,pointY);
+			}
+
+}
+%%

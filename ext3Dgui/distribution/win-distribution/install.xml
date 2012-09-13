@@ -1,0 +1,136 @@
+<installation version="1.0">
+	<info>
+		<appname>gvSIG_1.0 piloto 3D</appname>
+		<appversion>1.0</appversion>
+		<authors>
+			<author
+				name="Generalitat Valenciana. Conselleria d'Infraestructures i Transport"
+				email="" />
+			<author name="Iver Tecnologías de la Información S.A."
+				email="" />
+		</authors>
+		<url>http://www.gvsig.gva.es/</url>
+		<javaversion>1.4</javaversion>
+	</info>
+
+	<guiprefs height="600" resizable="yes" width="800">
+		<laf name="liquid">
+			<os family="windows" />
+		</laf>
+	</guiprefs>
+
+	<locale>
+		<!-- only keep the languages which are also available in gvSIG -->
+		<langpack iso3="spa" />
+		<langpack iso3="val" />
+		<langpack iso3="eng" />
+		<!--	<langpack iso3="cat"/>
+			<langpack iso3="chn"/> -->
+		<langpack iso3="cze" />
+		<!--	<langpack iso3="dan"/> -->
+		<langpack iso3="deu" />
+		<!--	<langpack iso3="fin"/>-->
+		<langpack iso3="fra" />
+		<langpack iso3="glg" />
+		<!--	<langpack iso3="hun"/> -->
+		<langpack iso3="ita" />
+		<!--	<langpack iso3="jpn"/>
+			<langpack iso3="mys"/>
+			<langpack iso3="ned"/>
+			<langpack iso3="nor"/>
+			<langpack iso3="pol"/> -->
+		<langpack iso3="por" />
+		<!--	<langpack iso3="rom"/>
+			<langpack iso3="rus"/>
+			<langpack iso3="scg"/>
+			<langpack iso3="svk"/>
+			<langpack iso3="swe"/>
+			<langpack iso3="ukr"/> -->
+	</locale>
+
+	<native os="windows" type="izpack" name="ShellLink.dll" />
+
+	<resources>
+		<res src="resources/gpl.txt" id="LicencePanel.licence" />
+		<res src="resources/LEEME.html" id="HTMLInfoPanel.info" />
+		<res src="resources/images/Logo_gvsig_gva.jpg"
+			id="Installer.image" />
+		<res src="resources/userInputSpec.xml" id="userInputSpec.xml" />
+		<parsable os="windows" targetfile="resources/userInputSpec.xml" />
+		<res src="resources/userInputLang.xml_val"
+			id="userInputLang.xml_val" />
+		<res src="resources/userInputLang.xml_spa"
+			id="userInputLang.xml_spa" />
+		>
+	</resources>
+
+	<panels>
+		<panel classname="HTMLInfoPanel" />
+		<panel classname="LicencePanel" />
+		<panel classname="PacksPanel" />
+		<panel classname="UserInputPanel" />
+		<panel classname="InstallPanel" />
+		<panel classname="SimpleFinishPanel" />
+	</panels>
+
+
+
+
+	<packs>
+		<!-- aki se ponen las cosas que ha que machacar -->
+		<pack name="GvSIG UPDATES" required="yes">
+			<description>Extension piloto 3D</description>
+
+
+			<!-- dll necesarias para la extension 3D -->
+			<fileset targetdir="$INSTALL_PATH/lib"
+				dir="../../ext3D/binaries/w32" override="true">
+				<include name="**/*" />
+			</fileset>
+
+			<fileset targetdir="$JAVA_HOME/bin"
+				dir="../../ext3D/binaries/w32" override="true">
+				<include name="**/*" />
+			</fileset>
+
+
+			<!-- Copiando JDialogSkin -->
+			<file
+				targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/com.iver.core/"
+				src="/bin/gvSIG/extensiones/com.iver.core/com.iver.core.jar"
+				override="true" />
+			
+			<!-- Copiando la cache 
+			<file targetdir="$USER_HOME/gvSIG/.data/"
+				src="/home/rgaitan/Desktop/cache" override="true" />
+			-->
+			<!-- Sobreescribiendo el nuevo .ini -->
+			<file os="windows" targetdir="$INSTALL_PATH/bin"
+				src="resources/gvSIG.ini" override="true" />
+			<parsable os="windows"
+				targetfile="$INSTALL_PATH/bin/gvSIG.ini" />
+
+			<file targetdir="$INSTALL_PATH/bin/"
+				src="../../_fwAndami/theme" override="true" />
+		</pack>
+
+		<!-- aki se ponen las cosas que ha que machacar -->
+		<pack name="3D extensions" required="yes">
+			<description>Install 3D Extension</description>
+			<file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/"
+				src="/extensiones/com.iver.ai2.gvsig3d"
+				override="true" />
+		</pack>
+		
+		<!-- aki se ponen las cosas que ha que machacar -->
+		<pack name="Catalog client" required="yes">
+			<description>Install Catalog client</description>
+			<file targetdir="$INSTALL_PATH/bin/gvSIG/extensiones/"
+				src="/extensiones/es.gva.cit.gvsig.catalogClient"
+				override="true" />
+		</pack>
+
+
+	</packs>
+
+</installation>

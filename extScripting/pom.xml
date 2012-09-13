@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+  <parent>
+    <artifactId>gvsig-extension-base-pom</artifactId>
+    <groupId>org.gvsig</groupId>
+    <version>2.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.gvsig</groupId>
+  <artifactId>org.gvsig.scripting</artifactId>
+  <name>extScripting</name>
+  <version>2.0-SNAPSHOT</version>
+  <url>http://gvsig.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>org.gvsig</groupId>
+      <artifactId>com.iver.cit.gvsig</artifactId>
+      <version>2.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gvsig.legacy</groupId>
+      <artifactId>bsf</artifactId>
+      <version>gvsig</version>
+    </dependency>
+    <dependency>
+      <groupId>bsh</groupId>
+      <artifactId>bsh</artifactId>
+      <version>2.0b1</version>
+    </dependency>
+    <dependency>
+      <groupId>groovy</groupId>
+      <artifactId>groovy</artifactId>
+      <version>1.0-beta-7</version>
+    </dependency>
+    <dependency>
+      <groupId>jython</groupId>
+      <artifactId>jython</artifactId>
+      <version>2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gvsig.legacy</groupId>
+      <artifactId>scriptablethinlet</artifactId>
+      <version>gvsig</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gvsig.legacy</groupId>
+      <artifactId>js</artifactId>
+      <version>gvsig</version>
+    </dependency>
+	<dependency>
+		<groupId>org.gvsig.legacy</groupId>
+		<artifactId>thinlet</artifactId>
+		<version>gvsig</version>
+	</dependency>
+
+  </dependencies>
+
+	<properties>
+		<extension-distribution>gvSIG/extensiones/org.gvsig.scripting/
+		</extension-distribution>
+		<extension-distribution-lib>${extension-distribution}/lib
+		</extension-distribution-lib>
+		<gvsig-extension-distribution>gvSIG/extensiones/com.iver.cit.gvsig/
+		</gvsig-extension-distribution>
+		<extension-appgvsig-lib-dir> ${gvsig-extension-distribution}/lib/</extension-appgvsig-lib-dir>
+
+		<build-dir>${basedir}/../build</build-dir>
+		<library-dir>./lib</library-dir>
+		<scripts-dir>./scripts</scripts-dir>
+		<!--		 Path to the output directory for the distribution -->
+		<extension-distribution-output-directory>target/
+		</extension-distribution-output-directory>
+		<distribution-output-directory>distribution/
+		</distribution-output-directory>
+
+
+		<!-- Path to the file descriptor to generate the extension-->
+		<extension-distribution-file>distribution/extension-distribution.xml
+		</extension-distribution-file>
+		<!-- Final name of the output directory for the distribution -->
+		<distribution-final-name>scripting</distribution-final-name>
+		<application-name>scripting</application-name>
+		<output-dir_installers>target/intallers/
+		</output-dir_installers>
+	</properties>
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>src-test</testSourceDirectory>
+        <plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory> ${gvsig-path}/${extension-distribution}</directory>
+                            <includes>
+                                <include>**</include>
+                            </includes>
+                        </fileset>
+                        <fileset>
+                            <directory> ${gvsig-path}/${gvsig-extension-distribution}/lib</directory>
+							<includes>
+								<include>org.gvsig.scripting*</include>
+								<include>*bsf*</include>
+								<include>*bsh*</include>
+								<include>*groovy*</include>
+								<include>*jython*</include>
+								<include>*scriptablethinlet*</include>
+								<include>*thinlet*</include>
+								<include>*js*</include>
+							</includes>
+
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin-config>
+	<libraries library-dir="."/>
+	<depends plugin-name="com.iver.cit.gvsig"/>
+		<resourceBundle name="text"/>
+	<extensions>
+		<extension class-name="com.iver.gvsig.datalocator.DataLocatorExtension"
+			description="Extensión que permite hacer zooms en función de los valores de la base de datos. También permite guardar y recuperar estos zooms."
+			active="true">
+			<menu text="Vista/Localizador_por_atributo" tooltip="Localizador_por_atributo"
+				action-command="DATALOCATOR"
+				icon="view-locator" />
+			<tool-bar name="com.iver.cit.gvsig.Herramientas">
+				<action-tool icon="view-locator"
+					action-command="DATALOCATOR" tooltip="Localizador_por_atributo"
+				last="true"/>
+			</tool-bar>
+		</extension>
+	</extensions>
+</plugin-config>

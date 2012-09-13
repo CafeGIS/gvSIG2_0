@@ -1,0 +1,102 @@
+// -*- tab-width: 4; -*-
+
+%{
+//
+// Vicente Caballero Navarro
+%}
+
+%start EditVertex::SelectVertexOrDelete
+%class EditVertexCADTool
+%package com.iver.cit.gvsig.gui.cad.tools.smc
+%import com.iver.cit.gvsig.gui.cad.tools.EditVertexCADTool
+%import java.awt.event.InputEvent
+%import com.iver.andami.PluginServices
+
+%map EditVertex
+%%
+// A task begins life in suspended animation.
+
+SelectVertexOrDelete
+	Entry {
+		selection();
+		setQuestion(
+			PluginServices.getText(this,"point")+", "+
+		    PluginServices.getText(this,"next")+
+		    "["+PluginServices.getText(this,"EditVertexCADTool.nextvertex")+"], "+
+		     PluginServices.getText(this,"previous")+
+		    "["+PluginServices.getText(this,"EditVertexCADTool.previousvertex")+"], "+
+		     PluginServices.getText(this,"add")+
+		    "["+PluginServices.getText(this,"EditVertexCADTool.addvertex")+"] "+
+		    PluginServices.getText(this,"cad.or")+" "+
+		     PluginServices.getText(this,"del")+
+		    "["+PluginServices.getText(this,"EditVertexCADTool.delvertex")+"]");
+		setDescription(new String[]{"next","previous","add","del","cancel"});
+
+		}
+	Exit{
+		}
+
+	{
+		addPoint( pointX:double,pointY:double,event:InputEvent)
+			SelectVertexOrDelete {
+				setQuestion(PluginServices.getText(this,"select_from_point"));
+				setDescription(new String[]{"next","previous","add","del","cancel"});
+				addPoint( pointX,pointY,event);
+				}
+		addOption(s:String)
+		[s.equals("i") || s.equals("I") || s.equals(PluginServices.getText(this,"add"))]
+			AddVertex {
+				setQuestion(PluginServices.getText(this,"add_vertex"));
+				setDescription(new String[]{"cancel"});
+				addOption(s);
+				}
+		addOption(s:String)
+		[!s.equals("i") && !s.equals("I") && !s.equals(PluginServices.getText(this,"add"))]
+
+			SelectVertexOrDelete {
+				setQuestion(
+					PluginServices.getText(this,"point")+", "+
+				    PluginServices.getText(this,"next")+
+				    "["+PluginServices.getText(this,"EditVertexCADTool.nextvertex")+"], "+
+				     PluginServices.getText(this,"previous")+
+				    "["+PluginServices.getText(this,"EditVertexCADTool.previousvertex")+"], "+
+				     PluginServices.getText(this,"add")+
+				    "["+PluginServices.getText(this,"EditVertexCADTool.addvertex")+"] "+
+				    PluginServices.getText(this,"cad.or")+" "+
+				     PluginServices.getText(this,"del")+
+				    "["+PluginServices.getText(this,"EditVertexCADTool.delvertex")+"]");
+				setDescription(new String[]{"next","previous","add","del","cancel"});
+				addOption(s);
+				}
+	}
+
+AddVertex{
+	addPoint( pointX:double,pointY:double,event:InputEvent)
+			SelectVertexOrDelete {
+				setQuestion(PluginServices.getText(this,"select_from_point"));
+				setDescription(new String[]{"next","previous","add","del","cancel"});
+				addPoint( pointX,pointY,event);
+			}
+}
+
+Default
+{
+	addOption(s:String)
+		[s.equals(PluginServices.getText(this,"cancel"))]
+		SelectVertexOrDelete{
+			end();
+			}
+	addOption(s:String)
+		SelectVertexOrDelete{
+			throwOptionException(PluginServices.getText(this,"incorrect_option"),s);
+			}
+	addValue(d:double)
+		SelectVertexOrDelete{
+			throwValueException(PluginServices.getText(this,"incorrect_value"),d);
+			}
+	addPoint(pointX:double,pointY:double,event:InputEvent)
+		SelectVertexOrDelete{
+			throwPointException(PluginServices.getText(this,"incorrect_point"),pointX,pointY);
+			}
+}
+%%

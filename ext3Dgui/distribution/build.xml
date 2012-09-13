@@ -1,0 +1,260 @@
+<?xml version="1.0" ?>
+<project default="main">
+
+
+	<property file="../_fwAndami/gvSIG/extensiones/com.iver.cit.gvsig/build.number" />
+
+	<!--property file="/distribution/build.properties" /-->
+	<!--COMPROBAR EXTENSIONES -->
+	<property name="version" value="1.0" />
+	<property name="bversion" value="1.0" />
+	<property name="APPNAME" value="plugin-3D-gvsig" />
+	<property name="OUTPUT_DIR" location="./target/installers" />
+
+
+	<property name="DIR_LIN" location="./distribution/linux-distribution" />
+	<property name="DIR_WIN" location="./distribution/win-distribution" />
+	<property name="DIR_MAC" location="./mac-distribution" />
+	<property name="baseFileName" value="${APPNAME}-${bversion}" />
+	<property name="LINUXBIN" value="${baseFileName}-linux-i586.bin" />
+	<property name="LINUXBINWITHJRE" value="${baseFileName}-linux-i586-withjre.bin" />
+	<property name="WINDOWSZIP" value="${baseFileName}-windows-i586.7z" />
+	<property name="WINDOWSEXE" value="${baseFileName}-windows-i586.exe" />
+	<property name="WINDOWSEXEWITHJRE" value="${baseFileName}-windows-i586-withjre.exe" />
+	<property name="MAC_10_ZIP" value="${baseFileName}-mac-10_4.zip" />
+	<property name="JARNAME" value="${APPNAME}-${bversion}.jar" />
+	<property name="INSTALLER_DIR" value="${APPNAME}-${version}_installer" />
+	<property name="nombre_autoinstalador" value="gvSIG ${version} build ${build.number} autoinstalador" />
+	<!--OJO!!!! HAY QUE REVISAR ESTO -->
+	<property environment="env" />
+
+
+	<condition property="LAUNCHER7Z" value="../build/distribution/launcher/7z/7za" else="../build/distribution/launcher/7z/7z.exe">
+		<os family="unix" />
+	</condition>
+	<!--condition property="LAUNCHER7Z" value="7za" else="7z.exe">
+			<os family="unix" />
+	</condition-->
+
+	<condition property="Lang.Is.Spanish">
+		<contains string="${env.LANG}" substring="es" />
+	</condition>
+	<condition property="directorio.base">
+		<available file="../install" type="dir" />
+	</condition>
+
+	<target name="E_Spanish" if="Lang.Is.Spanish">
+		<property name="ERROR_BASEDIR" value="Este script debe invocarse desde el directorio install del workspace" />
+	</target>
+
+	<target name="E_notSpanish" unless="Lang.Is.Spanish">
+		<property name="ERROR_BASEDIR" value="This script must be run from the workspace\install's directory" />
+	</target>
+
+	<target name="check" depends="E_Spanish,E_notSpanish">
+		<fail message="${ERROR_BASEDIR}" unless="directorio.base" />
+	</target>
+
+	<!-- target name="main" depends="Linux,Windows" -->
+	<target name="main" depends="Linux,Windows">
+		<echo message="DISTRIBUCION" />
+	</target>
+	<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	-->
+	<target name="Linux" depends="CreateJarLin,InstallationLin,concatenation,cleanDirLIN">
+		<echo> ********************************************* </echo>
+		<echo> ********         LINUX DONE         *********</echo>
+		<echo> ********************************************* </echo>
+	</target>
+
+	<target name="CreateJarLin" description="Generacion del instalador(jar) para Linux">
+		<!-- 		Generamos el instalador (jar) para Linux -->
+		<delete file="../${JARNAME}" />
+		<ant dir="${DIR_LIN}">
+			<property name="JARNAME" value="${JARNAME}" />
+			<property name="GVSIG_VERSION" value="${version}" />
+			<property name="APPNAME" value="${APPNAME}" />
+		</ant>
+	</target>
+	<target name="InstallationLin" description="Generacion de la distribucion">
+		<echo> ********************************************* </echo>
+		<echo> Buildnumber----> ${build.number} --- version--> ${version}</echo>
+		<echo> ********************************************* </echo>
+
+		<!-- 		INSTALACION PARA LINUX -->
+		<delete dir="${DIR_LIN}/${INSTALLER_DIR}" />
+		<mkdir dir="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall" />
+		<move todir="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall">
+			<fileset file="./${JARNAME}" />
+		</move>
+
+		<!-- 		carpetas CVS no se copiaran, ANT las excluye por defecto -->
+		<copy todir="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall">
+			<fileset dir="../build/distribution/launcher/izpack-launcher-1.3_linux/dist">
+				<exclude name="launcher.ini" />
+			</fileset>
+		</copy>
+		<chmod file="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall/launcher-Linux" perm="ugo+rx" />
+
+		<copy file="${DIR_LIN}/resources/launcher.ini.j15" tofile="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall/launcher.ini" />
+		<replace file="${DIR_LIN}/${INSTALLER_DIR}/tmp_gvSIGInstall/launcher.ini" token="%JARNAME%" value="${JARNAME}" />
+
+		<!-- 		comprimimos la carpeta tmp_gvSIGInstall en tmp.tgz -->
+		<tar destfile="${DIR_LIN}/${INSTALLER_DIR}/tmp.tgz" compression="gzip">
+			<tarfileset dir="${DIR_LIN}/${INSTALLER_DIR}" mode="755">
+				<include name="tmp_gvSIGInstall/launcher-Linux" />
+			</tarfileset>
+			<tarfileset dir="${DIR_LIN}/${INSTALLER_DIR}">
+				<include name="tmp_gvSIGInstall/*" />
+				<exclude name="tmp_gvSIGInstall/launcher-Linux" />
+			</tarfileset>
+		</tar>
+
+		<antcall target="concatenation" />
+
+		<!--echo message="#!/bin/sh${line.separator}" file="${DIR_LIN}/${INSTALLER_DIR}/xx.tmp" append="true" />
+		<echo message="lcount=59${line.separator}" file="${DIR_LIN}/${INSTALLER_DIR}/xxx.tmp" append="true" />
+		<fixcrlf srcdir="${DIR_LIN}/${INSTALLER_DIR}/" includes="**/xx.tmp" eol="lf" eof="remove" />
+		<concat destfile="${DIR_LIN}/${INSTALLER_DIR}/${LINUXBIN}" binary="true">
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/xx.tmp" />
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/xxx.tmp" />
+			<fileset file="../build/distribution/launcher/izpack-launcher-1.3_linux/h_gvSIG-install.sh" />
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/tmp.tgz" />
+		</concat-->
+
+
+	</target>
+
+	<target name="concatenation" description="this target concats all the files into a new bin file">
+		<echo message="#!/bin/sh" file="${DIR_LIN}/${INSTALLER_DIR}/xx.tmp" />
+		<echo message="lcount=59" file="${DIR_LIN}/${INSTALLER_DIR}/xxx.tmp" />
+		<fixcrlf srcdir="${DIR_LIN}/${INSTALLER_DIR}/" includes="**/xx.tmp,**/xxx.tmp" eol="lf" eof="remove" />
+		<concat destfile="${DIR_LIN}/${INSTALLER_DIR}/${LINUXBIN}" binary="true">
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/xx.tmp" />
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/xxx.tmp" />
+			<fileset file="../build/distribution/launcher/izpack-launcher-1.3_linux/h_gvSIG-install.sh" />
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/tmp.tgz" />
+		</concat>
+		<chmod file="${DIR_LIN}/${INSTALLER_DIR}/${LINUXBIN}" perm="ugo+rx" />
+	</target>
+
+	<target name="cleanDirLIN" description="Limpiamos los directorios DIR_LIN">
+
+		<delete file="${DIR_LIN}/${INSTALLER_DIR}/xx.tmp" />
+		<mkdir dir="${OUTPUT_DIR}" />
+		<mkdir dir="${OUTPUT_DIR}/linux" />
+		<move todir="${OUTPUT_DIR}/linux">
+			<fileset file="${DIR_LIN}/${INSTALLER_DIR}/${LINUXBIN}" />
+		</move>
+		<chmod file="${OUTPUT_DIR}/linux/${LINUXBIN}" perm="ugo+rx" />
+		<delete dir="${DIR_LIN}/${INSTALLER_DIR}" />
+
+	</target>
+
+	<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	-->
+	<target name="Windows" depends="CreateJarWin,InstallationWin,cleanDirWIN">
+		<echo> ********************************************* </echo>
+		<echo> ********        WINDOWS DONE        *********</echo>
+		<echo> ********************************************* </echo>
+	</target>
+
+	<target name="CreateJarWin" description="Generacion del instalador(jar) para Windows">
+
+		<!-- 	Instalador para Windows -->
+
+		<echo> ********************************************* </echo>
+		<echo> Buildnumber----> ${build.number} --- version--> ${version}</echo>
+		<echo> ********************************************* </echo>
+		<delete file="./${JARNAME}" />
+		<ant dir="${DIR_WIN}">
+			<property name="JARNAME" value="${JARNAME}" />
+			<property name="GVSIG_VERSION" value="${version}" />
+			<property name="APPNAME" value="${APPNAME}" />
+			<property name="INSTALL_FILE" value="${DIR_WIN}/install_15.xml" />
+			<!-- property name="INSTALL_FILE" value="${DIR_WIN}/install.xml" / -->
+		</ant>
+
+	</target>
+	<target name="InstallationWin" description="Generacion de la distribucion">
+
+		<!-- Coping install.bat file -->
+		<copy todir="${DIR_WIN}/${INSTALLER_DIR}">
+			<fileset dir="${DIR_WIN}/installer_files">
+				<exclude name="install.bat" />
+			</fileset>
+		</copy>
+
+		<!-- Coping the izpack launcher , excluding launcher-win32.ini  -->
+		<copy todir="${DIR_WIN}/${INSTALLER_DIR}">
+			<fileset dir="../build/distribution/launcher/izpack-launcher-1.3/dist">
+				<exclude name="launcher-Win32.ini" />
+			</fileset>
+		</copy>
+
+		<!-- Coping the launcher-win32.ini  -->
+		<copy file="${DIR_WIN}/resources/launcher-Win32.ini.j15" tofile="${DIR_WIN}/${INSTALLER_DIR}/launcher-Win32.ini" />
+
+		<!-- Replacing the token JARNAME with the real name of the jar file  -->
+		<replace file="${DIR_WIN}/${INSTALLER_DIR}/launcher-Win32.ini" token="%JARNAME%" value="${JARNAME}" />
+
+		<!-- Moving the jar file  -->
+		<move todir="${DIR_WIN}/${INSTALLER_DIR}/">
+			<fileset file="./${JARNAME}" />
+		</move>
+		<!-- Removing 7zip file, only if it exits  -->
+		<delete file="${DIR_WIN}/${WINDOWSZIP}" />
+		<!-- Creating new 7zip file -->
+		<!--exec executable="${LAUNCHER7Z}"-->
+		<exec executable="${LAUNCHER7Z}">
+			<arg line="a -r ${DIR_WIN}/${WINDOWSZIP} ${DIR_WIN}/${INSTALLER_DIR}/*" />
+		</exec>
+
+		<copy file="../build/distribution/launcher/7z/dist_config.txt" tofile="${DIR_WIN}/dist_config.txt" />
+		<replace file="${DIR_WIN}/dist_config.txt" token="%TITLE%" value="gvSIG-${bversion}" />
+		<concat destfile="${DIR_WIN}/${WINDOWSEXE}" binary="true">
+			<fileset file="../build/distribution/launcher/7z/7zS.sfx" />
+			<fileset file="${DIR_WIN}/dist_config.txt" />
+			<fileset file="${DIR_WIN}/${WINDOWSZIP}" />
+		</concat>
+
+
+	</target>
+
+	<!-- UTILIZAR ESTE TARGET PARA LIMPIAR TODOS LOS DIRECTORIOS Y FICHEROS TEMPORALES CREADOS-->
+	<target name="cleanDirWIN" description="Limpiamos los directorios DIR_WIN">
+		<mkdir dir="${OUTPUT_DIR}" />
+		<mkdir dir="${OUTPUT_DIR}/win" />
+		<move todir="${OUTPUT_DIR}/win">
+			<fileset file="${DIR_WIN}/${WINDOWSEXE}" />
+		</move>
+		<delete file="${DIR_WIN}/${WINDOWSZIP}" />
+		<delete file="${DIR_WIN}/dist_config.txt" />
+		<delete dir="${DIR_WIN}/${INSTALLER_DIR}" />
+
+		<!--delete dir="${DIR_WIN}/extensiones" />
+		<delete dir="${DIR_WIN}/bin" /-->
+	</target>
+
+	<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	-->
+	<target name="Mac">
+		<mkdir dir="${OUTPUT_DIR}" />
+		<ant dir="${DIR_MAC}">
+			<property name="build.number" value="${build.number}" />
+		</ant>
+		<!-- El zip se crea en dentro y se copia por un problema con los permisos-->
+		<!--zip destfile="${OUTPUT_DIR}/${MAC_10_ZIP}" basedir="${DIR_MAC}" includes="gvSIG*.app/**" filemode="755" /-->
+		<copy todir="${OUTPUT_DIR}">
+			<fileset dir="${DIR_MAC}" includes="gvSIG*.zip" />
+		</copy>
+		<delete dir="${DIR_MAC}/distr" />
+		<!--OJO!!!! HAY QUE REVISAR ESTO -->
+		<echo> ********************************************* </echo>
+		<echo> ********          MAC DONE        *********</echo>
+		<echo> ********************************************* </echo>
+	</target>
+</project>
